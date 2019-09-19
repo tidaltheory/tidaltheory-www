@@ -1,18 +1,60 @@
 backend:
     name: github
     repo: tidaltheory/tidaltheory-www
+    squash_merges: true
 
-media_folder: 'static/uploads'
-public_folder: '/uploads'
+media_folder: static/uploads
+public_folder: /uploads
 
 collections:
-    - name: 'posts'
-      label: 'Posts'
-      folder: 'posts'
+    - name: work
+      label: Work
+      folder: work
       create: true
       slug: '{{slug}}'
       fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
-          - { label: 'Publish Date', name: 'date', widget: 'date' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: Title, name: title, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - label: Cover image
+            name: cover
+            widget: image
+            allow_multiple: false
+          - label: Icon
+            name: icon
+            widget: image
+            allow_multiple: false
+          - { label: Publish Date, name: date, widget: date }
+          - { label: Intro, name: intro, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
+          - { label: Category, name: category, widget: list }
+          - { label: Tags, name: tags, widget: list }
+          - { label: URL, name: url, widget: string }
+          - label: Collaborators
+            name: collaborators
+            widget: markdown
+
+    - name: projects
+      label: Projects
+      folder: projects
+      create: true
+      slug: '{{slug}}'
+      fields:
+          - { label: Title, name: title, widget: string }
+          - { label: URL, name: url, widget: string }
+          - { label: Description, name: description, widget: markdown }
+          - { label: Category, name: category, widget: list }
+
+    - name: galleries
+      label: Galleries
+      folder: photos
+      create: true
+      slug: '{{slug}}'
+      fields:
+          - { label: Title, name: title, widget: string }
+          - label: Banner
+            name: banner
+            widget: image
+            allow_multiple: false
+          - { label: Description, name: description, widget: markdown }
+          - { label: Images, name: images, widget: image }
+          - { label: Category, name: category, widget: list }
