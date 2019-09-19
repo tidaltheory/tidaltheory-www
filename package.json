@@ -9,19 +9,19 @@
   "dependencies": {
     "@gridsome/source-filesystem": "0.6.0",
     "@gridsome/transformer-remark": "0.3.3",
-    "gridsome": "0.7.0",
+    "gridsome": "0.7.3",
     "gridsome-plugin-netlify-cms": "1.0.9",
     "netlify-cms": "2.9.7"
   },
   "devDependencies": {
     "@zazen/eslint-config": "1.0.x",
     "@zazen/stylelint-config": "1.0.x",
-    "eslint": "6.3.x",
+    "eslint": "6.4.x",
     "eslint-plugin-vue": "5.2.x",
     "husky": "3.0.x",
     "lint-staged": "9.2.x",
     "postcss-advanced-variables": "3.0.x",
-    "stylelint": "10.1.x"
+    "stylelint": "11.0.x"
   },
   "husky": {
     "hooks": {
