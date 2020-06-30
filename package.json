@@ -44,7 +44,6 @@
         "@nuxtjs/markdownit": "1.2.9",
         "@nuxtjs/pwa": "3.0.0-beta.20",
         "core-js": "3.6.5",
-        "netlify-cms": "2.10.51",
         "nuxt": "2.13.2"
     },
     "devDependencies": {
