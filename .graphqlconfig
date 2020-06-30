@@ -1,7 +1,0 @@
-{
-  "projects": {
-    "tidaltheory": {
-      "schemaPath": "schema.graphql"
-    }
-  }
-}
