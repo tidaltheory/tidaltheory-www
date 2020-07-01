@@ -4,8 +4,13 @@ backend:
     branch: trunk
     squash_merges: true
 
-media_folder: static/uploads
-public_folder: /uploads
+media_library:
+    name: uploadcare
+    config:
+        publicKey: 525235c9c7ef422f4e92
+        multiple: false
+        previewStep: true
+        clearable: true
 
 collections:
     - name: work
@@ -36,6 +41,7 @@ collections:
 
     - name: projects
       label: Projects
+      label_singular: Project
       folder: projects
       create: true
       slug: '{{slug}}'
@@ -47,6 +53,7 @@ collections:
 
     - name: galleries
       label: Galleries
+      label_singular: Gallery
       folder: photos
       create: true
       slug: '{{slug}}'
