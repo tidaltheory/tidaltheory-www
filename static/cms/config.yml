@@ -8,7 +8,6 @@ media_library:
     name: uploadcare
     config:
         publicKey: 525235c9c7ef422f4e92
-        multiple: false
         previewStep: true
         clearable: true
 
@@ -64,5 +63,11 @@ collections:
             widget: image
             allow_multiple: false
           - { label: Description, name: description, widget: markdown }
-          - { label: Images, name: images, widget: image }
+          - label: Images
+            name: images
+            widget: list
+            fields:
+                - { name: image, label: Image, widget: image }
+                - { name: alt, label: Alt, widget: string, required: false }
+                - { name: title, label: Title, widget: string, required: false }
           - { label: Category, name: category, widget: list }
