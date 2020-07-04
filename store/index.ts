@@ -19,15 +19,15 @@ export const mutations: MutationTree<RootState> = {
 }
 
 export const actions: ActionTree<RootState, RootState> = {
-    async nuxtServerInit({ commit }) {
-        let workData = await require.context('~/assets/content/work/', false, /\.json$/);
-        let workPosts = workData.keys().map(key => {
-          let res = workData(key);
-          res.slug = key.slice(2, -5);
+    // async nuxtServerInit({ commit }) {
+    //     let workData = await require.context('~/content/work/', false, /\.json$/);
+    //     let workPosts = workData.keys().map(key => {
+    //       let res = workData(key);
+    //       res.slug = key.slice(2, -5);
 
-          return res;
-        });
+    //       return res;
+    //     });
 
-        commit('SET_WORK_POSTS', workPosts);
-      },
+    //     commit('SET_WORK_POSTS', workPosts);
+    //   },
 }
