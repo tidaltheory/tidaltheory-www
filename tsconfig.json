@@ -15,7 +15,7 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@types/node", "@nuxt/types"]
+    "types": ["node", "webpack-env", "@nuxt/types"]
   },
   "exclude": ["node_modules", ".nuxt", "dist"]
 }
