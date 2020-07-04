@@ -44,7 +44,7 @@ const config: Configuration = {
     ],
 
     /** Nuxt.js modules */
-    modules: ['@nuxtjs/markdownit'],
+    modules: ['@nuxt/content', '@nuxtjs/markdownit'],
 
     /**
      * MarkdownIt options
