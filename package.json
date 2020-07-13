@@ -4,6 +4,7 @@
     "scripts": {
         "build": "nuxt-ts build",
         "dev": "nuxt-ts",
+        "export": "nuxt-ts build --target static && nuxt-ts export",
         "generate": "nuxt-ts generate",
         "lint": "npm run lint:scripts && npm run lint:styles",
         "lint:scripts": "eslint '**/*.{js,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
