@@ -8,6 +8,29 @@ media_folder: static/media
 public_folder: /media
 
 collections:
+    - name: media
+      label: Media
+      folder: static/media
+      create: true
+      format: toml
+      slug: '{{fields.slug}}'
+      #   preview_path: '{{filename}}.{{extension}}'
+      fields:
+          - { label: Slug, name: slug, widget: string }
+          - name: image
+            widget: object
+            fields:
+                - label: Image
+                  name: source
+                  widget: image
+                  allow_multiple: false
+                - label: Dominant colour
+                  name: dominant
+                  widget: hidden
+                - label: Alt text
+                  name: alt
+                  widget: string
+
     - name: work
       label: Work
       folder: content/work
@@ -18,8 +41,11 @@ collections:
           - { label: Tagline, name: tagline, widget: string }
           - label: Cover image
             name: cover
-            widget: image
-            allow_multiple: false
+            widget: relation
+            collection: media
+            valueField: image
+            searchFields: [slug]
+            displayFields: [slug]
           - label: Icon
             name: icon
             widget: image
