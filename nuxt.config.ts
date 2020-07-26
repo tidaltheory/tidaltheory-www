@@ -57,7 +57,7 @@ const config: Configuration = {
     /** Build configuration */
     build: {
         /** Extend webpack config here */
-        // // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         extend(config, ctx) {},
 
         /** Fix error about missing corejs modules */
