@@ -1,5 +1,8 @@
 import { Configuration } from '@nuxt/types'
 
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
+import TreatPlugin from 'treat/webpack-plugin'
+
 const config: Configuration = {
     mode: 'universal',
 
@@ -57,8 +60,16 @@ const config: Configuration = {
     /** Build configuration */
     build: {
         /** Extend webpack config here */
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        extend(config, ctx) {},
+        extend(config, { isClient }) {
+            if (isClient) {
+                config.plugins.push(
+                    new TreatPlugin({
+                        outputLoaders: [MiniCssExtractPlugin.loader],
+                    }),
+                )
+                config.plugins.push(new MiniCssExtractPlugin())
+            }
+        },
 
         /** Fix error about missing corejs modules */
         babel: {
