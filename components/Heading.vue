@@ -1,10 +1,19 @@
 <template>
-    <component :is="heading">
+    <component :is="heading" :class="styles.heading[level]">
         <slot />
     </component>
 </template>
 
 <script lang="ts">
+import * as styles from './Heading.treat'
+
+const resolveHeadingElement = {
+    '1': 'h1',
+    '2': 'h2',
+    '3': 'h3',
+    '4': 'h4',
+} as const
+
 export default {
     props: {
         level: {
@@ -13,9 +22,13 @@ export default {
         },
     },
 
+    data() {
+        return { styles }
+    },
+
     computed: {
         heading() {
-            return `h${this.level}`
+            return resolveHeadingElement[this.level]
         },
     },
 }
