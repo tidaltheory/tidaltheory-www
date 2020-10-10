@@ -1,8 +1,5 @@
 import { Configuration } from '@nuxt/types'
 
-import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import TreatPlugin from 'treat/webpack-plugin'
-
 const config: Configuration = {
     mode: 'universal',
 
@@ -22,6 +19,9 @@ const config: Configuration = {
             },
         ],
         link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        bodyAttrs: {
+            class: 'text-grey-100 bg-grey-800',
+        },
     },
 
     /** Customize the progress-bar color */
@@ -36,7 +36,7 @@ const config: Configuration = {
     /** Nuxt.js dev-modules */
     buildModules: [
         // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-        // '@nuxtjs/tailwindcss',
+        '@nuxtjs/tailwindcss',
         [
             '@nuxt/typescript-build',
             {
@@ -45,6 +45,11 @@ const config: Configuration = {
             },
         ],
     ],
+
+    tailwindcss: {
+        // add '~tailwind.config` alias
+        // exposeConfig: true,
+    },
 
     /** Nuxt.js modules */
     modules: ['@nuxt/content', '@nuxtjs/markdownit'],
@@ -60,16 +65,7 @@ const config: Configuration = {
     /** Build configuration */
     build: {
         /** Extend webpack config here */
-        extend(config, { isClient }) {
-            if (isClient) {
-                config.plugins.push(
-                    new TreatPlugin({
-                        outputLoaders: [MiniCssExtractPlugin.loader],
-                    }),
-                )
-                config.plugins.push(new MiniCssExtractPlugin())
-            }
-        },
+        // extend(config, { isClient }) { },
 
         /** Fix error about missing corejs modules */
         babel: {
