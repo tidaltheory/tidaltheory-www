@@ -1,15 +1,23 @@
 <template>
-    <div>
+    <div :class="$style.main">
+        <site-nav />
         <nuxt />
     </div>
 </template>
 
-<style>
-body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.5;
+<script lang="ts">
+import SiteNav from '~/components/SiteNav.vue'
+export default {
+    components: {
+        SiteNav,
+    },
+}
+</script>
+
+<style module>
+.main {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
 }
 </style>
