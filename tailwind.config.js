@@ -37,13 +37,17 @@ module.exports = {
             display: 'Antenna, sans-serif',
         },
         fontSize: {
-            h1: '6rem',
-            h2: '4.5rem',
-            h3: '3rem',
-            h4: '2rem',
+            6: '1.5rem',
+            8: '2rem',
+            12: '3rem',
+            18: '4.5rem',
+            20: '5rem',
+            24: '6rem',
         },
         lineHeight: {
-            h1: '6rem',
+            12: '3rem',
+            20: '5rem',
+            24: '6rem',
         },
         fontMetrics: {
             display: {
