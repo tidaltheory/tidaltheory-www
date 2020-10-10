@@ -2,22 +2,21 @@
     <div :class="$style.page">
         <div :class="$style.intro">
             <Heading>Tidal Theory</Heading>
-            <p>User Interface Developer, currently working at Showbie.</p>
+            <TextContent element="p"
+                >User Interface Developer, currently working at
+                Showbie.</TextContent
+            >
         </div>
     </div>
 </template>
 
 <script lang="ts">
 import Heading from '~/components/Heading.vue'
+import Text from '~/components/Text.vue'
 export default {
     components: {
         Heading,
-    },
-    data() {
-        return {
-            // tailwindConfig,
-            tailwindConfig: 'moo',
-        }
+        TextContent: Text,
     },
 }
 </script>
