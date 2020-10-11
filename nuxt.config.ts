@@ -18,7 +18,14 @@ const config: Configuration = {
                 content: process.env.npm_package_description || '',
             },
         ],
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        link: [
+            {
+                rel: 'stylesheet',
+                href:
+                    'https://fonts.googleapis.com/css2?family=Inter&display=swap',
+            },
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        ],
         bodyAttrs: {
             class: 'text-grey-100 bg-grey-800',
         },

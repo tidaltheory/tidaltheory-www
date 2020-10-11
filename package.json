@@ -68,7 +68,7 @@
         "prettier-plugin-import-sort": "0.0.4",
         "prettier-plugin-packagejson": "2.2.x",
         "stylelint": "13.6.x",
-        "tailwindcss-capsize": "1.1.x"
+        "tailwindcss-capsize": "1.2.x"
     },
     "importSort": {
         ".js,.ts,.vue": {

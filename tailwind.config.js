@@ -35,18 +35,13 @@ module.exports = {
         },
         fontFamily: {
             display: 'Antenna, sans-serif',
+            sans: 'Inter, sans-serif'
         },
         fontSize: {
             6: '1.5rem',
             8: '2rem',
             12: '3rem',
             18: '4.5rem',
-            20: '5rem',
-            24: '6rem',
-        },
-        lineHeight: {
-            9: '2.25rem',
-            12: '3rem',
             20: '5rem',
             24: '6rem',
         },
@@ -57,6 +52,13 @@ module.exports = {
                 descent: -200,
                 lineGap: 200,
                 unitsPerEm: 1000,
+            },
+            sans: {
+                capHeight: 2048,
+                ascent: 2728,
+                descent: -680,
+                lineGap: 0,
+                unitsPerEm: 2816,
             },
         },
     },
