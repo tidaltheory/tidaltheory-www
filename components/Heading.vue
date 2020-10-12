@@ -1,7 +1,7 @@
 <template>
     <component
         :is="heading"
-        class="font-display text-12 md:text-20 lg:text-24 font-bold leading-none text-white capsize uppercase"
+        class="font-display text-12 md:text-20 xl:text-24 font-bold leading-none text-white capsize uppercase"
     >
         <slot />
     </component>
