@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-2" :class="$style.page">
+    <div class="grid grid-cols-2">
         <div :class="$style.intro" class="pr-20">
             <Heading>Tidal Theory</Heading>
             <TextContent element="p"
@@ -25,19 +25,6 @@ export default {
 </script>
 
 <style module lang="postcss">
-.page {
-    height: 100vh;
-    padding: 15vh 2rem 24vh;
-
-    @screen md {
-        padding: 10vh 11vw 20vh;
-    }
-
-    @screen xl {
-        padding: 10vh 11vw 20vh;
-    }
-}
-
 .intro {
     z-index: theme('zIndex.10');
     display: flex;

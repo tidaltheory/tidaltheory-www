@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Galleries</h1>
+        <Heading>Galleries</Heading>
         <pre>{{ galleries }}</pre>
         <ul>
             <li v-for="gallery of galleries" :key="gallery.slug">
@@ -17,13 +17,16 @@
 </template>
 
 <script lang="ts">
+import Heading from '~/components/Heading.vue'
 export default {
+    components: {
+        Heading,
+    },
     async asyncData({ $content, params }) {
         let galleries = await $content('photos', params.slug)
             .only(['slug', 'title', 'banner', 'description'])
             .sortBy('createdAt', 'asc')
             .fetch()
-
         return { galleries }
     },
 }
