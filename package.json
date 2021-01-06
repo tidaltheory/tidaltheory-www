@@ -55,7 +55,7 @@
         "@types/webpack-env": "1.15.x",
         "@typescript-eslint/eslint-plugin": "3.5.x",
         "@typescript-eslint/parser": "3.5.x",
-        "@zazen/eslint-config": "2.0.x",
+        "@zazen/eslint-config": "2.1.x",
         "@zazen/stylelint-config": "1.0.x",
         "eslint": "7.3.x",
         "eslint-plugin-vue": "6.2.x",
