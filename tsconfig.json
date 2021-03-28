@@ -1,21 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "allowJs": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
-    "lib": ["esnext", "esnext.asynciterable", "dom"],
-    "esModuleInterop": true,
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "strict": false,
     "noEmit": true,
-    "baseUrl": ".",
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": false,
+    "strictNullChecks": true,
+    "target": "es2018",
     "types": ["node", "webpack-env", "@nuxt/types"]
   },
-  "exclude": ["node_modules", ".nuxt", "dist"]
+  "exclude": ["node_modules", ".nuxt", "dist"],
+  "include": ["**/*.ts", "**/*.js", ".eslintrc.js"]
 }

@@ -1,4 +1,4 @@
-const tailwindcssCapsize = require('tailwindcss-capsize')
+const tailwindcssCapsize = require('tailwindcss-capsize').default
 
 module.exports = {
     future: {
@@ -35,7 +35,7 @@ module.exports = {
         },
         fontFamily: {
             display: 'Antenna, sans-serif',
-            sans: 'Inter, sans-serif'
+            sans: 'Inter, sans-serif',
         },
         fontSize: {
             6: '1.5rem',
@@ -64,7 +64,7 @@ module.exports = {
     },
     extend: {},
     // variants: {},
-    plugins: [tailwindcssCapsize.default({})],
+    plugins: [tailwindcssCapsize({})],
     purge: {
         // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
         enabled: process.env.NODE_ENV === 'production',

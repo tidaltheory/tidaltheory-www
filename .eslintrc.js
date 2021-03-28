@@ -1,16 +1,6 @@
 module.exports = {
-    extends: ['@zazen/eslint-config', '@zazen/eslint-config/vue'],
-    plugins: ['@typescript-eslint'],
-    parser: 'vue-eslint-parser',
-    parserOptions: {
-        parser: '@typescript-eslint/parser',
-    },
+    extends: ['@zazen/eslint-config/vue'],
     rules: {
-        'prefer-const': 'off',
-
-        '@typescript-eslint/no-unused-vars': [
-            'error',
-            { args: 'all', argsIgnorePattern: '^_' },
-        ],
+        '@typescript-eslint/indent': 'off',
     },
 }
