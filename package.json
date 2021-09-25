@@ -2,14 +2,14 @@
   "name": "tidaltheory",
   "private": true,
   "scripts": {
-    "build": "nuxt-ts build",
-    "dev": "nuxt-ts",
-    "export": "nuxt-ts build --target static && nuxt-ts export",
-    "generate": "nuxt-ts generate",
+    "build": "nuxt build",
+    "dev": "nuxt",
+    "export": "nuxt build --target static && nuxt-ts export",
+    "generate": "nuxt generate",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint '**/*.{js,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
     "lint:styles": "stylelint '**/*.{css,vue}' --ip '{.nuxt,dist}/**'",
-    "start": "nuxt-ts start"
+    "start": "nuxt start"
   },
   "husky": {
     "hooks": {

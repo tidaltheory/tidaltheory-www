@@ -7,7 +7,10 @@
                 Showbie.</TextContent
             >
         </div>
-        <div :class="$style.hero">
+        <div
+            :class="$style.hero"
+            class="pb-[6vh] pl-[14vw] md:pb-[19vh] md:pl-[22vw] xl:pb-0 xl:pl-20"
+        >
             <div class="w-full h-full bg-grey-700" />
         </div>
     </div>
@@ -39,19 +42,10 @@ export default {
     grid-row: 1;
     grid-column: span 2 / span 2;
     grid-column-start: 1;
-    padding-bottom: 6vh;
-    padding-left: 14vw;
-
-    @screen md {
-        padding-bottom: 19vh;
-        padding-left: 22vw;
-    }
 
     @screen xl {
         grid-column: auto;
         grid-column-start: 2;
-        padding-bottom: 0;
-        padding-left: theme('space.20');
     }
 }
 </style>
