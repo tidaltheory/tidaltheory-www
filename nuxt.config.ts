@@ -55,6 +55,7 @@ const config: NuxtConfig = {
     ],
 
     tailwindcss: {
+        cssPath: '~/assets/tailwind.css',
         // add '~tailwind.config` alias
         // exposeConfig: true,
     },
