@@ -1,3 +1,3 @@
 # tidaltheory
 
-> https://tidaltheory.co/
+> https://tidaltheory.io/
