@@ -3,7 +3,7 @@ import { NuxtConfig } from '@nuxt/types'
 const config: NuxtConfig = {
     /** Headers of the page */
     head: {
-        title: process.env.npm_package_name || '',
+        title: process.env.npm_package_name ?? '',
         meta: [
             { charset: 'utf-8' },
             {
@@ -13,7 +13,7 @@ const config: NuxtConfig = {
             {
                 hid: 'description',
                 name: 'description',
-                content: process.env.npm_package_description || '',
+                content: process.env.npm_package_description ?? '',
             },
         ],
         link: [
@@ -40,6 +40,7 @@ const config: NuxtConfig = {
 
     /** Nuxt.js dev-modules */
     buildModules: [
+        '@nuxt/postcss8',
         // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
         '@nuxtjs/tailwindcss',
         [
@@ -84,6 +85,21 @@ const config: NuxtConfig = {
                         },
                     ],
                 ]
+            },
+        },
+
+        /**
+         * @see https://nuxtjs.org/docs/configuration-glossary/configuration-build#postcss
+         * @see https://tailwindcss.com/docs/using-with-preprocessors#nesting
+         */
+        postcss: {
+            plugins: {
+                'postcss-import': {},
+                'postcss-url': {},
+                'postcss-preset-env': {},
+                'tailwindcss/nesting': {},
+                tailwindcss: {},
+                cssnano: { preset: 'default' },
             },
         },
     },

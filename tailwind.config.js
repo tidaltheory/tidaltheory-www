@@ -1,10 +1,12 @@
-const tailwindcssCapsize = require('tailwindcss-capsize').default
-
 module.exports = {
-    future: {
-        removeDeprecatedGapUtilities: true,
-        purgeLayersByDefault: true,
-    },
+    mode: 'jit',
+    purge: [
+        'components/**/*.vue',
+        'layouts/**/*.vue',
+        'pages/**/*.vue',
+        'plugins/**/*.js',
+        'nuxt.config.ts',
+    ],
     theme: {
         colors: {
             white: '#fff',
@@ -63,17 +65,6 @@ module.exports = {
         },
     },
     extend: {},
-    // variants: {},
-    plugins: [tailwindcssCapsize({})],
-    purge: {
-        // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
-        enabled: process.env.NODE_ENV === 'production',
-        content: [
-            'components/**/*.vue',
-            'layouts/**/*.vue',
-            'pages/**/*.vue',
-            'plugins/**/*.js',
-            'nuxt.config.js',
-        ],
-    },
+    variants: {},
+    plugins: [require('tailwindcss-capsize'), require('tailwindcss-opentype')],
 }
