@@ -1,6 +1,8 @@
 import { NuxtConfig } from '@nuxt/types'
 
 const config: NuxtConfig = {
+    target: 'static',
+
     /** Headers of the page */
     head: {
         title: process.env.npm_package_name ?? '',
