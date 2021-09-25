@@ -61,7 +61,7 @@
     "mini-css-extract-plugin": "1.3.9",
     "postcss": "8.3.8",
     "prettier": "2.2.1",
-    "prettier-plugin-import-sort": "0.0.6",
+    "prettier-plugin-import-sort": "0.0.7",
     "prettier-plugin-packagejson": "2.2.13",
     "stylelint": "13.11.0",
     "tailwindcss-capsize": "2.1.0",
