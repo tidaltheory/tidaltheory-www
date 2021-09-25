@@ -1,6 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "local>tidaltheory/.github:renovate-config"
-  ]
+  "extends": ["local>tidaltheory/.github:renovate-config"]
 }
