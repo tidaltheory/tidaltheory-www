@@ -1,7 +1,7 @@
 <template>
     <component
         :is="element"
-        class="font-sans text-6 leading-normal text-white capsize"
+        class="font-sans text-6 leading-normal text-white leading-trim"
     >
         <slot />
     </component>

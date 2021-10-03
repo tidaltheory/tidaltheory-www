@@ -1,11 +1,4 @@
-<template>
-    <div :class="$style.main">
-        <site-nav />
-        <nuxt :class="$style.page" />
-    </div>
-</template>
-
-<script lang="ts">
+<script>
 import SiteNav from '~/components/SiteNav.vue'
 export default {
     components: {
@@ -13,6 +6,13 @@ export default {
     },
 }
 </script>
+
+<template>
+    <div :class="$style.main">
+        <SiteNav />
+        <Nuxt :class="$style.page" />
+    </div>
+</template>
 
 <style module lang="postcss">
 .main {

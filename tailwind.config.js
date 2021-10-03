@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
     mode: 'jit',
     purge: [
@@ -40,6 +42,7 @@ module.exports = {
             sans: 'Inter, sans-serif',
         },
         fontSize: {
+            4: '1rem',
             6: '1.5rem',
             8: '2rem',
             12: '3rem',
@@ -66,5 +69,24 @@ module.exports = {
     },
     extend: {},
     variants: {},
-    plugins: [require('tailwindcss-capsize'), require('tailwindcss-opentype')],
+    plugins: [
+        require('tailwindcss-capsize')({ className: 'leading-trim' }),
+        require('tailwindcss-opentype'),
+        plugin(function ({ addVariant, e, postcss }) {
+            addVariant('firefox', ({ container, separator }) => {
+                let isFirefoxRule = postcss.atRule({
+                    name: '-moz-document',
+                    params: 'url-prefix()',
+                })
+
+                isFirefoxRule.append(container.nodes)
+                container.append(isFirefoxRule)
+                isFirefoxRule.walkRules((rule) => {
+                    rule.selector = `.${e(
+                        `firefox${separator}${rule.selector.slice(1)}`,
+                    )}`
+                })
+            })
+        }),
+    ],
 }
