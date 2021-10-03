@@ -4,10 +4,10 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt",
-    "export": "nuxt build --target static && nuxt-ts export",
+    "export": "nuxt build --target static && nuxt export",
     "generate": "nuxt generate",
     "lint": "npm run lint:scripts && npm run lint:styles",
-    "lint:scripts": "eslint '**/*.{js,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
+    "lint:scripts": "eslint '**/*.{js,ts,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
     "lint:styles": "stylelint '**/*.{css,vue}' --ip '{.nuxt,dist}/**'",
     "start": "nuxt start"
   },
@@ -17,15 +17,9 @@
     }
   },
   "lint-staged": {
-    "*.{css,vue}": [
-      "stylelint --fix"
-    ],
-    "*.{js,vue}": [
-      "eslint --fix"
-    ],
-    "package.json": [
-      "prettier --write"
-    ]
+    "*.{css,vue}": "stylelint --fix",
+    "*.{js,ts,vue}": "eslint --fix",
+    "package.json": "prettier --write"
   },
   "prettier": {
     "htmlWhitespaceSensitivity": "strict",
