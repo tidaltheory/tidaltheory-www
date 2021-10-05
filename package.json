@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt",
+    "dev": "TAILWIND_MODE=watch nuxt",
     "export": "nuxt build --target static && nuxt export",
     "generate": "nuxt generate",
     "lint": "npm run lint:scripts && npm run lint:styles",
