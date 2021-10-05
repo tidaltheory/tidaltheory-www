@@ -3,6 +3,7 @@ export default {
     props: {
         to: {
             type: String,
+            default: '/',
         },
     },
 }
@@ -13,6 +14,7 @@ export default {
         <div class="flex items-center">
             <div class="w-8 h-8 rounded bg-grey-600" />
             <span
+                v-if="!!$slots.default"
                 class="
                     px-2
                     font-display
