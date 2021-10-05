@@ -8,29 +8,17 @@ export default {
 </script>
 
 <template>
-    <div :class="$style.main">
+    <div class="grid w-screen h-screen">
         <SiteNav />
-        <Nuxt :class="$style.page" />
+        <Nuxt
+            class="
+                h-screen
+                pt-[15vh]
+                px-8
+                pb-[24vh]
+                md:pt-[10vh] md:px-[11vw] md:pb-[20vh]
+                xl:pt-[10vh] xl:px-[11vw] xl:pb-[20vh]
+            "
+        />
     </div>
 </template>
-
-<style module lang="postcss">
-.main {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-}
-
-.page {
-    height: 100vh;
-    padding: 15vh 2rem 24vh;
-
-    @screen md {
-        padding: 10vh 11vw 20vh;
-    }
-
-    @screen xl {
-        padding: 10vh 11vw 20vh;
-    }
-}
-</style>

@@ -1,13 +1,4 @@
-<template>
-    <component
-        :is="element"
-        class="font-sans text-6 leading-normal text-white leading-trim"
-    >
-        <slot />
-    </component>
-</template>
-
-<script lang="ts">
+<script>
 export default {
     props: {
         element: {
@@ -17,3 +8,12 @@ export default {
     },
 }
 </script>
+
+<template>
+    <component
+        :is="element"
+        class="font-sans text-6 leading-normal leading-trim text-white"
+    >
+        <slot />
+    </component>
+</template>

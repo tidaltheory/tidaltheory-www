@@ -1,29 +1,11 @@
-<template>
-    <component
-        :is="heading"
-        class="
-            font-display
-            text-12
-            md:text-20
-            xl:text-24
-            font-bold
-            leading-none
-            text-white
-            leading-trim
-            uppercase
-        "
-    >
-        <slot />
-    </component>
-</template>
-
-<script lang="ts">
+<script>
 const resolveHeadingElement = {
-    '1': 'h1',
-    '2': 'h2',
-    '3': 'h3',
-    '4': 'h4',
-} as const
+    1: 'h1',
+    2: 'h2',
+    3: 'h3',
+    4: 'h4',
+}
+
 export default {
     props: {
         level: {
@@ -38,3 +20,21 @@ export default {
     },
 }
 </script>
+
+<template>
+    <component
+        :is="heading"
+        class="
+            font-display
+            text-12
+            md:text-20
+            xl:text-24
+            font-bold
+            leading-none leading-trim
+            text-white
+            uppercase
+        "
+    >
+        <slot />
+    </component>
+</template>

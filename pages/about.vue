@@ -1,10 +1,4 @@
-<template>
-    <div>
-        <Heading>About page</Heading>
-    </div>
-</template>
-
-<script lang="ts">
+<script>
 import Heading from '~/components/Heading.vue'
 export default {
     components: {
@@ -12,3 +6,9 @@ export default {
     },
 }
 </script>
+
+<template>
+    <div>
+        <Heading>About page</Heading>
+    </div>
+</template>

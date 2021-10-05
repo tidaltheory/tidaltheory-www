@@ -1,11 +1,4 @@
-<template>
-    <article>
-        <pre>{{ article }}</pre>
-        <nuxt-content :document="article" />
-    </article>
-</template>
-
-<script lang="ts">
+<script>
 export default {
     async asyncData({ $content, params }) {
         let article = await $content('work', params.slug).fetch()
@@ -14,3 +7,10 @@ export default {
     },
 }
 </script>
+
+<template>
+    <article>
+        <pre>{{ article }}</pre>
+        <NuxtContent :document="article" />
+    </article>
+</template>

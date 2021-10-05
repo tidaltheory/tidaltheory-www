@@ -1,3 +1,19 @@
+<script>
+import Heading from '~/components/Heading.vue'
+export default {
+    components: {
+        Heading,
+    },
+    async asyncData({ $content, params }) {
+        let galleries = await $content('photos', params.slug)
+            .only(['slug', 'title', 'banner', 'description'])
+            .sortBy('createdAt', 'asc')
+            .fetch()
+        return { galleries }
+    },
+}
+</script>
+
 <template>
     <div>
         <Heading>Galleries</Heading>
@@ -15,19 +31,3 @@
         </ul>
     </div>
 </template>
-
-<script lang="ts">
-import Heading from '~/components/Heading.vue'
-export default {
-    components: {
-        Heading,
-    },
-    async asyncData({ $content, params }) {
-        let galleries = await $content('photos', params.slug)
-            .only(['slug', 'title', 'banner', 'description'])
-            .sortBy('createdAt', 'asc')
-            .fetch()
-        return { galleries }
-    },
-}
-</script>
