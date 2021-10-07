@@ -18,7 +18,7 @@ export default {
                 class="
                     px-2
                     font-display
-                    text-4
+                    text-base
                     font-bold
                     leading-none leading-trim
                     uppercase

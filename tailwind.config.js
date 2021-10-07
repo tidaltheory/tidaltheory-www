@@ -41,15 +41,6 @@ module.exports = {
             display: 'Antenna, sans-serif',
             sans: 'Inter, sans-serif',
         },
-        fontSize: {
-            4: '1rem',
-            6: '1.5rem',
-            8: '2rem',
-            12: '3rem',
-            18: '4.5rem',
-            20: '5rem',
-            24: '6rem',
-        },
         fontMetrics: {
             display: {
                 capHeight: 741,

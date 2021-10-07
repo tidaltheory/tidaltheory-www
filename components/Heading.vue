@@ -26,9 +26,9 @@ export default {
         :is="heading"
         class="
             font-display
-            text-12
-            md:text-20
-            xl:text-24
+            text-5xl
+            md:text-7xl
+            xl:text-8xl
             font-bold
             leading-none leading-trim
             text-white
