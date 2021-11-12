@@ -56,7 +56,7 @@
     "postcss": "8.3.8",
     "prettier": "2.4.1",
     "prettier-plugin-import-sort": "0.0.7",
-    "prettier-plugin-packagejson": "2.2.13",
+    "prettier-plugin-packagejson": "2.2.15",
     "stylelint": "13.13.1",
     "tailwindcss-capsize": "2.1.0",
     "tailwindcss-opentype": "0.4.0"
