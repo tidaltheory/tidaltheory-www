@@ -11,6 +11,11 @@ export default {
             isMenuOpen: false,
         }
     },
+    mounted() {
+        this.$router.afterEach(() => {
+            this.isMenuOpen = false
+        })
+    },
     methods: {
         toggleMenu() {
             this.isMenuOpen = !this.isMenuOpen
@@ -43,14 +48,19 @@ export default {
             <div class="flex h-full place-items-center">
                 <nav class="hidden md:block">
                     <Stack>
-                        <NavItem to="work" />
-                        <NavItem to="projects" />
-                        <NavItem to="photos" />
-                        <NavItem to="about" />
+                        <NavItem to="/work/" />
+                        <NavItem to="/projects/" />
+                        <NavItem to="/photos/" />
+                        <NavItem to="/about/" />
                     </Stack>
                 </nav>
             </div>
         </div>
+        <div
+            v-show="isMenuOpen"
+            class="fixed w-screen h-screen"
+            @click="toggleMenu"
+        />
         <Transition
             enter-class="transform -translate-y-full"
             enter-active-class="transition duration-200 ease-out"
@@ -75,10 +85,10 @@ export default {
                 "
             >
                 <Stack>
-                    <NavItem to="work">Work</NavItem>
-                    <NavItem to="projects">Projects</NavItem>
-                    <NavItem to="photos">Photos</NavItem>
-                    <NavItem to="about">About</NavItem>
+                    <NavItem to="/work/">Work</NavItem>
+                    <NavItem to="/projects/">Projects</NavItem>
+                    <NavItem to="/photos/">Photos</NavItem>
+                    <NavItem to="/about/">About</NavItem>
                 </Stack>
             </div>
         </Transition>

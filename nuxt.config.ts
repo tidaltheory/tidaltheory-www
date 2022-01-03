@@ -21,8 +21,7 @@ const config: NuxtConfig = {
         link: [
             {
                 rel: 'stylesheet',
-                href:
-                    'https://fonts.googleapis.com/css2?family=Inter&display=swap',
+                href: 'https://fonts.googleapis.com/css2?family=Inter&display=swap',
             },
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         ],
