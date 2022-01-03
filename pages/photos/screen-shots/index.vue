@@ -5,7 +5,7 @@ export default {
         Heading,
     },
     async asyncData({ $content, params }) {
-        let galleries = await $content('photos', params.slug)
+        let galleries = await $content('photos/screen-shots', params.slug)
             .only(['slug', 'title', 'banner', 'description'])
             .sortBy('createdAt', 'asc')
             .fetch()
@@ -16,11 +16,11 @@ export default {
 
 <template>
     <div>
-        <Heading>Photos</Heading>
+        <Heading>Screen Shots</Heading>
         <pre>{{ galleries }}</pre>
         <ul>
             <li v-for="gallery of galleries" :key="gallery.slug">
-                <NuxtLink :to="`/photos/${gallery.slug}`">
+                <NuxtLink :to="`/photos/screen-shots/${gallery.slug}`">
                     <!-- <img :src="gallery.banner" /> -->
                     <div>
                         <h2>{{ gallery.title }}</h2>
