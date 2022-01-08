@@ -12,7 +12,7 @@ export default {
         <SiteNav />
         <Nuxt
             class="
-                h-screen
+                min-h-screen
                 pt-[15vh]
                 px-8
                 pb-[24vh]
