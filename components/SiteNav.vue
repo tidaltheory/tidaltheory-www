@@ -1,10 +1,8 @@
 <script>
 import NavItem from '~/components/NavItem.vue'
-import Stack from '~/components/Stack'
 export default {
     components: {
         NavItem,
-        Stack,
     },
     data() {
         return {
@@ -47,12 +45,12 @@ export default {
 
             <div class="flex h-full place-items-center">
                 <nav class="hidden md:block">
-                    <Stack>
+                    <div class="grid gap-8">
                         <NavItem to="/work/" />
                         <NavItem to="/projects/" />
                         <NavItem to="/photos/" />
                         <NavItem to="/about/" />
-                    </Stack>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -84,12 +82,12 @@ export default {
                     backdrop-blur
                 "
             >
-                <Stack>
+                <div class="grid gap-8">
                     <NavItem to="/work/">Work</NavItem>
                     <NavItem to="/projects/">Projects</NavItem>
                     <NavItem to="/photos/">Photos</NavItem>
                     <NavItem to="/about/">About</NavItem>
-                </Stack>
+                </div>
             </div>
         </Transition>
     </div>
