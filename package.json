@@ -29,7 +29,7 @@
     "trailingComma": "all"
   },
   "dependencies": {
-    "@nuxt/content": "1.14.0",
+    "@nuxt/content": "1.15.1",
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/markdownit": "2.0.0",
     "@nuxtjs/pwa": "3.3.5",
