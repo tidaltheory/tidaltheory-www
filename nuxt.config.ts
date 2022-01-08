@@ -34,7 +34,7 @@ const config: NuxtConfig = {
     loading: { color: '#fff' },
 
     /** Global CSS */
-    css: [],
+    css: ['~/assets/tailwind.css'],
 
     /** Plugins to load before mounting the App */
     plugins: [],
@@ -42,8 +42,6 @@ const config: NuxtConfig = {
     /** Nuxt.js dev-modules */
     buildModules: [
         '@nuxt/postcss8',
-        // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-        '@nuxtjs/tailwindcss',
         [
             '@nuxt/typescript-build',
             {
@@ -52,12 +50,6 @@ const config: NuxtConfig = {
             },
         ],
     ],
-
-    tailwindcss: {
-        cssPath: '~/assets/tailwind.css',
-        // add '~tailwind.config` alias
-        // exposeConfig: true,
-    },
 
     /** Nuxt.js modules */
     modules: ['@nuxt/content', '@nuxtjs/markdownit'],
@@ -101,6 +93,7 @@ const config: NuxtConfig = {
                 'postcss-preset-env': {},
                 'tailwindcss/nesting': {},
                 tailwindcss: {},
+                autoprefixer: {},
                 cssnano: { preset: 'default' },
             },
         },
