@@ -11,7 +11,7 @@ export default {
 
 <template>
     <div class="relative flex aspect-[1.3] bg-grey-700">
-        <div class="self-end w-full p-10 bg-grey-900">
+        <div class="self-end w-full p-6 lg:p-10 bg-grey-900 bg-opacity-50">
             <NuxtLink class="before:absolute before:inset-0" :to="to">
                 <div
                     class="
