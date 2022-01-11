@@ -1,10 +1,12 @@
 <script>
 import GalleryCard from '~/components/gallery-card.vue'
-import Heading from '~/components/Heading.vue'
+import PageIntro from '~/components/page-intro.vue'
+import PageSection from '~/components/page-section.vue'
 export default {
     components: {
-        Heading,
         GalleryCard,
+        PageIntro,
+        PageSection,
     },
     async asyncData({ $content, params }) {
         let galleries = await $content('photos/screen-shots', params.slug)
@@ -18,17 +20,17 @@ export default {
 
 <template>
     <div>
-        <div class="pb-[24vh] md:pb-[20vh] xl:pb-[20vh]">
-            <Heading>Screen<br />Shots</Heading>
-        </div>
-        <div class="grid md:grid-cols-2 gap-4 md:gap-12">
-            <GalleryCard
-                v-for="gallery of galleries"
-                :key="gallery.slug"
-                :to="`/photos/screen-shots/${gallery.slug}/`"
-            >
-                {{ gallery.title }}
-            </GalleryCard>
-        </div>
+        <PageIntro> Screen<br />Shots </PageIntro>
+        <PageSection>
+            <div class="grid md:grid-cols-2 gap-4 md:gap-12 xl:gap-16">
+                <GalleryCard
+                    v-for="gallery of galleries"
+                    :key="gallery.slug"
+                    :to="`/photos/screen-shots/${gallery.slug}/`"
+                >
+                    {{ gallery.title }}
+                </GalleryCard>
+            </div>
+        </PageSection>
     </div>
 </template>

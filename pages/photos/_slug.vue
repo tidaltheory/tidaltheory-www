@@ -1,8 +1,13 @@
 <script>
+import PageIntro from '~/components/page-intro.vue'
+import PageSection from '~/components/page-section.vue'
 export default {
+    components: {
+        PageIntro,
+        PageSection,
+    },
     async asyncData({ $content, params }) {
         let article = await $content('photos', params.slug).fetch()
-
         return { article }
     },
 }
@@ -10,7 +15,11 @@ export default {
 
 <template>
     <article>
-        <pre>{{ article }}</pre>
-        <nuxt-content :document="article" />
+        <PageIntro>
+            {{ article.title }}
+        </PageIntro>
+        <PageSection>
+            <NuxtContent :document="article" />
+        </PageSection>
     </article>
 </template>

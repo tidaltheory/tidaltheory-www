@@ -1,8 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-    mode: 'jit',
-    purge: [
+    content: [
         'components/**/*.vue',
         'layouts/**/*.vue',
         'pages/**/*.vue',

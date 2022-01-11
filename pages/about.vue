@@ -1,14 +1,14 @@
 <script>
-import Heading from '~/components/Heading.vue'
+import PageIntro from '~/components/page-intro.vue'
 export default {
     components: {
-        Heading,
+        PageIntro,
     },
 }
 </script>
 
 <template>
     <div>
-        <Heading>About page</Heading>
+        <PageIntro> About </PageIntro>
     </div>
 </template>

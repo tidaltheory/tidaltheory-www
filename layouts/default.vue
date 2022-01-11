@@ -10,15 +10,6 @@ export default {
 <template>
     <div class="grid w-screen h-screen">
         <SiteNav />
-        <Nuxt
-            class="
-                min-h-screen
-                pt-[15vh]
-                px-8
-                pb-[24vh]
-                md:pt-[10vh] md:px-[11vw] md:pb-[20vh]
-                xl:pt-[10vh] xl:px-[11vw] xl:pb-[20vh]
-            "
-        />
+        <Nuxt class="mt-16 md:mt-0 md:ml-20" />
     </div>
 </template>
