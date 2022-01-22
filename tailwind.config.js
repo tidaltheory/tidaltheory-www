@@ -56,8 +56,12 @@ module.exports = {
                 unitsPerEm: 2816,
             },
         },
+        extend: {
+            spacing: {
+                15: '3.75rem',
+            },
+        },
     },
-    extend: {},
     variants: {},
     plugins: [
         require('tailwindcss-capsize')({ className: 'leading-trim' }),

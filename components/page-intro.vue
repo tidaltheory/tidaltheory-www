@@ -1,7 +1,7 @@
 <script>
 import Heading from '~/components/Heading.vue'
+import PageSection from '~/components/page-section.vue'
 import Text from '~/components/Text.vue'
-import PageSection from './page-section.vue'
 export default {
     components: { Heading, PageSection, TextContent: Text },
 }
