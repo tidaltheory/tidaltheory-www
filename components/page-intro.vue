@@ -10,7 +10,7 @@ export default {
 <template>
     <PageSection>
         <div class="grid grid-cols-4 xl:grid-cols-2 xl:gap-16">
-            <div class="md:col-span-3 md:pt-8 xl:pt-12">
+            <div class="col-span-full md:col-span-3 md:pt-8 xl:pt-12">
                 <Heading><slot /></Heading>
             </div>
             <div
