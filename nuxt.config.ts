@@ -5,7 +5,7 @@ const config: NuxtConfig = {
 
     /** Headers of the page */
     head: {
-        title: process.env.npm_package_name ?? '',
+        title: 'Tidal Theory',
         meta: [
             { charset: 'utf-8' },
             {
@@ -15,7 +15,7 @@ const config: NuxtConfig = {
             {
                 hid: 'description',
                 name: 'description',
-                content: process.env.npm_package_description ?? '',
+                content: '',
             },
         ],
         link: [
@@ -66,21 +66,6 @@ const config: NuxtConfig = {
     build: {
         /** Extend webpack config here */
         // extend(config, { isClient }) { },
-
-        /** Fix error about missing corejs modules */
-        babel: {
-            presets({ isServer }) {
-                return [
-                    [
-                        require.resolve('@nuxt/babel-preset-app'),
-                        {
-                            buildTarget: isServer ? 'server' : 'client',
-                            corejs: { version: 3 },
-                        },
-                    ],
-                ]
-            },
-        },
 
         /**
          * @see https://nuxtjs.org/docs/configuration-glossary/configuration-build#postcss
