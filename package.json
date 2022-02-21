@@ -6,6 +6,7 @@
     "dev": "TAILWIND_MODE=watch nuxt",
     "export": "nuxt build --target static && nuxt export",
     "generate": "nuxt generate",
+    "image": "lens add --store content/imagemeta.json",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint '**/*.{js,ts,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
     "lint:styles": "stylelint '**/*.{css,vue}' --ip '{.nuxt,dist}/**'",
