@@ -1,19 +1,20 @@
 <script>
 import PageHero from '~/components/page-hero.vue'
+
 export default {
-    components: {
-        PageHero,
-    },
+	components: {
+		PageHero,
+	},
 }
 </script>
 
 <template>
-    <article>
-        <PageHero>
-            Tidal<br />Theory
-            <template #intro>
-                User Interface Developer,<br />currently working at Showbie.
-            </template>
-        </PageHero>
-    </article>
+	<article>
+		<PageHero>
+			Tidal<br />Theory
+			<template #intro>
+				User Interface Developer,<br />currently working at Showbie.
+			</template>
+		</PageHero>
+	</article>
 </template>
