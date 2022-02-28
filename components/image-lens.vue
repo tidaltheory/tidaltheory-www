@@ -7,30 +7,71 @@ export default Vue.extend({
 			type: Object,
 			default: () => {},
 		},
+		sizes: { type: Array as () => string[], default: undefined }
 	},
 	computed: {
-		// The `static` dir isn't needed with Nuxt's routing.
-		basePath() {
-			return this.$props.image.path.replace(/^static/, '')
+		imageObject() {
+			return this.sizes ? this.image[this.sizes[0]] : this.image
 		},
 		hasAvif() {
-			return this.$props.image.formats && this.$props.image.formats.avif
+			return this.imageObject.formats && this.imageObject.formats.avif
 		},
 		hasWebp() {
-			return this.$props.image.formats && this.$props.image.formats.webp
+			return this.imageObject.formats && this.imageObject.formats.webp
+		},
+		ratio() {
+			return (
+				this.imageObject.dimensions.width /
+				this.imageObject.dimensions.height
+			)
+		},
+		imgSet() {
+			if (!this.sizes) return undefined
+
+			let set: string[] = []
+			for (const size of this.sizes) {
+				set.push(`${this.getPath(this.image[size].path)} ${this.image[size].dimensions.width}w`)
+			}
+			return set.join(',')
+		},
+		avifSet() {
+			if (!this.sizes) return this.getPath(this.image.formats.avif)
+
+			let set: string[] = []
+			for (const size of this.sizes) {
+				set.push(`${this.getPath(this.image[size].formats.avif)} ${this.image[size].dimensions.width}w`)
+			}
+			return set.join(',')
+		},
+		webpSet() {
+			if (!this.sizes) return this.getPath(this.image.formats.webp)
+
+			let set: string[] = []
+			for (const size of this.sizes) {
+				set.push(`${this.getPath(this.image[size].formats.webp)} ${this.image[size].dimensions.width}w`)
+			}
+			return set.join(',')
+		},
+	},
+	methods: {
+		/** The `static` dir isn't needed with Nuxt's routing. */
+		getPath(path) {
+			return path.replace(/^static/, '')
 		},
 	},
 })
 </script>
 
 <template>
-	<picture>
-		<source v-if="hasAvif" type="image/avif" />
-		<source v-if="hasWebp" type="image/webp" />
+	<picture class="flex" :style="{ aspectRatio: ratio }">
+		<source v-if="hasAvif" :srcset="avifSet" type="image/avif" />
+		<source v-if="hasWebp" :srcset="webpSet" type="image/webp" />
 		<img
-			:src="basePath"
-			:width="image.dimensions.width"
-			:height="image.dimensions.height"
+			class="w-full h-full object-contain"
+			:src="getPath(imageObject.path)"
+			:srcset="imgSet"
+			:width="imageObject.dimensions.width"
+			:height="imageObject.dimensions.height"
 		/>
 	</picture>
 </template>
