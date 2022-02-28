@@ -1,20 +1,22 @@
 <script>
-import ImageLens from '~/components/image-lens.vue'
+import LensGallery from '~/components/lens-gallery.vue'
 import PageIntro from '~/components/page-intro.vue'
 import PageSection from '~/components/page-section.vue'
 
 export default {
 	components: {
+		LensGallery,
 		PageIntro,
 		PageSection,
-		ImageLens,
 	},
 
 	async asyncData({ $content, params }) {
 		let article = await $content('photos/screen-shots', params.slug).fetch()
 		let { library } = await $content('imagemeta').fetch()
 		let images = []
-		article.images.forEach((key) => images.push(library[key]))
+		if (article.images) {
+			article.images.forEach((key) => images.push(library[key]))
+		}
 
 		return { article, images }
 	},
@@ -25,16 +27,14 @@ export default {
 	<article>
 		<PageIntro>
 			{{ article.title }}
+			<template #intro>
+				<span v-html="article.description" />
+				<!-- {{ article.description }} -->
+			</template>
 		</PageIntro>
 		<PageSection>
+			<LensGallery :images="images" />
 			<NuxtContent :document="article" />
-			<div>
-				<ImageLens
-					v-for="(image, i) in images"
-					:key="i"
-					:image="image"
-				/>
-			</div>
 		</PageSection>
 	</article>
 </template>
