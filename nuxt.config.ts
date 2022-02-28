@@ -64,8 +64,18 @@ const config: NuxtConfig = {
 
 	/** Build configuration */
 	build: {
-		/** Extend webpack config here */
-		// extend(config, { isClient }) { },
+		extend(config) {
+			/**
+			 * Fixes `Can't import the named export '[foo]' from non EcmaScript
+			 * module (only default export is available)` error.
+			 * @see https://github.com/vueuse/vueuse/issues/718#issuecomment-914239247
+			 */
+			config.module?.rules.push({
+				test: /\.mjs$/,
+				include: /node_modules/,
+				type: 'javascript/auto',
+			})
+		},
 
 		/**
 		 * @see https://nuxtjs.org/docs/configuration-glossary/configuration-build#postcss
