@@ -1,6 +1,5 @@
 ---
 title: Screen Shots
 description: Screen Shots description
-category:
-  - Featured
+cover: tlou2_20200623211955
 ---

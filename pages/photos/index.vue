@@ -11,9 +11,16 @@ export default {
 	},
 	async asyncData({ $content, params }) {
 		let galleries = await $content('photos', params.slug)
-			.only(['slug', 'title', 'banner', 'description'])
+			.only(['slug', 'title', 'cover', 'description'])
 			.sortBy('createdAt', 'asc')
 			.fetch()
+		let { library } = await $content('imagemeta').fetch()
+
+		galleries = galleries.map((gallery) => ({
+			...gallery,
+			coverImage: library[gallery.cover],
+		}))
+
 		return { galleries }
 	},
 }
@@ -34,6 +41,7 @@ export default {
 					v-for="gallery of galleries"
 					:key="gallery.slug"
 					:to="`/photos/${gallery.slug}/`"
+					:cover="gallery.coverImage"
 				>
 					{{ gallery.title }}
 				</GalleryCard>
