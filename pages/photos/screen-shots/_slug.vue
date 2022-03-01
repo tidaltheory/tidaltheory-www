@@ -33,8 +33,13 @@ export default {
 			</template>
 		</PageIntro>
 		<PageSection>
-			<LensGallery :images="images" />
-			<NuxtContent :document="article" />
+			<div class="grid gap-[10vh]">
+				<LensGallery :images="images" />
+				<NuxtContent
+					:document="article"
+					class="prose md:prose-xl prose-invert"
+				/>
+			</div>
 		</PageSection>
 	</article>
 </template>
