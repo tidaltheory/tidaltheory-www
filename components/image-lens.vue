@@ -7,8 +7,9 @@ export default Vue.extend({
 			type: Object,
 			default: () => {},
 		},
-		sizes: { type: Array as () => string[], default: undefined }
+		sizes: { type: Array as () => string[], default: undefined },
 	},
+
 	computed: {
 		imageObject() {
 			return this.sizes ? this.image[this.sizes[0]] : this.image
@@ -53,6 +54,7 @@ export default Vue.extend({
 			return set.join(',')
 		},
 	},
+
 	methods: {
 		/** The `static` dir isn't needed with Nuxt's routing. */
 		getPath(path) {

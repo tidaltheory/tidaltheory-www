@@ -7,6 +7,11 @@ export default {
 		to: { type: String, default: '/' },
 		cover: { type: Object, default: () => {} },
 	},
+	computed: {
+		color() {
+			return [this.cover.colors]
+		},
+	},
 }
 </script>
 
@@ -19,17 +24,24 @@ export default {
 			class="mix-blend-luminosity"
 		/>
 		<div class="absolute inset-0 flex">
-			<div
-				class="self-end w-full p-6 lg:p-10 bg-grey-900 bg-opacity-50 backdrop-blur firefox:bg-opacity-80"
+			<NuxtLink
+				class="peer w-full z-10 self-end before:absolute before:inset-0"
+				:to="to"
 			>
-				<NuxtLink class="before:absolute before:inset-0" :to="to">
+				<div
+					class="w-full p-6 lg:p-10 bg-grey-900 bg-opacity-50 backdrop-blur firefox:bg-opacity-80"
+				>
 					<div
 						class="font-display text-2xl lg:text-4xl font-bold leading-10 leading-trim tracking-wide uppercase"
 					>
 						<slot />
 					</div>
-				</NuxtLink>
-			</div>
+				</div>
+			</NuxtLink>
+			<div
+				class="absolute inset-0 z-0 opacity-0 peer-hover:opacity-50"
+				:style="{ backgroundColor: color }"
+			/>
 		</div>
 	</div>
 </template>

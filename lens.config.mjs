@@ -4,6 +4,7 @@ const COVER_IMAGES = [
 
 export default {
 	store: 'content/imagemeta.json',
+	useFilenameDirectory: true,
 	thumbnails: [
 		{ 'cover-sm': { files: COVER_IMAGES, width: 300, height: 250 } },
 		{ 'cover-md': { files: COVER_IMAGES, width: 600, height: 500 } },
