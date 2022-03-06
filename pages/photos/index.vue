@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-	<div>
+	<article>
 		<PageIntro>
 			Photos
 			<template #intro>
@@ -47,5 +47,5 @@ export default {
 				</GalleryCard>
 			</div>
 		</PageSection>
-	</div>
+	</article>
 </template>

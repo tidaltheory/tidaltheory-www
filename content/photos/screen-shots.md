@@ -1,5 +1,5 @@
 ---
 title: Screen Shots
 description: Screen Shots description
-cover: tlou2_20200623211955
+cover: tlou_20200124225047
 ---
