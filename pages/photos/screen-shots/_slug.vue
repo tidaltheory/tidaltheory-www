@@ -27,6 +27,7 @@ export default {
 	<article>
 		<PageIntro>
 			{{ article.title }}
+			<template #subtitle>{{ article.subtitle }}</template>
 			<template #intro>
 				<span v-html="article.description" />
 				<!-- {{ article.description }} -->
