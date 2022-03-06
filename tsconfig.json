@@ -19,5 +19,5 @@
     "types": ["node", "webpack-env", "@nuxt/types"]
   },
   "exclude": ["node_modules", ".nuxt", "dist"],
-  "include": ["**/*.vue", "**/*.ts", "**/*.js", ".eslintrc.js"]
+  "include": ["**/*.vue", "**/*.ts", "**/*.js", ".eslintrc.js", "lens.config.mjs"]
 }

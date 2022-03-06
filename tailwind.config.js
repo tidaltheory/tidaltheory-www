@@ -57,6 +57,13 @@ module.exports = {
 			},
 		},
 		extend: {
+			typography: (theme) => ({
+				DEFAULT: {
+					css: {
+						color: theme('colors.grey.200'),
+					},
+				},
+			}),
 			spacing: {
 				15: '3.75rem',
 			},
@@ -64,6 +71,7 @@ module.exports = {
 	},
 	variants: {},
 	plugins: [
+		require('@tailwindcss/typography'),
 		require('tailwindcss-capsize')({ className: 'leading-trim' }),
 		require('tailwindcss-opentype'),
 		plugin(function ({ addVariant, e, postcss }) {
