@@ -9,7 +9,7 @@ export default {
 	},
 	computed: {
 		color() {
-			return [this.cover.colors]
+			return this.cover ? [this.cover.colors] : 'rgb(57 62 65)'
 		},
 	},
 }
