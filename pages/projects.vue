@@ -11,7 +11,7 @@ export default {
 <template>
 	<article>
 		<PageIntro>
-			About
+			Projects
 			<template #intro> Coming soon. </template>
 		</PageIntro>
 	</article>
