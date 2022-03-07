@@ -74,7 +74,11 @@ module.exports = {
 		require('@tailwindcss/typography'),
 		require('tailwindcss-capsize')({ className: 'leading-trim' }),
 		require('tailwindcss-opentype'),
-		plugin(function ({ addVariant, e, postcss }) {
+		plugin(function ({ addUtilities, addVariant, e, postcss }) {
+			addUtilities({
+				'.backdrop-blur': { 'backdrop-filter': 'blur(8px)' },
+			})
+
 			addVariant('firefox', ({ container, separator }) => {
 				let isFirefoxRule = postcss.atRule({
 					name: '-moz-document',
