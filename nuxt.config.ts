@@ -77,6 +77,26 @@ const config: NuxtConfig = {
 			})
 		},
 
+		html: {
+			/**
+			 * Prevent incorrect removal of empty CSS custom properties,
+			 * i.e. `--tw-blur: ;`. Other minify options are include to maintain
+			 * default settings.
+			 * @see https://nuxtjs.org/docs/configuration-glossary/configuration-build/#htmlminify
+			 */
+			minify: {
+				collapseBooleanAttributes: true,
+				decodeEntities: true,
+				minifyCSS: false,
+				minifyJS: true,
+				processConditionalComments: true,
+				removeEmptyAttributes: true,
+				removeRedundantAttributes: true,
+				trimCustomFragments: true,
+				useShortDoctype: true,
+			},
+		},
+
 		/**
 		 * @see https://nuxtjs.org/docs/configuration-glossary/configuration-build#postcss
 		 * @see https://tailwindcss.com/docs/using-with-preprocessors#nesting
