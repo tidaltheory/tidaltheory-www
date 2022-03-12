@@ -81,13 +81,13 @@ export default Vue.extend({
 		<source v-if="hasAvif" :srcset="avifSet" type="image/avif" />
 		<source v-if="hasWebp" :srcset="webpSet" type="image/webp" />
 		<img
-                        class="w-full h-full object-contain opacity-0"
+			class="w-full h-full object-contain opacity-0"
 			:src="getPath(imageObject.path)"
 			:srcset="imgSet"
 			:width="imageObject.dimensions.width"
 			:height="imageObject.dimensions.height"
-                        loading="lazy"
-                        @load="reveal"
+			loading="lazy"
+			@load="reveal"
 		/>
 	</picture>
 </template>

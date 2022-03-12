@@ -6,7 +6,7 @@ import PageSection from '~/components/page-section.vue'
 
 export default {
 	components: {
-                GalleryCarousel,
+		GalleryCarousel,
 		LensGallery,
 		PageIntro,
 		PageSection,
@@ -23,25 +23,25 @@ export default {
 		return { article, images }
 	},
 
-        data() {
-                return {
-                        isCarouselOpen: false,
-                }
-        },
+	data() {
+		return {
+			isCarouselOpen: false,
+		}
+	},
 
-        methods: {
-                async handleOpenCarousel(index) {
-                        this.isCarouselOpen = true
-                        await this.$nextTick()
-                        let target = this.$refs.carousel.$el.querySelector(
-                                `[data-index="${index}"]`,
-                        )
-                        target.scrollIntoView({ block: 'center' })
-                },
-                handleCloseCarousel() {
-                        this.isCarouselOpen = false
-                },
-        },
+	methods: {
+		async handleOpenCarousel(index) {
+			this.isCarouselOpen = true
+			await this.$nextTick()
+			let target = this.$refs.carousel.$el.querySelector(
+				`[data-index="${index}"]`,
+			)
+			target.scrollIntoView({ block: 'center' })
+		},
+		handleCloseCarousel() {
+			this.isCarouselOpen = false
+		},
+	},
 }
 </script>
 
@@ -57,22 +57,23 @@ export default {
 		</PageIntro>
 		<PageSection>
 			<div class="grid gap-[10vh]">
-                                <LensGallery
-                                        :images="images"
-                                        :is-hidden="isCarouselOpen"
-                                        :on-open="handleOpenCarousel"
-                                />
-                                <transition
-                                        enter-active-class="transition opacity-100"
-                                        leave-active-class="transition opacity-0"
-                                >
-                                        <GalleryCarousel
-                                                v-if="isCarouselOpen"
-                                                ref="carousel"
-                                                :images="images"
-                                                :on-close="handleCloseCarousel"
-                                        />
-                                </transition>
+				<LensGallery
+					:images="images"
+					:is-hidden="isCarouselOpen"
+					:on-open="handleOpenCarousel"
+				/>
+				<Transition
+					enter-active-class="transition opacity-100"
+					leave-active-class="transition opacity-0"
+				>
+					<GalleryCarousel
+						v-if="isCarouselOpen"
+						ref="carousel"
+						v-scroll-lock="isCarouselOpen"
+						:images="images"
+						:on-close="handleCloseCarousel"
+					/>
+				</Transition>
 				<NuxtContent
 					:document="article"
 					class="prose md:prose-xl prose-invert"
