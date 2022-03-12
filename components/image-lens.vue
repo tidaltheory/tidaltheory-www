@@ -60,6 +60,18 @@ export default Vue.extend({
 		getPath(path) {
 			return path.replace(/^static/, '')
 		},
+
+                reveal(event) {
+                        event.target.classList.toggle('opacity-0')
+                        event.target.animate({
+                                transform: ["scale(.9)", "none"],
+                                opacity: [0, 1],
+                        },{
+                                duration: 700,
+                                easing: `cubic-bezier(.165,.84,.44,1)`
+                        })
+                        // cubic-bezier(.165,.84,.44,1)
+                }
 	},
 })
 </script>
@@ -69,11 +81,13 @@ export default Vue.extend({
 		<source v-if="hasAvif" :srcset="avifSet" type="image/avif" />
 		<source v-if="hasWebp" :srcset="webpSet" type="image/webp" />
 		<img
-			class="w-full h-full object-contain"
+                        class="w-full h-full object-contain opacity-0"
 			:src="getPath(imageObject.path)"
 			:srcset="imgSet"
 			:width="imageObject.dimensions.width"
 			:height="imageObject.dimensions.height"
+                        loading="lazy"
+                        @load="reveal"
 		/>
 	</picture>
 </template>
