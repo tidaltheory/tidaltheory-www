@@ -68,6 +68,7 @@ export default {
 		>
 			<div
 				v-if="isMenuOpen"
+				v-scroll-lock="isMenuOpen"
 				class="absolute left-0 flex justify-end gap-4 w-full px-8 py-4 pb-8 bg-grey-900 bg-opacity-70 firefox:bg-opacity-90 backdrop-blur"
 			>
 				<div class="grid gap-8">
