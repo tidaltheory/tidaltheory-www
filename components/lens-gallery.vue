@@ -15,12 +15,12 @@ export default Vue.extend({
 			type: Array,
 			default: () => [],
 		},
-                isHidden: {
-                        type: Boolean,
-                },
-                onOpen: {
-                        type: Function,
-                        required: true,
+		isHidden: {
+			type: Boolean,
+		},
+		onOpen: {
+			type: Function,
+			required: true,
 		},
 	},
 })
@@ -32,19 +32,19 @@ export default Vue.extend({
 		:columns="2"
 		gap-class="gap-4 md:gap-8 xl:gap-16"
 	>
-                <template #default="{ item, index }">
-                        <button
-                                class="transition"
-                                type="button"
-                                :class="isHidden && 'opacity-0'"
-                                :data-index="index"
-                                @click="onOpen(index)"
-                        >
-                                <ImageLens
-                                        :image="item.thumbnails"
-                                        :sizes="['gallery-sm', 'gallery-md', 'gallery-lg']"
-                                />
-                        </button>
+		<template #default="{ item, index }">
+			<button
+				class="flex transition"
+				type="button"
+				:class="isHidden && 'opacity-30'"
+				:data-index="index"
+				@click="onOpen(index)"
+			>
+				<ImageLens
+					:image="item.thumbnails"
+					:sizes="['gallery-sm', 'gallery-md', 'gallery-lg']"
+				/>
+			</button>
 		</template>
 	</MasonryGrid>
 </template>

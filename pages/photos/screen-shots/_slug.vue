@@ -16,9 +16,8 @@ export default {
 		let article = await $content('photos/screen-shots', params.slug).fetch()
 		let { library } = await $content('imagemeta').fetch()
 		let images = []
-		if (article.images) {
-			article.images.forEach((key) => images.push(library[key]))
-		}
+
+		article.images?.forEach((key) => images.push(library[key]))
 
 		return { article, images }
 	},
@@ -63,7 +62,8 @@ export default {
 					:on-open="handleOpenCarousel"
 				/>
 				<Transition
-					enter-active-class="transition opacity-100"
+					enter-active-class="transition"
+					enter-class="opacity-0"
 					leave-active-class="transition opacity-0"
 				>
 					<GalleryCarousel
@@ -71,6 +71,7 @@ export default {
 						ref="carousel"
 						v-scroll-lock="isCarouselOpen"
 						:images="images"
+						:is-open="isCarouselOpen"
 						:on-close="handleCloseCarousel"
 					/>
 				</Transition>

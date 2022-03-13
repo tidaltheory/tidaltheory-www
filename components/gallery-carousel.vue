@@ -13,6 +13,7 @@ export default Vue.extend({
 			type: Array,
 			default: () => [],
 		},
+		isOpen: { type: Boolean },
 		onClose: {
 			type: Function,
 			required: true,
@@ -22,17 +23,22 @@ export default Vue.extend({
 </script>
 
 <template>
-	<div :class="$style.zoom">
-		<button
-			v-for="(image, index) in images"
-			:key="index"
-			class="snap-center"
-			type="button"
-			:data-index="index"
-			@click="onClose(index)"
-		>
-			<ImageLens :image="image" />
-		</button>
+	<div class="fixed inset-0 z-[99] duration-200">
+		<div
+			class="fixed inset-0 z-[99] bg-grey-900 bg-opacity-50 backdrop-blur firefox:bg-opacity-80 transition"
+		/>
+		<div :class="$style.zoom">
+			<button
+				v-for="(image, index) in images"
+				:key="index"
+				class="flex items-center justify-center p-2 md:p-4 xl:p-8 snap-center"
+				type="button"
+				:data-index="index"
+				@click="onClose(index)"
+			>
+				<ImageLens :image="image" />
+			</button>
+		</div>
 	</div>
 </template>
 
