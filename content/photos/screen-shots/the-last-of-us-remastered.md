@@ -1,7 +1,7 @@
 ---
 title: The Last of Us
 subtitle: Remastered
-description: Returning to video games after not really playing anything for a few years with this game I’d heard about since it’s initial release on PlayStation 3 was a revelation — in terms of gameplay and story, but also my realisation that “photo mode” was a thing in games now.
+description: Returning to video games after not really playing anything for a few years with this game I’d heard about since it’s initial release on PlayStation 3 was a revelation — in terms of gameplay and story, but also my realisation that <span class="pull-double"></span><span class="push-double">“</span>photo mode” was a thing in games now.
 cover: tlou_20200124225047
 images:
   - tlou_20200124204048
