@@ -32,9 +32,13 @@ export default {
 		async handleOpenCarousel(index) {
 			this.isCarouselOpen = true
 			await this.$nextTick()
+
 			let target = this.$refs.carousel.$el.querySelector(
 				`[data-index="${index}"]`,
 			)
+
+			// Wait for a frame to make sure the scroll position is accurate.
+			await this.$nextTick()
 			target.scrollIntoView({ block: 'center' })
 		},
 		handleCloseCarousel() {
