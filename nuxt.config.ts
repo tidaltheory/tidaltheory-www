@@ -37,7 +37,7 @@ const config: NuxtConfig = {
 	css: ['~/assets/tailwind.css'],
 
 	/** Plugins to load before mounting the App */
-	plugins: [{ src: '~/plugins/v-scroll-lock', mode: 'client' }],
+	// plugins: [{ src: '~/plugins/v-scroll-lock', mode: 'client' }],
 
 	/** Nuxt.js dev-modules */
 	buildModules: [
