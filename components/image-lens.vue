@@ -74,7 +74,12 @@ export default Vue.extend({
 </script>
 
 <template>
-	<picture class="max-h-full" :style="{ aspectRatio: ratio }">
+	<picture
+		class="max-h-full"
+		:width="imageObject.dimensions.width"
+		:height="imageObject.dimensions.height"
+		:style="{ aspectRatio: ratio }"
+	>
 		<source v-if="hasAvif" :srcset="avifSet" type="image/avif" />
 		<source v-if="hasWebp" :srcset="webpSet" type="image/webp" />
 		<img
@@ -85,7 +90,7 @@ export default Vue.extend({
 			:height="imageObject.dimensions.height"
 			loading="lazy"
 			decoding="async"
-			@load="reveal"
+			@load.once="reveal"
 		/>
 	</picture>
 </template>

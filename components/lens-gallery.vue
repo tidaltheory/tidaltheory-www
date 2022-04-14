@@ -34,7 +34,7 @@ export default Vue.extend({
 	>
 		<template #default="{ item, index }">
 			<button
-				class="flex transition"
+				class="transition"
 				type="button"
 				:class="isHidden && 'opacity-30'"
 				:data-index="index"
