@@ -1,10 +1,12 @@
 <script>
+import GalleryCarousel from '~/components/gallery-carousel.vue'
 import LensGallery from '~/components/lens-gallery.vue'
 import PageIntro from '~/components/page-intro.vue'
 import PageSection from '~/components/page-section.vue'
 
 export default {
 	components: {
+		GalleryCarousel,
 		LensGallery,
 		PageIntro,
 		PageSection,
@@ -14,11 +16,34 @@ export default {
 		let article = await $content('photos/screen-shots', params.slug).fetch()
 		let { library } = await $content('imagemeta').fetch()
 		let images = []
-		if (article.images) {
-			article.images.forEach((key) => images.push(library[key]))
-		}
+
+		article.images?.forEach((key) => images.push(library[key]))
 
 		return { article, images }
+	},
+
+	data() {
+		return {
+			isCarouselOpen: false,
+		}
+	},
+
+	methods: {
+		async handleOpenCarousel(index) {
+			this.isCarouselOpen = true
+			await this.$nextTick()
+
+			let target = this.$refs.carousel.$el.querySelector(
+				`[data-index="${index}"]`,
+			)
+
+			// Wait for a frame to make sure the scroll position is accurate.
+			await this.$nextTick()
+			target.scrollIntoView({ block: 'center' })
+		},
+		handleCloseCarousel() {
+			this.isCarouselOpen = false
+		},
 	},
 }
 </script>
@@ -35,7 +60,25 @@ export default {
 		</PageIntro>
 		<PageSection>
 			<div class="grid gap-[10vh]">
-				<LensGallery :images="images" />
+				<LensGallery
+					:images="images"
+					:is-hidden="isCarouselOpen"
+					:on-open="handleOpenCarousel"
+				/>
+				<Transition
+					enter-active-class="transition"
+					enter-class="opacity-0"
+					leave-active-class="transition opacity-0"
+				>
+					<GalleryCarousel
+						v-if="isCarouselOpen"
+						ref="carousel"
+						v-scroll-lock="isCarouselOpen"
+						:images="images"
+						:is-open="isCarouselOpen"
+						:on-close="handleCloseCarousel"
+					/>
+				</Transition>
 				<NuxtContent
 					:document="article"
 					class="prose md:prose-xl prose-invert"

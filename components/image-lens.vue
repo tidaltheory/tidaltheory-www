@@ -3,10 +3,7 @@ import Vue from 'vue'
 
 export default Vue.extend({
 	props: {
-		image: {
-			type: Object,
-			default: () => {},
-		},
+		image: { type: Object, default: () => {} },
 		sizes: { type: Array as () => string[], default: undefined },
 	},
 
@@ -60,20 +57,40 @@ export default Vue.extend({
 		getPath(path) {
 			return path.replace(/^static/, '')
 		},
+
+		reveal(event) {
+				event.target.classList.toggle('opacity-0')
+				// event.target.animate({
+				//         transform: ["scale(.9)", "none"],
+				//         opacity: [0, 1],
+				// },{
+				//         duration: 700,
+				//         easing: `cubic-bezier(.165,.84,.44,1)`
+				// })
+				// cubic-bezier(.165,.84,.44,1)
+		}
 	},
 })
 </script>
 
 <template>
-	<picture class="flex" :style="{ aspectRatio: ratio }">
+	<picture
+		class="max-h-full"
+		:width="imageObject.dimensions.width"
+		:height="imageObject.dimensions.height"
+		:style="{ aspectRatio: ratio }"
+	>
 		<source v-if="hasAvif" :srcset="avifSet" type="image/avif" />
 		<source v-if="hasWebp" :srcset="webpSet" type="image/webp" />
 		<img
-			class="w-full h-full object-contain"
+			class="w-full h-full max-h-full object-contain opacity-0"
 			:src="getPath(imageObject.path)"
 			:srcset="imgSet"
 			:width="imageObject.dimensions.width"
 			:height="imageObject.dimensions.height"
+			loading="lazy"
+			decoding="async"
+			@load.once="reveal"
 		/>
 	</picture>
 </template>

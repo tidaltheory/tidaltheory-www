@@ -10,3 +10,8 @@
 		font-display: swap;
 	}
 }
+
+@layer utilities {
+	.pull-double { margin-right: 0.4em; }
+	.push-double { margin-left: -0.4em; }
+}

@@ -98,7 +98,7 @@ export default Vue.extend({
 				height: 'max-content',
 			}"
 		>
-			<div v-for="itemIndex in column" :key="itemIndex">
+			<div v-for="itemIndex in column" :key="itemIndex" class="grid">
 				<slot :item="items[itemIndex]" :index="itemIndex">
 					{{ items[itemIndex] }}
 				</slot>
