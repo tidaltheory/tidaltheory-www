@@ -54,6 +54,10 @@ const config: NuxtConfig = {
 	/** Nuxt.js modules */
 	modules: ['@nuxt/content', '@nuxtjs/markdownit'],
 
+	content: {
+		liveEdit: false,
+	},
+
 	/**
 	 * MarkdownIt options
 	 * @see https://github.com/markdown-it/markdown-it
