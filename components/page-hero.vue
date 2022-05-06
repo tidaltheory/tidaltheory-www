@@ -22,7 +22,7 @@ export default {
 			</div>
 			<div
 				v-if="!!$slots.intro"
-				class="z-10 row-start-2 col-span-3 self-end"
+				class="z-10 row-start-2 col-span-3 xl:col-span-2 self-end"
 			>
 				<ContentText element="p">
 					<slot name="intro" />
