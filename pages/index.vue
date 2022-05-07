@@ -13,7 +13,7 @@ export default {
 		<PageHero>
 			Tidal<br />Theory
 			<template #intro>
-				User Interface Developer,<br />currently working at Showbie.
+				User Interface Developer,<br />currently working at Clari.
 			</template>
 		</PageHero>
 	</article>
