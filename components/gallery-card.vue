@@ -32,7 +32,7 @@ export default {
 					class="w-full p-6 lg:p-10 bg-grey-900 bg-opacity-50 backdrop-blur firefox:bg-opacity-80"
 				>
 					<div
-						class="font-display text-2xl lg:text-4xl font-bold leading-10 leading-trim tracking-wide uppercase"
+						class="font-display text-2xl lg:text-4xl font-bold leading-trim tracking-wide uppercase"
 					>
 						<slot />
 					</div>
