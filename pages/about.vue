@@ -20,12 +20,16 @@ export default {
 			Nelson
 			<template #intro>
 				I’m a User Interface Developer, currently at
-				<MentionLink site="clari">Clari</MentionLink>. Previously, I’ve
-				worked at
+				<span class="whitespace-nowrap"
+					><MentionLink site="clari">Clari</MentionLink>.</span
+				>
+				Previously, I’ve worked at
 				<MentionLink site="showbie">Showbie</MentionLink>
 				and at
-				<MentionLink site="lift">Lift Interactive</MentionLink
-				>.</template
+				<span class="whitespace-nowrap"
+					><MentionLink site="lift">Lift Interactive</MentionLink
+					>.</span
+				></template
 			>
 		</PageHero>
 		<PageSection>
