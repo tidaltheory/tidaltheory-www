@@ -46,7 +46,7 @@ export default Vue.extend({
 
 	watch: {
 		items() {
-			this.redraw()
+			this.redraw(true)
 		}
 	},
 
@@ -61,8 +61,16 @@ export default Vue.extend({
 
 	methods: {
 		async redraw(force = false) {
+			if (this.cols.length === this.columns && !force) {
+				this.$emit('redraw-skip')
+				return
+			}
+
 			this.cols = createColumns(this.columns)
+			let scrollY = window.scrollY
+
 			await this.fillColumns(0)
+			window.scrollTo({ top: scrollY })
 			this.$emit('redraw')
 		},
 		async fillColumns(itemIndex: number) {
