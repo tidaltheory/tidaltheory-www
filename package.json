@@ -56,7 +56,7 @@
     "@nuxt/typescript-build": "2.1.0",
     "@tailwindcss/typography": "0.5.2",
     "@types/node": "16.11.35",
-    "@types/webpack-env": "1.16.4",
+    "@types/webpack-env": "1.17.0",
     "@typescript-eslint/eslint-plugin": "5.23.0",
     "@typescript-eslint/parser": "5.23.0",
     "@zazen/stylelint-config": "3.0.0",
