@@ -14,10 +14,14 @@ export default {
 			<div
 				class="grid gap-6 col-span-full md:col-span-3 md:pt-8 xl:pt-12"
 			>
-				<ContentHeading><slot /></ContentHeading>
+				<ContentHeading>
+					<slot />
+				</ContentHeading>
+
 				<h2
 					v-if="!!$slots.subtitle"
-					class="font-display text-2xl md:text-4xl xl:text-5xl font-bold leading-none leading-trim text-grey-400 uppercase"
+					:style="{ '--delay': '100ms' }"
+					class="text-item font-display text-2xl md:text-4xl xl:text-5xl font-bold leading-none leading-trim text-grey-400 uppercase"
 				>
 					<slot name="subtitle" />
 				</h2>
@@ -33,3 +37,20 @@ export default {
 		</div>
 	</PageSection>
 </template>
+
+<style>
+.text-item {
+	transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1),
+		transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition-delay: var(--delay, 0);
+}
+
+.text-enter-from {
+	opacity: 0;
+	transform: rotateX(75deg) rotateY(10deg) rotateZ(-9deg);
+}
+.text-enter-to {
+	opacity: 1;
+	transform: rotateX(0) rotateY(0) rotateZ(0);
+}
+</style>
