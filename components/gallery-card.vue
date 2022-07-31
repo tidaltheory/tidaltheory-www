@@ -21,7 +21,7 @@ export default {
 			v-if="cover"
 			:image="cover.thumbnails"
 			:sizes="['cover-sm', 'cover-md', 'cover-lg']"
-			class="mix-blend-luminosity"
+			class="grayscale"
 		/>
 		<div class="absolute inset-0 flex">
 			<NuxtLink
