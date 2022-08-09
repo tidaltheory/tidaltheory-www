@@ -12,7 +12,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{css}": "stylelint --fix",
+    "*.css": "stylelint --fix",
     "*.{js,ts}": [
       "eslint --fix",
       "prettier --write"
