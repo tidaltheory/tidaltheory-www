@@ -1,6 +1,6 @@
 [build]
-command = "npm run build"
-publish = "build"
+  command = "npx pnpm install --store=node_modules/.pnpm-store && npm run build"
+  publish = "build"
 
-[[plugins]]
-package = "/scripts/netlify-plugin-pnpm"
+[build.environment]
+  NPM_FLAGS = "--version" # prevent Netlify npm install
