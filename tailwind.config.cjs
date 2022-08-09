@@ -1,13 +1,8 @@
 const plugin = require('tailwindcss/plugin')
 
-module.exports = {
-	content: [
-		'components/**/*.vue',
-		'layouts/**/*.vue',
-		'pages/**/*.vue',
-		'plugins/**/*.js',
-		'nuxt.config.ts',
-	],
+/** @type {import('tailwindcss/types').Config} */
+const config = {
+	content: ['src/**/*.svelte', 'src/app.html'],
 	theme: {
 		colors: {
 			white: '#fff',
@@ -74,7 +69,7 @@ module.exports = {
 		require('@tailwindcss/typography'),
 		require('tailwindcss-capsize')({ className: 'leading-trim' }),
 		require('tailwindcss-opentype'),
-		plugin(function ({ addUtilities, addVariant, e, postcss }) {
+		plugin(function ({ /* addUtilities, */ addVariant, e, postcss }) {
 			addVariant('firefox', ({ container, separator }) => {
 				let isFirefoxRule = postcss.atRule({
 					name: '-moz-document',
@@ -85,10 +80,12 @@ module.exports = {
 				container.append(isFirefoxRule)
 				isFirefoxRule.walkRules((rule) => {
 					rule.selector = `.${e(
-						`firefox${separator}${rule.selector.slice(1)}`,
+						`firefox${separator}${rule.selector.slice(1)}`
 					)}`
 				})
 			})
 		}),
 	],
 }
+
+module.exports = config

@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import('stylelint').Config} */
+const config = {
 	extends: ['@zazen/stylelint-config'],
 	rules: {
 		'value-list-comma-newline-after': null,
@@ -8,3 +9,5 @@ module.exports = {
 		],
 	},
 }
+
+module.exports = config
