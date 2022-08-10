@@ -4,7 +4,8 @@
   "scripts": {
     "build": "vite build",
     "dev": "TAILWIND_MODE=watch vite dev",
-    "package": "svelte-kit package",
+    "package": "vite package",
+    "preview": "vite preview",
     "image": "lens add --store content/imagemeta.json",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint '**/*.{js,ts,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
@@ -33,7 +34,7 @@
   "type": "module",
   "dependencies": {},
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-netlify": "next",
     "@sveltejs/kit": "next",
     "@tailwindcss/typography": "0.5.4",
     "@tidaltheory/lens": "0.5.2",
