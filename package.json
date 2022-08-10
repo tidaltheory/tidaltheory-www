@@ -1,16 +1,17 @@
 {
   "name": "tidaltheory",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "vite build",
     "dev": "TAILWIND_MODE=watch vite dev",
-    "package": "vite package",
-    "preview": "vite preview",
     "image": "lens add --store content/imagemeta.json",
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint '**/*.{js,ts,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
     "lint:styles": "stylelint '**/*.{css,vue}' --ip '{.nuxt,dist}/**'",
-    "prepare": "husky install"
+    "package": "vite package",
+    "prepare": "husky install",
+    "preview": "vite preview"
   },
   "lint-staged": {
     "*.css": "stylelint --fix",
@@ -20,19 +21,28 @@
     ],
     "*.svelte": [
       "eslint --fix",
-      "stylelint --fix",
       "prettier --write"
     ],
     "package.json": "prettier --write"
   },
   "prettier": {
+    "plugins": [
+      "./node_modules/prettier-plugin-packagejson",
+      "./node_modules/prettier-plugin-tailwindcss"
+    ],
     "semi": false,
     "singleQuote": true,
     "svelteIndentScriptAndStyle": false,
-    "svelteSortOrder": "options-scripts-markup-styles"
+    "svelteSortOrder": "options-scripts-markup-styles",
+    "overrides": [
+      {
+        "files": "*.svelte",
+        "options": {
+          "parser": "svelte"
+        }
+      }
+    ]
   },
-  "type": "module",
-  "dependencies": {},
   "devDependencies": {
     "@sveltejs/adapter-netlify": "next",
     "@sveltejs/kit": "next",
@@ -49,10 +59,10 @@
     "lint-staged": "12.4.1",
     "mdsvex": "0.10.6",
     "postcss": "8.4.16",
+    "postcss-html": "1.5.0",
     "postcss-preset-env": "7.7.2",
     "prettier": "2.7.1",
     "prettier-plugin-packagejson": "2.2.18",
-    "prettier-plugin-svelte": "2.7.0",
     "prettier-plugin-tailwindcss": "0.1.13",
     "stylelint": "14.9.1",
     "svelte": "3.49.0",

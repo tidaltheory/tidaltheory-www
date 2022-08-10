@@ -6,6 +6,7 @@ const config = {
 	settings: {
 		'svelte3/typescript': () => require('typescript'),
 	},
+	env: { browser: true },
 	rules: {},
 	overrides: [
 		{ files: ['*.svelte'], processor: 'svelte3/svelte3' },

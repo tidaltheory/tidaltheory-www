@@ -1,8 +1,7 @@
 <script>
-import { onMount, onDestroy, getContext, setContext, tick } from 'svelte'
+import { onMount, onDestroy, tick } from 'svelte'
 
-export let gridGap = '0.5em'
-export let colWidth = 'minmax(Min(20em, 100%), 1fr)'
+export let gapClass
 export let items = [] // pass in data if it's dynamically updated
 
 let grids = []
@@ -99,7 +98,14 @@ $: if (items) {
 
 <div
 	bind:this={masonryElement}
-	style={`--grid-gap: ${gridGap}; --col-width: ${colWidth};`}
+	class="masonry-grid grid place-items-center {gapClass}"
 >
 	<slot />
 </div>
+
+<style>
+.masonry-grid {
+	grid: 1fr auto / repeat(2, 1fr);
+	grid: masonry / repeat(2, 1fr);
+}
+</style>

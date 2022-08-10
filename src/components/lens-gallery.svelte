@@ -7,7 +7,7 @@ export let isHidden
 export let onOpen
 </script>
 
-<MasonryGrid items={images} gap-class="gap-4 md:gap-8 xl:gap-16">
+<MasonryGrid items={images} gapClass="gap-4 md:gap-8 xl:gap-16">
 	{#each images as item, index}
 		<button
 			class="transition"
