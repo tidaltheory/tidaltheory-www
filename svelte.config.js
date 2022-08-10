@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto'
+import adapter from '@sveltejs/adapter-netlify'
 import preprocess from 'svelte-preprocess'
 import { mdsvex } from 'mdsvex'
 
@@ -16,7 +16,9 @@ const config = {
 	extensions: ['.svelte', '.md'],
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			split: false,
+		}),
 	},
 }
 
