@@ -1,4 +1,6 @@
 <script>
+import { beforeNavigate } from '$app/navigation'
+
 import { classes } from '$lib/transitions'
 
 import SiteNavItem from './site-nav-item.svelte'
@@ -8,6 +10,8 @@ let isMenuOpen = false
 function toggleMenu() {
 	isMenuOpen = !isMenuOpen
 }
+
+beforeNavigate(async () => toggleMenu())
 </script>
 
 <div class="fixed top-0 z-50 w-screen md:w-auto">
@@ -40,11 +44,7 @@ function toggleMenu() {
 		</div>
 	</div>
 	{#if isMenuOpen}
-		<div
-			v-show="isMenuOpen"
-			class="fixed h-screen w-screen"
-			on:click={toggleMenu}
-		/>
+		<div class="fixed h-screen w-screen" on:click={toggleMenu} />
 	{/if}
 	{#if isMenuOpen}
 		<div
@@ -55,8 +55,8 @@ function toggleMenu() {
 				from: '-translate-y-full',
 			}}
 			out:classes={{
-				duration: 300,
-				base: 'duration-300 ease-in',
+				duration: 150,
+				base: 'duration-150 ease-in',
 				to: '-translate-y-full',
 			}}
 		>
