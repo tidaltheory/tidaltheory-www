@@ -73,8 +73,8 @@ function reveal(event: Event) {
 	class="max-h-full opacity-0 transition-opacity duration-300"
 	width={imageObject.dimensions.width}
 	height={imageObject.dimensions.height}
-	style:aspectRatio={ratio}
-	style:backgroundColor={placeholderColor}
+	style:aspect-ratio={ratio}
+	style:background-color={placeholderColor}
 >
 	{#if hasAvif}<source srcset={avifSet()} type="image/avif" />{/if}
 	{#if hasWebp}<source srcset={webpSet()} type="image/webp" />{/if}
