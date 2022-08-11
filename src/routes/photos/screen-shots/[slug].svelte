@@ -1,24 +1,24 @@
 <script context="module">
 export const load = async ({ params, fetch }) => {
-	const posts = await fetch(`/api/photos/screen-shots/${params.slug}.json`)
-	const allPosts = await posts.json()
+	const res = await fetch(`/api/photos/screen-shots/${params.slug}.json`)
+	const { data } = await res.json()
+	const article = data
 
 	return {
 		props: {
-			article: allPosts,
+			article,
 		},
 	}
 }
 </script>
 
 <script>
-import { fade } from 'svelte/transition'
+import { tick } from 'svelte'
 
 import PageIntro from '../../../components/page-intro.svelte'
 import PageSection from '../../../components/page-section.svelte'
 import LensGallery from '../../../components/lens-gallery.svelte'
 import GalleryCarousel from '../../../components/gallery-carousel.svelte'
-import { tick } from 'svelte'
 
 export let article
 
@@ -57,15 +57,14 @@ function handleCloseCarousel() {
 				onOpen={handleOpenCarousel}
 			/>
 			{#if isCarouselOpen}
-				<div transition:fade={{ duration: 150 }} bind:this={carousel}>
-					<GalleryCarousel
-						images={article.images}
-						isOpen={isCarouselOpen}
-						onClose={handleCloseCarousel}
-					/>
-				</div>
+				<GalleryCarousel
+					bind:ref={carousel}
+					images={article.images}
+					isOpen={isCarouselOpen}
+					onClose={handleCloseCarousel}
+				/>
 			{/if}
-			<div class="prose md:prose-xl prose-invert">
+			<div class="prose prose-invert md:prose-xl">
 				{@html article.content}
 			</div>
 		</div>
