@@ -19,6 +19,7 @@ const config = {
 		adapter: adapter({
 			split: false,
 		}),
+		trailingSlash: 'always',
 	},
 }
 
