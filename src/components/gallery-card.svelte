@@ -6,15 +6,22 @@ export let to = '/'
 export let cover: ImageRecord
 
 const thumbnails = cover.thumbnails ?? {}
-const color = cover ? cover.colors?.[0] : 'rgb(57, 62, 65)'
+// const color = cover ? cover.colors?.[0] : 'rgb(57, 62, 65)'
 </script>
 
-<div class="relative grid grid-rows-1 overflow-hidden bg-grey-700">
+<div class="group relative grid grid-rows-1 overflow-hidden bg-grey-700">
 	{#if cover}
-		<ImageLens
-			image={thumbnails}
-			sizes={['cover-sm', 'cover-md', 'cover-lg']}
-		/>
+		<div class="isolate">
+			<div
+				class="absolute inset-0 bg-grey-800 transition-opacity duration-200 group-hover:opacity-50"
+			/>
+			<div class="relative mix-blend-luminosity">
+				<ImageLens
+					image={thumbnails}
+					sizes={['cover-sm', 'cover-md', 'cover-lg']}
+				/>
+			</div>
+		</div>
 	{/if}
 	<div class="absolute inset-0 flex">
 		<a
@@ -31,9 +38,9 @@ const color = cover ? cover.colors?.[0] : 'rgb(57, 62, 65)'
 				</div>
 			</div>
 		</a>
-		<div
+		<!-- <div
 			class="absolute inset-0 z-0 opacity-0 peer-hover:opacity-50"
-			style:backgroundColor={color}
-		/>
+			style:background-color={color}
+		/> -->
 	</div>
 </div>
