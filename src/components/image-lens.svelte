@@ -1,11 +1,11 @@
 <script lang="ts">
-import type { ImageRecord } from '@tidaltheory/lens'
+import type { ImageRecord, ImageThumbnails } from '@tidaltheory/lens'
 
 function getPath(path: string = '') {
 	return path.replace(/^static/, '')
 }
 
-export let image: ImageRecord
+export let image: ImageRecord | ImageThumbnails
 export let sizes: Array<string>
 
 const imageObject: ImageRecord = sizes ? image[sizes[0]] : image
@@ -27,7 +27,7 @@ const imgSet = () => {
 }
 
 const avifSet = () => {
-	if (!sizes) return getPath(image.formats?.avif)
+	if (!sizes) return getPath(imageObject.formats?.avif)
 
 	let set: string[] = []
 	for (const size of sizes) {
@@ -41,7 +41,7 @@ const avifSet = () => {
 }
 
 const webpSet = () => {
-	if (!sizes) return getPath(image.formats?.webp)
+	if (!sizes) return getPath(imageObject.formats?.webp)
 
 	let set: string[] = []
 	for (const size of sizes) {
