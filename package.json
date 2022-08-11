@@ -55,6 +55,7 @@
     "eslint": "8.21.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-svelte3": "4.0.0",
+    "gray-matter": "4.0.3",
     "husky": "8.0.1",
     "lint-staged": "12.4.1",
     "mdsvex": "0.10.6",
@@ -64,6 +65,10 @@
     "prettier": "2.7.1",
     "prettier-plugin-packagejson": "2.2.18",
     "prettier-plugin-tailwindcss": "0.1.13",
+    "rehype-stringify": "9.0.3",
+    "remark-frontmatter": "4.0.1",
+    "remark-parse": "10.0.1",
+    "remark-rehype": "10.1.0",
     "stylelint": "14.9.1",
     "svelte": "3.49.0",
     "svelte-check": "2.8.0",
@@ -73,6 +78,7 @@
     "tailwindcss-opentype": "1.0.0",
     "tslib": "2.4.0",
     "typescript": "4.7.4",
+    "unified": "10.1.2",
     "vite": "3.0.4"
   }
 }
