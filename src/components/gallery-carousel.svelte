@@ -1,19 +1,25 @@
 <script>
+import { fade } from 'svelte/transition'
+
 import ImageLens from './image-lens.svelte'
 
+export let ref
 export let images
-// export let isOpen = false
 export let onClose
 </script>
 
-<div class="fixed inset-0 z-[99] duration-200">
+<div
+	bind:this={ref}
+	class="fixed inset-0 z-[99] duration-200"
+	transition:fade={{ duration: 150 }}
+>
 	<div
-		class="fixed inset-0 z-[99] bg-grey-900 bg-opacity-50 backdrop-blur firefox:bg-opacity-80 transition"
+		class="fixed inset-0 z-[99] bg-grey-900 bg-opacity-50 backdrop-blur transition firefox:bg-opacity-80"
 	/>
 	<div class="zoom">
 		{#each images as image, index}
 			<button
-				class="flex items-center justify-center p-2 md:p-4 xl:p-8 snap-center"
+				class="flex snap-center items-center justify-center p-2 md:p-4 xl:p-8"
 				type="button"
 				data-index={index}
 				on:click={onClose(index)}
