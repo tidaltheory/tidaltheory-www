@@ -56,7 +56,7 @@ const webpSet = () => {
 
 function reveal(event: Event) {
 	// event.target.classList.toggle('opacity-0')
-	console.log('LOADED')
+	// console.log('LOADED')
 	;(event.target as HTMLElement).parentElement?.classList.toggle('opacity-0')
 	// event.target.animate({
 	//         transform: ["scale(.9)", "none"],
@@ -70,7 +70,7 @@ function reveal(event: Event) {
 </script>
 
 <picture
-	class="max-h-full transition-opacity duration-300 opacity-0"
+	class="max-h-full opacity-0 transition-opacity duration-300"
 	width={imageObject.dimensions.width}
 	height={imageObject.dimensions.height}
 	style:aspectRatio={ratio}
@@ -79,7 +79,7 @@ function reveal(event: Event) {
 	{#if hasAvif}<source srcset={avifSet()} type="image/avif" />{/if}
 	{#if hasWebp}<source srcset={webpSet()} type="image/webp" />{/if}
 	<img
-		class="w-full h-full max-h-full object-contain"
+		class="h-full max-h-full w-full object-contain"
 		src={getPath(imageObject.path)}
 		srcset={imgSet()}
 		width={imageObject.dimensions.width}

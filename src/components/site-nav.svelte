@@ -11,19 +11,19 @@ function toggleMenu() {
 </script>
 
 <div class="fixed top-0 z-50 w-screen md:w-auto">
-	<div class="relative z-10 h-16 md:h-screen px-8 py-4 md:p-6 bg-grey-900">
-		<div class="md:absolute flex justify-between">
+	<div class="relative z-10 h-16 bg-grey-900 px-8 py-4 md:h-screen md:p-6">
+		<div class="flex justify-between md:absolute">
 			<div class="flex">
 				<a href="/">
-					<div class="w-8 h-8 rounded bg-cyan-600" />
+					<div class="h-8 w-8 rounded bg-cyan-600" />
 				</a>
 			</div>
 			<div class="flex md:hidden">
 				<button
-					class="p-0 border-none rounded bg-transparent"
+					class="bg-transparent rounded border-none p-0"
 					on:click={toggleMenu}
 				>
-					<div class="w-16 h-8 rounded bg-grey-600" />
+					<div class="h-8 w-16 rounded bg-grey-600" />
 				</button>
 			</div>
 		</div>
@@ -31,10 +31,10 @@ function toggleMenu() {
 		<div class="flex h-full place-items-center">
 			<nav class="hidden md:block">
 				<div class="grid gap-8">
-					<SiteNavItem href="/work/" />
+					<SiteNavItem href="/about/" />
 					<SiteNavItem href="/projects/" />
 					<SiteNavItem href="/photos/" />
-					<SiteNavItem href="/about/" />
+					<!-- <SiteNavItem href="/blog/" /> -->
 				</div>
 			</nav>
 		</div>
@@ -42,13 +42,13 @@ function toggleMenu() {
 	{#if isMenuOpen}
 		<div
 			v-show="isMenuOpen"
-			class="fixed w-screen h-screen"
+			class="fixed h-screen w-screen"
 			on:click={toggleMenu}
 		/>
 	{/if}
 	{#if isMenuOpen}
 		<div
-			class="absolute left-0 flex justify-end transition gap-4 w-full px-8 py-4 pb-8 bg-grey-900 bg-opacity-70 firefox:bg-opacity-90 backdrop-blur"
+			class="absolute left-0 flex w-full justify-end gap-4 bg-grey-900 bg-opacity-70 px-8 py-4 pb-8 backdrop-blur transition firefox:bg-opacity-90"
 			in:classes={{
 				duration: 200,
 				base: 'duration-200 ease-out',
@@ -61,10 +61,10 @@ function toggleMenu() {
 			}}
 		>
 			<div class="grid gap-8">
-				<SiteNavItem href="/work/">Work</SiteNavItem>
+				<SiteNavItem href="/about/">About</SiteNavItem>
 				<SiteNavItem href="/projects/">Projects</SiteNavItem>
 				<SiteNavItem href="/photos/">Photos</SiteNavItem>
-				<SiteNavItem href="/about/">About</SiteNavItem>
+				<!-- <SiteNavItem href="/blog/">Blog</SiteNavItem> -->
 			</div>
 		</div>
 	{/if}
