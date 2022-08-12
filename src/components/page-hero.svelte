@@ -18,7 +18,7 @@ let header
 			{#if $$slots.intro}
 				<div class="z-10 col-span-3 row-start-2 self-end xl:col-span-2">
 					<p
-						class="text-grey-100 font-sans text-lg leading-trim ss-01 md:text-2xl"
+						class="text-grey-100 font-sans text-lg leading-trim salt md:text-2xl"
 					>
 						<slot name="intro" />
 					</p>
