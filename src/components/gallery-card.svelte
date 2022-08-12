@@ -13,14 +13,16 @@ const thumbnails = cover.thumbnails ?? {}
 	{#if cover}
 		<div class="isolate">
 			<div
-				class="absolute inset-0 bg-grey-800 transition-opacity duration-200 group-hover:opacity-50"
-			/>
-			<div class="relative mix-blend-luminosity">
+				class="relative grayscale transition-all duration-200 group-hover:grayscale-0"
+			>
 				<ImageLens
 					image={thumbnails}
 					sizes={['cover-sm', 'cover-md', 'cover-lg']}
 				/>
 			</div>
+			<div
+				class="absolute inset-0 bg-grey-800 mix-blend-lighten transition-opacity duration-200 group-hover:opacity-0"
+			/>
 		</div>
 	{/if}
 	<div class="absolute inset-0 flex">
