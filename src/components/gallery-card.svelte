@@ -13,6 +13,10 @@ const thumbnails = cover.thumbnails ?? {}
 	{#if cover}
 		<div class="isolate">
 			<div
+				class="absolute inset-0"
+				style:background-color={cover.colors.dominant}
+			/>
+			<div
 				class="relative grayscale transition-all duration-200 group-hover:grayscale-0"
 			>
 				<ImageLens

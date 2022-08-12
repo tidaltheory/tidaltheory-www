@@ -10,9 +10,17 @@
         "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/e9838aa6.webp",
         "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/e9838aa6.avif"
       },
-      "colors": [
-        "rgb(40, 40, 40)"
-      ],
+      "colors": {
+        "palette": [
+          "#af4f4f",
+          "#2c1414",
+          "#d5a3a3",
+          "#6c7c8c",
+          "#3f4e35",
+          "#abb4cc"
+        ],
+        "dominant": "#3f4e35"
+      },
       "thumbnails": {
         "gallery-sm": {
           "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-sm.e9838aa6.jpg",
@@ -59,9 +67,17 @@
         "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/a4c517c1.webp",
         "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/a4c517c1.avif"
       },
-      "colors": [
-        "rgb(248, 248, 248)"
-      ],
+      "colors": {
+        "palette": [
+          "#d68e28",
+          "#3b270b",
+          "#d0bc9c",
+          "#87776a",
+          "#4c3c2e",
+          "#d0c2bb"
+        ],
+        "dominant": "#4c3c2e"
+      },
       "thumbnails": {
         "gallery-sm": {
           "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-sm.a4c517c1.jpg",
@@ -108,9 +124,17 @@
         "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/b14800f3.webp",
         "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/b14800f3.avif"
       },
-      "colors": [
-        "rgb(8, 8, 8)"
-      ],
+      "colors": {
+        "palette": [
+          "#d7a910",
+          "#881e04",
+          "#f5db83",
+          "#866a4b",
+          "#675333",
+          "#c5b289"
+        ],
+        "dominant": "#d7a910"
+      },
       "thumbnails": {
         "cover-sm": {
           "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-sm.b14800f3.jpg",
@@ -190,9 +214,17 @@
         "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/07027c75.webp",
         "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/07027c75.avif"
       },
-      "colors": [
-        "rgb(8, 8, 8)"
-      ],
+      "colors": {
+        "palette": [
+          "#808522",
+          "#505413",
+          "#e2caad",
+          "#91784e",
+          "#5e6030",
+          "#d6d5af"
+        ],
+        "dominant": "#5e6030"
+      },
       "thumbnails": {
         "gallery-sm": {
           "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-sm.07027c75.jpg",
@@ -239,9 +271,17 @@
         "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/09bdcc70.webp",
         "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/09bdcc70.avif"
       },
-      "colors": [
-        "rgb(8, 8, 8)"
-      ],
+      "colors": {
+        "palette": [
+          "#a89c48",
+          "#672a12",
+          "#fcf4ec",
+          "#618691",
+          "#50663a",
+          "#cbcbb3"
+        ],
+        "dominant": "#50663a"
+      },
       "thumbnails": {
         "gallery-sm": {
           "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-sm.09bdcc70.jpg",
@@ -288,9 +328,17 @@
         "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/da117499.webp",
         "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/da117499.avif"
       },
-      "colors": [
-        "rgb(232, 232, 232)"
-      ],
+      "colors": {
+        "palette": [
+          "#c2b446",
+          "#255074",
+          "#c1846d",
+          "#999858",
+          "#585932",
+          "#c9c9b2"
+        ],
+        "dominant": "#999858"
+      },
       "thumbnails": {
         "gallery-sm": {
           "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-sm.da117499.jpg",
@@ -337,9 +385,17 @@
         "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/90dd10ef.webp",
         "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/90dd10ef.avif"
       },
-      "colors": [
-        "rgb(8, 8, 8)"
-      ],
+      "colors": {
+        "palette": [
+          "#adbf3f",
+          "#4c541c",
+          "#d4dd9b",
+          "#8c9478",
+          "#45552b",
+          "#677226"
+        ],
+        "dominant": "#8c9478"
+      },
       "thumbnails": {
         "gallery-sm": {
           "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-sm.90dd10ef.jpg",
@@ -386,9 +442,17 @@
         "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/b73698fb.webp",
         "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/b73698fb.avif"
       },
-      "colors": [
-        "rgb(8, 8, 8)"
-      ],
+      "colors": {
+        "palette": [
+          "#3f3fbf",
+          "#04040c",
+          "#9b9bdd",
+          "#84847c",
+          "#44443c",
+          "#bebcb8"
+        ],
+        "dominant": "#bebcb8"
+      },
       "thumbnails": {
         "gallery-sm": {
           "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-sm.b73698fb.jpg",
@@ -435,9 +499,17 @@
         "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/5602817a.webp",
         "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/5602817a.avif"
       },
-      "colors": [
-        "rgb(24, 8, 8)"
-      ],
+      "colors": {
+        "palette": [
+          "#b08056",
+          "#6d2011",
+          "#d5c589",
+          "#8c846c",
+          "#49332c",
+          "#cfc6a6"
+        ],
+        "dominant": "#b08056"
+      },
       "thumbnails": {
         "gallery-sm": {
           "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-sm.5602817a.jpg",
@@ -484,9 +556,17 @@
         "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/6fdd89a0.webp",
         "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/6fdd89a0.avif"
       },
-      "colors": [
-        "rgb(8, 8, 8)"
-      ],
+      "colors": {
+        "palette": [
+          "#e4cc4c",
+          "#5e1a0b",
+          "#deca9f",
+          "#a07e5f",
+          "#5f402d",
+          "#c1ad8f"
+        ],
+        "dominant": "#5f402d"
+      },
       "thumbnails": {
         "gallery-sm": {
           "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-sm.6fdd89a0.jpg",

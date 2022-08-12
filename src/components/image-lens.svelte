@@ -12,7 +12,7 @@ const imageObject: ImageRecord = sizes ? image[sizes[0]] : image
 const hasAvif = !!imageObject.formats?.avif
 const hasWebp = !!imageObject.formats?.webp
 const ratio = imageObject.dimensions.width / imageObject.dimensions.height
-const placeholderColor = imageObject.colors?.[0]
+// const placeholderColor = color
 
 const imgSet = () => {
 	if (!sizes) return undefined
@@ -74,7 +74,6 @@ function reveal(event: Event) {
 	width={imageObject.dimensions.width}
 	height={imageObject.dimensions.height}
 	style:aspect-ratio={ratio}
-	style:background-color={placeholderColor}
 >
 	{#if hasAvif}<source srcset={avifSet()} type="image/avif" />{/if}
 	{#if hasWebp}<source srcset={webpSet()} type="image/webp" />{/if}
