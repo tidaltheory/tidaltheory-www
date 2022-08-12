@@ -11,7 +11,7 @@ function toggleMenu() {
 	isMenuOpen = !isMenuOpen
 }
 
-beforeNavigate(async () => toggleMenu())
+beforeNavigate(async () => (isMenuOpen = false))
 </script>
 
 <div class="fixed top-0 z-50 w-screen md:w-auto">
