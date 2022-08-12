@@ -7,7 +7,9 @@ node_modules
 ## GENERATED #########################################################
 .cache
 .nuxt
+.svelte-kit
 src/.temp
+build
 dist
 sw.*
 
