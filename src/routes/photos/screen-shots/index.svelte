@@ -19,10 +19,14 @@ import GalleryCard from '../../../components/gallery-card.svelte'
 export let galleries
 </script>
 
+<svelte:head>
+	<title>Screen Shots — Photos — Tidal Theory</title>
+</svelte:head>
+
 <article>
 	<PageIntro>Screen<br />Shots</PageIntro>
 	<PageSection>
-		<div class="grid md:grid-cols-2 gap-4 md:gap-12 xl:gap-16">
+		<div class="grid gap-4 md:grid-cols-2 md:gap-12 xl:gap-16">
 			{#each galleries as gallery}
 				<GalleryCard to="{gallery.path}/" cover={gallery.coverImage}>
 					{gallery.meta.title}

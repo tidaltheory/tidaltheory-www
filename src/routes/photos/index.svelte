@@ -19,6 +19,10 @@ import GalleryCard from '../../components/gallery-card.svelte'
 export let posts
 </script>
 
+<svelte:head>
+	<title>Photos — Tidal Theory</title>
+</svelte:head>
+
 <article>
 	<PageIntro>
 		Photos
@@ -28,7 +32,7 @@ export let posts
 		</svelte:fragment>
 	</PageIntro>
 	<PageSection>
-		<div class="grid md:grid-cols-2 gap-4 md:gap-12 xl:gap-16">
+		<div class="grid gap-4 md:grid-cols-2 md:gap-12 xl:gap-16">
 			{#each posts as gallery}
 				<GalleryCard to="{gallery.path}/" cover={gallery.coverImage}>
 					{gallery.meta.title}

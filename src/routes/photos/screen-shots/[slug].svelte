@@ -40,6 +40,13 @@ function handleCloseCarousel() {
 }
 </script>
 
+<svelte:head>
+	<title
+		>{article.title}
+		{article.subtitle} — Screen Shots — Photos — Tidal Theory</title
+	>
+</svelte:head>
+
 <article>
 	<PageIntro>
 		{article.title}

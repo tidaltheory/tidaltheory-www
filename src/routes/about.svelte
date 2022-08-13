@@ -4,6 +4,10 @@ import PageHero from '../components/page-hero.svelte'
 import MentionLink from '../components/mention-link.svelte'
 </script>
 
+<svelte:head>
+	<title>About — Tidal Theory</title>
+</svelte:head>
+
 <article>
 	<PageHero>
 		I’m<br />

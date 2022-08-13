@@ -2,6 +2,10 @@
 import PageHero from '../components/page-hero.svelte'
 </script>
 
+<svelte:head>
+	<title>Tidal Theory</title>
+</svelte:head>
+
 <article>
 	<PageHero>
 		Tidal<br />Theory
