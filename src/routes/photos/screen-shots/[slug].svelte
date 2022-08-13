@@ -2,11 +2,10 @@
 export const load = async ({ params, fetch }) => {
 	const res = await fetch(`/api/photos/screen-shots/${params.slug}.json`)
 	const { data } = await res.json()
-	const article = data
 
 	return {
 		props: {
-			article,
+			article: data,
 		},
 	}
 }
@@ -21,6 +20,9 @@ import LensGallery from '../../../components/lens-gallery.svelte'
 import GalleryCarousel from '../../../components/gallery-carousel.svelte'
 
 export let article
+
+const { title, subtitle, description, images, content } = article
+const fullTitle = subtitle ? [title, subtitle].join(' ') : title
 
 let carousel
 let isCarouselOpen = false
@@ -41,38 +43,37 @@ function handleCloseCarousel() {
 </script>
 
 <svelte:head>
-	<title
-		>{article.title}
-		{article.subtitle} — Screen Shots — Photos — Tidal Theory</title
-	>
+	<title>{fullTitle} — Screen Shots — Photos — Tidal Theory</title>
 </svelte:head>
 
 <article>
 	<PageIntro>
-		{article.title}
+		{title}
 
-		<svelte:fragment slot="subtitle">{article.subtitle}</svelte:fragment>
+		<svelte:fragment slot="subtitle"
+			>{#if subtitle}{subtitle}{/if}</svelte:fragment
+		>
 		<svelte:fragment slot="intro">
-			{@html article.description}
+			{@html description}
 		</svelte:fragment>
 	</PageIntro>
 	<PageSection>
 		<div class="grid gap-[10vh]">
 			<LensGallery
-				images={article.images}
+				{images}
 				isHidden={isCarouselOpen}
 				onOpen={handleOpenCarousel}
 			/>
 			{#if isCarouselOpen}
 				<GalleryCarousel
 					bind:ref={carousel}
-					images={article.images}
+					{images}
 					isOpen={isCarouselOpen}
 					onClose={handleCloseCarousel}
 				/>
 			{/if}
 			<div class="prose prose-invert md:prose-xl">
-				{@html article.content}
+				{@html content}
 			</div>
 		</div>
 	</PageSection>
