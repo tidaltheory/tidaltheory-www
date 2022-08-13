@@ -1,6 +1,7 @@
 const COVER_IMAGES = [
 	'**/tlou_20200124225047.jpg',
-	'**/tlou2_20200623211955.jpg'
+	'**/ac-origins_20200607204931.jpg',
+	'**/tlou2_20200623211955.jpg',
 ]
 
 export default {

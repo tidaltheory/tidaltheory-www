@@ -602,6 +602,837 @@
           }
         }
       }
+    },
+    "ac-origins_20200426202407": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/0e69e1e7.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/0e69e1e7.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/0e69e1e7.avif"
+      },
+      "colors": {
+        "palette": [
+          "#bd8f60",
+          "#843c18",
+          "#e1c48d",
+          "#668193",
+          "#5f4c36",
+          "#d3c1a7"
+        ],
+        "dominant": "#5f4c36"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/gallery-sm.0e69e1e7.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/gallery-sm.0e69e1e7.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/gallery-sm.0e69e1e7.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/gallery-md.0e69e1e7.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/gallery-md.0e69e1e7.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/gallery-md.0e69e1e7.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/gallery-lg.0e69e1e7.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/gallery-lg.0e69e1e7.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200426202407/gallery-lg.0e69e1e7.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20200516193557": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/76512c7a.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/76512c7a.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/76512c7a.avif"
+      },
+      "colors": {
+        "palette": [
+          "#739cc0",
+          "#1c344d",
+          "#84a4cc",
+          "#6881a6",
+          "#343a4e",
+          "#b2b4c2"
+        ],
+        "dominant": "#343a4e"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/gallery-sm.76512c7a.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/gallery-sm.76512c7a.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/gallery-sm.76512c7a.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/gallery-md.76512c7a.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/gallery-md.76512c7a.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/gallery-md.76512c7a.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/gallery-lg.76512c7a.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/gallery-lg.76512c7a.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200516193557/gallery-lg.76512c7a.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20200522215930": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/363e921e.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/363e921e.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/363e921e.avif"
+      },
+      "colors": {
+        "palette": [
+          "#3f7fb2",
+          "#133c60",
+          "#69a7ce",
+          "#9c7454",
+          "#2c3e4e",
+          "#c9af95"
+        ],
+        "dominant": "#133c60"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/gallery-sm.363e921e.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/gallery-sm.363e921e.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/gallery-sm.363e921e.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/gallery-md.363e921e.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/gallery-md.363e921e.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/gallery-md.363e921e.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/gallery-lg.363e921e.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/gallery-lg.363e921e.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200522215930/gallery-lg.363e921e.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20200607204537": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/32a18db6.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/32a18db6.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/32a18db6.avif"
+      },
+      "colors": {
+        "palette": [
+          "#ba4941",
+          "#123e67",
+          "#dca09c",
+          "#6c719a",
+          "#2d3348",
+          "#a59fb7"
+        ],
+        "dominant": "#123e67"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/gallery-sm.32a18db6.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/gallery-sm.32a18db6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/gallery-sm.32a18db6.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/gallery-md.32a18db6.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/gallery-md.32a18db6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/gallery-md.32a18db6.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/gallery-lg.32a18db6.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/gallery-lg.32a18db6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204537/gallery-lg.32a18db6.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20200607204931": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/eec2ef07.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/eec2ef07.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/eec2ef07.avif"
+      },
+      "colors": {
+        "palette": [
+          "#bc3c3c",
+          "#113e73",
+          "#d38157",
+          "#5f689d",
+          "#2f3a5c",
+          "#d2aebf"
+        ],
+        "dominant": "#113e73"
+      },
+      "thumbnails": {
+        "cover-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/cover-sm.eec2ef07.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 250
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/cover-sm.eec2ef07.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/cover-sm.eec2ef07.avif"
+          }
+        },
+        "cover-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/cover-md.eec2ef07.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 500
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/cover-md.eec2ef07.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/cover-md.eec2ef07.avif"
+          }
+        },
+        "cover-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/cover-lg.eec2ef07.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1000
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/cover-lg.eec2ef07.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/cover-lg.eec2ef07.avif"
+          }
+        },
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/gallery-sm.eec2ef07.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/gallery-sm.eec2ef07.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/gallery-sm.eec2ef07.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/gallery-md.eec2ef07.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/gallery-md.eec2ef07.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/gallery-md.eec2ef07.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/gallery-lg.eec2ef07.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/gallery-lg.eec2ef07.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200607204931/gallery-lg.eec2ef07.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20200610223303": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/56f43a04.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/56f43a04.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/56f43a04.avif"
+      },
+      "colors": {
+        "palette": [
+          "#b06d4e",
+          "#2d1c14",
+          "#d6b3a3",
+          "#76828c",
+          "#473028",
+          "#c4b09c"
+        ],
+        "dominant": "#76828c"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/gallery-sm.56f43a04.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/gallery-sm.56f43a04.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/gallery-sm.56f43a04.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/gallery-md.56f43a04.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/gallery-md.56f43a04.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/gallery-md.56f43a04.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/gallery-lg.56f43a04.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/gallery-lg.56f43a04.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200610223303/gallery-lg.56f43a04.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20200611202532": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/73ea0d7c.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/73ea0d7c.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/73ea0d7c.avif"
+      },
+      "colors": {
+        "palette": [
+          "#455d9f",
+          "#063c78",
+          "#a2b0d6",
+          "#978ba9",
+          "#314367",
+          "#2e3e6a"
+        ],
+        "dominant": "#455d9f"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/gallery-sm.73ea0d7c.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/gallery-sm.73ea0d7c.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/gallery-sm.73ea0d7c.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/gallery-md.73ea0d7c.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/gallery-md.73ea0d7c.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/gallery-md.73ea0d7c.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/gallery-lg.73ea0d7c.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/gallery-lg.73ea0d7c.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200611202532/gallery-lg.73ea0d7c.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20200618224723": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/f9dc61b5.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/f9dc61b5.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/f9dc61b5.avif"
+      },
+      "colors": {
+        "palette": [
+          "#b45425",
+          "#541c0c",
+          "#e8ad91",
+          "#5e51a4",
+          "#794a35",
+          "#c8b5a5"
+        ],
+        "dominant": "#794a35"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/gallery-sm.f9dc61b5.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/gallery-sm.f9dc61b5.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/gallery-sm.f9dc61b5.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/gallery-md.f9dc61b5.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/gallery-md.f9dc61b5.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/gallery-md.f9dc61b5.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/gallery-lg.f9dc61b5.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/gallery-lg.f9dc61b5.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224723/gallery-lg.f9dc61b5.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20200618224915": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/d8e09cbc.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/d8e09cbc.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/d8e09cbc.avif"
+      },
+      "colors": {
+        "palette": [
+          "#867978",
+          "#463f3e",
+          "#c0b9b8",
+          "#847974",
+          "#3e3331",
+          "#beb7b6"
+        ],
+        "dominant": "#beb7b6"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/gallery-sm.d8e09cbc.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/gallery-sm.d8e09cbc.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/gallery-sm.d8e09cbc.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/gallery-md.d8e09cbc.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/gallery-md.d8e09cbc.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/gallery-md.d8e09cbc.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/gallery-lg.d8e09cbc.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/gallery-lg.d8e09cbc.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200618224915/gallery-lg.d8e09cbc.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20200619155043": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/800628d5.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/800628d5.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/800628d5.avif"
+      },
+      "colors": {
+        "palette": [
+          "#cca434",
+          "#774620",
+          "#d3a67b",
+          "#a87e58",
+          "#603333",
+          "#a8b1c1"
+        ],
+        "dominant": "#d3a67b"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/gallery-sm.800628d5.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/gallery-sm.800628d5.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/gallery-sm.800628d5.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/gallery-md.800628d5.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/gallery-md.800628d5.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/gallery-md.800628d5.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/gallery-lg.800628d5.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/gallery-lg.800628d5.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20200619155043/gallery-lg.800628d5.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20201212203410": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/340df3a9.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/340df3a9.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/340df3a9.avif"
+      },
+      "colors": {
+        "palette": [
+          "#c67841",
+          "#7a5735",
+          "#d8bfa9",
+          "#5962a4",
+          "#3c3455",
+          "#dbc9c0"
+        ],
+        "dominant": "#7a5735"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/gallery-sm.340df3a9.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/gallery-sm.340df3a9.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/gallery-sm.340df3a9.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/gallery-md.340df3a9.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/gallery-md.340df3a9.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/gallery-md.340df3a9.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/gallery-lg.340df3a9.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/gallery-lg.340df3a9.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212203410/gallery-lg.340df3a9.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20201212205820": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/4e3792eb.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/4e3792eb.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/4e3792eb.avif"
+      },
+      "colors": {
+        "palette": [
+          "#437fbb",
+          "#132435",
+          "#9dbcdc",
+          "#626c84",
+          "#343c54",
+          "#aea79c"
+        ],
+        "dominant": "#343c54"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/gallery-sm.4e3792eb.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/gallery-sm.4e3792eb.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/gallery-sm.4e3792eb.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/gallery-md.4e3792eb.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/gallery-md.4e3792eb.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/gallery-md.4e3792eb.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/gallery-lg.4e3792eb.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/gallery-lg.4e3792eb.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212205820/gallery-lg.4e3792eb.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20201212215348": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/51c487b1.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/51c487b1.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/51c487b1.avif"
+      },
+      "colors": {
+        "palette": [
+          "#7f7f7f",
+          "#424242",
+          "#bcbcbc",
+          "#848484",
+          "#444444",
+          "#a6a6a6"
+        ],
+        "dominant": "#444444"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/gallery-sm.51c487b1.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/gallery-sm.51c487b1.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/gallery-sm.51c487b1.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/gallery-md.51c487b1.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/gallery-md.51c487b1.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/gallery-md.51c487b1.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/gallery-lg.51c487b1.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/gallery-lg.51c487b1.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201212215348/gallery-lg.51c487b1.avif"
+          }
+        }
+      }
+    },
+    "ac-origins_20201220220914": {
+      "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/5cd7435d.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/5cd7435d.webp",
+        "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/5cd7435d.avif"
+      },
+      "colors": {
+        "palette": [
+          "#a86f40",
+          "#84542c",
+          "#dcb881",
+          "#a57650",
+          "#68483a",
+          "#bc9464"
+        ],
+        "dominant": "#dcb881"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/gallery-sm.5cd7435d.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/gallery-sm.5cd7435d.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/gallery-sm.5cd7435d.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/gallery-md.5cd7435d.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/gallery-md.5cd7435d.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/gallery-md.5cd7435d.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/gallery-lg.5cd7435d.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/gallery-lg.5cd7435d.webp",
+            "avif": "static/media/screen-shots/assassins-creed-origins/ac-origins_20201220220914/gallery-lg.5cd7435d.avif"
+          }
+        }
+      }
     }
   }
 }
