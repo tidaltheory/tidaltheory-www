@@ -1,4 +1,4 @@
-<svg viewBox="0 0 24 24" fill="none" class="w-[1em] h-[1em] self-center">
+<svg viewBox="0 0 24 24" fill="none" class="h-[1em] w-[1em] self-center">
 	<path
 		fill="#00a6e9"
 		fill-rule="evenodd"

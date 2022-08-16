@@ -27,7 +27,7 @@ const logo = SITES[site].logo
 </script>
 
 <a
-	class="inline-flex items-baseline gap-1 px-1 bg-grey-700 hover:bg-grey-600 text-white rounded align-baseline"
+	class="inline-flex items-baseline gap-1 rounded bg-grey-700 px-1 align-baseline text-white hover:bg-grey-600"
 	{href}
 >
 	<svelte:component this={logo} />

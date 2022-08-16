@@ -14,10 +14,10 @@ export const load = async ({ params, fetch }) => {
 <script>
 import { tick } from 'svelte'
 
-import PageIntro from '../../../components/page-intro.svelte'
-import PageSection from '../../../components/page-section.svelte'
-import LensGallery from '../../../components/lens-gallery.svelte'
-import GalleryCarousel from '../../../components/gallery-carousel.svelte'
+import PageIntro from '$lib/components/page-intro.svelte'
+import PageSection from '$lib/components/page-section.svelte'
+import LensGallery from '$lib/components/lens-gallery.svelte'
+import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
 
 export let article
 

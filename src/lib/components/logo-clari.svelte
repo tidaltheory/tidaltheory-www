@@ -1,4 +1,4 @@
-<svg viewBox="0 0 24 24" fill="none" class="w-[1em] h-[1em] self-center">
+<svg viewBox="0 0 24 24" fill="none" class="h-[1em] w-[1em] self-center">
 	<path
 		fill="#00d7b8"
 		d="m21.81 6.416-6.443 1.75c.26 1.208.398 2.49.398 3.835 0 1.344-.139 2.625-.398 3.834l6.442 1.75c.412-1.745.629-3.658.629-5.583 0-1.926-.217-3.84-.629-5.586Z"

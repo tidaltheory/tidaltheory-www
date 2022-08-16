@@ -12,9 +12,9 @@ export const load = async ({ fetch }) => {
 </script>
 
 <script>
-import PageIntro from '../../../components/page-intro.svelte'
-import PageSection from '../../../components/page-section.svelte'
-import GalleryCard from '../../../components/gallery-card.svelte'
+import PageIntro from '$lib/components/page-intro.svelte'
+import PageSection from '$lib/components/page-section.svelte'
+import GalleryCard from '$lib/components/gallery-card.svelte'
 
 export let galleries
 </script>

@@ -1,5 +1,5 @@
 <script>
-import PageHero from '../components/page-hero.svelte'
+import PageHero from '$lib/components/page-hero.svelte'
 </script>
 
 <svelte:head>

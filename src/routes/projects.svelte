@@ -1,5 +1,5 @@
 <script>
-import PageIntro from '../components/page-intro.svelte'
+import PageIntro from '$lib/components/page-intro.svelte'
 </script>
 
 <svelte:head>
