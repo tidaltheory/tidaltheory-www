@@ -1,16 +1,3 @@
-<script context="module">
-export const load = async ({ params, fetch }) => {
-	const res = await fetch(`/api/photos/screen-shots/${params.slug}.json`)
-	const { data } = await res.json()
-
-	return {
-		props: {
-			article: data,
-		},
-	}
-}
-</script>
-
 <script>
 import { tick } from 'svelte'
 
@@ -19,10 +6,10 @@ import PageSection from '$lib/components/page-section.svelte'
 import LensGallery from '$lib/components/lens-gallery.svelte'
 import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
 
-export let article
-
-const { title, subtitle, description, images, content } = article
-const fullTitle = subtitle ? [title, subtitle].join(' ') : title
+/** @type {import('./$types').PageData} */
+export let data
+$: ({ title, subtitle, description, images, content } = data.json)
+$: fullTitle = subtitle ? [title, subtitle].join(' ') : title
 
 let carousel
 let isCarouselOpen = false

@@ -1,3 +1,4 @@
+import { json } from '@sveltejs/kit'
 import { readFile } from 'fs/promises'
 import { resolve } from 'path'
 
@@ -7,7 +8,7 @@ import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
 
-import { library } from '../../../../../content/imagemeta.json'
+import { library } from '../../../../../../content/imagemeta.json'
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export const GET = async ({ params }) => {
@@ -25,13 +26,9 @@ export const GET = async ({ params }) => {
 	let images = []
 	data.images.forEach((key) => images.push(library[key]))
 
-	return {
-		body: {
-			data: {
-				...data,
-				content: processedContent.value,
-				images,
-			},
-		},
-	}
+	return json({
+		...data,
+		content: processedContent.value,
+		images,
+	})
 }

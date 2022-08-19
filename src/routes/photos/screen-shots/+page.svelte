@@ -1,22 +1,11 @@
-<script context="module">
-export const load = async ({ fetch }) => {
-	const posts = await fetch('/api/screen-shots.json')
-	const allPosts = await posts.json()
-
-	return {
-		props: {
-			galleries: allPosts,
-		},
-	}
-}
-</script>
-
 <script>
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 import GalleryCard from '$lib/components/gallery-card.svelte'
 
-export let galleries
+/** @type {import('./$types').PageData} */
+export let data
+$: galleries = data.json
 </script>
 
 <svelte:head>

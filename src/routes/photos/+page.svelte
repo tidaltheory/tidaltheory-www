@@ -1,22 +1,12 @@
-<script context="module">
-export const load = async ({ fetch }) => {
-	const posts = await fetch('/api/photos.json')
-	const allPosts = await posts.json()
-
-	return {
-		props: {
-			posts: allPosts,
-		},
-	}
-}
-</script>
-
 <script>
 import PageSection from '$lib/components/page-section.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import GalleryCard from '$lib/components/gallery-card.svelte'
 
-export let posts
+// Suggestion (check code before using, and possibly convert to data.X access later):
+/** @type {import('./$types').PageData} */
+export let data
+$: posts = data.json
 </script>
 
 <svelte:head>
