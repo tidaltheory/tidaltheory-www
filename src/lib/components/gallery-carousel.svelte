@@ -1,6 +1,7 @@
 <script>
 import { fade } from 'svelte/transition'
 
+import ImageDetails from './image-details.svelte'
 import ImageLens from './image-lens.svelte'
 
 export let ref
@@ -18,15 +19,41 @@ export let onClose
 	/>
 	<div class="zoom">
 		{#each images as image, index}
-			<button
+			<div
 				class="flex snap-center items-center justify-center p-2 md:p-4 xl:p-8"
-				type="button"
 				data-index={index}
-				on:click={onClose(index)}
 			>
-				<ImageLens {image} />
-			</button>
+				<div class="relative">
+					<ImageLens {image} />
+					<div class="absolute bottom-0 left-0">
+						<ImageDetails id="image-{index}"
+							>Image title</ImageDetails
+						>
+					</div>
+				</div>
+			</div>
 		{/each}
+	</div>
+	<div class="absolute top-8 right-8 z-[100] flex">
+		<button
+			class="bg-transparent m-0 border-0 p-0 text-white"
+			type="button"
+			on:click={onClose()}
+		>
+			<svg
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+				class="h-6 w-6"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M6 18L18 6M6 6l12 12"
+				/>
+			</svg>
+		</button>
 	</div>
 </div>
 
@@ -37,7 +64,8 @@ export let onClose
 	left: 0;
 	z-index: 100;
 	display: grid;
-	grid: 100% / auto-flow 100%;
+	grid: 100% / auto-flow calc(100% - 80px);
+	align-content: center;
 	width: 100vw;
 	height: 100vh;
 	overflow: auto;
