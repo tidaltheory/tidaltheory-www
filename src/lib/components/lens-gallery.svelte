@@ -19,7 +19,6 @@ export let onOpen
 			<ImageLens
 				image={item.thumbnails}
 				sizes={['gallery-sm', 'gallery-md', 'gallery-lg']}
-				color={item.colors.dominant}
 			/>
 		</button>
 	{/each}
