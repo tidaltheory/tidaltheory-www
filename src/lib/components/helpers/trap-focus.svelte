@@ -1,9 +1,7 @@
 <script>
 import { onMount, onDestroy, tick } from 'svelte'
 
-export let initialFocusElement = ref.querySelector(
-	'[data-svelte-dialog-content]'
-)
+export let initialFocusElement = null
 
 let ref
 let tabbableChildren
