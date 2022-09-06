@@ -9,7 +9,7 @@ function toggleExpanded() {
 </script>
 
 <div class="">
-	<div class="absolute bottom-3 left-3 flex">
+	<div class="absolute bottom-3 left-3 z-10 flex">
 		<button
 			class="m-0 rounded border-0 bg-grey-900 bg-opacity-0 p-1 text-white hover:bg-opacity-50"
 			type="button"
@@ -33,7 +33,7 @@ function toggleExpanded() {
 		</button>
 	</div>
 	<div
-		class="bg-grey-900 bg-opacity-60 py-[22px] pr-6 pl-14 text-white"
+		class="bg-grey-900 bg-opacity-60 py-[22px] pr-6 pl-14 text-white backdrop-blur-sm"
 		class:hidden={!expanded}
 		{id}
 	>
