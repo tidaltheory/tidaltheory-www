@@ -1,13 +1,21 @@
-<script>
+<script lang="ts">
+import type { ImageRecord, ImageThumbnails } from '@tidaltheory/lens'
 import { fade } from 'svelte/transition'
 
 import ImageDetails from './image-details.svelte'
 import ImageLens from './image-lens.svelte'
 
 export let ref
-export let images
+export let images: Array<ImageRecord | ImageThumbnails>
 export let onClose
+
+function handleEscape(event: KeyboardEvent) {
+	if (event.key !== 'Escape') return
+	onClose()
+}
 </script>
+
+<svelte:window on:keydown={handleEscape} />
 
 <div
 	bind:this={ref}
@@ -25,7 +33,7 @@ export let onClose
 			>
 				<div class="relative">
 					<ImageLens {image} />
-					<div class="absolute bottom-0 left-0">
+					<div class="absolute right-0 bottom-0 left-0">
 						<ImageDetails id="image-{index}"
 							>Image title</ImageDetails
 						>

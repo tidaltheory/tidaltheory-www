@@ -6,7 +6,7 @@ function getPath(path: string = '') {
 }
 
 export let image: ImageRecord | ImageThumbnails
-export let sizes: Array<string>
+export let sizes: Array<string> | undefined = undefined
 
 const imageObject: ImageRecord = sizes ? image[sizes[0]] : image
 const hasAvif = !!imageObject.formats?.avif
