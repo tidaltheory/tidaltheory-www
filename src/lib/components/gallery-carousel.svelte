@@ -4,13 +4,14 @@ import { fade } from 'svelte/transition'
 import LockScroll from './helpers/lock-scroll.svelte'
 import Portal from './helpers/portal.svelte'
 import TrapFocus from './helpers/trap-focus.svelte'
+import IconButton from './icon-button.svelte'
 
 import ImageDetails from './image-details.svelte'
 import ImageLens from './image-lens.svelte'
 
 export let ref
 export let images: Array<ImageRecord | ImageThumbnails>
-export let onClose
+export let onClose: () => void
 
 function handleEscape(event: KeyboardEvent) {
 	if (event.key !== 'Escape') return
@@ -30,7 +31,7 @@ function handleEscape(event: KeyboardEvent) {
 			>
 				<div
 					class="fixed inset-0 z-[99] bg-grey-900 bg-opacity-50 backdrop-blur transition firefox:bg-opacity-80"
-					on:click|self|stopPropagation={onClose()}
+					on:click|self|stopPropagation={onClose}
 				/>
 				<div
 					class="zoom"
@@ -56,11 +57,7 @@ function handleEscape(event: KeyboardEvent) {
 					{/each}
 				</div>
 				<div class="absolute top-8 right-8 z-[100] flex">
-					<button
-						class="bg-transparent m-0 border-0 p-0 text-white"
-						type="button"
-						on:click={onClose()}
-					>
+					<IconButton on:click={onClose}>
 						<svg
 							fill="none"
 							viewBox="0 0 24 24"
@@ -74,7 +71,7 @@ function handleEscape(event: KeyboardEvent) {
 								d="M6 18L18 6M6 6l12 12"
 							/>
 						</svg>
-					</button>
+					</IconButton>
 				</div>
 			</div>
 		</LockScroll>

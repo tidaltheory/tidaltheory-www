@@ -1,4 +1,6 @@
 <script>
+import IconButton from './icon-button.svelte'
+
 export let id
 
 $: expanded = false
@@ -10,9 +12,7 @@ function toggleExpanded() {
 
 <div class="">
 	<div class="absolute bottom-3 left-3 z-10 flex">
-		<button
-			class="m-0 rounded border-0 bg-grey-900 bg-opacity-0 p-1 text-white hover:bg-opacity-50"
-			type="button"
+		<IconButton
 			aria-controls={id}
 			aria-expanded={expanded}
 			on:click={toggleExpanded}
@@ -30,7 +30,7 @@ function toggleExpanded() {
 					d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
 				/>
 			</svg>
-		</button>
+		</IconButton>
 	</div>
 	<div
 		class="bg-grey-900 bg-opacity-60 py-[22px] pr-6 pl-14 text-white backdrop-blur-sm"
