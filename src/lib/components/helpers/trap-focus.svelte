@@ -9,7 +9,9 @@ let firstTabbableChild
 let lastTabbableChild
 let returnFocusElem
 
-onMount(() => {
+onMount(async () => {
+	await tick()
+
 	returnFocusElem = document.activeElement
 	tabbableChildren = [...ref.querySelectorAll('*')].filter(
 		(node) => node.tabIndex >= 0
