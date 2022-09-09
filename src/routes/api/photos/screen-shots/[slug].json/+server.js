@@ -6,6 +6,8 @@ import matter from 'gray-matter'
 import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
+import rehypeRaw from 'rehype-raw'
+import rehypeSanitize from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
 
 import { library } from '../../../../../../content/imagemeta.json'
@@ -19,7 +21,9 @@ export const GET = async ({ params }) => {
 	const { data, content } = matter(md)
 	const processedContent = await unified()
 		.use(remarkParse)
-		.use(remarkRehype)
+		.use(remarkRehype, { allowDangerousHtml: true })
+		.use(rehypeRaw)
+		.use(rehypeSanitize)
 		.use(rehypeStringify)
 		.process(content)
 
