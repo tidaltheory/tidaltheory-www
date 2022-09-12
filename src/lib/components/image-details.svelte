@@ -11,7 +11,7 @@ function toggleExpanded() {
 </script>
 
 <div class="">
-	<div class="absolute bottom-3 left-3 z-10 flex">
+	<div class="absolute bottom-2 left-2 z-10 flex md:bottom-3 md:left-3">
 		<IconButton
 			aria-controls={id}
 			aria-expanded={expanded}
@@ -33,11 +33,13 @@ function toggleExpanded() {
 		</IconButton>
 	</div>
 	<div
-		class="bg-grey-900 bg-opacity-60 py-[22px] pr-6 pl-14 text-white backdrop-blur-sm"
+		class="bg-grey-900 bg-opacity-60 py-5 pr-5 pl-12 text-white backdrop-blur-sm md:py-[22px] md:pr-6 md:pl-14"
 		class:hidden={!expanded}
 		{id}
 	>
-		<span class="font-semibold font-sans text-base leading-6 leading-trim">
+		<span
+			class="font-semibold font-sans text-sm leading-5 leading-trim md:text-base md:leading-6"
+		>
 			<slot />
 		</span>
 	</div>
