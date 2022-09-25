@@ -70,22 +70,22 @@ function reveal(event: Event) {
 </script>
 
 <picture
-	class="max-h-full opacity-0 transition-opacity duration-300"
-	width={imageObject.dimensions.width}
-	height={imageObject.dimensions.height}
+	class="h-full w-full opacity-0 transition-opacity duration-300"
 	style:aspect-ratio={ratio}
+	style:max-width={imageObject.dimensions.width}
+	style:max-height={imageObject.dimensions.height}
 >
 	{#if hasAvif}<source srcset={avifSet()} type="image/avif" />{/if}
 	{#if hasWebp}<source srcset={webpSet()} type="image/webp" />{/if}
 	<img
-		class="h-full max-h-full w-full object-contain"
+		class="h-full w-full object-contain"
 		src={getPath(imageObject.path)}
 		srcset={imgSet()}
 		width={imageObject.dimensions.width}
 		height={imageObject.dimensions.height}
 		loading="lazy"
 		decoding="async"
-		on:load|once={reveal}
+		on:load={reveal}
 		alt=""
 	/>
 </picture>
