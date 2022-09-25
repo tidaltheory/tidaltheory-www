@@ -1,6 +1,4 @@
 <script>
-import { tick } from 'svelte'
-
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 import LensGallery from '$lib/components/lens-gallery.svelte'
@@ -11,21 +9,17 @@ export let data
 $: ({ title, subtitle, description, images, content } = data.json)
 $: fullTitle = subtitle ? [title, subtitle].join(' ') : title
 
-let carousel
 let isCarouselOpen = false
+let initialIndex = 0
 
 async function handleOpenCarousel(index) {
 	isCarouselOpen = true
-	await tick()
-
-	let target = carousel.querySelector(`[data-index="${index}"]`)
-
-	await tick()
-	target.scrollIntoView({ block: 'center' })
+	initialIndex = index
 }
 
 function handleCloseCarousel() {
 	isCarouselOpen = false
+	initialIndex = 0
 }
 </script>
 
@@ -53,9 +47,8 @@ function handleCloseCarousel() {
 			/>
 			{#if isCarouselOpen}
 				<GalleryCarousel
-					bind:ref={carousel}
 					{images}
-					isOpen={isCarouselOpen}
+					{initialIndex}
 					onClose={handleCloseCarousel}
 				/>
 			{/if}

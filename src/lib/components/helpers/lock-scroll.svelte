@@ -29,6 +29,7 @@ onMount(() => {
 		body.style.position = ''
 		body.style.overflow = ''
 		body.style.paddingRight = ''
+		body.style.top = ''
 		window.scrollTo(0, scrollY)
 	}
 })
