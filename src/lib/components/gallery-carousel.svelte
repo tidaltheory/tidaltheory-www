@@ -53,13 +53,15 @@ function handleEscape(event: KeyboardEvent) {
 						class="flex snap-center items-center justify-center p-2 md:p-4 xl:p-8"
 						data-index={index}
 					>
-						<div class="relative">
+						<div class="group relative">
 							<ImageLens {image} lazyLoad={false} />
-							<div class="absolute right-0 bottom-0 left-0">
-								<ImageDetails id="image-{index}"
-									>Image title</ImageDetails
-								>
-							</div>
+							{#if image.meta}
+								<div class="absolute right-0 bottom-0 left-0">
+									<ImageDetails id="image-{index}"
+										>Image title</ImageDetails
+									>
+								</div>
+							{/if}
 						</div>
 					</div>
 				{/each}
