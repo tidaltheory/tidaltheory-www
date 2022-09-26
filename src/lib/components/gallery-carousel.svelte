@@ -42,7 +42,7 @@ function handleEscape(event: KeyboardEvent) {
 				on:click|self|stopPropagation={onClose}
 			/>
 			<div
-				class="zoom"
+				class="zoom pointer-events-none"
 				aria-modal="true"
 				role="dialog"
 				data-svelte-dialog-content
@@ -53,7 +53,7 @@ function handleEscape(event: KeyboardEvent) {
 						class="flex snap-center items-center justify-center p-2 md:p-4 xl:p-8"
 						data-index={index}
 					>
-						<div class="group relative">
+						<div class="group pointer-events-auto relative">
 							<ImageLens {image} lazyLoad={false} />
 							{#if image.meta}
 								<div class="absolute right-0 bottom-0 left-0">
