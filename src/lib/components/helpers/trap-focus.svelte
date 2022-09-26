@@ -26,7 +26,7 @@ onMount(async () => {
 		} else {
 			const initialFocusElem =
 				ref.querySelector('[autofocus]') ||
-				firstTabbableChild ||
+				// firstTabbableChild ||
 				ref.querySelector('[data-svelte-dialog-content]')
 
 			initialFocusElem.focus()
