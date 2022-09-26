@@ -1,5 +1,6 @@
 <script lang="ts">
 import type { ImageRecord, ImageThumbnails } from '@tidaltheory/lens'
+import { onMount } from 'svelte'
 
 function getPath(path: string = '') {
 	return path.replace(/^static/, '')
@@ -8,6 +9,8 @@ function getPath(path: string = '') {
 export let image: ImageRecord | ImageThumbnails
 export let sizes: Array<string> | undefined = undefined
 export let lazyLoad = true
+
+let imgElement: HTMLImageElement | null = null
 
 const imageObject: ImageRecord = sizes ? image[sizes[0]] : image
 const hasAvif = !!imageObject.formats?.avif
@@ -55,10 +58,10 @@ const webpSet = () => {
 	return set.join(',')
 }
 
-function reveal(event: Event) {
+function reveal(target: HTMLImageElement) {
 	// event.target.classList.toggle('opacity-0')
 	// console.log('LOADED')
-	;(event.target as HTMLElement).parentElement?.classList.toggle('opacity-0')
+	target.parentElement?.classList.remove('opacity-0')
 	// event.target.animate({
 	//         transform: ["scale(.9)", "none"],
 	//         opacity: [0, 1],
@@ -68,6 +71,10 @@ function reveal(event: Event) {
 	// })
 	// cubic-bezier(.165,.84,.44,1)
 }
+
+onMount(() => {
+	if (imgElement?.complete) reveal(imgElement)
+})
 </script>
 
 <picture
@@ -79,6 +86,7 @@ function reveal(event: Event) {
 	{#if hasAvif}<source srcset={avifSet()} type="image/avif" />{/if}
 	{#if hasWebp}<source srcset={webpSet()} type="image/webp" />{/if}
 	<img
+		bind:this={imgElement}
 		class="h-full w-full object-contain"
 		src={getPath(imageObject.path)}
 		srcset={imgSet()}
@@ -86,7 +94,7 @@ function reveal(event: Event) {
 		height={imageObject.dimensions.height}
 		loading={lazyLoad ? 'lazy' : undefined}
 		decoding="async"
-		on:load={reveal}
+		use:reveal
 		alt=""
 	/>
 </picture>
