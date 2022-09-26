@@ -54,7 +54,7 @@ function handleEscape(event: KeyboardEvent) {
 						data-index={index}
 					>
 						<div class="relative">
-							<ImageLens {image} />
+							<ImageLens {image} lazyLoad={false} />
 							<div class="absolute right-0 bottom-0 left-0">
 								<ImageDetails id="image-{index}"
 									>Image title</ImageDetails

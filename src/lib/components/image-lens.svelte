@@ -7,6 +7,7 @@ function getPath(path: string = '') {
 
 export let image: ImageRecord | ImageThumbnails
 export let sizes: Array<string> | undefined = undefined
+export let lazyLoad = true
 
 const imageObject: ImageRecord = sizes ? image[sizes[0]] : image
 const hasAvif = !!imageObject.formats?.avif
@@ -83,7 +84,7 @@ function reveal(event: Event) {
 		srcset={imgSet()}
 		width={imageObject.dimensions.width}
 		height={imageObject.dimensions.height}
-		loading="lazy"
+		loading={lazyLoad ? 'lazy' : undefined}
 		decoding="async"
 		on:load={reveal}
 		alt=""
