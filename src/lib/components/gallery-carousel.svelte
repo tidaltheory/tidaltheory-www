@@ -39,10 +39,9 @@ function handleEscape(event: KeyboardEvent) {
 		>
 			<div
 				class="fixed inset-0 z-[99] bg-grey-900 bg-opacity-50 backdrop-blur transition"
-				on:click|self|stopPropagation={onClose}
 			/>
 			<div
-				class="zoom pointer-events-none"
+				class="zoom"
 				aria-modal="true"
 				role="dialog"
 				data-svelte-dialog-content
@@ -52,8 +51,9 @@ function handleEscape(event: KeyboardEvent) {
 					<div
 						class="flex snap-center items-center justify-center p-2 md:p-4 xl:p-8"
 						data-index={index}
+						on:click|self|stopPropagation={onClose}
 					>
-						<div class="group pointer-events-auto relative">
+						<div class="group relative">
 							<ImageLens {image} lazyLoad={false} />
 							{#if image.meta}
 								<div class="absolute right-0 bottom-0 left-0">
