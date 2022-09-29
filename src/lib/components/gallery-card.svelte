@@ -11,7 +11,7 @@ const thumbnails = cover.thumbnails ?? {}
 
 <div class="group relative grid grid-rows-1 overflow-hidden bg-grey-700">
 	{#if cover}
-		<div class="isolate">
+		<div class="">
 			<div
 				class="absolute inset-0"
 				style:background-color={cover.colors.dominant}
@@ -35,7 +35,7 @@ const thumbnails = cover.thumbnails ?? {}
 			href={to}
 		>
 			<div
-				class="w-full bg-grey-900 bg-opacity-50 p-6 backdrop-blur firefox:bg-opacity-80 lg:p-10"
+				class="w-full bg-grey-900 bg-opacity-50 p-6 backdrop-blur lg:p-10"
 			>
 				<div
 					class="font-bold uppercase tracking-wide font-display text-2xl leading-trim lg:text-4xl"

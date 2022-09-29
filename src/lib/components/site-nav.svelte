@@ -1,6 +1,7 @@
 <script>
 import { beforeNavigate } from '$app/navigation'
 
+import { FOCUS_OUTLINE } from '$lib/classnames'
 import { classes } from '$lib/transitions'
 
 import SiteNavItem from './site-nav-item.svelte'
@@ -18,13 +19,13 @@ beforeNavigate(async () => (isMenuOpen = false))
 	<div class="relative z-10 h-16 bg-grey-900 px-8 py-4 md:h-screen md:p-6">
 		<div class="flex justify-between md:absolute">
 			<div class="flex">
-				<a href="/">
+				<a href="/" class="rounded {FOCUS_OUTLINE}">
 					<div class="h-8 w-8 rounded bg-cyan-600" />
 				</a>
 			</div>
 			<div class="flex md:hidden">
 				<button
-					class="bg-transparent rounded border-none p-0"
+					class="bg-transparent rounded border-none p-0 {FOCUS_OUTLINE}"
 					on:click={toggleMenu}
 				>
 					<div class="h-8 w-16 rounded bg-grey-600" />
@@ -48,7 +49,7 @@ beforeNavigate(async () => (isMenuOpen = false))
 	{/if}
 	{#if isMenuOpen}
 		<div
-			class="absolute left-0 flex w-full justify-end gap-4 bg-grey-900 bg-opacity-70 px-8 py-4 pb-8 backdrop-blur transition firefox:bg-opacity-90"
+			class="absolute left-0 flex w-full justify-end gap-4 bg-grey-900 bg-opacity-70 px-8 py-4 pb-8 backdrop-blur transition"
 			in:classes={{
 				duration: 200,
 				base: 'duration-200 ease-out',

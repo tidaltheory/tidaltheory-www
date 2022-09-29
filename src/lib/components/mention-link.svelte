@@ -1,4 +1,6 @@
 <script>
+import { FOCUS_OUTLINE } from '$lib/classnames'
+
 import LogoClari from './logo-clari.svelte'
 import LogoLift from './logo-lift.svelte'
 import LogoShowbie from './logo-showbie.svelte'
@@ -27,7 +29,7 @@ const logo = SITES[site].logo
 </script>
 
 <a
-	class="inline-flex items-baseline gap-1 rounded bg-grey-700 px-1 align-baseline text-white hover:bg-grey-600"
+	class="inline-flex items-baseline gap-1 rounded bg-grey-700 px-1 align-baseline text-white hover:bg-grey-600 {FOCUS_OUTLINE}"
 	{href}
 >
 	<svelte:component this={logo} />
