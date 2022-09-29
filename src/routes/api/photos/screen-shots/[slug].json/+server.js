@@ -7,7 +7,7 @@ import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeRaw from 'rehype-raw'
-import rehypeSanitize from 'rehype-sanitize'
+import rehypeSanitize, { defaultSchema } from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
 
 import { library } from '../../../../../../content/imagemeta.json'
@@ -23,7 +23,13 @@ export const GET = async ({ params }) => {
 		.use(remarkParse)
 		.use(remarkRehype, { allowDangerousHtml: true })
 		.use(rehypeRaw)
-		.use(rehypeSanitize)
+		.use(rehypeSanitize, {
+			...defaultSchema,
+			attributes: {
+				...defaultSchema.attributes,
+				span: [...(defaultSchema.attributes.span || []), ['className']],
+			},
+		})
 		.use(rehypeStringify)
 		.process(content)
 
