@@ -1,7 +1,9 @@
 ---
 title: The Last of Us
 subtitle: Remastered
-description: Returning to video games after not really playing anything for a few years with this game I’d heard about since it’s initial release on PlayStation 3 was a revelation — in terms of gameplay and story, but also my realisation that <span class="pull-double"></span><span class="push-double">“</span>photo mode” was a thing in games&nbsp;now.
+description: The game’s level of detail, both in environments and in characters, makes for a really rewarding photo&nbsp;mode.
+created: 2020-01-24
+updated: 2020-03-11
 cover: tlou_20200124225047
 images:
   - tlou_20200124204048
@@ -16,4 +18,4 @@ images:
   - tlou_20200311220925
 ---
 
-The game’s level of detail, both in environments and in characters, makes for a really rewarding photo mode. I was caught up in landscapes mostly, but started incorporating the characters more as I got used to it.
+This was my return to video games after not really playing anything for a few years. What a revelation — in terms of gameplay and story, but also my realisation that <span class="pull-double"></span><span class="push-double">“</span>photo mode” was a thing in games now. I was caught up in landscapes mostly, but started incorporating the characters more as I got used to it. 
