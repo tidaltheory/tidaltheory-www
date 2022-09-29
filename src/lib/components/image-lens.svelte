@@ -1,12 +1,16 @@
 <script lang="ts">
 import type { ImageRecord, ImageThumbnails } from '@tidaltheory/lens'
+import { onMount } from 'svelte'
 
 function getPath(path: string = '') {
 	return path.replace(/^static/, '')
 }
 
 export let image: ImageRecord | ImageThumbnails
-export let sizes: Array<string>
+export let sizes: Array<string> | undefined = undefined
+export let lazyLoad = true
+
+let imgElement: HTMLImageElement | null = null
 
 const imageObject: ImageRecord = sizes ? image[sizes[0]] : image
 const hasAvif = !!imageObject.formats?.avif
@@ -54,10 +58,10 @@ const webpSet = () => {
 	return set.join(',')
 }
 
-function reveal(event: Event) {
+function reveal(target: HTMLImageElement) {
 	// event.target.classList.toggle('opacity-0')
 	// console.log('LOADED')
-	;(event.target as HTMLElement).parentElement?.classList.toggle('opacity-0')
+	target.parentElement?.classList.remove('opacity-0')
 	// event.target.animate({
 	//         transform: ["scale(.9)", "none"],
 	//         opacity: [0, 1],
@@ -67,25 +71,30 @@ function reveal(event: Event) {
 	// })
 	// cubic-bezier(.165,.84,.44,1)
 }
+
+onMount(() => {
+	if (imgElement?.complete) reveal(imgElement)
+})
 </script>
 
 <picture
-	class="max-h-full opacity-0 transition-opacity duration-300"
-	width={imageObject.dimensions.width}
-	height={imageObject.dimensions.height}
+	class="h-full w-full opacity-0 transition-opacity duration-300"
 	style:aspect-ratio={ratio}
+	style:max-width={imageObject.dimensions.width}
+	style:max-height={imageObject.dimensions.height}
 >
 	{#if hasAvif}<source srcset={avifSet()} type="image/avif" />{/if}
 	{#if hasWebp}<source srcset={webpSet()} type="image/webp" />{/if}
 	<img
-		class="h-full max-h-full w-full object-contain"
+		bind:this={imgElement}
+		class="h-full w-full object-contain"
 		src={getPath(imageObject.path)}
 		srcset={imgSet()}
 		width={imageObject.dimensions.width}
 		height={imageObject.dimensions.height}
-		loading="lazy"
+		loading={lazyLoad ? 'lazy' : undefined}
 		decoding="async"
-		on:load|once={reveal}
+		use:reveal
 		alt=""
 	/>
 </picture>
