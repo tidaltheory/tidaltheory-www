@@ -1,4 +1,5 @@
 <script lang="ts">
+import { FOCUS_OUTLINE } from '$lib/classnames'
 import type { ImageRecord } from '@tidaltheory/lens'
 import ImageLens from './image-lens.svelte'
 
@@ -9,7 +10,7 @@ const thumbnails = cover.thumbnails ?? {}
 // const color = cover ? cover.colors?.[0] : 'rgb(57, 62, 65)'
 </script>
 
-<div class="group relative grid grid-rows-1 overflow-hidden bg-grey-700">
+<div class="group relative grid grid-rows-1 bg-grey-700">
 	{#if cover}
 		<div class="">
 			<div
@@ -30,23 +31,19 @@ const thumbnails = cover.thumbnails ?? {}
 		</div>
 	{/if}
 	<div class="absolute inset-0 flex">
-		<a
-			class="peer z-10 w-full self-end before:absolute before:inset-0"
-			href={to}
+		<div
+			class="flex w-full self-end bg-grey-900 bg-opacity-50 p-6 backdrop-blur lg:p-10"
 		>
-			<div
-				class="w-full bg-grey-900 bg-opacity-50 p-6 backdrop-blur lg:p-10"
+			<a
+				class="z-10 rounded-[1px] before:absolute before:inset-0 {FOCUS_OUTLINE} outline-offset-8"
+				href={to}
 			>
 				<div
 					class="font-bold uppercase tracking-wide font-display text-2xl leading-trim lg:text-4xl"
 				>
 					<slot />
 				</div>
-			</div>
-		</a>
-		<!-- <div
-			class="absolute inset-0 z-0 opacity-0 peer-hover:opacity-50"
-			style:background-color={color}
-		/> -->
+			</a>
+		</div>
 	</div>
 </div>
