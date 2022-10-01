@@ -14,7 +14,7 @@ function toggleExpanded() {
 <div class="">
 	<div class="absolute bottom-2 left-2 z-10 flex md:bottom-3 md:left-3">
 		<div
-			class="flex opacity-40 transition group-hover:opacity-100"
+			class="flex opacity-40 transition focus-within:opacity-100 group-hover:opacity-100"
 			class:opacity-100={expanded}
 		>
 			<IconButton
