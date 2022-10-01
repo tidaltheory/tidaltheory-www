@@ -6,15 +6,24 @@ created: 2020-01-24
 updated: 2020-03-11
 cover: tlou_20200124225047
 images:
-  - tlou_20200124204048
-  - tlou_20200124213815
-  - tlou_20200124225047
-  - tlou_20200127205447
-  - tlou_20200127205640
-  - tlou_20200127210246
-  - tlou_20200129210919
-  - tlou_20200309221545
-  - tlou_20200311220300
+  - tlou_20200124204048:
+      title: Welcome to Jackson County
+  - tlou_20200124213815:
+      title: The ranch house
+  - tlou_20200124225047:
+      title: Low visibility
+  - tlou_20200127205447:
+      title: Spring
+  - tlou_20200127205640:
+      title: “Don’t scare it”
+  - tlou_20200127210246:
+      title: Catch your breath
+  - tlou_20200129210919:
+      title: Where do we go from here?
+  - tlou_20200309221545:
+      title: Beast mode
+  - tlou_20200311220300:
+      title: An uncommon sight
   - tlou_20200311220925
 ---
 
