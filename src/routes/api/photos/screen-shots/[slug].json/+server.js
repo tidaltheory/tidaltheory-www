@@ -34,7 +34,20 @@ export const GET = async ({ params }) => {
 		.process(content)
 
 	let images = []
-	data.images.forEach((key) => images.push(library[key]))
+	data.images.forEach((key) => {
+		let image
+
+		if (typeof key === 'string') {
+			image = library[key]
+		} else {
+			let imgKey = key[Object.keys(key)]
+
+			image = library[Object.keys(key)]
+			image.meta = imgKey
+		}
+
+		images.push(image)
+	})
 
 	return json({
 		...data,

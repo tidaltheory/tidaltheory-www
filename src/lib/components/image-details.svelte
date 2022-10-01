@@ -2,6 +2,7 @@
 import IconButton from './icon-button.svelte'
 
 export let id
+export let meta
 
 $: expanded = false
 
@@ -12,7 +13,10 @@ function toggleExpanded() {
 
 <div class="">
 	<div class="absolute bottom-2 left-2 z-10 flex md:bottom-3 md:left-3">
-		<div class="flex opacity-40 transition group-hover:opacity-100">
+		<div
+			class="flex opacity-40 transition group-hover:opacity-100"
+			class:opacity-100={expanded}
+		>
 			<IconButton
 				aria-controls={id}
 				aria-expanded={expanded}
@@ -35,14 +39,22 @@ function toggleExpanded() {
 		</div>
 	</div>
 	<div
-		class="bg-grey-900 bg-opacity-60 py-5 pr-5 pl-12 text-white backdrop-blur-sm md:py-[22px] md:pr-6 md:pl-14"
+		class="grid gap-4 bg-grey-900 bg-opacity-60 py-5 pr-5 pl-12 text-white backdrop-blur-sm md:py-[22px] md:pr-6 md:pl-14"
 		class:hidden={!expanded}
 		{id}
 	>
-		<span
-			class="font-semibold font-sans text-sm leading-5 leading-trim md:text-base md:leading-6"
-		>
-			<slot />
-		</span>
+		{#if meta.title}
+			<span
+				class="font-semibold font-sans text-sm leading-5 leading-trim md:text-base md:leading-6"
+			>
+				{meta.title}
+			</span>
+		{/if}
+		{#if meta.description}
+			<span
+				class="font-sans text-sm leading-5 leading-trim md:text-base md:leading-6"
+				>{meta.description}</span
+			>
+		{/if}
 	</div>
 </div>

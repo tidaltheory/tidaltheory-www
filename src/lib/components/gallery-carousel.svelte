@@ -9,7 +9,11 @@ import IconButton from './icon-button.svelte'
 import ImageDetails from './image-details.svelte'
 import ImageLens from './image-lens.svelte'
 
-export let images: Array<ImageRecord | ImageThumbnails>
+type GalleryImage = (ImageRecord | ImageThumbnails) & {
+	meta: { title?: string; description?: string }
+}
+
+export let images: Array<GalleryImage>
 export let initialIndex: number
 export let onClose: () => void
 
@@ -57,9 +61,10 @@ function handleEscape(event: KeyboardEvent) {
 							<ImageLens {image} lazyLoad={false} />
 							{#if image.meta}
 								<div class="absolute right-0 bottom-0 left-0">
-									<ImageDetails id="image-{index}"
-										>Image title</ImageDetails
-									>
+									<ImageDetails
+										id="image-{index}"
+										meta={image.meta}
+									/>
 								</div>
 							{/if}
 						</div>
