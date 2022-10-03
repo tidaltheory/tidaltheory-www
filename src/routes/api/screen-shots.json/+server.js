@@ -18,6 +18,7 @@ export const GET = async () => {
 				meta: metadata,
 				path: postPath,
 				coverImage: library[metadata.cover],
+				updated: new Date(metadata.updated).getTime(),
 			}
 		})
 	)
