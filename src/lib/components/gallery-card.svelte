@@ -1,6 +1,7 @@
 <script lang="ts">
 import { FOCUS_OUTLINE } from '$lib/classnames'
 import type { ImageRecord } from '@tidaltheory/lens'
+import Heading from './heading.svelte'
 import ImageLens from './image-lens.svelte'
 
 export let to = '/'
@@ -36,11 +37,9 @@ const thumbnails = cover.thumbnails ?? {}
 			href={to}
 		>
 			<div class="bg-grey-900 bg-opacity-50 p-6 backdrop-blur lg:p-10">
-				<div
-					class="font-bold uppercase tracking-wide font-display text-2xl leading-trim lg:text-4xl"
-				>
+				<Heading level={4}>
 					<slot />
-				</div>
+				</Heading>
 			</div>
 		</a>
 	</div>

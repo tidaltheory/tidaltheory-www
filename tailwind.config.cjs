@@ -51,6 +51,18 @@ const config = {
 				unitsPerEm: 2816,
 			},
 		},
+		fontSize: {
+			base: '1rem', // 16
+			lg: '1.125rem', // 18
+			xl: '1.25rem', // 20
+			'2xl': '1.5rem', // 24
+			'3xl': '2rem', // 32
+			'4xl': '2.5rem', // 40
+			'5xl': '3rem', // 48
+			'6xl': '3.75rem', // 60
+			'7xl': '4.75rem', // 76
+			'8xl': '6.25rem', // 100
+		},
 		extend: {
 			typography: (theme) => ({
 				DEFAULT: {

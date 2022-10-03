@@ -23,7 +23,7 @@ let header
 				{#if $$slots.subtitle}
 					<Heading
 						subtitle
-						level="2"
+						level="3"
 						--delay="200ms"
 						shouldShow={intersecting}
 					>

@@ -8,8 +8,10 @@ const resolveHeadingElement = {
 	4: 'h4',
 }
 const headingStyle = {
-	title: 'text-5xl md:text-7xl xl:text-8xl text-white',
-	subtitle: 'text-2xl md:text-4xl xl:text-5xl text-grey-400',
+	1: 'text-5xl md:text-7xl xl:text-8xl',
+	2: 'text-4xl md:text-6xl xl:text-7xl',
+	3: 'text-3xl md:text-5xl xl:text-5xl',
+	4: 'text-2xl md:text-3xl xl:text-3xl',
 }
 
 export let shouldShow = undefined
@@ -17,7 +19,8 @@ export let level: keyof typeof resolveHeadingElement = 1
 export let subtitle = false
 
 const heading = resolveHeadingElement[level]
-const styleClass = subtitle ? headingStyle.subtitle : headingStyle.title
+const styleClass = headingStyle[level]
+const colorClass = subtitle ? 'text-grey-400' : 'text-white'
 
 let hasWrapped = false
 let show: boolean
@@ -54,7 +57,7 @@ onMount(() => wrapLines(element))
 <svelte:element
 	this={heading}
 	bind:this={element}
-	class="font-bold uppercase font-display leading-none leading-trim {styleClass}"
+	class="font-bold uppercase font-display leading-none leading-trim {styleClass} {colorClass}"
 	class:line-hidden={!show}
 >
 	<slot />
