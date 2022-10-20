@@ -1,6 +1,6 @@
 export const load = async ({ fetch }) => {
-	const res = await fetch('/api/screen-shots.json')
-	const data = await res.json()
+	const result = await fetch('/api/screen-shots.json')
+	const data = await result.json()
 
 	const recentGalleries = data
 		.sort((a, b) => b.updated - a.updated)

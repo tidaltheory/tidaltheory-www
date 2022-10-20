@@ -1,5 +1,7 @@
-import { parse } from 'path'
+import { parse } from 'node:path'
+
 import { json } from '@sveltejs/kit'
+
 import { library } from '../../../../content/imagemeta.json'
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
@@ -20,7 +22,7 @@ export const GET = async () => {
 		})
 	)
 
-	// const sortedPosts = allPosts.sort((a, b) => {
+	// Const sortedPosts = allPosts.sort((a, b) => {
 	// 	return new Date(b.meta.date) - new Date(a.meta.date)
 	// })
 

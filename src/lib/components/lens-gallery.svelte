@@ -1,8 +1,8 @@
 <script>
 import { FOCUS_OUTLINE } from '$lib/classnames'
 
-import MasonryGrid from './masonry-grid.svelte'
 import ImageLens from './image-lens.svelte'
+import MasonryGrid from './masonry-grid.svelte'
 
 export let images
 export let isHidden

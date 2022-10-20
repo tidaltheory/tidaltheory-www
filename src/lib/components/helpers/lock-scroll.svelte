@@ -5,10 +5,11 @@ onMount(() => {
 	const { body, documentElement: html } = document
 	const scrollBarWidth = window.innerWidth - html.clientWidth
 	const bodyPaddingRight =
-		parseInt(
-			window.getComputedStyle(body).getPropertyValue('padding-right')
+		Number.parseInt(
+			window.getComputedStyle(body).getPropertyValue('padding-right'),
+			10
 		) || 0
-	const scrollY = window.scrollY
+	const { scrollY } = window
 
 	/**
 	 * 1. Fixes a bug in iOS and desktop Safari where setting `overflow: hidden`

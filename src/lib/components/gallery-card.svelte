@@ -1,6 +1,8 @@
 <script lang="ts">
-import { FOCUS_OUTLINE } from '$lib/classnames'
 import type { ImageRecord } from '@tidaltheory/lens'
+
+import { FOCUS_OUTLINE } from '$lib/classnames'
+
 import Heading from './heading.svelte'
 import ImageLens from './image-lens.svelte'
 
@@ -8,7 +10,7 @@ export let to = '/'
 export let cover: ImageRecord
 
 const thumbnails = cover.thumbnails ?? {}
-// const color = cover ? cover.colors?.[0] : 'rgb(57, 62, 65)'
+// Const color = cover ? cover.colors?.[0] : 'rgb(57, 62, 65)'
 </script>
 
 <div class="group relative grid grid-rows-1 rounded-[1px] bg-grey-700">

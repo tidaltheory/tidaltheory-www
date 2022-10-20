@@ -81,7 +81,7 @@ const config = {
 		require('@tailwindcss/typography'),
 		require('tailwindcss-capsize')({ className: 'leading-trim' }),
 		require('tailwindcss-opentype'),
-		plugin(function ({ /* addUtilities, */ addVariant, e, postcss }) {
+		plugin(({ /* addUtilities, */ addVariant, e, postcss }) => {
 			addVariant('firefox', ({ container, separator }) => {
 				let isFirefoxRule = postcss.atRule({
 					name: '-moz-document',

@@ -1,8 +1,8 @@
 <script>
+import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
+import LensGallery from '$lib/components/lens-gallery.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
-import LensGallery from '$lib/components/lens-gallery.svelte'
-import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data

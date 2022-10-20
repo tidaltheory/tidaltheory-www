@@ -1,7 +1,7 @@
 <script>
-import PageSection from '$lib/components/page-section.svelte'
-import PageHero from '$lib/components/page-hero.svelte'
 import MentionLink from '$lib/components/mention-link.svelte'
+import PageHero from '$lib/components/page-hero.svelte'
+import PageSection from '$lib/components/page-section.svelte'
 </script>
 
 <svelte:head>

@@ -3,40 +3,39 @@ import { onMount, onDestroy, tick } from 'svelte'
 
 export let initialFocusElement = null
 
-let ref
+let reference
 let tabbableChildren
 let firstTabbableChild
 let lastTabbableChild
-let returnFocusElem
+let returnFocusElement
 
 onMount(async () => {
 	await tick()
 
-	returnFocusElem = document.activeElement
-	tabbableChildren = [...ref.querySelectorAll('*')].filter(
+	returnFocusElement = document.activeElement
+	tabbableChildren = [...reference.querySelectorAll('*')].filter(
 		(node) => node.tabIndex >= 0
 	)
 	firstTabbableChild = tabbableChildren[0]
 	lastTabbableChild = tabbableChildren[tabbableChildren.length - 1]
 
 	// Wait for children to mount before trying to focus `initialFocusElement`
-	tick().then(() => {
-		if (initialFocusElement) {
-			initialFocusElement.focus()
-		} else {
-			const initialFocusElem =
-				ref.querySelector('[autofocus]') ||
-				// firstTabbableChild ||
-				ref.querySelector('[data-svelte-dialog-content]')
+	await tick()
+	if (initialFocusElement) {
+		initialFocusElement.focus()
+	} else {
+		const initialFocusElement_ =
+			reference.querySelector('[autofocus]') ||
+			// FirstTabbableChild ||
+			reference.querySelector('[data-svelte-dialog-content]')
 
-			initialFocusElem.focus()
-		}
-	})
+		initialFocusElement_.focus()
+	}
 })
 
 onDestroy(() => {
-	if (returnFocusElem) {
-		returnFocusElem.focus()
+	if (returnFocusElement) {
+		returnFocusElement.focus()
 	}
 })
 
@@ -53,17 +52,15 @@ const handleKeydown = (event) => {
 			event.preventDefault()
 			lastTabbableChild.focus()
 		}
-	} else {
-		if (document.activeElement === lastTabbableChild) {
-			event.preventDefault()
-			firstTabbableChild.focus()
-		}
+	} else if (document.activeElement === lastTabbableChild) {
+		event.preventDefault()
+		firstTabbableChild.focus()
 	}
 }
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
 
-<div bind:this={ref}>
+<div bind:this={reference}>
 	<slot />
 </div>

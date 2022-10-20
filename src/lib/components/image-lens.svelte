@@ -1,22 +1,24 @@
 <script lang="ts">
-import type { ImageRecord, ImageThumbnails } from '@tidaltheory/lens'
 import { onMount } from 'svelte'
+
+import type { ImageRecord, ImageThumbnails } from '@tidaltheory/lens'
 
 function getPath(path: string = '') {
 	return path.replace(/^static/, '')
 }
 
 export let image: ImageRecord | ImageThumbnails
+// eslint-disable-next-line no-undef-init
 export let sizes: Array<string> | undefined = undefined
 export let lazyLoad = true
 
 let imgElement: HTMLImageElement | null = null
 
 const imageObject: ImageRecord = sizes ? image[sizes[0]] : image
-const hasAvif = !!imageObject.formats?.avif
-const hasWebp = !!imageObject.formats?.webp
+const hasAvif = Boolean(imageObject.formats?.avif)
+const hasWebp = Boolean(imageObject.formats?.webp)
 const ratio = imageObject.dimensions.width / imageObject.dimensions.height
-// const placeholderColor = color
+// Const placeholderColor = color
 
 const imgSet = () => {
 	if (!sizes) return undefined
@@ -27,6 +29,7 @@ const imgSet = () => {
 			`${getPath(image[size].path)} ${image[size].dimensions.width}w`
 		)
 	}
+
 	return set.join(',')
 }
 
@@ -41,6 +44,7 @@ const avifSet = () => {
 			}w`
 		)
 	}
+
 	return set.join(',')
 }
 
@@ -55,14 +59,15 @@ const webpSet = () => {
 			}w`
 		)
 	}
+
 	return set.join(',')
 }
 
 function reveal(target: HTMLImageElement) {
-	// event.target.classList.toggle('opacity-0')
+	// Event.target.classList.toggle('opacity-0')
 	// console.log('LOADED')
 	target.parentElement?.classList.remove('opacity-0')
-	// event.target.animate({
+	// Event.target.animate({
 	//         transform: ["scale(.9)", "none"],
 	//         opacity: [0, 1],
 	// },{

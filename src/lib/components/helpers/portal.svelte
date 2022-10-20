@@ -1,7 +1,7 @@
 <script>
 import { onMount } from 'svelte'
 
-let ref
+let reference
 let portal
 
 onMount(() => {
@@ -10,16 +10,16 @@ onMount(() => {
 	 * into it.
 	 */
 	portal = document.createElement('div')
-	portal.setAttribute('data-svelte-portal', 'true')
-	document.body.appendChild(portal)
-	portal.appendChild(ref)
+	portal.dataset.sveltePortal = 'true'
+	document.body.append(portal)
+	portal.append(reference)
 
 	return () => {
-		document.body.removeChild(portal)
+		portal.remove()
 	}
 })
 </script>
 
-<div bind:this={ref}>
+<div bind:this={reference}>
 	<slot />
 </div>

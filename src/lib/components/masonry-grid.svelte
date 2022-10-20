@@ -2,97 +2,94 @@
 import { onMount, onDestroy, tick } from 'svelte'
 
 export let gapClass
-export let items = [] // pass in data if it's dynamically updated
+// Pass in data if it's dynamically updated
+export let items = []
 
 let grids = []
 let masonryElement
 
 export const refreshLayout = async () => {
-	grids.forEach(async (grid) => {
-		/* get the post relayout number of columns */
+	for (const grid of grids) {
+		// Grids.forEach(async (grid) => {
+		/* Get the post relayout number of columns */
 		let ncol = getComputedStyle(grid._el).gridTemplateColumns.split(
 			' '
 		).length
 
-		grid.items.forEach((c) => {
-			let new_h = c.getBoundingClientRect().height
+		for (const c of grid.items) {
+			let newHeight = c.getBoundingClientRect().height
 
-			if (new_h !== +c.dataset.h) {
-				c.dataset.h = new_h
+			if (newHeight !== Number(c.dataset.h)) {
+				c.dataset.h = newHeight
 				grid.mod++
 			}
-		})
+		}
 
-		/* if the number of columns has changed */
+		/* If the number of columns has changed */
 		if (grid.ncol !== ncol || grid.mod) {
-			/* update number of columns */
+			/* Update number of columns */
 			grid.ncol = ncol
-			/* revert to initial positioning, no margin */
-			grid.items.forEach((c) => c.style.removeProperty('margin-top'))
-			/* if we have more than one column */
+			/* Revert to initial positioning, no margin */
+			for (const c of grid.items) c.style.removeProperty('margin-top')
+			/* If we have more than one column */
 			if (grid.ncol > 1) {
-				grid.items.slice(ncol).forEach((c, i) => {
-					let prev_fin =
-							grid.items[i].getBoundingClientRect()
-								.bottom /* bottom edge of item above */,
-						curr_ini =
-							c.getBoundingClientRect()
-								.top /* top edge of current item */
+				for (const [index, c] of grid.items.slice(ncol).entries()) {
+					/* Bottom edge of item above */
+					let previousFinal =
+						grid.items[index].getBoundingClientRect().bottom
+					/* Top edge of current item */
+					let currentInitial = c.getBoundingClientRect().top
 
-					c.style.marginTop = `${prev_fin + grid.gap - curr_ini}px`
-				})
+					c.style.marginTop = `${
+						previousFinal + grid.gap - currentInitial
+					}px`
+				}
 			}
 
 			grid.mod = 0
 		}
-	})
+	}
 }
 
-const calcGrid = async (_masonryArr) => {
+const calcGrid = async (_masonryArray) => {
 	await tick()
 	if (
-		_masonryArr.length &&
-		getComputedStyle(_masonryArr[0]).gridTemplateRows !== 'masonry'
+		_masonryArray.length > 0 &&
+		getComputedStyle(_masonryArray[0]).gridTemplateRows !== 'masonry'
 	) {
-		grids = _masonryArr.map((grid) => {
-			return {
-				_el: grid,
-				gap: parseFloat(getComputedStyle(grid).gridRowGap),
-				items: [...grid.childNodes].filter(
-					(c) =>
-						c.nodeType === 1 &&
-						+getComputedStyle(c).gridColumnEnd !== -1
-				),
-				ncol: 0,
-				mod: 0,
-			}
-		})
-		refreshLayout() /* initial load */
+		grids = _masonryArray.map((grid) => ({
+			_el: grid,
+			gap: Number.parseFloat(getComputedStyle(grid).gridRowGap),
+			items: [...grid.childNodes].filter(
+				(c) =>
+					c.nodeType === 1 &&
+					Number(getComputedStyle(c).gridColumnEnd) !== -1
+			),
+			ncol: 0,
+			mod: 0,
+		}))
+		refreshLayout() /* Initial load */
 	}
 }
 
 let _window
 onMount(() => {
 	_window = window
-	_window.addEventListener('resize', refreshLayout, false) /* on resize */
+	_window.addEventListener('resize', refreshLayout, false)
 })
 onDestroy(() => {
-	if (_window) {
-		_window.removeEventListener(
-			'resize',
-			refreshLayout,
-			false
-		) /* on resize */
-	}
+	_window?.removeEventListener('resize', refreshLayout, false)
 })
 
 $: if (masonryElement) {
 	calcGrid([masonryElement])
 }
 
+// Update if items are changed
 $: if (items) {
-	// update if items are changed
-	masonryElement = masonryElement // refresh masonryElement
+	// Refresh masonryElement
+	// eslint-disable-next-line no-self-assign
+	masonryElement = masonryElement
 }
 </script>
 

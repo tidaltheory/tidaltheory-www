@@ -1,14 +1,15 @@
+import { readFile } from 'node:fs/promises'
+import { resolve } from 'node:path'
+
 import { json } from '@sveltejs/kit'
-import { readFile } from 'fs/promises'
-import { resolve } from 'path'
 
 import matter from 'gray-matter'
-import { unified } from 'unified'
-import remarkParse from 'remark-parse'
-import remarkRehype from 'remark-rehype'
 import rehypeRaw from 'rehype-raw'
 import rehypeSanitize, { defaultSchema } from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import { unified } from 'unified'
 
 import { library } from '../../../../../../content/imagemeta.json'
 
@@ -34,7 +35,7 @@ export const GET = async ({ params }) => {
 		.process(content)
 
 	let images = []
-	data.images.forEach((key) => {
+	for (const key of data.images) {
 		let image
 
 		if (typeof key === 'string') {
@@ -47,7 +48,7 @@ export const GET = async ({ params }) => {
 		}
 
 		images.push(image)
-	})
+	}
 
 	return json({
 		...data,

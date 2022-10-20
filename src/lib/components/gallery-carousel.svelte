@@ -1,7 +1,8 @@
 <script lang="ts">
-import type { ImageRecord, ImageThumbnails } from '@tidaltheory/lens'
 import { onMount, tick } from 'svelte'
 import { fade } from 'svelte/transition'
+
+import type { ImageRecord, ImageThumbnails } from '@tidaltheory/lens'
 
 import Portal from './helpers/portal.svelte'
 import TrapFocus from './helpers/trap-focus.svelte'

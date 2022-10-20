@@ -4,7 +4,7 @@ const COVER_IMAGES = [
 	'**/tlou2_20200623211955.jpg',
 ]
 
-export default {
+const config = {
 	store: 'content/imagemeta.json',
 	useFilenameDirectory: true,
 	thumbnails: [
@@ -16,3 +16,5 @@ export default {
 		{ 'gallery-lg': { files: 'static/media/**/*.jpg', width: 1200 } },
 	],
 }
+
+export default config

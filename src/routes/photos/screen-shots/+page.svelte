@@ -1,7 +1,7 @@
 <script>
+import GalleryCard from '$lib/components/gallery-card.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
-import GalleryCard from '$lib/components/gallery-card.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data

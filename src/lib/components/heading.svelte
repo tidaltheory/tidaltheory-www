@@ -14,6 +14,7 @@ const headingStyle = {
 	4: 'text-2xl md:text-3xl xl:text-3xl',
 }
 
+// eslint-disable-next-line no-undef-init
 export let shouldShow = undefined
 export let level: keyof typeof resolveHeadingElement = 1
 export let subtitle = false
@@ -33,8 +34,9 @@ $: show = shouldShow !== undefined && hasWrapped ? shouldShow : true
  * @todo Find a way to wrap each line without relying on `br` tags.
  */
 function wrapLines(element: HTMLHeadingElement) {
-	let childNodes = element.childNodes
+	let { childNodes } = element
 
+	// eslint-disable-next-line unicorn/no-array-for-each
 	childNodes.forEach((node, index) => {
 		if (node.nodeType === 3) {
 			let line = document.createElement('span')
@@ -42,8 +44,8 @@ function wrapLines(element: HTMLHeadingElement) {
 			line.classList.add('line', 'inline-block', 'will-change-transform')
 			line.setAttribute('style', `--delay: ${50 * index}ms`)
 
-			element.insertBefore(line, node)
-			element.removeChild(node)
+			node.before(line)
+			node.remove()
 		}
 	})
 

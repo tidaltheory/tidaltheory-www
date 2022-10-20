@@ -1,8 +1,8 @@
 <script>
 import ObserveIntersection from 'svelte-intersection-observer'
 
-import PageSection from './page-section.svelte'
 import Heading from './heading.svelte'
+import PageSection from './page-section.svelte'
 
 let header
 </script>

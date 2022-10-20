@@ -1,5 +1,7 @@
-import { parse } from 'path'
+import { parse } from 'node:path'
+
 import { json } from '@sveltejs/kit'
+
 import { library } from '../../../../content/imagemeta.json'
 
 /** @type {import('@sveltejs/kit').RequestHandler} */

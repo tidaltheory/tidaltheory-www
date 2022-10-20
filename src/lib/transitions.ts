@@ -1,8 +1,7 @@
-import type { TransitionConfig } from 'svelte/transition'
 import { linear } from 'svelte/easing'
+import type { TransitionConfig } from 'svelte/transition'
 
 export function classes(
-	// eslint-disable-next-line no-undef
 	node: Element,
 	{ delay, duration, base, from, to }
 ): TransitionConfig {
@@ -11,7 +10,7 @@ export function classes(
 	const toClasses = to ? to.split(' ') : []
 
 	if (baseClasses.length > 0 || fromClasses.length > 0) {
-		node.classList.add(...[...baseClasses, ...fromClasses])
+		node.classList.add(...baseClasses, ...fromClasses)
 	}
 
 	let updated = false
@@ -21,7 +20,7 @@ export function classes(
 		delay,
 		duration,
 		easing: linear,
-		tick: (t) => {
+		tick(t) {
 			const isStart = t !== 1 && t !== 0 && !updated
 			const isEnd = (t === 1 || t === 0) && updated && !completed
 
@@ -30,6 +29,7 @@ export function classes(
 				if (fromClasses.length > 0) {
 					node.classList.remove(...fromClasses)
 				}
+
 				if (toClasses.length > 0) {
 					node.classList.add(...toClasses)
 				}

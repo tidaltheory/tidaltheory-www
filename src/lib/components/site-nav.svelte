@@ -1,6 +1,5 @@
 <script>
 import { beforeNavigate } from '$app/navigation'
-
 import { FOCUS_OUTLINE } from '$lib/classnames'
 import { classes } from '$lib/transitions'
 
@@ -12,7 +11,9 @@ function toggleMenu() {
 	isMenuOpen = !isMenuOpen
 }
 
-beforeNavigate(async () => (isMenuOpen = false))
+beforeNavigate(async () => {
+	isMenuOpen = false
+})
 </script>
 
 <div class="fixed top-0 z-50 w-screen md:w-auto">

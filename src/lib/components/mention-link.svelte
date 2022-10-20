@@ -23,9 +23,7 @@ const SITES = {
 /** @type keyof typeof SITES */
 export let site
 
-const href = SITES[site].href
-
-const logo = SITES[site].logo
+const { href, logo } = SITES[site]
 </script>
 
 <a
