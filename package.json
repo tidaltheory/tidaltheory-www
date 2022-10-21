@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-netlify": "next",
-    "@sveltejs/adapter-static": "1.0.0-next.39",
+    "@sveltejs/adapter-static": "1.0.0-next.46",
     "@sveltejs/kit": "1.0.0-next.427",
     "@tailwindcss/typography": "0.5.7",
     "@tidaltheory/lens": "1.0.0",

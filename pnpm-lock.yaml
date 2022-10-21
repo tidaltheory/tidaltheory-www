@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@sveltejs/adapter-netlify': next
-  '@sveltejs/adapter-static': 1.0.0-next.39
+  '@sveltejs/adapter-static': 1.0.0-next.46
   '@sveltejs/kit': 1.0.0-next.427
   '@tailwindcss/typography': 0.5.7
   '@tidaltheory/lens': 1.0.0
@@ -43,7 +43,7 @@ specifiers:
 
 devDependencies:
   '@sveltejs/adapter-netlify': 1.0.0-next.81
-  '@sveltejs/adapter-static': 1.0.0-next.39
+  '@sveltejs/adapter-static': 1.0.0-next.46
   '@sveltejs/kit': 1.0.0-next.427_svelte@3.49.0+vite@3.0.4
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.1.8
   '@tidaltheory/lens': 1.0.0
@@ -499,8 +499,8 @@ packages:
       set-cookie-parser: 2.5.1
     dev: true
 
-  /@sveltejs/adapter-static/1.0.0-next.39:
-    resolution: {integrity: sha512-EeD39H6iEe0UEKnKxLFTZFZpi/FcX5xfbAvsMQ+B09aDZccpQmkJBSIo+4kq1JsQGSjwi/+J3aE9bR67R6CIyQ==}
+  /@sveltejs/adapter-static/1.0.0-next.46:
+    resolution: {integrity: sha512-8BlgwD3fjAbtUUgvREjrq5okZSXMTU/Qla99RhTqGaFo+uOrUzguKrXvjeaD4GzxQZdQUNyTX9hKT0V7tX6TMw==}
     dev: true
 
   /@sveltejs/kit/1.0.0-next.427_svelte@3.49.0+vite@3.0.4:
