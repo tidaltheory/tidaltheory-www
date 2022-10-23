@@ -28,6 +28,7 @@
   "prettier": {
     "plugins": [
       "./node_modules/prettier-plugin-packagejson",
+      "./node_modules/prettier-plugin-svelte",
       "./node_modules/prettier-plugin-tailwindcss"
     ],
     "semi": false,
@@ -64,6 +65,7 @@
     "postcss-preset-env": "7.7.2",
     "prettier": "2.7.1",
     "prettier-plugin-packagejson": "2.2.18",
+    "prettier-plugin-svelte": "2.8.0",
     "prettier-plugin-tailwindcss": "0.1.13",
     "rehype-raw": "6.1.1",
     "rehype-sanitize": "5.0.1",

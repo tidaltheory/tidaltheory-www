@@ -21,6 +21,7 @@ specifiers:
   postcss-preset-env: 7.7.2
   prettier: 2.7.1
   prettier-plugin-packagejson: 2.2.18
+  prettier-plugin-svelte: 2.8.0
   prettier-plugin-tailwindcss: 0.1.13
   rehype-raw: 6.1.1
   rehype-sanitize: 5.0.1
@@ -62,6 +63,7 @@ devDependencies:
   postcss-preset-env: 7.7.2_postcss@8.4.16
   prettier: 2.7.1
   prettier-plugin-packagejson: 2.2.18_prettier@2.7.1
+  prettier-plugin-svelte: 2.8.0_prettier@2.7.1+svelte@3.49.0
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
   rehype-raw: 6.1.1
   rehype-sanitize: 5.0.1
@@ -4862,6 +4864,16 @@ packages:
     dependencies:
       prettier: 2.7.1
       sort-package-json: 1.57.0
+    dev: true
+
+  /prettier-plugin-svelte/2.8.0_prettier@2.7.1+svelte@3.49.0:
+    resolution: {integrity: sha512-QlXv/U3bUszks3XYDPsk1fsaQC+fo2lshwKbcbO+lrSVdJ+40mB1BfL8OCAk1W9y4pJxpqO/4gqm6NtF3zNGCw==}
+    peerDependencies:
+      prettier: ^1.16.4 || ^2.0.0
+      svelte: ^3.2.0
+    dependencies:
+      prettier: 2.7.1
+      svelte: 3.49.0
     dev: true
 
   /prettier-plugin-tailwindcss/0.1.13_prettier@2.7.1:
