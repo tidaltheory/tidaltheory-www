@@ -82,7 +82,7 @@
     "tailwindcss-capsize": "3.0.2",
     "tailwindcss-opentype": "1.1.0",
     "tslib": "2.4.0",
-    "typescript": "4.7.4",
+    "typescript": "4.8.4",
     "unified": "10.1.2",
     "vite": "3.0.4"
   }
