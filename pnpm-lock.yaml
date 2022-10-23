@@ -5,7 +5,7 @@ specifiers:
   '@sveltejs/adapter-static': 1.0.0-next.46
   '@sveltejs/kit': 1.0.0-next.522
   '@tailwindcss/typography': 0.5.7
-  '@tidaltheory/lens': 1.0.0
+  '@tidaltheory/lens': 1.1.1
   '@zazen/eslint-config': 6.1.0
   '@zazen/stylelint-config': 3.0.0
   autoprefixer: 10.4.12
@@ -47,7 +47,7 @@ devDependencies:
   '@sveltejs/adapter-static': 1.0.0-next.46
   '@sveltejs/kit': 1.0.0-next.522_svelte@3.52.0+vite@3.1.8
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.1
-  '@tidaltheory/lens': 1.0.0
+  '@tidaltheory/lens': 1.1.1
   '@zazen/eslint-config': 6.1.0_eb2d5f96ad111e3f481afeb436cfc2fc
   '@zazen/stylelint-config': 3.0.0_stylelint@14.14.0
   autoprefixer: 10.4.12_postcss@8.4.18
@@ -575,20 +575,22 @@ packages:
       tailwindcss: 3.2.1
     dev: true
 
-  /@tidaltheory/lens/1.0.0:
-    resolution: {integrity: sha512-lgm2H3FvpIF3HUJ3mdXcoHHDD4KQd9F22fGSWXGnBqLG3jep0eQl6xfrfo0lceZwVXfy6z5+f1f2w7bdsk8axw==}
+  /@tidaltheory/lens/1.1.1:
+    resolution: {integrity: sha512-NHBWw9bt5CkC8RnbTpAWXv++ppbVgIeTvVwbOhXnzXeomQ8Na9Ls04D+HZyva8lOwFB29kHsPDtPz/xifW6iuw==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
+      exif-reader: 1.0.3
       globby: 13.1.2
       is-plain-object: 5.0.0
-      lowdb: 3.0.0
+      lowdb: 5.0.3
       multimatch: 6.0.0
       node-vibrant: 3.2.1-alpha.1
       ora: 6.1.2
       pkg-conf: 4.0.0
       sade: 1.8.1
-      sharp: 0.30.7
+      sharp: 0.31.1
+      ts-node-iptc: 1.0.11
     dev: true
 
   /@types/cookie/0.5.1:
@@ -2392,6 +2394,10 @@ packages:
     resolution: {integrity: sha512-c2bQfLNbMzLPmzQuOr8fy0csy84WmwnER81W88DzTp9CYNPJ6yzOj2EZAh9pywYpqHnshVLHQJ8WzldAyfY+Iw==}
     dev: true
 
+  /exif-reader/1.0.3:
+    resolution: {integrity: sha512-tWMBj1+9jUSibgR/kv/GQ/fkR0biaN9GEZ5iPdf7jFeH//d2bSzgPoaWf1OfMv4MXFD4upwvpCCyeMvSyLWSfA==}
+    dev: true
+
   /expand-template/2.0.3:
     resolution: {integrity: sha512-XYfuKMvj4O35f/pOXLObndIRvyQ+/+6AhODh+OKWj9S9498pHHn/IMszH+gt0fBCRWMNfk1ZSp5x3AifmnI2vg==}
     engines: {node: '>=6'}
@@ -2688,7 +2694,7 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       dir-glob: 3.0.1
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       ignore: 5.2.0
       merge2: 1.4.1
       slash: 4.0.0
@@ -3364,11 +3370,11 @@ packages:
       wrap-ansi: 6.2.0
     dev: true
 
-  /lowdb/3.0.0:
-    resolution: {integrity: sha512-9KZRulmIcU8fZuWiaM0d5e2/nPnrFyXkeXVpqT+MJS+vgbgOf1EbtvgQmba8HwUFgDl1oeZR6XqEJnkJmQdKmg==}
-    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+  /lowdb/5.0.3:
+    resolution: {integrity: sha512-26qk7jgHbLGytYoZOf7/hgcvksYkRpXSnCJTSbnXApDExMkOw/vjWyjDBba4HYbuZN23MIf4Dc8q99QIgzQthA==}
+    engines: {node: '>=14.16'}
     dependencies:
-      steno: 2.1.0
+      steno: 3.0.0
     dev: true
 
   /lru-cache/6.0.0:
@@ -5025,9 +5031,9 @@ packages:
     resolution: {integrity: sha512-1jeBGaKNGdEq4FgIrORu/N570dwoPYio8lSoYLWmX7sQ//0JY08Xh9o5pBcgmHQ/MbsYp/aZnOe1s1lIsbLprQ==}
     dev: true
 
-  /sharp/0.30.7:
-    resolution: {integrity: sha512-G+MY2YW33jgflKPTXXptVO28HvNOo9G3j0MybYAHeEmby+QuD2U98dT6ueht9cv/XDqZspSpIhoSW+BAKJ7Hig==}
-    engines: {node: '>=12.13.0'}
+  /sharp/0.31.1:
+    resolution: {integrity: sha512-GR8M1wBwOiFKLkm9JPun27OQnNRZdHfSf9VwcdZX6UrRmM1/XnOrLFTF0GAil+y/YK4E6qcM/ugxs80QirsHxg==}
+    engines: {node: '>=14.15.0'}
     requiresBuild: true
     dependencies:
       color: 4.2.3
@@ -5192,9 +5198,9 @@ packages:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: true
 
-  /steno/2.1.0:
-    resolution: {integrity: sha512-mauOsiaqTNGFkWqIfwcm3y/fq+qKKaIWf1vf3ocOuTdco9XoHCO2AGF1gFYXuZFSWuP38Q8LBHBGJv2KnJSXyA==}
-    engines: {node: ^14.13.1 || >=16.0.0}
+  /steno/3.0.0:
+    resolution: {integrity: sha512-uZtn7Ht9yXLiYgOsmo8btj4+f7VxyYheMt8g6F1ANjyqByQXEE2Gygjgenp3otHH1TlHsS4JAaRGv5wJ1wvMNw==}
+    engines: {node: '>=14.16'}
     dev: true
 
   /streamsearch/1.1.0:
@@ -5707,6 +5713,10 @@ packages:
 
   /trough/2.1.0:
     resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
+    dev: true
+
+  /ts-node-iptc/1.0.11:
+    resolution: {integrity: sha512-6f10Fae8EjQwEOY4OuIDEiRVZfwVnnWq9ipb7B7UB71diTEz4lgH8R5vAvRt4B9G15K3/Q/8XdA0OX4vC27Fxg==}
     dev: true
 
   /tsconfig-paths/3.14.1:

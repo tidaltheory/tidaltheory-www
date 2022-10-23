@@ -8,6 +8,7 @@ const COVER_IMAGES = [
 const config = {
 	store: 'content/imagemeta.json',
 	useFilenameDirectory: true,
+	includeMetadata: true,
 	thumbnails: [
 		{ 'cover-sm': { files: COVER_IMAGES, width: 300, height: 250 } },
 		{ 'cover-md': { files: COVER_IMAGES, width: 600, height: 500 } },

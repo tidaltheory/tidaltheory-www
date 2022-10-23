@@ -53,6 +53,9 @@ function handleEscape(event: KeyboardEvent) {
 				tabindex="-1"
 			>
 				{#each images as image, index}
+					<!-- eslint-disable-next-line svelte/no-unused-svelte-ignore -->
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- eslint-disable-next-line svelte/valid-compile -->
 					<div
 						class="flex snap-center items-center justify-center p-2 md:p-4 xl:p-8"
 						data-index={index}

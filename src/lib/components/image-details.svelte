@@ -45,15 +45,15 @@ function toggleExpanded() {
 	>
 		{#if meta.title}
 			<span
-				class="font-semibold font-sans text-sm leading-5 leading-trim md:text-base md:leading-6"
+				class="text-sm font-semibold font-sans leading-5 leading-trim md:text-base md:leading-6"
 			>
 				{meta.title}
 			</span>
 		{/if}
-		{#if meta.description}
+		{#if meta.caption}
 			<span
-				class="font-sans text-sm leading-5 leading-trim md:text-base md:leading-6"
-				>{meta.description}</span
+				class="text-sm font-sans leading-5 leading-trim md:text-base md:leading-6"
+				>{meta.caption}</span
 			>
 		{/if}
 	</div>
