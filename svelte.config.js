@@ -20,9 +20,6 @@ const config = {
 		adapter: adapter({
 			split: false,
 		}),
-		prerender: {
-			default: true,
-		},
 		trailingSlash: 'always',
 	},
 }

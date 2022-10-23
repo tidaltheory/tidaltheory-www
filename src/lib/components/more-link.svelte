@@ -5,7 +5,7 @@ export let href = '/'
 </script>
 
 <a
-	sveltekit:prefetch
+	data-sveltekit-prefetch
 	{href}
 	class="inline-flex rounded-[1px] {FOCUS_OUTLINE} outline-offset-8"
 >
