@@ -1,14 +1,14 @@
 {
   "library": {
     "tlou_20200124204048": {
-      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/e9838aa6.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/e7bbb96a.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/e9838aa6.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/e9838aa6.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/e7bbb96a.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/e7bbb96a.avif"
       },
       "colors": {
         "palette": [
@@ -23,424 +23,451 @@
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-sm.e9838aa6.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-sm.e7bbb96a.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-sm.e9838aa6.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-sm.e9838aa6.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-sm.e7bbb96a.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-sm.e7bbb96a.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-md.e9838aa6.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-md.e7bbb96a.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-md.e9838aa6.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-md.e9838aa6.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-md.e7bbb96a.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-md.e7bbb96a.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-lg.e9838aa6.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-lg.e7bbb96a.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-lg.e9838aa6.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-lg.e9838aa6.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-lg.e7bbb96a.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124204048/gallery-lg.e7bbb96a.avif"
           }
         }
+      },
+      "meta": {
+        "title": "Welcome to Jackson County",
+        "caption": "The Last of Us Remastered · Tommy’s Dam · Hydroelectric Dam"
       }
     },
     "tlou_20200124213815": {
-      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/a4c517c1.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/fa7ccb57.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/a4c517c1.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/a4c517c1.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/fa7ccb57.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/fa7ccb57.avif"
       },
       "colors": {
         "palette": [
           "#d68e28",
           "#3b270b",
-          "#d0bc9c",
+          "#f4fcf4",
           "#87776a",
-          "#4c3c2e",
-          "#d0c2bb"
+          "#4b3c2e",
+          "#cfbc9c"
         ],
-        "dominant": "#4c3c2e"
+        "dominant": "#4b3c2e"
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-sm.a4c517c1.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-sm.fa7ccb57.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-sm.a4c517c1.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-sm.a4c517c1.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-sm.fa7ccb57.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-sm.fa7ccb57.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-md.a4c517c1.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-md.fa7ccb57.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-md.a4c517c1.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-md.a4c517c1.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-md.fa7ccb57.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-md.fa7ccb57.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-lg.a4c517c1.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-lg.fa7ccb57.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-lg.a4c517c1.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-lg.a4c517c1.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-lg.fa7ccb57.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124213815/gallery-lg.fa7ccb57.avif"
           }
         }
+      },
+      "meta": {
+        "title": "The ranch house",
+        "caption": "The Last of Us Remastered · Tommy’s Dam · Ranch House"
       }
     },
     "tlou_20200124225047": {
-      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/b14800f3.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/0c7e979f.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/b14800f3.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/b14800f3.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/0c7e979f.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/0c7e979f.avif"
       },
       "colors": {
         "palette": [
           "#d7a910",
           "#881e04",
           "#f5db83",
-          "#866a4b",
-          "#675333",
+          "#866a4a",
+          "#473227",
           "#c5b289"
         ],
         "dominant": "#d7a910"
       },
       "thumbnails": {
         "cover-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-sm.b14800f3.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-sm.0c7e979f.jpg",
           "dimensions": {
             "width": 300,
             "height": 250
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-sm.b14800f3.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-sm.b14800f3.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-sm.0c7e979f.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-sm.0c7e979f.avif"
           }
         },
         "cover-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-md.b14800f3.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-md.0c7e979f.jpg",
           "dimensions": {
             "width": 600,
             "height": 500
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-md.b14800f3.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-md.b14800f3.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-md.0c7e979f.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-md.0c7e979f.avif"
           }
         },
         "cover-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-lg.b14800f3.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-lg.0c7e979f.jpg",
           "dimensions": {
             "width": 1200,
             "height": 1000
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-lg.b14800f3.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-lg.b14800f3.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-lg.0c7e979f.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/cover-lg.0c7e979f.avif"
           }
         },
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-sm.b14800f3.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-sm.0c7e979f.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-sm.b14800f3.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-sm.b14800f3.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-sm.0c7e979f.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-sm.0c7e979f.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-md.b14800f3.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-md.0c7e979f.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-md.b14800f3.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-md.b14800f3.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-md.0c7e979f.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-md.0c7e979f.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-lg.b14800f3.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-lg.0c7e979f.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-lg.b14800f3.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-lg.b14800f3.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-lg.0c7e979f.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200124225047/gallery-lg.0c7e979f.avif"
           }
         }
+      },
+      "meta": {
+        "title": "Low visibility",
+        "caption": "The Last of Us Remastered · The University · Go Big Horns"
       }
     },
     "tlou_20200127205447": {
-      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/07027c75.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/f69a9742.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/07027c75.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/07027c75.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/f69a9742.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/f69a9742.avif"
       },
       "colors": {
         "palette": [
-          "#808522",
-          "#505413",
-          "#e2caad",
-          "#91784e",
-          "#5e6030",
+          "#8f8e39",
+          "#525814",
+          "#e4caaa",
+          "#90784e",
+          "#5a5a30",
           "#d6d5af"
         ],
-        "dominant": "#5e6030"
+        "dominant": "#5a5a30"
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-sm.07027c75.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-sm.f69a9742.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-sm.07027c75.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-sm.07027c75.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-sm.f69a9742.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-sm.f69a9742.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-md.07027c75.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-md.f69a9742.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-md.07027c75.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-md.07027c75.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-md.f69a9742.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-md.f69a9742.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-lg.07027c75.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-lg.f69a9742.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-lg.07027c75.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-lg.07027c75.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-lg.f69a9742.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205447/gallery-lg.f69a9742.avif"
           }
         }
+      },
+      "meta": {
+        "title": "Spring",
+        "caption": "The Last of Us Remastered · Bus Depot · Highway Exit"
       }
     },
     "tlou_20200127205640": {
-      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/09bdcc70.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/95997165.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/09bdcc70.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/09bdcc70.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/95997165.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/95997165.avif"
       },
       "colors": {
         "palette": [
-          "#a89c48",
-          "#672a12",
-          "#fcf4ec",
-          "#618691",
-          "#50663a",
+          "#a89c47",
+          "#682a11",
+          "#fcfcf4",
+          "#618590",
+          "#4f663a",
           "#cbcbb3"
         ],
-        "dominant": "#50663a"
+        "dominant": "#4f663a"
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-sm.09bdcc70.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-sm.95997165.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-sm.09bdcc70.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-sm.09bdcc70.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-sm.95997165.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-sm.95997165.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-md.09bdcc70.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-md.95997165.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-md.09bdcc70.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-md.09bdcc70.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-md.95997165.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-md.95997165.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-lg.09bdcc70.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-lg.95997165.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-lg.09bdcc70.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-lg.09bdcc70.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-lg.95997165.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127205640/gallery-lg.95997165.avif"
           }
         }
+      },
+      "meta": {
+        "title": "“Don’t scare it”",
+        "caption": "The Last of Us Remastered · Bus Depot · Highway Exit"
       }
     },
     "tlou_20200127210246": {
-      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/da117499.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/990f96c6.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/da117499.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/da117499.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/990f96c6.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/990f96c6.avif"
       },
       "colors": {
         "palette": [
           "#c2b446",
-          "#255074",
+          "#254e74",
           "#c1846d",
-          "#999858",
+          "#989758",
           "#585932",
           "#c9c9b2"
         ],
-        "dominant": "#999858"
+        "dominant": "#989758"
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-sm.da117499.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-sm.990f96c6.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-sm.da117499.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-sm.da117499.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-sm.990f96c6.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-sm.990f96c6.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-md.da117499.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-md.990f96c6.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-md.da117499.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-md.da117499.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-md.990f96c6.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-md.990f96c6.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-lg.da117499.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-lg.990f96c6.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-lg.da117499.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-lg.da117499.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-lg.990f96c6.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200127210246/gallery-lg.990f96c6.avif"
           }
         }
+      },
+      "meta": {
+        "title": "Catch your breath"
       }
     },
     "tlou_20200129210919": {
-      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/90dd10ef.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/4ff19be2.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/90dd10ef.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/90dd10ef.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/4ff19be2.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/4ff19be2.avif"
       },
       "colors": {
         "palette": [
-          "#adbf3f",
-          "#4c541c",
-          "#d4dd9b",
-          "#8c9478",
+          "#b1c43a",
+          "#4c5419",
+          "#d6e098",
+          "#8c9477",
           "#45552b",
-          "#677226"
+          "#6a7523"
         ],
-        "dominant": "#8c9478"
+        "dominant": "#8c9477"
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-sm.90dd10ef.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-sm.4ff19be2.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-sm.90dd10ef.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-sm.90dd10ef.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-sm.4ff19be2.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-sm.4ff19be2.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-md.90dd10ef.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-md.4ff19be2.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-md.90dd10ef.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-md.90dd10ef.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-md.4ff19be2.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-md.4ff19be2.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-lg.90dd10ef.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-lg.4ff19be2.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-lg.90dd10ef.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-lg.90dd10ef.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-lg.4ff19be2.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200129210919/gallery-lg.4ff19be2.avif"
           }
         }
+      },
+      "meta": {
+        "title": "Where do we go from here?",
+        "caption": "The Last of Us Remastered · Jackson · Epilogue"
       }
     },
     "tlou_20200309221545": {
-      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/b73698fb.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/fe9bf5ea.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/b73698fb.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/b73698fb.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/fe9bf5ea.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/fe9bf5ea.avif"
       },
       "colors": {
         "palette": [
@@ -455,152 +482,164 @@
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-sm.b73698fb.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-sm.fe9bf5ea.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-sm.b73698fb.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-sm.b73698fb.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-sm.fe9bf5ea.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-sm.fe9bf5ea.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-md.b73698fb.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-md.fe9bf5ea.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-md.b73698fb.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-md.b73698fb.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-md.fe9bf5ea.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-md.fe9bf5ea.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-lg.b73698fb.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-lg.fe9bf5ea.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-lg.b73698fb.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-lg.b73698fb.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-lg.fe9bf5ea.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200309221545/gallery-lg.fe9bf5ea.avif"
           }
         }
+      },
+      "meta": {
+        "title": "Beast mode",
+        "caption": "The Last of Us Remastered: Left Behind · Mallrats · Funhouse"
       }
     },
     "tlou_20200311220300": {
-      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/5602817a.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/5b875f59.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/5602817a.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/5602817a.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/5b875f59.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/5b875f59.avif"
       },
       "colors": {
         "palette": [
           "#b08056",
           "#6d2011",
-          "#d5c589",
+          "#d4c589",
           "#8c846c",
-          "#49332c",
-          "#cfc6a6"
+          "#48342c",
+          "#d0c6a6"
         ],
         "dominant": "#b08056"
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-sm.5602817a.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-sm.5b875f59.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-sm.5602817a.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-sm.5602817a.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-sm.5b875f59.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-sm.5b875f59.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-md.5602817a.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-md.5b875f59.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-md.5602817a.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-md.5602817a.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-md.5b875f59.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-md.5b875f59.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-lg.5602817a.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-lg.5b875f59.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-lg.5602817a.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-lg.5602817a.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-lg.5b875f59.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220300/gallery-lg.5b875f59.avif"
           }
         }
+      },
+      "meta": {
+        "title": "An uncommon sight",
+        "caption": "The Last of Us Remastered: Left Behind · Fun and Games · Fun"
       }
     },
     "tlou_20200311220925": {
-      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/6fdd89a0.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/d63513dc.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/6fdd89a0.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/6fdd89a0.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/d63513dc.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/d63513dc.avif"
       },
       "colors": {
         "palette": [
-          "#e4cc4c",
-          "#5e1a0b",
+          "#e4cc44",
+          "#5d1a0c",
           "#deca9f",
-          "#a07e5f",
-          "#5f402d",
-          "#c1ad8f"
+          "#a17e5f",
+          "#2e404e",
+          "#c0ad90"
         ],
-        "dominant": "#5f402d"
+        "dominant": "#c0ad90"
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-sm.6fdd89a0.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-sm.d63513dc.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-sm.6fdd89a0.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-sm.6fdd89a0.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-sm.d63513dc.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-sm.d63513dc.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-md.6fdd89a0.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-md.d63513dc.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-md.6fdd89a0.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-md.6fdd89a0.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-md.d63513dc.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-md.d63513dc.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-lg.6fdd89a0.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-lg.d63513dc.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-lg.6fdd89a0.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-lg.6fdd89a0.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-lg.d63513dc.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-remastered/tlou_20200311220925/gallery-lg.d63513dc.avif"
           }
         }
+      },
+      "meta": {
+        "title": "Glow",
+        "caption": "The Last of Us Remastered: Left Behind · Fun and Games · Fun"
       }
     },
     "ac-origins_20200426202407": {
