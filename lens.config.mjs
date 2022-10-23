@@ -4,6 +4,7 @@ const COVER_IMAGES = [
 	'**/tlou2_20200623211955.jpg',
 ]
 
+/** @type {import('@tidaltheory/lens').LensConfig} */
 const config = {
 	store: 'content/imagemeta.json',
 	useFilenameDirectory: true,
