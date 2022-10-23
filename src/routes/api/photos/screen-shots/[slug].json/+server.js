@@ -44,7 +44,8 @@ export const GET = async ({ params }) => {
 			let imgKey = key[Object.keys(key)]
 
 			image = library[Object.keys(key)]
-			image.meta = imgKey
+
+			if (!image.meta) image.meta = imgKey
 		}
 
 		images.push(image)
