@@ -20,6 +20,9 @@ const config = {
 		adapter: adapter({
 			split: false,
 		}),
+		prerender: {
+			entries: ['*', '/photos/*'],
+		},
 		trailingSlash: 'always',
 	},
 }
