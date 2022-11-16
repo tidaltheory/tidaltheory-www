@@ -49,6 +49,8 @@ const config = {
 		],
 
 		'prefer-let/prefer-let': 'off',
+
+		yoda: 'off',
 	},
 	overrides: [
 		{
