@@ -3,6 +3,7 @@ import ObserveIntersection from 'svelte-intersection-observer'
 
 import Heading from './heading.svelte'
 import PageSection from './page-section.svelte'
+import SubHeading from './sub-heading.svelte'
 
 let header
 </script>
@@ -16,20 +17,12 @@ let header
 			<div
 				class="col-span-full grid gap-6 md:col-span-3 md:pt-8 xl:pt-12"
 			>
-				<Heading shouldShow={intersecting}>
+				<Heading shouldShow={intersecting} transitionIn>
 					<slot />
 				</Heading>
-
-				{#if $$slots.subtitle}
-					<Heading
-						subtitle
-						level="3"
-						--delay="200ms"
-						shouldShow={intersecting}
-					>
-						<slot name="subtitle" />
-					</Heading>
-				{/if}
+				<SubHeading level="3" shouldShow={intersecting}>
+					<slot name="subtitle" />
+				</SubHeading>
 			</div>
 			{#if $$slots.intro}
 				<div

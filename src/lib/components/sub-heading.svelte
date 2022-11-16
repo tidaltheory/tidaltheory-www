@@ -1,8 +1,4 @@
 <script lang="ts">
-import { onMount } from 'svelte'
-
-import { unwrapLines, wrapLines } from '$lib/wrap-lines'
-
 const resolveHeadingElement = {
 	1: 'h1',
 	2: 'h2',
@@ -17,56 +13,38 @@ const headingStyle = {
 }
 
 export let shouldShow: boolean | undefined
-export let transitionIn = false
 export let level: keyof typeof resolveHeadingElement = 1
 
 const heading = resolveHeadingElement[level]
 const styleClass = headingStyle[level]
 
-$: hasWrapped = false
-$: show = shouldShow !== undefined && hasWrapped ? shouldShow : true
+$: show = shouldShow === undefined ? true : shouldShow
 
 let element: HTMLHeadingElement
-onMount(() => {
-	if (transitionIn) wrapLines(element)
-	hasWrapped = true
-
-	const resizeObserver = new ResizeObserver((entries) => {
-		const entry = entries.at(0)
-
-		if (entry && transitionIn) {
-			unwrapLines(entry.target as HTMLHeadingElement)
-			wrapLines(entry.target as HTMLHeadingElement)
-		}
-	})
-
-	resizeObserver.observe(element)
-
-	return () => resizeObserver.unobserve(element)
-})
 </script>
 
 <svelte:element
 	this={heading}
-	class="font-bold uppercase font-display leading-none leading-trim {styleClass} text-white empty:hidden"
-	class:line-hidden={!show}
+	class="font-bold uppercase font-display leading-none leading-trim {styleClass} text-grey-400 empty:hidden"
+	class:hide={!show}
 	bind:this={element}
 >
-	<slot />
+	<span
+		class="text inline-block will-change-transform"
+		style="--delay: 300ms"
+	>
+		<slot />
+	</span>
 </svelte:element>
 
 <style>
-:global(.line) {
+.text {
 	transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1),
 		transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 	transition-delay: var(--delay, 0);
 }
 
-.line-hidden {
-	opacity: 0;
-}
-
-.line-hidden :global(.line) {
+.hide .text {
 	opacity: 0;
 	transform: rotateX(75deg) rotateY(10deg) rotateZ(-9deg);
 }
