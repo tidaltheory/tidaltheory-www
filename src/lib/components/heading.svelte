@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import { onMount } from 'svelte'
 
 import { unwrapLines, wrapLines } from '$lib/wrap-lines'
@@ -16,9 +16,11 @@ const headingStyle = {
 	4: 'text-2xl md:text-3xl xl:text-3xl',
 }
 
-export let shouldShow: boolean | undefined
+/** @type {keyof typeof resolveHeadingElement} */
+export let level = 1
+/** @type {boolean | undefined} */
+export let shouldShow
 export let transitionIn = false
-export let level: keyof typeof resolveHeadingElement = 1
 
 const heading = resolveHeadingElement[level]
 const styleClass = headingStyle[level]
@@ -26,21 +28,22 @@ const styleClass = headingStyle[level]
 $: hasWrapped = false
 $: show = shouldShow !== undefined && hasWrapped ? shouldShow : true
 
-let element: HTMLHeadingElement
+/** @type {HTMLHeadingElement} */
+let element
 onMount(() => {
 	if (transitionIn) wrapLines(element)
-	hasWrapped = true
 
 	const resizeObserver = new ResizeObserver((entries) => {
 		const entry = entries.at(0)
 
 		if (entry && transitionIn) {
-			unwrapLines(entry.target as HTMLHeadingElement)
-			wrapLines(entry.target as HTMLHeadingElement)
+			if (hasWrapped) unwrapLines(entry.target)
+			wrapLines(entry.target)
 		}
 	})
 
 	resizeObserver.observe(element)
+	hasWrapped = true
 
 	return () => resizeObserver.unobserve(element)
 })
@@ -50,9 +53,10 @@ onMount(() => {
 	this={heading}
 	class="font-bold uppercase font-display leading-none leading-trim {styleClass} text-white empty:hidden"
 	class:line-hidden={!show}
-	bind:this={element}
 >
-	<slot />
+	<span class="line inline-block will-change-transform" bind:this={element}>
+		<slot />
+	</span>
 </svelte:element>
 
 <style>

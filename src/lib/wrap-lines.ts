@@ -1,4 +1,4 @@
-function wrapWords(t: HTMLHeadingElement) {
+function wrapWords(t: Element) {
 	// Add whitespace after break tags and split words.
 	let text = t.innerHTML
 		.replace('<br>', '<br> ')
@@ -11,7 +11,7 @@ function wrapWords(t: HTMLHeadingElement) {
 			const hardBreak = word.endsWith('<br>')
 
 			if (index > 0) markup += ' '
-			markup += `<span class="word">${word.replace('<br>', '')}</span>`
+			markup += `<span class="line">${word.replace('<br>', '')}</span>`
 			if (hardBreak) markup += '<br>'
 
 			continue
@@ -26,46 +26,52 @@ function wrapWords(t: HTMLHeadingElement) {
  * transition styles.
  */
 export function wrapLines(element: HTMLHeadingElement) {
-	wrapWords(element)
+	if (element) {
+		wrapWords(element)
 
-	let { children } = element
-	let lastTop = 0
-	let markup = ''
-	let lineWords: Array<string> = []
-	let lineNumber = 1
-	let lineClass = `class="line inline-block will-change-transform"`
+		let { children } = element
+		let lastTop = 0
+		let markup = ''
+		let lineWords: Array<string> = []
+		let lineNumber = 1
+		let lineClass = `class="line inline-block will-change-transform"`
 
-	for (const [index, child] of [...children].entries()) {
-		let { top } = child.getBoundingClientRect()
-		let newTop = Math.round(top)
+		for (const [index, child] of [...children].entries()) {
+			let { top } = child.getBoundingClientRect()
+			let newTop = Math.round(top)
 
-		if (index === 0) lastTop = newTop
-		if (child.nodeName === 'BR') newTop++
+			if (index === 0) lastTop = newTop
+			if (child.nodeName === 'BR') newTop++
 
-		if (newTop > lastTop) {
-			if (lineWords.length > 0) {
+			if (newTop > lastTop) {
+				if (lineWords.length > 0) {
+					markup += `<span ${lineClass} style="--delay: ${
+						100 * lineNumber
+					}ms">${lineWords.join(' ')}</span>`
+				}
+
+				lastTop = newTop
+				lineWords = []
+				if (child.nodeName !== 'BR') lineNumber++
+				if (child.nodeName === 'BR') markup += '<br>'
+			}
+
+			if (child.textContent) lineWords.push(child.textContent)
+			if (0 < index && child.nodeName !== 'BR') markup += ' '
+
+			if (index === children.length - 1 && lineWords.length > 0) {
 				markup += `<span ${lineClass} style="--delay: ${
 					100 * lineNumber
 				}ms">${lineWords.join(' ')}</span>`
 			}
-
-			lastTop = newTop
-			lineWords = []
-			if (child.nodeName !== 'BR') lineNumber++
-			if (child.nodeName === 'BR') markup += '<br>'
 		}
 
-		if (child.textContent) lineWords.push(child.textContent)
-		if (0 < index && child.nodeName !== 'BR') markup += ' '
-
-		if (index === children.length - 1 && lineWords.length > 0) {
-			markup += `<span ${lineClass} style="--delay: ${
-				100 * lineNumber
-			}ms">${lineWords.join(' ')}</span>`
-		}
+		/**
+		 * Replace the dummy span with the good markup. (Dummy span required
+		 * to make Safari work)
+		 */
+		if (element.parentElement) element.parentElement.innerHTML = markup
 	}
-
-	element.innerHTML = markup
 }
 
 /**

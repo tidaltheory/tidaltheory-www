@@ -19,15 +19,12 @@ const heading = resolveHeadingElement[level]
 const styleClass = headingStyle[level]
 
 $: show = shouldShow === undefined ? true : shouldShow
-
-let element: HTMLHeadingElement
 </script>
 
 <svelte:element
 	this={heading}
 	class="font-bold uppercase font-display leading-none leading-trim {styleClass} text-grey-400 empty:hidden"
 	class:hide={!show}
-	bind:this={element}
 >
 	<span
 		class="text inline-block will-change-transform"
