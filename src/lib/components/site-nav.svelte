@@ -46,7 +46,11 @@ beforeNavigate(async () => {
 		</div>
 	</div>
 	{#if isMenuOpen}
-		<div class="fixed h-screen w-screen" on:click={toggleMenu} />
+		<div
+			class="fixed h-screen w-screen"
+			on:click={toggleMenu}
+			on:keypress={toggleMenu}
+		/>
 	{/if}
 	{#if isMenuOpen}
 		<div
