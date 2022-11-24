@@ -29,9 +29,9 @@ let header
 			<div
 				class="md:max-h-none absolute top-15 right-3 z-0 aspect-[0.75] max-h-[40.5vh] w-[66.5vw] md:top-0 md:right-0 md:h-[55vh] md:w-[55.5vw] xl:aspect-auto xl:h-full xl:w-[31.5vw]"
 			>
-				<figure class="h-full w-full bg-grey-700">
+				<!-- <figure class="h-full w-full bg-grey-700">
 					<slot name="hero" />
-				</figure>
+				</figure> -->
 			</div>
 		</div>
 	</ObserveIntersection>
