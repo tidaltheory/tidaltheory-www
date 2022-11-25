@@ -24,9 +24,11 @@ $: posts = data.json
 	<PageSection>
 		<div class="grid gap-4 md:grid-cols-2 md:gap-12 xl:gap-16">
 			{#each posts as gallery}
-				<GalleryCard to="{gallery.path}/" cover={gallery.coverImage}>
-					{gallery.meta.title}
-				</GalleryCard>
+				<GalleryCard
+					to="{gallery.path}/"
+					cover={gallery.coverImage}
+					title={gallery.meta.title}
+				/>
 			{/each}
 		</div>
 	</PageSection>

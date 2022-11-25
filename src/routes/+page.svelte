@@ -36,9 +36,9 @@ $: ({ recentGalleries } = data.json)
 					<GalleryCard
 						to="{gallery.path}/"
 						cover={gallery.coverImage}
-					>
-						{gallery.meta.title}
-					</GalleryCard>
+						title={gallery.meta.title}
+						subtitle={gallery.meta.subtitle}
+					/>
 				{/each}
 			</div>
 			<div class="row-start-3 flex xl:hidden">

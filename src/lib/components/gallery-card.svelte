@@ -1,16 +1,17 @@
-<script lang="ts">
-import type { ImageRecord } from '@tidaltheory/lens'
-
+<script>
 import { FOCUS_OUTLINE } from '$lib/classnames'
 
 import Heading from './heading.svelte'
 import ImageLens from './image-lens.svelte'
 
 export let to = '/'
-export let cover: ImageRecord
+/** @type {import('@tidaltheory/lens').ImageRecord} */
+export let cover
+export let title
+export let subtitle
 
 const thumbnails = cover.thumbnails ?? {}
-// Const color = cover ? cover.colors?.[0] : 'rgb(57, 62, 65)'
+$: fullTitle = subtitle ? [title, subtitle].join(' ') : title
 </script>
 
 <div class="group relative grid grid-rows-1 rounded-[1px] bg-grey-700">
@@ -40,7 +41,7 @@ const thumbnails = cover.thumbnails ?? {}
 		>
 			<div class="bg-grey-900 bg-opacity-50 p-6 backdrop-blur lg:p-10">
 				<Heading level={4}>
-					<slot />
+					{fullTitle}
 				</Heading>
 			</div>
 		</a>
