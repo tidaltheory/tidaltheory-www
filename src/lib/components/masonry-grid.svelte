@@ -2,19 +2,29 @@
 import { onMount, onDestroy, tick } from 'svelte'
 
 export let gapClass
-// Pass in data if it's dynamically updated
 export let items = []
 
+/**
+ * @typedef {Object} Grid
+ * @property {HTMLDivElement} _el
+ * @property {number} gap
+ * @property {ChildNode[]} items
+ * @property {number} ncol
+ * @property {number} mod
+ */
+
+/** @type {Grid[]} */
 let grids = []
+/** @type {HTMLDivElement} */
 let masonryElement
 
 export const refreshLayout = async () => {
 	for (const grid of grids) {
-		// Grids.forEach(async (grid) => {
 		/* Get the post relayout number of columns */
 		let ncol = getComputedStyle(grid._el).gridTemplateColumns.split(
 			' '
 		).length
+		let gap = Number.parseFloat(getComputedStyle(grid._el).gap)
 
 		for (const c of grid.items) {
 			let newHeight = c.getBoundingClientRect().height
@@ -25,12 +35,14 @@ export const refreshLayout = async () => {
 			}
 		}
 
-		/* If the number of columns has changed */
-		if (grid.ncol !== ncol || grid.mod) {
-			/* Update number of columns */
+		/* If the number of columns has changed or the gap width has changed. */
+		if (grid.ncol !== ncol || grid.mod || grid.gap !== gap) {
 			grid.ncol = ncol
+			grid.gap = gap
+
 			/* Revert to initial positioning, no margin */
 			for (const c of grid.items) c.style.removeProperty('margin-top')
+
 			/* If we have more than one column */
 			if (grid.ncol > 1) {
 				for (const [index, c] of grid.items.slice(ncol).entries()) {
@@ -51,6 +63,7 @@ export const refreshLayout = async () => {
 	}
 }
 
+/** @param {HTMLDivElement[]} _masonryArray */
 const calcGrid = async (_masonryArray) => {
 	await tick()
 	if (
@@ -59,7 +72,7 @@ const calcGrid = async (_masonryArray) => {
 	) {
 		grids = _masonryArray.map((grid) => ({
 			_el: grid,
-			gap: Number.parseFloat(getComputedStyle(grid).gridRowGap),
+			gap: Number.parseFloat(getComputedStyle(grid).gap),
 			items: [...grid.childNodes].filter(
 				(c) =>
 					c.nodeType === 1 &&
@@ -104,5 +117,8 @@ $: if (items) {
 .masonry-grid {
 	grid: 1fr auto / repeat(2, 1fr);
 	grid: masonry / repeat(2, 1fr);
+}
+.masonry-grid > :global(*) {
+	align-self: start;
 }
 </style>

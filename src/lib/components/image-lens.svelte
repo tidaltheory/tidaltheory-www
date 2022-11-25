@@ -18,7 +18,6 @@ const imageObject: ImageRecord = sizes ? image[sizes[0]] : image
 const hasAvif = Boolean(imageObject.formats?.avif)
 const hasWebp = Boolean(imageObject.formats?.webp)
 const ratio = imageObject.dimensions.width / imageObject.dimensions.height
-// Const placeholderColor = color
 
 const imgSet = () => {
 	if (!sizes) return undefined
@@ -83,10 +82,9 @@ onMount(() => {
 </script>
 
 <picture
-	class="h-full w-full opacity-0 transition-opacity duration-300"
+	class="xl:max-h-[calc(100vh_-_64px) flex h-full max-h-[calc(100vh_-_16px)] w-full opacity-0 transition-opacity duration-300 md:max-h-[calc(100vh_-_32px)]"
 	style:aspect-ratio={ratio}
 	style:max-width={imageObject.dimensions.width}
-	style:max-height={imageObject.dimensions.height}
 >
 	{#if hasAvif}<source srcset={avifSet()} type="image/avif" />{/if}
 	{#if hasWebp}<source srcset={webpSet()} type="image/webp" />{/if}

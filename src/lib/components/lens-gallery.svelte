@@ -12,7 +12,7 @@ export let onOpen
 <MasonryGrid items={images} gapClass="gap-4 md:gap-8 xl:gap-16">
 	{#each images as item, index}
 		<button
-			class="rounded-[1px] transition {FOCUS_OUTLINE}"
+			class="flex w-full rounded-[1px] transition {FOCUS_OUTLINE}"
 			type="button"
 			class:opacity-30={isHidden}
 			data-index={index}
