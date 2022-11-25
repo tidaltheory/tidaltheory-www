@@ -25,5 +25,5 @@ export const GET = async () => {
 		})
 	)
 
-	return json(allPosts)
+	return json(allPosts.sort((a, b) => b.updated - a.updated))
 }
