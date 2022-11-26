@@ -17,6 +17,8 @@ type GalleryImage = (ImageRecord | ImageThumbnails) & {
 export let images: Array<GalleryImage>
 export let initialIndex: number
 export let onClose: () => void
+export let send
+export let receive
 
 let carousel: HTMLElement
 
@@ -60,6 +62,8 @@ function handleEscape(event: KeyboardEvent) {
 						class="flex snap-center items-center justify-center p-2 md:p-4 xl:p-8"
 						data-index={index}
 						on:click|self|stopPropagation={onClose}
+						in:receive={{ key: index }}
+						out:send={{ key: index }}
 					>
 						<div class="group relative">
 							<ImageLens {image} lazyLoad={false} />
