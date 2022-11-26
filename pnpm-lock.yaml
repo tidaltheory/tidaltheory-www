@@ -4,7 +4,7 @@ specifiers:
   '@sveltejs/adapter-netlify': next
   '@sveltejs/adapter-static': 1.0.0-next.48
   '@sveltejs/kit': 1.0.0-next.561
-  '@tailwindcss/typography': 0.5.7
+  '@tailwindcss/typography': 0.5.8
   '@tidaltheory/lens': 1.1.1
   '@zazen/eslint-config': 6.1.0
   '@zazen/stylelint-config': 3.0.0
@@ -46,7 +46,7 @@ devDependencies:
   '@sveltejs/adapter-netlify': 1.0.0-next.84
   '@sveltejs/adapter-static': 1.0.0-next.48
   '@sveltejs/kit': 1.0.0-next.561_svelte@3.52.0+vite@3.1.8
-  '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.4
+  '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
   '@tidaltheory/lens': 1.1.1
   '@zazen/eslint-config': 6.1.0_eb2d5f96ad111e3f481afeb436cfc2fc
   '@zazen/stylelint-config': 3.0.0_stylelint@14.14.0
@@ -573,8 +573,8 @@ packages:
       - supports-color
     dev: true
 
-  /@tailwindcss/typography/0.5.7_tailwindcss@3.2.4:
-    resolution: {integrity: sha512-JTTSTrgZfp6Ki4svhPA4mkd9nmQ/j9EfE7SbHJ1cLtthKkpW2OxsFXzSmxbhYbEkfNIyAyhle5p4SYyKRbz/jg==}
+  /@tailwindcss/typography/0.5.8_tailwindcss@3.2.4:
+    resolution: {integrity: sha512-xGQEp8KXN8Sd8m6R4xYmwxghmswrd0cPnNI2Lc6fmrC3OojysTBJJGSIVwPV56q4t6THFUK3HJ0EaWwpglSxWw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
