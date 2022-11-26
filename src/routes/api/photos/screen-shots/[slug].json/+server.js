@@ -55,5 +55,9 @@ export const GET = async ({ params }) => {
 		...data,
 		content: processedContent.value,
 		images,
+		coverImage: library[data.cover].thumbnails['gallery-lg'].path.replace(
+			/^static/,
+			''
+		),
 	})
 }
