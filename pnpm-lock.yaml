@@ -10,7 +10,7 @@ specifiers:
   '@zazen/stylelint-config': 3.0.0
   autoprefixer: 10.4.13
   eslint: 8.26.0
-  eslint-plugin-svelte: 2.10.0
+  eslint-plugin-svelte: 2.13.1
   gray-matter: 4.0.3
   husky: 8.0.1
   lint-staged: 13.0.3
@@ -52,7 +52,7 @@ devDependencies:
   '@zazen/stylelint-config': 3.0.0_stylelint@14.14.0
   autoprefixer: 10.4.13_postcss@8.4.18
   eslint: 8.26.0
-  eslint-plugin-svelte: 2.10.0_eslint@8.26.0+svelte@3.52.0
+  eslint-plugin-svelte: 2.13.1_eslint@8.26.0+svelte@3.52.0
   gray-matter: 4.0.3
   husky: 8.0.1
   lint-staged: 13.0.3
@@ -2445,8 +2445,8 @@ packages:
       eslint: 8.26.0
     dev: true
 
-  /eslint-plugin-svelte/2.10.0_eslint@8.26.0+svelte@3.52.0:
-    resolution: {integrity: sha512-t8n9DFyvO8Kt6VqBlR2sxpUGkvqYgXAS97iyQPw/P5ABCqLFT6dXl05JtU9CFrYvY/MFemC8Lse2FckkP2d9Zw==}
+  /eslint-plugin-svelte/2.13.1_eslint@8.26.0+svelte@3.52.0:
+    resolution: {integrity: sha512-PZ0h8mm9vdVndLNoCUVujYFuWpp+AmCT5GnhjZ1q4dR3zLgQdL+V7Ce0KI1EQ8/4D6GExLMYcOd8vgGUdxxOxg==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0
@@ -2459,13 +2459,13 @@ packages:
       eslint: 8.26.0
       eslint-utils: 3.0.0_eslint@8.26.0
       esutils: 2.0.3
-      known-css-properties: 0.25.0
-      postcss: 8.4.16
-      postcss-load-config: 3.1.4_postcss@8.4.16
-      postcss-safe-parser: 6.0.0_postcss@8.4.16
+      known-css-properties: 0.26.0
+      postcss: 8.4.18
+      postcss-load-config: 3.1.4_postcss@8.4.18
+      postcss-safe-parser: 6.0.0_postcss@8.4.18
       sourcemap-codec: 1.4.8
       svelte: 3.52.0
-      svelte-eslint-parser: 0.18.4_svelte@3.52.0
+      svelte-eslint-parser: 0.22.0_svelte@3.52.0
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -3490,6 +3490,10 @@ packages:
 
   /known-css-properties/0.25.0:
     resolution: {integrity: sha512-b0/9J1O9Jcyik1GC6KC42hJ41jKwdO/Mq8Mdo5sYN+IuRTXs2YFHZC3kZSx6ueusqa95x3wLYe/ytKjbAfGixA==}
+    dev: true
+
+  /known-css-properties/0.26.0:
+    resolution: {integrity: sha512-5FZRzrZzNTBruuurWpvZnvP9pum+fe0HcK8z/ooo+U+Hmp4vtbyp1/QDsqmufirXy4egGzbaH/y2uCZf+6W5Kg==}
     dev: true
 
   /levn/0.4.1:
@@ -4616,23 +4620,6 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /postcss-load-config/3.1.4_postcss@8.4.16:
-    resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
-    engines: {node: '>= 10'}
-    peerDependencies:
-      postcss: '>=8.0.9'
-      ts-node: '>=9.0.0'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-      ts-node:
-        optional: true
-    dependencies:
-      lilconfig: 2.0.6
-      postcss: 8.4.16
-      yaml: 1.10.2
-    dev: true
-
   /postcss-load-config/3.1.4_postcss@8.4.18:
     resolution: {integrity: sha512-6DiM4E7v4coTE4uzA8U//WhtPwyhiim3eyjEMFCnUpzbrkK9wJHgKDT2mR+HbtSrd/NubVaYTOpSpjUl8NQeRg==}
     engines: {node: '>= 10'}
@@ -4859,12 +4846,12 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /postcss-sorting/7.0.1_postcss@8.4.16:
+  /postcss-sorting/7.0.1_postcss@8.4.18:
     resolution: {integrity: sha512-iLBFYz6VRYyLJEJsBJ8M3TCqNcckVzz4wFounSc5Oez35ogE/X+aoC5fFu103Ot7NyvjU3/xqIXn93Gp3kJk4g==}
     peerDependencies:
       postcss: ^8.3.9
     dependencies:
-      postcss: 8.4.16
+      postcss: 8.4.18
     dev: true
 
   /postcss-value-parser/4.2.0:
@@ -5601,8 +5588,8 @@ packages:
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
-      postcss: 8.4.16
-      postcss-sorting: 7.0.1_postcss@8.4.16
+      postcss: 8.4.18
+      postcss-sorting: 7.0.1_postcss@8.4.18
       stylelint: 14.14.0
     dev: true
 
@@ -5708,8 +5695,8 @@ packages:
       - sugarss
     dev: true
 
-  /svelte-eslint-parser/0.18.4_svelte@3.52.0:
-    resolution: {integrity: sha512-mCl/gsshy11LrFCEsTKlbNHXKCGCpan0vJWoBmorn6En11OWRKsrXEi3RwPKUjjcO3WKOWRfG68L3zpCg1BilQ==}
+  /svelte-eslint-parser/0.22.0_svelte@3.52.0:
+    resolution: {integrity: sha512-KQut6bb5dPwQ1SYTN/m5rxCkEDWDXiZpOXl05afNKGnjCMC5ZpGVrJM7BtFGwV2kPFeIiwRW+ofY3GxfqFBNpw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       svelte: ^3.37.0
