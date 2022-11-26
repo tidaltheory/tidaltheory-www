@@ -25,6 +25,10 @@ function handleCloseCarousel() {
 
 <svelte:head>
 	<title>{fullTitle} — Screen Shots — Photos — Tidal Theory</title>
+	<meta
+		property="og:title"
+		content="{fullTitle} — Screen Shots — Tidal Theory"
+	/>
 	<meta property="og:description" content={description} />
 	<meta property="og:image" content={`https://tidaltheory.io${coverImage}`} />
 </svelte:head>
