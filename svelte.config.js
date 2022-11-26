@@ -23,7 +23,6 @@ const config = {
 		prerender: {
 			entries: ['*', '/photos/*'],
 		},
-		trailingSlash: 'always',
 	},
 }
 
