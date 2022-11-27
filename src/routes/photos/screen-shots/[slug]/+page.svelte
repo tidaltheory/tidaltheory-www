@@ -6,7 +6,8 @@ import PageSection from '$lib/components/page-section.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data
-$: ({ title, subtitle, description, coverImage, images, content } = data.json)
+$: ({ title, subtitle, description, coverImage, images, content, cleanIntro } =
+	data.json)
 $: fullTitle = subtitle ? [title, subtitle].join(' ') : title
 
 let isCarouselOpen = false
@@ -29,17 +30,13 @@ function handleCloseCarousel() {
 		property="og:title"
 		content="{fullTitle} — Screen Shots — Tidal Theory"
 	/>
-	<meta property="og:description" content={description} />
+	<meta property="og:description" content={cleanIntro} />
 	<meta property="og:image" content={`https://tidaltheory.io${coverImage}`} />
 </svelte:head>
 
 <article>
-	<PageIntro>
+	<PageIntro {subtitle}>
 		{title}
-
-		<svelte:fragment slot="subtitle"
-			>{#if subtitle}{subtitle}{/if}</svelte:fragment
-		>
 		<svelte:fragment slot="intro">
 			{@html description}
 		</svelte:fragment>

@@ -33,6 +33,11 @@ export const GET = async ({ params }) => {
 		})
 		.use(rehypeStringify)
 		.process(content)
+	const cleanIntro = await unified()
+		.use(remarkParse)
+		.use(remarkRehype)
+		.use(rehypeStringify)
+		.process(data.description)
 
 	let images = []
 	for (const key of data.images) {
@@ -59,5 +64,6 @@ export const GET = async ({ params }) => {
 			/^static/,
 			''
 		),
+		cleanIntro: cleanIntro.value.replace('<p>', '').replace('</p>', ''),
 	})
 }
