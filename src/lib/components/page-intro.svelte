@@ -5,6 +5,10 @@ import Heading from './heading.svelte'
 import PageSection from './page-section.svelte'
 import SubHeading from './sub-heading.svelte'
 
+/** @type {string | undefined} */
+export let subtitle
+
+/** @type {HTMLDivElement} */
 let header
 </script>
 
@@ -20,9 +24,11 @@ let header
 				<Heading shouldShow={intersecting} transitionIn>
 					<slot />
 				</Heading>
-				<SubHeading level="3" shouldShow={intersecting}>
-					<slot name="subtitle" />
-				</SubHeading>
+				{#if subtitle}
+					<SubHeading level="3" shouldShow={intersecting}>
+						{subtitle}
+					</SubHeading>
+				{/if}
 			</div>
 			{#if $$slots.intro}
 				<div

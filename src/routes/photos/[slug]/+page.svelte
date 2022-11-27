@@ -12,12 +12,8 @@ $: fullTitle = subtitle ? [title, subtitle].join(' ') : title
 </svelte:head>
 
 <article>
-	<PageIntro>
+	<PageIntro {subtitle}>
 		{title}
-
-		<svelte:fragment slot="subtitle"
-			>{#if subtitle}{subtitle}{/if}</svelte:fragment
-		>
 		<svelte:fragment slot="intro">
 			{@html description}
 		</svelte:fragment>
