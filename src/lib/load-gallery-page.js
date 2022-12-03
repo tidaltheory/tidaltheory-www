@@ -1,5 +1,7 @@
 import { readFile } from 'node:fs/promises'
+import { parse, resolve } from 'node:path'
 
+import TOML from '@iarna/toml'
 import matter from 'gray-matter'
 import rehypeRaw from 'rehype-raw'
 import rehypeSanitize, { defaultSchema } from 'rehype-sanitize'
@@ -14,6 +16,7 @@ import { library } from '../../content/imagemeta.json'
  * @param {string} path
  */
 export async function loadGalleryPage(path) {
+	const { dir, name } = parse(path)
 	const md = await readFile(path)
 	const { data, content } = matter(md)
 	const processedContent = await unified()
@@ -36,11 +39,15 @@ export async function loadGalleryPage(path) {
 		.process(data.description)
 
 	let images = []
-	for (const key of data.images) {
+	for await (const key of data.images) {
 		let image
 
 		if (typeof key === 'string') {
 			image = library[key]
+			if (!image.meta) {
+				let toml = await readFile(resolve(dir, name, `${key}.toml`))
+				image.meta = TOML.parse(toml)
+			}
 		} else {
 			let imgKey = key[Object.keys(key)]
 
