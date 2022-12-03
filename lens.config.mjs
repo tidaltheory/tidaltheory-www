@@ -3,13 +3,13 @@ const COVER_IMAGES = [
 	'**/ac-origins_20200607204931.jpg',
 	'**/tlou2_20200623211955.jpg',
 	'**/hzd_20210625230628.jpg',
+	'**/concerts_20120724215543.jpg',
 ]
 
 /** @type {import('@tidaltheory/lens').LensConfig} */
 const config = {
 	store: 'content/imagemeta.json',
 	useFilenameDirectory: true,
-	includeMetadata: true,
 	thumbnails: [
 		{ 'cover-sm': { files: COVER_IMAGES, width: 300, height: 250 } },
 		{ 'cover-md': { files: COVER_IMAGES, width: 600, height: 500 } },

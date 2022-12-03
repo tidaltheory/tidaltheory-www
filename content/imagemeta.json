@@ -3167,6 +3167,837 @@
         "title": "Fractals II",
         "caption": "Horizon Zero Dawn: The Frozen Wilds · Cauldron EPSILON"
       }
+    },
+    "concerts_20120724215543": {
+      "path": "static/media/concerts/concerts_20120724215543/4ac8b02d.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1367
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20120724215543/4ac8b02d.webp",
+        "avif": "static/media/concerts/concerts_20120724215543/4ac8b02d.avif"
+      },
+      "colors": {
+        "palette": [
+          "#10698f",
+          "#097472",
+          "#87d1f1",
+          "#4c848a",
+          "#315b5e",
+          "#84bebd"
+        ],
+        "dominant": "#4c848a"
+      },
+      "thumbnails": {
+        "cover-sm": {
+          "path": "static/media/concerts/concerts_20120724215543/cover-sm.4ac8b02d.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 250
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20120724215543/cover-sm.4ac8b02d.webp",
+            "avif": "static/media/concerts/concerts_20120724215543/cover-sm.4ac8b02d.avif"
+          }
+        },
+        "cover-md": {
+          "path": "static/media/concerts/concerts_20120724215543/cover-md.4ac8b02d.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 500
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20120724215543/cover-md.4ac8b02d.webp",
+            "avif": "static/media/concerts/concerts_20120724215543/cover-md.4ac8b02d.avif"
+          }
+        },
+        "cover-lg": {
+          "path": "static/media/concerts/concerts_20120724215543/cover-lg.4ac8b02d.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1000
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20120724215543/cover-lg.4ac8b02d.webp",
+            "avif": "static/media/concerts/concerts_20120724215543/cover-lg.4ac8b02d.avif"
+          }
+        },
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20120724215543/gallery-sm.4ac8b02d.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 200
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20120724215543/gallery-sm.4ac8b02d.webp",
+            "avif": "static/media/concerts/concerts_20120724215543/gallery-sm.4ac8b02d.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20120724215543/gallery-md.4ac8b02d.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 400
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20120724215543/gallery-md.4ac8b02d.webp",
+            "avif": "static/media/concerts/concerts_20120724215543/gallery-md.4ac8b02d.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20120724215543/gallery-lg.4ac8b02d.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 801
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20120724215543/gallery-lg.4ac8b02d.webp",
+            "avif": "static/media/concerts/concerts_20120724215543/gallery-lg.4ac8b02d.avif"
+          }
+        }
+      }
+    },
+    "concerts_20101126184343": {
+      "path": "static/media/concerts/concerts_20101126184343/117aee24.jpg",
+      "dimensions": {
+        "width": 1360,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20101126184343/117aee24.webp",
+        "avif": "static/media/concerts/concerts_20101126184343/117aee24.avif"
+      },
+      "colors": {
+        "palette": [
+          "#0b74c7",
+          "#09a441",
+          "#5fd1fb",
+          "#6e374b",
+          "#27264b",
+          "#036e95"
+        ],
+        "dominant": "#5fd1fb"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20101126184343/gallery-sm.117aee24.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 452
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20101126184343/gallery-sm.117aee24.webp",
+            "avif": "static/media/concerts/concerts_20101126184343/gallery-sm.117aee24.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20101126184343/gallery-md.117aee24.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 904
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20101126184343/gallery-md.117aee24.webp",
+            "avif": "static/media/concerts/concerts_20101126184343/gallery-md.117aee24.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20101126184343/gallery-lg.117aee24.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1807
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20101126184343/gallery-lg.117aee24.webp",
+            "avif": "static/media/concerts/concerts_20101126184343/gallery-lg.117aee24.avif"
+          }
+        }
+      }
+    },
+    "concerts_20130208203813": {
+      "path": "static/media/concerts/concerts_20130208203813/0b821633.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1367
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20130208203813/0b821633.webp",
+        "avif": "static/media/concerts/concerts_20130208203813/0b821633.avif"
+      },
+      "colors": {
+        "palette": [
+          "#0811ce",
+          "#040982",
+          "#5066e8",
+          "#55a39b",
+          "#3a6679",
+          "#a97185"
+        ],
+        "dominant": "#0811ce"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20130208203813/gallery-sm.0b821633.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 200
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130208203813/gallery-sm.0b821633.webp",
+            "avif": "static/media/concerts/concerts_20130208203813/gallery-sm.0b821633.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20130208203813/gallery-md.0b821633.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 400
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130208203813/gallery-md.0b821633.webp",
+            "avif": "static/media/concerts/concerts_20130208203813/gallery-md.0b821633.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20130208203813/gallery-lg.0b821633.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 801
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130208203813/gallery-lg.0b821633.webp",
+            "avif": "static/media/concerts/concerts_20130208203813/gallery-lg.0b821633.avif"
+          }
+        }
+      }
+    },
+    "concerts_20130316191722": {
+      "path": "static/media/concerts/concerts_20130316191722/95c6e072.jpg",
+      "dimensions": {
+        "width": 1367,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20130316191722/95c6e072.webp",
+        "avif": "static/media/concerts/concerts_20130316191722/95c6e072.avif"
+      },
+      "colors": {
+        "palette": [
+          "#7c04f3",
+          "#400482",
+          "#ce95ab",
+          "#625f9d",
+          "#272d47",
+          "#8e92bb"
+        ],
+        "dominant": "#ce95ab"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20130316191722/gallery-sm.95c6e072.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130316191722/gallery-sm.95c6e072.webp",
+            "avif": "static/media/concerts/concerts_20130316191722/gallery-sm.95c6e072.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20130316191722/gallery-md.95c6e072.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 899
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130316191722/gallery-md.95c6e072.webp",
+            "avif": "static/media/concerts/concerts_20130316191722/gallery-md.95c6e072.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20130316191722/gallery-lg.95c6e072.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1798
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130316191722/gallery-lg.95c6e072.webp",
+            "avif": "static/media/concerts/concerts_20130316191722/gallery-lg.95c6e072.avif"
+          }
+        }
+      }
+    },
+    "concerts_20130413191911": {
+      "path": "static/media/concerts/concerts_20130413191911/51331d45.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1367
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20130413191911/51331d45.webp",
+        "avif": "static/media/concerts/concerts_20130413191911/51331d45.avif"
+      },
+      "colors": {
+        "palette": [
+          "#062d9a",
+          "#09651e",
+          "#f0d0a8",
+          "#b2a361",
+          "#606036",
+          "#c3b79e"
+        ],
+        "dominant": "#f0d0a8"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20130413191911/gallery-sm.51331d45.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 200
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130413191911/gallery-sm.51331d45.webp",
+            "avif": "static/media/concerts/concerts_20130413191911/gallery-sm.51331d45.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20130413191911/gallery-md.51331d45.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 400
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130413191911/gallery-md.51331d45.webp",
+            "avif": "static/media/concerts/concerts_20130413191911/gallery-md.51331d45.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20130413191911/gallery-lg.51331d45.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 801
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130413191911/gallery-lg.51331d45.webp",
+            "avif": "static/media/concerts/concerts_20130413191911/gallery-lg.51331d45.avif"
+          }
+        }
+      }
+    },
+    "concerts_20130728203410": {
+      "path": "static/media/concerts/concerts_20130728203410/5e1e155b.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1367
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20130728203410/5e1e155b.webp",
+        "avif": "static/media/concerts/concerts_20130728203410/5e1e155b.avif"
+      },
+      "colors": {
+        "palette": [
+          "#cb4d22",
+          "#72095a",
+          "#6c9ae3",
+          "#83546b",
+          "#4b2636",
+          "#184080"
+        ],
+        "dominant": "#72095a"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20130728203410/gallery-sm.5e1e155b.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 200
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130728203410/gallery-sm.5e1e155b.webp",
+            "avif": "static/media/concerts/concerts_20130728203410/gallery-sm.5e1e155b.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20130728203410/gallery-md.5e1e155b.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 400
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130728203410/gallery-md.5e1e155b.webp",
+            "avif": "static/media/concerts/concerts_20130728203410/gallery-md.5e1e155b.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20130728203410/gallery-lg.5e1e155b.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 801
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130728203410/gallery-lg.5e1e155b.webp",
+            "avif": "static/media/concerts/concerts_20130728203410/gallery-lg.5e1e155b.avif"
+          }
+        }
+      }
+    },
+    "concerts_20141206215511": {
+      "path": "static/media/concerts/concerts_20141206215511/62a7e57b.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1367
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20141206215511/62a7e57b.webp",
+        "avif": "static/media/concerts/concerts_20141206215511/62a7e57b.avif"
+      },
+      "colors": {
+        "palette": [
+          "#f1062f",
+          "#83073c",
+          "#f4ba85",
+          "#9e5d81",
+          "#692d60",
+          "#bf6f85"
+        ],
+        "dominant": "#9e5d81"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20141206215511/gallery-sm.62a7e57b.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 200
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20141206215511/gallery-sm.62a7e57b.webp",
+            "avif": "static/media/concerts/concerts_20141206215511/gallery-sm.62a7e57b.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20141206215511/gallery-md.62a7e57b.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 400
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20141206215511/gallery-md.62a7e57b.webp",
+            "avif": "static/media/concerts/concerts_20141206215511/gallery-md.62a7e57b.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20141206215511/gallery-lg.62a7e57b.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 801
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20141206215511/gallery-lg.62a7e57b.webp",
+            "avif": "static/media/concerts/concerts_20141206215511/gallery-lg.62a7e57b.avif"
+          }
+        }
+      }
+    },
+    "concerts_20110710134821": {
+      "path": "static/media/concerts/concerts_20110710134821/df537914.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1463
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20110710134821/df537914.webp",
+        "avif": "static/media/concerts/concerts_20110710134821/df537914.avif"
+      },
+      "colors": {
+        "palette": [
+          "#8e9419",
+          "#7d2325",
+          "#e2b0b5",
+          "#aa8660",
+          "#45413c",
+          "#b5adac"
+        ],
+        "dominant": "#b5adac"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20110710134821/gallery-sm.df537914.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 214
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20110710134821/gallery-sm.df537914.webp",
+            "avif": "static/media/concerts/concerts_20110710134821/gallery-sm.df537914.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20110710134821/gallery-md.df537914.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 428
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20110710134821/gallery-md.df537914.webp",
+            "avif": "static/media/concerts/concerts_20110710134821/gallery-md.df537914.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20110710134821/gallery-lg.df537914.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 857
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20110710134821/gallery-lg.df537914.webp",
+            "avif": "static/media/concerts/concerts_20110710134821/gallery-lg.df537914.avif"
+          }
+        }
+      }
+    },
+    "concerts_20110710151140": {
+      "path": "static/media/concerts/concerts_20110710151140/db332b77.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1360
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20110710151140/db332b77.webp",
+        "avif": "static/media/concerts/concerts_20110710151140/db332b77.avif"
+      },
+      "colors": {
+        "palette": [
+          "#ec4342",
+          "#531a15",
+          "#d5a28d",
+          "#b1725c",
+          "#583b2f",
+          "#d4b6b6"
+        ],
+        "dominant": "#ec4342"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20110710151140/gallery-sm.db332b77.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 199
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20110710151140/gallery-sm.db332b77.webp",
+            "avif": "static/media/concerts/concerts_20110710151140/gallery-sm.db332b77.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20110710151140/gallery-md.db332b77.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 398
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20110710151140/gallery-md.db332b77.webp",
+            "avif": "static/media/concerts/concerts_20110710151140/gallery-md.db332b77.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20110710151140/gallery-lg.db332b77.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 797
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20110710151140/gallery-lg.db332b77.webp",
+            "avif": "static/media/concerts/concerts_20110710151140/gallery-lg.db332b77.avif"
+          }
+        }
+      }
+    },
+    "concerts_20130629204301": {
+      "path": "static/media/concerts/concerts_20130629204301/b03b0f27.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1367
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20130629204301/b03b0f27.webp",
+        "avif": "static/media/concerts/concerts_20130629204301/b03b0f27.avif"
+      },
+      "colors": {
+        "palette": [
+          "#b92e27",
+          "#5f1c19",
+          "#f4ad92",
+          "#b77a66",
+          "#523c2c",
+          "#dcd6c0"
+        ],
+        "dominant": "#b77a66"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20130629204301/gallery-sm.b03b0f27.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 200
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130629204301/gallery-sm.b03b0f27.webp",
+            "avif": "static/media/concerts/concerts_20130629204301/gallery-sm.b03b0f27.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20130629204301/gallery-md.b03b0f27.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 400
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130629204301/gallery-md.b03b0f27.webp",
+            "avif": "static/media/concerts/concerts_20130629204301/gallery-md.b03b0f27.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20130629204301/gallery-lg.b03b0f27.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 801
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20130629204301/gallery-lg.b03b0f27.webp",
+            "avif": "static/media/concerts/concerts_20130629204301/gallery-lg.b03b0f27.avif"
+          }
+        }
+      }
+    },
+    "concerts_20100407205608": {
+      "path": "static/media/concerts/concerts_20100407205608/29b1a6a4.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1360
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20100407205608/29b1a6a4.webp",
+        "avif": "static/media/concerts/concerts_20100407205608/29b1a6a4.avif"
+      },
+      "colors": {
+        "palette": [
+          "#2eadf5",
+          "#053e84",
+          "#baecfb",
+          "#5c4588",
+          "#55345b",
+          "#087190"
+        ],
+        "dominant": "#053e84"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20100407205608/gallery-sm.29b1a6a4.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 199
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20100407205608/gallery-sm.29b1a6a4.webp",
+            "avif": "static/media/concerts/concerts_20100407205608/gallery-sm.29b1a6a4.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20100407205608/gallery-md.29b1a6a4.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 398
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20100407205608/gallery-md.29b1a6a4.webp",
+            "avif": "static/media/concerts/concerts_20100407205608/gallery-md.29b1a6a4.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20100407205608/gallery-lg.29b1a6a4.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 797
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20100407205608/gallery-lg.29b1a6a4.webp",
+            "avif": "static/media/concerts/concerts_20100407205608/gallery-lg.29b1a6a4.avif"
+          }
+        }
+      }
+    },
+    "concerts_20140808192532": {
+      "path": "static/media/concerts/concerts_20140808192532/14d4b054.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1367
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20140808192532/14d4b054.webp",
+        "avif": "static/media/concerts/concerts_20140808192532/14d4b054.avif"
+      },
+      "colors": {
+        "palette": [
+          "#de1838",
+          "#086598",
+          "#b3e5ec",
+          "#5d6c98",
+          "#603550",
+          "#9ab3c6"
+        ],
+        "dominant": "#b3e5ec"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20140808192532/gallery-sm.14d4b054.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 200
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20140808192532/gallery-sm.14d4b054.webp",
+            "avif": "static/media/concerts/concerts_20140808192532/gallery-sm.14d4b054.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20140808192532/gallery-md.14d4b054.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 400
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20140808192532/gallery-md.14d4b054.webp",
+            "avif": "static/media/concerts/concerts_20140808192532/gallery-md.14d4b054.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20140808192532/gallery-lg.14d4b054.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 801
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20140808192532/gallery-lg.14d4b054.webp",
+            "avif": "static/media/concerts/concerts_20140808192532/gallery-lg.14d4b054.avif"
+          }
+        }
+      }
+    },
+    "concerts_20150221210531": {
+      "path": "static/media/concerts/concerts_20150221210531/b6707ebd.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1367
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20150221210531/b6707ebd.webp",
+        "avif": "static/media/concerts/concerts_20150221210531/b6707ebd.avif"
+      },
+      "colors": {
+        "palette": [
+          "#c9e508",
+          "#598304",
+          "#e8b965",
+          "#878f5a",
+          "#58652f",
+          "#855c13"
+        ],
+        "dominant": "#c9e508"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20150221210531/gallery-sm.b6707ebd.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 200
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20150221210531/gallery-sm.b6707ebd.webp",
+            "avif": "static/media/concerts/concerts_20150221210531/gallery-sm.b6707ebd.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20150221210531/gallery-md.b6707ebd.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 400
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20150221210531/gallery-md.b6707ebd.webp",
+            "avif": "static/media/concerts/concerts_20150221210531/gallery-md.b6707ebd.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20150221210531/gallery-lg.b6707ebd.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 801
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20150221210531/gallery-lg.b6707ebd.webp",
+            "avif": "static/media/concerts/concerts_20150221210531/gallery-lg.b6707ebd.avif"
+          }
+        }
+      }
+    },
+    "concerts_20150123215948": {
+      "path": "static/media/concerts/concerts_20150123215948/1099252f.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1367
+      },
+      "formats": {
+        "webp": "static/media/concerts/concerts_20150123215948/1099252f.webp",
+        "avif": "static/media/concerts/concerts_20150123215948/1099252f.avif"
+      },
+      "colors": {
+        "palette": [
+          "#e21675",
+          "#6d0536",
+          "#f3b588",
+          "#a47762",
+          "#7d5142",
+          "#8a420e"
+        ],
+        "dominant": "#6d0536"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/concerts/concerts_20150123215948/gallery-sm.1099252f.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 200
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20150123215948/gallery-sm.1099252f.webp",
+            "avif": "static/media/concerts/concerts_20150123215948/gallery-sm.1099252f.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/concerts/concerts_20150123215948/gallery-md.1099252f.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 400
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20150123215948/gallery-md.1099252f.webp",
+            "avif": "static/media/concerts/concerts_20150123215948/gallery-md.1099252f.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/concerts/concerts_20150123215948/gallery-lg.1099252f.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 801
+          },
+          "formats": {
+            "webp": "static/media/concerts/concerts_20150123215948/gallery-lg.1099252f.webp",
+            "avif": "static/media/concerts/concerts_20150123215948/gallery-lg.1099252f.avif"
+          }
+        }
+      }
     }
   }
 }
