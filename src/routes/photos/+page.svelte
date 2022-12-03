@@ -18,18 +18,23 @@ $: posts = data.json
 		Photos
 		<svelte:fragment slot="intro">
 			Former side-hustle, current casual interest. Some of my favourite
-			shots from past and ongoing collections.
+			shots from past and ongoing&nbsp;collections.
 		</svelte:fragment>
 	</PageIntro>
 	<PageSection>
-		<div class="grid gap-4 md:grid-cols-2 md:gap-12 xl:gap-16">
-			{#each posts as gallery}
-				<GalleryCard
-					to="{gallery.path}/"
-					cover={gallery.coverImage}
-					title={gallery.meta.title}
-				/>
-			{/each}
+		<div class="grid gap-[9vh] md:gap-[11vh]">
+			<div class="grid gap-4 md:grid-cols-2 md:gap-12 xl:gap-16">
+				{#each posts as gallery}
+					<GalleryCard
+						to="{gallery.path}/"
+						cover={gallery.coverImage}
+						title={gallery.meta.title}
+					/>
+				{/each}
+			</div>
+			<!-- <div class="prose prose-invert md:prose-xl">
+				<p>These are some photo galleries.</p>
+			</div> -->
 		</div>
 	</PageSection>
 </article>

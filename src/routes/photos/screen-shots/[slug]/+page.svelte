@@ -42,7 +42,7 @@ function handleCloseCarousel() {
 		</svelte:fragment>
 	</PageIntro>
 	<PageSection>
-		<div class="grid gap-[10vh]">
+		<div class="grid gap-[9vh] md:gap-[11vh]">
 			<LensGallery
 				{images}
 				isHidden={isCarouselOpen}
