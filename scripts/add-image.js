@@ -40,7 +40,7 @@ const date = new Date(Date.now())
  * `:` with `-` so the Date constructor can parse it.
  */
 const fileDate = new Date(
-	execSync(`exiftool -DigitalCreationDateTime -s3 ${image}`)
+	execSync(`exiftool -DateTimeCreated -s3 ${image}`)
 		.toString()
 		.replace(/:/, '-')
 		.replace(/:/, '-')
@@ -62,8 +62,8 @@ const configPath = isScreenShotGallery
 	? sourceDirectory.join('/')
 	: sourceDirectory[1]
 const toml = TOML.stringify({
-	title: title.trim(),
-	caption: caption.trim(),
+	title: title ? title.trim() : undefined,
+	caption: caption ? caption.trim() : undefined,
 	posted: postedDate,
 })
 
