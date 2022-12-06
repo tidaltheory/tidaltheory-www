@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iarna/toml': 2.2.5
+  '@iarna/toml': toml-1.0.0-rc.1
   '@sveltejs/adapter-netlify': next
   '@sveltejs/adapter-static': 1.0.0-next.48
   '@sveltejs/kit': 1.0.0-next.561
@@ -44,7 +44,7 @@ specifiers:
   vite: 3.1.8
 
 devDependencies:
-  '@iarna/toml': 2.2.5
+  '@iarna/toml': 3.0.0
   '@sveltejs/adapter-netlify': 1.0.0-next.84
   '@sveltejs/adapter-static': 1.0.0-next.48
   '@sveltejs/kit': 1.0.0-next.561_svelte@3.52.0+vite@3.1.8
@@ -350,6 +350,10 @@ packages:
 
   /@iarna/toml/2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: true
+
+  /@iarna/toml/3.0.0:
+    resolution: {integrity: sha512-td6ZUkz2oS3VeleBcN+m//Q6HlCFCPrnI0FZhrt/h4XqLEdOyYp2u21nd8MdsR+WJy5r9PTDaHTDDfhf4H4l6Q==}
     dev: true
 
   /@jimp/bmp/0.16.1_@jimp+custom@0.16.1:
