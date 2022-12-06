@@ -1,9 +1,10 @@
 const COVER_IMAGES = [
+	'**/concerts_20120724215543.jpg',
 	'**/tlou_20200124225047.jpg',
 	'**/ac-origins_20200607204931.jpg',
 	'**/tlou2_20200623211955.jpg',
 	'**/hzd_20210625230628.jpg',
-	'**/concerts_20120724215543.jpg',
+	'**/ac-valhalla_20210101000058.jpg',
 ]
 
 /** @type {import('@tidaltheory/lens').LensConfig} */

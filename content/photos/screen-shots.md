@@ -1,6 +1,6 @@
 ---
 title: Screen Shots
 description: Screen Shots description
-updated: 2021-10-11T04:05:01.000Z
-cover: tlou2_20200623211955
+updated: 2021-11-21T03:34:59.000Z
+cover: ac-valhalla_20210101000058
 ---

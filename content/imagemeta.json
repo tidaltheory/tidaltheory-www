@@ -3990,6 +3990,1008 @@
           }
         }
       }
+    },
+    "ac-valhalla_20210101000058": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/b94aa7d6.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/b94aa7d6.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/b94aa7d6.avif"
+      },
+      "colors": {
+        "palette": [
+          "#d08210",
+          "#7c3407",
+          "#fad871",
+          "#928172",
+          "#644834",
+          "#cfbca8"
+        ],
+        "dominant": "#cfbca8"
+      },
+      "thumbnails": {
+        "cover-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/cover-sm.b94aa7d6.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 250
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/cover-sm.b94aa7d6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/cover-sm.b94aa7d6.avif"
+          }
+        },
+        "cover-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/cover-md.b94aa7d6.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 500
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/cover-md.b94aa7d6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/cover-md.b94aa7d6.avif"
+          }
+        },
+        "cover-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/cover-lg.b94aa7d6.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1000
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/cover-lg.b94aa7d6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/cover-lg.b94aa7d6.avif"
+          }
+        },
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/gallery-sm.b94aa7d6.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/gallery-sm.b94aa7d6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/gallery-sm.b94aa7d6.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/gallery-md.b94aa7d6.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/gallery-md.b94aa7d6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/gallery-md.b94aa7d6.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/gallery-lg.b94aa7d6.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/gallery-lg.b94aa7d6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210101000058/gallery-lg.b94aa7d6.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210112214644": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/a6b25190.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/a6b25190.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/a6b25190.avif"
+      },
+      "colors": {
+        "palette": [
+          "#0c92b8",
+          "#04729e",
+          "#82ddf6",
+          "#a98e79",
+          "#4c2e2c",
+          "#09718f"
+        ],
+        "dominant": "#0c92b8"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/gallery-sm.a6b25190.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/gallery-sm.a6b25190.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/gallery-sm.a6b25190.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/gallery-md.a6b25190.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/gallery-md.a6b25190.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/gallery-md.a6b25190.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/gallery-lg.a6b25190.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/gallery-lg.a6b25190.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112214644/gallery-lg.a6b25190.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210112215449": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/a55eaa6a.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/a55eaa6a.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/a55eaa6a.avif"
+      },
+      "colors": {
+        "palette": [
+          "#3e91b7",
+          "#144465",
+          "#5fc2cd",
+          "#638aa9",
+          "#2c445c",
+          "#8da4b6"
+        ],
+        "dominant": "#144465"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/gallery-sm.a55eaa6a.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/gallery-sm.a55eaa6a.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/gallery-sm.a55eaa6a.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/gallery-md.a55eaa6a.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/gallery-md.a55eaa6a.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/gallery-md.a55eaa6a.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/gallery-lg.a55eaa6a.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/gallery-lg.a55eaa6a.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210112215449/gallery-lg.a55eaa6a.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210129230619": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/647047e3.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/647047e3.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/647047e3.avif"
+      },
+      "colors": {
+        "palette": [
+          "#944c1c",
+          "#4e2c13",
+          "#e9b38f",
+          "#a47454",
+          "#553a2e",
+          "#b0b7be"
+        ],
+        "dominant": "#553a2e"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/gallery-sm.647047e3.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/gallery-sm.647047e3.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/gallery-sm.647047e3.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/gallery-md.647047e3.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/gallery-md.647047e3.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/gallery-md.647047e3.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/gallery-lg.647047e3.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/gallery-lg.647047e3.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210129230619/gallery-lg.647047e3.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210131230252": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/66b575c0.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/66b575c0.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/66b575c0.avif"
+      },
+      "colors": {
+        "palette": [
+          "#d4960c",
+          "#843c04",
+          "#e3c995",
+          "#718896",
+          "#483a32",
+          "#cfb9ac"
+        ],
+        "dominant": "#718896"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/gallery-sm.66b575c0.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/gallery-sm.66b575c0.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/gallery-sm.66b575c0.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/gallery-md.66b575c0.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/gallery-md.66b575c0.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/gallery-md.66b575c0.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/gallery-lg.66b575c0.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/gallery-lg.66b575c0.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210131230252/gallery-lg.66b575c0.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210314202003": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/6ea1ed0d.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/6ea1ed0d.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/6ea1ed0d.avif"
+      },
+      "colors": {
+        "palette": [
+          "#3b5dc3",
+          "#1c2c5c",
+          "#99abe0",
+          "#946992",
+          "#423765",
+          "#c9a3b4"
+        ],
+        "dominant": "#946992"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/gallery-sm.6ea1ed0d.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/gallery-sm.6ea1ed0d.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/gallery-sm.6ea1ed0d.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/gallery-md.6ea1ed0d.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/gallery-md.6ea1ed0d.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/gallery-md.6ea1ed0d.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/gallery-lg.6ea1ed0d.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/gallery-lg.6ea1ed0d.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314202003/gallery-lg.6ea1ed0d.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210314205428": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/cd1e5fa6.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/cd1e5fa6.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/cd1e5fa6.avif"
+      },
+      "colors": {
+        "palette": [
+          "#bd560a",
+          "#0a3128",
+          "#eea0ba",
+          "#5b4a86",
+          "#342d59",
+          "#bca2c9"
+        ],
+        "dominant": "#5b4a86"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/gallery-sm.cd1e5fa6.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/gallery-sm.cd1e5fa6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/gallery-sm.cd1e5fa6.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/gallery-md.cd1e5fa6.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/gallery-md.cd1e5fa6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/gallery-md.cd1e5fa6.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/gallery-lg.cd1e5fa6.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/gallery-lg.cd1e5fa6.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314205428/gallery-lg.cd1e5fa6.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210314211736": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/56164d7b.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/56164d7b.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/56164d7b.avif"
+      },
+      "colors": {
+        "palette": [
+          "#8d7771",
+          "#493e3b",
+          "#c3b8b5",
+          "#947c64",
+          "#384048",
+          "#c4b9b6"
+        ],
+        "dominant": "#384048"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/gallery-sm.56164d7b.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/gallery-sm.56164d7b.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/gallery-sm.56164d7b.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/gallery-md.56164d7b.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/gallery-md.56164d7b.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/gallery-md.56164d7b.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/gallery-lg.56164d7b.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/gallery-lg.56164d7b.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210314211736/gallery-lg.56164d7b.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210409205518": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/6db6e667.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/6db6e667.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/6db6e667.avif"
+      },
+      "colors": {
+        "palette": [
+          "#bd7641",
+          "#20140b",
+          "#ddb89c",
+          "#6d7a94",
+          "#39465c",
+          "#9fb2cc"
+        ],
+        "dominant": "#39465c"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/gallery-sm.6db6e667.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/gallery-sm.6db6e667.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/gallery-sm.6db6e667.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/gallery-md.6db6e667.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/gallery-md.6db6e667.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/gallery-md.6db6e667.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/gallery-lg.6db6e667.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/gallery-lg.6db6e667.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210409205518/gallery-lg.6db6e667.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210410225004": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/7b11f3cb.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/7b11f3cb.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/7b11f3cb.avif"
+      },
+      "colors": {
+        "palette": [
+          "#c0a641",
+          "#683c17",
+          "#e7d576",
+          "#9e7a5e",
+          "#563326",
+          "#d8d1b6"
+        ],
+        "dominant": "#683c17"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/gallery-sm.7b11f3cb.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/gallery-sm.7b11f3cb.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/gallery-sm.7b11f3cb.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/gallery-md.7b11f3cb.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/gallery-md.7b11f3cb.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/gallery-md.7b11f3cb.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/gallery-lg.7b11f3cb.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/gallery-lg.7b11f3cb.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210410225004/gallery-lg.7b11f3cb.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210416212441": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/6db03e39.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/6db03e39.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/6db03e39.avif"
+      },
+      "colors": {
+        "palette": [
+          "#345c84",
+          "#4d242e",
+          "#9fbcd9",
+          "#68728f",
+          "#2e3c56",
+          "#babecf"
+        ],
+        "dominant": "#68728f"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/gallery-sm.6db03e39.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/gallery-sm.6db03e39.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/gallery-sm.6db03e39.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/gallery-md.6db03e39.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/gallery-md.6db03e39.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/gallery-md.6db03e39.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/gallery-lg.6db03e39.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/gallery-lg.6db03e39.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210416212441/gallery-lg.6db03e39.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210613233827": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/0289c505.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/0289c505.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/0289c505.avif"
+      },
+      "colors": {
+        "palette": [
+          "#b99c37",
+          "#79612a",
+          "#e4ce86",
+          "#97806b",
+          "#574b3a",
+          "#d1b797"
+        ],
+        "dominant": "#97806b"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/gallery-sm.0289c505.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/gallery-sm.0289c505.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/gallery-sm.0289c505.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/gallery-md.0289c505.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/gallery-md.0289c505.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/gallery-md.0289c505.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/gallery-lg.0289c505.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/gallery-lg.0289c505.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210613233827/gallery-lg.0289c505.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210615005638": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/de2b07b5.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/de2b07b5.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/de2b07b5.avif"
+      },
+      "colors": {
+        "palette": [
+          "#3c6480",
+          "#044c34",
+          "#a4c0d4",
+          "#4b767f",
+          "#2d5154",
+          "#97b9c2"
+        ],
+        "dominant": "#4b767f"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/gallery-sm.de2b07b5.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/gallery-sm.de2b07b5.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/gallery-sm.de2b07b5.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/gallery-md.de2b07b5.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/gallery-md.de2b07b5.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/gallery-md.de2b07b5.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/gallery-lg.de2b07b5.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/gallery-lg.de2b07b5.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210615005638/gallery-lg.de2b07b5.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210802004230": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/5a2637ac.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/5a2637ac.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/5a2637ac.avif"
+      },
+      "colors": {
+        "palette": [
+          "#ad643d",
+          "#803c18",
+          "#cc9582",
+          "#b17164",
+          "#503a43",
+          "#b3929a"
+        ],
+        "dominant": "#503a43"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/gallery-sm.5a2637ac.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/gallery-sm.5a2637ac.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/gallery-sm.5a2637ac.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/gallery-md.5a2637ac.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/gallery-md.5a2637ac.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/gallery-md.5a2637ac.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/gallery-lg.5a2637ac.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/gallery-lg.5a2637ac.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210802004230/gallery-lg.5a2637ac.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20210813223039": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/8c8a048f.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/8c8a048f.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/8c8a048f.avif"
+      },
+      "colors": {
+        "palette": [
+          "#44748f",
+          "#04143c",
+          "#a5c3d4",
+          "#aa7462",
+          "#2d4d65",
+          "#315467"
+        ],
+        "dominant": "#2d4d65"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/gallery-sm.8c8a048f.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/gallery-sm.8c8a048f.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/gallery-sm.8c8a048f.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/gallery-md.8c8a048f.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/gallery-md.8c8a048f.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/gallery-md.8c8a048f.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/gallery-lg.8c8a048f.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/gallery-lg.8c8a048f.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20210813223039/gallery-lg.8c8a048f.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20211118195356": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/e8a1d627.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/e8a1d627.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/e8a1d627.avif"
+      },
+      "colors": {
+        "palette": [
+          "#cf372f",
+          "#340e0c",
+          "#f5ece0",
+          "#767990",
+          "#3c4c2e",
+          "#a4a6c2"
+        ],
+        "dominant": "#767990"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/gallery-sm.e8a1d627.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/gallery-sm.e8a1d627.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/gallery-sm.e8a1d627.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/gallery-md.e8a1d627.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/gallery-md.e8a1d627.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/gallery-md.e8a1d627.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/gallery-lg.e8a1d627.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/gallery-lg.e8a1d627.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211118195356/gallery-lg.e8a1d627.avif"
+          }
+        }
+      }
+    },
+    "ac-valhalla_20211120203459": {
+      "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/770b52bd.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/770b52bd.webp",
+        "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/770b52bd.avif"
+      },
+      "colors": {
+        "palette": [
+          "#1a82e4",
+          "#041423",
+          "#88bef1",
+          "#737c90",
+          "#2b3c51",
+          "#b4bcc7"
+        ],
+        "dominant": "#041423"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/gallery-sm.770b52bd.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/gallery-sm.770b52bd.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/gallery-sm.770b52bd.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/gallery-md.770b52bd.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/gallery-md.770b52bd.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/gallery-md.770b52bd.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/gallery-lg.770b52bd.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/gallery-lg.770b52bd.webp",
+            "avif": "static/media/screen-shots/assassins-creed-valhalla/ac-valhalla_20211120203459/gallery-lg.770b52bd.avif"
+          }
+        }
+      }
     }
   }
 }

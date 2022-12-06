@@ -36,11 +36,13 @@ const date = new Date(Date.now())
 /**
  * The date from the image file.
  *
+ * Tag is either `DateTimeCreated` or `DigitalCreationDateTime`.
+ *
  * EXIF DateTime is in the format YYYY:MM:DD HH:MM:SS, so replace the first two
  * `:` with `-` so the Date constructor can parse it.
  */
 const fileDate = new Date(
-	execSync(`exiftool -DateTimeCreated -s3 ${image}`)
+	execSync(`exiftool -DigitalCreationDateTime -s3 ${image}`)
 		.toString()
 		.replace(/:/, '-')
 		.replace(/:/, '-')
