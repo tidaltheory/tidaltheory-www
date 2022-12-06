@@ -1747,64 +1747,61 @@
         "title": "Distracted"
       }
     },
-    "tlou2_20211010214838": {
-      "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/9b98a913.jpg",
+    "tlou2_20211010214923": {
+      "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/d9a863a2.jpg",
       "dimensions": {
-        "width": 2048,
-        "height": 1152
+        "width": 1365,
+        "height": 2048
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/9b98a913.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/9b98a913.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/d9a863a2.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/d9a863a2.avif"
       },
       "colors": {
         "palette": [
-          "#3fbf3f",
-          "#040c04",
-          "#9bdd9b",
-          "#84847c",
-          "#3c4444",
-          "#bbbab8"
+          "#bfbf3f",
+          "#0c0c04",
+          "#dddd9b",
+          "#83847c",
+          "#44443c",
+          "#ccc4c4"
         ],
-        "dominant": "#bbbab8"
+        "dominant": "#83847c"
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/gallery-sm.9b98a913.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/gallery-sm.d9a863a2.jpg",
           "dimensions": {
             "width": 300,
-            "height": 169
+            "height": 450
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/gallery-sm.9b98a913.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/gallery-sm.9b98a913.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/gallery-sm.d9a863a2.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/gallery-sm.d9a863a2.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/gallery-md.9b98a913.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/gallery-md.d9a863a2.jpg",
           "dimensions": {
             "width": 600,
-            "height": 338
+            "height": 900
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/gallery-md.9b98a913.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/gallery-md.9b98a913.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/gallery-md.d9a863a2.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/gallery-md.d9a863a2.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/gallery-lg.9b98a913.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/gallery-lg.d9a863a2.jpg",
           "dimensions": {
             "width": 1200,
-            "height": 675
+            "height": 1800
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/gallery-lg.9b98a913.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214838/gallery-lg.9b98a913.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/gallery-lg.d9a863a2.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010214923/gallery-lg.d9a863a2.avif"
           }
         }
-      },
-      "meta": {
-        "title": "Caught in a storm"
       }
     },
     "tlou2_20211010220501": {
