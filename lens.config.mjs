@@ -5,6 +5,7 @@ const COVER_IMAGES = [
 	'**/tlou2_20200623211955.jpg',
 	'**/hzd_20210625230628.jpg',
 	'**/ac-valhalla_20210101000058.jpg',
+	'**/dsdc_20211001203219.jpg',
 ]
 
 /** @type {import('@tidaltheory/lens').LensConfig} */

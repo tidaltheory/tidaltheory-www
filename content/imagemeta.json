@@ -4992,6 +4992,666 @@
           }
         }
       }
+    },
+    "dsdc_20211001203219": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20211001203219/81a0850b.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20211001203219/81a0850b.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20211001203219/81a0850b.avif"
+      },
+      "colors": {
+        "palette": [
+          "#b65f42",
+          "#6c341c",
+          "#fa9e72",
+          "#925746",
+          "#3a271d",
+          "#c2beb2"
+        ],
+        "dominant": "#b65f42"
+      },
+      "thumbnails": {
+        "cover-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211001203219/cover-sm.81a0850b.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 250
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211001203219/cover-sm.81a0850b.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211001203219/cover-sm.81a0850b.avif"
+          }
+        },
+        "cover-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211001203219/cover-md.81a0850b.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 500
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211001203219/cover-md.81a0850b.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211001203219/cover-md.81a0850b.avif"
+          }
+        },
+        "cover-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211001203219/cover-lg.81a0850b.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1000
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211001203219/cover-lg.81a0850b.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211001203219/cover-lg.81a0850b.avif"
+          }
+        },
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211001203219/gallery-sm.81a0850b.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211001203219/gallery-sm.81a0850b.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211001203219/gallery-sm.81a0850b.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211001203219/gallery-md.81a0850b.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211001203219/gallery-md.81a0850b.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211001203219/gallery-md.81a0850b.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211001203219/gallery-lg.81a0850b.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211001203219/gallery-lg.81a0850b.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211001203219/gallery-lg.81a0850b.avif"
+          }
+        }
+      }
+    },
+    "dsdc_20211126191930": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20211126191930/034cdc0c.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20211126191930/034cdc0c.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20211126191930/034cdc0c.avif"
+      },
+      "colors": {
+        "palette": [
+          "#cc4233",
+          "#501a14",
+          "#e49c94",
+          "#89685a",
+          "#604130",
+          "#7a271e"
+        ],
+        "dominant": "#604130"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211126191930/gallery-sm.034cdc0c.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211126191930/gallery-sm.034cdc0c.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211126191930/gallery-sm.034cdc0c.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211126191930/gallery-md.034cdc0c.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211126191930/gallery-md.034cdc0c.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211126191930/gallery-md.034cdc0c.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211126191930/gallery-lg.034cdc0c.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211126191930/gallery-lg.034cdc0c.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211126191930/gallery-lg.034cdc0c.avif"
+          }
+        }
+      }
+    },
+    "dsdc_20211127205327": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20211127205327/ef777350.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20211127205327/ef777350.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20211127205327/ef777350.avif"
+      },
+      "colors": {
+        "palette": [
+          "#2048de",
+          "#0b184a",
+          "#8b9fed",
+          "#a2635c",
+          "#3c4425",
+          "#a0c2c7"
+        ],
+        "dominant": "#3c4425"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211127205327/gallery-sm.ef777350.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211127205327/gallery-sm.ef777350.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211127205327/gallery-sm.ef777350.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211127205327/gallery-md.ef777350.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211127205327/gallery-md.ef777350.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211127205327/gallery-md.ef777350.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211127205327/gallery-lg.ef777350.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211127205327/gallery-lg.ef777350.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211127205327/gallery-lg.ef777350.avif"
+          }
+        }
+      }
+    },
+    "dsdc_20211202185659": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20211202185659/e89f2556.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20211202185659/e89f2556.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20211202185659/e89f2556.avif"
+      },
+      "colors": {
+        "palette": [
+          "#c03e57",
+          "#6c2331",
+          "#de9aa7",
+          "#696e7c",
+          "#343b51",
+          "#af877b"
+        ],
+        "dominant": "#696e7c"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211202185659/gallery-sm.e89f2556.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211202185659/gallery-sm.e89f2556.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211202185659/gallery-sm.e89f2556.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211202185659/gallery-md.e89f2556.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211202185659/gallery-md.e89f2556.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211202185659/gallery-md.e89f2556.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211202185659/gallery-lg.e89f2556.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211202185659/gallery-lg.e89f2556.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211202185659/gallery-lg.e89f2556.avif"
+          }
+        }
+      }
+    },
+    "dsdc_20211202191014": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20211202191014/8a681045.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20211202191014/8a681045.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20211202191014/8a681045.avif"
+      },
+      "colors": {
+        "palette": [
+          "#9a6948",
+          "#67131d",
+          "#d4b8a4",
+          "#955b5a",
+          "#313950",
+          "#d5d8db"
+        ],
+        "dominant": "#d5d8db"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211202191014/gallery-sm.8a681045.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211202191014/gallery-sm.8a681045.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211202191014/gallery-sm.8a681045.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211202191014/gallery-md.8a681045.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211202191014/gallery-md.8a681045.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211202191014/gallery-md.8a681045.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211202191014/gallery-lg.8a681045.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211202191014/gallery-lg.8a681045.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211202191014/gallery-lg.8a681045.avif"
+          }
+        }
+      }
+    },
+    "dsdc_20211223213048": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20211223213048/44d77fd4.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20211223213048/44d77fd4.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20211223213048/44d77fd4.avif"
+      },
+      "colors": {
+        "palette": [
+          "#2248a1",
+          "#070a14",
+          "#dca76b",
+          "#a1754c",
+          "#383e54",
+          "#b4c4c6"
+        ],
+        "dominant": "#070a14"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211223213048/gallery-sm.44d77fd4.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211223213048/gallery-sm.44d77fd4.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211223213048/gallery-sm.44d77fd4.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211223213048/gallery-md.44d77fd4.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211223213048/gallery-md.44d77fd4.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211223213048/gallery-md.44d77fd4.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20211223213048/gallery-lg.44d77fd4.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20211223213048/gallery-lg.44d77fd4.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20211223213048/gallery-lg.44d77fd4.avif"
+          }
+        }
+      }
+    },
+    "dsdc_20220105203845": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20220105203845/fb8be513.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20220105203845/fb8be513.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20220105203845/fb8be513.avif"
+      },
+      "colors": {
+        "palette": [
+          "#2a4ad4",
+          "#040714",
+          "#90a1e8",
+          "#777583",
+          "#302e42",
+          "#bab4b3"
+        ],
+        "dominant": "#777583"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105203845/gallery-sm.fb8be513.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105203845/gallery-sm.fb8be513.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105203845/gallery-sm.fb8be513.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105203845/gallery-md.fb8be513.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105203845/gallery-md.fb8be513.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105203845/gallery-md.fb8be513.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105203845/gallery-lg.fb8be513.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105203845/gallery-lg.fb8be513.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105203845/gallery-lg.fb8be513.avif"
+          }
+        }
+      }
+    },
+    "dsdc_20220105205655": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20220105205655/9615a015.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20220105205655/9615a015.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20220105205655/9615a015.avif"
+      },
+      "colors": {
+        "palette": [
+          "#c67953",
+          "#5d462c",
+          "#f3ba83",
+          "#9f746c",
+          "#5c343c",
+          "#b87f71"
+        ],
+        "dominant": "#9f746c"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105205655/gallery-sm.9615a015.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105205655/gallery-sm.9615a015.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105205655/gallery-sm.9615a015.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105205655/gallery-md.9615a015.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105205655/gallery-md.9615a015.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105205655/gallery-md.9615a015.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105205655/gallery-lg.9615a015.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105205655/gallery-lg.9615a015.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105205655/gallery-lg.9615a015.avif"
+          }
+        }
+      }
+    },
+    "dsdc_20220105222931": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20220105222931/ca8b52eb.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20220105222931/ca8b52eb.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20220105222931/ca8b52eb.avif"
+      },
+      "colors": {
+        "palette": [
+          "#5579b6",
+          "#323f70",
+          "#88c8e0",
+          "#908270",
+          "#444c54",
+          "#1f6079"
+        ],
+        "dominant": "#444c54"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105222931/gallery-sm.ca8b52eb.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105222931/gallery-sm.ca8b52eb.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105222931/gallery-sm.ca8b52eb.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105222931/gallery-md.ca8b52eb.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105222931/gallery-md.ca8b52eb.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105222931/gallery-md.ca8b52eb.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105222931/gallery-lg.ca8b52eb.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105222931/gallery-lg.ca8b52eb.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105222931/gallery-lg.ca8b52eb.avif"
+          }
+        }
+      }
+    },
+    "dsdc_20220105223439": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20220105223439/4e73692b.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20220105223439/4e73692b.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20220105223439/4e73692b.avif"
+      },
+      "colors": {
+        "palette": [
+          "#b4824c",
+          "#8a633b",
+          "#fceceb",
+          "#a08f8d",
+          "#36394d",
+          "#a0c1d1"
+        ],
+        "dominant": "#fceceb"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105223439/gallery-sm.4e73692b.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105223439/gallery-sm.4e73692b.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105223439/gallery-sm.4e73692b.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105223439/gallery-md.4e73692b.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105223439/gallery-md.4e73692b.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105223439/gallery-md.4e73692b.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220105223439/gallery-lg.4e73692b.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220105223439/gallery-lg.4e73692b.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220105223439/gallery-lg.4e73692b.avif"
+          }
+        }
+      }
+    },
+    "dsdc_20220130213319": {
+      "path": "static/media/screen-shots/death-stranding/dsdc_20220130213319/d5605d1d.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/death-stranding/dsdc_20220130213319/d5605d1d.webp",
+        "avif": "static/media/screen-shots/death-stranding/dsdc_20220130213319/d5605d1d.avif"
+      },
+      "colors": {
+        "palette": [
+          "#b57632",
+          "#9c541c",
+          "#e2be97",
+          "#536988",
+          "#282e41",
+          "#a8b7c8"
+        ],
+        "dominant": "#282e41"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220130213319/gallery-sm.d5605d1d.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220130213319/gallery-sm.d5605d1d.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220130213319/gallery-sm.d5605d1d.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220130213319/gallery-md.d5605d1d.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220130213319/gallery-md.d5605d1d.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220130213319/gallery-md.d5605d1d.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/death-stranding/dsdc_20220130213319/gallery-lg.d5605d1d.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/death-stranding/dsdc_20220130213319/gallery-lg.d5605d1d.webp",
+            "avif": "static/media/screen-shots/death-stranding/dsdc_20220130213319/gallery-lg.d5605d1d.avif"
+          }
+        }
+      }
     }
   }
 }
