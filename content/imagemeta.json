@@ -1805,64 +1805,62 @@
       }
     },
     "tlou2_20211010220501": {
-      "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/f2febe59.jpg",
+      "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/46a4e105.jpg",
       "dimensions": {
         "width": 2048,
         "height": 1152
       },
       "formats": {
-        "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/f2febe59.webp",
-        "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/f2febe59.avif"
+        "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/46a4e105.webp",
+        "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/46a4e105.avif"
       },
       "colors": {
         "palette": [
-          "#528eae",
-          "#294c5a",
-          "#64acc4",
-          "#57829e",
-          "#2b5164",
-          "#7ca1b5"
+          "#4792b7",
+          "#145c74",
+          "#5db4cd",
+          "#5085a5",
+          "#244553",
+          "#76a6be"
         ],
-        "dominant": "#528eae"
+        "dominant": "#4792b7"
       },
       "thumbnails": {
         "gallery-sm": {
-          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-sm.f2febe59.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-sm.46a4e105.jpg",
           "dimensions": {
             "width": 300,
             "height": 169
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-sm.f2febe59.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-sm.f2febe59.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-sm.46a4e105.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-sm.46a4e105.avif"
           }
         },
         "gallery-md": {
-          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-md.f2febe59.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-md.46a4e105.jpg",
           "dimensions": {
             "width": 600,
             "height": 338
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-md.f2febe59.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-md.f2febe59.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-md.46a4e105.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-md.46a4e105.avif"
           }
         },
         "gallery-lg": {
-          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-lg.f2febe59.jpg",
+          "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-lg.46a4e105.jpg",
           "dimensions": {
             "width": 1200,
             "height": 675
           },
           "formats": {
-            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-lg.f2febe59.webp",
-            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-lg.f2febe59.avif"
+            "webp": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-lg.46a4e105.webp",
+            "avif": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010220501/gallery-lg.46a4e105.avif"
           }
         }
       },
-      "meta": {
-        "title": "Cold"
-      }
+      "meta": {}
     },
     "tlou2_20211010222814": {
       "path": "static/media/screen-shots/the-last-of-us-part-ii/tlou2_20211010222814/d916b19f.jpg",

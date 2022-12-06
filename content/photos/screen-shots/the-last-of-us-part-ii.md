@@ -3,7 +3,7 @@ title: The Last of Us
 subtitle: Part II
 description: As lush as the backgrounds are, the characters display a lot of expressions and mannerisms too, so I explored more portrait-style&nbsp;framing.
 created: 2020-06-23
-updated: 2021-10-11T03:49:23.000Z
+updated: 2021-10-11T04:05:01.000Z
 cover: tlou2_20200623211955
 images:
     - tlou2_20200623211955
