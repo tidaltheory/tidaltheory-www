@@ -5652,6 +5652,552 @@
           }
         }
       }
+    },
+    "hfw_20220218060432": {
+      "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/3edad69c.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/3edad69c.webp",
+        "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/3edad69c.avif"
+      },
+      "colors": {
+        "palette": [
+          "#ccac34",
+          "#303918",
+          "#f4e0da",
+          "#918471",
+          "#404728",
+          "#d2bdb3"
+        ],
+        "dominant": "#303918"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/gallery-sm.3edad69c.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/gallery-sm.3edad69c.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/gallery-sm.3edad69c.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/gallery-md.3edad69c.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/gallery-md.3edad69c.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/gallery-md.3edad69c.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/gallery-lg.3edad69c.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/gallery-lg.3edad69c.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220218060432/gallery-lg.3edad69c.avif"
+          }
+        }
+      }
+    },
+    "hfw_20220219205710": {
+      "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/5d93392c.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/5d93392c.webp",
+        "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/5d93392c.avif"
+      },
+      "colors": {
+        "palette": [
+          "#7e4435",
+          "#612d1e",
+          "#d7aca1",
+          "#9a5c4c",
+          "#4e342a",
+          "#cec2b8"
+        ],
+        "dominant": "#7e4435"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/gallery-sm.5d93392c.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/gallery-sm.5d93392c.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/gallery-sm.5d93392c.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/gallery-md.5d93392c.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/gallery-md.5d93392c.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/gallery-md.5d93392c.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/gallery-lg.5d93392c.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/gallery-lg.5d93392c.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219205710/gallery-lg.5d93392c.avif"
+          }
+        }
+      }
+    },
+    "hfw_20220219210113": {
+      "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/76f713bb.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/76f713bb.webp",
+        "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/76f713bb.avif"
+      },
+      "colors": {
+        "palette": [
+          "#ac5c35",
+          "#6c5414",
+          "#f4e9de",
+          "#7d7774",
+          "#5e382d",
+          "#c8c7c4"
+        ],
+        "dominant": "#7d7774"
+      },
+      "thumbnails": {
+        "cover-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/cover-sm.76f713bb.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 250
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/cover-sm.76f713bb.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/cover-sm.76f713bb.avif"
+          }
+        },
+        "cover-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/cover-md.76f713bb.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 500
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/cover-md.76f713bb.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/cover-md.76f713bb.avif"
+          }
+        },
+        "cover-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/cover-lg.76f713bb.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1000
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/cover-lg.76f713bb.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/cover-lg.76f713bb.avif"
+          }
+        },
+        "gallery-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/gallery-sm.76f713bb.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/gallery-sm.76f713bb.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/gallery-sm.76f713bb.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/gallery-md.76f713bb.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/gallery-md.76f713bb.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/gallery-md.76f713bb.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/gallery-lg.76f713bb.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/gallery-lg.76f713bb.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220219210113/gallery-lg.76f713bb.avif"
+          }
+        }
+      }
+    },
+    "hfw_20220223200246": {
+      "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/7dbd025b.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/7dbd025b.webp",
+        "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/7dbd025b.avif"
+      },
+      "colors": {
+        "palette": [
+          "#b67a5a",
+          "#04142c",
+          "#d6b4a3",
+          "#3e5f77",
+          "#34495f",
+          "#6a432e"
+        ],
+        "dominant": "#b67a5a"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/gallery-sm.7dbd025b.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/gallery-sm.7dbd025b.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/gallery-sm.7dbd025b.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/gallery-md.7dbd025b.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/gallery-md.7dbd025b.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/gallery-md.7dbd025b.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/gallery-lg.7dbd025b.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/gallery-lg.7dbd025b.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223200246/gallery-lg.7dbd025b.avif"
+          }
+        }
+      }
+    },
+    "hfw_20220223202014": {
+      "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/91e4e296.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/91e4e296.webp",
+        "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/91e4e296.avif"
+      },
+      "colors": {
+        "palette": [
+          "#bf9f3f",
+          "#0c0a04",
+          "#ddcd9b",
+          "#84847c",
+          "#444442",
+          "#bcbcbc"
+        ],
+        "dominant": "#0c0a04"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/gallery-sm.91e4e296.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/gallery-sm.91e4e296.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/gallery-sm.91e4e296.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/gallery-md.91e4e296.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/gallery-md.91e4e296.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/gallery-md.91e4e296.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/gallery-lg.91e4e296.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/gallery-lg.91e4e296.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220223202014/gallery-lg.91e4e296.avif"
+          }
+        }
+      }
+    },
+    "hfw_20220226000255": {
+      "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/5bc68d00.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/5bc68d00.webp",
+        "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/5bc68d00.avif"
+      },
+      "colors": {
+        "palette": [
+          "#ab6513",
+          "#9d340d",
+          "#e6c48b",
+          "#ab8867",
+          "#644130",
+          "#b19b8e"
+        ],
+        "dominant": "#644130"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/gallery-sm.5bc68d00.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/gallery-sm.5bc68d00.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/gallery-sm.5bc68d00.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/gallery-md.5bc68d00.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/gallery-md.5bc68d00.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/gallery-md.5bc68d00.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/gallery-lg.5bc68d00.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/gallery-lg.5bc68d00.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226000255/gallery-lg.5bc68d00.avif"
+          }
+        }
+      }
+    },
+    "hfw_20220226210829": {
+      "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/f58458f4.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/f58458f4.webp",
+        "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/f58458f4.avif"
+      },
+      "colors": {
+        "palette": [
+          "#f67948",
+          "#6e190c",
+          "#fbcd80",
+          "#a15d60",
+          "#583235",
+          "#945e04"
+        ],
+        "dominant": "#fbcd80"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/gallery-sm.f58458f4.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/gallery-sm.f58458f4.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/gallery-sm.f58458f4.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/gallery-md.f58458f4.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/gallery-md.f58458f4.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/gallery-md.f58458f4.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/gallery-lg.f58458f4.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/gallery-lg.f58458f4.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220226210829/gallery-lg.f58458f4.avif"
+          }
+        }
+      }
+    },
+    "hfw_20220304063708": {
+      "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/c39f8a75.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/c39f8a75.webp",
+        "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/c39f8a75.avif"
+      },
+      "colors": {
+        "palette": [
+          "#d3713f",
+          "#743c1c",
+          "#f3c091",
+          "#9e6657",
+          "#673d35",
+          "#bb8c6f"
+        ],
+        "dominant": "#673d35"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/gallery-sm.c39f8a75.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/gallery-sm.c39f8a75.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/gallery-sm.c39f8a75.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/gallery-md.c39f8a75.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/gallery-md.c39f8a75.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/gallery-md.c39f8a75.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/gallery-lg.c39f8a75.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/gallery-lg.c39f8a75.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220304063708/gallery-lg.c39f8a75.avif"
+          }
+        }
+      }
+    },
+    "hfw_20220310202508": {
+      "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/5345221a.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/5345221a.webp",
+        "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/5345221a.avif"
+      },
+      "colors": {
+        "palette": [
+          "#ba5f2c",
+          "#641c14",
+          "#ecdf93",
+          "#a65870",
+          "#4e383b",
+          "#bd9795"
+        ],
+        "dominant": "#4e383b"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/gallery-sm.5345221a.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/gallery-sm.5345221a.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/gallery-sm.5345221a.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/gallery-md.5345221a.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/gallery-md.5345221a.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/gallery-md.5345221a.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/gallery-lg.5345221a.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/gallery-lg.5345221a.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20220310202508/gallery-lg.5345221a.avif"
+          }
+        }
+      }
     }
   }
 }
