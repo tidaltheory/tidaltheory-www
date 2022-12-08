@@ -7,7 +7,7 @@ import SiteNav from '$lib/components/site-nav.svelte'
 let bg
 </script>
 
-<div class="grid min-h-screen">
+<div class="grid min-h-[100svh]">
 	<ObserveIntersection once element={bg} let:intersecting>
 		<div
 			class="bg absolute top-0 right-0 -z-[1] h-full w-full"
