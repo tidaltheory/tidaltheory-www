@@ -1,4 +1,6 @@
 <script>
+import { crossfade, scale } from 'svelte/transition'
+
 import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
 import LensGallery from '$lib/components/lens-gallery.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
@@ -10,12 +12,22 @@ $: ({ title, subtitle, description, coverImage, images, content, cleanIntro } =
 	data.json)
 $: fullTitle = subtitle ? [title, subtitle].join(' ') : title
 
-let isCarouselOpen = false
+let isCarouselOpen = null
 let initialIndex = 0
 
+const [send, receive] = crossfade({
+	duration: 200,
+	fallback: scale,
+})
+
 async function handleOpenCarousel(index) {
-	isCarouselOpen = true
-	initialIndex = index
+	const image = new Image()
+
+	image.addEventListener('load', () => {
+		isCarouselOpen = true
+		initialIndex = index
+	})
+	image.src = `${images[index].path.replace(/^static/, '')}`
 }
 
 function handleCloseCarousel() {
@@ -47,13 +59,19 @@ function handleCloseCarousel() {
 				{images}
 				isHidden={isCarouselOpen}
 				onOpen={handleOpenCarousel}
+				{send}
+				{receive}
 			/>
 			{#if isCarouselOpen}
-				<GalleryCarousel
-					{images}
-					{initialIndex}
-					onClose={handleCloseCarousel}
-				/>
+				{#await isCarouselOpen then}
+					<GalleryCarousel
+						{images}
+						{initialIndex}
+						onClose={handleCloseCarousel}
+						{send}
+						{receive}
+					/>
+				{/await}
 			{/if}
 			<div class="prose prose-invert md:prose-xl">
 				{@html content}
