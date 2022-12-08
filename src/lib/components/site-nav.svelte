@@ -20,9 +20,7 @@ beforeNavigate(async () => {
 	<div class="relative z-10 h-16 bg-grey-900 px-8 py-4 md:h-screen md:p-6">
 		<div class="flex justify-between md:absolute">
 			<div class="flex">
-				<a href="/" class="rounded {FOCUS_OUTLINE}">
-					<div class="h-8 w-8 rounded bg-cyan-600" />
-				</a>
+				<SiteNavItem href="/" home label="Home" />
 			</div>
 			<div class="flex md:hidden">
 				<button
@@ -37,9 +35,9 @@ beforeNavigate(async () => {
 		<div class="flex h-full place-items-center">
 			<nav class="hidden md:block">
 				<div class="grid gap-8">
-					<SiteNavItem href="/about/" />
-					<SiteNavItem href="/projects/" />
-					<SiteNavItem href="/photos/" />
+					<SiteNavItem href="/about/" label="About" />
+					<SiteNavItem href="/projects/" label="Projects" />
+					<SiteNavItem href="/photos/" label="Photos" />
 					<!-- <SiteNavItem href="/blog/" /> -->
 				</div>
 			</nav>
