@@ -19,6 +19,6 @@ images:
     - dsdc_20220130213319
 ---
 
-One of the strongest photo modes I’ve played with; the controls map to familiar camera settings giving it a very intuitive feel. The posing options a very nuanced as well, offering line-of-sight and body position&nbsp;adjustments.
+One of the strongest photo modes I’ve played with; the controls map to familiar camera settings giving it a very intuitive feel. The posing options are very nuanced as well, offering line-of-sight and body position&nbsp;adjustments.
 
 I just wish there were more opportunities to capture the other characters, and that the camera wasn’t so tethered to the player. Being able to pull farther back would be great for highlighting Sam’s isolation within these striking&nbsp;landscapes.
