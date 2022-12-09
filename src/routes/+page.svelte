@@ -18,7 +18,8 @@ $: ({ recentGalleries } = data.json)
 	<PageHero>
 		Tidal<br />Theory
 		<svelte:fragment slot="intro">
-			User Interface Developer,<br />currently working at Clari.
+			User Interface Developer,<br />video game photographer,<br />based
+			in Edmonton, Canada.
 		</svelte:fragment>
 	</PageHero>
 	<PageSection>
