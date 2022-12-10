@@ -1,8 +1,11 @@
 <script>
+import { onMount } from 'svelte'
+
 import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
 import LensGallery from '$lib/components/lens-gallery.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
+import { replaceUrl } from '$lib/replace-url'
 
 /** @type {import('./$types').PageData} */
 export let data
@@ -22,6 +25,13 @@ function handleCloseCarousel() {
 	isCarouselOpen = false
 	initialIndex = 0
 }
+
+onMount(() => {
+	if (data.params.image) {
+		replaceUrl(data.cleanUrl)
+		handleOpenCarousel(data.params.image - 1)
+	}
+})
 </script>
 
 <svelte:head>
