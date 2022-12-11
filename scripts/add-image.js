@@ -6,6 +6,7 @@ import { parse } from 'node:path'
 import { parseArgs } from 'node:util'
 
 import TOML from '@iarna/toml'
+import { globby } from 'globby'
 
 const options = {
 	old: {
@@ -14,91 +15,98 @@ const options = {
 	},
 }
 const { values, positionals } = parseArgs({ options, strict: false })
-const image = positionals[0]
-const { dir, name } = parse(image)
+const pathArgument = positionals[0]
 
-/**
- * Generate thumbnails for image.
- */
-await exec(`lens add ${image} --store content/imagemeta.json`)
+const images = await globby(pathArgument)
 
-/**
- * Get metadata from image.
- */
+for await (const image of images) {
+	/**
+	 * Generate thumbnails for image.
+	 */
+	await exec(`lens add ${image} --store content/imagemeta.json`)
 
-/** The image's IPTC title. */
-const title = execSync(`exiftool -ObjectName -s3 ${image}`).toString()
-/** The image's IPTC description. */
-const caption = execSync(`exiftool -Caption-Abstract -s3 ${image}`).toString()
+	/**
+	 * Add image metadata to gallery.
+	 */
 
-/** The current date. */
-const date = new Date(Date.now())
-/**
- * The date from the image file.
- *
- * Tag is either `DateTimeCreated` or `DigitalCreationDateTime`.
- *
- * EXIF DateTime is in the format YYYY:MM:DD HH:MM:SS, so replace the first two
- * `:` with `-` so the Date constructor can parse it.
- */
-const fileDate = new Date(
-	execSync(`exiftool -DigitalCreationDateTime -s3 ${image}`)
-		.toString()
-		.replace(/:/, '-')
-		.replace(/:/, '-')
-)
-const postedDate = values.old ? fileDate.toISOString() : date.toISOString()
+	const { dir, name } = parse(image)
 
-/**
- * Write metadata to TOML file.
- *
- * If this is the first image in a gallery, remember to create the content
- * directory and markdown page first.
- */
+	/** The image's IPTC title. */
+	const title = execSync(`exiftool -ObjectName -s3 ${image}`).toString()
+	/** The image's IPTC description. */
+	const caption = execSync(
+		`exiftool -Caption-Abstract -s3 ${image}`
+	).toString()
 
-/** Get the last two segments of the image path. */
-const sourceDirectory = dir.split('/').slice(-2)
-const isScreenShotGallery = sourceDirectory[0] === 'screen-shots'
+	/** The current date. */
+	const date = new Date(Date.now())
+	/**
+	 * The date from the image file.
+	 *
+	 * Tag is either `DateTimeCreated` or `DigitalCreationDateTime`.
+	 *
+	 * EXIF DateTime is in the format YYYY:MM:DD HH:MM:SS, so replace the first
+	 * two `:` with `-` so the Date constructor can parse it.
+	 */
+	const fileDate = new Date(
+		execSync(`exiftool -DateTimeCreated -s3 ${image}`)
+			.toString()
+			.replace(/:/, '-')
+			.replace(/:/, '-')
+	)
+	const postedDate = values.old ? fileDate.toISOString() : date.toISOString()
 
-const configPath = isScreenShotGallery
-	? sourceDirectory.join('/')
-	: sourceDirectory[1]
-const toml = TOML.stringify({
-	title: title ? title.trim() : undefined,
-	caption: caption ? caption.trim() : undefined,
-	posted: postedDate,
-})
+	/**
+	 * Write metadata to TOML file.
+	 *
+	 * If this is the first image in a gallery, remember to create the content
+	 * directory and markdown page first.
+	 */
 
-await writeFile(`content/photos/${configPath}/${name}.toml`, toml)
+	/** Get the last two segments of the image path. */
+	const sourceDirectory = dir.split('/').slice(-2)
+	const isScreenShotGallery = sourceDirectory[0] === 'screen-shots'
 
-/**
- * Update gallery timestamp.
- */
+	const configPath = isScreenShotGallery
+		? sourceDirectory.join('/')
+		: sourceDirectory[1]
+	const toml = TOML.stringify({
+		title: title ? title.trim() : undefined,
+		caption: caption ? caption.trim() : undefined,
+		posted: postedDate,
+	})
 
-/** Path to image's gallery page. */
-const galleryFile = new URL(
-	`../content/photos/${configPath}.md`,
-	import.meta.url
-)
-const galleryContent = await readFile(galleryFile, 'utf8')
-const [coverImage] = galleryContent.match(/cover: [\w-]*/)
+	await writeFile(`content/photos/${configPath}/${name}.toml`, toml)
 
-await writeFile(
-	galleryFile,
-	galleryContent.replace(/updated: [\w.:-]*/, `updated: ${postedDate}`)
-)
+	/**
+	 * Update gallery timestamp.
+	 */
 
-const screenShotFile = new URL(
-	'../content/photos/screen-shots.md',
-	import.meta.url
-)
+	/** Path to image's gallery page. */
+	const galleryFile = new URL(
+		`../content/photos/${configPath}.md`,
+		import.meta.url
+	)
+	const galleryContent = await readFile(galleryFile, 'utf8')
+	const [coverImage] = galleryContent.match(/cover: [\w-]*/)
 
-if (isScreenShotGallery) {
-	let screenShotContent = await readFile(screenShotFile, 'utf8')
+	await writeFile(
+		galleryFile,
+		galleryContent.replace(/updated: [\w.:-]*/, `updated: ${postedDate}`)
+	)
 
-	screenShotContent = screenShotContent
-		.replace(/cover: [\w-]*/, coverImage)
-		.replace(/updated: [\w.:-]*/, `updated: ${postedDate}`)
+	const screenShotFile = new URL(
+		'../content/photos/screen-shots.md',
+		import.meta.url
+	)
 
-	await writeFile(screenShotFile, screenShotContent)
+	if (isScreenShotGallery) {
+		let screenShotContent = await readFile(screenShotFile, 'utf8')
+
+		screenShotContent = screenShotContent
+			.replace(/cover: [\w-]*/, coverImage)
+			.replace(/updated: [\w.:-]*/, `updated: ${postedDate}`)
+
+		await writeFile(screenShotFile, screenShotContent)
+	}
 }
