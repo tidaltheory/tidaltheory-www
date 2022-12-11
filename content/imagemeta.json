@@ -6743,8 +6743,7 @@
             "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/gallery-lg.294b5a2a.avif"
           }
         }
-      },
-      "meta": {}
+      }
     },
     "hss_20220731211937": {
       "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/69986a3b.jpg",
@@ -6801,8 +6800,7 @@
             "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/gallery-lg.69986a3b.avif"
           }
         }
-      },
-      "meta": {}
+      }
     },
     "hss_20220801223122": {
       "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/9f07dd8e.jpg",
@@ -6859,8 +6857,7 @@
             "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/gallery-lg.9f07dd8e.avif"
           }
         }
-      },
-      "meta": {}
+      }
     }
   }
 }
