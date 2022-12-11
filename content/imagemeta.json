@@ -6198,6 +6198,669 @@
           }
         }
       }
+    },
+    "hss_20220728214439": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/aa7b822a.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/aa7b822a.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/aa7b822a.avif"
+      },
+      "colors": {
+        "palette": [
+          "#337bcb",
+          "#153252",
+          "#95bae3",
+          "#846690",
+          "#423f4e",
+          "#857aac"
+        ],
+        "dominant": "#423f4e"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/gallery-sm.aa7b822a.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/gallery-sm.aa7b822a.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/gallery-sm.aa7b822a.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/gallery-md.aa7b822a.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/gallery-md.aa7b822a.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/gallery-md.aa7b822a.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/gallery-lg.aa7b822a.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/gallery-lg.aa7b822a.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728214439/gallery-lg.aa7b822a.avif"
+          }
+        }
+      }
+    },
+    "hss_20220728215453": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/b5d13e46.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/b5d13e46.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/b5d13e46.avif"
+      },
+      "colors": {
+        "palette": [
+          "#36a4c8",
+          "#174554",
+          "#96cfe2",
+          "#6b767c",
+          "#2a4a51",
+          "#a5acb0"
+        ],
+        "dominant": "#6b767c"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/gallery-sm.b5d13e46.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/gallery-sm.b5d13e46.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/gallery-sm.b5d13e46.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/gallery-md.b5d13e46.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/gallery-md.b5d13e46.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/gallery-md.b5d13e46.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/gallery-lg.b5d13e46.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/gallery-lg.b5d13e46.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220728215453/gallery-lg.b5d13e46.avif"
+          }
+        }
+      }
+    },
+    "hss_20220729223129": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/3126fb40.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/3126fb40.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/3126fb40.avif"
+      },
+      "colors": {
+        "palette": [
+          "#9d6c34",
+          "#763e24",
+          "#d1b699",
+          "#a38361",
+          "#5b4d40",
+          "#caad89"
+        ],
+        "dominant": "#a38361"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/gallery-sm.3126fb40.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/gallery-sm.3126fb40.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/gallery-sm.3126fb40.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/gallery-md.3126fb40.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/gallery-md.3126fb40.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/gallery-md.3126fb40.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/gallery-lg.3126fb40.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/gallery-lg.3126fb40.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220729223129/gallery-lg.3126fb40.avif"
+          }
+        }
+      }
+    },
+    "hss_20220730000522": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/be389e0d.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/be389e0d.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/be389e0d.avif"
+      },
+      "colors": {
+        "palette": [
+          "#9c542c",
+          "#54341c",
+          "#e0b491",
+          "#9e785a",
+          "#5c3f30",
+          "#c5aea8"
+        ],
+        "dominant": "#9e785a"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/gallery-sm.be389e0d.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/gallery-sm.be389e0d.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/gallery-sm.be389e0d.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/gallery-md.be389e0d.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/gallery-md.be389e0d.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/gallery-md.be389e0d.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/gallery-lg.be389e0d.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/gallery-lg.be389e0d.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730000522/gallery-lg.be389e0d.avif"
+          }
+        }
+      }
+    },
+    "hss_20220730224204": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/bc78fdab.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/bc78fdab.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/bc78fdab.avif"
+      },
+      "colors": {
+        "palette": [
+          "#b47c2c",
+          "#7d3d12",
+          "#e5c1a7",
+          "#a88264",
+          "#57452b",
+          "#b29472"
+        ],
+        "dominant": "#a88264"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/gallery-sm.bc78fdab.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/gallery-sm.bc78fdab.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/gallery-sm.bc78fdab.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/gallery-md.bc78fdab.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/gallery-md.bc78fdab.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/gallery-md.bc78fdab.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/gallery-lg.bc78fdab.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/gallery-lg.bc78fdab.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730224204/gallery-lg.bc78fdab.avif"
+          }
+        }
+      }
+    },
+    "hss_20220730225250": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/d76e6447.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/d76e6447.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/d76e6447.avif"
+      },
+      "colors": {
+        "palette": [
+          "#169ee8",
+          "#041c29",
+          "#86ccf3",
+          "#94746c",
+          "#2a343c",
+          "#e3cedb"
+        ],
+        "dominant": "#2a343c"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/gallery-sm.d76e6447.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/gallery-sm.d76e6447.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/gallery-sm.d76e6447.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/gallery-md.d76e6447.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/gallery-md.d76e6447.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/gallery-md.d76e6447.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/gallery-lg.d76e6447.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/gallery-lg.d76e6447.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220730225250/gallery-lg.d76e6447.avif"
+          }
+        }
+      }
+    },
+    "hss_20220731005256": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/ddec2d4f.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/ddec2d4f.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/ddec2d4f.avif"
+      },
+      "colors": {
+        "palette": [
+          "#3542bd",
+          "#1d2482",
+          "#7582f3",
+          "#5e75a1",
+          "#293352",
+          "#6e79bd"
+        ],
+        "dominant": "#6e79bd"
+      },
+      "thumbnails": {
+        "cover-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/cover-sm.ddec2d4f.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 250
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/cover-sm.ddec2d4f.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/cover-sm.ddec2d4f.avif"
+          }
+        },
+        "cover-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/cover-md.ddec2d4f.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 500
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/cover-md.ddec2d4f.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/cover-md.ddec2d4f.avif"
+          }
+        },
+        "cover-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/cover-lg.ddec2d4f.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1000
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/cover-lg.ddec2d4f.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/cover-lg.ddec2d4f.avif"
+          }
+        },
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/gallery-sm.ddec2d4f.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/gallery-sm.ddec2d4f.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/gallery-sm.ddec2d4f.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/gallery-md.ddec2d4f.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/gallery-md.ddec2d4f.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/gallery-md.ddec2d4f.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/gallery-lg.ddec2d4f.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/gallery-lg.ddec2d4f.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731005256/gallery-lg.ddec2d4f.avif"
+          }
+        }
+      }
+    },
+    "hss_20220731013654": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/4814fda6.jpg",
+      "dimensions": {
+        "width": 1638,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/4814fda6.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/4814fda6.avif"
+      },
+      "colors": {
+        "palette": [
+          "#be4e36",
+          "#653618",
+          "#ded298",
+          "#5c79a1",
+          "#64412e",
+          "#83b3bd"
+        ],
+        "dominant": "#653618"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/gallery-sm.4814fda6.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 376
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/gallery-sm.4814fda6.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/gallery-sm.4814fda6.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/gallery-md.4814fda6.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 750
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/gallery-md.4814fda6.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/gallery-md.4814fda6.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/gallery-lg.4814fda6.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1500
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/gallery-lg.4814fda6.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731013654/gallery-lg.4814fda6.avif"
+          }
+        }
+      }
+    },
+    "hss_20220731211442": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/294b5a2a.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/294b5a2a.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/294b5a2a.avif"
+      },
+      "colors": {
+        "palette": [
+          "#c23929",
+          "#78260c",
+          "#e79a91",
+          "#9c7d52",
+          "#60442e",
+          "#c6bb9e"
+        ],
+        "dominant": "#c6bb9e"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/gallery-sm.294b5a2a.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/gallery-sm.294b5a2a.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/gallery-sm.294b5a2a.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/gallery-md.294b5a2a.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/gallery-md.294b5a2a.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/gallery-md.294b5a2a.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/gallery-lg.294b5a2a.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/gallery-lg.294b5a2a.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211442/gallery-lg.294b5a2a.avif"
+          }
+        }
+      },
+      "meta": {}
+    },
+    "hss_20220731211937": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/69986a3b.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/69986a3b.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/69986a3b.avif"
+      },
+      "colors": {
+        "palette": [
+          "#c46458",
+          "#041c1c",
+          "#d49e8d",
+          "#89716d",
+          "#3a4246",
+          "#d4baad"
+        ],
+        "dominant": "#89716d"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/gallery-sm.69986a3b.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/gallery-sm.69986a3b.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/gallery-sm.69986a3b.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/gallery-md.69986a3b.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/gallery-md.69986a3b.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/gallery-md.69986a3b.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/gallery-lg.69986a3b.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/gallery-lg.69986a3b.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220731211937/gallery-lg.69986a3b.avif"
+          }
+        }
+      },
+      "meta": {}
+    },
+    "hss_20220801223122": {
+      "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/9f07dd8e.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/9f07dd8e.webp",
+        "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/9f07dd8e.avif"
+      },
+      "colors": {
+        "palette": [
+          "#bf3f4f",
+          "#0c0405",
+          "#ecd4c4",
+          "#8e7c74",
+          "#4c3c4c",
+          "#c9aaa4"
+        ],
+        "dominant": "#0c0405"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/gallery-sm.9f07dd8e.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/gallery-sm.9f07dd8e.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/gallery-sm.9f07dd8e.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/gallery-md.9f07dd8e.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/gallery-md.9f07dd8e.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/gallery-md.9f07dd8e.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/gallery-lg.9f07dd8e.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/gallery-lg.9f07dd8e.webp",
+            "avif": "static/media/screen-shots/hellblade-senuas-sacrifice/hss_20220801223122/gallery-lg.9f07dd8e.avif"
+          }
+        }
+      },
+      "meta": {}
     }
   }
 }
