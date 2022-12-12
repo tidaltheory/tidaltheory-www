@@ -9,8 +9,9 @@ import { replaceUrl } from '$lib/replace-url'
 
 /** @type {import('./$types').PageData} */
 export let data
-$: ({ title, subtitle, description, coverImage, images, content, cleanIntro } =
-	data.json)
+
+$: ({ page, params, cleanUrl, cleanIntro } = data)
+$: ({ title, subtitle, description, coverImage, images, content } = page)
 $: fullTitle = subtitle ? [title, subtitle].join(' ') : title
 
 let isCarouselOpen = false
@@ -27,9 +28,11 @@ function handleCloseCarousel() {
 }
 
 onMount(() => {
-	if (data.params.image) {
-		replaceUrl(data.cleanUrl)
-		handleOpenCarousel(data.params.image - 1)
+	if (params.image) {
+		let index = images.findIndex((item) => item.key.includes(params.image))
+
+		handleOpenCarousel(index)
+		replaceUrl(cleanUrl)
 	}
 })
 </script>

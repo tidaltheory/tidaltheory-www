@@ -40,21 +40,15 @@ export async function loadGalleryPage(path) {
 
 	let images = []
 	for await (const key of data.images) {
-		let image
+		let image = library[key]
 
-		if (typeof key === 'string') {
-			image = library[key]
-			if (!image.meta) {
-				let toml = await readFile(resolve(dir, name, `${key}.toml`))
-				image.meta = TOML.parse(toml)
-			}
-		} else {
-			let imgKey = key[Object.keys(key)]
-
-			image = library[Object.keys(key)]
-
-			if (!image.meta) image.meta = imgKey
+		if (!image.meta) {
+			let toml = await readFile(resolve(dir, name, `${key}.toml`))
+			image.meta = TOML.parse(toml)
 		}
+
+		// Use image's datestamp as unique key.
+		image.key = key.match(/\d{14}/)[0]
 
 		images.push(image)
 	}
