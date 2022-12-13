@@ -7176,6 +7176,495 @@
           }
         }
       }
+    },
+    "apt-innocence_20221123213914": {
+      "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/cb8cc709.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/cb8cc709.webp",
+        "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/cb8cc709.avif"
+      },
+      "colors": {
+        "palette": [
+          "#768188",
+          "#3d4346",
+          "#b8bdc1",
+          "#677377",
+          "#3a3f3f",
+          "#b0b6ba"
+        ],
+        "dominant": "#677377"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/gallery-sm.cb8cc709.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/gallery-sm.cb8cc709.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/gallery-sm.cb8cc709.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/gallery-md.cb8cc709.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/gallery-md.cb8cc709.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/gallery-md.cb8cc709.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/gallery-lg.cb8cc709.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/gallery-lg.cb8cc709.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221123213914/gallery-lg.cb8cc709.avif"
+          }
+        }
+      }
+    },
+    "apt-innocence_20221128204501": {
+      "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/e621cc03.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/e621cc03.webp",
+        "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/e621cc03.avif"
+      },
+      "colors": {
+        "palette": [
+          "#9e613c",
+          "#6c421c",
+          "#dcb094",
+          "#aa7d52",
+          "#524338",
+          "#cdbca2"
+        ],
+        "dominant": "#524338"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/gallery-sm.e621cc03.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/gallery-sm.e621cc03.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/gallery-sm.e621cc03.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/gallery-md.e621cc03.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/gallery-md.e621cc03.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/gallery-md.e621cc03.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/gallery-lg.e621cc03.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/gallery-lg.e621cc03.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128204501/gallery-lg.e621cc03.avif"
+          }
+        }
+      }
+    },
+    "apt-innocence_20221120111528": {
+      "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/b79dd65c.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/b79dd65c.webp",
+        "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/b79dd65c.avif"
+      },
+      "colors": {
+        "palette": [
+          "#c9813b",
+          "#644a22",
+          "#a6c6ef",
+          "#607ca7",
+          "#382e1e",
+          "#c8adb8"
+        ],
+        "dominant": "#c8adb8"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/gallery-sm.b79dd65c.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/gallery-sm.b79dd65c.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/gallery-sm.b79dd65c.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/gallery-md.b79dd65c.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/gallery-md.b79dd65c.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/gallery-md.b79dd65c.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/gallery-lg.b79dd65c.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/gallery-lg.b79dd65c.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221120111528/gallery-lg.b79dd65c.avif"
+          }
+        }
+      }
+    },
+    "apt-innocence_20221128234036": {
+      "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/be3d14dc.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/be3d14dc.webp",
+        "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/be3d14dc.avif"
+      },
+      "colors": {
+        "palette": [
+          "#80a3cc",
+          "#04141c",
+          "#9cb9dc",
+          "#5b7092",
+          "#353c51",
+          "#9ab3d1"
+        ],
+        "dominant": "#5b7092"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/gallery-sm.be3d14dc.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/gallery-sm.be3d14dc.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/gallery-sm.be3d14dc.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/gallery-md.be3d14dc.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/gallery-md.be3d14dc.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/gallery-md.be3d14dc.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/gallery-lg.be3d14dc.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/gallery-lg.be3d14dc.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128234036/gallery-lg.be3d14dc.avif"
+          }
+        }
+      }
+    },
+    "apt-innocence_20221128215252": {
+      "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/dcf0ddce.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/dcf0ddce.webp",
+        "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/dcf0ddce.avif"
+      },
+      "colors": {
+        "palette": [
+          "#af545e",
+          "#5c1424",
+          "#e7afab",
+          "#ae5654",
+          "#4f2a2f",
+          "#c2a2a6"
+        ],
+        "dominant": "#4f2a2f"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/gallery-sm.dcf0ddce.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/gallery-sm.dcf0ddce.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/gallery-sm.dcf0ddce.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/gallery-md.dcf0ddce.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/gallery-md.dcf0ddce.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/gallery-md.dcf0ddce.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/gallery-lg.dcf0ddce.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/gallery-lg.dcf0ddce.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128215252/gallery-lg.dcf0ddce.avif"
+          }
+        }
+      }
+    },
+    "apt-innocence_20221128214433": {
+      "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/3ce8d41f.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/3ce8d41f.webp",
+        "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/3ce8d41f.avif"
+      },
+      "colors": {
+        "palette": [
+          "#cc643c",
+          "#501404",
+          "#ec9c6c",
+          "#906d86",
+          "#583436",
+          "#c9a29e"
+        ],
+        "dominant": "#c9a29e"
+      },
+      "thumbnails": {
+        "cover-sm": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/cover-sm.3ce8d41f.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 250
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/cover-sm.3ce8d41f.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/cover-sm.3ce8d41f.avif"
+          }
+        },
+        "cover-md": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/cover-md.3ce8d41f.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 500
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/cover-md.3ce8d41f.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/cover-md.3ce8d41f.avif"
+          }
+        },
+        "cover-lg": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/cover-lg.3ce8d41f.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1000
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/cover-lg.3ce8d41f.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/cover-lg.3ce8d41f.avif"
+          }
+        },
+        "gallery-sm": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/gallery-sm.3ce8d41f.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/gallery-sm.3ce8d41f.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/gallery-sm.3ce8d41f.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/gallery-md.3ce8d41f.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/gallery-md.3ce8d41f.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/gallery-md.3ce8d41f.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/gallery-lg.3ce8d41f.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/gallery-lg.3ce8d41f.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128214433/gallery-lg.3ce8d41f.avif"
+          }
+        }
+      }
+    },
+    "apt-innocence_20221128233410": {
+      "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/a95ace8a.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/a95ace8a.webp",
+        "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/a95ace8a.avif"
+      },
+      "colors": {
+        "palette": [
+          "#4392bb",
+          "#244e64",
+          "#9dc6db",
+          "#7083a4",
+          "#2a384f",
+          "#b9c6db"
+        ],
+        "dominant": "#2a384f"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/gallery-sm.a95ace8a.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/gallery-sm.a95ace8a.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/gallery-sm.a95ace8a.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/gallery-md.a95ace8a.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/gallery-md.a95ace8a.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/gallery-md.a95ace8a.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/gallery-lg.a95ace8a.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/gallery-lg.a95ace8a.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128233410/gallery-lg.a95ace8a.avif"
+          }
+        }
+      }
+    },
+    "apt-innocence_20221128231807": {
+      "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/d5174ad9.jpg",
+      "dimensions": {
+        "width": 1365,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/d5174ad9.webp",
+        "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/d5174ad9.avif"
+      },
+      "colors": {
+        "palette": [
+          "#24a3da",
+          "#0c3648",
+          "#8dcfec",
+          "#6095a2",
+          "#28434c",
+          "#156283"
+        ],
+        "dominant": "#0c3648"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/gallery-sm.d5174ad9.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 450
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/gallery-sm.d5174ad9.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/gallery-sm.d5174ad9.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/gallery-md.d5174ad9.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 900
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/gallery-md.d5174ad9.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/gallery-md.d5174ad9.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/gallery-lg.d5174ad9.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/gallery-lg.d5174ad9.webp",
+            "avif": "static/media/screen-shots/a-plague-tale-innocence/apt-innocence_20221128231807/gallery-lg.d5174ad9.avif"
+          }
+        }
+      }
     }
   }
 }

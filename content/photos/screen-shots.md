@@ -1,6 +1,6 @@
 ---
 title: Screen Shots
 description: Screen Shots description
-updated: 2022-10-09T04:58:08.000Z
-cover: tlou1_20221008221710
+updated: 2022-11-29T06:40:36.000Z
+cover: apt-innocence_20221128214433
 ---
