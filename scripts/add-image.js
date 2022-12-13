@@ -23,7 +23,7 @@ for await (const image of images) {
 	/**
 	 * Generate thumbnails for image.
 	 */
-	await exec(`lens add ${image} --store content/imagemeta.json`)
+	await exec(`lens add '${image}'`)
 
 	/**
 	 * Add image metadata to gallery.
