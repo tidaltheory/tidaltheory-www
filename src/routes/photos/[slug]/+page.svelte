@@ -1,6 +1,7 @@
 <script>
 import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
-import LensGallery from '$lib/components/lens-gallery.svelte'
+import GalleryThumbnail from '$lib/components/gallery-thumbnail.svelte'
+import MasonryGrid from '$lib/components/masonry-grid.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 
@@ -40,11 +41,15 @@ function handleCloseCarousel() {
 	</PageIntro>
 	<PageSection>
 		<div class="grid gap-[9vh] md:gap-[11vh]">
-			<LensGallery
-				{images}
-				isHidden={isCarouselOpen}
-				onOpen={handleOpenCarousel}
-			/>
+			<MasonryGrid items={images} gapClass="gap-4 md:gap-8 xl:gap-16">
+				{#each images as image, index}
+					<GalleryThumbnail
+						{image}
+						isHidden={isCarouselOpen}
+						onClick={() => handleOpenCarousel(index)}
+					/>
+				{/each}
+			</MasonryGrid>
 			{#if isCarouselOpen}
 				<GalleryCarousel
 					{images}
