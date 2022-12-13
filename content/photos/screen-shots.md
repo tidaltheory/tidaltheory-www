@@ -1,6 +1,6 @@
 ---
 title: Screen Shots
 description: Screen Shots description
-updated: 2022-08-02T04:31:22.000Z
-cover: hss_20220731005256
+updated: 2022-10-09T04:58:08.000Z
+cover: tlou1_20221008221710
 ---

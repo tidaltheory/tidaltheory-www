@@ -8,6 +8,7 @@ const COVER_IMAGES = [
 	'**/dsdc_20211001203219.jpg',
 	'**/hfw_20220219210113.jpg',
 	'**/hss_20220731005256.jpg',
+	'**/tlou1_20221008221710.jpg',
 ]
 
 /** @type {import('@tidaltheory/lens').LensConfig} */
