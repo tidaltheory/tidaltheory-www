@@ -82,7 +82,7 @@ onMount(() => {
 </script>
 
 <picture
-	class="xl:max-h-[calc(100vh_-_64px) flex h-full max-h-[calc(100vh_-_16px)] w-full opacity-0 transition-opacity duration-300 md:max-h-[calc(100vh_-_32px)]"
+	class="flex h-full max-h-[calc(100vh_-_16px)] w-full opacity-0 transition-opacity duration-300 md:max-h-[calc(100vh_-_32px)] xl:max-h-[calc(100vh_-_64px)]"
 	style:aspect-ratio={ratio}
 	style:max-width={imageObject.dimensions.width}
 >
