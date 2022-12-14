@@ -19,4 +19,4 @@ images:
     - hss_20220801223122
 ---
 
-This game also features one of my favourite photo mode features: depth-of-field–based vignetting and saturation. Came in really handy for nailing focus.
+This game features one of my favourite photo mode features: depth-of-field–based vignetting and saturation. This came in really handy for nailing focus. Another feature I appreciated is full camera control during cutscenes — I wish more games allowed&nbsp;this.

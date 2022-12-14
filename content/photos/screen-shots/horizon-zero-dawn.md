@@ -24,4 +24,4 @@ images:
     - hzd_20210728234447
 ---
 
-Being able to adjust the time of day in the photo mode was a welcome feature, and the machines reveal a lot of detail in close up shots.
+Being able to adjust the time of day in the photo mode was a welcome feature, and the machines reveal a lot of detail in close up shots. Adjusting Aloy’s pose and expression was a new feature for me as well — a great way to compose really unique images unrestricted by (or emphasizing) the tone dictated by the game’s&nbsp;narrative.

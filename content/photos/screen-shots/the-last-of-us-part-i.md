@@ -13,4 +13,4 @@ images:
     - tlou1_20221008225808
 ---
 
-The photo mode itself isn’t much changed from the Remastered, although being able to add key lights is a handy new feature.
+The photo mode itself isn’t much changed from the Remastered edition of the game, although being able to add key lights is a handy new feature.

@@ -15,3 +15,5 @@ images:
     - apt-innocence_20221128233410
     - apt-innocence_20221128234036
 ---
+
+It’s a shame characters’ facial expressions don’t match the emotion of the vocal performances, at least in normal gameplay moments. I guess I’ve been spoiled by <cite>The Last of Us</cite> in that regard. It just makes the challenge spotting those moments when they do change, or finding ways to work around&nbsp;it.
