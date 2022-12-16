@@ -52,7 +52,7 @@
     "@iarna/toml": "toml-1.0.0-rc.1",
     "@sveltejs/adapter-netlify": "next",
     "@sveltejs/adapter-static": "1.0.0-next.48",
-    "@sveltejs/kit": "1.0.0-next.561",
+    "@sveltejs/kit": "1.0.1",
     "@tailwindcss/typography": "0.5.8",
     "@tidaltheory/lens": "1.1.2",
     "@zazen/eslint-config": "6.1.0",
