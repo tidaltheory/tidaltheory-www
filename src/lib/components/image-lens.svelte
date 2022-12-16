@@ -17,7 +17,6 @@ let imgElement: HTMLImageElement | null = null
 const imageObject: ImageRecord = sizes ? image[sizes[0]] : image
 const hasAvif = Boolean(imageObject.formats?.avif)
 const hasWebp = Boolean(imageObject.formats?.webp)
-const ratio = imageObject.dimensions.width / imageObject.dimensions.height
 
 const imgSet = () => {
 	if (!sizes) return undefined
@@ -81,23 +80,20 @@ onMount(() => {
 })
 </script>
 
-<picture
-	class="flex h-full max-h-[calc(100vh_-_16px)] w-full opacity-0 transition-opacity duration-300 md:max-h-[calc(100vh_-_32px)] xl:max-h-[calc(100vh_-_64px)]"
-	style:aspect-ratio={ratio}
-	style:max-width={imageObject.dimensions.width}
->
+<picture class="opacity-0 transition-opacity duration-300">
 	{#if hasAvif}<source srcset={avifSet()} type="image/avif" />{/if}
 	{#if hasWebp}<source srcset={webpSet()} type="image/webp" />{/if}
 	<img
 		bind:this={imgElement}
+		use:reveal
 		class="h-full w-full object-contain"
-		src={getPath(imageObject.path)}
-		srcset={imgSet()}
 		width={imageObject.dimensions.width}
 		height={imageObject.dimensions.height}
 		loading={lazyLoad ? 'lazy' : undefined}
 		decoding="async"
-		use:reveal
 		alt=""
+		sizes="100vw"
+		srcset={imgSet()}
+		src={getPath(imageObject.path)}
 	/>
 </picture>

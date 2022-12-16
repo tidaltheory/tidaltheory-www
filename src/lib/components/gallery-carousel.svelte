@@ -61,7 +61,7 @@ function handleEscape(event: KeyboardEvent) {
 						data-index={index}
 						on:click|self|stopPropagation={onClose}
 					>
-						<div class="group relative">
+						<div class="group relative flex max-h-full max-w-full">
 							<ImageLens {image} lazyLoad={false} />
 							{#if image.meta}
 								<div class="absolute right-0 bottom-0 left-0">
@@ -105,7 +105,7 @@ function handleEscape(event: KeyboardEvent) {
 	left: 0;
 	z-index: 100;
 	display: grid;
-	grid: 100% / auto-flow calc(100% - 80px);
+	grid: 100% / auto-flow 100%;
 	align-content: center;
 	width: 100vw;
 	height: 100vh;
