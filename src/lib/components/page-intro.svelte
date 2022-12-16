@@ -20,6 +20,8 @@ let header
 		>
 			<div
 				class="col-span-full grid gap-6 md:col-span-3 md:pt-8 xl:pt-12"
+				class:opacity-0={!intersecting}
+				style:transform="translateZ(0)"
 			>
 				<Heading shouldShow={intersecting} transitionIn>
 					<slot />

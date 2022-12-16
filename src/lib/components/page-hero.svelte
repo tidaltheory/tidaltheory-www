@@ -12,6 +12,7 @@ let header
 		<div class="relative grid h-full grid-cols-4" bind:this={header}>
 			<div
 				class="z-10 col-span-full col-start-1 row-start-1 md:col-span-3 md:pt-8 xl:col-span-2 xl:pt-12"
+				style:transform="translateZ(0)"
 			>
 				<Heading shouldShow={intersecting} transitionIn
 					><slot /></Heading
