@@ -50,6 +50,8 @@ const config = {
 
 		'prefer-let/prefer-let': 'off',
 
+		'unicorn/switch-case-braces': ['error', 'avoid'],
+
 		yoda: 'off',
 	},
 	overrides: [
