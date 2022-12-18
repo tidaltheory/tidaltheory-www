@@ -7665,6 +7665,63 @@
           }
         }
       }
+    },
+    "tlou1_20221008222336": {
+      "path": "static/media/writing/tlou1_20221008222336/a913ec14.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/writing/tlou1_20221008222336/a913ec14.webp",
+        "avif": "static/media/writing/tlou1_20221008222336/a913ec14.avif"
+      },
+      "colors": {
+        "palette": [
+          "#7f7f7f",
+          "#424242",
+          "#bcbcbc",
+          "#7c7c7c",
+          "#444444",
+          "#b5b5b5"
+        ],
+        "dominant": "#b5b5b5"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/writing/tlou1_20221008222336/gallery-sm.a913ec14.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/writing/tlou1_20221008222336/gallery-sm.a913ec14.webp",
+            "avif": "static/media/writing/tlou1_20221008222336/gallery-sm.a913ec14.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/writing/tlou1_20221008222336/gallery-md.a913ec14.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/writing/tlou1_20221008222336/gallery-md.a913ec14.webp",
+            "avif": "static/media/writing/tlou1_20221008222336/gallery-md.a913ec14.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/writing/tlou1_20221008222336/gallery-lg.a913ec14.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/writing/tlou1_20221008222336/gallery-lg.a913ec14.webp",
+            "avif": "static/media/writing/tlou1_20221008222336/gallery-lg.a913ec14.avif"
+          }
+        }
+      }
     }
   }
 }

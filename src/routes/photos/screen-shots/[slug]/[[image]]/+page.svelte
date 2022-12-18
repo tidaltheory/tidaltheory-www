@@ -73,7 +73,7 @@ onMount(() => {
 					onClose={handleCloseCarousel}
 				/>
 			{/if}
-			<div class="prose prose-invert md:prose-xl">
+			<div class="prose prose-invert">
 				{@html content}
 			</div>
 		</div>
