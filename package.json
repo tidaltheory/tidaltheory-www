@@ -45,7 +45,7 @@
     ]
   },
   "dependencies": {
-    "@floating-ui/dom": "1.0.9",
+    "@floating-ui/dom": "1.0.12",
     "svelte-floating-ui": "1.1.6"
   },
   "devDependencies": {
