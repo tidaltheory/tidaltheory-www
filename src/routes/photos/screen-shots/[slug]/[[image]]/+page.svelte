@@ -40,6 +40,7 @@ onMount(() => {
 
 <svelte:head>
 	<title>{fullTitle} — Screen Shots — Photos — Tidal Theory</title>
+	<meta name="twitter:card" content="summary_large_card" />
 	<meta
 		property="og:title"
 		content="{fullTitle} — Screen Shots — Tidal Theory"

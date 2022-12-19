@@ -12,9 +12,16 @@ $: ({ title, excerpt, coverImage, blocks } = page)
 
 <svelte:head>
 	<title>{title} — Tidal Theory</title>
+	<meta
+		name="twitter:card"
+		content={coverImage ? 'summary_large_card' : 'summary'}
+	/>
 	<meta property="og:title" content="{title} — Tidal Theory" />
 	<meta property="og:description" content={excerpt} />
-	<meta property="og:image" content={`https://tidaltheory.io${coverImage}`} />
+	{#if coverImage}<meta
+			property="og:image"
+			content={`https://tidaltheory.io${coverImage}`}
+		/>{/if}
 </svelte:head>
 
 <article>

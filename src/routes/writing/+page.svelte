@@ -5,6 +5,8 @@ import PageSection from '$lib/components/page-section.svelte'
 
 <svelte:head>
 	<title>Writing — Tidal Theory</title>
+	<meta name="twitter:card" content="summary" />
+	<meta property="og:title" content="Writing — Tidal Theory" />
 </svelte:head>
 
 <article>

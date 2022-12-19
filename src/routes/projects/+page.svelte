@@ -4,6 +4,8 @@ import PageIntro from '$lib/components/page-intro.svelte'
 
 <svelte:head>
 	<title>Projects — Tidal Theory</title>
+	<meta name="twitter:card" content="summary" />
+	<meta property="og:title" content="Projects — Tidal Theory" />
 </svelte:head>
 
 <article>

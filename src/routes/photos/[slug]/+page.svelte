@@ -27,6 +27,7 @@ function handleCloseCarousel() {
 
 <svelte:head>
 	<title>{fullTitle} — Photos — Tidal Theory</title>
+	<meta name="twitter:card" content="summary_large_card" />
 	<meta property="og:title" content="{fullTitle} — Tidal Theory" />
 	<meta property="og:description" content={cleanIntro} />
 	<meta property="og:image" content={`https://tidaltheory.io${coverImage}`} />

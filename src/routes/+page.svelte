@@ -12,6 +12,8 @@ $: ({ recentGalleries } = data.json)
 
 <svelte:head>
 	<title>Tidal Theory</title>
+	<meta name="twitter:card" content="summary" />
+	<meta property="og:title" content="Tidal Theory" />
 </svelte:head>
 
 <article>

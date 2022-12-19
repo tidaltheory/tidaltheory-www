@@ -12,6 +12,15 @@ $: posts = data.json
 
 <svelte:head>
 	<title>Photos — Tidal Theory</title>
+	<meta
+		name="twitter:card"
+		content={posts[0].coverImage ? 'summary_large_card' : 'summary'}
+	/>
+	<meta property="og:title" content="Photos — Tidal Theory" />
+	{#if posts[0].coverImage}<meta
+			property="og:image"
+			content={`https://tidaltheory.io${posts[0].coverImage}`}
+		/>{/if}
 </svelte:head>
 
 <article>

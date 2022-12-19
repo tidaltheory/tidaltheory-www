@@ -6,6 +6,7 @@ import PageSection from '$lib/components/page-section.svelte'
 
 <svelte:head>
 	<title>About — Tidal Theory</title>
+	<meta property="og:title" content="About — Tidal Theory" />
 </svelte:head>
 
 <article>
