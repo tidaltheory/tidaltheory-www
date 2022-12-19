@@ -37,7 +37,7 @@ let header
 					class="col-span-3 col-start-2 row-start-2 pt-[9vh] md:pt-[11vh] xl:pt-36"
 				>
 					<p
-						class="header-intro text-grey-100 font-sans text-lg leading-6 leading-trim salt md:text-2xl md:leading-9"
+						class="header-intro text-grey-100 font-sans text-lg leading-trim salt md:text-xl"
 						class:translate-y-[1.5vh]={!intersecting}
 						class:opacity-0={!intersecting}
 						style="--delay: 100ms"

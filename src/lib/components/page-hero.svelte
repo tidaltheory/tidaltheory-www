@@ -14,14 +14,14 @@ let header
 				class="z-10 col-span-full col-start-1 row-start-1 md:col-span-3 md:pt-8 xl:col-span-2 xl:pt-12"
 				style:transform="translateZ(0)"
 			>
-				<Heading shouldShow={intersecting} transitionIn
+				<Heading level="0" shouldShow={intersecting} transitionIn
 					><slot /></Heading
 				>
 			</div>
 			{#if $$slots.intro}
 				<div class="z-10 col-span-3 row-start-2 self-end xl:col-span-2">
 					<p
-						class="text-grey-100 font-sans text-lg leading-6 leading-trim salt md:text-2xl md:leading-9"
+						class="text-grey-100 font-sans text-lg leading-trim salt md:text-xl"
 					>
 						<slot name="intro" />
 					</p>

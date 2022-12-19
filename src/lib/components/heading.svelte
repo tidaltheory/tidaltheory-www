@@ -4,16 +4,18 @@ import { onMount } from 'svelte'
 import { unwrapLines, wrapLines } from '$lib/wrap-lines'
 
 const resolveHeadingElement = {
+	0: 'h1',
 	1: 'h1',
 	2: 'h2',
 	3: 'h3',
 	4: 'h4',
 }
 const headingStyle = {
-	1: 'text-5xl md:text-7xl xl:text-8xl',
-	2: 'text-4xl md:text-6xl xl:text-7xl',
-	3: 'text-3xl md:text-5xl xl:text-5xl',
-	4: 'text-2xl md:text-3xl xl:text-3xl',
+	0: 'text-5xl md:text-7xl xl:text-8xl',
+	1: 'text-4xl md:text-6xl xl:text-7xl',
+	2: 'text-3xl md:text-5xl xl:text-6xl',
+	3: 'text-2xl md:text-4xl xl:text-5xl',
+	4: 'text-xl md:text-3xl xl:text-4xl',
 }
 
 /** @type {keyof typeof resolveHeadingElement} */

@@ -6,10 +6,10 @@ const resolveHeadingElement = {
 	4: 'h4',
 }
 const headingStyle = {
-	1: 'text-5xl md:text-7xl xl:text-8xl',
-	2: 'text-4xl md:text-6xl xl:text-7xl',
-	3: 'text-3xl md:text-5xl xl:text-5xl',
-	4: 'text-2xl md:text-3xl xl:text-3xl',
+	1: 'text-4xl md:text-6xl xl:text-7xl',
+	2: 'text-3xl md:text-5xl xl:text-6xl',
+	3: 'text-2xl md:text-4xl xl:text-5xl',
+	4: 'text-xl md:text-3xl xl:text-4xl',
 }
 
 export let shouldShow: boolean | undefined
