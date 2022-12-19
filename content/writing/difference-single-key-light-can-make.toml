@@ -6,11 +6,11 @@ updated = 2022-12-17
 [[blocks]]
   type = 'markdown'
   markdown = '''
-Photo modes in other games — *Spider-Man: Miles Morales*, *Ratchet & Clank: Rift Apart*, etc. — have included a lighting mode feature, but *The Last of Us Part I* is the first game where I’ve really taken the time to explore it.
+Photo modes in other games — *Spider-Man: Miles Morales*, *Ratchet & Clank: Rift Apart*, etc. — have included a lighting mode feature, but *The Last of Us Part I* is the first game where I’ve actually taken the time to explore it.
 
-Being able to add even just a single extra light to a scene allows for a lot more options in composing a shot.
+Being able to add even just a single extra light to a scene allows for many more options in composing a shot.
 
-Here’s an example of a shot of Joel in a cloud of spores. He’s backlit by Tess’s flashlight (lighting sources don’t always have to be environmental) which lights up the spore cloud to good effect, but leaves our subject without a lot of detail.
+Here’s an example of a shot of Joel in a cloud of spores. He’s backlit by Tess’s flashlight (lighting sources don’t always have to be environmental), which lights up the spore cloud to good effect, but leaves our subject without much detail.
 '''
 
 [[blocks]]
@@ -20,9 +20,9 @@ Here’s an example of a shot of Joel in a cloud of spores. He’s backlit by Te
 [[blocks]]
   type = 'markdown'
   markdown = '''
-Side note: I had to edit this first image a bit to match the final image for this example. There *is* a rim light in this scene, but it’s off to camera left and not really adding much, aside from a nice detail in part of the gas mask.
+Side note: I had to edit this first image slightly to match the final image for this example. There *is* a rim light in this scene, but it’s off to camera left and not adding much, aside from a small specular detail in part of the gas mask.
 
-By adding a single low-intensity light opposite the backlight, we can bring out a lot more detail and depth to the shot — Joel’s eyes behind the mask, even a small reflection highlight in his own flashlight.
+By adding a single low-intensity light opposite the backlight, we can bring out a lot more detail and depth to the shot — Joel’s eyes behind the mask, even a small reflection highlight in his own flashlight — without sacrificing the drama of the scene.
 '''
 
 [[blocks]]
@@ -32,5 +32,5 @@ By adding a single low-intensity light opposite the backlight, we can bring out 
 [[blocks]]
   type = 'markdown'
   markdown = '''
-An extra fill or key light isn’t always necessary of course. A wider shot of Joel in full silhouette in the spore cloud could also work well. Since it’s a close-up shot though, why not show off those great details?
+An extra fill or key light isn’t always necessary, of course. A wider shot of Joel in full silhouette in the spore cloud could also work well. Since it’s a close-up shot though, why not show off those great details?
 '''
