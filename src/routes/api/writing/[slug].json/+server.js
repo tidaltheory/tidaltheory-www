@@ -15,6 +15,12 @@ export const GET = async ({ params }) => {
 	let toml = TOML.parse(
 		await readFile(resolve('content', 'writing', `${slug}.toml`))
 	)
+	let coverImage = toml.cover
+		? library[toml.cover].thumbnails['gallery-lg'].path.replace(
+				/^static/,
+				''
+		  )
+		: undefined
 
 	for await (let block of toml.blocks) {
 		switch (block.type) {
@@ -31,5 +37,8 @@ export const GET = async ({ params }) => {
 		}
 	}
 
-	return json(toml)
+	return json({
+		...toml,
+		coverImage,
+	})
 }

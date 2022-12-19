@@ -7,11 +7,14 @@ import PageSection from '$lib/components/page-section.svelte'
 export let data
 
 $: ({ page } = data)
-$: ({ title, blocks } = page)
+$: ({ title, excerpt, coverImage, blocks } = page)
 </script>
 
 <svelte:head>
 	<title>{title} — Tidal Theory</title>
+	<meta property="og:title" content="{title} — Tidal Theory" />
+	<meta property="og:description" content={excerpt} />
+	<meta property="og:image" content={`https://tidaltheory.io${coverImage}`} />
 </svelte:head>
 
 <article>
