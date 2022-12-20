@@ -54,7 +54,7 @@
     "@sveltejs/kit": "1.0.1",
     "@tailwindcss/typography": "0.5.8",
     "@tidaltheory/lens": "1.1.2",
-    "@zazen/eslint-config": "6.1.0",
+    "@zazen/eslint-config": "6.2.1",
     "@zazen/stylelint-config": "3.0.0",
     "autoprefixer": "10.4.13",
     "eslint": "8.28.0",
