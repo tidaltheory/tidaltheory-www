@@ -3,6 +3,7 @@ import { FOCUS_OUTLINE } from '$lib/classnames'
 
 import IconDocumentAdd from './icons/icon-document-add.svelte'
 import IconPhoto from './icons/icon-photo.svelte'
+import RelativeDate from './relative-date.svelte'
 
 export let update
 
@@ -43,7 +44,7 @@ $: hasPreview = ['gallery-add', 'post-add'].includes(_type)
 		</p>
 	</div>
 	<div class="flex h-9 items-center">
-		<time class="text-grey-400 text-xs" datetime={date}>{date}</time>
+		<RelativeDate {date} />
 	</div>
 	{#if hasPreview}
 		<div class="col-[2]">
