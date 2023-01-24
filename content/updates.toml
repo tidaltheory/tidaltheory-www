@@ -1,0 +1,20 @@
+[[updates]]
+  _type = 'gallery-update'
+  date = 2023-01-14
+  slug = 'screen-shots/a-plague-tale-innocence'
+  count = 4
+
+[[updates]]
+  _type = 'post-add'
+  date = 2022-12-17
+  slug = 'difference-single-key-light-can-make'
+
+[[updates]]
+  _type = 'gallery-add'
+  date = 2022-11-29T06:40:36.000Z
+  slug = 'screen-shots/a-plague-tale-innocence'
+
+[[updates]]
+  _type = 'gallery-add'
+  date = 2022-10-09T04:58:08.000Z
+  slug = 'screen-shots/the-last-of-us-part-i'
