@@ -2,6 +2,7 @@ import { readFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 
 import TOML from '@iarna/toml'
+import { formatISO } from 'date-fns'
 import matter from 'gray-matter'
 
 import { library } from '../../content/imagemeta.json'
@@ -44,6 +45,8 @@ export const load = async () => {
 	let parsedUpdates = []
 
 	for await (const update of toml.updates) {
+		update.id = formatISO(new Date(update.date), { format: 'basic' })
+
 		switch (update._type) {
 			case 'gallery-add':
 			case 'gallery-update':
