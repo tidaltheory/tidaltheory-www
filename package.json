@@ -45,9 +45,9 @@
     ]
   },
   "dependencies": {
-    "@floating-ui/dom": "1.0.12",
+    "@floating-ui/dom": "1.1.1",
     "date-fns": "2.29.3",
-    "svelte-floating-ui": "1.1.6"
+    "svelte-floating-ui": "1.2.8"
   },
   "devDependencies": {
     "@iarna/toml": "toml-1.0.0-rc.1",
