@@ -1,5 +1,11 @@
 [[updates]]
   _type = 'gallery-update'
+  date = 2023-02-03T18:29:11.550Z
+  slug = 'screen-shots/horizon-forbidden-west'
+  count = 9
+
+[[updates]]
+  _type = 'gallery-update'
   date = 2023-01-14
   slug = 'screen-shots/a-plague-tale-innocence'
   count = 4
