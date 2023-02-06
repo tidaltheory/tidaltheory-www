@@ -18,7 +18,7 @@ let link
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- eslint-disable-next-line svelte/valid-compile  -->
 <article
-	class="group relative grid cursor-pointer grid-cols-[36px_1fr_auto] gap-2 rounded-[1px] font-sans salt ss-02 {FOCUS_OUTLINE} focus-within:outline"
+	class="group relative grid cursor-pointer grid-cols-[36px_1fr_auto] gap-2 rounded-[1px] font-sans salt {FOCUS_OUTLINE} outline-offset-8 focus-within:outline"
 	bind:this={card}
 	on:click={(event) => (event.target === link ? {} : link.click())}
 >
