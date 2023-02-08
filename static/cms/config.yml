@@ -4,6 +4,8 @@ backend:
   branch: main
   squash_merges: true
 
+publish_mode: editorial_workflow
+
 site_url: https://tidaltheory.io
 
 media_folder: static/media
