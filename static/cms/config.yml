@@ -1,96 +1,28 @@
 backend:
-    name: github
-    repo: tidaltheory/tidaltheory-www
-    branch: main
-    squash_merges: true
+  name: github
+  repo: tidaltheory/tidaltheory-www
+  branch: main
+  squash_merges: true
 
 media_folder: static/media
 public_folder: /media
 
 collections:
-    - name: media
-      label: Media
-      folder: static/media
-      create: true
-      format: toml
-      slug: '{{fields.slug}}'
-      #   preview_path: '{{filename}}.{{extension}}'
-      fields:
-          - { label: Slug, name: slug, widget: string }
-          - name: image
-            widget: object
-            fields:
-                - label: Image
-                  name: source
-                  widget: image
-                  allow_multiple: false
-                - label: Dominant colour
-                  name: dominant
-                  widget: hidden
-                - label: Alt text
-                  name: alt
-                  widget: string
-
-    - name: work
-      label: Work
-      folder: content/work
-      create: true
-      slug: '{{slug}}'
-      fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Tagline, name: tagline, widget: string }
-          - label: Cover image
-            name: cover
-            widget: relation
-            collection: media
-            valueField: image
-            searchFields: [slug]
-            displayFields: [slug]
-          - label: Icon
-            name: icon
-            widget: image
-            allow_multiple: false
-          - { label: Publish Date, name: date, widget: date }
-          - { label: Intro, name: intro, widget: markdown }
-          - { label: Body, name: body, widget: markdown }
-          - { label: Category, name: category, widget: list }
-          - { label: Tags, name: tags, widget: list }
+  - name: notes
+    label: Notes
+    label_singular: Note
+    folder: content/notes
+    create: true
+    format: toml-frontmatter
+    identifier_field: date
+    slug: '{{date | date('x')}}'
+    fields:
+      - { label: Date, name: date, widget: datetime }
+      - { label: Updated, name: updated, widget: datetime }
+      - { label: Content, name: content, widget: markdown }
+      - label: Syndication
+        name: syndication
+        widget: list
+        required: false
+        fields:
           - { label: URL, name: url, widget: string }
-          - label: Collaborators
-            name: collaborators
-            widget: markdown
-
-    - name: projects
-      label: Projects
-      label_singular: Project
-      folder: content/projects
-      create: true
-      slug: '{{slug}}'
-      fields:
-          - { label: Title, name: title, widget: string }
-          - { label: URL, name: url, widget: string }
-          - { label: Description, name: description, widget: markdown }
-          - { label: Category, name: category, widget: list }
-
-    - name: galleries
-      label: Galleries
-      label_singular: Gallery
-      folder: content/photos
-      create: true
-      slug: '{{slug}}'
-      fields:
-          - { label: Title, name: title, widget: string }
-          - label: Banner
-            name: banner
-            widget: image
-            required: false
-            allow_multiple: false
-          - { label: Description, name: description, widget: markdown }
-          - label: Images
-            name: images
-            widget: list
-            fields:
-                - { name: image, label: Image, widget: image }
-                - { name: alt, label: Alt, widget: string, required: false }
-                - { name: title, label: Title, widget: string, required: false }
-          - { label: Category, name: category, widget: list }
