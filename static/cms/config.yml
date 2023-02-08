@@ -4,6 +4,8 @@ backend:
   branch: main
   squash_merges: true
 
+site_url: https://tidaltheory.io
+
 media_folder: static/media
 public_folder: /media
 
@@ -15,7 +17,7 @@ collections:
     create: true
     format: toml-frontmatter
     identifier_field: date
-    slug: '{{date | date('x')}}'
+    slug: "{{date | date('x')}}"
     fields:
       - { label: Date, name: date, widget: datetime }
       - { label: Updated, name: updated, widget: datetime }
