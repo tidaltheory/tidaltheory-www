@@ -18,12 +18,12 @@ collections:
     folder: content/notes
     create: true
     format: toml-frontmatter
-    identifier_field: date
-    slug: "{{date | date('x')}}"
+    slug: '{{date_slug}}'
     fields:
       - { label: Date, name: date, widget: datetime }
+      - { label: Date slug, name: date_slug, widget: datetime, format: 'x' }
       - { label: Updated, name: updated, widget: datetime }
-      - { label: Content, name: content, widget: markdown }
+      - { label: Body, name: body, widget: markdown }
       - label: Syndication
         name: syndication
         widget: list
