@@ -1,5 +1,4 @@
 <script>
-import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 
 /** @type {import('./$types').PageData} */
@@ -15,13 +14,19 @@ $: ({ title, content } = data)
 </svelte:head>
 
 <article>
-	<PageIntro>
-		{title}
-	</PageIntro>
 	<PageSection>
-		<div class="max-w-5xl">
-			<div class="prose prose-invert">
-				{@html content}
+		<div class="grid grid-cols-4 xl:grid-cols-2 xl:gap-16">
+			<div
+				class="col-span-full grid gap-6 md:col-span-3 md:pt-8 xl:pt-12"
+			>
+				<div class="prose prose-xl prose-invert md:prose-2xl">
+					{@html content}
+				</div>
+			</div>
+			<div
+				class="col-span-3 col-start-2 row-start-2 pt-[9vh] md:pt-[11vh] xl:pt-36"
+			>
+				<time>{title}</time>
 			</div>
 		</div>
 	</PageSection>
