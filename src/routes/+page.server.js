@@ -5,6 +5,8 @@ import TOML from '@iarna/toml'
 import { formatISO } from 'date-fns'
 import matter from 'gray-matter'
 
+import { processMarkdown } from '$lib/process-markdown.js'
+
 import { library } from '../../content/imagemeta.json'
 
 async function getGalleryUpdate(update) {
@@ -39,6 +41,15 @@ async function getPostUpdate(update) {
 	return update
 }
 
+async function getNoteUpdate(update) {
+	const md = await readFile(resolve('content', 'notes', `${update.slug}.md`))
+	const { content } = matter(md, { delimiters: '+++' })
+
+	update.excerpt = await processMarkdown(content)
+
+	return update
+}
+
 /** @type {import('./$types').PageServerLoad} */
 export const load = async () => {
 	let toml = TOML.parse(await readFile(resolve('content', 'updates.toml')))
@@ -59,6 +70,10 @@ export const load = async () => {
 				// Get post excerpt
 				// Add to object
 				parsedUpdates.push(await getPostUpdate(update))
+				continue
+
+			case 'note-add':
+				parsedUpdates.push(await getNoteUpdate(update))
 				continue
 
 			default:

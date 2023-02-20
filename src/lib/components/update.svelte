@@ -5,34 +5,45 @@ import IconDocumentAdd from './icons/icon-document-add.svelte'
 import IconPhoto from './icons/icon-photo.svelte'
 import RelativeDate from './relative-date.svelte'
 
+const iconMap = {
+	'gallery-add': IconPhoto,
+	'gallery-update': IconPhoto,
+	'post-add': IconDocumentAdd,
+	'note-add': IconDocumentAdd,
+}
+
 export let update
 
 $: ({ _type, date, id, slug, title, count, excerpt, images } = update)
-$: hasPreview = ['gallery-add', 'post-add'].includes(_type)
+$: hasPreview = ['gallery-add', 'post-add', 'note-add'].includes(_type)
 
 let card
 let link
+
+function handleCardPress(event) {
+	if (_type === 'note-add') return false
+	if (event.target !== link) link.click()
+}
 </script>
 
 <!-- eslint-disable-next-line svelte/no-unused-svelte-ignore -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- eslint-disable-next-line svelte/valid-compile  -->
 <article
-	class="group relative grid cursor-pointer grid-cols-[36px_1fr_auto] gap-2 rounded-[1px] font-sans salt {FOCUS_OUTLINE} outline-offset-8 focus-within:outline"
+	class="group relative grid grid-cols-[36px_1fr_auto] gap-2 rounded-[1px] font-sans salt {FOCUS_OUTLINE} outline-offset-8"
+	class:cursor-pointer={_type !== 'note-add'}
+	class:focus-within:outline={_type !== 'note-add'}
 	bind:this={card}
-	on:click={(event) => (event.target === link ? {} : link.click())}
+	on:click={handleCardPress}
 >
 	<div
-		class="absolute -inset-2 -z-10 rounded-md bg-grey-700 bg-opacity-0 transition group-hover:bg-opacity-20"
+		class="absolute -inset-2 -z-10 rounded-md bg-grey-700 bg-opacity-0 transition"
+		class:group-hover:bg-opacity-20={_type !== 'note-add'}
 	/>
 	<div
 		class="flex h-9 w-9 items-center justify-center rounded-full bg-grey-700 text-white"
 	>
-		{#if _type.startsWith('gallery')}
-			<IconPhoto />
-		{:else if _type === 'post-add'}
-			<IconDocumentAdd />
-		{/if}
+		<svelte:component this={iconMap[_type]} />
 	</div>
 	<div class="py-3">
 		<p class="text-grey-400 text-base leading-trim">
@@ -51,11 +62,23 @@ let link
 				> gallery
 			{:else if _type === 'post-add'}
 				Published a post
+			{:else if _type === 'note-add'}
+				Published a new note
 			{/if}
 		</p>
 	</div>
-	<div class="flex h-9 items-center">
-		<RelativeDate {date} />
+	<div class="flex h-9 items-center text-grey-400">
+		{#if _type === 'note-add'}
+			<a
+				class="rounded-[1px] underline decoration-[transparent] decoration-[1.5px] transition hover:decoration-[inherit] {FOCUS_OUTLINE}"
+				bind:this={link}
+				href="/notes/{slug}/"
+			>
+				<RelativeDate {date} />
+			</a>
+		{:else}
+			<RelativeDate {date} />
+		{/if}
 	</div>
 	{#if hasPreview}
 		<div class="col-span-2 col-start-2">
@@ -98,6 +121,14 @@ let link
 							Read post <span aria-hidden>→</span>
 						</span>
 					</footer>
+				</div>
+			{:else if _type === 'note-add'}
+				<div class="grid gap-6 py-2">
+					<section
+						class="prose prose-invert max-w-[65ch] text-grey-300 leading-trim salt"
+					>
+						{@html excerpt}
+					</section>
 				</div>
 			{/if}
 		</div>

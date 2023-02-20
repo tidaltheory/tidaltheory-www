@@ -56,6 +56,31 @@ const config = {
 				DEFAULT: {
 					css: {
 						color: theme('colors.grey.200'),
+
+						a: {
+							'text-decoration': 'underline',
+							'text-decoration-color': 'transparent',
+							'text-decoration-thickness': '1.5px',
+							outline: '2px',
+							'outline-offset': '2px',
+							'outline-color': '#2cccff',
+							'border-radius': '1px',
+							transition:
+								'text-decoration-color 150ms cubic-bezier(0.4, 0, 0.2, 1)',
+						},
+						'a:hover': {
+							'text-decoration-color': 'inherit',
+						},
+						'a:focus-visible': {
+							'outline-style': 'solid',
+						},
+
+						'code::before': {
+							content: 'none',
+						},
+						'code::after': {
+							content: 'none',
+						},
 					},
 				},
 			}),
