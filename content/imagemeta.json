@@ -8463,6 +8463,723 @@
           }
         }
       }
+    },
+    "swjfo_20230206214206": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/012e9f7d.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/012e9f7d.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/012e9f7d.avif"
+      },
+      "colors": {
+        "palette": [
+          "#37a083",
+          "#085f51",
+          "#9cddcb",
+          "#617997",
+          "#223548",
+          "#c7d5cf"
+        ],
+        "dominant": "#223548"
+      },
+      "thumbnails": {
+        "cover-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/cover-sm.012e9f7d.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 250
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/cover-sm.012e9f7d.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/cover-sm.012e9f7d.avif"
+          }
+        },
+        "cover-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/cover-md.012e9f7d.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 500
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/cover-md.012e9f7d.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/cover-md.012e9f7d.avif"
+          }
+        },
+        "cover-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/cover-lg.012e9f7d.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1000
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/cover-lg.012e9f7d.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/cover-lg.012e9f7d.avif"
+          }
+        },
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/gallery-sm.012e9f7d.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/gallery-sm.012e9f7d.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/gallery-sm.012e9f7d.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/gallery-md.012e9f7d.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/gallery-md.012e9f7d.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/gallery-md.012e9f7d.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/gallery-lg.012e9f7d.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/gallery-lg.012e9f7d.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230206214206/gallery-lg.012e9f7d.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230208225006": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/5c4cd7b4.jpg",
+      "dimensions": {
+        "width": 1638,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/5c4cd7b4.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/5c4cd7b4.avif"
+      },
+      "colors": {
+        "palette": [
+          "#ea3219",
+          "#b01b0c",
+          "#fcbc84",
+          "#b06f5d",
+          "#452e28",
+          "#e3d5ca"
+        ],
+        "dominant": "#b01b0c"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/gallery-sm.5c4cd7b4.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 376
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/gallery-sm.5c4cd7b4.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/gallery-sm.5c4cd7b4.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/gallery-md.5c4cd7b4.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 750
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/gallery-md.5c4cd7b4.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/gallery-md.5c4cd7b4.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/gallery-lg.5c4cd7b4.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 1500
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/gallery-lg.5c4cd7b4.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230208225006/gallery-lg.5c4cd7b4.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230209224150": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/17e3e292.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/17e3e292.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/17e3e292.avif"
+      },
+      "colors": {
+        "palette": [
+          "#cc733f",
+          "#040c0b",
+          "#d7baab",
+          "#a46c64",
+          "#4d3e37",
+          "#c6bbbc"
+        ],
+        "dominant": "#4d3e37"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/gallery-sm.17e3e292.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/gallery-sm.17e3e292.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/gallery-sm.17e3e292.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/gallery-md.17e3e292.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/gallery-md.17e3e292.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/gallery-md.17e3e292.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/gallery-lg.17e3e292.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/gallery-lg.17e3e292.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209224150/gallery-lg.17e3e292.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230209233415": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/80ecdff3.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/80ecdff3.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/80ecdff3.avif"
+      },
+      "colors": {
+        "palette": [
+          "#d44e49",
+          "#681419",
+          "#e8a45c",
+          "#af8875",
+          "#316361",
+          "#c7aea2"
+        ],
+        "dominant": "#316361"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/gallery-sm.80ecdff3.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/gallery-sm.80ecdff3.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/gallery-sm.80ecdff3.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/gallery-md.80ecdff3.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/gallery-md.80ecdff3.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/gallery-md.80ecdff3.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/gallery-lg.80ecdff3.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/gallery-lg.80ecdff3.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209233415/gallery-lg.80ecdff3.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230209234531": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/15ee65a4.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1638
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/15ee65a4.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/15ee65a4.avif"
+      },
+      "colors": {
+        "palette": [
+          "#877779",
+          "#463e3f",
+          "#c0b8b9",
+          "#94845c",
+          "#2c3f54",
+          "#c4bcbd"
+        ],
+        "dominant": "#2c3f54"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/gallery-sm.15ee65a4.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 240
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/gallery-sm.15ee65a4.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/gallery-sm.15ee65a4.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/gallery-md.15ee65a4.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 480
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/gallery-md.15ee65a4.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/gallery-md.15ee65a4.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/gallery-lg.15ee65a4.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 960
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/gallery-lg.15ee65a4.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230209234531/gallery-lg.15ee65a4.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230211212324": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/c71bfc7b.jpg",
+      "dimensions": {
+        "width": 1152,
+        "height": 2048
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/c71bfc7b.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/c71bfc7b.avif"
+      },
+      "colors": {
+        "palette": [
+          "#90accc",
+          "#0c141c",
+          "#a4bbd5",
+          "#778880",
+          "#3d514a",
+          "#9cacc4"
+        ],
+        "dominant": "#778880"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/gallery-sm.c71bfc7b.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 533
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/gallery-sm.c71bfc7b.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/gallery-sm.c71bfc7b.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/gallery-md.c71bfc7b.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 1067
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/gallery-md.c71bfc7b.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/gallery-md.c71bfc7b.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/gallery-lg.c71bfc7b.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 2133
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/gallery-lg.c71bfc7b.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230211212324/gallery-lg.c71bfc7b.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230212160811": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/4dad2fd9.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1365
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/4dad2fd9.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/4dad2fd9.avif"
+      },
+      "colors": {
+        "palette": [
+          "#c8c836",
+          "#6a6a1d",
+          "#e2e296",
+          "#94927e",
+          "#454927",
+          "#b1b0a8"
+        ],
+        "dominant": "#b1b0a8"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/gallery-sm.4dad2fd9.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 200
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/gallery-sm.4dad2fd9.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/gallery-sm.4dad2fd9.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/gallery-md.4dad2fd9.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 400
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/gallery-md.4dad2fd9.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/gallery-md.4dad2fd9.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/gallery-lg.4dad2fd9.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 800
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/gallery-lg.4dad2fd9.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212160811/gallery-lg.4dad2fd9.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230212210703": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/a78757c7.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/a78757c7.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/a78757c7.avif"
+      },
+      "colors": {
+        "palette": [
+          "#b87544",
+          "#743f20",
+          "#d5e3ec",
+          "#b47c6c",
+          "#3a4b3c",
+          "#bec8c5"
+        ],
+        "dominant": "#3a4b3c"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/gallery-sm.a78757c7.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/gallery-sm.a78757c7.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/gallery-sm.a78757c7.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/gallery-md.a78757c7.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/gallery-md.a78757c7.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/gallery-md.a78757c7.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/gallery-lg.a78757c7.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/gallery-lg.a78757c7.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230212210703/gallery-lg.a78757c7.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230216202217": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/e9d391a1.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/e9d391a1.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/e9d391a1.avif"
+      },
+      "colors": {
+        "palette": [
+          "#f16850",
+          "#5d2c3d",
+          "#fb9a84",
+          "#95555d",
+          "#4d3241",
+          "#ac7c7c"
+        ],
+        "dominant": "#95555d"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/gallery-sm.e9d391a1.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/gallery-sm.e9d391a1.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/gallery-sm.e9d391a1.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/gallery-md.e9d391a1.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/gallery-md.e9d391a1.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/gallery-md.e9d391a1.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/gallery-lg.e9d391a1.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/gallery-lg.e9d391a1.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230216202217/gallery-lg.e9d391a1.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230217145934": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/76fc27ee.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/76fc27ee.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/76fc27ee.avif"
+      },
+      "colors": {
+        "palette": [
+          "#0b3c94",
+          "#0d3270",
+          "#e08f7c",
+          "#6f86a4",
+          "#253044",
+          "#8cb4c4"
+        ],
+        "dominant": "#253044"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/gallery-sm.76fc27ee.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/gallery-sm.76fc27ee.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/gallery-sm.76fc27ee.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/gallery-md.76fc27ee.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/gallery-md.76fc27ee.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/gallery-md.76fc27ee.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/gallery-lg.76fc27ee.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/gallery-lg.76fc27ee.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230217145934/gallery-lg.76fc27ee.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230220210152": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/13c3aa80.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/13c3aa80.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/13c3aa80.avif"
+      },
+      "colors": {
+        "palette": [
+          "#94513e",
+          "#243c5c",
+          "#e9bdaf",
+          "#a26a60",
+          "#343c53",
+          "#9dadcb"
+        ],
+        "dominant": "#343c53"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/gallery-sm.13c3aa80.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/gallery-sm.13c3aa80.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/gallery-sm.13c3aa80.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/gallery-md.13c3aa80.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/gallery-md.13c3aa80.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/gallery-md.13c3aa80.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/gallery-lg.13c3aa80.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/gallery-lg.13c3aa80.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230220210152/gallery-lg.13c3aa80.avif"
+          }
+        }
+      }
+    },
+    "swjfo_20230221210733": {
+      "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/14fb19e8.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/14fb19e8.webp",
+        "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/14fb19e8.avif"
+      },
+      "colors": {
+        "palette": [
+          "#c32425",
+          "#6f0f1c",
+          "#e4e2b1",
+          "#b29061",
+          "#43302b",
+          "#d1b7a2"
+        ],
+        "dominant": "#43302b"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/gallery-sm.14fb19e8.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/gallery-sm.14fb19e8.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/gallery-sm.14fb19e8.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/gallery-md.14fb19e8.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/gallery-md.14fb19e8.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/gallery-md.14fb19e8.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/gallery-lg.14fb19e8.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/gallery-lg.14fb19e8.webp",
+            "avif": "static/media/screen-shots/star-wars-jedi-fallen-order/swjfo_20230221210733/gallery-lg.14fb19e8.avif"
+          }
+        }
+      }
     }
   }
 }

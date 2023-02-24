@@ -10,6 +10,7 @@ const COVER_IMAGES = [
 	'**/hss_20220731005256.jpg',
 	'**/tlou1_20221008221710.jpg',
 	'**/apt-innocence_20221128214433.jpg',
+	'**/swjfo_20230206214206.jpg',
 ]
 
 /** @type {import('@tidaltheory/lens').LensConfig} */
