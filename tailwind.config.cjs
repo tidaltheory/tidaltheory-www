@@ -60,7 +60,7 @@ const config = {
 						a: {
 							'text-decoration': 'underline',
 							'text-decoration-color': 'transparent',
-							'text-decoration-thickness': '1.5px',
+							'text-decoration-thickness': '0.0781em',
 							outline: '2px',
 							'outline-offset': '2px',
 							'outline-color': '#2cccff',

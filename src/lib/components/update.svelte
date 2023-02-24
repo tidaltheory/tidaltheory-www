@@ -49,14 +49,14 @@ function handleCardPress(event) {
 		<p class="text-grey-400 text-base leading-trim">
 			{#if _type === 'gallery-add'}
 				Added a gallery of <a
-					class="font-medium text-white underline decoration-[transparent] decoration-[1.5px] outline-none transition group-hover:decoration-white"
+					class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] outline-none transition group-hover:decoration-white"
 					bind:this={link}
 					href="/photos/{slug}/">{title}</a
 				> images
 			{:else if _type === 'gallery-update'}
 				Added {count} images to the
 				<a
-					class="font-medium text-white underline decoration-[transparent] decoration-[1.5px] outline-none transition group-hover:decoration-white"
+					class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] outline-none transition group-hover:decoration-white"
 					bind:this={link}
 					href="/photos/{slug}/">{title}</a
 				> gallery
@@ -70,7 +70,7 @@ function handleCardPress(event) {
 	<div class="flex h-9 items-center text-grey-400">
 		{#if _type === 'note-add'}
 			<a
-				class="rounded-[1px] underline decoration-[transparent] decoration-[1.5px] transition hover:decoration-[inherit] {FOCUS_OUTLINE}"
+				class="rounded-[1px] underline decoration-[transparent] decoration-[0.0781em] transition hover:decoration-[inherit] {FOCUS_OUTLINE}"
 				bind:this={link}
 				href="/notes/{slug}/"
 			>
@@ -115,7 +115,7 @@ function handleCardPress(event) {
 					</p>
 					<footer>
 						<span
-							class="font-medium text-white underline decoration-[transparent] decoration-[1.5px] transition group-hover:decoration-white"
+							class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] transition group-hover:decoration-white"
 							{id}
 						>
 							Read post <span aria-hidden>→</span>
