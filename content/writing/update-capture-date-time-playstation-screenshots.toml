@@ -1,0 +1,96 @@
+title = 'How to update capture date & time in PlayStation screenshots'
+excerpt = 'Update screenshot timestamps in bulk to avoid manually editing metadata in your photo catalog.'
+posted = 2023-02-28T21:55:45.805Z
+# updated = 2023-02-28T21:55:45.805Z
+
+[[blocks]]
+  type = 'markdown'
+  markdown = '''
+If you’re a metadata nerd like me, you might be frustrated when your photo catalog doesn’t reflect the accurate time when your images were taken, instead falling back to the date *the file itself* was modified. In many cases this will be fine, but if you’re moving the image file from device to device, the original timestamp can get lost in the shuffle.
+'''
+
+[[blocks]]
+  type = 'aside'
+  markdown = '''
+My own workflow, for example, involves copying the image from the PlayStation to an external USB drive, copying it from there to my computer, and then converting it to JPG format if it’s a PNG.
+'''
+
+[[blocks]]
+  type = 'markdown'
+  markdown = '''
+Luckily, Sony preserves the timestamp in the filename. Once the image is imported into a Lightroom catalog for instance, you can reference the filename when modifying the capture date/time. This is pretty tedious and time-consuming though, and if you have a date-based folder structure it won’t update after editing the time.
+
+I built a [command-line utility](https://github.com/tidaltheory/lens) for preparing photos to add to this site — built around the amazing [Sharp](https://sharp.pixelplumbing.com/) library — that I also use for automating JPG conversions and now, correcting the capture date before I import into Lightroom.
+
+Unfortunately, the digits used in the filename datestamp aren’t in a format the Date constructor can parse, so I had to manually turn it into a string the metadata fields expect.
+'''
+
+[[blocks]]
+  type = 'aside'
+  markdown = '''
+I’m using JavaScript here since that’s what I know but the concept should map to whatever language you prefer.
+'''
+
+[[blocks]]
+  type = 'markdown'
+  markdown = '''
+The first eight digits make up the date, four for the year, two for the month, and two for the day. The last six digits are the hour, minute, and second of the time. Each part of the date and time are separated by a colon and are joined by a space.
+'''
+
+[[blocks]]
+  type = 'code'
+  language = 'javascript'
+  code = '''
+// The last 14 characters (without the file extension) make up the date.
+let digits = name.slice(-14)
+
+// Split up the date and time digits.
+let d = digits.slice(0, 8)
+let t = digits.slice(8)
+
+// Build date string.
+let date = `${d.slice(0, 4)}:${d.slice(4, 6)}:${d.slice(6, 8)}`
+// Build time string.
+let time = `${t.slice(0, 2)}:${t.slice(2, 4)}:${t.slice(4, 6)}`
+'''
+
+[[blocks]]
+  type = 'markdown'
+  markdown = '''
+Now that the date and time are properly formatted, we can add them to the appropriate metadata fields. Image metadata is an esoteric topic bordering on the arcane, but working backwards from an image I updated manually I found the fields I needed. This is where [`exiftool`](https://exiftool.org/) can come in handy, but since I’m already converting the image to JPG with Sharp, I use the `withMetadata()` method to write the new date EXIF tags.
+'''
+
+[[blocks]]
+  type = 'code'
+  code = '''
+let sharpImage = sharp(source)
+
+let dateMeta = {
+	exif: {
+		IFD0: {
+			ModifyDate: `${date} ${time}`,
+			DateTimeOriginal: `${date} ${time}`,
+		},
+	},
+}
+
+await sharpImage
+	// Converting the image to JPG.
+	.jpeg({
+		quality: 100,
+		chromaSubsampling: '4:4:4',
+	})
+	// Passing the EXIF object here will update the required tags.
+	.withMetadata(dateMeta)
+	// Write the new file.
+	.toFile(`${name}.jpg`)
+'''
+  highlight = [6, 7, 19]
+
+[[blocks]]
+  type = 'markdown'
+  markdown = '''
+Using `exiftool` to examine an image I updated manually showed the modified date in a couple other tags, but these ones were sufficient for Lightroom to detect the correct date when importing.
+
+Now once I update my image files, I can import them into Lightroom and the capture date is shown accurately!
+'''
