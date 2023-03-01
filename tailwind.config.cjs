@@ -78,7 +78,14 @@ const config = {
 
 						em: {
 							'font-family': theme('fontFamily.serif'),
-							'font-size-adjust': '0.5',
+							'font-weight': 'inherit',
+							// 'font-size-adjust': '0.5',
+							/**
+							 * @todo Remove these once `font-size-adjust` has
+							 *       better support.
+							 */
+							'font-size': 'calc(1em + 3px)',
+							'line-height': '1',
 						},
 
 						pre: {
