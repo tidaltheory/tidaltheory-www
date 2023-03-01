@@ -34,6 +34,7 @@ const config = {
 		fontFamily: {
 			display: 'Antenna, sans-serif',
 			sans: 'Inter, sans-serif',
+			serif: 'Newsreader, Signifier, Times, serif',
 		},
 		fontMetrics: {
 			display: {
@@ -73,6 +74,11 @@ const config = {
 						},
 						'a:focus-visible': {
 							'outline-style': 'solid',
+						},
+
+						em: {
+							'font-family': theme('fontFamily.serif'),
+							'font-size-adjust': '0.5',
 						},
 
 						pre: {

@@ -30,6 +30,16 @@
 		font-display: swap;
 	}
 
+	@font-face {
+		font-family: 'Newsreader';
+		font-style: italic;
+		font-weight: 100 900;
+		/* stylelint-disable-next-line property-no-unknown */
+		font-named-instance: 'Italic';
+		src: url('/fonts/newsreader-italic.woff2') format('woff2');
+		font-display: swap;
+	}
+
 	@container prose (min-width: calc(65ch + 192px + 40px)) {
 		aside {
 			position: absolute;
