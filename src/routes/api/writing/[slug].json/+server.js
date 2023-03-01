@@ -4,6 +4,7 @@ import { resolve } from 'node:path'
 import { json } from '@sveltejs/kit'
 
 import TOML from '@iarna/toml'
+import Prism from 'prismjs'
 
 import { processMarkdown } from '$lib/process-markdown.js'
 
@@ -25,11 +26,20 @@ export const GET = async ({ params }) => {
 	for await (let block of toml.blocks) {
 		switch (block.type) {
 			case 'markdown':
+			case 'aside':
 				block.content = await processMarkdown(block.markdown)
 				break
 
 			case 'image':
 				block.image = library[block.key]
+				break
+
+			case 'code':
+				block.content = Prism.highlight(
+					block.code,
+					Prism.languages.javascript,
+					'javascript'
+				)
 				break
 
 			default:

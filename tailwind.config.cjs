@@ -75,6 +75,10 @@ const config = {
 							'outline-style': 'solid',
 						},
 
+						pre: {
+							'background-color': `${theme('colors.grey.900')}77`,
+						},
+
 						'code::before': {
 							content: 'none',
 						},

@@ -29,6 +29,14 @@
 		src: url('/fonts/inter-italic.var.woff2?v=3.19') format('woff2');
 		font-display: swap;
 	}
+
+	@container prose (min-width: calc(65ch + 192px + 40px)) {
+		aside {
+			position: absolute;
+			left: calc(65ch + 40px);
+			max-width: 192px;
+		}
+	}
 }
 
 .pull-double {

@@ -29,7 +29,7 @@ $: ({ title, excerpt, coverImage, blocks } = page)
 		{title}
 	</PageIntro>
 	<PageSection>
-		<div class="max-w-5xl">
+		<div class="wrapper relative mx-auto w-full max-w-5xl">
 			{#each blocks as block}
 				{#if block.type === 'markdown'}
 					<div class="prose prose-invert">
@@ -44,8 +44,26 @@ $: ({ title, excerpt, coverImage, blocks } = page)
 							/>
 						</div>
 					</div>
+				{:else if block.type === 'aside'}
+					<aside class="">
+						<div class="prose prose-sm text-grey-400">
+							{@html block.content}
+						</div>
+					</aside>
+				{:else if block.type === 'code'}
+					<figure class="prose m-0 my-[1.25em]">
+						<pre class="p-4"><code class="language-{block.language}"
+								>{@html block.content}</code
+							></pre>
+					</figure>
 				{/if}
 			{/each}
 		</div>
 	</PageSection>
 </article>
+
+<style>
+.wrapper {
+	container: prose / inline-size;
+}
+</style>

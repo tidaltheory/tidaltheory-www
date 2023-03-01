@@ -1,5 +1,6 @@
 <script>
 import '../tailwind.css'
+import '../prism.css'
 import ObserveIntersection from 'svelte-intersection-observer'
 
 import SiteNav from '$lib/components/site-nav.svelte'
@@ -7,10 +8,10 @@ import SiteNav from '$lib/components/site-nav.svelte'
 let bg
 </script>
 
-<div class="grid min-h-[100svh]">
+<div class="relative grid min-h-[100svh]">
 	<ObserveIntersection once element={bg} let:intersecting>
 		<div
-			class="bg absolute top-0 right-0 -z-[1] h-full w-full"
+			class="bg absolute inset-0 -z-[1]"
 			class:opacity-0={!intersecting}
 			bind:this={bg}
 		/>
