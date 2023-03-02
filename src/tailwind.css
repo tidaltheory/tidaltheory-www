@@ -40,11 +40,12 @@
 		font-display: swap;
 	}
 
+	/** 192 is minimum width of aside column. */
 	@container prose (min-width: calc(65ch + 192px + 40px)) {
 		aside {
 			position: absolute;
 			left: calc(65ch + 40px);
-			max-width: 192px;
+			max-width: 25%;
 		}
 	}
 }

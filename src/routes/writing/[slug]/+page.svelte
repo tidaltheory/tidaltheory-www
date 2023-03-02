@@ -1,7 +1,7 @@
 <script>
 import ImageLens from '$lib/components/image-lens.svelte'
+import PageContent from '$lib/components/page-content.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
-import PageSection from '$lib/components/page-section.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data
@@ -28,30 +28,26 @@ $: ({ title, excerpt, coverImage, blocks } = page)
 	<PageIntro>
 		{title}
 	</PageIntro>
-	<PageSection>
-		<div class="wrapper relative mx-auto w-full max-w-5xl">
+	<PageContent>
+		<div class="wrapper prose relative">
 			{#each blocks as block}
 				{#if block.type === 'markdown'}
-					<div class="prose prose-invert">
-						{@html block.content}
-					</div>
+					{@html block.content}
 				{:else if block.type === 'image'}
-					<div class="flex justify-end py-12">
-						<div class="max-w-4xl">
-							<ImageLens
-								image={block.image.thumbnails}
-								sizes={['gallery-sm', 'gallery-md']}
-							/>
-						</div>
-					</div>
+					<figure class="not-prose m-0 my-[2em] flex">
+						<ImageLens
+							image={block.image.thumbnails}
+							sizes={['gallery-sm', 'gallery-md']}
+						/>
+					</figure>
 				{:else if block.type === 'aside'}
 					<aside class="">
-						<div class="prose prose-sm text-grey-400">
+						<div class="prose-sm text-grey-400">
 							{@html block.content}
 						</div>
 					</aside>
 				{:else if block.type === 'code'}
-					<figure class="prose m-0 my-[1.25em]">
+					<figure class="m-0 my-[2em]">
 						<pre class="p-4"><code class="language-{block.language}"
 								>{@html block.content}</code
 							></pre>
@@ -59,11 +55,12 @@ $: ({ title, excerpt, coverImage, blocks } = page)
 				{/if}
 			{/each}
 		</div>
-	</PageSection>
+	</PageContent>
 </article>
 
 <style>
 .wrapper {
 	container: prose / inline-size;
+	/* grid-column: content; */
 }
 </style>

@@ -56,7 +56,15 @@ const config = {
 			typography: (theme) => ({
 				DEFAULT: {
 					css: {
+						'--tw-prose-links': theme('colors.white'),
+						'--tw-prose-code': theme('colors.white'),
+
+						'max-width': 'none',
 						color: theme('colors.grey.200'),
+
+						'& > *': {
+							'max-width': '65ch',
+						},
 
 						a: {
 							'text-decoration': 'underline',
