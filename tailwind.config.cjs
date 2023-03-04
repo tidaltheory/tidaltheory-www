@@ -84,7 +84,7 @@ const config = {
 							'outline-style': 'solid',
 						},
 
-						em: {
+						'em, cite': {
 							'font-family': theme('fontFamily.serif'),
 							'font-weight': 'inherit',
 							// 'font-size-adjust': '0.5',
