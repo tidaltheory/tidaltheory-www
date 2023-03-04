@@ -34,16 +34,12 @@ let header
 			</div>
 			{#if $$slots.intro}
 				<div
-					class="col-span-3 col-start-2 row-start-2 pt-[9vh] md:pt-[11vh] xl:pt-36"
+					class="header-intro col-span-3 col-start-2 row-start-2 pt-[9vh] md:pt-[11vh] xl:pt-36"
+					class:translate-y-[1.5vh]={!intersecting}
+					class:opacity-0={!intersecting}
+					style="--delay: 100ms"
 				>
-					<p
-						class="header-intro text-grey-100 font-sans text-lg leading-trim salt md:text-xl"
-						class:translate-y-[1.5vh]={!intersecting}
-						class:opacity-0={!intersecting}
-						style="--delay: 100ms"
-					>
-						<slot name="intro" />
-					</p>
+					<slot name="intro" />
 				</div>
 			{/if}
 		</div>

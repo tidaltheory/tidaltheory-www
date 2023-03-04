@@ -1,5 +1,6 @@
 <script>
 import PageIntro from '$lib/components/page-intro.svelte'
+import TextLede from '$lib/components/text-lede.svelte'
 </script>
 
 <svelte:head>
@@ -11,6 +12,6 @@ import PageIntro from '$lib/components/page-intro.svelte'
 <article>
 	<PageIntro>
 		Projects
-		<svelte:fragment slot="intro">Coming soon.</svelte:fragment>
+		<TextLede slot="intro">Coming soon.</TextLede>
 	</PageIntro>
 </article>

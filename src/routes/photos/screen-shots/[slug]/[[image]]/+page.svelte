@@ -6,6 +6,7 @@ import GalleryThumbnail from '$lib/components/gallery-thumbnail.svelte'
 import MasonryGrid from '$lib/components/masonry-grid.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
+import TextLede from '$lib/components/text-lede.svelte'
 import { replaceUrl } from '$lib/replace-url'
 
 /** @type {import('./$types').PageData} */
@@ -52,9 +53,9 @@ onMount(() => {
 <article>
 	<PageIntro {subtitle}>
 		{title}
-		<svelte:fragment slot="intro">
+		<TextLede slot="intro">
 			{@html description}
-		</svelte:fragment>
+		</TextLede>
 	</PageIntro>
 	<PageSection>
 		<div class="grid gap-[9vh] md:gap-[11vh]">

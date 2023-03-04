@@ -4,6 +4,7 @@ import GalleryThumbnail from '$lib/components/gallery-thumbnail.svelte'
 import MasonryGrid from '$lib/components/masonry-grid.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
+import TextLede from '$lib/components/text-lede.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data
@@ -36,9 +37,9 @@ function handleCloseCarousel() {
 <article>
 	<PageIntro {subtitle}>
 		{title}
-		<svelte:fragment slot="intro">
+		<TextLede slot="intro">
 			{@html description}
-		</svelte:fragment>
+		</TextLede>
 	</PageIntro>
 	<PageSection>
 		<div class="grid gap-[9vh] md:gap-[11vh]">

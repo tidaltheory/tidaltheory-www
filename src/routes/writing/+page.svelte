@@ -1,6 +1,7 @@
 <script>
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
+import TextLede from '$lib/components/text-lede.svelte'
 </script>
 
 <svelte:head>
@@ -12,7 +13,7 @@ import PageSection from '$lib/components/page-section.svelte'
 <article>
 	<PageIntro>
 		Writing
-		<svelte:fragment slot="intro">Coming soon.</svelte:fragment>
+		<TextLede slot="intro">Coming soon.</TextLede>
 	</PageIntro>
 	<PageSection>
 		<div class="prose prose-invert">
