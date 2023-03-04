@@ -2,6 +2,8 @@
 title: Death Stranding
 subtitle: Director’s Cut
 description: With costumes by fashion designer Errolson Hugh of ACRONYM, I tried shooting this game with a fashion lookbook style, capturing clothing & equipment&nbsp;details.
+platform: PlayStation 5
+developer: Kojima Productions
 created: 2021-10-01
 updated: 2022-01-31T04:33:19.000Z
 cover: dsdc_20211001203219

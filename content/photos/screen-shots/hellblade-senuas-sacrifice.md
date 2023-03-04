@@ -2,6 +2,8 @@
 title: 'Hellblade:'
 subtitle: Senua’s Sacrifice
 description: Stills really don’t do the experience of this game justice.
+platform: PlayStation 5
+developer: Ninja Theory
 created: 2022-07-28
 updated: 2022-08-02T04:31:22.000Z
 cover: hss_20220731005256

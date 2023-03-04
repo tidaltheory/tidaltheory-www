@@ -1,6 +1,8 @@
 ---
 title: Assassin’s Creed Valhalla
 description: The Viking setting drew me to this game and visually, it does not disappoint.
+platform: PlayStation 4 Pro, PlayStation 5
+developer: Ubisoft
 created: 2020-12-30
 updated: 2021-11-21T03:34:59.000Z
 cover: ac-valhalla_20210101000058

@@ -1,6 +1,8 @@
 ---
 title: Horizon Zero Dawn
 description: This was a sleeper hit, with a captivating story and lush&nbsp;visuals.
+platform: PlayStation 5
+developer: Guerrilla Games
 created: 2021-06-25
 updated: 2021-07-28
 cover: hzd_20210625230628

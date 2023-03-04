@@ -2,6 +2,8 @@
 title: 'Star Wars Jedi:'
 subtitle: Fallen Order
 description: Cinematic combat in a large and lonely galaxy.
+platform: PlayStation 5
+developer: Respawn Entertainment
 created: 2023-02-24T23:03:26.346Z
 updated: 2023-03-04T03:00:34.973Z
 cover: swjfo_20230206214206

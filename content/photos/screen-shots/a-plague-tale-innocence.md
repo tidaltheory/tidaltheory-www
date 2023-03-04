@@ -2,6 +2,8 @@
 title: 'A Plague Tale:'
 subtitle: Innocence
 description: A feature-light and sometimes frustrating photo mode, but plenty of moody&nbsp;atmosphere.
+platform: PlayStation 5
+developer: Asobo Studio
 created: 2022-11-20T18:15:28.000Z
 updated: 2023-01-15T03:39:40.767Z
 cover: apt-innocence_20221128214433

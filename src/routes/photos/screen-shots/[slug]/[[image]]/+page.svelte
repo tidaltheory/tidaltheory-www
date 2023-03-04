@@ -53,9 +53,31 @@ onMount(() => {
 <article>
 	<PageIntro {subtitle}>
 		{title}
-		<TextLede slot="intro">
-			{@html description}
-		</TextLede>
+		<div slot="intro" class="grid gap-6 md:gap-10 xl:gap-12">
+			{#if page.platform}
+				<dl class="flex gap-4 md:gap-8 xl:gap-16">
+					<div>
+						<dt
+							class="font-bold uppercase tracking-wider font-display text-xs"
+						>
+							Captured on
+						</dt>
+						<dd class="font-medium text-lg">{page.platform}</dd>
+					</div>
+					<div>
+						<dt
+							class="font-bold uppercase tracking-wider font-display text-xs"
+						>
+							Developed by
+						</dt>
+						<dd class="font-medium text-lg">{page.developer}</dd>
+					</div>
+				</dl>
+			{/if}
+			<TextLede>
+				{@html description}
+			</TextLede>
+		</div>
 	</PageIntro>
 	<PageSection>
 		<div class="grid gap-[9vh] md:gap-[11vh]">

@@ -1,6 +1,8 @@
 ---
 title: Horizon Forbidden West
 description: Adjustable time of day in photo mode means stunning dramatic skies in every&nbsp;shot!
+platform: PlayStation 5
+developer: Guerrilla Games
 created: 2021-06-25
 updated: 2023-02-03T18:29:11.550Z
 cover: hfw_20220219210113
