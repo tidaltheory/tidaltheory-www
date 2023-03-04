@@ -55,22 +55,30 @@ onMount(() => {
 		{title}
 		<div slot="intro" class="grid gap-6 md:gap-10 xl:gap-12">
 			{#if page.platform}
-				<dl class="flex gap-4 md:gap-8 xl:gap-16">
-					<div>
+				<dl class="flex flex-col gap-4 md:flex-row md:gap-8 xl:gap-16">
+					<div class="grid gap-1 md:gap-2">
 						<dt
-							class="font-bold uppercase tracking-wider font-display text-xs"
+							class="font-bold uppercase tracking-wider font-display text-xs leading-trim"
 						>
 							Captured on
 						</dt>
-						<dd class="font-medium text-lg">{page.platform}</dd>
+						<dd
+							class="font-medium text-base leading-trim md:text-lg"
+						>
+							{page.platform}
+						</dd>
 					</div>
-					<div>
+					<div class="grid gap-1 md:gap-2">
 						<dt
-							class="font-bold uppercase tracking-wider font-display text-xs"
+							class="font-bold uppercase tracking-wider font-display text-xs leading-trim"
 						>
 							Developed by
 						</dt>
-						<dd class="font-medium text-lg">{page.developer}</dd>
+						<dd
+							class="font-medium text-base leading-trim md:text-lg"
+						>
+							{page.developer}
+						</dd>
 					</div>
 				</dl>
 			{/if}
