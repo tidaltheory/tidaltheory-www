@@ -1,4 +1,10 @@
 [[updates]]
+  _type = 'gallery-update'
+  date = 2023-03-04T03:00:34.973Z
+  slug = 'screen-shots/star-wars-jedi-fallen-order'
+  count = 14
+
+[[updates]]
   _type = 'post-add'
   date = 2023-02-28T21:55:45.805Z
   slug = 'update-capture-date-time-playstation-screenshots'
