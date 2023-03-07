@@ -18,7 +18,9 @@ beforeNavigate(async () => {
 
 <div class="fixed top-0 z-50 w-screen md:w-auto">
 	<div class="relative z-10 h-16 bg-grey-900 px-8 py-4 md:h-screen md:p-6">
-		<div class="flex justify-between md:absolute">
+		<div
+			class="flex justify-between md:absolute md:top-[calc(11vh_+_1.5rem)]"
+		>
 			<div class="flex">
 				<SiteNavItem href="/" home label="Home" />
 			</div>
