@@ -9,6 +9,8 @@ export let to = '/'
 export let cover
 export let title
 export let subtitle
+/** @type {number} */
+export let count
 
 const thumbnails = cover.thumbnails ?? {}
 $: fullTitle = subtitle ? [title, subtitle].join(' ') : title
@@ -39,10 +41,21 @@ $: fullTitle = subtitle ? [title, subtitle].join(' ') : title
 			class="z-10 flex-1 self-end rounded-[1px] before:absolute before:inset-0 {FOCUS_OUTLINE}"
 			href={to}
 		>
-			<div class="bg-grey-900 bg-opacity-50 p-6 backdrop-blur lg:p-10">
+			<div
+				class="flex items-start justify-between bg-grey-900 bg-opacity-50 p-6 backdrop-blur lg:p-10"
+			>
 				<Heading level={4}>
 					{fullTitle}
 				</Heading>
+				{#if count}
+					<div
+						class="relative top-[0.0625rem] rounded bg-grey-700 px-2 py-[6px]"
+					>
+						<span class="block text-grey-200 text-lg leading-trim">
+							{count}
+						</span>
+					</div>
+				{/if}
 			</div>
 		</a>
 	</div>

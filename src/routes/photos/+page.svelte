@@ -39,6 +39,7 @@ $: posts = data.json
 						to="{gallery.path}/"
 						cover={gallery.coverImage}
 						title={gallery.meta.title}
+						count={gallery.meta.images?.length}
 					/>
 				{/each}
 			</div>

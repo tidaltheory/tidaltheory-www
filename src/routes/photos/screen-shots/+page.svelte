@@ -31,6 +31,7 @@ $: galleries = data.json
 					cover={gallery.coverImage}
 					title={gallery.meta.title}
 					subtitle={gallery.meta.subtitle}
+					count={gallery.meta.images?.length}
 				/>
 			{/each}
 		</div>
