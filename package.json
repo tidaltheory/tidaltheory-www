@@ -45,7 +45,7 @@
     ]
   },
   "dependencies": {
-    "@floating-ui/dom": "1.1.1",
+    "@floating-ui/dom": "1.2.7",
     "date-fns": "2.29.3",
     "svelte-floating-ui": "1.2.8"
   },
