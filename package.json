@@ -73,7 +73,7 @@
     "prettier": "2.8.3",
     "prettier-plugin-packagejson": "2.4.2",
     "prettier-plugin-svelte": "2.9.0",
-    "prettier-plugin-tailwindcss": "0.2.2",
+    "prettier-plugin-tailwindcss": "0.2.8",
     "prismjs": "1.29.0",
     "rehype-raw": "6.1.1",
     "rehype-sanitize": "5.0.1",
