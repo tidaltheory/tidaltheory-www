@@ -5,7 +5,7 @@ specifiers:
   '@iarna/toml': toml-1.0.0-rc.1
   '@portabletext/svelte': 2.0.0
   '@sveltejs/adapter-static': 1.0.5
-  '@sveltejs/kit': 1.3.6
+  '@sveltejs/kit': 1.15.2
   '@tailwindcss/typography': 0.5.9
   '@tidaltheory/lens': 1.1.2
   '@zazen/eslint-config': 6.2.1
@@ -56,8 +56,8 @@ dependencies:
 devDependencies:
   '@iarna/toml': 3.0.0
   '@portabletext/svelte': 2.0.0_svelte@3.55.1
-  '@sveltejs/adapter-static': 1.0.5_@sveltejs+kit@1.3.6
-  '@sveltejs/kit': 1.3.6_svelte@3.55.1+vite@4.3.5
+  '@sveltejs/adapter-static': 1.0.5_@sveltejs+kit@1.15.2
+  '@sveltejs/kit': 1.15.2_svelte@3.55.1+vite@4.3.5
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
   '@tidaltheory/lens': 1.1.2
   '@zazen/eslint-config': 6.2.1_ixt4l6ptf47gmhhuxcve5dmsda
@@ -824,16 +824,16 @@ packages:
     engines: {node: ^14.13.1 || >=16.0.0 || >=18.0.0}
     dev: true
 
-  /@sveltejs/adapter-static/1.0.5_@sveltejs+kit@1.3.6:
+  /@sveltejs/adapter-static/1.0.5_@sveltejs+kit@1.15.2:
     resolution: {integrity: sha512-W5jbgvy9sbYEHs27NQOSFEun+zQwdcL4kpk5qc2kSHl8cKsP5wfXuWDTDRmD1Co40aFcesi5Az5ZzdnPI8KCVg==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:
-      '@sveltejs/kit': 1.3.6_svelte@3.55.1+vite@4.3.5
+      '@sveltejs/kit': 1.15.2_svelte@3.55.1+vite@4.3.5
     dev: true
 
-  /@sveltejs/kit/1.3.6_svelte@3.55.1+vite@4.3.5:
-    resolution: {integrity: sha512-SOGTKYiZ0ajIhQ9pUKr9F+h5Srm8Gdn3aza3dZxXWdHjpqv1iyhvt4oS0l5n1a+sXQzKlLpe/CikDBqSVSUS2Q==}
+  /@sveltejs/kit/1.15.2_svelte@3.55.1+vite@4.3.5:
+    resolution: {integrity: sha512-rLNxZrjbrlPf8AWW8GAU4L/Vvu17e9v8EYl7pUip7x72lTft7RcxeP3z7tsrHpMSBBxC9o4XdKzFvz1vMZyXZw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -844,17 +844,17 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.0.2_svelte@3.55.1+vite@4.3.5
       '@types/cookie': 0.5.1
       cookie: 0.5.0
-      devalue: 4.2.3
+      devalue: 4.3.0
       esm-env: 1.0.0
       kleur: 4.1.5
-      magic-string: 0.27.0
+      magic-string: 0.30.0
       mime: 3.0.0
       sade: 1.8.1
       set-cookie-parser: 2.5.1
       sirv: 2.0.2
       svelte: 3.55.1
       tiny-glob: 0.2.9
-      undici: 5.16.0
+      undici: 5.20.0
       vite: 4.3.5
     transitivePeerDependencies:
       - supports-color
@@ -2044,8 +2044,8 @@ packages:
       minimist: 1.2.6
     dev: true
 
-  /devalue/4.2.3:
-    resolution: {integrity: sha512-JG6Q248aN0pgFL57e3zqTVeFraBe+5W2ugvv1mLXsJP6YYIYJhRZhAl7QP8haJrqob6X10F9NEkuCvNILZTPeQ==}
+  /devalue/4.3.0:
+    resolution: {integrity: sha512-n94yQo4LI3w7erwf84mhRUkUJfhLoCZiLyoOZ/QFsDbcWNZePrLwbQpvZBUG2TNxwV3VjCKPxkiiQA6pe3TrTA==}
     dev: true
 
   /didyoumean/1.2.2:
@@ -3646,6 +3646,13 @@ packages:
 
   /magic-string/0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.14
+    dev: true
+
+  /magic-string/0.30.0:
+    resolution: {integrity: sha512-LA+31JYDJLs82r2ScLrlz1GjSgu66ZV518eyWT+S8VhyQn/JL0u9MeBOvQMGYiPk1DBiSN9DDMOcXvigJZaViQ==}
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.14
@@ -6101,8 +6108,8 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
-  /undici/5.16.0:
-    resolution: {integrity: sha512-KWBOXNv6VX+oJQhchXieUznEmnJMqgXMbs0xxH2t8q/FUAWSJvOSr/rMaZKnX5RIVq7JDn0JbP4BOnKG2SGXLQ==}
+  /undici/5.20.0:
+    resolution: {integrity: sha512-J3j60dYzuo6Eevbawwp1sdg16k5Tf768bxYK4TUJRH7cBM4kFCbf3mOnM/0E3vQYXvpxITbbWmBafaDbxLDz3g==}
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0
