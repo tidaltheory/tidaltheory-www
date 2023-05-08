@@ -1,4 +1,5 @@
 <script>
+import Blockquote from '$lib/components/blockquote.svelte'
 import ImageLens from '$lib/components/image-lens.svelte'
 import PageContent from '$lib/components/page-content.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
@@ -52,6 +53,8 @@ $: ({ title, excerpt, coverImage, blocks } = page)
 								>{@html block.content}</code
 							></pre>
 					</figure>
+				{:else if block.type === 'blockquote'}
+					<Blockquote quote={block.content} source={block.source} />
 				{/if}
 			{/each}
 		</div>

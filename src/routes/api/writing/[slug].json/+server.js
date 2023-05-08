@@ -42,6 +42,10 @@ export const GET = async ({ params }) => {
 				)
 				break
 
+			case 'blockquote':
+				block.content = await processMarkdown(block.quote)
+				break
+
 			default:
 				break
 		}

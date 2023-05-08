@@ -58,6 +58,8 @@ const config = {
 					css: {
 						'--tw-prose-links': theme('colors.white'),
 						'--tw-prose-code': theme('colors.white'),
+						'--tw-prose-quotes': theme('colors.white'),
+						'--tw-prose-captions': theme('colors.grey.500'),
 
 						'max-width': 'none',
 						color: theme('colors.grey.200'),
@@ -105,6 +107,36 @@ const config = {
 						},
 						'code::after': {
 							content: 'none',
+						},
+
+						blockquote: {
+							padding: 0,
+							'font-family': theme('fontFamily.display'),
+							'font-size': theme('fontSize.2xl[0]'),
+							'font-style': 'normal',
+							'font-weight': 700,
+							'line-height': theme('fontSize.2xl[1]lineHeight'),
+							'border-left-width': 0,
+
+							'& p:first-of-type': {
+								'margin-top': 0,
+							},
+							'& p:last-of-type': {
+								'margin-bottom': 0,
+							},
+							'& p::before': {
+								'margin-left': '-0.5em',
+							},
+						},
+
+						figcaption: {
+							'font-size': theme('fontSize.sm[0]'),
+							...theme('fontSize.sm[1]'),
+
+							'& a': {
+								'font-weight': 500,
+								color: theme('colors.grey.400'),
+							},
 						},
 					},
 				},
