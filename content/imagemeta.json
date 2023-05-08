@@ -10719,6 +10719,63 @@
           }
         }
       }
+    },
+    "hfw_20230331202839": {
+      "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/7c794bdd.jpg",
+      "dimensions": {
+        "width": 2048,
+        "height": 1152
+      },
+      "formats": {
+        "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/7c794bdd.webp",
+        "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/7c794bdd.avif"
+      },
+      "colors": {
+        "palette": [
+          "#af8052",
+          "#614622",
+          "#bf9368",
+          "#ac744c",
+          "#4a362d",
+          "#b8abb1"
+        ],
+        "dominant": "#b8abb1"
+      },
+      "thumbnails": {
+        "gallery-sm": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/gallery-sm.7c794bdd.jpg",
+          "dimensions": {
+            "width": 300,
+            "height": 169
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/gallery-sm.7c794bdd.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/gallery-sm.7c794bdd.avif"
+          }
+        },
+        "gallery-md": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/gallery-md.7c794bdd.jpg",
+          "dimensions": {
+            "width": 600,
+            "height": 338
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/gallery-md.7c794bdd.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/gallery-md.7c794bdd.avif"
+          }
+        },
+        "gallery-lg": {
+          "path": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/gallery-lg.7c794bdd.jpg",
+          "dimensions": {
+            "width": 1200,
+            "height": 675
+          },
+          "formats": {
+            "webp": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/gallery-lg.7c794bdd.webp",
+            "avif": "static/media/screen-shots/horizon-forbidden-west/hfw_20230331202839/gallery-lg.7c794bdd.avif"
+          }
+        }
+      }
     }
   }
 }

@@ -4,7 +4,7 @@ description: Adjustable time of day in photo mode means stunning dramatic skies 
 platform: PlayStation 5
 developer: Guerrilla Games
 created: 2021-06-25
-updated: 2023-04-25T02:24:38.698Z
+updated: 2023-05-08T04:01:48.461Z
 cover: hfw_20220219210113
 images:
     - hfw_20220218060432

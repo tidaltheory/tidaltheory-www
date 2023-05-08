@@ -1,5 +1,6 @@
 title = 'You can never look at the same photograph twice'
 excerpt = 'Social media feeds are a stream you can step into again and again, but you aren’t always the same person each time.'
+cover = 'hfw_20230331202839'
 posted = 2023-05-07T21:31:45.805Z
 
 [[blocks]]
@@ -21,6 +22,14 @@ The idea that an image might hit differently depending on when it’s viewed rea
   type = 'markdown'
   markdown = '''
 I’ve always considered this from the perspective of the photographer, putting some of yourself into every picture you make. But each viewer brings their own perspective and circumstances to the picture they’re observing, circumstances that are different each time and can affect the perception of that picture. Although we can try to give our work the best presentation possible —  reposting to platforms with better image quality, curating images into small sets, etc. — there’s only so much we can do to affect the viewing experience of someone&nbsp;else.
+'''
 
+[[blocks]]
+  type = 'image'
+  key = 'hfw_20230331202839'
+
+[[blocks]]
+  type = 'markdown'
+  markdown = '''
 In the age of social media, it’s helpful to remember this when a post isn’t getting the reaction you hoped for, and consider giving some of your older work a second chance&nbsp;too.
 '''
