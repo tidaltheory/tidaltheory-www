@@ -7,6 +7,12 @@ const config = {
 	},
 	env: { browser: true },
 	rules: {
+		/**
+		 * Explicitly initialising props variables to `undefined` lets Svelte
+		 * know the props are optional.
+		 */
+		'no-undef-init': 'off',
+
 		'import/no-extraneous-dependencies': 'off',
 		'import/order': [
 			'error',
