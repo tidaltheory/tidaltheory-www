@@ -4,12 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev:cms": "pnpm run --dir studio dev",
     "dev:site": "pnpm run --dir www dev",
     "prepare": "husky install"
   },
   "lint-staged": {
     "*.css": "stylelint --config www/stylelint.config.cjs --fix",
-    "*.{js,ts}": [
+    "*.{js,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ],
@@ -34,6 +35,15 @@
         "files": "*.svelte",
         "options": {
           "parser": "svelte"
+        }
+      },
+      {
+        "files": [
+          "*.ts",
+          "*.tsx"
+        ],
+        "options": {
+          "printWidth": 100
         }
       }
     ]

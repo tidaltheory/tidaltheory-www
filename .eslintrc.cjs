@@ -1,5 +1,7 @@
+/** @type {import('eslint').Linter.Config} */
 const config = {
 	root: true,
+	reportUnusedDisableDirectives: true,
 	extends: ['@zazen', 'plugin:svelte/recommended', 'prettier'],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -75,6 +77,16 @@ const config = {
 			},
 		},
 		{ files: ['*.cjs'], env: { node: true } },
+		{
+			files: ['*.ts', '*.tsx'],
+			extends: ['@zazen/eslint-config/typescript'],
+			parserOptions: {
+				project: './studio/tsconfig.json',
+			},
+			rules: {
+				'import/extensions': ['off'],
+			},
+		},
 	],
 }
 
