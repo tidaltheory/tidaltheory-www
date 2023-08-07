@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+        @font-face {
+                font-family: 'Antenna';
+                font-weight: 700;
+                src: url('/fonts/antenna-bold.woff2') format('woff2');
+                font-display: swap;
+        }
+
+        @font-face {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 100 900;
+                /* stylelint-disable-next-line property-no-unknown */
+                font-named-instance: 'Regular';
+                src: url('/fonts/inter-roman.var.woff2?v=3.19') format('woff2');
+                font-display: swap;
+        }
+
+        @font-face {
+                font-family: 'Inter';
+                font-style: italic;
+                font-weight: 100 900;
+                /* stylelint-disable-next-line property-no-unknown */
+                font-named-instance: 'Italic';
+                src: url('/fonts/inter-italic.var.woff2?v=3.19') format('woff2');
+                font-display: swap;
+        }
+
+        @font-face {
+                font-family: 'Newsreader';
+                font-style: italic;
+                font-weight: 100 900;
+                /* stylelint-disable-next-line property-no-unknown */
+                font-named-instance: 'Italic';
+                src: url('/fonts/newsreader-italic.woff2') format('woff2');
+                font-display: swap;
+        }
+
+        /** 192 is minimum width of aside column. */
+        @container prose (min-width: calc(65ch + 192px + 40px)) {
+                aside {
+                        position: absolute;
+                        left: calc(65ch + 40px);
+                        max-width: 25%;
+                }
+        }
+}
+
+.pull-double {
+        margin-right: 0.4em;
+}
+.push-double {
+        margin-left: -0.4em;
+}

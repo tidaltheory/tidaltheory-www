@@ -1,0 +1,189 @@
+:root {
+        --baseA0: #16191b;
+        --baseA1: #202326;
+        --baseA3: #62696d;
+
+        --baseB0: #2cccff33;
+        --baseB2: #62696d;
+        --baseB3: #949ca1;
+        --baseB5: #c0c8cd;
+        --baseB7: #dee4e8;
+
+        --baseD2: #e7ebed;
+        --baseD2-20: #e7ebed33;
+        --baseD2-00: #e7ebed00;
+        --baseD7: #e7ebed;
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+        font-family: 'SF Mono', Consolas, Menlo, Monaco, 'Andale Mono WT',
+                'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter',
+                'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
+                'Nimbus Mono L', 'Courier New', Courier, monospace;
+        font-size: 14px;
+        hyphens: none;
+        line-height: 1.375;
+        color: var(--baseB3);
+        direction: ltr;
+        text-align: left;
+        word-break: normal;
+        tab-size: 2;
+        white-space: pre;
+        word-spacing: normal;
+
+        @screen lg {
+                tab-size: 4;
+        }
+
+        /* background: var(--baseA0); */
+}
+
+pre > code[class*='language-'] {
+        font-size: 1em;
+}
+
+pre[class*='language-']::-moz-selection,
+pre[class*='language-'] ::-moz-selection,
+code[class*='language-']::-moz-selection,
+code[class*='language-'] ::-moz-selection {
+        text-shadow: none;
+        background: var(--baseB0);
+}
+
+pre[class*='language-']::selection,
+pre[class*='language-'] ::selection,
+code[class*='language-']::selection,
+code[class*='language-'] ::selection {
+        text-shadow: none;
+        background: var(--baseB0);
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+        padding: 1em;
+        margin: 0.5em 0;
+        overflow: auto;
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+        padding: 0.1em;
+        border-radius: 0.3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+        color: var(--baseA3);
+}
+
+.token.punctuation {
+        color: var(--baseA3);
+}
+
+.token.namespace {
+        opacity: 0.7;
+}
+
+.token.tag,
+.token.operator,
+.token.number {
+        color: var(--baseD2);
+}
+
+.token.property,
+.token.function {
+        color: var(--baseD2);
+}
+
+.token.tag-id,
+.token.selector,
+.token.atrule-id {
+        color: var(--baseB7);
+}
+
+code.language-javascript,
+.token.attr-name {
+        color: var(--baseB5);
+}
+
+code.language-css,
+code.language-scss,
+.token.boolean,
+.token.string,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.language-scss .token.string,
+.style .token.string,
+.token.attr-value,
+.token.keyword,
+.token.control,
+.token.directive,
+.token.unit,
+.token.statement,
+.token.regex,
+.token.atrule {
+        color: var(--baseD7);
+}
+
+.token.placeholder,
+.token.variable {
+        color: var(--baseD7);
+}
+
+.token.deleted {
+        text-decoration: line-through;
+}
+
+.token.inserted {
+        text-decoration: none;
+        border-bottom: 1px dotted var(--baseB7);
+}
+
+.token.italic {
+        font-style: italic;
+}
+
+.token.important,
+.token.bold {
+        font-weight: bold;
+}
+
+.token.important {
+        color: var(--baseB5);
+}
+
+.token.entity {
+        cursor: help;
+}
+
+pre > code.highlight {
+        outline: 0.4em solid var(--baseB2);
+        outline-offset: 0.4em;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers.line-numbers .line-numbers-rows {
+        border-right-color: var(--baseA1);
+}
+
+.line-numbers .line-numbers-rows > span::before {
+        color: var(--baseA1);
+}
+
+/* overrides color-values for the Line Highlight plugin
+* http://prismjs.com/plugins/line-highlight/
+*/
+.line-highlight.line-highlight {
+        background: var(--baseD2-20);
+        background: linear-gradient(
+                to right,
+                var(--baseD2-20) 70%,
+                var(--baseA0-00)
+        );
+}

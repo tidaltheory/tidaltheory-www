@@ -8,7 +8,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.css": "stylelint --fix",
+    "*.css": "stylelint --config www/stylelint.config.cjs --fix",
     "*.{js,ts}": [
       "eslint --fix",
       "prettier --write"
@@ -49,6 +49,7 @@
     "prettier-plugin-packagejson": "2.4.5",
     "prettier-plugin-svelte": "3.0.3",
     "prettier-plugin-tailwindcss": "0.4.1",
+    "stylelint": "15.10.2",
     "typescript": "5.1.6"
   },
   "packageManager": "pnpm@8.6.5",
