@@ -1,6 +1,7 @@
 import { codeInput } from '@sanity/code-input'
 import { visionTool } from '@sanity/vision'
-import { defineConfig } from 'sanity'
+import type { DocumentActionComponent, DocumentActionsContext } from 'sanity'
+import { defineConfig, useDocumentOperation } from 'sanity'
 import { deskTool } from 'sanity/desk'
 
 import gallery from './schemas/gallery'
@@ -24,16 +25,43 @@ export default defineConfig({
 	},
 
 	document: {
-		actions(previous) {
-			/**
-			 * @todo Do a thing here to update Note slugs to Unix timestamp of `createdAt`.
-			 */
-			// console.log('PREV', prev)
-			return previous.map(
-				(original) =>
-					// Console.log('ORIGINAL', original)
-					original,
+		/**
+		 * @todo Do a thing here to update Note slugs to Unix timestamp of `createdAt`.
+		 */
+		actions(previous, context) {
+			return previous.map((original) =>
+				original.action === 'publish' ? createPublishAction(original, context) : original,
 			)
 		},
 	},
 })
+
+function createPublishAction(original: DocumentActionComponent, context: DocumentActionsContext) {
+	let client = context.getClient({ apiVersion: '2023-03-20' })
+	let publishAction: DocumentActionComponent = (properties) => {
+		// eslint-disable-next-line etc/no-internal
+		let { patch, publish } = useDocumentOperation(properties.id, properties.type)
+		let originalResult = original(properties)
+
+		return {
+			...originalResult,
+			label: originalResult?.label ?? '',
+			async onHandle() {
+				if (properties.type === 'note' && properties.draft) {
+					patch.execute([
+						{
+							set: {
+								// eslint-disable-next-line @typescript-eslint/naming-convention
+								'slug.current': Date.parse(properties.draft._createdAt).toString(),
+							},
+						},
+					])
+				}
+
+				originalResult?.onHandle?.()
+			},
+		}
+	}
+
+	return publishAction
+}

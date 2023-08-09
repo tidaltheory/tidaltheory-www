@@ -1,5 +1,6 @@
 <script>
 import PageSection from '$lib/components/page-section.svelte'
+import PortableText from '$lib/components/portable-text.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data
@@ -20,7 +21,7 @@ $: ({ title, content } = data)
 				class="col-span-full grid gap-6 md:col-span-3 md:pt-8 xl:pt-12"
 			>
 				<div class="prose prose-xl prose-invert md:prose-2xl">
-					{@html content}
+					<PortableText value={content} />
 				</div>
 			</div>
 			<div

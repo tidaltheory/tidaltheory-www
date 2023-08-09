@@ -1,27 +1,13 @@
-import { readFile } from 'node:fs/promises'
-import { resolve } from 'node:path'
-
-import TOML from '@iarna/toml'
 import { format } from 'date-fns'
-import matter from 'gray-matter'
 
-import { processMarkdown } from '$lib/process-markdown.js'
+import { getNote } from '$lib/sanity/client.js'
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = async ({ params }) => {
-	const md = await readFile(resolve('content', 'notes', `${params.slug}.md`))
-	const { content, matter: toml } = matter(md, {
-		delimiters: '+++',
-		engines: {
-			toml: TOML.parse.bind(TOML),
-		},
-	})
-
-	const { date } = TOML.parse(toml)
-	const title = format(new Date(date), 'dd MMMM yyyy, h:mm aaa')
+	const note = await getNote(params.slug)
 
 	return {
-		content: await processMarkdown(content),
-		title,
+		...note,
+		title: format(new Date(note._createdAt), 'dd MMMM yyyy, h:mm aaa'),
 	}
 }

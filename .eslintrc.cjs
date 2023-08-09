@@ -10,6 +10,11 @@ const config = {
 	env: { browser: true },
 	rules: {
 		/**
+		 * Deprecated rule.
+		 */
+		'no-return-await': 'off',
+
+		/**
 		 * Explicitly initialising props variables to `undefined` lets Svelte
 		 * know the props are optional.
 		 */

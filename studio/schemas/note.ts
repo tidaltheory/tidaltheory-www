@@ -1,5 +1,9 @@
-import { DocumentIcon, DocumentTextIcon, ImageIcon, TagsIcon } from '@sanity/icons'
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import { DocumentTextIcon, TagIcon } from '@sanity/icons'
+import type { ReactElement } from 'react'
 import { defineField, defineType } from 'sanity'
+
+import { HashtagDecorator } from '../components/hashtag-decorator'
 
 export default defineType({
 	name: 'note',
@@ -14,9 +18,8 @@ export default defineType({
 			options: {
 				source(document_, context) {
 					console.log({ doc: document_, context })
-					return ''
+					return Date.parse(document_._createdAt).toString()
 				},
-				// Source: '_createdAt',
 				isUnique: async (value, context) => context.defaultIsUnique(value, context),
 			},
 			validation: (rule) => rule.required(),
@@ -25,7 +28,24 @@ export default defineType({
 			name: 'content',
 			title: 'Content',
 			type: 'array',
-			of: [{ type: 'block' }],
+			of: [
+				{
+					type: 'block',
+					marks: {
+						decorators: [
+							{ title: 'Strong', value: 'strong' },
+							{ title: 'Emphasis', value: 'em' },
+							{ title: 'Code', value: 'code' },
+							{
+								title: 'Hashtag',
+								value: 'hashtag',
+								icon: TagIcon,
+								component: HashtagDecorator as ReactElement,
+							},
+						],
+					},
+				},
+			],
 		}),
 	],
 })
