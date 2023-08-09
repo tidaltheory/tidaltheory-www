@@ -1,9 +1,11 @@
 import { codeInput } from '@sanity/code-input'
+import { BlockquoteIcon } from '@sanity/icons'
 import { visionTool } from '@sanity/vision'
 import type { DocumentActionComponent, DocumentActionsContext } from 'sanity'
 import { defineConfig, useDocumentOperation } from 'sanity'
 import { deskTool } from 'sanity/desk'
 
+import { inlineOnlyBlock } from './schemas/fields/inline'
 import gallery from './schemas/gallery'
 import note from './schemas/note'
 import photo from './schemas/photo'
@@ -21,7 +23,32 @@ export default defineConfig({
 	plugins: [deskTool(), visionTool(), codeInput()],
 
 	schema: {
-		types: [gallery, note, photo, post],
+		types: [
+			gallery,
+			note,
+			photo,
+			post,
+			{
+				name: 'blockquote',
+				title: 'Blockquote',
+				type: 'object',
+				icon: BlockquoteIcon,
+				fields: [
+					{
+						name: 'quote',
+						title: 'Quote',
+						type: 'array',
+						of: [inlineOnlyBlock],
+					},
+					{
+						name: 'source',
+						title: 'Source',
+						type: 'array',
+						of: [inlineOnlyBlock],
+					},
+				],
+			},
+		],
 	},
 
 	document: {

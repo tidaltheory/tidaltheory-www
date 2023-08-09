@@ -1,9 +1,7 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { DocumentTextIcon, TagIcon } from '@sanity/icons'
-import type { ReactElement } from 'react'
 import { defineField, defineType } from 'sanity'
 
-import { HashtagDecorator } from '../components/hashtag-decorator'
+import { Hashtag } from '../components/hashtag'
 
 export default defineType({
 	name: 'note',
@@ -40,7 +38,7 @@ export default defineType({
 								title: 'Hashtag',
 								value: 'hashtag',
 								icon: TagIcon,
-								component: HashtagDecorator as ReactElement,
+								component: Hashtag,
 							},
 						],
 					},
