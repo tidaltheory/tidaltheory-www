@@ -1,7 +1,10 @@
 <script>
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
-import TextLede from '$lib/components/text-lede.svelte'
+
+/** @type {import('./$types').PageData} */
+export let data
+$: ({ posts } = data)
 </script>
 
 <svelte:head>
@@ -13,13 +16,13 @@ import TextLede from '$lib/components/text-lede.svelte'
 <article>
 	<PageIntro>
 		Writing
-		<TextLede slot="intro">Coming soon.</TextLede>
+		<!-- <TextLede slot="intro">Coming soon.</TextLede> -->
 	</PageIntro>
 	<PageSection>
 		<div class="prose prose-invert">
-			<a href="/writing/difference-single-key-light-can-make/"
-				>The Difference a Single Key Light Can Make</a
-			>
+			{#each posts as post}
+				<a href="/writing/{post.slug.current}/">{post.title}</a>
+			{/each}
 		</div>
 	</PageSection>
 </article>

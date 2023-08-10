@@ -1,37 +1,43 @@
 <script>
-import Blockquote from '$lib/components/blockquote.svelte'
-import ImageLens from '$lib/components/image-lens.svelte'
 import PageContent from '$lib/components/page-content.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
+import PortableText from '$lib/components/portable-text.svelte'
+import TextLede from '$lib/components/text-lede.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data
 
-$: ({ page } = data)
-$: ({ title, excerpt, coverImage, blocks } = page)
+$: ({ title, lede, content } = data)
+// $: ({ title, excerpt, coverImage, blocks } = page)
+
+console.log('PAGE', data)
 </script>
 
 <svelte:head>
 	<title>{title} — Tidal Theory</title>
-	<meta
+	<!-- <meta
 		name="twitter:card"
 		content={coverImage ? 'summary_large_card' : 'summary'}
-	/>
+	/> -->
 	<meta property="og:title" content="{title} — Tidal Theory" />
-	<meta property="og:description" content={excerpt} />
+	<!-- <meta property="og:description" content={excerpt} />
 	{#if coverImage}<meta
 			property="og:image"
 			content={`https://tidaltheory.io${coverImage}`}
-		/>{/if}
+		/>{/if} -->
 </svelte:head>
 
 <article>
 	<PageIntro>
 		{title}
+		{#if lede}
+			<TextLede slot="intro"><PortableText value={lede} /></TextLede>
+		{/if}
 	</PageIntro>
 	<PageContent>
 		<div class="wrapper prose relative">
-			{#each blocks as block}
+			<PortableText value={content} />
+			<!-- {#each blocks as block}
 				{#if block.type === 'markdown'}
 					{@html block.content}
 				{:else if block.type === 'image'}
@@ -56,7 +62,7 @@ $: ({ title, excerpt, coverImage, blocks } = page)
 				{:else if block.type === 'blockquote'}
 					<Blockquote quote={block.content} source={block.source} />
 				{/if}
-			{/each}
+			{/each} -->
 		</div>
 	</PageContent>
 </article>
