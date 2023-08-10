@@ -1,5 +1,6 @@
 <script>
 import { onMount } from 'svelte'
+
 /** @type {import('@portabletext/svelte').MarkComponentProps} */
 export let portableText
 
