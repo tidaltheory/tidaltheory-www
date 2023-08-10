@@ -1,5 +1,7 @@
 import { defineArrayMember, defineField, defineType } from 'sanity'
 
+import { removeStopwords } from '../utils/remove-stopwords'
+
 import { ledeField } from './fields/lede'
 
 export default defineType({
@@ -18,8 +20,8 @@ export default defineType({
 			title: 'Slug',
 			type: 'slug',
 			options: {
-				source: 'title',
 				maxLength: 96,
+				source: ({ title }) => removeStopwords(title as string),
 				isUnique: async (value, context) => context.defaultIsUnique(value, context),
 			},
 			validation: (rule) => rule.required(),
@@ -34,12 +36,7 @@ export default defineType({
 				{
 					type: 'image',
 					options: {
-						metadata: [
-							'blurhash', // Default: included
-							'lqip', // Default: included
-							'palette', // Default: included
-							'exif',
-						],
+						metadata: ['blurhash', 'lqip', 'palette', 'exif'],
 						hotspot: true,
 					},
 				},
