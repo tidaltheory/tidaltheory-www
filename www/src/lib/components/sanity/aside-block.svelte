@@ -9,6 +9,6 @@ $: ({ value } = portableText)
 
 <aside class="">
 	<div class="prose-sm text-grey-400">
-		<PortableText {value} />
+		<PortableText value={value.content} />
 	</div>
 </aside>

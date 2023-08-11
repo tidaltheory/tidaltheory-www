@@ -42,6 +42,7 @@ export default defineType({
 				},
 				{ type: 'code' },
 				{ type: 'blockquote' },
+				{ type: 'aside' },
 			],
 		}),
 	],

@@ -16,8 +16,6 @@ export const load = async ({ params }) => {
 		}
 	}
 
-	console.log('POST', post)
-
 	return {
 		...post,
 	}

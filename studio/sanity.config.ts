@@ -48,6 +48,20 @@ export default defineConfig({
 					},
 				],
 			},
+			{
+				name: 'aside',
+				title: 'Aside',
+				type: 'object',
+				// Icon: BlockquoteIcon,
+				fields: [
+					{
+						name: 'content',
+						title: 'Content',
+						type: 'array',
+						of: [inlineOnlyBlock],
+					},
+				],
+			},
 		],
 	},
 
