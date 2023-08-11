@@ -39,7 +39,7 @@ const config = {
 				pathGroups: [
 					{
 						pattern:
-							'{@sveltejs/**,svelte/**,svelte?(-preprocess)}',
+							'{@sveltejs/**,svelte/**,svelte?(-preprocess),@sanity/**,sanity/**,sanity}',
 						group: 'builtin',
 						position: 'after',
 					},

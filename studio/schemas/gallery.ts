@@ -1,6 +1,7 @@
-import type { PortableTextBlock } from '@portabletext/types'
 import { ImagesIcon } from '@sanity/icons'
-import { defineArrayMember, defineField, defineType } from 'sanity'
+
+import type { PortableTextBlock } from '@portabletext/types'
+import { defineArrayMember, defineField, defineType } from '@sanity-typed/types'
 
 import { serializePortableText } from '../utils/serialize-portable-text'
 
@@ -65,7 +66,7 @@ export default defineType({
 			name: 'platform',
 			title: 'Platform',
 			type: 'array',
-			of: [{ type: 'string' }],
+			of: [defineArrayMember({ type: 'string' })],
 			options: {
 				layout: 'tags',
 			},
@@ -79,7 +80,14 @@ export default defineType({
 			name: 'images',
 			title: 'Images',
 			type: 'array',
-			of: [{ type: 'reference', to: [{ type: 'photo' }], weak: true, options: {} }],
+			of: [
+				defineArrayMember({
+					type: 'reference',
+					to: [{ type: 'photo' } as const],
+					weak: true,
+					options: {},
+				}),
+			],
 			options: {
 				layout: 'grid',
 			},
@@ -88,7 +96,7 @@ export default defineType({
 			name: 'content',
 			title: 'Content',
 			type: 'array',
-			of: [{ type: 'block' }],
+			of: [defineArrayMember({ type: 'block' })],
 		}),
 	],
 })

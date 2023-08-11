@@ -2,6 +2,8 @@ import groq from 'groq'
 
 import { client } from './client.js'
 
+/** @typedef {import('../../../../studio/sanity.config.js').SanityValues['post']} Post */
+
 /**
  * @returns {Promise<Post[]>}
  */

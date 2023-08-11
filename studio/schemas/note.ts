@@ -1,5 +1,6 @@
 import { DocumentTextIcon, TagIcon } from '@sanity/icons'
-import { defineField, defineType } from 'sanity'
+
+import { defineArrayMember, defineField, defineType } from '@sanity-typed/types'
 
 import { Hashtag } from '../components/hashtag'
 
@@ -27,7 +28,7 @@ export default defineType({
 			title: 'Content',
 			type: 'array',
 			of: [
-				{
+				defineArrayMember({
 					type: 'block',
 					marks: {
 						decorators: [
@@ -42,7 +43,7 @@ export default defineType({
 							},
 						],
 					},
-				},
+				}),
 			],
 		}),
 	],

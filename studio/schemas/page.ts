@@ -1,5 +1,6 @@
 import { DocumentIcon } from '@sanity/icons'
-import { defineField, defineType } from 'sanity'
+
+import { defineArrayMember, defineField, defineType } from '@sanity-typed/types'
 
 import { decorators } from './fields/inline'
 import { ledeField } from './fields/lede'
@@ -31,7 +32,7 @@ export default defineType({
 			name: 'content',
 			title: 'Content',
 			type: 'array',
-			of: [{ type: 'block', marks: { decorators } }],
+			of: [defineArrayMember({ type: 'block', marks: { decorators } })],
 		}),
 	],
 })

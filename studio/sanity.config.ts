@@ -2,8 +2,11 @@ import { codeInput } from '@sanity/code-input'
 import { BlockquoteIcon } from '@sanity/icons'
 import { visionTool } from '@sanity/vision'
 import type { DocumentActionComponent, DocumentActionsContext } from 'sanity'
-import { defineConfig, useDocumentOperation } from 'sanity'
+import { useDocumentOperation } from 'sanity'
 import { deskTool } from 'sanity/desk'
+
+import { defineConfig, defineType } from '@sanity-typed/types'
+import type { InferSchemaValues } from '@sanity-typed/types'
 
 import { inlineOnlyBlock } from './schemas/fields/inline'
 import gallery from './schemas/gallery'
@@ -13,8 +16,9 @@ import photo from './schemas/photo'
 import post from './schemas/post'
 
 // Export const PREVIEWABLE_DOCUMENT_TYPES: string[] = [home.name, page.name, project.name]
+export type SanityValues = InferSchemaValues<typeof config>
 
-export default defineConfig({
+const config = defineConfig({
 	name: 'default',
 	title: 'Tidal Theory',
 
@@ -30,7 +34,7 @@ export default defineConfig({
 			page,
 			photo,
 			post,
-			{
+			defineType({
 				name: 'blockquote',
 				title: 'Blockquote',
 				type: 'object',
@@ -49,8 +53,8 @@ export default defineConfig({
 						of: [inlineOnlyBlock],
 					},
 				],
-			},
-			{
+			}),
+			defineType({
 				name: 'aside',
 				title: 'Aside',
 				type: 'object',
@@ -63,7 +67,7 @@ export default defineConfig({
 						of: [inlineOnlyBlock],
 					},
 				],
-			},
+			}),
 		],
 	},
 
@@ -78,6 +82,8 @@ export default defineConfig({
 		},
 	},
 })
+
+export default config
 
 function createPublishAction(original: DocumentActionComponent, context: DocumentActionsContext) {
 	let client = context.getClient({ apiVersion: '2023-03-20' })

@@ -1,5 +1,6 @@
 import { ImageIcon, TagsIcon } from '@sanity/icons'
-import { defineField, defineType, type Reference } from 'sanity'
+
+import { defineArrayMember, defineField, defineType } from '@sanity-typed/types'
 
 export default defineType({
 	name: 'photo',
@@ -58,7 +59,7 @@ export default defineType({
 					title: 'Tags',
 					icon: TagsIcon,
 					type: 'array',
-					of: [{ type: 'string' }],
+					of: [defineArrayMember({ type: 'string' })],
 					options: {
 						layout: 'tags',
 					},

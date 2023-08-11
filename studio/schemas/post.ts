@@ -1,4 +1,4 @@
-import { defineArrayMember, defineField, defineType } from 'sanity'
+import { defineArrayMember, defineField, defineType } from '@sanity-typed/types'
 
 import { removeStopwords } from '../utils/remove-stopwords'
 
@@ -33,18 +33,18 @@ export default defineType({
 			title: 'Content',
 			type: 'array',
 			of: [
-				{ type: 'block', marks: { decorators } },
-				{
+				defineArrayMember({ type: 'block', marks: { decorators } }),
+				defineArrayMember({
 					type: 'image',
 					options: {
 						storeOriginalFilename: true,
 						metadata: ['blurhash', 'lqip', 'palette', 'exif'],
 						hotspot: true,
 					},
-				},
-				{ type: 'code' },
-				{ type: 'blockquote' },
-				{ type: 'aside' },
+				}),
+				defineArrayMember({ type: 'code' }),
+				defineArrayMember({ type: 'blockquote' }),
+				defineArrayMember({ type: 'aside' }),
 			],
 		}),
 	],

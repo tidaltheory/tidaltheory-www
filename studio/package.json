@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@portabletext/types": "2.0.5",
+    "@sanity-typed/types": "4.0.4",
     "@types/react": "18.2.19",
     "@types/styled-components": "5.1.26"
   }
