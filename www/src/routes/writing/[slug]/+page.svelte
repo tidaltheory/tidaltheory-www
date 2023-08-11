@@ -9,8 +9,6 @@ export let data
 
 $: ({ title, lede, content } = data)
 // $: ({ title, excerpt, coverImage, blocks } = page)
-
-console.log('PAGE', data)
 </script>
 
 <svelte:head>

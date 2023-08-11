@@ -137,6 +137,10 @@ const config = {
 								'font-weight': 500,
 								color: theme('colors.grey.400'),
 							},
+
+							'& small p': {
+								margin: 0,
+							},
 						},
 					},
 				},
@@ -162,7 +166,7 @@ const config = {
 				container.append(isFirefoxRule)
 				isFirefoxRule.walkRules((rule) => {
 					rule.selector = `.${e(
-						`firefox${separator}${rule.selector.slice(1)}`
+						`firefox${separator}${rule.selector.slice(1)}`,
 					)}`
 				})
 			})

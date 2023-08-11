@@ -8,6 +8,7 @@ import { deskTool } from 'sanity/desk'
 import { inlineOnlyBlock } from './schemas/fields/inline'
 import gallery from './schemas/gallery'
 import note from './schemas/note'
+import page from './schemas/page'
 import photo from './schemas/photo'
 import post from './schemas/post'
 
@@ -26,6 +27,7 @@ export default defineConfig({
 		types: [
 			gallery,
 			note,
+			page,
 			photo,
 			post,
 			{

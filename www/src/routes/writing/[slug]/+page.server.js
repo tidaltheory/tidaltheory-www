@@ -8,6 +8,10 @@ export const load = async ({ params }) => {
 
 	for (const block of post.content) {
 		if (block._type === 'code') {
+			/**
+			 * @todo Maybe look into highlightjs for "server-side" line
+			 *       highlighting (Prism plugin only works on DOM).
+			 */
 			block.code = Prism.highlight(
 				block.code,
 				Prism.languages[block.language],
