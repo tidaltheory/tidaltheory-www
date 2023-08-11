@@ -2,6 +2,7 @@ import { defineArrayMember, defineField, defineType } from 'sanity'
 
 import { removeStopwords } from '../utils/remove-stopwords'
 
+import { decorators } from './fields/inline'
 import { ledeField } from './fields/lede'
 
 export default defineType({
@@ -32,10 +33,11 @@ export default defineType({
 			title: 'Content',
 			type: 'array',
 			of: [
-				{ type: 'block' },
+				{ type: 'block', marks: { decorators } },
 				{
 					type: 'image',
 					options: {
+						storeOriginalFilename: true,
 						metadata: ['blurhash', 'lqip', 'palette', 'exif'],
 						hotspot: true,
 					},
