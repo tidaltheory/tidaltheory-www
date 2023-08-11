@@ -30,9 +30,7 @@ console.log('PAGE', data)
 <article>
 	<PageIntro>
 		{title}
-		{#if lede}
-			<TextLede slot="intro"><PortableText value={lede} /></TextLede>
-		{/if}
+		<TextLede slot="intro"><PortableText value={lede} /></TextLede>
 	</PageIntro>
 	<PageContent>
 		<div class="wrapper prose relative">
