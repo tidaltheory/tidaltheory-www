@@ -1,4 +1,5 @@
 import { ImagesIcon } from '@sanity/icons'
+import type { ReferenceValue } from 'sanity'
 
 import type { PortableTextBlock } from '@portabletext/types'
 import { defineArrayMember, defineField, defineType } from '@sanity-typed/types'
@@ -14,7 +15,7 @@ export default defineType({
 	type: 'document',
 	preview: {
 		select: {
-			image: 'cover',
+			image: 'cover.image',
 			title: 'title',
 			subtitle: 'subtitle',
 			lede: 'lede',
@@ -53,13 +54,21 @@ export default defineType({
 		defineField({
 			name: 'cover',
 			title: 'Cover',
-			type: 'image',
+			type: 'reference',
+			to: [{ type: 'photo' as const }],
 			options: {
-				storeOriginalFilename: true,
-				hotspot: true,
-				metadata: ['blurhash', 'lqip', 'palette', 'exif'],
+				/**
+				 * Choose from Photos which are referenced in the images field.
+				 */
+				filter({ document }) {
+					let photos = (document.images as ReferenceValue[]).map((index) => index._ref)
+					return {
+						filter: '_type == "photo" && _id in $photos',
+						params: { photos },
+					}
+				},
 			},
-			//   Validation: (rule) => rule.required(),
+			validation: (rule) => rule.required(),
 		}),
 		ledeField,
 		defineField({
