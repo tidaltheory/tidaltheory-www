@@ -40,7 +40,8 @@ beforeNavigate(async () => {
 					<SiteNavItem href="/about/" label="About" />
 					<SiteNavItem href="/projects/" label="Projects" />
 					<SiteNavItem href="/photos/" label="Photos" />
-					<!-- <SiteNavItem href="/blog/" /> -->
+					<SiteNavItem href="/writing/" label="Writing" />
+					<SiteNavItem href="/notes/" label="Notes" />
 				</div>
 			</nav>
 		</div>
@@ -72,7 +73,8 @@ beforeNavigate(async () => {
 				<SiteNavItem href="/about/">About</SiteNavItem>
 				<SiteNavItem href="/projects/">Projects</SiteNavItem>
 				<SiteNavItem href="/photos/">Photos</SiteNavItem>
-				<!-- <SiteNavItem href="/blog/">Blog</SiteNavItem> -->
+				<SiteNavItem href="/writing/">Writing</SiteNavItem>
+				<SiteNavItem href="/notes/">Notes</SiteNavItem>
 			</div>
 		</div>
 	{/if}

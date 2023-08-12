@@ -21,7 +21,7 @@ onMount(() => {
 
 <mark
 	bind:this={mark}
-	class="p-1 text-white rounded-sm before:opacity-50 before:content-['#\002009']"
+	class="p-1 text-white bg-grey-900 bg-opacity-0 rounded-sm before:opacity-50 before:content-['#\002009']"
 >
 	<slot />
 </mark>
