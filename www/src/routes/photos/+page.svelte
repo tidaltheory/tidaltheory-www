@@ -7,19 +7,21 @@ import TextLede from '$lib/components/text-lede.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data
-$: posts = data.json
+$: ({ galleries } = data)
 </script>
 
 <svelte:head>
 	<title>Photos — Tidal Theory</title>
 	<meta
 		name="twitter:card"
-		content={posts[0].coverImage ? 'summary_large_card' : 'summary'}
+		content={galleries[0].coverImageSet.lg
+			? 'summary_large_card'
+			: 'summary'}
 	/>
 	<meta property="og:title" content="Photos — Tidal Theory" />
-	{#if posts[0].coverImage}<meta
+	{#if galleries[0].coverImageSet.lg}<meta
 			property="og:image"
-			content={`https://tidaltheory.io${posts[0].coverImage}`}
+			content={galleries[0].coverImageSet.lg}
 		/>{/if}
 </svelte:head>
 
@@ -34,13 +36,8 @@ $: posts = data.json
 	<PageSection>
 		<div class="grid gap-[9vh] md:gap-[11vh]">
 			<div class="grid gap-4 md:grid-cols-2 md:gap-12 xl:gap-16">
-				{#each posts as gallery}
-					<GalleryCard
-						to="{gallery.path}/"
-						cover={gallery.coverImage}
-						title={gallery.meta.title}
-						count={gallery.meta.images?.length}
-					/>
+				{#each galleries as gallery}
+					<GalleryCard {gallery} />
 				{/each}
 			</div>
 			<div class="prose prose-invert md:prose-xl">

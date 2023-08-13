@@ -21,7 +21,7 @@ const headingStyle = {
 /** @type {keyof typeof resolveHeadingElement} */
 export let level = 1
 /** @type {boolean | undefined} */
-export let shouldShow
+export let shouldShow = undefined
 export let transitionIn = false
 
 const heading = resolveHeadingElement[level]

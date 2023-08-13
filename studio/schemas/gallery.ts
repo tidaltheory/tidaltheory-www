@@ -80,6 +80,18 @@ export default defineType({
 				layout: 'tags',
 			},
 		}),
+		{
+			title: 'Category',
+			name: 'category',
+			type: 'string',
+			options: {
+				list: [
+					{ title: 'Screen Shots', value: 'screen-shots' },
+					{ title: 'Photo Series', value: 'photo-series' },
+				],
+				layout: 'radio',
+			},
+		},
 		defineField({
 			name: 'developer',
 			title: 'Developer',
