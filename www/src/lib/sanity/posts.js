@@ -14,12 +14,23 @@ export async function getPosts() {
 }
 
 /**
+ * @typedef {object} PostFields
+ * @prop {string} ledeClean
+ * @prop {string} coverImage
+ */
+/** @typedef {Post & PostFields} PostObject */
+
+/**
  * @param {string} slug
- * @returns {Promise<Post>}
+ * @returns {Promise<PostObject>}
  */
 export async function getPost(slug) {
 	return await client.fetch(
-		groq`*[_type == "post" && slug.current == $slug][0]`,
+		groq`*[_type == "post" && slug.current == $slug]{
+			...,
+			'ledeClean': pt::text(lede),
+			'coverImage': cover->image.asset,
+		}[0]`,
 		{ slug },
 	)
 }

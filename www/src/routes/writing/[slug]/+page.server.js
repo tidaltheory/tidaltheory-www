@@ -20,7 +20,5 @@ export const load = async ({ params }) => {
 		}
 	}
 
-	return {
-		...post,
-	}
+	return { ...post }
 }

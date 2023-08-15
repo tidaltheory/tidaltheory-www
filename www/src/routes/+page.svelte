@@ -25,14 +25,16 @@ $: ({ updates } = data)
 		</svelte:fragment>
 	</PageHero>
 	<PageSection>
-		<div class="grid gap-8 md:gap-12 xl:gap-[4.5rem]">
-			<Heading level="2">Latest Changes</Heading>
-			<div class="grid gap-2 md:gap-4">
-				{#each updates as update, index}
-					{#if index !== 0}<Divider />{/if}
-					<Update {update} />
-				{/each}
+		{#if updates}
+			<div class="grid gap-8 md:gap-12 xl:gap-[4.5rem]">
+				<Heading level={2}>Latest Changes</Heading>
+				<div class="grid gap-2 md:gap-4">
+					{#each updates as update, index}
+						{#if index !== 0}<Divider />{/if}
+						<Update {update} />
+					{/each}
+				</div>
 			</div>
-		</div>
+		{/if}
 	</PageSection>
 </article>

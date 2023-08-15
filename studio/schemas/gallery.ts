@@ -80,7 +80,7 @@ export default defineType({
 				layout: 'tags',
 			},
 		}),
-		{
+		defineField({
 			title: 'Category',
 			name: 'category',
 			type: 'string',
@@ -91,7 +91,7 @@ export default defineType({
 				],
 				layout: 'radio',
 			},
-		},
+		}),
 		defineField({
 			name: 'developer',
 			title: 'Developer',

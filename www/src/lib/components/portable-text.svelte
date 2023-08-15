@@ -8,11 +8,6 @@ import CodeBlock from './sanity/code-block.svelte'
 import HashtagMark from './sanity/hashtag-mark.svelte'
 import ImageBlock from './sanity/image-block.svelte'
 
-/** @typedef {import('@portabletext/types').ArbitraryTypedObject} ATO */
-/** @typedef {import('@portabletext/types').PortableTextBlock} PTB */
-/** @typedef {ATO | PTB | Array<ATO | PTB>} InputValue */
-
-/** @type {InputValue} */
 export let value
 
 /** @type {any} */

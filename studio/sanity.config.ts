@@ -14,6 +14,7 @@ import note from './schemas/note'
 import page from './schemas/page'
 import photo from './schemas/photo'
 import post from './schemas/post'
+import update from './schemas/update'
 
 // Export const PREVIEWABLE_DOCUMENT_TYPES: string[] = [home.name, page.name, project.name]
 export type SanityValues = InferSchemaValues<typeof config>
@@ -34,6 +35,7 @@ const config = defineConfig({
 			page,
 			photo,
 			post,
+			update,
 			defineType({
 				name: 'blockquote',
 				title: 'Blockquote',
