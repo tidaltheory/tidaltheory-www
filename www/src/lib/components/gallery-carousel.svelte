@@ -2,19 +2,13 @@
 import { onMount, tick } from 'svelte'
 import { fade } from 'svelte/transition'
 
-import type { ImageRecord, ImageThumbnails } from '@tidaltheory/lens'
-
+import GalleryImage from './gallery-image.svelte'
 import Portal from './helpers/portal.svelte'
 import TrapFocus from './helpers/trap-focus.svelte'
 import IconButton from './icon-button.svelte'
 import ImageDetails from './image-details.svelte'
-import ImageLens from './image-lens.svelte'
 
-type GalleryImage = (ImageRecord | ImageThumbnails) & {
-	meta: { title?: string; description?: string }
-}
-
-export let images: Array<GalleryImage>
+export let images: any
 export let initialIndex: number
 export let onClose: () => void
 
@@ -61,13 +55,20 @@ function handleEscape(event: KeyboardEvent) {
 						tabindex="-1"
 						on:click|self|stopPropagation={onClose}
 					>
-						<div class="group relative flex max-h-full max-w-full">
-							<ImageLens {image} lazyLoad={false} />
-							{#if image.meta}
+						<div
+							class="group relative flex max-h-full max-w-full object-contain"
+							style:aspect-ratio={image.metadata.dimensions
+								.aspectRatio}
+						>
+							<GalleryImage {image} />
+							{#if image.title || image.caption}
 								<div class="absolute right-0 bottom-0 left-0">
 									<ImageDetails
 										id="image-{index}"
-										meta={image.meta}
+										meta={{
+											title: image.title,
+											caption: image.caption,
+										}}
 									/>
 								</div>
 							{/if}

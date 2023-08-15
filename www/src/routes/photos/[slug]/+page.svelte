@@ -4,13 +4,22 @@ import GalleryThumbnail from '$lib/components/gallery-thumbnail.svelte'
 import MasonryGrid from '$lib/components/masonry-grid.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
+import PortableText from '$lib/components/portable-text.svelte'
 import TextLede from '$lib/components/text-lede.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data
-$: ({ title, subtitle, description, coverImage, images, content, cleanIntro } =
-	data.json)
-$: fullTitle = subtitle ? [title, subtitle].join(' ') : title
+$: ({ post } = data)
+$: ({
+	title,
+	subtitle,
+	fullTitle,
+	lede,
+	ledeClean,
+	coverImage,
+	images,
+	content,
+} = post)
 
 let isCarouselOpen = false
 let initialIndex = 0
@@ -33,15 +42,15 @@ function handleCloseCarousel() {
 	<title>{fullTitle} — Photos — Tidal Theory</title>
 	<meta name="twitter:card" content="summary_large_card" />
 	<meta property="og:title" content="{fullTitle} — Tidal Theory" />
-	<meta property="og:description" content={cleanIntro} />
-	<meta property="og:image" content={`https://tidaltheory.io${coverImage}`} />
+	<meta property="og:description" content={ledeClean} />
+	<meta property="og:image" content={coverImage} />
 </svelte:head>
 
 <article>
 	<PageIntro {subtitle}>
 		{title}
 		<TextLede slot="intro">
-			{@html description}
+			<PortableText value={lede} />
 		</TextLede>
 	</PageIntro>
 	<PageSection>
@@ -63,7 +72,7 @@ function handleCloseCarousel() {
 				/>
 			{/if}
 			<div class="prose prose-invert md:prose-xl">
-				{@html content}
+				<PortableText value={content} />
 			</div>
 		</div>
 	</PageSection>

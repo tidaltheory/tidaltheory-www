@@ -15,18 +15,11 @@ export default defineType({
 			return {
 				media: image as string,
 				title: image.title as string,
-				subtitle: image.asset.originalFilename as string,
+				subtitle: image.caption as string,
 			}
 		},
 	},
 	fields: [
-		// DefineField({
-		//   name: 'title',
-		//   title: 'Title',
-		//   type: 'string',
-		//   readOnly: true,
-		//   initialValue: 'image.asset.originalFilename',
-		// }),
 		defineField({
 			name: 'image',
 			title: 'Image',

@@ -2,7 +2,7 @@ const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss/types').Config} */
 const config = {
-	content: ['src/**/*.svelte', 'src/lib/classnames.ts', 'src/app.html'],
+	content: ['src/**/*.svelte', 'src/lib/classnames.js', 'src/app.html'],
 	theme: {
 		colors: {
 			white: '#fff',

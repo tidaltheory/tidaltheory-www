@@ -23,20 +23,35 @@ export async function getGalleries() {
 			slug,
 			title,
 			subtitle,
-			'coverImage': cover->image.asset ,
-			'coverImageMeta': cover->image.asset->metadata ,
+			'coverImage': cover->image.asset,
+			'coverImageMeta': cover->image.asset->metadata,
 			images
 		} | order(_updatedAt desc)`,
 	)
 }
 
 /**
+ * @typedef {object} GalleryFields
+ * @prop {string} fullTitle
+ * @prop {string} ledeClean
+ * @prop {string} coverImage
+ */
+/** @typedef {Gallery & GalleryFields} GalleryPostObject */
+
+/**
  * @param {string} slug
- * @returns {Promise<Gallery>}
+ * @returns {Promise<GalleryPostObject>}
  */
 export async function getGallery(slug) {
 	return await client.fetch(
-		groq`*[_type == "gallery" && slug.current == $slug][0]`,
+		groq`*[_type == "gallery" && slug.current == $slug]{
+			...,
+			'coverImage': cover->image.asset,
+			images[]->{
+				...,
+				'metadata': image.asset->metadata
+			},
+		}[0]`,
 		{ slug },
 	)
 }
