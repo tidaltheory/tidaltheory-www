@@ -35,7 +35,11 @@ export async function getUpdates() {
 			),
 			count,
 			'slug': reference->slug.current,
-			'title': reference->title,
+			'title': select(
+				reference->subtitle != null =>
+					array::join([reference->title, reference->subtitle], ' '),
+				reference->title
+			),
 			'excerpt': select(
 				type == 'post-add' => pt::text(reference->lede),
 				type == 'note-add' => reference->content,
@@ -45,6 +49,6 @@ export async function getUpdates() {
 				'image': image.asset,
 				'metadata': image.asset->metadata,
 			})
-		}`,
+		} | order(date desc)`,
 	)
 }
