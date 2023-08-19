@@ -71,7 +71,7 @@ function handleCloseCarousel() {
 					onClose={handleCloseCarousel}
 				/>
 			{/if}
-			<div class="prose prose-invert md:prose-xl">
+			<div class="prose prose-invert">
 				<PortableText value={content} />
 			</div>
 		</div>

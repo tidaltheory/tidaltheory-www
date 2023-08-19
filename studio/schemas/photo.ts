@@ -40,7 +40,7 @@ export default defineType({
 				defineField({
 					name: 'caption',
 					title: 'Caption',
-					type: 'text',
+					type: 'string',
 				}),
 				defineField({
 					name: 'alt',

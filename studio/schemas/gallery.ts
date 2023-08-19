@@ -6,6 +6,7 @@ import { defineArrayMember, defineField, defineType } from '@sanity-typed/types'
 
 import { serializePortableText } from '../utils/serialize-portable-text'
 
+import { inlineOnlyBlock } from './fields/inline'
 import { ledeField } from './fields/lede'
 
 export default defineType({
@@ -28,17 +29,26 @@ export default defineType({
 			}
 		},
 	},
+	fieldsets: [
+		{
+			name: 'intro',
+			title: 'Intro',
+			options: { columns: 2 },
+		},
+	],
 	fields: [
 		defineField({
 			name: 'title',
 			title: 'Title',
 			type: 'string',
 			validation: (rule) => rule.required(),
+			fieldset: 'intro',
 		}),
 		defineField({
 			name: 'subtitle',
 			title: 'Subtitle',
 			type: 'string',
+			fieldset: 'intro',
 		}),
 		defineField({
 			name: 'slug',
@@ -50,6 +60,7 @@ export default defineType({
 				isUnique: async (value, context) => context.defaultIsUnique(value, context),
 			},
 			validation: (rule) => rule.required(),
+			fieldset: 'intro',
 		}),
 		defineField({
 			name: 'cover',
@@ -57,6 +68,7 @@ export default defineType({
 			type: 'reference',
 			to: [{ type: 'photo' as const }],
 			options: {
+				disableNew: true,
 				/**
 				 * Choose from Photos which are referenced in the images field.
 				 */
@@ -69,17 +81,9 @@ export default defineType({
 				},
 			},
 			validation: (rule) => rule.required(),
+			fieldset: 'intro',
 		}),
 		ledeField,
-		defineField({
-			name: 'platform',
-			title: 'Platform',
-			type: 'array',
-			of: [defineArrayMember({ type: 'string' })],
-			options: {
-				layout: 'tags',
-			},
-		}),
 		defineField({
 			title: 'Category',
 			name: 'category',
@@ -93,9 +97,20 @@ export default defineType({
 			},
 		}),
 		defineField({
+			name: 'platform',
+			title: 'Platform',
+			type: 'array',
+			of: [defineArrayMember({ type: 'string' })],
+			options: {
+				layout: 'tags',
+			},
+			hidden: ({ parent }) => parent.category !== 'screen-shots',
+		}),
+		defineField({
 			name: 'developer',
 			title: 'Developer',
 			type: 'string',
+			hidden: ({ parent }) => parent.category !== 'screen-shots',
 		}),
 		defineField({
 			name: 'images',
@@ -106,7 +121,9 @@ export default defineType({
 					type: 'reference',
 					to: [{ type: 'photo' } as const],
 					weak: true,
-					options: {},
+					options: {
+						disableNew: true,
+					},
 				}),
 			],
 			options: {
@@ -117,7 +134,7 @@ export default defineType({
 			name: 'content',
 			title: 'Content',
 			type: 'array',
-			of: [defineArrayMember({ type: 'block' })],
+			of: [inlineOnlyBlock],
 		}),
 	],
 })

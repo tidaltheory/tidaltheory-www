@@ -18,3 +18,4 @@ sw.*
 .env
 .env.*
 .netlify
+studio/imports
