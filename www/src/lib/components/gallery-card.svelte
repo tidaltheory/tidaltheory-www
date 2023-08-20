@@ -39,14 +39,16 @@ $: srcset = `${coverImageSet.sm} 300w, ${coverImageSet.md} 600w, ${coverImageSet
 			href="{slug.current}/"
 		>
 			<div
-				class="flex items-start justify-between bg-grey-900 bg-opacity-50 p-6 backdrop-blur lg:p-10"
+				class="flex items-start justify-between gap-1 lg:gap-2 bg-grey-900 bg-opacity-50 p-6 backdrop-blur lg:p-10"
 			>
 				<Heading level={4}>{fullTitle}</Heading>
 				{#if count}
 					<div
-						class="relative top-[0.0625rem] rounded bg-grey-700 px-2 py-[6px]"
+						class="relative top-[0.0625rem] rounded bg-grey-700 bg-opacity-40 px-[6px] py-1 lg:px-2 lg:py-[6px]"
 					>
-						<span class="block text-grey-200 text-lg leading-trim">
+						<span
+							class="block text-grey-200 text-sm lg:text-lg leading-trim salt"
+						>
 							{count}
 						</span>
 					</div>

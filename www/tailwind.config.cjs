@@ -60,6 +60,7 @@ const config = {
 						'--tw-prose-code': theme('colors.white'),
 						'--tw-prose-quotes': theme('colors.white'),
 						'--tw-prose-captions': theme('colors.grey.500'),
+						'--tw-prose-invert-body': theme('colors.grey.300'),
 
 						'max-width': 'none',
 						color: theme('colors.grey.200'),
