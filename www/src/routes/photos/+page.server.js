@@ -9,13 +9,11 @@ export const load = async () => {
 
 	if (galleries) {
 		for (const set of galleries) {
-			set.fullTitle = [set.title, set.subtitle].join(' ')
 			set.coverImageSet = {
 				sm: getImageUrl(set.coverImage, 300, 250, 'webp'),
 				md: getImageUrl(set.coverImage, 600, 500, 'webp'),
 				lg: getImageUrl(set.coverImage, 1200, 1000, 'webp'),
 			}
-			set.count = set.images.length
 		}
 
 		return { galleries }

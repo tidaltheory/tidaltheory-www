@@ -2,16 +2,12 @@ import { error } from '@sveltejs/kit'
 
 import { getGallery } from '$lib/sanity/galleries.js'
 import { urlFor } from '$lib/sanity/image.js'
-import { serializePortableText } from '$lib/serialize-portable-text.js'
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = async ({ params }) => {
 	const post = await getGallery(params.slug)
 
 	if (post) {
-		post.fullTitle = [post.title, post.subtitle].join(' ')
-		post.ledeClean = serializePortableText(post.lede)
-
 		/** @todo Get optimal OG image height and include .height() */
 		post.coverImage = urlFor(post.coverImage)
 			.width(1200)
