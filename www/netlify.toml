@@ -1,6 +1,6 @@
 [build]
   ## https://docs.netlify.com/configure-builds/troubleshooting-tips/#build-fails-on-warning-message
-  command = "CI= npm run build:site && ls -laF --color"
+  command = "CI= npm run build:site && ls -laF && cd www && ls -laF"
   publish = "build"
 
 [build.environment]
