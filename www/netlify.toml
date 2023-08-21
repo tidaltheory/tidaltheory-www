@@ -1,7 +1,7 @@
 [build]
   ## https://docs.netlify.com/configure-builds/troubleshooting-tips/#build-fails-on-warning-message
   command = "CI= npm run build:site && ls -laF && cd www && ls -laF"
-  publish = "build"
+  publish = "www/build"
 
 [build.environment]
   NODE_VERSION = "18"
