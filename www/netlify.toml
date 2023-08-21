@@ -1,11 +1,10 @@
 [build]
   ## https://docs.netlify.com/configure-builds/troubleshooting-tips/#build-fails-on-warning-message
-  command = "CI= npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile && npm run build:site"
+  command = "CI= npm run build:site"
   publish = "www/build"
 
 [build.environment]
-  NODE_VERSION = "16"
-  NPM_FLAGS = "--version" # prevent Netlify npm install
+  NODE_VERSION = "18"
 
 [functions]
   directory = "functions"
