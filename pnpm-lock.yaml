@@ -136,6 +136,9 @@ importers:
       '@sanity/types':
         specifier: 3.14.5
         version: 3.14.5
+      '@sveltejs/adapter-netlify':
+        specifier: 2.0.8
+        version: 2.0.8(@sveltejs/kit@1.22.4)
       '@sveltejs/adapter-static':
         specifier: 2.0.3
         version: 2.0.3(@sveltejs/kit@1.22.4)
@@ -1301,6 +1304,10 @@ packages:
   /@iarna/toml@2.2.3:
     resolution: {integrity: sha512-FmuxfCuolpLl0AnQ2NHSzoUKWEJDFl63qXjzdoWBVyFCXzMGm1spBzk7LeHNoVCiWCF7mRVms9e6jEV9+MoPbg==}
 
+  /@iarna/toml@2.2.5:
+    resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: true
+
   /@iarna/toml@3.0.0:
     resolution: {integrity: sha512-td6ZUkz2oS3VeleBcN+m//Q6HlCFCPrnI0FZhrt/h4XqLEdOyYp2u21nd8MdsR+WJy5r9PTDaHTDDfhf4H4l6Q==}
     dev: true
@@ -1966,6 +1973,17 @@ packages:
       - react-dom
       - react-is
     dev: false
+
+  /@sveltejs/adapter-netlify@2.0.8(@sveltejs/kit@1.22.4):
+    resolution: {integrity: sha512-kfsoSsZth5CZHEIjr4TL4Cb6NmVul7/XNu5rJ04EbIOjYD1bnA4U7Sk1BmoRVyJae7UtUwG6Gkh01RFQSaIeNQ==}
+    peerDependencies:
+      '@sveltejs/kit': ^1.5.0
+    dependencies:
+      '@iarna/toml': 2.2.5
+      '@sveltejs/kit': 1.22.4(svelte@4.1.2)(vite@4.4.8)
+      esbuild: 0.18.18
+      set-cookie-parser: 2.6.0
+    dev: true
 
   /@sveltejs/adapter-static@2.0.3(@sveltejs/kit@1.22.4):
     resolution: {integrity: sha512-VUqTfXsxYGugCpMqQv1U0LIdbR3S5nBkMMDmpjGVJyM6Q2jHVMFtdWJCkeHMySc6mZxJ+0eZK3T7IgmUCDrcUQ==}
