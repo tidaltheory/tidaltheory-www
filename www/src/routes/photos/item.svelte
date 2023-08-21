@@ -1,24 +1,37 @@
 <script>
-import { onMount } from 'svelte'
-
 import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
 import GalleryThumbnail from '$lib/components/gallery-thumbnail.svelte'
 import MasonryGrid from '$lib/components/masonry-grid.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
+import PortableText from '$lib/components/portable-text.svelte'
 import TextLede from '$lib/components/text-lede.svelte'
-import { replaceUrl } from '$lib/replace-url'
 
-/** @type {import('./$types').PageData} */
+/** @type {'screen-shots' | undefined} */
+export let collection = undefined
+
+/** @type {import('./[slug]/$types').PageData} */
 export let data
+$: ({ post } = data)
+$: ({
+	title,
+	subtitle,
+	fullTitle,
+	lede,
+	ledeClean,
+	coverImage,
+	images,
+	content,
+} = post)
 
-$: ({ page, params, cleanUrl, cleanIntro } = data)
-$: ({ title, subtitle, description, coverImage, images, content } = page)
-$: fullTitle = subtitle ? [title, subtitle].join(' ') : title
+if (collection === 'screen-shots') fullTitle += ' — Screen Shots'
 
 let isCarouselOpen = false
 let initialIndex = 0
 
+/**
+ * @param {number} index
+ */
 async function handleOpenCarousel(index) {
 	isCarouselOpen = true
 	initialIndex = index
@@ -28,33 +41,21 @@ function handleCloseCarousel() {
 	isCarouselOpen = false
 	initialIndex = 0
 }
-
-onMount(() => {
-	if (params.image) {
-		let index = images.findIndex((item) => item.key.includes(params.image))
-
-		handleOpenCarousel(index)
-		replaceUrl(cleanUrl)
-	}
-})
 </script>
 
 <svelte:head>
-	<title>{fullTitle} — Screen Shots — Photos — Tidal Theory</title>
+	<title>{fullTitle} — Photos — Tidal Theory</title>
 	<meta name="twitter:card" content="summary_large_card" />
-	<meta
-		property="og:title"
-		content="{fullTitle} — Screen Shots — Tidal Theory"
-	/>
-	<meta property="og:description" content={cleanIntro} />
-	<meta property="og:image" content={`https://tidaltheory.io${coverImage}`} />
+	<meta property="og:title" content="{fullTitle} — Tidal Theory" />
+	<meta property="og:description" content={ledeClean} />
+	<meta property="og:image" content={coverImage} />
 </svelte:head>
 
 <article>
 	<PageIntro {subtitle}>
 		{title}
 		<div slot="intro" class="grid gap-6 md:gap-10 xl:gap-12">
-			{#if page.platform}
+			{#if post.platform}
 				<dl class="flex flex-col gap-4 md:flex-row md:gap-8 xl:gap-16">
 					<div class="grid gap-1 md:gap-2">
 						<dt
@@ -65,7 +66,7 @@ onMount(() => {
 						<dd
 							class="font-medium text-base leading-trim md:text-lg"
 						>
-							{page.platform}
+							{post.platform}
 						</dd>
 					</div>
 					<div class="grid gap-1 md:gap-2">
@@ -77,13 +78,13 @@ onMount(() => {
 						<dd
 							class="font-medium text-base leading-trim md:text-lg"
 						>
-							{page.developer}
+							{post.developer}
 						</dd>
 					</div>
 				</dl>
 			{/if}
 			<TextLede>
-				{@html description}
+				<PortableText value={lede} />
 			</TextLede>
 		</div>
 	</PageIntro>
@@ -106,7 +107,7 @@ onMount(() => {
 				/>
 			{/if}
 			<div class="prose prose-invert">
-				{@html content}
+				<PortableText value={content} />
 			</div>
 		</div>
 	</PageSection>

@@ -37,6 +37,29 @@ export async function getGalleries() {
 }
 
 /**
+ * @returns {Promise<GalleryCardObject[]>}
+ */
+export async function getCategoryGalleries(category) {
+	return await client.fetch(
+		groq`*[_type == "gallery" && category == $category && defined(slug.current)]{
+			_updatedAt,
+			slug,
+			title,
+			subtitle,
+			'fullTitle': select(
+				subtitle != null => array::join([title, subtitle], ' '),
+				title
+			),
+			'coverImage': cover->image.asset,
+			'coverImageMeta': cover->image.asset->metadata,
+			images,
+			'count': count(images),
+		} | order(_updatedAt desc)`,
+		{ category },
+	)
+}
+
+/**
  * @typedef {object} GalleryFields
  * @prop {string} fullTitle
  * @prop {string} ledeClean
@@ -64,5 +87,15 @@ export async function getGallery(slug) {
 			},
 		}[0]`,
 		{ slug },
+	)
+}
+
+export async function getLatestScreenShotGallery() {
+	return await client.fetch(
+		groq`*[_type == "gallery" && category == 'screen-shots']{
+			_updatedAt,
+			'coverImage': cover->image.asset,
+			'coverImageMeta': cover->image.asset->metadata,
+		} | order(_updatedAt desc)[0]`,
 	)
 }

@@ -34,7 +34,11 @@ export async function getUpdates() {
 				reference->_createdAt,
 			),
 			count,
-			'slug': reference->slug.current,
+			'slug': select(
+				reference->category == 'screen-shots' =>
+					array::join(['screen-shots', reference->slug.current], '/'),
+				reference->slug.current
+			),
 			'title': select(
 				reference->subtitle != null =>
 					array::join([reference->title, reference->subtitle], ' '),

@@ -1,8 +1,8 @@
 <script>
-import Collection from './collection.svelte'
+import Item from '../../item.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data
 </script>
 
-<Collection {data} />
+<Item {data} collection="screen-shots" />
