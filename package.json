@@ -58,7 +58,7 @@
     "@tidaltheory/lens": "1.1.2",
     "@zazen/eslint-config": "6.2.1",
     "@zazen/stylelint-config": "3.0.0",
-    "autoprefixer": "10.4.13",
+    "autoprefixer": "10.4.15",
     "eslint": "8.33.0",
     "eslint-plugin-svelte": "2.27.3",
     "globby": "13.1.3",
