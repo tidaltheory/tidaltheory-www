@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build:site": "pnpm run --dir www build",
     "dev:cms": "pnpm run --dir studio dev",
     "dev:site": "pnpm run --dir www dev",
     "prepare": "husky install"
