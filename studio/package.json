@@ -29,7 +29,7 @@
     "@portabletext/types": "2.0.5",
     "@sanity-typed/types": "4.0.4",
     "@types/node": "20.5.1",
-    "@types/react": "18.2.20",
+    "@types/react": "18.2.21",
     "@types/sharp": "0.32.0",
     "@types/styled-components": "5.1.26",
     "globby": "13.2.2",
