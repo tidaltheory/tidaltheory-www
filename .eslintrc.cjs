@@ -1,5 +1,7 @@
+/** @type {import('eslint').Linter.Config} */
 const config = {
 	root: true,
+	reportUnusedDisableDirectives: true,
 	extends: ['@zazen', 'plugin:svelte/recommended', 'prettier'],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -7,6 +9,17 @@ const config = {
 	},
 	env: { browser: true },
 	rules: {
+		/**
+		 * Deprecated rule.
+		 */
+		'no-return-await': 'off',
+
+		/**
+		 * Explicitly initialising props variables to `undefined` lets Svelte
+		 * know the props are optional.
+		 */
+		'no-undef-init': 'off',
+
 		'import/no-extraneous-dependencies': 'off',
 		'import/order': [
 			'error',
@@ -26,7 +39,7 @@ const config = {
 				pathGroups: [
 					{
 						pattern:
-							'{@sveltejs/**,svelte/**,svelte?(-preprocess)}',
+							'{@sveltejs/**,svelte/**,svelte?(-preprocess),@sanity/**,sanity/**,sanity}',
 						group: 'builtin',
 						position: 'after',
 					},
@@ -69,6 +82,16 @@ const config = {
 			},
 		},
 		{ files: ['*.cjs'], env: { node: true } },
+		{
+			files: ['*.ts', '*.tsx'],
+			extends: ['@zazen/eslint-config/typescript'],
+			parserOptions: {
+				project: './studio/tsconfig.json',
+			},
+			rules: {
+				'import/extensions': ['off'],
+			},
+		},
 	],
 }
 

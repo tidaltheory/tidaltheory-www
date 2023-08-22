@@ -8,6 +8,7 @@ node_modules
 .cache
 .nuxt
 .svelte-kit
+.sanity
 src/.temp
 build
 dist
@@ -17,3 +18,4 @@ sw.*
 .env
 .env.*
 .netlify
+studio/imports

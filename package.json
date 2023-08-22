@@ -1,21 +1,17 @@
 {
-  "name": "tidaltheory",
+  "name": "tidaltheory-monorepo",
+  "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "dev": "TAILWIND_MODE=watch vite dev",
-    "image": "lens add --store content/imagemeta.json",
-    "lint": "npm run lint:scripts && npm run lint:styles",
-    "lint:scripts": "eslint '**/*.{js,ts,vue}' --fix --ignore-pattern '.nuxt/**' --ignore-pattern 'dist/**' --ignore-pattern 'static/**'",
-    "lint:styles": "stylelint '**/*.{css,vue}' --ip '{.nuxt,dist}/**'",
-    "package": "vite package",
-    "prepare": "husky install",
-    "preview": "vite preview"
+    "build:site": "pnpm run --dir www build",
+    "dev:cms": "pnpm run --dir studio dev",
+    "dev:site": "pnpm run --dir www dev",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "*.css": "stylelint --fix",
-    "*.{js,ts}": [
+    "*.css": "stylelint --config www/stylelint.config.cjs --fix",
+    "*.{js,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ],
@@ -27,9 +23,9 @@
   },
   "prettier": {
     "plugins": [
-      "./node_modules/prettier-plugin-packagejson",
-      "./node_modules/prettier-plugin-svelte",
-      "./node_modules/prettier-plugin-tailwindcss"
+      "prettier-plugin-packagejson",
+      "prettier-plugin-svelte",
+      "prettier-plugin-tailwindcss"
     ],
     "semi": false,
     "singleQuote": true,
@@ -41,58 +37,31 @@
         "options": {
           "parser": "svelte"
         }
+      },
+      {
+        "files": [
+          "*.ts",
+          "*.tsx"
+        ],
+        "options": {
+          "printWidth": 100
+        }
       }
     ]
   },
-  "dependencies": {
-    "@floating-ui/dom": "1.2.7",
-    "date-fns": "2.29.3",
-    "svelte-floating-ui": "1.2.8"
-  },
   "devDependencies": {
-    "@iarna/toml": "toml-1.0.0-rc.1",
-    "@portabletext/svelte": "2.0.0",
-    "@sveltejs/adapter-static": "1.0.5",
-    "@sveltejs/kit": "1.15.2",
-    "@tailwindcss/typography": "0.5.9",
-    "@tidaltheory/lens": "1.1.2",
-    "@zazen/eslint-config": "6.2.1",
+    "@zazen/eslint-config": "6.3.0",
     "@zazen/stylelint-config": "3.0.0",
-    "autoprefixer": "10.4.13",
-    "eslint": "8.33.0",
-    "eslint-plugin-svelte": "2.27.3",
-    "globby": "13.1.3",
-    "gray-matter": "4.0.3",
+    "eslint": "8.36.0",
+    "eslint-plugin-svelte": "2.33.0",
     "husky": "8.0.3",
-    "lint-staged": "13.2.2",
-    "mdsvex": "0.10.6",
-    "postcss": "8.4.21",
-    "postcss-html": "1.5.0",
-    "postcss-load-config": "4.0.1",
-    "postcss-preset-env": "8.0.1",
-    "prettier": "2.8.3",
-    "prettier-plugin-packagejson": "2.4.3",
-    "prettier-plugin-svelte": "2.9.0",
-    "prettier-plugin-tailwindcss": "0.2.8",
-    "prismjs": "1.29.0",
-    "rehype-raw": "6.1.1",
-    "rehype-sanitize": "5.0.1",
-    "rehype-stringify": "9.0.3",
-    "remark-frontmatter": "4.0.1",
-    "remark-parse": "10.0.1",
-    "remark-rehype": "10.1.0",
-    "stylelint": "15.6.1",
-    "svelte": "3.55.1",
-    "svelte-check": "3.0.3",
-    "svelte-intersection-observer": "0.10.0",
-    "svelte-preprocess": "5.0.1",
-    "tailwindcss": "3.3.2",
-    "tailwindcss-capsize": "3.0.3",
-    "tailwindcss-opentype": "1.1.0",
-    "tslib": "2.5.0",
-    "typescript": "4.9.5",
-    "unified": "10.1.2",
-    "vite": "4.3.5"
+    "lint-staged": "13.2.3",
+    "prettier": "3.0.2",
+    "prettier-plugin-packagejson": "2.4.5",
+    "prettier-plugin-svelte": "3.0.3",
+    "prettier-plugin-tailwindcss": "0.5.3",
+    "stylelint": "15.10.3",
+    "typescript": "5.1.6"
   },
   "packageManager": "pnpm@8.6.12",
   "engines": {

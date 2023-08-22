@@ -1,0 +1,44 @@
+<script>
+import { onMount } from 'svelte'
+
+import { urlFor } from '$lib/sanity/image'
+
+/** @type {import('@portabletext/svelte').CustomBlockComponentProps} */
+export let portableText
+
+/** @type {HTMLImageElement | null} */
+let imgElement = null
+
+/** @param {HTMLImageElement} target */
+function reveal(target) {
+	target.parentElement?.classList.remove('opacity-0')
+}
+
+onMount(() => {
+	if (imgElement?.complete) reveal(imgElement)
+})
+</script>
+
+<figure class="not-prose m-0 my-[2em] flex">
+	<picture class="opacity-0 transition-opacity duration-300">
+		<source
+			srcset={urlFor(portableText.value).format('webp').url()}
+			type="image/webp"
+		/>
+		<img
+			bind:this={imgElement}
+			use:reveal
+			class="h-full w-full object-contain"
+			loading="lazy"
+			decoding="async"
+			alt=""
+			sizes="100vw"
+			srcset={urlFor(portableText.value).format('jpg').url()}
+			src={urlFor(portableText.value).format('jpg').url()}
+		/>
+	</picture>
+	<!-- <ImageLens
+		image={block.image.thumbnails}
+		sizes={['gallery-sm', 'gallery-md']}
+	/> -->
+</figure>
