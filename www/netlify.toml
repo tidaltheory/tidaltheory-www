@@ -22,7 +22,7 @@
   # cache just over 1 hour for webpagetest to be happy
   Cache-Control = "public, max-age=4000"
 
-  ## Sanity slugify function changes `&` -> `and`.
-  # [[redirects]]
-  #   from = "/writing/update-capture-date-time-playstation-screenshots/"
-  #   to = "/writing/update-capture-date-and-time-playstation-screenshots/"
+## Sanity slugify function changes `&` -> `and`.
+[[redirects]]
+  from = "/writing/update-capture-date-time-playstation-screenshots/"
+  to = "/writing/update-capture-date-and-time-playstation-screenshots/"
