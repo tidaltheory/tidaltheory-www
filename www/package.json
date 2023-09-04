@@ -29,6 +29,7 @@
     "@sveltejs/kit": "1.22.6",
     "@tailwindcss/typography": "0.5.9",
     "autoprefixer": "10.4.15",
+    "blurhash": "2.0.5",
     "mdsvex": "0.11.0",
     "postcss": "8.4.28",
     "postcss-html": "1.5.0",
