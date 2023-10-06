@@ -11,7 +11,7 @@ $: color = coverImageMeta.palette.dominant.background
 $: srcset = `${coverImageSet.sm} 300w, ${coverImageSet.md} 600w, ${coverImageSet.lg} 1200w,`
 </script>
 
-<div class="group relative grid grid-rows-1 rounded-[1px] bg-grey-700">
+<div class="bg-grey-700 group relative grid grid-rows-1 rounded-[1px]">
 	{#if coverImageSet}
 		<div class="">
 			<div class="absolute inset-0" style:background-color={color} />
@@ -19,7 +19,7 @@ $: srcset = `${coverImageSet.sm} 300w, ${coverImageSet.md} 600w, ${coverImageSet
 				class="relative grayscale transition-all duration-200 group-focus-within:grayscale-0 group-hover:grayscale-0"
 			>
 				<img
-					class="h-full w-full object-contain"
+					class="relative h-full w-full object-contain transition"
 					loading="lazy"
 					decoding="async"
 					{srcset}
@@ -29,7 +29,7 @@ $: srcset = `${coverImageSet.sm} 300w, ${coverImageSet.md} 600w, ${coverImageSet
 				/>
 			</div>
 			<div
-				class="absolute inset-0 bg-grey-800 mix-blend-lighten transition-opacity duration-200"
+				class="bg-grey-800 absolute inset-0 mix-blend-lighten transition-opacity duration-200"
 			/>
 		</div>
 	{/if}
@@ -39,15 +39,15 @@ $: srcset = `${coverImageSet.sm} 300w, ${coverImageSet.md} 600w, ${coverImageSet
 			href="{slug.current}/"
 		>
 			<div
-				class="flex items-start justify-between gap-1 lg:gap-2 bg-grey-900 bg-opacity-50 p-6 backdrop-blur lg:p-10"
+				class="bg-grey-900 flex items-start justify-between gap-1 bg-opacity-50 p-6 backdrop-blur lg:gap-2 lg:p-10"
 			>
 				<Heading level={4}>{fullTitle}</Heading>
 				{#if count}
 					<div
-						class="relative top-[0.0625rem] rounded bg-grey-700 bg-opacity-40 px-[6px] py-1 lg:px-2 lg:py-[6px]"
+						class="bg-grey-700 relative top-[0.0625rem] rounded bg-opacity-40 px-[6px] py-1 lg:px-2 lg:py-[6px]"
 					>
 						<span
-							class="block text-grey-200 text-sm lg:text-lg leading-trim salt"
+							class="text-grey-200 leading-trim salt block text-sm lg:text-lg"
 						>
 							{count}
 						</span>
