@@ -21,11 +21,21 @@ export default defineType({
 			subtitle: 'subtitle',
 			lede: 'lede',
 		},
-		prepare({ image, title, subtitle, lede }) {
+		prepare({
+			image,
+			title,
+			subtitle,
+			lede,
+		}: {
+			image: string
+			title: string
+			subtitle?: string
+			lede: PortableTextBlock[]
+		}) {
 			return {
-				media: image as string,
+				media: image,
 				title: [title, subtitle].join(' '),
-				subtitle: serializePortableText(lede as PortableTextBlock[]),
+				subtitle: serializePortableText(lede),
 			}
 		},
 	},
