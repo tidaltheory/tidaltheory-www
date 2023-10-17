@@ -53,7 +53,7 @@ onMount(() => {
 
 <svelte:element
 	this={heading}
-	class="font-bold uppercase font-display leading-none leading-trim {styleClass} text-white empty:hidden"
+	class="font-display leading-trim font-bold uppercase leading-none {styleClass} m-0 text-white empty:hidden"
 	class:line-hidden={!show}
 >
 	<span class="line inline-block will-change-transform" bind:this={element}>

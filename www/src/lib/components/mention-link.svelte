@@ -26,6 +26,10 @@ const SITES = {
 		href: 'https://www.flickr.com/photos/rustyangel/',
 		logo: undefined,
 	},
+	letterboxd: {
+		href: 'https://letterboxd.com/stormwarning/',
+		logo: undefined,
+	},
 }
 
 /** @type {keyof typeof SITES} */
@@ -35,7 +39,7 @@ const { href, logo } = SITES[site]
 </script>
 
 <a
-	class="inline-flex items-baseline gap-1 rounded bg-grey-700 px-1 align-baseline text-white no-underline hover:bg-grey-600 {FOCUS_OUTLINE}"
+	class="bg-grey-700 hover:bg-grey-600 inline-flex items-baseline gap-1 rounded px-1 align-baseline text-white no-underline {FOCUS_OUTLINE}"
 	{href}
 	target="_blank"
 	rel="noopener noreferrer"
