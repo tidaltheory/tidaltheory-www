@@ -1,4 +1,4 @@
-import { parse as parseRss } from 'rss-to-json'
+import parseRss from 'rss-to-json'
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = async () => {
