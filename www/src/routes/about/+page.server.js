@@ -2,7 +2,9 @@ import parseRss from 'rss-to-json'
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = async () => {
-	const { items } = await parseRss('https://letterboxd.com/stormwarning/rss/')
+	const { items } = await parseRss.parse(
+		'https://letterboxd.com/stormwarning/rss/',
+	)
 	const films = Object.values(items).slice(0, 4)
 
 	films.map((film) => {
