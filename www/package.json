@@ -27,6 +27,7 @@
     "@portabletext/svelte": "2.0.0",
     "@portabletext/types": "2.0.5",
     "@sanity/types": "3.14.5",
+    "@sveltejs/adapter-netlify": "2.0.8",
     "@sveltejs/adapter-static": "2.0.3",
     "@sveltejs/kit": "1.22.6",
     "@tailwindcss/typography": "0.5.9",
