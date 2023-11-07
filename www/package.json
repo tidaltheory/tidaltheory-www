@@ -24,8 +24,8 @@
     "svelte-floating-ui": "1.5.3"
   },
   "devDependencies": {
-    "@portabletext/svelte": "2.0.0",
-    "@portabletext/types": "2.0.5",
+    "@portabletext/svelte": "2.1.4",
+    "@portabletext/types": "2.0.8",
     "@sanity/types": "3.14.5",
     "@sveltejs/adapter-netlify": "2.0.8",
     "@sveltejs/adapter-static": "2.0.3",

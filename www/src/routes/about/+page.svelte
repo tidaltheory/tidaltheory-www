@@ -44,7 +44,7 @@ export let data
 			</p>
 		</div>
 		<div class="mt-16 flex gap-4 lg:gap-8 xl:mt-[72px] xl:gap-12">
-			{#await data.films}
+			{#await data.streamed.films}
 				<div class="bg-grey-600 aspect-[0.6667] max-h-[342px]"></div>
 			{:then films}
 				{#each films as film}
