@@ -21,7 +21,7 @@ const config = {
 			split: false,
 		}),
 		prerender: {
-			entries: ['*', '/photos'],
+			entries: ['*', '/photos', '/about'],
 			handleHttpError: 'warn',
 		},
 	},

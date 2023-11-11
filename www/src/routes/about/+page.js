@@ -1,12 +1,17 @@
 /** @type {import('./$types').PageLoad} */
 export const load = async ({ fetch }) => {
-	const films = await fetch('/.netlify/functions/letterboxd').then(
-		(response) => response.json(),
-	)
+	let films = new Response([])
+
+	try {
+		films = await fetch('/.netlify/functions/letterboxd')
+	} catch {}
+	// Const films = await fetch('/.netlify/functions/letterboxd').then(
+	// 	(response) => response.json(),
+	// )
 
 	return {
 		streamed: {
-			films,
+			films: films.json(),
 		},
 	}
 }
