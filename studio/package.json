@@ -17,22 +17,22 @@
   },
   "dependencies": {
     "@sanity/code-input": "4.1.1",
-    "@sanity/icons": "2.5.0",
-    "@sanity/vision": "3.17.0",
+    "@sanity/icons": "2.7.0",
+    "@sanity/vision": "3.19.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
-    "sanity": "3.17.0",
-    "styled-components": "5.3.11"
+    "sanity": "3.19.2",
+    "styled-components": "6.1.1"
   },
   "devDependencies": {
-    "@portabletext/types": "2.0.7",
+    "@portabletext/types": "2.0.8",
     "@sanity-typed/types": "5.1.1",
-    "@types/node": "20.5.9",
-    "@types/react": "18.2.21",
-    "@types/styled-components": "5.1.28",
-    "globby": "13.2.2",
-    "nanoid": "4.0.2",
+    "@types/node": "20.9.0",
+    "@types/react": "18.2.37",
+    "@types/styled-components": "5.1.30",
+    "globby": "14.0.0",
+    "nanoid": "5.0.3",
     "sharp": "0.32.6",
     "ts-node-iptc": "1.0.11"
   }
