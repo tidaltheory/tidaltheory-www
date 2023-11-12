@@ -7,7 +7,7 @@ import { nanoid } from 'nanoid'
 import sharp from 'sharp'
 import { IptcParser } from 'ts-node-iptc'
 
-const IMPORT_DIR = path.resolve('studio', 'imports')
+const IMPORT_DIR = path.resolve('imports')
 const SOURCE_IMAGES = await globby(path.posix.join(IMPORT_DIR, '*.jpg'))
 
 let entries = []
