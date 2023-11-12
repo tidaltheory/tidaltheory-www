@@ -1,10 +1,10 @@
 /** @type {import('./$types').PageLoad} */
 export const load = async ({ fetch }) => {
-	let films = []
+	let films = Response.json([])
 
 	try {
 		films = await fetch(
-			'https://deploy-preview-150--tidaltheory.netlify.app/.netlify/functions/letterboxd',
+			'https://tidaltheory.io/.netlify/functions/letterboxd',
 		).then((response) => response.json())
 	} catch (error) {
 		console.log('PageLoad error:', error)
