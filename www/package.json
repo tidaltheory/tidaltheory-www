@@ -28,7 +28,7 @@
     "@sanity/types": "3.14.5",
     "@sveltejs/adapter-static": "2.0.3",
     "@sveltejs/kit": "1.22.6",
-    "@tailwindcss/typography": "0.5.9",
+    "@tailwindcss/typography": "0.5.10",
     "autoprefixer": "10.4.15",
     "blurhash": "2.0.5",
     "mdsvex": "0.11.0",
