@@ -43,20 +43,16 @@ export let data
 				> if you want to follow along.
 			</p>
 		</div>
-		<div class="mt-16 flex gap-8 xl:mt-[72px] xl:gap-12">
-			{#await data.films}
-				<div class="bg-grey-600 h-[342px] w-[228px]"></div>
+		<div class="mt-16 flex gap-4 lg:gap-8 xl:mt-[72px] xl:gap-12">
+			{#await data.streamed.films}
+				<div class="bg-grey-600 aspect-[0.6667] max-h-[342px]"></div>
 			{:then films}
 				{#each films as film}
 					<a
 						href={film.link}
-						class="flex-0 rounded-[1px] {FOCUS_OUTLINE} min-w-[228px] overflow-hidden"
+						class="flex-0 rounded-[1px] {FOCUS_OUTLINE} aspect-[0.6667] max-h-[342px] overflow-hidden"
 					>
-						<img
-							src={film.cover}
-							alt=""
-							class="aspect-[0.6667] max-h-[342px]"
-						/>
+						<img src={film.cover} alt="" class="" />
 					</a>
 				{/each}
 			{/await}

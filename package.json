@@ -3,10 +3,17 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "workspaces": [
+    "studio",
+    "www"
+  ],
   "scripts": {
-    "build:site": "pnpm run --dir www build",
-    "dev:cms": "pnpm run --dir studio dev",
-    "dev:site": "pnpm run --dir www dev",
+    "build:site": "npm run -w www build",
+    "dev:cms": "npm run -w studio dev",
+    "dev:site": "npm run -w www dev",
+    "pnpm:build:site": "pnpm run --dir www build",
+    "pnpm:dev:cms": "pnpm run --dir studio dev",
+    "pnpm:dev:site": "pnpm run --dir www dev",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -51,7 +58,6 @@
   },
   "devDependencies": {
     "@zazen/eslint-config": "6.3.0",
-    "@zazen/stylelint-config": "3.0.0",
     "eslint": "8.36.0",
     "eslint-plugin-svelte": "2.33.0",
     "husky": "8.0.3",
