@@ -103,7 +103,7 @@ export async function read() {
 	}
 }
 
-await read()
+export default await read()
 
 /**
  * @returns {Array<unknown>}
