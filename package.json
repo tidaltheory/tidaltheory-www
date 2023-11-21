@@ -20,7 +20,7 @@
   },
   "lint-staged": {
     "*.css": "stylelint --config www/stylelint.config.cjs --fix",
-    "*.{js,ts,tsx}": [
+    "**/!(dist)/*.{js,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ],
