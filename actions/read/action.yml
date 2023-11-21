@@ -1,0 +1,31 @@
+name: 'Read'
+description: 'Look up book data by ISBN and store in JSON.'
+author: 'Jeff Nelson'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'book'
+  color: 'yellow'
+
+inputs:
+  filename:
+    description: The file where you want to save your books.
+    default: www/content/read.json
+  providers:
+    description: >-
+      Specify the [ISBN
+      providers](https://github.com/palmerabollo/node-isbn#setting-backend-providers)
+      that you want to use, in the order you need them to be invoked, separated
+      by a comma.
+  time-zone:
+    description: Your time zone.
+    default: America/Edmonton
+  required-metadata:
+    description: >-
+      Required metadata properties.  This can be used to make the action open a
+      pull request if one of these values is missing data in the desired book
+      instead of committing directly to a repository.
+    default: title,authors,thumbnail

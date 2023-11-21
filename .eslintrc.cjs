@@ -2,6 +2,7 @@
 const config = {
 	root: true,
 	reportUnusedDisableDirectives: true,
+	ignorePatterns: ['actions/**/dist'],
 	extends: ['@zazen', 'plugin:svelte/recommended', 'prettier'],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
