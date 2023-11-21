@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "ncc build src/index.js"
