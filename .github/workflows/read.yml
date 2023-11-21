@@ -1,0 +1,41 @@
+name: Read
+run-name: Book (${{ inputs.isbn }})
+
+# Grant the action permission to write to the repository
+permissions:
+  contents: write
+
+# Trigger the action
+on:
+  workflow_dispatch:
+    inputs:
+      isbn:
+        description: The book's ISBN. Required.
+        required: true
+        type: string
+      status:
+        description: Should be either 'reading' or 'finished'.
+        type: string
+      tags:
+        description: Add tags to categorize the book. Separate each tag with a comma. Optional.
+        type: string
+
+# Set up the steps to run the action
+jobs:
+  update-library:
+    runs-on: macOS-latest
+    name: Read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Read
+        uses: ./actions/read/
+
+      - name: Commit updated read file
+        run: |
+          git pull
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A && git commit -m "Add “${{ env.BookTitle }}” to reading list"
+          git push

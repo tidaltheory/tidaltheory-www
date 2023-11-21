@@ -12,6 +12,7 @@ node_modules
 src/.temp
 build
 dist
+!actions/**/dist
 sw.*
 
 ## SECRETS ###########################################################

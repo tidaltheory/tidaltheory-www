@@ -4,10 +4,12 @@
   "private": true,
   "type": "module",
   "workspaces": [
+    "actions/*",
     "studio",
     "www"
   ],
   "scripts": {
+    "build:action": "pnpm run --dir actions/read build",
     "build:site": "npm run -w www build",
     "dev:cms": "npm run -w studio dev",
     "dev:site": "npm run -w www dev",
