@@ -62717,6 +62717,14 @@ ${pendingInterceptorsFormatter.format(pending)}
 		/***/
 	},
 
+	/***/ 7561: /***/ (module) => {
+		module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)(
+			'node:fs',
+		)
+
+		/***/
+	},
+
 	/***/ 4492: /***/ (module) => {
 		module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)(
 			'node:stream',
@@ -65124,6 +65132,336 @@ ${pendingInterceptorsFormatter.format(pending)}
 		/***/
 	},
 
+	/***/ 4746: /***/ (
+		__unused_webpack___webpack_module__,
+		__webpack_exports__,
+		__nccwpck_require__,
+	) => {
+		/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+			/* harmony export */ b: () => /* binding */ checkBook,
+			/* harmony export */
+		})
+		/* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_0__ =
+			__nccwpck_require__(4237)
+
+		function checkBook(book, { bookIsbn, status, thumbnailWidth }) {
+			checkMetadata(book, bookIsbn)
+
+			return {
+				isbn: bookIsbn,
+				title: book.title ?? undefined,
+				authors: book.authors ?? undefined,
+				status,
+				thumbnail: getThumbnailUrl(book.imageLinks, thumbnailWidth),
+				link: book.canonicalVolumeLink ?? undefined,
+			}
+		}
+
+		/**
+		 * Check for required metadata values.
+		 *
+		 * @param {*} book
+		 * @param {string} isbn
+		 */
+		function checkMetadata(book, isbn) {
+			let requiredMetadata = new Set(
+				(0, _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)(
+					'required-metadata',
+				)
+					.split(',')
+					.map((string) => string.trim()),
+			)
+			let missingMetadata = []
+
+			if (!book.title && requiredMetadata.has('title')) {
+				missingMetadata.push('title')
+			}
+
+			let hasAuthors = !book.authors || book.authors.length === 0
+			if (hasAuthors && requiredMetadata.has('authors')) {
+				missingMetadata.push('authors')
+			}
+
+			if (
+				!book.imageLinks?.thumbnail &&
+				requiredMetadata.includes('thumbnail')
+			) {
+				missingMetadata.push('thumbnail')
+			}
+
+			if (missingMetadata.length > 0) {
+				;(0, _actions_core__WEBPACK_IMPORTED_MODULE_0__.warning)(
+					`Book does not have ${missingMetadata.join(', ')}`,
+				)
+				;(0, _actions_core__WEBPACK_IMPORTED_MODULE_0__.exportVariable)(
+					'BookNeedsReview',
+					true,
+				)
+				;(0, _actions_core__WEBPACK_IMPORTED_MODULE_0__.exportVariable)(
+					'BookMissingMetadata',
+					missingMetadata.join(', '),
+				)
+				;(0, _actions_core__WEBPACK_IMPORTED_MODULE_0__.exportVariable)(
+					'BookIsbn',
+					isbn,
+				)
+			}
+		}
+
+		/**
+		 * Return thumbnail image URL at desired width.
+		 *
+		 * @param {string} [thumbnail]
+		 * @param {number} [width]
+		 */
+		function getThumbnailUrl(thumbnail, width) {
+			if (!thumbnail) return undefined
+
+			if (thumbnail.startsWith('http:')) {
+				thumbnail = thumbnail.replace('http:', 'https:')
+			}
+
+			let url = new URL(thumbnail)
+
+			if (url.host === 'books.google.com' && width) {
+				thumbnail = `${thumbnail}&w=${width}`
+			}
+
+			return thumbnail
+		}
+
+		/***/
+	},
+
+	/***/ 7286: /***/ (
+		__webpack_module__,
+		__webpack_exports__,
+		__nccwpck_require__,
+	) => {
+		__nccwpck_require__.a(
+			__webpack_module__,
+			async (
+				__webpack_handle_async_dependencies__,
+				__webpack_async_result__,
+			) => {
+				try {
+					/* harmony export */ __nccwpck_require__.d(
+						__webpack_exports__,
+						{
+							/* harmony export */ i: () => /* binding */ read,
+							/* harmony export */
+						},
+					)
+					/* harmony import */ var node_fs__WEBPACK_IMPORTED_MODULE_0__ =
+						__nccwpck_require__(7561)
+					/* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_1__ =
+						__nccwpck_require__(4237)
+					/* harmony import */ var _actions_github__WEBPACK_IMPORTED_MODULE_2__ =
+						__nccwpck_require__(7131)
+					/* harmony import */ var node_isbn__WEBPACK_IMPORTED_MODULE_3__ =
+						__nccwpck_require__(6268)
+					/* harmony import */ var _check_book_js__WEBPACK_IMPORTED_MODULE_4__ =
+						__nccwpck_require__(4746)
+
+					/**
+					 * @typedef {'reading' | 'finished'} BookStatus
+					 */
+
+					/**
+					 * @typedef {Object} Payload
+					 * @property {string} isbn
+					 * @property {BookStatus} status
+					 * @property {string} [tags]
+					 */
+
+					/**
+					 * @typedef {Object} ActionInputs
+					 * @property {string} filename
+					 * @property {Array<string>} providers
+					 * @property {number} [thumbnail-width]
+					 */
+
+					async function read() {
+						try {
+							/** @type {Payload} */
+							let payload =
+								_actions_github__WEBPACK_IMPORTED_MODULE_2__
+									.context.payload.inputs
+
+							if (!payload || !payload.isbn) {
+								;(0,
+								_actions_core__WEBPACK_IMPORTED_MODULE_1__.setFailed)(
+									'Missing `isbn` in payload.',
+								)
+							}
+
+							let { isbn: bookIsbn, tags, status } = payload
+
+							// Set inputs.
+							let filename = (0,
+							_actions_core__WEBPACK_IMPORTED_MODULE_1__.getInput)(
+								'filename',
+							)
+							let providers = (0,
+							_actions_core__WEBPACK_IMPORTED_MODULE_1__.getInput)(
+								'providers',
+							)
+								? (0,
+								  _actions_core__WEBPACK_IMPORTED_MODULE_1__.getInput)(
+										'providers',
+								  ).split(',')
+								: node_isbn__WEBPACK_IMPORTED_MODULE_3__._providers
+							let thumbnailWidth = (0,
+							_actions_core__WEBPACK_IMPORTED_MODULE_1__.getInput)(
+								'thumbnail-width',
+							)
+								? Number.parseInt(
+										(0,
+										_actions_core__WEBPACK_IMPORTED_MODULE_1__.getInput)(
+											'thumbnail-width',
+										),
+										10,
+								  )
+								: undefined
+
+							// Load existing data.
+							let library = await readFromLibrary(filename)
+
+							let bookParameters = {
+								filename,
+								bookIsbn,
+								status,
+								providers,
+								thumbnailWidth,
+								...(tags && {
+									tags: tags.split(',').map((f) => f.trim()),
+								}),
+							}
+
+							let bookExists = checkLibrary(library, bookIsbn)
+
+							if (bookExists) {
+								library = library.map((book) => {
+									if (book.isbn === bookIsbn) {
+										;(0,
+										_actions_core__WEBPACK_IMPORTED_MODULE_1__.exportVariable)(
+											'BookTitle',
+											book.title,
+										)
+										book = {
+											...book,
+											status: bookParameters.status,
+										}
+									}
+
+									return book
+								})
+							} else {
+								let newBook =
+									await node_isbn__WEBPACK_IMPORTED_MODULE_3__
+										.provider(providers)
+										.resolve(bookIsbn)
+										.catch((error) => {
+											throw new Error(
+												`Book (${bookIsbn}) not found. ${error.message}`,
+											)
+										})
+
+								newBook = (0,
+								_check_book_js__WEBPACK_IMPORTED_MODULE_4__ /* .checkBook */.b)(
+									newBook,
+									{
+										bookIsbn,
+										status,
+										thumbnailWidth,
+									},
+								)
+								library.push(newBook)
+								;(0,
+								_actions_core__WEBPACK_IMPORTED_MODULE_1__.exportVariable)(
+									'BookTitle',
+									newBook.title,
+								)
+
+								if (newBook.thumbnail) {
+									;(0,
+									_actions_core__WEBPACK_IMPORTED_MODULE_1__.exportVariable)(
+										`BookThumbOutput`,
+										`book-${newBook.isbn}.png`,
+									)
+									;(0,
+									_actions_core__WEBPACK_IMPORTED_MODULE_1__.exportVariable)(
+										`BookThumb`,
+										newBook.thumbnail,
+									)
+								}
+							}
+
+							// Return the last (most recent) four entries.
+							library = library.slice(-4)
+
+							await writeLibrary(filename, library)
+						} catch (error) {
+							;(0,
+							_actions_core__WEBPACK_IMPORTED_MODULE_1__.setFailed)(
+								error,
+							)
+						}
+					}
+
+					await read()
+
+					/**
+					 * @returns {Array<unknown>}
+					 */
+					async function readFromLibrary(filename) {
+						let contents = await (0,
+						node_fs__WEBPACK_IMPORTED_MODULE_0__.readFile)(
+							filename,
+							'utf8',
+						)
+						if (contents === '' || !contents) return []
+						return JSON.parse(contents)
+					}
+
+					function checkLibrary(library, isbn) {
+						if (library === undefined || library.length === 0)
+							return false
+						if (
+							library.filter((book) => book.isbn === isbn)
+								.length === 0
+						)
+							return false
+						return true
+					}
+
+					/**
+					 * @param {string} filename
+					 * @param {Array<unknown>} library
+					 */
+					async function writeLibrary(filename, library) {
+						try {
+							await (0,
+							node_fs__WEBPACK_IMPORTED_MODULE_0__.writeFile)(
+								filename,
+								JSON.stringify(library, null, 2),
+							)
+						} catch (error) {
+							throw new Error(error)
+						}
+					}
+
+					__webpack_async_result__()
+				} catch (e) {
+					__webpack_async_result__(e)
+				}
+			},
+			1,
+		)
+
+		/***/
+	},
+
 	/***/ 9238: /***/ (module) => {
 		module.exports = JSON.parse(
 			'{"name":"axios","version":"0.21.4","description":"Promise based HTTP client for the browser and node.js","main":"index.js","scripts":{"test":"grunt test","start":"node ./sandbox/server.js","build":"NODE_ENV=production grunt build","preversion":"npm test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json","postversion":"git push && git push --tags","examples":"node ./examples/server.js","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","fix":"eslint --fix lib/**/*.js"},"repository":{"type":"git","url":"https://github.com/axios/axios.git"},"keywords":["xhr","http","ajax","promise","node"],"author":"Matt Zabriskie","license":"MIT","bugs":{"url":"https://github.com/axios/axios/issues"},"homepage":"https://axios-http.com","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"jsdelivr":"dist/axios.min.js","unpkg":"dist/axios.min.js","typings":"./index.d.ts","dependencies":{"follow-redirects":"^1.14.0"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}]}',
@@ -65176,6 +65514,119 @@ ${pendingInterceptorsFormatter.format(pending)}
 }
 /******/
 /************************************************************************/
+/******/ /* webpack/runtime/async module */
+/******/ ;(() => {
+	/******/ var webpackQueues =
+		typeof Symbol === 'function'
+			? Symbol('webpack queues')
+			: '__webpack_queues__'
+	/******/ var webpackExports =
+		typeof Symbol === 'function'
+			? Symbol('webpack exports')
+			: '__webpack_exports__'
+	/******/ var webpackError =
+		typeof Symbol === 'function'
+			? Symbol('webpack error')
+			: '__webpack_error__'
+	/******/ var resolveQueue = (queue) => {
+		/******/ if (queue && !queue.d) {
+			/******/ queue.d = 1
+			/******/ queue.forEach((fn) => fn.r--)
+			/******/ queue.forEach((fn) => (fn.r-- ? fn.r++ : fn()))
+			/******/
+		}
+		/******/
+	}
+	/******/ var wrapDeps = (deps) =>
+		deps.map((dep) => {
+			/******/ if (dep !== null && typeof dep === 'object') {
+				/******/ if (dep[webpackQueues]) return dep
+				/******/ if (dep.then) {
+					/******/ var queue = []
+					/******/ queue.d = 0
+					/******/ dep.then(
+						(r) => {
+							/******/ obj[webpackExports] = r
+							/******/ resolveQueue(queue)
+							/******/
+						},
+						(e) => {
+							/******/ obj[webpackError] = e
+							/******/ resolveQueue(queue)
+							/******/
+						},
+					)
+					/******/ var obj = {}
+					/******/ obj[webpackQueues] = (fn) => fn(queue)
+					/******/ return obj
+					/******/
+				}
+				/******/
+			}
+			/******/ var ret = {}
+			/******/ ret[webpackQueues] = (x) => {}
+			/******/ ret[webpackExports] = dep
+			/******/ return ret
+			/******/
+		})
+	/******/ __nccwpck_require__.a = (module, body, hasAwait) => {
+		/******/ var queue
+		/******/ hasAwait && ((queue = []).d = 1)
+		/******/ var depQueues = new Set()
+		/******/ var exports = module.exports
+		/******/ var currentDeps
+		/******/ var outerResolve
+		/******/ var reject
+		/******/ var promise = new Promise((resolve, rej) => {
+			/******/ reject = rej
+			/******/ outerResolve = resolve
+			/******/
+		})
+		/******/ promise[webpackExports] = exports
+		/******/ promise[webpackQueues] = (fn) => (
+			queue && fn(queue),
+			depQueues.forEach(fn),
+			promise['catch']((x) => {})
+		)
+		/******/ module.exports = promise
+		/******/ body(
+			(deps) => {
+				/******/ currentDeps = wrapDeps(deps)
+				/******/ var fn
+				/******/ var getResult = () =>
+					currentDeps.map((d) => {
+						/******/ if (d[webpackError]) throw d[webpackError]
+						/******/ return d[webpackExports]
+						/******/
+					})
+				/******/ var promise = new Promise((resolve) => {
+					/******/ fn = () => resolve(getResult)
+					/******/ fn.r = 0
+					/******/ var fnQueue = (q) =>
+						q !== queue &&
+						!depQueues.has(q) &&
+						(depQueues.add(q), q && !q.d && (fn.r++, q.push(fn)))
+					/******/ currentDeps.map((dep) =>
+						dep[webpackQueues](fnQueue),
+					)
+					/******/
+				})
+				/******/ return fn.r ? promise : getResult()
+				/******/
+			},
+			(err) => (
+				err
+					? reject((promise[webpackError] = err))
+					: outerResolve(exports),
+				resolveQueue(queue)
+			),
+		)
+		/******/ queue && (queue.d = 0)
+		/******/
+	}
+	/******/
+})()
+/******/
 /******/ /* webpack/runtime/define property getters */
 /******/ ;(() => {
 	/******/ // define getter functions for harmony exports
@@ -65215,235 +65666,12 @@ ${pendingInterceptorsFormatter.format(pending)}
 		) + '/'
 /******/
 /************************************************************************/
-var __webpack_exports__ = {}
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-;(() => {
-	// EXPORTS
-	__nccwpck_require__.d(__webpack_exports__, {
-		i: () => /* binding */ read,
-	}) // CONCATENATED MODULE: external "node:fs"
-
-	const external_node_fs_namespaceObject = __WEBPACK_EXTERNAL_createRequire(
-		import.meta.url,
-	)('node:fs')
-	// EXTERNAL MODULE: ../../node_modules/.pnpm/@actions+core@1.10.1/node_modules/@actions/core/lib/core.js
-	var core = __nccwpck_require__(4237)
-	// EXTERNAL MODULE: ../../node_modules/.pnpm/@actions+github@6.0.0/node_modules/@actions/github/lib/github.js
-	var github = __nccwpck_require__(7131)
-	// EXTERNAL MODULE: ../../node_modules/.pnpm/node-isbn@1.6.1/node_modules/node-isbn/index.js
-	var node_isbn = __nccwpck_require__(6268) // CONCATENATED MODULE: ./src/check-book.js
-	function checkBook(book, { bookIsbn, status, thumbnailWidth }) {
-		checkMetadata(book, bookIsbn)
-
-		return {
-			isbn: bookIsbn,
-			title: book.title ?? undefined,
-			authors: book.authors ?? undefined,
-			status,
-			thumbnail: getThumbnailUrl(book.imageLinks, thumbnailWidth),
-			link: book.canonicalVolumeLink ?? undefined,
-		}
-	}
-
-	/**
-	 * Check for required metadata values.
-	 *
-	 * @param {*} book
-	 * @param {string} isbn
-	 */
-	function checkMetadata(book, isbn) {
-		let requiredMetadata = new Set(
-			(0, core.getInput)('required-metadata')
-				.split(',')
-				.map((string) => string.trim()),
-		)
-		let missingMetadata = []
-
-		if (!book.title && requiredMetadata.has('title')) {
-			missingMetadata.push('title')
-		}
-
-		let hasAuthors = !book.authors || book.authors.length === 0
-		if (hasAuthors && requiredMetadata.has('authors')) {
-			missingMetadata.push('authors')
-		}
-
-		if (
-			!book.imageLinks?.thumbnail &&
-			requiredMetadata.includes('thumbnail')
-		) {
-			missingMetadata.push('thumbnail')
-		}
-
-		if (missingMetadata.length > 0) {
-			;(0, core.warning)(
-				`Book does not have ${missingMetadata.join(', ')}`,
-			)
-			;(0, core.exportVariable)('BookNeedsReview', true)
-			;(0, core.exportVariable)(
-				'BookMissingMetadata',
-				missingMetadata.join(', '),
-			)
-			;(0, core.exportVariable)('BookIsbn', isbn)
-		}
-	}
-
-	/**
-	 * Return thumbnail image URL at desired width.
-	 *
-	 * @param {string} [thumbnail]
-	 * @param {number} [width]
-	 */
-	function getThumbnailUrl(thumbnail, width) {
-		if (!thumbnail) return undefined
-
-		if (thumbnail.startsWith('http:')) {
-			thumbnail = thumbnail.replace('http:', 'https:')
-		}
-
-		let url = new URL(thumbnail)
-
-		if (url.host === 'books.google.com' && width) {
-			thumbnail = `${thumbnail}&w=${width}`
-		}
-
-		return thumbnail
-	} // CONCATENATED MODULE: ./src/index.js
-
-	/**
-	 * @typedef {'reading' | 'finished'} BookStatus
-	 */
-
-	/**
-	 * @typedef {Object} Payload
-	 * @property {string} isbn
-	 * @property {BookStatus} status
-	 * @property {string} [tags]
-	 */
-
-	/**
-	 * @typedef {Object} ActionInputs
-	 * @property {string} filename
-	 * @property {Array<string>} providers
-	 * @property {number} [thumbnail-width]
-	 */
-
-	async function read() {
-		try {
-			/** @type {Payload} */
-			let payload = github.context.payload.inputs
-
-			if (!payload || !payload.isbn) {
-				;(0, core.setFailed)('Missing `isbn` in payload.')
-			}
-
-			let { isbn: bookIsbn, tags, status } = payload
-
-			// Set inputs.
-			let filename = (0, core.getInput)('filename')
-			let providers = (0, core.getInput)('providers')
-				? (0, core.getInput)('providers').split(',')
-				: node_isbn._providers
-			let thumbnailWidth = (0, core.getInput)('thumbnail-width')
-				? Number.parseInt((0, core.getInput)('thumbnail-width'), 10)
-				: undefined
-
-			// Load existing data.
-			let library = await readFromLibrary(filename)
-
-			let bookParameters = {
-				filename,
-				bookIsbn,
-				status,
-				providers,
-				thumbnailWidth,
-				...(tags && { tags: tags.split(',').map((f) => f.trim()) }),
-			}
-
-			let bookExists = checkLibrary(library, bookIsbn)
-
-			if (bookExists) {
-				library = library.map((book) => {
-					if (book.isbn === bookIsbn) {
-						;(0, core.exportVariable)('BookTitle', book.title)
-						book = {
-							...book,
-							status: bookParameters.status,
-						}
-					}
-
-					return book
-				})
-			} else {
-				let newBook = await node_isbn
-					.provider(providers)
-					.resolve(bookIsbn)
-					.catch((error) => {
-						throw new Error(
-							`Book (${bookIsbn}) not found. ${error.message}`,
-						)
-					})
-
-				newBook = checkBook(newBook, {
-					bookIsbn,
-					status,
-					thumbnailWidth,
-				})
-				library.push(newBook)
-				;(0, core.exportVariable)('BookTitle', newBook.title)
-
-				if (newBook.thumbnail) {
-					;(0, core.exportVariable)(
-						`BookThumbOutput`,
-						`book-${newBook.isbn}.png`,
-					)
-					;(0, core.exportVariable)(`BookThumb`, newBook.thumbnail)
-				}
-			}
-
-			// Return the last (most recent) four entries.
-			library = library.slice(-4)
-
-			await writeLibrary(filename, library)
-		} catch (error) {
-			;(0, core.setFailed)(error)
-		}
-	}
-
-	/**
-	 * @returns {Array<unknown>}
-	 */
-	async function readFromLibrary(filename) {
-		let contents = await (0, external_node_fs_namespaceObject.readFile)(
-			filename,
-			'utf8',
-		)
-		if (contents === '' || !contents) return []
-		return JSON.parse(contents)
-	}
-
-	function checkLibrary(library, isbn) {
-		if (library === undefined || library.length === 0) return false
-		if (library.filter((book) => book.isbn === isbn).length === 0)
-			return false
-		return true
-	}
-
-	/**
-	 * @param {string} filename
-	 * @param {Array<unknown>} library
-	 */
-	async function writeLibrary(filename, library) {
-		try {
-			await (0, external_node_fs_namespaceObject.writeFile)(
-				filename,
-				JSON.stringify(library, null, 2),
-			)
-		} catch (error) {
-			throw new Error(error)
-		}
-	}
-})()
-
-var __webpack_exports__read = __webpack_exports__.i
-export { __webpack_exports__read as read }
+/******/
+/******/ // startup
+/******/ // Load entry module and return exports
+/******/ // This entry module used 'module' so it can't be inlined
+/******/ var __webpack_exports__ = __nccwpck_require__(7286)
+/******/ __webpack_exports__ = await __webpack_exports__
+/******/ var __webpack_exports__read = __webpack_exports__.i
+/******/ export { __webpack_exports__read as read }
+/******/

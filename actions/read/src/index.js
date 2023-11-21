@@ -103,6 +103,8 @@ export async function read() {
 	}
 }
 
+await read()
+
 /**
  * @returns {Array<unknown>}
  */
