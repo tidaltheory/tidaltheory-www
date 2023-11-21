@@ -25,9 +25,13 @@ import { checkBook } from './check-book.js'
  */
 
 export async function read() {
+	console.info('Looking up ISBN...')
+
 	try {
 		/** @type {Payload} */
 		let payload = github.context.payload.inputs
+
+		console.log('PAYLOAD:', payload)
 
 		if (!payload || !payload.isbn) {
 			setFailed('Missing `isbn` in payload.')

@@ -57449,9 +57449,13 @@ __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependen
  */
 
 async function read() {
+	console.info('Looking up ISBN...')
+
 	try {
 		/** @type {Payload} */
 		let payload = _actions_github__WEBPACK_IMPORTED_MODULE_2__.context.payload.inputs
+
+		console.log('PAYLOAD:', payload)
 
 		if (!payload || !payload.isbn) {
 			(0,_actions_core__WEBPACK_IMPORTED_MODULE_1__.setFailed)('Missing `isbn` in payload.')
