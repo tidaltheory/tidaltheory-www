@@ -40,7 +40,9 @@ export async function read() {
 		let { isbn: bookIsbn, tags, status } = payload
 
 		// Set inputs.
+		/** @type {string} */
 		let filename = getInput('filename')
+		/** @type {Array<string>} */
 		let providers = getInput('providers')
 			? getInput('providers').split(',')
 			: isbn._providers
@@ -78,6 +80,7 @@ export async function read() {
 			let newBook = await isbn
 				.provider(providers)
 				.resolve(bookIsbn)
+				.then((book) => console.log('Found book: %j', book))
 				.catch((error) => {
 					throw new Error(
 						`Book (${bookIsbn}) not found. ${error.message}`,
