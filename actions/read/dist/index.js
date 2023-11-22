@@ -1203,9 +1203,9 @@ exports.getOctokitOptions = exports.GitHub = exports.defaults = exports.context 
 const Context = __importStar(__nccwpck_require__(4450));
 const Utils = __importStar(__nccwpck_require__(2138));
 // octokit + plugins
-const core_1 = __nccwpck_require__(7303);
-const plugin_rest_endpoint_methods_1 = __nccwpck_require__(700);
-const plugin_paginate_rest_1 = __nccwpck_require__(7517);
+const core_1 = __nccwpck_require__(6889);
+const plugin_rest_endpoint_methods_1 = __nccwpck_require__(451);
+const plugin_paginate_rest_1 = __nccwpck_require__(1525);
 exports.context = new Context.Context();
 const baseUrl = Utils.getApiBaseUrl();
 exports.defaults = {
@@ -2157,7 +2157,7 @@ var createTokenAuth = function createTokenAuth2(token) {
 
 /***/ }),
 
-/***/ 7303:
+/***/ 6889:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -2187,14 +2187,19 @@ __export(dist_src_exports, {
 module.exports = __toCommonJS(dist_src_exports);
 var import_universal_user_agent = __nccwpck_require__(9074);
 var import_before_after_hook = __nccwpck_require__(2934);
-var import_request = __nccwpck_require__(9974);
+var import_request = __nccwpck_require__(3788);
 var import_graphql = __nccwpck_require__(5901);
 var import_auth_token = __nccwpck_require__(7714);
 
 // pkg/dist-src/version.js
-var VERSION = "5.0.1";
+var VERSION = "5.0.2";
 
 // pkg/dist-src/index.js
+var noop = () => {
+};
+var consoleWarn = console.warn.bind(console);
+var consoleError = console.error.bind(console);
+var userAgentTrail = `octokit-core.js/${VERSION} ${(0, import_universal_user_agent.getUserAgent)()}`;
 var Octokit = class {
   static {
     this.VERSION = VERSION;
@@ -2255,10 +2260,7 @@ var Octokit = class {
         format: ""
       }
     };
-    requestDefaults.headers["user-agent"] = [
-      options.userAgent,
-      `octokit-core.js/${VERSION} ${(0, import_universal_user_agent.getUserAgent)()}`
-    ].filter(Boolean).join(" ");
+    requestDefaults.headers["user-agent"] = options.userAgent ? `${options.userAgent} ${userAgentTrail}` : userAgentTrail;
     if (options.baseUrl) {
       requestDefaults.baseUrl = options.baseUrl;
     }
@@ -2272,12 +2274,10 @@ var Octokit = class {
     this.graphql = (0, import_graphql.withCustomRequest)(this.request).defaults(requestDefaults);
     this.log = Object.assign(
       {
-        debug: () => {
-        },
-        info: () => {
-        },
-        warn: console.warn.bind(console),
-        error: console.error.bind(console)
+        debug: noop,
+        info: noop,
+        warn: consoleWarn,
+        error: consoleError
       },
       options.log
     );
@@ -2314,9 +2314,9 @@ var Octokit = class {
       this.auth = auth;
     }
     const classConstructor = this.constructor;
-    classConstructor.plugins.forEach((plugin) => {
-      Object.assign(this, plugin(this, options));
-    });
+    for (let i = 0; i < classConstructor.plugins.length; ++i) {
+      Object.assign(this, classConstructor.plugins[i](this, options));
+    }
   }
 };
 // Annotate the CommonJS export names for ESM import in node:
@@ -2723,17 +2723,17 @@ __export(dist_src_exports, {
   withCustomRequest: () => withCustomRequest
 });
 module.exports = __toCommonJS(dist_src_exports);
-var import_request3 = __nccwpck_require__(9974);
+var import_request3 = __nccwpck_require__(3788);
 var import_universal_user_agent = __nccwpck_require__(9074);
 
 // pkg/dist-src/version.js
 var VERSION = "7.0.2";
 
 // pkg/dist-src/with-defaults.js
-var import_request2 = __nccwpck_require__(9974);
+var import_request2 = __nccwpck_require__(3788);
 
 // pkg/dist-src/graphql.js
-var import_request = __nccwpck_require__(9974);
+var import_request = __nccwpck_require__(3788);
 
 // pkg/dist-src/error.js
 function _buildMessageForResponseErrors(data) {
@@ -2850,7 +2850,7 @@ function withCustomRequest(customRequest) {
 
 /***/ }),
 
-/***/ 7517:
+/***/ 1525:
 /***/ ((module) => {
 
 
@@ -3248,7 +3248,7 @@ paginateRest.VERSION = VERSION;
 
 /***/ }),
 
-/***/ 700:
+/***/ 451:
 /***/ ((module) => {
 
 
@@ -5455,7 +5455,7 @@ var RequestError = class extends Error {
 
 /***/ }),
 
-/***/ 9974:
+/***/ 3788:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 
@@ -5487,10 +5487,22 @@ var import_endpoint = __nccwpck_require__(6802);
 var import_universal_user_agent = __nccwpck_require__(9074);
 
 // pkg/dist-src/version.js
-var VERSION = "8.1.5";
+var VERSION = "8.1.6";
+
+// pkg/dist-src/is-plain-object.js
+function isPlainObject(value) {
+  if (typeof value !== "object" || value === null)
+    return false;
+  if (Object.prototype.toString.call(value) !== "[object Object]")
+    return false;
+  const proto = Object.getPrototypeOf(value);
+  if (proto === null)
+    return true;
+  const Ctor = Object.prototype.hasOwnProperty.call(proto, "constructor") && proto.constructor;
+  return typeof Ctor === "function" && Ctor instanceof Ctor && Function.prototype.call(Ctor) === Function.prototype.call(value);
+}
 
 // pkg/dist-src/fetch-wrapper.js
-var import_is_plain_object = __nccwpck_require__(7223);
 var import_request_error = __nccwpck_require__(6473);
 
 // pkg/dist-src/get-buffer-response.js
@@ -5503,7 +5515,7 @@ function fetchWrapper(requestOptions) {
   var _a, _b, _c;
   const log = requestOptions.request && requestOptions.request.log ? requestOptions.request.log : console;
   const parseSuccessResponseBody = ((_a = requestOptions.request) == null ? void 0 : _a.parseSuccessResponseBody) !== false;
-  if ((0, import_is_plain_object.isPlainObject)(requestOptions.body) || Array.isArray(requestOptions.body)) {
+  if (isPlainObject(requestOptions.body) || Array.isArray(requestOptions.body)) {
     requestOptions.body = JSON.stringify(requestOptions.body);
   }
   let headers = {};
@@ -5683,8 +5695,8 @@ var buildFullPath = __nccwpck_require__(7307);
 var buildURL = __nccwpck_require__(965);
 var http = __nccwpck_require__(3685);
 var https = __nccwpck_require__(5687);
-var httpFollow = (__nccwpck_require__(597).http);
-var httpsFollow = (__nccwpck_require__(597).https);
+var httpFollow = (__nccwpck_require__(4687).http);
+var httpsFollow = (__nccwpck_require__(4687).https);
 var url = __nccwpck_require__(7310);
 var zlib = __nccwpck_require__(9796);
 var pkg = __nccwpck_require__(9238);
@@ -10680,7 +10692,7 @@ exports.Deprecation = Deprecation;
 
 /***/ }),
 
-/***/ 6836:
+/***/ 7929:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 var debug;
@@ -10702,7 +10714,7 @@ module.exports = function () {
 
 /***/ }),
 
-/***/ 597:
+/***/ 4687:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 var url = __nccwpck_require__(7310);
@@ -10711,7 +10723,7 @@ var http = __nccwpck_require__(3685);
 var https = __nccwpck_require__(5687);
 var Writable = (__nccwpck_require__(2781).Writable);
 var assert = __nccwpck_require__(9491);
-var debug = __nccwpck_require__(6836);
+var debug = __nccwpck_require__(7929);
 
 // Create handlers that pass events from native requests
 var events = ["abort", "aborted", "connect", "error", "socket", "timeout"];
@@ -10745,6 +10757,9 @@ var WriteAfterEndError = createErrorType(
   "write after end"
 );
 
+// istanbul ignore next
+var destroy = Writable.prototype.destroy || noop;
+
 // An HTTP(S) request that can be redirected
 function RedirectableRequest(options, responseCallback) {
   // Initialize the request
@@ -10775,8 +10790,15 @@ function RedirectableRequest(options, responseCallback) {
 RedirectableRequest.prototype = Object.create(Writable.prototype);
 
 RedirectableRequest.prototype.abort = function () {
-  abortRequest(this._currentRequest);
+  destroyRequest(this._currentRequest);
+  this._currentRequest.abort();
   this.emit("abort");
+};
+
+RedirectableRequest.prototype.destroy = function (error) {
+  destroyRequest(this._currentRequest, error);
+  destroy.call(this, error);
+  return this;
 };
 
 // Writes buffered data to the current native request
@@ -10891,6 +10913,7 @@ RedirectableRequest.prototype.setTimeout = function (msecs, callback) {
     self.removeListener("abort", clearTimer);
     self.removeListener("error", clearTimer);
     self.removeListener("response", clearTimer);
+    self.removeListener("close", clearTimer);
     if (callback) {
       self.removeListener("timeout", callback);
     }
@@ -10917,6 +10940,7 @@ RedirectableRequest.prototype.setTimeout = function (msecs, callback) {
   this.on("abort", clearTimer);
   this.on("error", clearTimer);
   this.on("response", clearTimer);
+  this.on("close", clearTimer);
 
   return this;
 };
@@ -11068,7 +11092,7 @@ RedirectableRequest.prototype._processResponse = function (response) {
   }
 
   // The response is a redirect, so abort the current request
-  abortRequest(this._currentRequest);
+  destroyRequest(this._currentRequest);
   // Discard the remainder of the response to avoid waiting for data
   response.destroy();
 
@@ -11297,12 +11321,12 @@ function createErrorType(code, message, baseClass) {
   return CustomError;
 }
 
-function abortRequest(request) {
+function destroyRequest(request, error) {
   for (var event of events) {
     request.removeListener(event, eventHandlers[event]);
   }
   request.on("error", noop);
-  request.abort();
+  request.destroy(error);
 }
 
 function isSubdomain(subdomain, domain) {
@@ -55601,10 +55625,10 @@ module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:events"
 
 /***/ }),
 
-/***/ 7561:
+/***/ 3977:
 /***/ ((module) => {
 
-module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:fs");
+module.exports = __WEBPACK_EXTERNAL_createRequire(import.meta.url)("node:fs/promises");
 
 /***/ }),
 
@@ -57344,7 +57368,7 @@ function checkBook(book, { bookIsbn, status, thumbnailWidth }) {
 		title: book.title ?? undefined,
 		authors: book.authors ?? undefined,
 		status,
-		thumbnail: getThumbnailUrl(book.imageLinks, thumbnailWidth),
+		thumbnail: getThumbnailUrl(book.imageLinks.thumbnail, thumbnailWidth),
 		link: book.canonicalVolumeLink ?? undefined,
 	}
 }
@@ -57414,10 +57438,9 @@ function getThumbnailUrl(thumbnail, width) {
 
 __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   "i": () => (/* binding */ read)
 /* harmony export */ });
-/* harmony import */ var node_fs__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(7561);
+/* harmony import */ var node_fs_promises__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(3977);
 /* harmony import */ var _actions_core__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(4237);
 /* harmony import */ var _actions_github__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(7131);
 /* harmony import */ var node_isbn__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(6268);
@@ -57449,22 +57472,18 @@ __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependen
  */
 
 async function read() {
-	console.info('Looking up ISBN...')
-
 	try {
 		/** @type {Payload} */
 		let payload = _actions_github__WEBPACK_IMPORTED_MODULE_2__.context.payload.inputs
 
-		console.log('PAYLOAD:', payload)
-
-		if (!payload || !payload.isbn) {
-			(0,_actions_core__WEBPACK_IMPORTED_MODULE_1__.setFailed)('Missing `isbn` in payload.')
-		}
+		validatePayload(payload)
 
 		let { isbn: bookIsbn, tags, status } = payload
 
 		// Set inputs.
+		/** @type {string} */
 		let filename = (0,_actions_core__WEBPACK_IMPORTED_MODULE_1__.getInput)('filename')
+		/** @type {Array<string>} */
 		let providers = (0,_actions_core__WEBPACK_IMPORTED_MODULE_1__.getInput)('providers')
 			? (0,_actions_core__WEBPACK_IMPORTED_MODULE_1__.getInput)('providers').split(',')
 			: node_isbn__WEBPACK_IMPORTED_MODULE_3__._providers
@@ -57521,6 +57540,8 @@ async function read() {
 			}
 		}
 
+		(0,_actions_core__WEBPACK_IMPORTED_MODULE_1__.exportVariable)('BookStatus', status)
+
 		// Return the last (most recent) four entries.
 		library = library.slice(-4)
 
@@ -57530,15 +57551,34 @@ async function read() {
 	}
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (await read());
+await read()
+
+function validatePayload(payload) {
+	if (!payload) (0,_actions_core__WEBPACK_IMPORTED_MODULE_1__.setFailed)('Payload inputs not provided.')
+
+	if (!payload.isbn) {
+		(0,_actions_core__WEBPACK_IMPORTED_MODULE_1__.setFailed)('Missing `isbn` in payload.')
+	}
+
+	if (
+		!payload.status ||
+		(payload.status !== 'reading' && payload.status !== 'finished')
+	) {
+		(0,_actions_core__WEBPACK_IMPORTED_MODULE_1__.setFailed)('Invalid `status` in payload.')
+	}
+}
 
 /**
  * @returns {Array<unknown>}
  */
 async function readFromLibrary(filename) {
-	let contents = await (0,node_fs__WEBPACK_IMPORTED_MODULE_0__.readFile)(filename, 'utf8')
-	if (contents === '' || !contents) return []
-	return JSON.parse(contents)
+	try {
+		let contents = await (0,node_fs_promises__WEBPACK_IMPORTED_MODULE_0__.readFile)(filename, 'utf8')
+		if (contents === '' || !contents) return []
+		return JSON.parse(contents)
+	} catch (error) {
+		throw new Error(error)
+	}
 }
 
 function checkLibrary(library, isbn) {
@@ -57553,7 +57593,7 @@ function checkLibrary(library, isbn) {
  */
 async function writeLibrary(filename, library) {
 	try {
-		await (0,node_fs__WEBPACK_IMPORTED_MODULE_0__.writeFile)(filename, JSON.stringify(library, null, 2))
+		await (0,node_fs_promises__WEBPACK_IMPORTED_MODULE_0__.writeFile)(filename, JSON.stringify(library, null, 2))
 	} catch (error) {
 		throw new Error(error)
 	}
@@ -57701,7 +57741,6 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ // This entry module used 'module' so it can't be inlined
 /******/ var __webpack_exports__ = __nccwpck_require__(7286);
 /******/ __webpack_exports__ = await __webpack_exports__;
-/******/ var __webpack_exports__default = __webpack_exports__.Z;
 /******/ var __webpack_exports__read = __webpack_exports__.i;
-/******/ export { __webpack_exports__default as default, __webpack_exports__read as read };
+/******/ export { __webpack_exports__read as read };
 /******/ 

@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'node:fs'
+import { readFile, writeFile } from 'node:fs/promises'
 
 import { exportVariable, getInput, setFailed } from '@actions/core'
 import * as github from '@actions/github'
@@ -25,17 +25,11 @@ import { checkBook } from './check-book.js'
  */
 
 export async function read() {
-	console.info('Looking up ISBN...')
-
 	try {
 		/** @type {Payload} */
 		let payload = github.context.payload.inputs
 
-		console.log('PAYLOAD:', payload)
-
-		if (!payload || !payload.isbn) {
-			setFailed('Missing `isbn` in payload.')
-		}
+		validatePayload(payload)
 
 		let { isbn: bookIsbn, tags, status } = payload
 
@@ -80,7 +74,6 @@ export async function read() {
 			let newBook = await isbn
 				.provider(providers)
 				.resolve(bookIsbn)
-				.then((book) => console.log('Found book: %j', book))
 				.catch((error) => {
 					throw new Error(
 						`Book (${bookIsbn}) not found. ${error.message}`,
@@ -101,6 +94,8 @@ export async function read() {
 			}
 		}
 
+		exportVariable('BookStatus', status)
+
 		// Return the last (most recent) four entries.
 		library = library.slice(-4)
 
@@ -110,15 +105,34 @@ export async function read() {
 	}
 }
 
-export default await read()
+await read()
+
+function validatePayload(payload) {
+	if (!payload) setFailed('Payload inputs not provided.')
+
+	if (!payload.isbn) {
+		setFailed('Missing `isbn` in payload.')
+	}
+
+	if (
+		!payload.status ||
+		(payload.status !== 'reading' && payload.status !== 'finished')
+	) {
+		setFailed('Invalid `status` in payload.')
+	}
+}
 
 /**
  * @returns {Array<unknown>}
  */
 async function readFromLibrary(filename) {
-	let contents = await readFile(filename, 'utf8')
-	if (contents === '' || !contents) return []
-	return JSON.parse(contents)
+	try {
+		let contents = await readFile(filename, 'utf8')
+		if (contents === '' || !contents) return []
+		return JSON.parse(contents)
+	} catch (error) {
+		throw new Error(error)
+	}
 }
 
 function checkLibrary(library, isbn) {

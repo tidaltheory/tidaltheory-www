@@ -8,7 +8,7 @@ export function checkBook(book, { bookIsbn, status, thumbnailWidth }) {
 		title: book.title ?? undefined,
 		authors: book.authors ?? undefined,
 		status,
-		thumbnail: getThumbnailUrl(book.imageLinks, thumbnailWidth),
+		thumbnail: getThumbnailUrl(book.imageLinks.thumbnail, thumbnailWidth),
 		link: book.canonicalVolumeLink ?? undefined,
 	}
 }
