@@ -16,7 +16,8 @@
     "pnpm:build:site": "pnpm run --dir www build",
     "pnpm:dev:cms": "pnpm run --dir studio dev",
     "pnpm:dev:site": "pnpm run --dir www dev",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "pnpm run --dir actions/read test"
   },
   "lint-staged": {
     "*.css": "stylelint --config www/stylelint.config.cjs --fix",
