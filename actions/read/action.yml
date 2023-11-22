@@ -13,7 +13,7 @@ branding:
 inputs:
   filename:
     description: The file where you want to save your books.
-    default: www/content/read.json
+    default: ./www/content/read.json
   providers:
     description: >-
       Specify the [ISBN
