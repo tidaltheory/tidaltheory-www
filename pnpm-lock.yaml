@@ -165,8 +165,8 @@ importers:
         specifier: 0.5.9
         version: 0.5.9(tailwindcss@3.3.3)
       autoprefixer:
-        specifier: 10.4.15
-        version: 10.4.15(postcss@8.4.28)
+        specifier: 10.4.16
+        version: 10.4.16(postcss@8.4.28)
       blurhash:
         specifier: 2.0.5
         version: 2.0.5
@@ -2991,8 +2991,8 @@ packages:
   /asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  /autoprefixer@10.4.15(postcss@8.4.28):
-    resolution: {integrity: sha512-KCuPB8ZCIqFdA4HwKXsvz7j6gvSDNhDP7WnUjBleRkKjPdvCmHFuQ77ocavI8FT6NdvlBnE2UFr2H4Mycn8Vew==}
+  /autoprefixer@10.4.16(postcss@8.4.28):
+    resolution: {integrity: sha512-7vd3UC6xKp0HLfua5IjZlcXvGAGy7cBAXTg2lyQ/8WpNhd6SiZ8Be+xm3FyBSYJx5GKcpRCzBh7RH4/0dnY+uQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
@@ -6719,7 +6719,7 @@ packages:
       '@csstools/postcss-text-decoration-shorthand': 3.0.3(postcss@8.4.28)
       '@csstools/postcss-trigonometric-functions': 3.0.2(postcss@8.4.28)
       '@csstools/postcss-unset-value': 3.0.0(postcss@8.4.28)
-      autoprefixer: 10.4.15(postcss@8.4.28)
+      autoprefixer: 10.4.16(postcss@8.4.28)
       browserslist: 4.22.1
       css-blank-pseudo: 6.0.0(postcss@8.4.28)
       css-has-pseudo: 6.0.0(postcss@8.4.28)
