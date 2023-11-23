@@ -58,4 +58,25 @@ export let data
 			{/await}
 		</div>
 	</PageSection>
+	<PageSection>
+		<div class="prose flex flex-col gap-10">
+			<Heading level={2}>Reading</Heading>
+			<p class="not-prose">
+				Flipping through books has been much better for my mental health
+				than doomscrolling. I also still read to my kids regularly so
+				there’s likely to be some younger fare here, in addition to the
+				selection of sci-fi/fantasy stories I’m chewing through.
+			</p>
+		</div>
+		<div class="mt-16 flex gap-4 lg:gap-8 xl:mt-[72px] xl:gap-12">
+			{#each data.books as book}
+				<a
+					href={book.link}
+					class="flex-0 rounded-[1px] {FOCUS_OUTLINE} aspect-[0.6667] max-h-[342px] overflow-hidden"
+				>
+					<img src={book.thumbnail} alt="" class="" />
+				</a>
+			{/each}
+		</div>
+	</PageSection>
 </article>

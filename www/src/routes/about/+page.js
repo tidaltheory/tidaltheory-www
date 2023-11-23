@@ -1,5 +1,6 @@
 /** @type {import('./$types').PageLoad} */
 export const load = async ({ fetch }) => {
+	let books = await fetch('/api/books.json')
 	let films = Response.json([])
 
 	try {
@@ -11,6 +12,7 @@ export const load = async ({ fetch }) => {
 	}
 
 	return {
+		books: await books.json(),
 		streamed: {
 			films: new Promise((resolve) => {
 				resolve(films)
