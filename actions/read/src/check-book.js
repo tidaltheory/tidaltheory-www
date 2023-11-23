@@ -64,6 +64,7 @@ function getThumbnailUrl(thumbnail, width) {
 	let url = new URL(thumbnail)
 
 	if (url.host === 'books.google.com' && width) {
+		thumbnail.replace('&edge=curl', '')
 		thumbnail = `${thumbnail}&w=${width}`
 	}
 

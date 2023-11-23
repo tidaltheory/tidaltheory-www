@@ -1,12 +1,22 @@
 [
   {
+    "isbn": "9781781100523",
+    "title": "Harry Potter and the Goblet of Fire",
+    "authors": [
+      "J.K. Rowling"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=etukl7GfrxQC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "link": "https://books.google.com/books/about/Harry_Potter_and_the_Goblet_of_Fire.html?hl=&id=etukl7GfrxQC"
+  },
+  {
     "isbn": "9780857667700",
     "title": "The Forbidden Stars",
     "authors": [
       "Tim Pratt"
     ],
     "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=Tx1-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "thumbnail": "https://books.google.com/books/content?id=Tx1-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&width=600",
     "link": "https://play.google.com/store/books/details?id=Tx1-DwAAQBAJ"
   }
 ]

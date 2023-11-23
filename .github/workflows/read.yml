@@ -31,6 +31,8 @@ jobs:
 
       - name: Read
         uses: ./actions/read/
+        with:
+          thumbnail-width: 600
 
       - name: Commit updated read file
         run: |
