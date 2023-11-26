@@ -34,23 +34,11 @@ let header
 			</div>
 			{#if $$slots.intro}
 				<div
-					class="header-intro col-span-3 col-start-2 row-start-2 pt-[9vh] md:pt-[11vh] xl:pt-36"
-					class:translate-y-[1.5vh]={!intersecting}
-					class:opacity-0={!intersecting}
-					style="--delay: 100ms"
+					class="col-span-3 col-start-2 row-start-2 pt-[9vh] md:pt-[11vh] xl:pt-36"
 				>
-					<slot name="intro" />
+					<slot name="intro" {intersecting} />
 				</div>
 			{/if}
 		</div>
 	</ObserveIntersection>
 </PageSection>
-
-<style>
-.header-intro {
-	transition:
-		transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1),
-		opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-	transition-delay: var(--delay, 0);
-}
-</style>

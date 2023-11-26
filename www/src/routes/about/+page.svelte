@@ -1,6 +1,7 @@
 <script>
 import { FOCUS_OUTLINE } from '$lib/classnames'
 import Heading from '$lib/components/heading.svelte'
+import FadeUp from '$lib/components/helpers/fade-up.svelte'
 import MentionLink from '$lib/components/mention-link.svelte'
 import PageHero from '$lib/components/page-hero.svelte'
 import PageSection from '$lib/components/page-section.svelte'
@@ -19,17 +20,20 @@ export let data
 		I’m<br />
 		Jeff<br />
 		Nelson
-		<svelte:fragment slot="intro">
-			I’m a User Interface Developer, currently at
-			<span class="whitespace-nowrap"
-				><MentionLink site="clari">Clari</MentionLink>.</span
-			>
-			Previously, I’ve worked at
-			<MentionLink site="showbie">Showbie</MentionLink>
-			and at
-			<span class="whitespace-nowrap"
-				><MentionLink site="lift">Lift Interactive</MentionLink>.</span
-			>
+		<svelte:fragment slot="intro" let:intersecting>
+			<FadeUp showing={intersecting} delay={100}>
+				I’m a User Interface Developer, currently at
+				<span class="whitespace-nowrap"
+					><MentionLink site="clari">Clari</MentionLink>.</span
+				>
+				Previously, I’ve worked at
+				<MentionLink site="showbie">Showbie</MentionLink>
+				and at
+				<span class="whitespace-nowrap"
+					><MentionLink site="lift">Lift Interactive</MentionLink
+					>.</span
+				>
+			</FadeUp>
 		</svelte:fragment>
 	</PageHero>
 	<PageSection>

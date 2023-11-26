@@ -1,5 +1,6 @@
 <script>
 import GalleryCard from '$lib/components/gallery-card.svelte'
+import FadeUp from '$lib/components/helpers/fade-up.svelte'
 import MentionLink from '$lib/components/mention-link.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
@@ -33,12 +34,14 @@ const title = collection === 'screen-shots' ? 'Screen Shots — Photos' : 'Photo
 <article>
 	<PageIntro>
 		{collection === 'screen-shots' ? 'Screen Shots' : 'Photos'}
-		<svelte:fragment slot="intro">
+		<svelte:fragment slot="intro" let:intersecting>
 			{#if collection !== 'screen-shots'}
-				<TextLede>
-					Former side-hustle, current casual interest. Some of my
-					favourite shots from past and ongoing&nbsp;collections.
-				</TextLede>
+				<FadeUp showing={intersecting} delay={100}>
+					<TextLede>
+						Former side-hustle, current casual interest. Some of my
+						favourite shots from past and ongoing&nbsp;collections.
+					</TextLede>
+				</FadeUp>
 			{/if}
 		</svelte:fragment>
 	</PageIntro>

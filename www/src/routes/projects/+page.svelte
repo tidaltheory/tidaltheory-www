@@ -1,4 +1,5 @@
 <script>
+import FadeUp from '$lib/components/helpers/fade-up.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 import PortableText from '$lib/components/portable-text.svelte'
@@ -19,7 +20,14 @@ $: ({ title, lede, content } = data)
 <article>
 	<PageIntro>
 		{title}
-		<TextLede slot="intro"><PortableText value={lede} /></TextLede>
+		<FadeUp
+			slot="intro"
+			let:intersecting
+			showing={intersecting}
+			delay={100}
+		>
+			<TextLede><PortableText value={lede} /></TextLede>
+		</FadeUp>
 	</PageIntro>
 	<PageSection>
 		<div class="prose prose-invert">

@@ -1,6 +1,7 @@
 <script>
 import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
 import GalleryThumbnail from '$lib/components/gallery-thumbnail.svelte'
+import FadeUp from '$lib/components/helpers/fade-up.svelte'
 import MasonryGrid from '$lib/components/masonry-grid.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
@@ -54,38 +55,52 @@ function handleCloseCarousel() {
 <article>
 	<PageIntro {subtitle}>
 		{title}
-		<div slot="intro" class="grid gap-6 md:gap-10 xl:gap-12">
+		<div
+			slot="intro"
+			class="grid gap-6 md:gap-10 xl:gap-12"
+			let:intersecting
+		>
 			{#if post.platform}
 				<dl class="flex flex-col gap-4 md:flex-row md:gap-8 xl:gap-16">
-					<div class="grid gap-1 md:gap-2">
+					<FadeUp
+						showing={intersecting}
+						delay={100}
+						className="grid gap-1 md:gap-2"
+					>
 						<dt
-							class="font-bold uppercase tracking-wider font-display text-xs leading-trim"
+							class="font-display leading-trim text-xs font-bold uppercase tracking-wider"
 						>
 							Captured on
 						</dt>
 						<dd
-							class="font-medium text-base leading-trim md:text-lg"
+							class="leading-trim text-base font-medium md:text-lg"
 						>
 							{post.platform}
 						</dd>
-					</div>
-					<div class="grid gap-1 md:gap-2">
+					</FadeUp>
+					<FadeUp
+						showing={intersecting}
+						delay={175}
+						className="grid gap-1 md:gap-2"
+					>
 						<dt
-							class="font-bold uppercase tracking-wider font-display text-xs leading-trim"
+							class="font-display leading-trim text-xs font-bold uppercase tracking-wider"
 						>
 							Developed by
 						</dt>
 						<dd
-							class="font-medium text-base leading-trim md:text-lg"
+							class="leading-trim text-base font-medium md:text-lg"
 						>
 							{post.developer}
 						</dd>
-					</div>
+					</FadeUp>
 				</dl>
 			{/if}
-			<TextLede>
-				<PortableText value={lede} />
-			</TextLede>
+			<FadeUp showing={intersecting} delay={250}>
+				<TextLede>
+					<PortableText value={lede} />
+				</TextLede>
+			</FadeUp>
 		</div>
 	</PageIntro>
 	<PageSection>
@@ -95,6 +110,7 @@ function handleCloseCarousel() {
 					<GalleryThumbnail
 						{image}
 						isHidden={isCarouselOpen}
+						isDelayed={(index + 1) % 2 === 0}
 						onClick={() => handleOpenCarousel(index)}
 					/>
 				{/each}

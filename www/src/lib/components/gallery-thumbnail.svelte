@@ -7,6 +7,8 @@ import { FOCUS_OUTLINE } from '$lib/classnames.js'
 export let image
 /** @type {boolean} */
 export let isHidden
+/** @type {boolean} */
+export let isDelayed = false
 /** @type {(e: MouseEvent) => void} */
 export let onClick
 
@@ -29,6 +31,7 @@ let thumb
 			class="relative flex w-full transition duration-500"
 			class:opacity-0={!intersecting}
 			class:translate-y-6={!intersecting}
+			class:delay-75={isDelayed}
 			bind:this={thumb}
 		>
 			<img
