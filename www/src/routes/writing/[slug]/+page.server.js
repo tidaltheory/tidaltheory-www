@@ -1,3 +1,4 @@
+import { format } from 'date-fns'
 import Prism from 'prismjs'
 
 import { getPost } from '$lib/sanity/posts.js'
@@ -20,5 +21,8 @@ export const load = async ({ params }) => {
 		}
 	}
 
-	return { ...post }
+	return {
+		...post,
+		createdAt: format(new Date(post._createdAt), 'dd MMMM yyyy, h:mm aaa'),
+	}
 }
