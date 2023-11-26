@@ -16,7 +16,7 @@ let relativeDate =
 		? formatDistanceToNow(datestamp, { addSuffix: true })
 		: formatRelative(datestamp, now, { weekStartsOn: 1 })
 				// Remove time text from date string.
-				.replace(/at.*$/, '')
+				.replace(/at\s.*$/, '')
 				.trimEnd()
 </script>
 
