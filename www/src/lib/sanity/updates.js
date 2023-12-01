@@ -26,7 +26,7 @@ import { client } from './client.js'
  */
 export async function getUpdates() {
 	return await client.fetch(
-		groq`*[_type == "update"][0...10]{
+		groq`*[_type == "update"]{
 			type,
 			'id': _id,
 			'date': select(
@@ -53,6 +53,6 @@ export async function getUpdates() {
 				'image': image.asset,
 				'metadata': image.asset->metadata,
 			})
-		} | order(date desc)`,
+		} | order(date desc)[0...10]`,
 	)
 }
