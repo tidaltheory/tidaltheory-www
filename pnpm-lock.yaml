@@ -119,8 +119,8 @@ importers:
   www:
     dependencies:
       '@floating-ui/dom':
-        specifier: 1.5.1
-        version: 1.5.1
+        specifier: 1.5.3
+        version: 1.5.3
       '@sanity/client':
         specifier: 6.9.1
         version: 6.9.1
@@ -1447,8 +1447,8 @@ packages:
     dependencies:
       '@floating-ui/utils': 0.1.6
 
-  /@floating-ui/dom@1.5.1:
-    resolution: {integrity: sha512-KwvVcPSXg6mQygvA1TjbN/gh///36kKtllIF8SUm0qpFj8+rvYrpvlYdL1JoA71SHpDqgSSdGOSoQ0Mp3uY5aw==}
+  /@floating-ui/dom@1.5.3:
+    resolution: {integrity: sha512-ClAbQnEqJAKCJOEbbLo5IUlZHkNszqhuxS4fHAVxRPXPya6Ysf2G8KypnYcOTpx6I8xcgF9bbHb6g/2KpbV8qA==}
     dependencies:
       '@floating-ui/core': 1.5.0
       '@floating-ui/utils': 0.1.6
@@ -1459,7 +1459,7 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@floating-ui/dom': 1.5.1
+      '@floating-ui/dom': 1.5.3
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -8362,7 +8362,7 @@ packages:
     resolution: {integrity: sha512-yjLeRQ4SNcICbMabp5S2cXc5ubBd2eua+swfTqqGBeg8ZrUvotZYK8jsRWETl/3RgLQsaZbEYKx8OmLA3wL/yw==}
     dependencies:
       '@floating-ui/core': 1.5.0
-      '@floating-ui/dom': 1.5.1
+      '@floating-ui/dom': 1.5.3
     dev: false
 
   /svelte-hmr@0.15.3(svelte@4.2.0):
