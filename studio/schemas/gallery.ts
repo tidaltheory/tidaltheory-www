@@ -133,6 +133,15 @@ export default defineType({
 					weak: true,
 					options: {
 						disableNew: true,
+						filter({ document }) {
+							let photos = (document.images as ReferenceValue[]).map(
+								(index) => index._ref,
+							)
+							return {
+								filter: '_type == "photo" && !(_id in $photos)',
+								params: { photos },
+							}
+						},
 					},
 				}),
 			],
