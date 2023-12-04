@@ -23,6 +23,10 @@ inputs:
   time-zone:
     description: Your time zone.
     default: America/Edmonton
+  thumbnail-width:
+    description: >-
+      The width of the thumbnail image (for books sourced from Google Books).
+    default: 600
   required-metadata:
     description: >-
       Required metadata properties.  This can be used to make the action open a
