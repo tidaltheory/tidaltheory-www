@@ -11,6 +11,7 @@ export const load = async ({ params }) => {
 		/** @todo Get optimal OG image height and include .height() */
 		post.coverImage = urlFor(post.coverImage)
 			.width(1200)
+			.height(630)
 			.format('jpg')
 			.url()
 
@@ -32,7 +33,7 @@ export const load = async ({ params }) => {
 			return image
 		})
 
-		return { post }
+		return { post, slug: params.slug }
 	}
 
 	throw error(404, 'Not found.')

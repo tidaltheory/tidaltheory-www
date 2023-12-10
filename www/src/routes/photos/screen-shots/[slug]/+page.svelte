@@ -5,4 +5,4 @@ import Item from '../../item.svelte'
 export let data
 </script>
 
-<Item {data} collection="screen-shots" />
+<Item {data} collection="screen-shots" slug={data.slug} />

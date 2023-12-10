@@ -11,6 +11,9 @@ import TextLede from '$lib/components/text-lede.svelte'
 /** @type {'screen-shots' | undefined} */
 export let collection = undefined
 
+/** @type {string} */
+export let slug
+
 /** @type {import('./[slug]/$types').PageData} */
 export let data
 $: ({ post } = data)
@@ -26,6 +29,8 @@ $: ({
 } = post)
 
 if (collection === 'screen-shots') fullTitle += ' — Screen Shots'
+
+let url = ['https://tidaltheory.io/photos', collection, slug].join('/')
 
 let isCarouselOpen = false
 let initialIndex = 0
@@ -49,6 +54,7 @@ function handleCloseCarousel() {
 	<meta name="twitter:card" content="summary_large_card" />
 	<meta property="og:title" content="{fullTitle} — Tidal Theory" />
 	<meta property="og:description" content={ledeClean} />
+	<meta property="og:url" content="{url}/" />
 	<meta property="og:image" content={coverImage} />
 </svelte:head>
 
