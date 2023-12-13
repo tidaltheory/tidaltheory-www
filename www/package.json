@@ -29,7 +29,7 @@
     "@sanity/types": "3.20.2",
     "@sveltejs/adapter-netlify": "2.0.8",
     "@sveltejs/adapter-static": "2.0.3",
-    "@sveltejs/kit": "1.27.6",
+    "@sveltejs/kit": "1.30.3",
     "@tailwindcss/typography": "0.5.10",
     "autoprefixer": "10.4.16",
     "blurhash": "2.0.5",
