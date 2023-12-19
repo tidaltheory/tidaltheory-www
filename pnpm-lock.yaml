@@ -163,7 +163,7 @@ importers:
         version: 1.27.6(svelte@4.2.8)(vite@5.0.5)
       '@tailwindcss/typography':
         specifier: 0.5.10
-        version: 0.5.10(tailwindcss@3.3.5)
+        version: 0.5.10(tailwindcss@3.4.0)
       autoprefixer:
         specifier: 10.4.16
         version: 10.4.16(postcss@8.4.32)
@@ -201,14 +201,14 @@ importers:
         specifier: 5.1.1
         version: 5.1.1(postcss-load-config@5.0.2)(postcss@8.4.32)(svelte@4.2.8)(typescript@5.3.2)
       tailwindcss:
-        specifier: 3.3.5
-        version: 3.3.5
+        specifier: 3.4.0
+        version: 3.4.0
       tailwindcss-capsize:
         specifier: 3.0.4
-        version: 3.0.4(tailwindcss@3.3.5)
+        version: 3.0.4(tailwindcss@3.4.0)
       tailwindcss-opentype:
         specifier: 1.1.0
-        version: 1.1.0(tailwindcss@3.3.5)
+        version: 1.1.0(tailwindcss@3.4.0)
       vite:
         specifier: 5.0.5
         version: 5.0.5(@types/node@20.9.0)
@@ -2587,7 +2587,7 @@ packages:
       - supports-color
     dev: true
 
-  /@tailwindcss/typography@0.5.10(tailwindcss@3.3.5):
+  /@tailwindcss/typography@0.5.10(tailwindcss@3.4.0):
     resolution: {integrity: sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
@@ -2596,7 +2596,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.3.5
+      tailwindcss: 3.4.0
     dev: true
 
   /@tanstack/react-virtual@3.0.0-beta.54(react@18.2.0):
@@ -8617,27 +8617,27 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /tailwindcss-capsize@3.0.4(tailwindcss@3.3.5):
+  /tailwindcss-capsize@3.0.4(tailwindcss@3.4.0):
     resolution: {integrity: sha512-JuJN36DH8f1M0seRD4R+W2+vBI2G/hmmaoFLPvnvGtTI8n3e1YSDI9Ey2WRJiOkod2UcK0R/ut5qOGMy+ScjaA==}
     engines: {node: '>=10'}
     peerDependencies:
       tailwindcss: '>= 1.5'
     dependencies:
       '@capsizecss/core': 3.1.1
-      tailwindcss: 3.3.5
+      tailwindcss: 3.4.0
     dev: true
 
-  /tailwindcss-opentype@1.1.0(tailwindcss@3.3.5):
+  /tailwindcss-opentype@1.1.0(tailwindcss@3.4.0):
     resolution: {integrity: sha512-d/+/oBITS2JX/Nn+20WSfnxQbYNcSHMNrKeBwmgetxf/9Nmi5k1pOae6OJC4WD+5M8jX9Xb8TnLZ2lkp6qv09A==}
     engines: {node: '>=12'}
     peerDependencies:
       tailwindcss: '>= 3'
     dependencies:
-      tailwindcss: 3.3.5
+      tailwindcss: 3.4.0
     dev: true
 
-  /tailwindcss@3.3.5:
-    resolution: {integrity: sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==}
+  /tailwindcss@3.4.0:
+    resolution: {integrity: sha512-VigzymniH77knD1dryXbyxR+ePHihHociZbXnLZHUyzf2MMs2ZVqlUrZ3FvpXP8pno9JzmILt1sZPD19M3IxtA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
