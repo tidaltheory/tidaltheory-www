@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781781100523",
-    "title": "Harry Potter and the Goblet of Fire",
-    "authors": [
-      "J.K. Rowling"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=etukl7GfrxQC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/Harry_Potter_and_the_Goblet_of_Fire.html?hl=&id=etukl7GfrxQC"
-  },
-  {
     "isbn": "9780857667700",
     "title": "The Forbidden Stars",
     "authors": [
@@ -38,5 +28,12 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=zpvysRGsBlwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=zpvysRGsBlwC"
+  },
+  {
+    "isbn": "9780785196273",
+    "title": "The Unbeatable Squirrel Girl Vol. 4",
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=fXi8jwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/The_Unbeatable_Squirrel_Girl_Vol_4.html?hl=&id=fXi8jwEACAAJ"
   }
 ]
