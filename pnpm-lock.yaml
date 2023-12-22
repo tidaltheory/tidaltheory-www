@@ -150,8 +150,8 @@ importers:
         specifier: 2.0.8
         version: 2.0.8
       '@sanity/types':
-        specifier: 3.20.2
-        version: 3.20.2
+        specifier: 3.23.4
+        version: 3.23.4
       '@sveltejs/adapter-netlify':
         specifier: 2.0.8
         version: 2.0.8(@sveltejs/kit@1.27.6)
@@ -2141,6 +2141,18 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /@sanity/client@6.10.0:
+    resolution: {integrity: sha512-TavtxGB6NWjro2BTGXSkzXNMKFZbS2il1ItV3IdRvO0luLqS31eIz37+5X4CmCC8hGFe6fDoCjnH/iJ81vKM7g==}
+    engines: {node: '>=14.18'}
+    dependencies:
+      '@sanity/eventsource': 5.0.1
+      '@vercel/stega': 0.1.0
+      get-it: 8.4.4
+      rxjs: 7.8.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@sanity/client@6.8.6:
     resolution: {integrity: sha512-Va4KZ4mRnyIbV+61VIJ+Op/amNAwWTo/ET3egtnEqPuXYLg60VWffNoAtAjuaZ5qM9BpTOCGJZjTKCHq+/5CEw==}
     engines: {node: '>=14.18'}
@@ -2421,6 +2433,15 @@ packages:
       '@types/react': 18.2.39
     transitivePeerDependencies:
       - supports-color
+
+  /@sanity/types@3.23.4:
+    resolution: {integrity: sha512-v3EN73ECxlwHAScOhQhSnnfpZf62LX8vN62V3m6tY7+Umnc9XwKUoTtKiMQUKJy4XuZgarot3kM4/6GfB9Y3Mg==}
+    dependencies:
+      '@sanity/client': 6.10.0
+      '@types/react': 18.2.39
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@sanity/ui@1.9.3(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(styled-components@6.1.1):
     resolution: {integrity: sha512-AdWEVFaK0Snk6xxP0lGPVP3QQYKwzkfGFpFZnL9d6UtWt8yeuS8BMLVAzmXzg14hrqH50ex9nvNl3eq6a0MWiw==}
