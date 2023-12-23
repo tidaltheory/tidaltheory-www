@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9780857667700",
-    "title": "The Forbidden Stars",
-    "authors": [
-      "Tim Pratt"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=Tx1-DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=Tx1-DwAAQBAJ"
-  },
-  {
     "isbn": "978-1-4472-7331-8",
     "title": "Children of Time",
     "authors": [
@@ -35,5 +25,12 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=fXi8jwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/The_Unbeatable_Squirrel_Girl_Vol_4.html?hl=&id=fXi8jwEACAAJ"
+  },
+  {
+    "isbn": "978-1-302-90328-2",
+    "title": "The Unbeatable Squirrel Girl Vol. 5",
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=91X-DAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/The_Unbeatable_Squirrel_Girl_Vol_5.html?hl=&id=91X-DAEACAAJ"
   }
 ]
