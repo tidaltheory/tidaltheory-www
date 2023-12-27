@@ -17,7 +17,7 @@
     "@floating-ui/dom": "1.5.3",
     "@sanity/client": "6.10.0",
     "@sanity/image-url": "1.0.2",
-    "date-fns": "2.30.0",
+    "date-fns": "3.0.6",
     "groq": "3.23.4",
     "rss-parser": "3.13.0",
     "rss-to-json": "2.1.1",
