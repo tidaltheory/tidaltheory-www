@@ -128,8 +128,8 @@ importers:
         specifier: 1.0.2
         version: 1.0.2
       date-fns:
-        specifier: 2.30.0
-        version: 2.30.0
+        specifier: 3.0.6
+        version: 3.0.6
       groq:
         specifier: 3.23.4
         version: 3.23.4
@@ -4348,6 +4348,10 @@ packages:
     engines: {node: '>=0.11'}
     dependencies:
       '@babel/runtime': 7.23.4
+
+  /date-fns@3.0.6:
+    resolution: {integrity: sha512-W+G99rycpKMMF2/YD064b2lE7jJGUe+EjOES7Q8BIGY8sbNdbgcs9XFTZwvzc9Jx1f3k7LB7gZaZa7f8Agzljg==}
+    dev: false
 
   /date-now@1.0.1:
     resolution: {integrity: sha512-yiizelQCqYLUEVT4zqYihOW6Ird7Qyc6fD3Pv5xGxk4+Jz0rsB1dMN2KyNV6jgOHYh5K+sPGCSOknQN4Upa3pg==}
