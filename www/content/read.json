@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-4472-7331-8",
-    "title": "Children of Time",
-    "authors": [
-      "Adrian Tchaikovsky"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=P3XCBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/Children_of_Time.html?hl=&id=P3XCBgAAQBAJ"
-  },
-  {
     "isbn": "9781781100530",
     "title": "Harry Potter and the Order of the Phoenix",
     "authors": [
@@ -32,5 +22,12 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=91X-DAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/The_Unbeatable_Squirrel_Girl_Vol_5.html?hl=&id=91X-DAEACAAJ"
+  },
+  {
+    "isbn": "9781302906641",
+    "title": "The Unbeatable Squirrel Girl Vol. 6",
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=HNzxwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/The_Unbeatable_Squirrel_Girl_Vol_6.html?hl=&id=HNzxwAEACAAJ"
   }
 ]
