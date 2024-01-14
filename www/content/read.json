@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781781100530",
-    "title": "Harry Potter and the Order of the Phoenix",
-    "authors": [
-      "J.K. Rowling"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=zpvysRGsBlwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=zpvysRGsBlwC"
-  },
-  {
     "isbn": "9780785196273",
     "title": "The Unbeatable Squirrel Girl Vol. 4",
     "status": "reading",
@@ -29,5 +19,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=HNzxwAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/The_Unbeatable_Squirrel_Girl_Vol_6.html?hl=&id=HNzxwAEACAAJ"
+  },
+  {
+    "isbn": "9780765399830",
+    "title": "Oathbringer",
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=VsT3DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=VsT3DQAAQBAJ"
   }
 ]
