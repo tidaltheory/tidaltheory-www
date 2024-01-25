@@ -4,11 +4,19 @@ const config = {
 	reportUnusedDisableDirectives: true,
 	ignorePatterns: ['actions/**/dist'],
 	extends: ['@zazen', 'plugin:svelte/recommended', 'prettier'],
+	plugins: ['import-sorting'],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
+		ecmaVersion: 'latest',
+		sourceType: 'module',
 		extraFileExtensions: ['.svelte'],
 	},
 	env: { browser: true },
+	settings: {
+		'import-sorting/known-framework':
+			/^((@sveltejs|svelte)(\/|-preprocess|$)|(@?sanity(\/|$)))/.source,
+		'import-sorting/known-first-party': /^\$(app|lib)(\/|$)/.source,
+	},
 	rules: {
 		/**
 		 * Deprecated rule.
@@ -22,45 +30,48 @@ const config = {
 		'no-undef-init': 'off',
 
 		'import/no-extraneous-dependencies': 'off',
-		'import/order': [
-			'error',
-			{
-				alphabetize: {
-					caseInsensitive: true,
-					order: 'asc',
-				},
-				groups: [
-					'builtin',
-					'external',
-					'internal',
-					'parent',
-					['sibling', 'index'],
-				],
-				'newlines-between': 'always',
-				pathGroups: [
-					{
-						pattern:
-							'{@sveltejs/**,svelte/**,svelte?(-preprocess),@sanity/**,sanity/**,sanity}',
-						group: 'builtin',
-						position: 'after',
-					},
-					{
-						pattern: '$?(app|lib)/**',
-						group: 'internal',
-						position: 'after',
-					},
-					{
-						pattern: '*.+(css)',
-						group: 'index',
-						position: 'after',
-						patternOptions: {
-							matchBase: true,
-						},
-					},
-				],
-				pathGroupsExcludedImportTypes: ['svelte'],
-			},
-		],
+		'import/order': 'off',
+		// 'import/order': [
+		// 	'error',
+		// 	{
+		// 		alphabetize: {
+		// 			caseInsensitive: true,
+		// 			order: 'asc',
+		// 		},
+		// 		groups: [
+		// 			'builtin',
+		// 			'external',
+		// 			'internal',
+		// 			'parent',
+		// 			['sibling', 'index'],
+		// 		],
+		// 		'newlines-between': 'always',
+		// 		pathGroups: [
+		// 			{
+		// 				pattern:
+		// 					'{@sveltejs/**,svelte/**,svelte?(-preprocess),@sanity/**,sanity/**,sanity}',
+		// 				group: 'builtin',
+		// 				position: 'after',
+		// 			},
+		// 			{
+		// 				pattern: '$?(app|lib)/**',
+		// 				group: 'internal',
+		// 				position: 'after',
+		// 			},
+		// 			{
+		// 				pattern: '*.+(css)',
+		// 				group: 'index',
+		// 				position: 'after',
+		// 				patternOptions: {
+		// 					matchBase: true,
+		// 				},
+		// 			},
+		// 		],
+		// 		pathGroupsExcludedImportTypes: ['svelte'],
+		// 	},
+		// ],
+
+		'import-sorting/order': 'error',
 
 		'prefer-let/prefer-let': 'off',
 
