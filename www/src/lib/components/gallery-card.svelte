@@ -1,8 +1,6 @@
 <script>
 import { FOCUS_OUTLINE } from '$lib/classnames'
 
-import Heading from './heading.svelte'
-
 /** @type {import('$lib/sanity/galleries.js').GalleryCardObject} */
 export let gallery
 
@@ -17,6 +15,7 @@ $: srcset = `${coverImageSet.sm} 300w, ${coverImageSet.md} 600w, ${coverImageSet
 			<div class="absolute inset-0" style:background-color={color} />
 			<div
 				class="relative grayscale transition-all duration-200 group-focus-within:grayscale-0 group-hover:grayscale-0"
+				style:aspect-ratio={1.2}
 			>
 				<img
 					class="relative h-full w-full object-contain transition"
@@ -41,7 +40,11 @@ $: srcset = `${coverImageSet.sm} 300w, ${coverImageSet.md} 600w, ${coverImageSet
 			<div
 				class="bg-grey-900 flex items-start justify-between gap-1 bg-opacity-50 p-6 backdrop-blur lg:gap-2 lg:p-10"
 			>
-				<Heading level={4}>{fullTitle}</Heading>
+				<h4
+					class="font-display leading-trim m-0 text-balance text-lg font-bold uppercase leading-none text-white md:text-2xl xl:text-3xl"
+				>
+					{fullTitle}
+				</h4>
 				{#if count}
 					<div
 						class="bg-grey-700 relative top-[0.0625rem] rounded bg-opacity-40 px-[6px] py-1 lg:px-2 lg:py-[6px]"

@@ -81,6 +81,7 @@ export async function getGallery(slug) {
 			),
 			'ledeClean': pt::text(lede),
 			'coverImage': cover->image.asset,
+			'coverImageMeta': cover->image.asset->metadata,
 			images[]->{
 				...,
 				'metadata': image.asset->metadata
