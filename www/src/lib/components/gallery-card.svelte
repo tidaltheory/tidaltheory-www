@@ -1,26 +1,61 @@
 <script>
 import { FOCUS_OUTLINE } from '$lib/classnames'
+import Blurhash from '$lib/components/helpers/blurhash.svelte'
+//
+// import Lqip from '$lib/components/helpers/lqip.svelte'
 
 /** @type {import('$lib/sanity/galleries.js').GalleryCardObject} */
 export let gallery
 
-$: ({ fullTitle, slug, coverImageSet, coverImageMeta, count } = gallery)
-$: color = coverImageMeta.palette.dominant.background
+$: ({
+	fullTitle,
+	slug,
+	coverImageSet,
+	coverImageMeta,
+	coverImageHotspot,
+	count,
+} = gallery)
+$: ({ dimensions, /* lqip, */ blurHash } = coverImageMeta)
 $: srcset = `${coverImageSet.sm} 300w, ${coverImageSet.md} 600w, ${coverImageSet.lg} 1200w,`
+
+let loaded = false
+
+/**
+ * @param {HTMLImageElement} element
+ */
+function load(element) {
+	// eslint-disable-next-line unicorn/prefer-add-event-listener, no-return-assign
+	element.onload = () => (loaded = true)
+}
 </script>
 
 <div class="bg-grey-700 group relative grid grid-rows-1 rounded-[1px]">
 	{#if coverImageSet}
 		<div class="">
-			<div class="absolute inset-0" style:background-color={color} />
+			<div class="absolute inset-0 mix-blend-lighten grayscale">
+				<Blurhash
+					hash={blurHash}
+					width={dimensions.width}
+					height={dimensions.height}
+					position={coverImageHotspot}
+				/>
+				<!-- <Lqip
+					{lqip}
+					width={dimensions.width}
+					height={dimensions.height}
+					position={coverImageHotspot}
+				/> -->
+			</div>
 			<div
 				class="relative grayscale transition-all duration-200 group-focus-within:grayscale-0 group-hover:grayscale-0"
 				style:aspect-ratio={1.2}
 			>
 				<img
 					class="relative h-full w-full object-contain transition"
+					class:opacity-0={!loaded}
 					loading="lazy"
 					decoding="async"
+					use:load
 					{srcset}
 					sizes="(min-width: 1024px) 34vw, (min-width: 768px) 32vw, 82vw"
 					src={coverImageSet.sm}

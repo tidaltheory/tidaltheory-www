@@ -11,6 +11,7 @@ import { client } from './client.js'
  * @property {number} count
  * @property {any} coverImageSet
  * @property {any} coverImageMeta
+ * @property {any} coverImageHotspot
  */
 /** @typedef {Gallery & ExtraProps} GalleryCardObject */
 
@@ -30,6 +31,7 @@ export async function getGalleries() {
 			),
 			'coverImage': cover->image.asset,
 			'coverImageMeta': cover->image.asset->metadata,
+			'coverImageHotspot': cover->image.hotspot,
 			images,
 			'count': count(images),
 		} | order(_updatedAt desc)`,
@@ -52,6 +54,7 @@ export async function getCategoryGalleries(category) {
 			),
 			'coverImage': cover->image.asset,
 			'coverImageMeta': cover->image.asset->metadata,
+			'coverImageHotspot': cover->image.hotspot,
 			images,
 			'count': count(images),
 		} | order(_updatedAt desc)`,
@@ -97,6 +100,7 @@ export async function getLatestScreenShotGallery() {
 			_updatedAt,
 			'coverImage': cover->image.asset,
 			'coverImageMeta': cover->image.asset->metadata,
+			'coverImageHotspot': cover->image.hotspot,
 		} | order(_updatedAt desc)[0]`,
 	)
 }
