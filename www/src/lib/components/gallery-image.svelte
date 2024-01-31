@@ -5,6 +5,8 @@ $: srcset = `${image.srcset.md} 600w, ${image.srcset.lg} 1200w, ${image.srcset.x
 </script>
 
 <img
+	width={image.metadata.dimensions.width}
+	height={image.metadata.dimensions.height}
 	loading="eager"
 	decoding="async"
 	{srcset}

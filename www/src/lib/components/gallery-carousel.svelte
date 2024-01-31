@@ -3,10 +3,10 @@ import { onMount, tick } from 'svelte'
 import { fade } from 'svelte/transition'
 
 import GalleryImage from './gallery-image.svelte'
-import Portal from './helpers/portal.svelte'
-import TrapFocus from './helpers/trap-focus.svelte'
 import IconButton from './icon-button.svelte'
 import ImageDetails from './image-details.svelte'
+import Portal from './helpers/portal.svelte'
+import TrapFocus from './helpers/trap-focus.svelte'
 
 export let images: any
 export let initialIndex: number
@@ -37,7 +37,7 @@ function handleEscape(event: KeyboardEvent) {
 			transition:fade={{ duration: 150 }}
 		>
 			<div
-				class="fixed inset-0 z-[99] bg-grey-900 bg-opacity-50 backdrop-blur transition"
+				class="bg-grey-900 fixed inset-0 z-[99] bg-opacity-50 backdrop-blur transition"
 			/>
 			<div
 				class="zoom"
@@ -56,13 +56,13 @@ function handleEscape(event: KeyboardEvent) {
 						on:click|self|stopPropagation={onClose}
 					>
 						<div
-							class="group relative flex max-h-full max-w-full object-contain"
+							class="group relative flex h-auto max-h-full w-auto max-w-full object-contain"
 							style:aspect-ratio={image.metadata.dimensions
 								.aspectRatio}
 						>
 							<GalleryImage {image} />
 							{#if image.title || image.caption}
-								<div class="absolute right-0 bottom-0 left-0">
+								<div class="absolute bottom-0 left-0 right-0">
 									<ImageDetails
 										id="image-{index}"
 										meta={{
@@ -77,7 +77,7 @@ function handleEscape(event: KeyboardEvent) {
 				{/each}
 			</div>
 			<div
-				class="absolute top-4 right-4 z-[100] flex md:top-8 md:right-8"
+				class="absolute right-4 top-4 z-[100] flex md:right-8 md:top-8"
 			>
 				<IconButton on:click={onClose}>
 					<svg
