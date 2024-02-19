@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-938570-26-1",
-    "title": "Dawnshard",
-    "authors": [
-      "Brandon Sanderson"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=c88HEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=c88HEAAAQBAJ"
-  },
-  {
     "isbn": "978-1-250-82698-5",
     "title": "System Collapse",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=gCtazG4ZXlQC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Harry_Potter_and_the_Deathly_Hallows.html?hl=&id=gCtazG4ZXlQC"
+  },
+  {
+    "isbn": "9781594746550",
+    "title": "William Shakespeare's Star Wars",
+    "authors": [
+      "Ian Doescher"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=rLzOegLpMJQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=rLzOegLpMJQC"
   }
 ]
