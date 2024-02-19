@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-0-06-267912-3",
-    "title": "The Cabin at the End of the World",
-    "authors": [
-      "Paul Tremblay"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=two3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=two3DwAAQBAJ"
-  },
-  {
     "isbn": "978-1-938570-26-1",
     "title": "Dawnshard",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=EBJ5EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=EBJ5EAAAQBAJ"
+  },
+  {
+    "isbn": "9781781100264",
+    "title": "Harry Potter and the Deathly Hallows",
+    "authors": [
+      "J.K. Rowling"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=gCtazG4ZXlQC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Harry_Potter_and_the_Deathly_Hallows.html?hl=&id=gCtazG4ZXlQC"
   }
 ]
