@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-250-82698-5",
-    "title": "System Collapse",
-    "authors": [
-      "Martha Wells"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=bbKiEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=bbKiEAAAQBAJ"
-  },
-  {
     "isbn": "9781668014967",
     "title": "The Lathe Of Heaven",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=rLzOegLpMJQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=rLzOegLpMJQC"
+  },
+  {
+    "isbn": "9781250186454",
+    "title": "A Memory Called Empire",
+    "authors": [
+      "Arkady Martine"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=O-5WDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=O-5WDwAAQBAJ"
   }
 ]
