@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781594746550",
-    "title": "William Shakespeare's Star Wars",
-    "authors": [
-      "Ian Doescher"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=rLzOegLpMJQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=rLzOegLpMJQC"
-  },
-  {
     "isbn": "9781250186454",
     "title": "A Memory Called Empire",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=CNLWDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=CNLWDgAAQBAJ"
+  },
+  {
+    "isbn": "9781250857859",
+    "title": "Maeve Fly",
+    "authors": [
+      "CJ Leede"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=pL5_EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Maeve_Fly.html?hl=&id=pL5_EAAAQBAJ"
   }
 ]
