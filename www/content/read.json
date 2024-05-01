@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781534451148",
-    "title": "The Hollow Places",
-    "authors": [
-      "T. Kingfisher"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=fRbODwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=fRbODwAAQBAJ"
-  },
-  {
     "isbn": "9780008192488",
     "title": "Anything You Can Imagine: Peter Jackson and the Making of Middle-earth",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=NUaSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=NUaSDwAAQBAJ"
+  },
+  {
+    "isbn": "978-0-316-42198-0",
+    "title": "The Ten Thousand Doors of January",
+    "authors": [
+      "Alix E. Harrow"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=5sWCDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=5sWCDwAAQBAJ"
   }
 ]
