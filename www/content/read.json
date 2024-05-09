@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9780008192488",
-    "title": "Anything You Can Imagine: Peter Jackson and the Making of Middle-earth",
-    "authors": [
-      "Ian Nathan"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=CNLWDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=CNLWDgAAQBAJ"
-  },
-  {
     "isbn": "9781250857859",
     "title": "Maeve Fly",
     "authors": [
@@ -38,5 +28,16 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=5sWCDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=5sWCDwAAQBAJ"
+  },
+  {
+    "isbn": "9781534430990",
+    "title": "This Is How You Lose the Time War",
+    "authors": [
+      "Amal El-Mohtar",
+      "Max Gladstone"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=21_RDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/This_Is_How_You_Lose_the_Time_War.html?hl=&id=21_RDwAAQBAJ"
   }
 ]
