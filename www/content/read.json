@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781250186485",
-    "title": "A Desolation Called Peace",
-    "authors": [
-      "Arkady Martine"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=NUaSDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=NUaSDwAAQBAJ"
-  },
-  {
     "isbn": "978-0-316-42198-0",
     "title": "The Ten Thousand Doors of January",
     "authors": [
@@ -39,5 +29,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=ENR6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Children_of_Ruin.html?hl=&id=ENR6DwAAQBAJ"
+  },
+  {
+    "isbn": "9781407042541",
+    "title": "A Hat Full of Sky",
+    "authors": [
+      "Terry Pratchett"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=jI0b29ZLPpoC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/A_Hat_Full_of_Sky.html?hl=&id=jI0b29ZLPpoC"
   }
 ]
