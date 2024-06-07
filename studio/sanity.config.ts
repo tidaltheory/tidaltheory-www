@@ -1,15 +1,17 @@
 import { codeInput } from '@sanity/code-input'
 import { BlockquoteIcon } from '@sanity/icons'
 import { visionTool } from '@sanity/vision'
-import type { DocumentActionComponent, DocumentActionsContext } from 'sanity'
-import { useDocumentOperation } from 'sanity'
-import { deskTool } from 'sanity/desk'
+import {
+	useDocumentOperation,
+	type DocumentActionComponent,
+	type DocumentActionsContext,
+} from 'sanity'
+import { structureTool } from 'sanity/structure'
 
-import { defineConfig, defineType } from '@sanity-typed/types'
-import type { InferSchemaValues } from '@sanity-typed/types'
+import { defineConfig, defineType, type InferSchemaValues } from '@sanity-typed/types'
 
-import { inlineOnlyBlock } from './schemas/fields/inline'
 import gallery from './schemas/gallery'
+import { inlineOnlyBlock } from './schemas/fields/inline'
 import note from './schemas/note'
 import page from './schemas/page'
 import photo from './schemas/photo'
@@ -26,7 +28,7 @@ const config = defineConfig({
 	projectId: 'iic1csde',
 	dataset: 'production',
 
-	plugins: [deskTool(), visionTool(), codeInput()],
+	plugins: [structureTool(), visionTool(), codeInput()],
 
 	schema: {
 		types: [
@@ -102,7 +104,6 @@ function createPublishAction(original: DocumentActionComponent, context: Documen
 					patch.execute([
 						{
 							set: {
-								// eslint-disable-next-line @typescript-eslint/naming-convention
 								'slug.current': Date.parse(properties.draft._createdAt).toString(),
 							},
 						},
