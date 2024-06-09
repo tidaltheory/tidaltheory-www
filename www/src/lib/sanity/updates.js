@@ -3,30 +3,11 @@ import groq from 'groq'
 import { client } from './client.js'
 
 /**
- * @typedef {object} ImageObject
- * @prop {import('@sanity/types').Asset} image
- * @prop {import('@sanity/types').AssetMetadataType} metadata
- */
-
-/**
- * @typedef {object} Update
- * @prop {import('../../../../studio/sanity.config.js').SanityValues['update']['type']} type
- * @prop {string} id
- * @prop {string} date
- * @prop {number} [count]
- * @prop {string} slug
- * @prop {string} [title]
- * @prop {string | import('@portabletext/types').PortableTextBlock} [excerpt]
- * @prop {import('@sanity/types').Asset} [coverImage]
- * @prop {ImageObject[]} [images]
- */
-
-/**
- * @returns {Promise<Update[]>}
+ * @returns {Promise<import('./types.js').UpdateQueryResult>}
  */
 export async function getUpdates() {
-	return await client.fetch(
-		groq`*[_type == "update"]{
+	let updateQuery = groq`
+		*[_type == "update"]{
 			type,
 			'id': _id,
 			'date': select(
@@ -53,6 +34,7 @@ export async function getUpdates() {
 				'image': image.asset,
 				'metadata': image.asset->metadata,
 			})
-		} | order(date desc)[0...10]`,
-	)
+		} | order(date desc)[0...10]`
+
+	return await client.fetch(updateQuery)
 }

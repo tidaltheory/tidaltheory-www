@@ -1,4 +1,4 @@
-import { defineArrayMember } from '@sanity-typed/types'
+import { defineArrayMember } from 'sanity'
 
 import { Cite } from '../../components/cite'
 

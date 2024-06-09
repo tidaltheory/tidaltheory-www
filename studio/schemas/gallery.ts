@@ -1,11 +1,9 @@
 import { ImagesIcon } from '@sanity/icons'
-import type { ReferenceValue } from 'sanity'
+import { defineArrayMember, defineField, defineType, type ReferenceValue } from 'sanity'
 
 import type { PortableTextBlock } from '@portabletext/types'
-import { defineArrayMember, defineField, defineType } from '@sanity-typed/types'
 
 import { serializePortableText } from '../utils/serialize-portable-text'
-
 import { inlineOnlyBlock } from './fields/inline'
 import { ledeField } from './fields/lede'
 

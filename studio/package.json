@@ -13,7 +13,8 @@
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
     "dev": "sanity dev",
-    "start": "sanity start"
+    "start": "sanity start",
+    "typegen": "sanity schema extract && sanity typegen generate"
   },
   "dependencies": {
     "@sanity/code-input": "4.1.4",
@@ -27,7 +28,6 @@
   },
   "devDependencies": {
     "@portabletext/types": "2.0.13",
-    "@sanity-typed/types": "5.1.1",
     "@types/node": "20.10.6",
     "@types/react": "18.3.3",
     "@types/styled-components": "5.1.34",

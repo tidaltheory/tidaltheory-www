@@ -1,6 +1,5 @@
 import { DocumentIcon } from '@sanity/icons'
-
-import { defineArrayMember, defineField, defineType } from '@sanity-typed/types'
+import { defineArrayMember, defineField, defineType } from 'sanity'
 
 import { decorators } from './fields/inline'
 import { ledeField } from './fields/lede'

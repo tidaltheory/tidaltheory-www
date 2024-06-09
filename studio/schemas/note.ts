@@ -1,6 +1,5 @@
 import { DocumentTextIcon, TagIcon } from '@sanity/icons'
-
-import { defineArrayMember, defineField, defineType } from '@sanity-typed/types'
+import { defineArrayMember, defineField, defineType } from 'sanity'
 
 import { Hashtag } from '../components/hashtag'
 

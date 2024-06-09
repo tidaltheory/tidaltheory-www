@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit'
 
-import { getNotes } from '$lib/sanity/client.js'
+import { getNotes } from '$lib/sanity/notes.js'
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = async () => {

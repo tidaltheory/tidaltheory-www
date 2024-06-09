@@ -1,6 +1,6 @@
 import { format } from 'date-fns'
 
-import { getNote } from '$lib/sanity/client.js'
+import { getNote } from '$lib/sanity/notes.js'
 
 /** @type {import('./$types').PageServerLoad} */
 export const load = async ({ params }) => {

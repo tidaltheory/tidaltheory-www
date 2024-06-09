@@ -12,7 +12,7 @@
     "build:action": "pnpm run --dir actions/read build",
     "build:site": "npm run -w www build",
     "dev:cms": "npm run -w studio dev",
-    "dev:site": "npm run -w www dev",
+    "dev:site": "pnpm run --dir studio typegen && npm run -w www dev",
     "pnpm:build:site": "pnpm run --dir www build",
     "pnpm:dev:cms": "pnpm run --dir studio dev",
     "pnpm:dev:site": "pnpm run --dir www dev",

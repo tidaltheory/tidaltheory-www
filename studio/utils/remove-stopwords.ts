@@ -5,7 +5,6 @@ export function removeStopwords(string: string) {
 		.join(' ')
 }
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 const STOPWORDS = new Set([
 	'about',
 	'after',

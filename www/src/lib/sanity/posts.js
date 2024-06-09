@@ -2,35 +2,26 @@ import groq from 'groq'
 
 import { client } from './client.js'
 
-/** @typedef {import('../../../../studio/sanity.config.js').SanityValues['post']} Post */
-
 /**
- * @returns {Promise<Post[]>}
+ * @returns {Promise<import('./types.js').PostsQueryResult>}
  */
 export async function getPosts() {
-	return await client.fetch(
-		groq`*[_type == "post" && defined(slug.current)] | order(_createdAt desc)`,
-	)
+	let postsQuery = groq`*[_type == "post" && defined(slug.current)] | order(_createdAt desc)`
+
+	return await client.fetch(postsQuery)
 }
 
 /**
- * @typedef {object} PostFields
- * @prop {string} ledeClean
- * @prop {string} coverImage
- */
-/** @typedef {Post & PostFields} PostObject */
-
-/**
  * @param {string} slug
- * @returns {Promise<PostObject>}
+ * @returns {Promise<import('./types.js').PostQueryResult>}
  */
 export async function getPost(slug) {
-	return await client.fetch(
-		groq`*[_type == "post" && slug.current == $slug]{
+	let postQuery = groq`
+		*[_type == "post" && slug.current == $slug]{
 			...,
 			'ledeClean': pt::text(lede),
 			'coverImage': cover->image.asset,
-		}[0]`,
-		{ slug },
-	)
+		}[0]`
+
+	return await client.fetch(postQuery, { slug })
 }

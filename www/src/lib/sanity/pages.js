@@ -4,11 +4,10 @@ import { client } from './client.js'
 
 /**
  * @param {string} slug
- * @returns {Promise<Page>}
+ * @returns {Promise<import('./types.js').PageQueryResult>}
  */
 export async function getPage(slug) {
-	return await client.fetch(
-		groq`*[_type == "page" && slug.current == $slug][0]`,
-		{ slug },
-	)
+	let pageQuery = groq`*[_type == "page" && slug.current == $slug][0]`
+
+	return await client.fetch(pageQuery, { slug })
 }

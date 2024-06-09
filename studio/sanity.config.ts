@@ -2,13 +2,14 @@ import { codeInput } from '@sanity/code-input'
 import { BlockquoteIcon } from '@sanity/icons'
 import { visionTool } from '@sanity/vision'
 import {
+	defineConfig,
+	defineField,
+	defineType,
 	useDocumentOperation,
 	type DocumentActionComponent,
 	type DocumentActionsContext,
 } from 'sanity'
 import { structureTool } from 'sanity/structure'
-
-import { defineConfig, defineType, type InferSchemaValues } from '@sanity-typed/types'
 
 import gallery from './schemas/gallery'
 import { inlineOnlyBlock } from './schemas/fields/inline'
@@ -19,7 +20,6 @@ import post from './schemas/post'
 import update from './schemas/update'
 
 // Export const PREVIEWABLE_DOCUMENT_TYPES: string[] = [home.name, page.name, project.name]
-export type SanityValues = InferSchemaValues<typeof config>
 
 const config = defineConfig({
 	name: 'default',
@@ -44,18 +44,18 @@ const config = defineConfig({
 				type: 'object',
 				icon: BlockquoteIcon,
 				fields: [
-					{
+					defineField({
 						name: 'quote',
 						title: 'Quote',
 						type: 'array',
 						of: [inlineOnlyBlock],
-					},
-					{
+					}),
+					defineField({
 						name: 'source',
 						title: 'Source',
 						type: 'array',
 						of: [inlineOnlyBlock],
-					},
+					}),
 				],
 			}),
 			defineType({
@@ -64,12 +64,12 @@ const config = defineConfig({
 				type: 'object',
 				// Icon: BlockquoteIcon,
 				fields: [
-					{
+					defineField({
 						name: 'content',
 						title: 'Content',
 						type: 'array',
 						of: [inlineOnlyBlock],
-					},
+					}),
 				],
 			}),
 		],

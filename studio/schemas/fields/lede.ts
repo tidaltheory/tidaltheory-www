@@ -1,4 +1,4 @@
-import { defineField } from '@sanity-typed/types'
+import { defineField } from 'sanity'
 
 import { inlineOnlyBlock } from './inline'
 

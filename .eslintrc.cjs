@@ -2,7 +2,7 @@
 const config = {
 	root: true,
 	reportUnusedDisableDirectives: true,
-	ignorePatterns: ['actions/**/dist'],
+	ignorePatterns: ['actions/**/dist', 'www/src/lib/sanity/types.ts'],
 	extends: ['@zazen', 'plugin:svelte/recommended', 'prettier'],
 	plugins: ['import-sorting'],
 	parser: '@typescript-eslint/parser',
