@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-0-316-42198-0",
-    "title": "The Ten Thousand Doors of January",
-    "authors": [
-      "Alix E. Harrow"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=5sWCDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=5sWCDwAAQBAJ"
-  },
-  {
     "isbn": "9781534430990",
     "title": "This Is How You Lose the Time War",
     "authors": [
@@ -39,5 +29,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=jI0b29ZLPpoC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/A_Hat_Full_of_Sky.html?hl=&id=jI0b29ZLPpoC"
+  },
+  {
+    "isbn": "978-1-5011-4138-6",
+    "title": "The Dark Tower I",
+    "authors": [
+      "Stephen King"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=jbYACwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=jbYACwAAQBAJ"
   }
 ]
