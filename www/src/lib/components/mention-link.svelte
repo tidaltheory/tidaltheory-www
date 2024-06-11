@@ -33,9 +33,14 @@ const SITES = {
 }
 
 /** @type {keyof typeof SITES} */
-export let site
+export let site = undefined
+export let href = undefined
+export let logo = undefined
 
-const { href, logo } = SITES[site]
+if (site) {
+	href = SITES[site].href
+	logo = SITES[site].logo
+}
 </script>
 
 <a

@@ -3,12 +3,15 @@ import FadeUp from '$lib/components/helpers/fade-up.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 import PortableText from '$lib/components/portable-text.svelte'
+import ProjectArticle from '$lib/components/project-article.svelte'
 import TextLede from '$lib/components/text-lede.svelte'
 
 /** @type {import('./$types').PageData} */
 export let data
 
 $: ({ title, lede, content } = data)
+
+const projects = []
 </script>
 
 <svelte:head>
@@ -33,5 +36,16 @@ $: ({ title, lede, content } = data)
 		<div class="prose prose-invert">
 			<PortableText value={content} />
 		</div>
+	</PageSection>
+	<PageSection>
+		{#if projects.length > 0}
+			{#each projects as project}
+				<ProjectArticle {project} />
+			{/each}
+		{:else}
+			<div class="prose">
+				<p>No projects entered yet.</p>
+			</div>
+		{/if}
 	</PageSection>
 </article>
