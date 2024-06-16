@@ -90,7 +90,7 @@ const config = {
 						'em, cite': {
 							'font-family': theme('fontFamily.serif'),
 							'font-weight': 'inherit',
-							'font-size-adjust': '0.5',
+							// 'font-size-adjust': '0.5',
 							/**
 							 * @todo Remove these once `font-size-adjust` has
 							 *       better support.
