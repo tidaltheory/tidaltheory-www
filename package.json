@@ -20,7 +20,10 @@
     "test": "pnpm run --dir actions/read test"
   },
   "lint-staged": {
-    "*.css": "stylelint --config www/stylelint.config.cjs --fix",
+    "*.css": [
+      "stylelint --config www/stylelint.config.cjs --fix",
+      "prettier --write"
+    ],
     "**/!(dist)/*.{js,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
@@ -31,46 +34,20 @@
     ],
     "package.json": "prettier --write"
   },
-  "prettier": {
-    "plugins": [
-      "prettier-plugin-packagejson",
-      "prettier-plugin-svelte",
-      "prettier-plugin-tailwindcss"
-    ],
-    "semi": false,
-    "singleQuote": true,
-    "svelteIndentScriptAndStyle": false,
-    "svelteSortOrder": "options-scripts-markup-styles",
-    "overrides": [
-      {
-        "files": "*.svelte",
-        "options": {
-          "parser": "svelte"
-        }
-      },
-      {
-        "files": [
-          "*.ts",
-          "*.tsx"
-        ],
-        "options": {
-          "printWidth": 100
-        }
-      }
-    ]
-  },
   "devDependencies": {
     "@zazen/eslint-config": "6.7.0",
+    "@zazen/prettier-config": "1.1.0",
+    "@zazen/stylelint-config": "4.0.0",
     "eslint": "8.56.0",
     "eslint-plugin-import-sorting": "1.0.3",
     "eslint-plugin-svelte": "2.35.1",
     "husky": "8.0.3",
     "lint-staged": "15.2.0",
-    "prettier": "3.2.4",
-    "prettier-plugin-packagejson": "2.4.9",
-    "prettier-plugin-svelte": "3.1.2",
-    "prettier-plugin-tailwindcss": "0.5.11",
-    "stylelint": "16.2.0",
+    "prettier": "3.3.2",
+    "prettier-plugin-packagejson": "2.5.0",
+    "prettier-plugin-svelte": "3.2.4",
+    "prettier-plugin-tailwindcss": "0.6.5",
+    "stylelint": "16.6.1",
     "typescript": "5.3.3"
   },
   "packageManager": "pnpm@8.13.1",

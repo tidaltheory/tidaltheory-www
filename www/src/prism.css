@@ -15,18 +15,17 @@
 	--baseD7: #e7ebed;
 }
 
-code[class*='language-'],
-pre[class*='language-'] {
-	font-family: 'SF Mono', Consolas, Menlo, Monaco, 'Andale Mono WT',
-		'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter',
-		'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-		'Nimbus Mono L', 'Courier New', Courier, monospace;
+code[class*="language-"],
+pre[class*="language-"] {
+	font-family: "SF Mono", Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console",
+		"Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
+		"Courier New", Courier, monospace;
 	font-size: 14px;
 	hyphens: none;
 	line-height: 1.375;
 	color: var(--baseB3);
 	direction: ltr;
-	text-align: left;
+	text-align: start;
 	word-break: normal;
 	tab-size: 2;
 	white-space: pre;
@@ -39,35 +38,27 @@ pre[class*='language-'] {
 	/* background: var(--baseA0); */
 }
 
-pre > code[class*='language-'] {
+pre > code[class*="language-"] {
 	font-size: 1em;
 }
 
-pre[class*='language-']::-moz-selection,
-pre[class*='language-'] ::-moz-selection,
-code[class*='language-']::-moz-selection,
-code[class*='language-'] ::-moz-selection {
-	text-shadow: none;
-	background: var(--baseB0);
-}
-
-pre[class*='language-']::selection,
-pre[class*='language-'] ::selection,
-code[class*='language-']::selection,
-code[class*='language-'] ::selection {
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
 	text-shadow: none;
 	background: var(--baseB0);
 }
 
 /* Code blocks */
-pre[class*='language-'] {
+pre[class*="language-"] {
 	padding: 1em;
 	margin: 0.5em 0;
 	overflow: auto;
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre) > code[class*="language-"] {
 	padding: 0.1em;
 	border-radius: 0.3em;
 }
@@ -84,7 +75,7 @@ pre[class*='language-'] {
 }
 
 .token.namespace {
-	opacity: 0.7;
+	opacity: 70%;
 }
 
 .token.tag,
@@ -140,7 +131,7 @@ code.language-scss,
 
 .token.inserted {
 	text-decoration: none;
-	border-bottom: 1px dotted var(--baseB7);
+	border-block-end: 1px dotted var(--baseB7);
 }
 
 .token.italic {
@@ -169,7 +160,7 @@ pre > code.highlight {
  * http://prismjs.com/plugins/line-numbers/
  */
 .line-numbers.line-numbers .line-numbers-rows {
-	border-right-color: var(--baseA1);
+	border-inline-end-color: var(--baseA1);
 }
 
 .line-numbers .line-numbers-rows > span::before {
@@ -181,9 +172,5 @@ pre > code.highlight {
 */
 .line-highlight.line-highlight {
 	background: var(--baseD2-20);
-	background: linear-gradient(
-		to right,
-		var(--baseD2-20) 70%,
-		var(--baseA0-00)
-	);
+	background: linear-gradient(to right, var(--baseD2-20) 70%, var(--baseA0-00));
 }
