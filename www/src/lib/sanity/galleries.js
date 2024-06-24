@@ -74,6 +74,9 @@ export async function getGallery(slug) {
 	return await client.fetch(galleryQuery, { slug })
 }
 
+/**
+ * @returns {Promise<import('./types.js').LatestScreenShotGalleryQueryResult>}
+ */
 export async function getLatestScreenShotGallery() {
 	let latestScreenShotGalleryQuery = groq`
 		*[_type == "gallery" && category == 'screen-shots']{
