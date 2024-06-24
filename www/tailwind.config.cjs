@@ -143,6 +143,10 @@ const config = {
 								margin: 0,
 							},
 						},
+
+						del: {
+							color: theme('colors.grey.500'),
+						},
 					},
 				},
 			}),

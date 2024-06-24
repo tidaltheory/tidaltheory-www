@@ -56,9 +56,8 @@ const title = collection === 'screen-shots' ? 'Screen Shots — Photos' : 'Photo
 				<div class="prose prose-invert md:prose-xl">
 					<p>
 						You can find iPhone shots and more video game images
-						from me on <MentionLink site="instagram"
-							>Instagram</MentionLink
-						> and more photos of all kinds on&nbsp;<MentionLink
+						from me <del>on Instagram</del>
+						and more photos of all kinds on&nbsp;<MentionLink
 							site="flickr">Flickr</MentionLink
 						>.
 					</p>
