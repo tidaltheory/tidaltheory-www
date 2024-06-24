@@ -4,7 +4,7 @@ import Blurhash from '$lib/components/helpers/blurhash.svelte'
 //
 // import Lqip from '$lib/components/helpers/lqip.svelte'
 
-/** @type {import('$lib/sanity/galleries.js').GalleryCardObject} */
+/** @type {import('../../routes/photos/$types').PageData['galleries'][number]} */
 export let gallery
 
 $: ({
@@ -32,7 +32,9 @@ function load(element) {
 <div class="bg-grey-700 group relative grid grid-rows-1 rounded-[1px]">
 	{#if coverImageSet}
 		<div class="">
-			<div class="absolute inset-0 mix-blend-lighten grayscale">
+			<div
+				class="absolute inset-0 mix-blend-lighten grayscale transition-all duration-200 group-focus-within:grayscale-0 group-hover:grayscale-0"
+			>
 				<Blurhash
 					hash={blurHash}
 					width={dimensions.width}
