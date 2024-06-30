@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781407042541",
-    "title": "A Hat Full of Sky",
-    "authors": [
-      "Terry Pratchett"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=jI0b29ZLPpoC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/A_Hat_Full_of_Sky.html?hl=&id=jI0b29ZLPpoC"
-  },
-  {
     "isbn": "978-1-5011-4138-6",
     "title": "The Dark Tower I",
     "authors": [
@@ -37,5 +27,15 @@
     ],
     "status": "finished",
     "thumbnail": "https://covers.openlibrary.org/b/id/6397695-S.jpg"
+  },
+  {
+    "isbn": "9780062990464",
+    "title": "Lightfall: The Girl & the Galdurian",
+    "authors": [
+      "Tim Probert"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=uX0szAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Lightfall_The_Girl_the_Galdurian.html?hl=&id=uX0szAEACAAJ"
   }
 ]
