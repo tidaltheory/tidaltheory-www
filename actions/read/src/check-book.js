@@ -63,8 +63,12 @@ function getThumbnailUrl(thumbnail, width) {
 
 	let url = new URL(thumbnail)
 
+	if (url.host === 'covers.openlibrary.org') {
+		thumbnail = `${thumbnail.replace(/-S\.(jpg)$/, '-L.$1')}`
+	}
+
 	if (url.host === 'books.google.com' && width) {
-		thumbnail = `${thumbnail}&w=${width}`.replace('&edge=curl', '')
+		thumbnail = `${thumbnail.replace(/&edge=curl/, '')}&w=${width}`
 	}
 
 	return thumbnail

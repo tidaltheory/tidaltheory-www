@@ -6,7 +6,7 @@
       "Stephen King"
     ],
     "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=jbYACwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "thumbnail": "https://books.google.com/books/content?id=jbYACwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=jbYACwAAQBAJ"
   },
   {
@@ -26,7 +26,7 @@
       "Stephen King"
     ],
     "status": "finished",
-    "thumbnail": "https://covers.openlibrary.org/b/id/6397695-S.jpg"
+    "thumbnail": "https://covers.openlibrary.org/b/id/6397695-L.jpg"
   },
   {
     "isbn": "9780062990464",

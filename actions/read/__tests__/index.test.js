@@ -15,7 +15,7 @@ const FILE_CONTENTS = JSON.stringify([
 		authors: ['Amal El-Mohtar', 'Max Gladstone'],
 		status: 'reading',
 		thumbnail:
-			'https://books.google.com/books/content?id=8EyBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api',
+			'https://books.google.com/books/content?id=8EyBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api',
 		link: 'https://play.google.com/store/books/details?id=8EyBDwAAQBAJ',
 	},
 ])
@@ -94,25 +94,92 @@ describe('action', () => {
 			  "my-library.json",
 			  "[
 			  {
-			    \\"isbn\\": \\"9781534431010\\",
-			    \\"title\\": \\"This Is How You Lose the Time War\\",
-			    \\"authors\\": [
-			      \\"Amal El-Mohtar\\",
-			      \\"Max Gladstone\\"
+			    "isbn": "9781534431010",
+			    "title": "This Is How You Lose the Time War",
+			    "authors": [
+			      "Amal El-Mohtar",
+			      "Max Gladstone"
 			    ],
-			    \\"status\\": \\"reading\\",
-			    \\"thumbnail\\": \\"https://books.google.com/books/content?id=8EyBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\",
-			    \\"link\\": \\"https://play.google.com/store/books/details?id=8EyBDwAAQBAJ\\"
+			    "status": "reading",
+			    "thumbnail": "https://books.google.com/books/content?id=8EyBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+			    "link": "https://play.google.com/store/books/details?id=8EyBDwAAQBAJ"
 			  },
 			  {
-			    \\"isbn\\": \\"9781338167016\\",
-			    \\"title\\": \\"The Girl who Drank the Moon\\",
-			    \\"authors\\": [
-			      \\"Kelly Regan Barnhill\\"
+			    "isbn": "9781338167016",
+			    "title": "The Girl who Drank the Moon",
+			    "authors": [
+			      "Kelly Regan Barnhill"
 			    ],
-			    \\"status\\": \\"reading\\",
-			    \\"thumbnail\\": \\"https://books.google.com/books/content?id=RvXXswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api\\",
-			    \\"link\\": \\"https://books.google.com/books/about/The_Girl_who_Drank_the_Moon.html?hl=&id=RvXXswEACAAJ\\"
+			    "status": "reading",
+			    "thumbnail": "https://books.google.com/books/content?id=RvXXswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+			    "link": "https://books.google.com/books/about/The_Girl_who_Drank_the_Moon.html?hl=&id=RvXXswEACAAJ"
+			  }
+			]",
+			]
+		`)
+	})
+
+	it('updates openlibrary.org thumbnail paths', async () => {
+		const exportVariableSpy = vi.spyOn(core, 'exportVariable')
+		const setFailedSpy = vi.spyOn(core, 'setFailed')
+
+		Object.defineProperty(github, 'context', {
+			value: {
+				payload: {
+					inputs: {
+						isbn: '9781101138182',
+						status: 'reading',
+					},
+				},
+			},
+		})
+
+		await read()
+
+		expect(setFailedSpy).not.toHaveBeenCalled()
+		expect(exportVariableSpy.mock.calls).toMatchInlineSnapshot(`
+			[
+			  [
+			    "BookTitle",
+			    "The Long Walk",
+			  ],
+			  [
+			    "BookThumbOutput",
+			    "book-9781101138182.png",
+			  ],
+			  [
+			    "BookThumb",
+			    "https://covers.openlibrary.org/b/id/6397695-L.jpg",
+			  ],
+			  [
+			    "BookStatus",
+			    "reading",
+			  ],
+			]
+		`)
+		expect(writeFile.mock.calls[0]).toMatchInlineSnapshot(`
+			[
+			  "my-library.json",
+			  "[
+			  {
+			    "isbn": "9781534431010",
+			    "title": "This Is How You Lose the Time War",
+			    "authors": [
+			      "Amal El-Mohtar",
+			      "Max Gladstone"
+			    ],
+			    "status": "reading",
+			    "thumbnail": "https://books.google.com/books/content?id=8EyBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+			    "link": "https://play.google.com/store/books/details?id=8EyBDwAAQBAJ"
+			  },
+			  {
+			    "isbn": "9781101138182",
+			    "title": "The Long Walk",
+			    "authors": [
+			      "Stephen King"
+			    ],
+			    "status": "reading",
+			    "thumbnail": "https://covers.openlibrary.org/b/id/6397695-L.jpg"
 			  }
 			]",
 			]
@@ -154,15 +221,15 @@ describe('action', () => {
 			  "my-library.json",
 			  "[
 			  {
-			    \\"isbn\\": \\"9781534431010\\",
-			    \\"title\\": \\"This Is How You Lose the Time War\\",
-			    \\"authors\\": [
-			      \\"Amal El-Mohtar\\",
-			      \\"Max Gladstone\\"
+			    "isbn": "9781534431010",
+			    "title": "This Is How You Lose the Time War",
+			    "authors": [
+			      "Amal El-Mohtar",
+			      "Max Gladstone"
 			    ],
-			    \\"status\\": \\"finished\\",
-			    \\"thumbnail\\": \\"https://books.google.com/books/content?id=8EyBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\",
-			    \\"link\\": \\"https://play.google.com/store/books/details?id=8EyBDwAAQBAJ\\"
+			    "status": "finished",
+			    "thumbnail": "https://books.google.com/books/content?id=8EyBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+			    "link": "https://play.google.com/store/books/details?id=8EyBDwAAQBAJ"
 			  }
 			]",
 			]
