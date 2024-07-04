@@ -39,7 +39,7 @@ export let data
 	<PageSection>
 		<div class="prose flex flex-col gap-10">
 			<Heading level={2}>Watching</Heading>
-			<p class="not-prose">
+			<p>
 				I make no claims about my taste in films. Expect this section to
 				update frequently in October thanks to the Hooptober Challenge.
 				Find me on <MentionLink site="letterboxd"
@@ -65,18 +65,21 @@ export let data
 	<PageSection>
 		<div class="prose flex flex-col gap-10">
 			<Heading level={2}>Reading</Heading>
-			<p class="not-prose">
-				Flipping through books has been much better for my mental health
-				than doomscrolling. I also still read to my kids regularly so
-				there’s likely to be some younger fare here, in addition to the
-				selection of sci-fi/fantasy stories I’m chewing through.
+			<p>
+				Flipping through ebooks has been much better for my mental
+				health than doomscrolling. I also still read to my kids
+				regularly so there’s likely to be some younger fare here, in
+				addition to the selection of sci-fi/fantasy stories I’m chewing
+				through.
 			</p>
 		</div>
-		<div class="mt-16 flex gap-4 lg:gap-8 xl:mt-[72px] xl:gap-12">
+		<div
+			class="mt-16 flex items-start gap-4 lg:gap-8 xl:mt-[72px] xl:gap-12"
+		>
 			{#each data.books as book}
 				<a
 					href={book.link}
-					class="flex-0 rounded-[1px] {FOCUS_OUTLINE} aspect-[0.6667] max-h-[342px] overflow-hidden"
+					class="max-w-[228px] flex-[25%] rounded-[1px] {FOCUS_OUTLINE}"
 				>
 					<img src={book.thumbnail} alt="" class="" />
 				</a>
