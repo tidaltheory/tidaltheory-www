@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-5011-4138-6",
-    "title": "The Dark Tower I",
-    "authors": [
-      "Stephen King"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=jbYACwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=jbYACwAAQBAJ"
-  },
-  {
     "isbn": "978-1-988964-42-3",
     "title": "No One Will Come Back For Us",
     "authors": [
@@ -37,5 +27,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=uX0szAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Lightfall_The_Girl_the_Galdurian.html?hl=&id=uX0szAEACAAJ"
+  },
+  {
+    "isbn": "9781781087862",
+    "title": "Beneath the Rising",
+    "authors": [
+      "Premee Mohamed"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=7veSxgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Beneath_the_Rising.html?hl=&id=7veSxgEACAAJ"
   }
 ]
