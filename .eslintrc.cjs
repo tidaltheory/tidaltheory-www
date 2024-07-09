@@ -1,3 +1,5 @@
+const path = require('node:path')
+
 /** @type {import('eslint').Linter.Config} */
 const config = {
 	root: true,
@@ -98,7 +100,7 @@ const config = {
 			files: ['*.ts', '*.tsx'],
 			extends: ['@zazen/eslint-config/typescript'],
 			parserOptions: {
-				project: './studio/tsconfig.json',
+				project: path.resolve('studio', 'tsconfig.json'),
 			},
 			rules: {
 				'import/extensions': ['off'],
