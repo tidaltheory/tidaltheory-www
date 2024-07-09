@@ -9,9 +9,7 @@ import TextLede from '$lib/components/text-lede.svelte'
 /** @type {import('./$types').PageData} */
 export let data
 
-$: ({ title, lede, content } = data)
-
-const projects = []
+$: ({ title, lede, content, projects } = data)
 </script>
 
 <svelte:head>
@@ -38,14 +36,16 @@ const projects = []
 		</div>
 	</PageSection>
 	<PageSection>
-		{#if projects.length > 0}
-			{#each projects as project}
-				<ProjectArticle {project} />
-			{/each}
-		{:else}
-			<div class="prose">
-				<p>No projects entered yet.</p>
-			</div>
-		{/if}
+		<div class="flex flex-col gap-16 md:gap-20">
+			{#if projects.length > 0}
+				{#each projects as project}
+					<ProjectArticle {project} />
+				{/each}
+			{:else}
+				<div class="prose">
+					<p>No projects entered yet.</p>
+				</div>
+			{/if}
+		</div>
 	</PageSection>
 </article>
