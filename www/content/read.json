@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-988964-42-3",
-    "title": "No One Will Come Back For Us",
-    "authors": [
-      "Premee Mohamed"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=QROEzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/No_One_Will_Come_Back_For_Us.html?hl=&id=QROEzwEACAAJ"
-  },
-  {
     "isbn": "9781101138182",
     "title": "The Long Walk",
     "authors": [
@@ -37,5 +27,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=7veSxgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Beneath_the_Rising.html?hl=&id=7veSxgEACAAJ"
+  },
+  {
+    "isbn": "9781534477582",
+    "title": "The Accidental Apprentice",
+    "authors": [
+      "Amanda Foody"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=dvvtDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=dvvtDwAAQBAJ"
   }
 ]
