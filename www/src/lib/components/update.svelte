@@ -14,7 +14,7 @@ const iconMap = {
 	'note-add': IconDocumentAdd,
 }
 
-/** @type {import('$lib/sanity/updates.js').Update} */
+/** @type {import('$lib/sanity/types.js').UpdateQueryResult[number]} */
 export let update
 
 $: ({ type, date, id, slug, title, count, excerpt, images } = update)
@@ -35,7 +35,7 @@ function handleCardPress(event) {
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-noninteractive-element-to-interactive-role -->
 <article
-	class="group relative grid grid-cols-[36px_1fr_auto] gap-2 rounded-[1px] font-sans salt {FOCUS_OUTLINE} outline-offset-8"
+	class="salt group relative grid grid-cols-[36px_1fr_auto] gap-2 rounded-[1px] font-sans {FOCUS_OUTLINE} outline-offset-8"
 	class:cursor-pointer={type !== 'note-add'}
 	class:focus-within:outline={type !== 'note-add'}
 	bind:this={card}
@@ -43,16 +43,16 @@ function handleCardPress(event) {
 	on:click={handleCardPress}
 >
 	<div
-		class="absolute -inset-2 -z-10 rounded-md bg-grey-700 bg-opacity-0 transition"
+		class="bg-grey-700 absolute -inset-2 -z-10 rounded-md bg-opacity-0 transition"
 		class:group-hover:bg-opacity-20={type !== 'note-add'}
 	/>
 	<div
-		class="flex h-9 w-9 items-center justify-center rounded-full bg-grey-700 text-white"
+		class="bg-grey-700 flex h-9 w-9 items-center justify-center rounded-full text-white"
 	>
 		<svelte:component this={iconMap[type]} />
 	</div>
 	<div class="py-3">
-		<p class="text-grey-400 text-base leading-trim">
+		<p class="text-grey-400 leading-trim text-base">
 			{#if type === 'gallery-add'}
 				Added a gallery of <a
 					class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] outline-none transition group-hover:decoration-white"
@@ -62,7 +62,7 @@ function handleCardPress(event) {
 			{:else if type === 'gallery-update'}
 				Added {count} images to the
 				<a
-					class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] outline-none transition group-hover:decoration-white"
+					class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] underline-offset-[calc(0.0781em_*_2)] outline-none transition group-hover:decoration-white"
 					bind:this={link}
 					href="/photos/{slug}/">{title}</a
 				> gallery
@@ -73,10 +73,10 @@ function handleCardPress(event) {
 			{/if}
 		</p>
 	</div>
-	<div class="flex h-9 items-center text-grey-400">
+	<div class="text-grey-400 flex h-9 items-center">
 		{#if type === 'note-add'}
 			<a
-				class="rounded-[1px] underline decoration-[transparent] decoration-[0.0781em] transition hover:decoration-[inherit] {FOCUS_OUTLINE}"
+				class="rounded-[1px] underline decoration-[transparent] decoration-[0.0781em] underline-offset-[calc(0.0781em_*_2)] transition hover:decoration-[inherit] {FOCUS_OUTLINE}"
 				bind:this={link}
 				href="/notes/{slug}/"
 			>
@@ -107,7 +107,7 @@ function handleCardPress(event) {
 			{:else if type === 'post-add'}
 				<div class="grid gap-6 py-2">
 					<h4
-						class="max-w-[45ch] uppercase font-display text-xl leading-trim md:text-2xl"
+						class="font-display leading-trim max-w-[45ch] text-xl uppercase md:text-2xl"
 					>
 						<a
 							class="outline-none"
@@ -118,12 +118,12 @@ function handleCardPress(event) {
 							{title}
 						</a>
 					</h4>
-					<p class="max-w-[65ch] text-grey-300 leading-trim salt">
+					<p class="text-grey-300 leading-trim salt max-w-[65ch]">
 						{excerpt}
 					</p>
 					<footer>
 						<span
-							class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] transition group-hover:decoration-white"
+							class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] underline-offset-[calc(0.0781em_*_2)] transition group-hover:decoration-white"
 							{id}
 						>
 							Read post <span aria-hidden>→</span>
@@ -133,7 +133,7 @@ function handleCardPress(event) {
 			{:else if type === 'note-add'}
 				<div class="grid gap-6 py-2">
 					<section
-						class="prose prose-invert max-w-[65ch] text-grey-300 leading-trim salt"
+						class="prose prose-invert text-grey-300 leading-trim salt max-w-[65ch]"
 					>
 						<PortableText value={excerpt} />
 					</section>

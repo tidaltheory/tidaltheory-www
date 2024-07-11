@@ -73,6 +73,7 @@ const config = {
 							'text-decoration': 'underline',
 							'text-decoration-color': 'transparent',
 							'text-decoration-thickness': '0.0781em',
+							'text-underline-offset': 'calc(0.0781em * 2)',
 							outline: '2px',
 							'outline-offset': '2px',
 							'outline-color': '#2cccff',
