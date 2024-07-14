@@ -1,14 +1,5 @@
 [
   {
-    "isbn": "9781101138182",
-    "title": "The Long Walk",
-    "authors": [
-      "Stephen King"
-    ],
-    "status": "finished",
-    "thumbnail": "https://covers.openlibrary.org/b/id/6397695-L.jpg"
-  },
-  {
     "isbn": "9780062990464",
     "title": "Lightfall: The Girl & the Galdurian",
     "authors": [
@@ -37,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=dvvtDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=dvvtDwAAQBAJ"
+  },
+  {
+    "isbn": "9780062990488",
+    "title": "Lightfall: Shadow of the Bird",
+    "authors": [
+      "Tim Probert"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=xaOKzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Lightfall_Shadow_of_the_Bird.html?hl=&id=xaOKzgEACAAJ"
   }
 ]
