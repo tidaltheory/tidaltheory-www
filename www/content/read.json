@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9780062990464",
-    "title": "Lightfall: The Girl & the Galdurian",
-    "authors": [
-      "Tim Probert"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=uX0szAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/Lightfall_The_Girl_the_Galdurian.html?hl=&id=uX0szAEACAAJ"
-  },
-  {
     "isbn": "9781781087862",
     "title": "Beneath the Rising",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=xaOKzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Lightfall_Shadow_of_the_Bird.html?hl=&id=xaOKzgEACAAJ"
+  },
+  {
+    "isbn": "9781534477605",
+    "title": "The Weeping Tide",
+    "authors": [
+      "Amanda Foody"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=qiGlEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/The_Weeping_Tide.html?hl=&id=qiGlEAAAQBAJ"
   }
 ]
