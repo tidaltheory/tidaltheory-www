@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9780062990488",
-    "title": "Lightfall: Shadow of the Bird",
-    "authors": [
-      "Tim Probert"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=xaOKzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/Lightfall_Shadow_of_the_Bird.html?hl=&id=xaOKzgEACAAJ"
-  },
-  {
     "isbn": "9781534477605",
     "title": "The Weeping Tide",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=XVwOEeHTU4QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=XVwOEeHTU4QC"
+  },
+  {
+    "isbn": "9780063080904",
+    "title": "Lightfall: the Dark Times",
+    "authors": [
+      "Tim Probert"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=mtoM0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Lightfall_the_Dark_Times.html?hl=&id=mtoM0AEACAAJ"
   }
 ]
