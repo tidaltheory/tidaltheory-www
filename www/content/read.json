@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-0-316-13467-5",
-    "title": "Leviathan Wakes",
-    "authors": [
-      "James S. A. Corey"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=yud-foXqGUEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=yud-foXqGUEC"
-  },
-  {
     "isbn": "978-1-4299-1471-0",
     "title": "Old Man's War",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=HMd0EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=HMd0EAAAQBAJ"
+  },
+  {
+    "isbn": "9781786183316",
+    "title": "A Broken Darkness",
+    "authors": [
+      "Premee Mohamed"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=PEUUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=PEUUEAAAQBAJ"
   }
 ]
