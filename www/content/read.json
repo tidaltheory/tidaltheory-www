@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-4299-1471-0",
-    "title": "Old Man's War",
-    "authors": [
-      "John Scalzi"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=XVwOEeHTU4QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=XVwOEeHTU4QC"
-  },
-  {
     "isbn": "9780063080904",
     "title": "Lightfall: the Dark Times",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=PEUUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=PEUUEAAAQBAJ"
+  },
+  {
+    "isbn": "978-1-78618-522-8",
+    "title": "The Void Ascendant",
+    "authors": [
+      "Premee Mohamed"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=kMpcEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=kMpcEAAAQBAJ"
   }
 ]
