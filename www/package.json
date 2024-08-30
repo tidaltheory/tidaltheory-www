@@ -14,14 +14,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@floating-ui/dom": "1.5.3",
-    "@sanity/client": "6.10.0",
+    "@floating-ui/dom": "1.6.10",
+    "@sanity/client": "6.21.3",
     "@sanity/image-url": "1.0.2",
-    "date-fns": "3.0.6",
-    "groq": "3.23.4",
+    "date-fns": "3.6.0",
+    "groq": "3.56.0",
     "rss-parser": "3.13.0",
     "rss-to-json": "2.1.1",
-    "svelte-floating-ui": "1.5.8"
+    "svelte-floating-ui": "1.5.9"
   },
   "devDependencies": {
     "@portabletext/svelte": "2.1.5",
