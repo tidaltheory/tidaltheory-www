@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781786183316",
-    "title": "A Broken Darkness",
-    "authors": [
-      "Premee Mohamed"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=PEUUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=PEUUEAAAQBAJ"
-  },
-  {
     "isbn": "978-1-78618-522-8",
     "title": "The Void Ascendant",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=2BVf7r8D3s0C&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/I_Shall_Wear_Midnight.html?hl=&id=2BVf7r8D3s0C"
+  },
+  {
+    "isbn": "9780316202275",
+    "title": "Caliban's War",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=tXGRBgwxAHIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=tXGRBgwxAHIC"
   }
 ]
