@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781665910774",
-    "title": "The Ever Storms",
-    "authors": [
-      "Amanda Foody"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=HMd0EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=HMd0EAAAQBAJ"
-  },
-  {
     "isbn": "9781786183316",
     "title": "A Broken Darkness",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=oTgvJWFmjOoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=oTgvJWFmjOoC"
+  },
+  {
+    "isbn": "9781409096306",
+    "title": "I Shall Wear Midnight",
+    "authors": [
+      "Terry Pratchett"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=2BVf7r8D3s0C&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/I_Shall_Wear_Midnight.html?hl=&id=2BVf7r8D3s0C"
   }
 ]
