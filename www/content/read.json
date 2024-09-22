@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-78618-522-8",
-    "title": "The Void Ascendant",
-    "authors": [
-      "Premee Mohamed"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=kMpcEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=kMpcEAAAQBAJ"
-  },
-  {
     "isbn": "9781440631979",
     "title": "God Emperor of Dune",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=tXGRBgwxAHIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=tXGRBgwxAHIC"
+  },
+  {
+    "isbn": "978-0-7653-1502-1",
+    "title": "The Ghost Brigades",
+    "authors": [
+      "John Scalzi"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=9Hep2VG8qBIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/The_Ghost_Brigades.html?hl=&id=9Hep2VG8qBIC"
   }
 ]
