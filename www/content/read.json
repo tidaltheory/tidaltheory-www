@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781440631979",
-    "title": "God Emperor of Dune",
-    "authors": [
-      "Frank Herbert"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=oTgvJWFmjOoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=oTgvJWFmjOoC"
-  },
-  {
     "isbn": "9781409096306",
     "title": "I Shall Wear Midnight",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=9Hep2VG8qBIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/The_Ghost_Brigades.html?hl=&id=9Hep2VG8qBIC"
+  },
+  {
+    "isbn": "9781497692350",
+    "title": "The Forever War",
+    "authors": [
+      "Joe Haldeman"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=SUFOBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=SUFOBQAAQBAJ"
   }
 ]
