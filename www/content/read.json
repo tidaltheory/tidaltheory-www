@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781409096306",
-    "title": "I Shall Wear Midnight",
-    "authors": [
-      "Terry Pratchett"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=2BVf7r8D3s0C&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/I_Shall_Wear_Midnight.html?hl=&id=2BVf7r8D3s0C"
-  },
-  {
     "isbn": "9780316202275",
     "title": "Caliban's War",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=SUFOBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=SUFOBQAAQBAJ"
+  },
+  {
+    "isbn": "9781250306302",
+    "title": "Alien: Echo",
+    "authors": [
+      "Mira Grant"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=ek9kDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Alien_Echo.html?hl=&id=ek9kDwAAQBAJ"
   }
 ]
