@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9780316202275",
-    "title": "Caliban's War",
-    "authors": [
-      "James S. A. Corey"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=tXGRBgwxAHIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=tXGRBgwxAHIC"
-  },
-  {
     "isbn": "978-0-7653-1502-1",
     "title": "The Ghost Brigades",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=ek9kDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Alien_Echo.html?hl=&id=ek9kDwAAQBAJ"
+  },
+  {
+    "isbn": "978-1-4299-4806-7",
+    "title": "Echopraxia",
+    "authors": [
+      "Peter Watts"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=fOluAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=fOluAwAAQBAJ"
   }
 ]
