@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-0-7653-1502-1",
-    "title": "The Ghost Brigades",
-    "authors": [
-      "John Scalzi"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=9Hep2VG8qBIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/The_Ghost_Brigades.html?hl=&id=9Hep2VG8qBIC"
-  },
-  {
     "isbn": "9781497692350",
     "title": "The Forever War",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=fOluAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=fOluAwAAQBAJ"
+  },
+  {
+    "isbn": "978-1-5011-4139-3",
+    "title": "The Dark Tower II",
+    "authors": [
+      "Stephen King"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=trcACwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=trcACwAAQBAJ"
   }
 ]
