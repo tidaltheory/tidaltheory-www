@@ -67,6 +67,10 @@ onMount(() => {
 		opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1),
 		transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 	transition-delay: var(--delay, 0);
+
+	@starting-style {
+		opacity: 0;
+	}
 }
 
 .line-hidden {
