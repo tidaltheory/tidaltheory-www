@@ -11,7 +11,7 @@ $: ({ notes } = data)
 </script>
 
 <svelte:head>
-	<title>Writing — Tidal Theory</title>
+	<title>Notes — Tidal Theory</title>
 	<meta name="twitter:card" content="summary" />
 	<meta property="og:title" content="Notes — Tidal Theory" />
 </svelte:head>
