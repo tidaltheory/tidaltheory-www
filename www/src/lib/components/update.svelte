@@ -55,7 +55,7 @@ function handleCardPress(event) {
 		<p class="text-grey-400 leading-trim text-base">
 			{#if type === 'gallery-add'}
 				Added a gallery of <a
-					class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] outline-none transition group-hover:decoration-white"
+					class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] underline-offset-[calc(0.0781em_*_2)] outline-none transition group-hover:decoration-white"
 					bind:this={link}
 					href="/photos/{slug}/">{title}</a
 				> images
