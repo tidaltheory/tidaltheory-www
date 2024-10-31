@@ -1,4 +1,5 @@
 <script>
+import FaviconGithub from './icons/favicon-github.svelte'
 import Heading from './heading.svelte'
 import MentionLink from './mention-link.svelte'
 import PortableText from './portable-text.svelte'
@@ -19,7 +20,9 @@ export let project
 				<MentionLink href={project.post}>Read blog post</MentionLink>
 			{/if}
 			{#if project.repo}
-				<MentionLink href={project.repo}>View code</MentionLink>
+				<MentionLink href={project.repo} logo={FaviconGithub}
+					>View code</MentionLink
+				>
 			{/if}
 		</div>
 		<div class="prose prose-invert max-w-lg flex-auto lg:flex-1">

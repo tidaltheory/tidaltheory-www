@@ -1,6 +1,9 @@
 <script>
 import { FOCUS_OUTLINE } from '$lib/classnames'
 
+import FaviconGibson from './icons/favicon-gibson.svelte'
+import FaviconPolychroma from './icons/favicon-polychroma.svelte'
+import FaviconTypeset from './icons/favicon-typeset.svelte'
 import LogoClari from './logo-clari.svelte'
 import LogoLift from './logo-lift.svelte'
 import LogoShowbie from './logo-showbie.svelte'
@@ -34,12 +37,19 @@ const SITES = {
 
 /** @type {keyof typeof SITES} */
 export let site = undefined
+/** @type {string} */
 export let href = undefined
 export let logo = undefined
 
 if (site) {
 	href = SITES[site].href
 	logo = SITES[site].logo
+}
+
+if (!logo) {
+	if (href.includes('typeset')) logo = FaviconTypeset
+	if (href.includes('gibsonipsum')) logo = FaviconGibson
+	if (href.includes('polychroma')) logo = FaviconPolychroma
 }
 </script>
 

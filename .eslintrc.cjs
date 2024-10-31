@@ -93,6 +93,7 @@ const config = {
 				'import/no-mutable-exports': 'off',
 
 				'svelte/no-at-html-tags': 'off',
+				'svelte/no-dupe-style-properties': 'warn',
 			},
 		},
 		{ files: ['*.cjs'], env: { node: true } },
