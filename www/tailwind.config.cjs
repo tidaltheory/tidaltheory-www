@@ -69,6 +69,10 @@ const config = {
 							'max-width': '65ch',
 						},
 
+						p: {
+							'text-wrap': 'pretty',
+						},
+
 						a: {
 							'text-decoration': 'underline',
 							'text-decoration-color': 'transparent',
