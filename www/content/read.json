@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781250306302",
-    "title": "Alien: Echo",
-    "authors": [
-      "Mira Grant"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=ek9kDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/Alien_Echo.html?hl=&id=ek9kDwAAQBAJ"
-  },
-  {
     "isbn": "978-1-4299-4806-7",
     "title": "Echopraxia",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=R0Aw51Xmci4C&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Mort.html?hl=&id=R0Aw51Xmci4C"
+  },
+  {
+    "isbn": "9781407034775",
+    "title": "Reaper Man",
+    "authors": [
+      "Terry Pratchett"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=QfVWlm_LkLUC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Reaper_Man.html?hl=&id=QfVWlm_LkLUC"
   }
 ]
