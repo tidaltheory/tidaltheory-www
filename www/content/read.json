@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-4299-4806-7",
-    "title": "Echopraxia",
-    "authors": [
-      "Peter Watts"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=fOluAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=fOluAwAAQBAJ"
-  },
-  {
     "isbn": "978-1-5011-4139-3",
     "title": "The Dark Tower II",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=QfVWlm_LkLUC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Reaper_Man.html?hl=&id=QfVWlm_LkLUC"
+  },
+  {
+    "isbn": "9781101665398",
+    "title": "The Left Hand of Darkness",
+    "authors": [
+      "Ursula K. Le Guin"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=zhERCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=zhERCgAAQBAJ"
   }
 ]
