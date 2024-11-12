@@ -53,32 +53,31 @@ onMount(() => {
 
 <svelte:element
 	this={heading}
-	class="font-display leading-trim text-balance font-bold uppercase leading-none {styleClass} m-0 text-white empty:hidden"
-	class:line-hidden={!show}
+	class="heading font-display leading-trim text-balance font-bold uppercase leading-none {styleClass} m-0 text-white empty:hidden"
+	style:opacity={show ? 1 : 0}
 >
-	<span class="line inline-block will-change-transform" bind:this={element}>
+	<span bind:this={element}>
 		<slot />
 	</span>
 </svelte:element>
 
 <style>
+.heading {
+	opacity: 0;
+
+	&:has(.line) {
+		opacity: 1;
+	}
+}
+
 :global(.line) {
-	transition:
-		opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1),
-		transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition-property: opacity, transform;
 	transition-delay: var(--delay, 0);
 
 	@starting-style {
 		opacity: 0;
+		transform: rotateX(75deg) rotateY(10deg) rotateZ(-9deg);
 	}
-}
-
-.line-hidden {
-	opacity: 0;
-}
-
-.line-hidden :global(.line) {
-	opacity: 0;
-	transform: rotateX(75deg) rotateY(10deg) rotateZ(-9deg);
 }
 </style>
