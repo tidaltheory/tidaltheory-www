@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-5011-4139-3",
-    "title": "The Dark Tower II",
-    "authors": [
-      "Stephen King"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=trcACwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=trcACwAAQBAJ"
-  },
-  {
     "isbn": "978-1-407-03450-8",
     "title": "Mort",
     "authors": [
@@ -38,5 +28,14 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=zhERCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=zhERCgAAQBAJ"
+  },
+  {
+    "isbn": "9781481983556",
+    "title": "Shift",
+    "authors": [
+      "Hugh Howey"
+    ],
+    "status": "finished",
+    "thumbnail": "https://covers.openlibrary.org/b/id/8369890-S.jpg"
   }
 ]
