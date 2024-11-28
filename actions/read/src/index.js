@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises'
 
 import { exportVariable, getInput, setFailed } from '@actions/core'
 import * as github from '@actions/github'
-import isbn from 'node-isbn'
+import Isbn from '@library-pals/isbn'
 
 import { checkBook } from './check-book.js'
 
@@ -39,7 +39,7 @@ export async function read() {
 		/** @type {Array<string>} */
 		let providers = getInput('providers')
 			? getInput('providers').split(',')
-			: isbn._providers
+			: new Isbn()._providers
 		let thumbnailWidth = getInput('thumbnail-width')
 			? Number.parseInt(getInput('thumbnail-width'), 10)
 			: undefined
@@ -71,14 +71,15 @@ export async function read() {
 				return book
 			})
 		} else {
-			let newBook = await isbn
-				.provider(providers)
-				.resolve(bookIsbn)
-				.catch((error) => {
-					throw new Error(
-						`Book (${bookIsbn}) not found. ${error.message}`,
-					)
-				})
+			let newBook
+
+			try {
+				newBook = await Isbn.provider(providers).resolve(bookIsbn)
+			} catch (error) {
+				throw new Error(
+					`Book (${bookIsbn}) not found. ${error.message}`,
+				)
+			}
 
 			newBook = checkBook(newBook, {
 				bookIsbn,
