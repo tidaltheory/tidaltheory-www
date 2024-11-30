@@ -23,7 +23,6 @@ let thumb
 	class="flex w-full rounded-[1px] transition {FOCUS_OUTLINE}"
 	type="button"
 	class:opacity-50={isHidden}
-	style:aspect-ratio={aspectRatio}
 	on:click={onClick}
 >
 	<ObserveIntersection once element={thumb} threshold={0.45} let:intersecting>
@@ -32,6 +31,7 @@ let thumb
 			class:opacity-0={!intersecting}
 			class:translate-y-6={!intersecting}
 			class:delay-75={isDelayed}
+			style:aspect-ratio={aspectRatio}
 			bind:this={thumb}
 		>
 			<img

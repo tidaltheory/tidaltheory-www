@@ -22,6 +22,7 @@ let masonryElement
 
 export const refreshLayout = async () => {
 	/* Get the post relayout number of columns */
+	console.log('COLS', getComputedStyle(grid._el).gridTemplateColumns)
 	let ncol = getComputedStyle(grid._el).gridTemplateColumns.split(' ').length
 	let gap = Number.parseFloat(getComputedStyle(grid._el).gap)
 
@@ -69,7 +70,7 @@ const calcGrid = async (element) => {
 			_el: element,
 			gap: Number.parseFloat(getComputedStyle(element).gap),
 			// @ts-ignore
-			items: [...element.children].filter(
+			items: [...element.childNodes].filter(
 				(c) =>
 					c.nodeType === 1 &&
 					Number(getComputedStyle(c).gridColumnEnd) !== -1,
@@ -105,10 +106,7 @@ $: if (items) {
 }
 </script>
 
-<div
-	bind:this={masonryElement}
-	class="masonry-grid grid place-items-center {gapClass}"
->
+<div bind:this={masonryElement} class="masonry-grid grid {gapClass}">
 	<slot />
 </div>
 
@@ -116,8 +114,6 @@ $: if (items) {
 .masonry-grid {
 	grid: 1fr auto / repeat(2, 1fr);
 	grid: masonry / repeat(2, 1fr);
-}
-.masonry-grid > :global(*) {
-	align-self: start;
+	align-items: start;
 }
 </style>
