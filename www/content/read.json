@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781101665398",
-    "title": "The Left Hand of Darkness",
-    "authors": [
-      "Ursula K. Le Guin"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=zhERCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=zhERCgAAQBAJ"
-  },
-  {
     "isbn": "9781481983556",
     "title": "Shift",
     "authors": [
@@ -37,5 +27,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=fL8kbfvGhtcC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Abaddon_s_Gate.html?hl=&id=fL8kbfvGhtcC"
+  },
+  {
+    "isbn": "9780440001362",
+    "title": "The Moon Is a Harsh Mistress",
+    "authors": [
+      "Robert A. Heinlein"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=PYtZDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=PYtZDwAAQBAJ"
   }
 ]
