@@ -1,5 +1,6 @@
 <script>
 import { FOCUS_OUTLINE } from '$lib/classnames'
+import Badge from '$lib/components/f-badge.svelte'
 import Blurhash from '$lib/components/helpers/blurhash.svelte'
 //
 // import Lqip from '$lib/components/helpers/lqip.svelte'
@@ -83,15 +84,7 @@ function load(element) {
 					{fullTitle}
 				</h4>
 				{#if count}
-					<div
-						class="bg-grey-700 relative top-[0.0625rem] rounded bg-opacity-40 px-[6px] py-1 lg:px-2 lg:py-[6px]"
-					>
-						<span
-							class="text-grey-200 leading-trim salt block text-sm lg:text-lg"
-						>
-							{count}
-						</span>
-					</div>
+					<Badge>{count}</Badge>
 				{/if}
 			</div>
 		</a>
