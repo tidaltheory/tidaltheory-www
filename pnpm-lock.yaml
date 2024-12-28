@@ -109,6 +109,9 @@ importers:
       '@types/styled-components':
         specifier: 5.1.34
         version: 5.1.34
+      exifreader:
+        specifier: 4.26.0
+        version: 4.26.0
       globby:
         specifier: 14.0.0
         version: 14.0.0
@@ -118,9 +121,6 @@ importers:
       sharp:
         specifier: 0.33.1
         version: 0.33.1
-      ts-node-iptc:
-        specifier: 1.0.11
-        version: 1.0.11
 
   www:
     dependencies:
@@ -5239,6 +5239,13 @@ packages:
       pretty-format: 29.7.0
     dev: true
 
+  /@xmldom/xmldom@0.9.6:
+    resolution: {integrity: sha512-Su4xcxR0CPGwlDHNmVP09fqET9YxbyDXHaSob6JlBH7L6reTYaeim6zbk9o08UarO0L5GTRo3uzl0D+9lSxmvw==}
+    engines: {node: '>=14.6'}
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /@zazen/eslint-config@6.7.0(eslint@8.56.0)(prettier@3.3.2)(typescript@5.3.3):
     resolution: {integrity: sha512-P4LgtTiQZxleEBV0n1gcJtr4rVhHFi+ect5fTgl9zGDOw0VHYaB11Qnl4BsTiSPBr3hEx5XoWrbMkvggGs5NZQ==}
     engines: {node: '>=18'}
@@ -6186,7 +6193,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: false
-    bundledDependencies: false
 
   /crelt@1.0.6:
     resolution: {integrity: sha512-VQ2MBenTq1fWZUH9DJNGti7kKv6EeAuYr3cLwxUWhIu1baTaXh4Ib5W2CqHVqib4/MqbYGJqiL3Zb8GJZr3l4g==}
@@ -7347,6 +7353,13 @@ packages:
   /exif-component@1.0.1:
     resolution: {integrity: sha512-FXnmK9yJYTa3V3G7DE9BRjUJ0pwXMICAxfbsAuKPTuSlFzMZhQbcvvwx0I8ofNJHxz3tfjze+whxcGpfklAWOQ==}
     dev: false
+
+  /exifreader@4.26.0:
+    resolution: {integrity: sha512-nNN9B0oaXTOpArdnIdJBAro2Sa620m7wMjMA5Xy1rcua0EYHVjzGKM5syBOWDqIG2Qay6Pes/5FOdj65hvZ9Vw==}
+    requiresBuild: true
+    optionalDependencies:
+      '@xmldom/xmldom': 0.9.6
+    dev: true
 
   /extend@3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
@@ -12137,10 +12150,6 @@ packages:
 
   /ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
-    dev: true
-
-  /ts-node-iptc@1.0.11:
-    resolution: {integrity: sha512-6f10Fae8EjQwEOY4OuIDEiRVZfwVnnWq9ipb7B7UB71diTEz4lgH8R5vAvRt4B9G15K3/Q/8XdA0OX4vC27Fxg==}
     dev: true
 
   /tsconfig-paths@3.15.0:

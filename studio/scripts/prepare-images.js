@@ -2,10 +2,10 @@ import { existsSync } from 'node:fs'
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 
+import ExifReader from 'exifreader'
 import { globby } from 'globby'
 import { nanoid } from 'nanoid'
 import sharp from 'sharp'
-import { IptcParser } from 'ts-node-iptc'
 
 const IMPORT_DIR = path.resolve('imports')
 const SOURCE_IMAGES = await globby(path.posix.join(IMPORT_DIR, '*.jpg'))
@@ -14,11 +14,12 @@ let entries = []
 
 for await (let source of SOURCE_IMAGES) {
 	let sharpImage = sharp(source)
-	let { iptc } = await sharpImage.metadata()
-	let iptcData = iptc ? IptcParser.readIPTCData(iptc) : undefined
+	// eslint-disable-next-line import/no-named-as-default-member
+	let tags = await ExifReader.load(source)
 	let metadata = {
-		title: iptcData?.object_name,
-		caption: iptcData?.caption,
+		title: JSON.stringify(tags?.title.description),
+		caption: JSON.stringify(tags?.description.description),
+		alt: JSON.stringify(tags?.AltTextAccessibility.description),
 	}
 
 	let { dir, name, ext } = path.parse(source)

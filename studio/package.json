@@ -31,9 +31,9 @@
     "@types/node": "20.10.6",
     "@types/react": "18.3.3",
     "@types/styled-components": "5.1.34",
+    "exifreader": "4.26.0",
     "globby": "14.0.0",
     "nanoid": "5.0.4",
-    "sharp": "0.33.1",
-    "ts-node-iptc": "1.0.11"
+    "sharp": "0.33.1"
   }
 }
