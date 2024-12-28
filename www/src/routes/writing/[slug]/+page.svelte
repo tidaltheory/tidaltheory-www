@@ -28,13 +28,12 @@ $: ({ title, lede, ledeClean, coverImage, content, createdAt } = data)
 <article>
 	<PageIntro>
 		{title}
-		<div
-			slot="intro"
-			class="grid gap-6 md:gap-10 xl:gap-12"
-			let:intersecting
-		>
+		<div slot="intro" class="grid gap-5 md:gap-6" let:intersecting>
 			<FadeUp showing={intersecting} delay={100}>
-				<time datetime={data._createdAt}>{createdAt}</time>
+				<time
+					class="text-grey-400 leading-trim salt text-base font-medium md:text-lg"
+					datetime={data._createdAt}>{createdAt}</time
+				>
 			</FadeUp>
 			<FadeUp showing={intersecting} delay={175}>
 				<TextLede><PortableText value={lede} /></TextLede>

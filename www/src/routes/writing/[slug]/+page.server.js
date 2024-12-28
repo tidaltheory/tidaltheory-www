@@ -23,6 +23,6 @@ export const load = async ({ params }) => {
 
 	return {
 		...post,
-		createdAt: format(new Date(post._createdAt), 'dd MMMM yyyy, h:mm aaa'),
+		createdAt: format(new Date(post._createdAt), 'dd MMMM yyyy'),
 	}
 }
