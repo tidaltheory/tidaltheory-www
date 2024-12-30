@@ -1,3 +1,4 @@
+import { ImageIcon } from '@sanity/icons'
 import { defineArrayMember, defineField, defineType } from 'sanity'
 
 import { removeStopwords } from '../utils/remove-stopwords'
@@ -35,13 +36,28 @@ export default defineType({
 				defineArrayMember({ type: 'block', marks: { decorators } }),
 				defineArrayMember({
 					type: 'image',
+					icon: ImageIcon,
 					options: {
 						storeOriginalFilename: true,
 						metadata: ['blurhash', 'lqip', 'palette', 'exif'],
 						hotspot: true,
 					},
+					fields: [
+						defineField({
+							name: 'caption',
+							title: 'Caption',
+							type: 'string',
+						}),
+						defineField({
+							name: 'alt',
+							title: 'Alt description',
+							type: 'text',
+							validation: (Rule) => Rule.required(),
+						}),
+					],
 				}),
 				defineArrayMember({ type: 'code' }),
+				defineArrayMember({ type: 'codepen' }),
 				defineArrayMember({ type: 'blockquote' }),
 				defineArrayMember({ type: 'aside' }),
 			],

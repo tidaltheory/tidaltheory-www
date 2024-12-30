@@ -5,6 +5,7 @@ import AsideBlock from './sanity/aside-block.svelte'
 import BlockquoteBlock from './sanity/blockquote-block.svelte'
 import CiteMark from './sanity/cite-mark.svelte'
 import CodeBlock from './sanity/code-block.svelte'
+import CodePenBlock from './sanity/codepen-block.svelte'
 import HashtagMark from './sanity/hashtag-mark.svelte'
 import ImageBlock from './sanity/image-block.svelte'
 
@@ -17,6 +18,7 @@ const components = {
 		blockquote: BlockquoteBlock,
 		code: CodeBlock,
 		image: ImageBlock,
+		codepen: CodePenBlock,
 	},
 	marks: {
 		cite: CiteMark,

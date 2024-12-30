@@ -1,5 +1,5 @@
 import { codeInput } from '@sanity/code-input'
-import { BlockquoteIcon } from '@sanity/icons'
+import { BlockquoteIcon, TiersIcon } from '@sanity/icons'
 import { visionTool } from '@sanity/vision'
 import {
 	defineConfig,
@@ -69,6 +69,25 @@ const config = defineConfig({
 					defineField({
 						name: 'content',
 						title: 'Content',
+						type: 'array',
+						of: [inlineOnlyBlock],
+					}),
+				],
+			}),
+			defineType({
+				name: 'codepen',
+				title: 'CodePen',
+				type: 'object',
+				icon: TiersIcon,
+				fields: [
+					defineField({
+						name: 'url',
+						title: 'CodePen URL',
+						type: 'url',
+					}),
+					defineField({
+						name: 'caption',
+						title: 'Caption',
 						type: 'array',
 						of: [inlineOnlyBlock],
 					}),
