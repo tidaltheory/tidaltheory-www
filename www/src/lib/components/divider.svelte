@@ -4,7 +4,9 @@ export let vertical = false
 
 <div class="relative">
 	<div
-		class="absolute bg-grey-700 {vertical ? 'h-full w-px' : 'h-px w-full'}"
+		class="bg-grey-800 absolute mix-blend-screen {vertical
+			? 'h-full w-px'
+			: 'h-px w-full'}"
 		role="separator"
 		aria-orientation={vertical ? 'vertical' : 'horizontal'}
 	/>
