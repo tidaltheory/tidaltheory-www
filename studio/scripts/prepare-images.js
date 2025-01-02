@@ -12,14 +12,19 @@ const SOURCE_IMAGES = await globby(path.posix.join(IMPORT_DIR, '*.jpg'))
 
 let entries = []
 
+function normalizeString(string) {
+	if (!string) return undefined
+	return JSON.parse(JSON.stringify(string))
+}
+
 for await (let source of SOURCE_IMAGES) {
 	let sharpImage = sharp(source)
 	// eslint-disable-next-line import/no-named-as-default-member
 	let tags = await ExifReader.load(source)
 	let metadata = {
-		title: JSON.stringify(tags?.title.description),
-		caption: JSON.stringify(tags?.description.description),
-		alt: JSON.stringify(tags?.AltTextAccessibility.description),
+		title: normalizeString(tags?.title?.description),
+		caption: normalizeString(tags?.description?.description),
+		alt: normalizeString(tags?.AltTextAccessibility?.description),
 	}
 
 	let { dir, name, ext } = path.parse(source)
