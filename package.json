@@ -36,10 +36,9 @@
   },
   "devDependencies": {
     "@zazen/eslint-config": "6.7.0",
-    "@zazen/prettier-config": "1.1.0",
-    "@zazen/stylelint-config": "4.0.0",
+    "@zazen/prettier-config": "1.1.1",
+    "@zazen/stylelint-config": "4.0.1",
     "eslint": "8.56.0",
-    "eslint-plugin-import-sorting": "1.0.3",
     "eslint-plugin-svelte": "2.35.1",
     "husky": "8.0.3",
     "lint-staged": "15.2.0",
@@ -47,7 +46,7 @@
     "prettier-plugin-packagejson": "2.5.0",
     "prettier-plugin-svelte": "3.2.4",
     "prettier-plugin-tailwindcss": "0.6.5",
-    "stylelint": "16.6.1",
+    "stylelint": "16.12.0",
     "typescript": "5.3.3"
   },
   "packageManager": "pnpm@8.13.1",
