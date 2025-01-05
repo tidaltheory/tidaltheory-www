@@ -6,6 +6,8 @@ const config = {
 			true,
 			{ ignoreAtRules: ['tailwind', 'screen', 'layer'] },
 		],
+
+		'declaration-property-value-no-unknown': [null],
 	},
 }
 

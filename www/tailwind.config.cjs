@@ -35,6 +35,7 @@ const config = {
 			display: 'Antenna, sans-serif',
 			sans: 'Inter, sans-serif',
 			serif: 'Newsreader, Signifier, Times, serif',
+			code: 'MonoLisa, ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace',
 		},
 		fontMetrics: {
 			display: {
@@ -57,7 +58,7 @@ const config = {
 				DEFAULT: {
 					css: {
 						'--tw-prose-links': theme('colors.white'),
-						'--tw-prose-code': theme('colors.white'),
+						'--tw-prose-code': theme('colors.grey.100'),
 						'--tw-prose-quotes': theme('colors.white'),
 						'--tw-prose-captions': theme('colors.grey.500'),
 						'--tw-prose-invert-body': theme('colors.grey.300'),
@@ -75,18 +76,23 @@ const config = {
 
 						a: {
 							'text-decoration': 'underline',
-							'text-decoration-color': 'transparent',
-							'text-decoration-thickness': '0.0781em',
-							'text-underline-offset': 'calc(0.0781em * 2)',
+							'text-decoration-color': theme('colors.cyan.700'),
+							'text-decoration-skip-ink': 'none',
+							'text-decoration-thickness': '0.75ex',
+							'text-underline-offset': 'calc(-0.75ex + calc(0.0781em * 2))',
 							outline: '2px',
 							'outline-offset': '2px',
-							'outline-color': '#2cccff',
+							'outline-color': theme('colors.cyan.500'),
 							'border-radius': '1px',
-							transition:
-								'text-decoration-color 150ms cubic-bezier(0.4, 0, 0.2, 1)',
+							transition: '150ms cubic-bezier(0.4, 0, 0.2, 1)',
+							'transition-property': 'text-decoration-color, text-decoration-skip-ink, text-decoration-thickness, text-underline-offset',
+							'transition-behavior': 'allow-discrete',
 						},
 						'a:hover': {
 							'text-decoration-color': 'inherit',
+							'text-decoration-skip-ink': 'all',
+							'text-decoration-thickness': '0.0781em',
+							'text-underline-offset': 'calc(0.0781em * 2)',
 						},
 						'a:focus-visible': {
 							'outline-style': 'solid',
@@ -108,6 +114,11 @@ const config = {
 							'background-color': `${theme('colors.grey.900')}77`,
 						},
 
+						code: {
+							fontFamily: theme('fontFamily.code'),
+							fontSize: '0.9375em',
+							fontWeight: theme('fontWeight.medium'),
+						},
 						'code::before': {
 							content: 'none',
 						},
@@ -154,6 +165,13 @@ const config = {
 						},
 					},
 				},
+				sm: {
+					css: {
+						code: {
+							fontSize: '0.9375em'
+						}
+					}
+				}
 			}),
 			spacing: {
 				15: '3.75rem',

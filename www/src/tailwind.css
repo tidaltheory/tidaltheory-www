@@ -3,6 +3,26 @@
 @tailwind utilities;
 
 @layer base {
+	a {
+		text-decoration-color: transparent;
+		border-radius: 1px;
+
+		/**
+		 * @todo Change colour value to custom property.
+		 */
+		&:focus-visible {
+			outline: oklch(78.2% 0.177 219.6deg) solid 2px;
+			outline-offset: 2px;
+			box-decoration-break: clone;
+		}
+
+		@media (hover: hover) {
+			&:hover {
+				text-decoration-color: inherit;
+			}
+		}
+	}
+
 	@font-face {
 		font-family: Antenna;
 		font-style: normal;
@@ -21,16 +41,6 @@
 		font-display: swap;
 	}
 
-	@font-face {
-		font-family: Inter;
-		font-style: italic;
-		font-weight: 100 900;
-		/* stylelint-disable-next-line property-no-unknown */
-		font-named-instance: "Italic";
-		src: url("/fonts/inter-italic.var.woff2?v=3.19") format("woff2");
-		font-display: swap;
-	}
-
 	/**
 	 * 1. Manually eyballed these numbers to balance with Inter.
 	 */
@@ -45,6 +55,22 @@
 		size-adjust: 112%; /* [1] */
 		ascent-override: 87%; /* [1] */
 		descent-override: 22%; /* [1] */
+	}
+
+	@font-face {
+		font-family: MonoLisa;
+		font-style: normal;
+		font-weight: 400;
+		src: url("/fonts/monolisa.woff2") format("woff2");
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: MonoLisa;
+		font-style: normal;
+		font-weight: 500;
+		src: url("/fonts/monolisa-medium.woff2") format("woff2");
+		font-display: swap;
 	}
 
 	/** 192 is minimum width of aside column. */
