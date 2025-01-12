@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9780748122981",
-    "title": "Abaddon's Gate",
-    "authors": [
-      "James S. A. Corey"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=fL8kbfvGhtcC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/Abaddon_s_Gate.html?hl=&id=fL8kbfvGhtcC"
-  },
-  {
     "isbn": "9780440001362",
     "title": "The Moon Is a Harsh Mistress",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=X_YVrgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/The_Dispossessed.html?hl=&id=X_YVrgEACAAJ"
+  },
+  {
+    "isbn": "9780330513203",
+    "title": "Mostly Harmless",
+    "authors": [
+      "Douglas Adams"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=eBd08nr5J8wC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Mostly_Harmless.html?hl=&id=eBd08nr5J8wC"
   }
 ]
