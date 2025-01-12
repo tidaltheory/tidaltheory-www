@@ -1,14 +1,5 @@
 [
   {
-    "isbn": "9781481983556",
-    "title": "Shift",
-    "authors": [
-      "Hugh Howey"
-    ],
-    "status": "finished",
-    "thumbnail": "https://covers.openlibrary.org/b/id/8369890-L.jpg"
-  },
-  {
     "isbn": "9780307567277",
     "title": "Cat's Cradle",
     "authors": [
@@ -37,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=PYtZDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=PYtZDwAAQBAJ"
+  },
+  {
+    "isbn": "9781804990155",
+    "title": "Equal Rites",
+    "authors": [
+      "Terry Pratchett"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=9AOREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Equal_Rites.html?hl=&id=9AOREAAAQBAJ"
   }
 ]
