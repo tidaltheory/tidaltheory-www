@@ -38,6 +38,18 @@ export default defineType({
 			type: 'string',
 			validation: (rule) => rule.required(),
 		}),
+		defineField({
+			name: 'startDate',
+			title: 'Start date',
+			type: 'date',
+			initialValue: () => new Date().toISOString().slice(0, 10),
+		}),
+		defineField({
+			name: 'editDate',
+			title: 'Last edited',
+			type: 'date',
+			initialValue: () => new Date().toISOString().slice(0, 10),
+		}),
 		ledeField,
 		defineField({
 			name: 'repo',
@@ -52,7 +64,11 @@ export default defineType({
 		defineField({
 			name: 'post',
 			title: 'Blog post',
-			type: 'url',
+			type: 'reference',
+			to: [{ type: 'post' } as const],
+			options: {
+				disableNew: true,
+			},
 		}),
 		defineField({
 			icon: ImagesIcon,
