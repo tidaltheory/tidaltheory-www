@@ -3,10 +3,10 @@ import { onMount, tick } from 'svelte'
 import { fade } from 'svelte/transition'
 
 import GalleryImage from './gallery-image.svelte'
-import IconButton from './icon-button.svelte'
-import ImageDetails from './image-details.svelte'
 import Portal from './helpers/portal.svelte'
 import TrapFocus from './helpers/trap-focus.svelte'
+import IconButton from './icon-button.svelte'
+import ImageDetails from './image-details.svelte'
 
 export let images: any
 export let initialIndex: number
@@ -57,8 +57,7 @@ function handleEscape(event: KeyboardEvent) {
 					>
 						<div
 							class="group relative flex h-auto max-h-full w-auto max-w-full object-contain"
-							style:aspect-ratio={image.metadata.dimensions
-								.aspectRatio}
+							style:aspect-ratio={image.metadata.dimensions.aspectRatio}
 						>
 							<GalleryImage {image} />
 							{#if image.title || image.caption}
@@ -76,9 +75,7 @@ function handleEscape(event: KeyboardEvent) {
 					</div>
 				{/each}
 			</div>
-			<div
-				class="absolute right-4 top-4 z-[100] flex md:right-8 md:top-8"
-			>
+			<div class="absolute right-4 top-4 z-[100] flex md:right-8 md:top-8">
 				<IconButton on:click={onClose}>
 					<svg
 						fill="none"

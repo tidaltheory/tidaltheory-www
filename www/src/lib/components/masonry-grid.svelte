@@ -1,5 +1,5 @@
 <script>
-import { onMount, onDestroy, tick } from 'svelte'
+import { onDestroy, onMount, tick } from 'svelte'
 
 /** @type {string | undefined} */
 export let gapClass = undefined
@@ -47,14 +47,11 @@ export const refreshLayout = async () => {
 		if (grid.ncol > 1) {
 			for (const [index, c] of grid.items.slice(ncol).entries()) {
 				/* Bottom edge of item above */
-				let previousFinal =
-					grid.items[index].getBoundingClientRect().bottom
+				let previousFinal = grid.items[index].getBoundingClientRect().bottom
 				/* Top edge of current item */
 				let currentInitial = c.getBoundingClientRect().top
 
-				c.style.marginTop = `${
-					previousFinal + grid.gap - currentInitial
-				}px`
+				c.style.marginTop = `${previousFinal + grid.gap - currentInitial}px`
 			}
 		}
 
@@ -72,8 +69,7 @@ const calcGrid = async (element) => {
 			// @ts-ignore
 			items: [...element.childNodes].filter(
 				(c) =>
-					c.nodeType === 1 &&
-					Number(getComputedStyle(c).gridColumnEnd) !== -1,
+					c.nodeType === 1 && Number(getComputedStyle(c).gridColumnEnd) !== -1,
 			),
 			ncol: 0,
 			mod: 0,
@@ -88,7 +84,7 @@ const calcGrid = async (element) => {
 let _window
 
 onMount(() => {
-	_window = window
+	_window = globalThis
 	_window.addEventListener('resize', refreshLayout, false)
 })
 onDestroy(() => {

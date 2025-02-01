@@ -1,5 +1,5 @@
 <script>
-import { onMount, onDestroy, tick } from 'svelte'
+import { onDestroy, onMount, tick } from 'svelte'
 
 export let initialFocusElement = null
 
@@ -17,7 +17,7 @@ onMount(async () => {
 		(node) => node.tabIndex >= 0,
 	)
 	firstTabbableChild = tabbableChildren[0]
-	lastTabbableChild = tabbableChildren[tabbableChildren.length - 1]
+	lastTabbableChild = tabbableChildren.at(-1)
 
 	// Wait for children to mount before trying to focus `initialFocusElement`
 	await tick()

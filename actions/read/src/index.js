@@ -75,9 +75,7 @@ export async function read() {
 				.provider(providers)
 				.resolve(bookIsbn)
 				.catch((error) => {
-					throw new Error(
-						`Book (${bookIsbn}) not found. ${error.message}`,
-					)
+					throw new Error(`Book (${bookIsbn}) not found. ${error.message}`)
 				})
 
 			newBook = checkBook(newBook, {

@@ -4,7 +4,7 @@ import { readFile, writeFile } from 'node:fs/promises'
 
 import * as core from '@actions/core'
 import * as github from '@actions/github'
-import { it, describe, expect, afterEach, beforeEach, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { read } from '../src/index.js'
 

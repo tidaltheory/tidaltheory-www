@@ -20,9 +20,7 @@ const title = collection === 'screen-shots' ? 'Screen Shots — Photos' : 'Photo
 	<title>{title} — Tidal Theory</title>
 	<meta
 		name="twitter:card"
-		content={galleries[0].coverImageSet.lg
-			? 'summary_large_card'
-			: 'summary'}
+		content={galleries[0].coverImageSet.lg ? 'summary_large_card' : 'summary'}
 	/>
 	<meta property="og:title" content="{title} — Tidal Theory" />
 	{#if galleries[0].coverImageSet.lg}<meta
@@ -38,8 +36,8 @@ const title = collection === 'screen-shots' ? 'Screen Shots — Photos' : 'Photo
 			{#if collection !== 'screen-shots'}
 				<FadeUp showing={intersecting} delay={100}>
 					<TextLede>
-						Former side-hustle, current casual interest. Some of my
-						favourite shots from past and ongoing&nbsp;collections.
+						Former side-hustle, current casual interest. Some of my favourite
+						shots from past and ongoing&nbsp;collections.
 					</TextLede>
 				</FadeUp>
 			{/if}
@@ -55,10 +53,11 @@ const title = collection === 'screen-shots' ? 'Screen Shots — Photos' : 'Photo
 			{#if collection !== 'screen-shots'}
 				<div class="prose prose-invert md:prose-xl">
 					<p>
-						You can find iPhone shots and more video game images
-						from me <del>on Instagram</del>
-						and more photos of all kinds on&nbsp;<MentionLink
-							site="flickr">Flickr</MentionLink
+						You can find iPhone shots and more video game images from me <del
+							>on Instagram</del
+						>
+						and more photos of all kinds on&nbsp;<MentionLink site="flickr"
+							>Flickr</MentionLink
 						>.
 					</p>
 				</div>

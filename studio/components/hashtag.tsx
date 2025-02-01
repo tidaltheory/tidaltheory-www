@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 
 export const StyledHashtag = styled('mark')`
 	padding: 2px;
@@ -12,7 +12,7 @@ export const StyledHashtag = styled('mark')`
 	}
 `
 
-type HashtagProperties = {
+interface HashtagProperties {
 	children: ReactElement
 }
 

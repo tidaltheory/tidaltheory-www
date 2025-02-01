@@ -21,13 +21,13 @@ function calculateMedia(mqls) {
 
 function watchMedia(mediaqueries) {
 	return writable({ classNames: '' }, (set) => {
-		if (typeof window === 'undefined') return
+		if (typeof globalThis === 'undefined') return
 
 		let mqls = {}
 		let updateMedia = () => set(calculateMedia(mqls))
 
 		for (let key of Object.keys(mediaqueries)) {
-			let foo = window.matchMedia(mediaqueries[key])
+			let foo = globalThis.matchMedia(mediaqueries[key])
 			mqls[key] = foo
 			mqls[key].addListener(updateMedia)
 		}

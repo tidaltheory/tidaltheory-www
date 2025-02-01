@@ -17,19 +17,17 @@ beforeNavigate(async () => {
 </script>
 
 <div class="fixed top-0 z-50 w-screen md:w-auto">
-	<div class="relative z-10 h-16 bg-grey-900 px-8 py-4 md:h-screen md:p-6">
-		<div
-			class="flex justify-between md:absolute md:top-[calc(11vh_+_1.5rem)]"
-		>
+	<div class="bg-grey-900 relative z-10 h-16 px-8 py-4 md:h-screen md:p-6">
+		<div class="flex justify-between md:absolute md:top-[calc(11vh_+_1.5rem)]">
 			<div class="flex">
 				<SiteNavItem href="/" home label="Home" />
 			</div>
 			<div class="flex md:hidden">
 				<button
-					class="bg-transparent rounded border-none p-0 {FOCUS_OUTLINE}"
+					class="rounded border-none bg-transparent p-0 {FOCUS_OUTLINE}"
 					on:click={toggleMenu}
 				>
-					<div class="h-8 w-16 rounded bg-grey-600" />
+					<div class="bg-grey-600 h-8 w-16 rounded" />
 				</button>
 			</div>
 		</div>
@@ -57,7 +55,7 @@ beforeNavigate(async () => {
 	{/if}
 	{#if isMenuOpen}
 		<div
-			class="absolute left-0 flex w-full justify-end gap-4 bg-grey-900 bg-opacity-70 px-8 py-4 pb-8 backdrop-blur transition"
+			class="bg-grey-900 absolute left-0 flex w-full justify-end gap-4 bg-opacity-70 px-8 py-4 pb-8 backdrop-blur transition"
 			in:classes={{
 				duration: 200,
 				base: 'duration-200 ease-out',

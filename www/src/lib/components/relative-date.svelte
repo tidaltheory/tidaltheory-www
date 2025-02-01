@@ -2,8 +2,8 @@
 import {
 	differenceInCalendarDays,
 	formatDistanceToNow,
-	formatRelative,
 	formatISO,
+	formatRelative,
 } from 'date-fns'
 
 export let date

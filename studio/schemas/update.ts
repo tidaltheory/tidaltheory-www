@@ -25,11 +25,7 @@ export default defineType({
 			title: 'Reference page',
 			name: 'reference',
 			type: 'reference',
-			to: [
-				{ type: 'gallery' } as const,
-				{ type: 'note' } as const,
-				{ type: 'post' } as const,
-			],
+			to: [{ type: 'gallery' } as const, { type: 'note' } as const, { type: 'post' } as const],
 			options: {
 				filter({ document }) {
 					return {

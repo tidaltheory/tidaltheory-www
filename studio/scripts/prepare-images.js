@@ -14,6 +14,7 @@ let entries = []
 
 function normalizeString(string) {
 	if (!string) return undefined
+	// eslint-disable-next-line unicorn/prefer-structured-clone
 	return JSON.parse(JSON.stringify(string))
 }
 

@@ -15,9 +15,12 @@ const config = {
 	},
 	env: { browser: true },
 	settings: {
-		'import-sorting/known-framework':
-			/^((@sveltejs|svelte)(\/|-preprocess|$)|(@?sanity(\/|$)))/.source,
-		'import-sorting/known-first-party': /^\$(app|lib)(\/|$)/.source,
+		'import-sorting/framework-patterns': [
+			/^@?portabletext(\/|$)/.source,
+			/^@?sanity(\/|$)/.source,
+			/^(@sveltejs|svelte(\/|-preprocess|$))/.source,
+		],
+		'import-sorting/internal-patterns': /^\$(app|lib)(\/|$)/.source,
 	},
 	rules: {
 		/**
@@ -33,47 +36,6 @@ const config = {
 
 		'import/no-extraneous-dependencies': 'off',
 		'import/order': 'off',
-		// 'import/order': [
-		// 	'error',
-		// 	{
-		// 		alphabetize: {
-		// 			caseInsensitive: true,
-		// 			order: 'asc',
-		// 		},
-		// 		groups: [
-		// 			'builtin',
-		// 			'external',
-		// 			'internal',
-		// 			'parent',
-		// 			['sibling', 'index'],
-		// 		],
-		// 		'newlines-between': 'always',
-		// 		pathGroups: [
-		// 			{
-		// 				pattern:
-		// 					'{@sveltejs/**,svelte/**,svelte?(-preprocess),@sanity/**,sanity/**,sanity}',
-		// 				group: 'builtin',
-		// 				position: 'after',
-		// 			},
-		// 			{
-		// 				pattern: '$?(app|lib)/**',
-		// 				group: 'internal',
-		// 				position: 'after',
-		// 			},
-		// 			{
-		// 				pattern: '*.+(css)',
-		// 				group: 'index',
-		// 				position: 'after',
-		// 				patternOptions: {
-		// 					matchBase: true,
-		// 				},
-		// 			},
-		// 		],
-		// 		pathGroupsExcludedImportTypes: ['svelte'],
-		// 	},
-		// ],
-
-		'import-sorting/order': 'error',
 
 		'prefer-let/prefer-let': 'off',
 
@@ -104,6 +66,10 @@ const config = {
 				project: path.resolve('studio', 'tsconfig.json'),
 			},
 			rules: {
+				'@typescript-eslint/ban-types': 'off',
+				'@typescript-eslint/lines-between-class-members': 'off',
+				'@typescript-eslint/padding-line-between-statements': 'off',
+
 				'import/extensions': ['off'],
 			},
 		},

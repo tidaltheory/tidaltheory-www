@@ -1,7 +1,6 @@
+import type { PortableTextBlock } from '@portabletext/types'
 import { ImagesIcon } from '@sanity/icons'
 import { defineArrayMember, defineField, defineType, type ReferenceValue } from 'sanity'
-
-import type { PortableTextBlock } from '@portabletext/types'
 
 import { serializePortableText } from '../utils/serialize-portable-text'
 import { inlineOnlyBlock } from './fields/inline'
@@ -132,9 +131,7 @@ export default defineType({
 					options: {
 						disableNew: true,
 						filter({ document }) {
-							let photos = (document.images as ReferenceValue[]).map(
-								(index) => index._ref,
-							)
+							let photos = (document.images as ReferenceValue[]).map((index) => index._ref)
 							return {
 								filter: '_type == "photo" && !(_id in $photos)',
 								params: { photos },

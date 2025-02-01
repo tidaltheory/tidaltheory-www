@@ -30,8 +30,7 @@ export let data
 				<MentionLink site="showbie">Showbie</MentionLink>
 				and at
 				<span class="whitespace-nowrap"
-					><MentionLink site="lift">Lift Interactive</MentionLink
-					>.</span
+					><MentionLink site="lift">Lift Interactive</MentionLink>.</span
 				>
 			</FadeUp>
 		</svelte:fragment>
@@ -40,10 +39,9 @@ export let data
 		<div class="prose flex flex-col gap-10">
 			<Heading level={2}>Watching</Heading>
 			<p>
-				I make no claims about my taste in films. Expect this section to
-				update frequently in October thanks to the Hooptober Challenge.
-				Find me on <MentionLink site="letterboxd"
-					>Letterboxd</MentionLink
+				I make no claims about my taste in films. Expect this section to update
+				frequently in October thanks to the Hooptober Challenge. Find me on <MentionLink
+					site="letterboxd">Letterboxd</MentionLink
 				> if you want to follow along.
 			</p>
 		</div>
@@ -66,16 +64,13 @@ export let data
 		<div class="prose flex flex-col gap-10">
 			<Heading level={2}>Reading</Heading>
 			<p>
-				Flipping through ebooks has been much better for my mental
-				health than doomscrolling. I also still read to my kids
-				regularly so there’s likely to be some younger fare here, in
-				addition to the selection of sci-fi/fantasy stories I’m chewing
-				through.
+				Flipping through ebooks has been much better for my mental health than
+				doomscrolling. I also still read to my kids regularly so there’s likely
+				to be some younger fare here, in addition to the selection of
+				sci-fi/fantasy stories I’m chewing through.
 			</p>
 		</div>
-		<div
-			class="mt-16 flex items-start gap-4 lg:gap-8 xl:mt-[72px] xl:gap-12"
-		>
+		<div class="mt-16 flex items-start gap-4 lg:gap-8 xl:mt-[72px] xl:gap-12">
 			{#each data.books as book}
 				<a
 					href={book.link}

@@ -41,20 +41,20 @@ function toggleExpanded() {
 		</div>
 	</div>
 	<div
-		class="grid gap-4 bg-grey-900 bg-opacity-60 py-5 pr-5 pl-12 text-white backdrop-blur-sm md:py-[22px] md:pr-6 md:pl-14"
+		class="bg-grey-900 grid gap-4 bg-opacity-60 py-5 pl-12 pr-5 text-white backdrop-blur-sm md:py-[22px] md:pl-14 md:pr-6"
 		class:hidden={!expanded}
 		{id}
 	>
 		{#if meta.title}
 			<span
-				class="text-sm font-semibold font-sans leading-5 leading-trim md:text-base md:leading-6"
+				class="leading-trim font-sans text-sm font-semibold leading-5 md:text-base md:leading-6"
 			>
 				{meta.title}
 			</span>
 		{/if}
 		{#if meta.caption}
 			<span
-				class="text-sm font-sans leading-5 leading-trim md:text-base md:leading-6"
+				class="leading-trim font-sans text-sm leading-5 md:text-base md:leading-6"
 				>{meta.caption}</span
 			>
 		{/if}

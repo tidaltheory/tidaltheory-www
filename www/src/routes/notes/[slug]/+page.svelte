@@ -17,9 +17,7 @@ $: ({ title, content } = data)
 <article>
 	<PageSection>
 		<div class="grid grid-cols-4 xl:grid-cols-2 xl:gap-16">
-			<div
-				class="col-span-full grid gap-6 md:col-span-3 md:pt-8 xl:pt-12"
-			>
+			<div class="col-span-full grid gap-6 md:col-span-3 md:pt-8 xl:pt-12">
 				<div class="prose prose-xl prose-invert md:prose-2xl">
 					<PortableText value={content} />
 				</div>

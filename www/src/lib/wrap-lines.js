@@ -88,9 +88,7 @@ export function unwrapLines(element) {
 	/** @type {Array<string>} */
 	let markup = []
 	for (const child of element.children) {
-		markup.push(
-			child.nodeName === 'SPAN' ? child.innerHTML : child.outerHTML,
-		)
+		markup.push(child.nodeName === 'SPAN' ? child.innerHTML : child.outerHTML)
 	}
 
 	element.innerHTML = markup.join(' ')

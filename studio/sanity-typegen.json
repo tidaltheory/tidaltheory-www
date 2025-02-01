@@ -1,5 +1,5 @@
 {
-  "path": "../www/src/lib/sanity/*.js",
-  "schema": "schema.json",
-  "generates": "../www/src/lib/sanity/types.ts"
+	"path": "../www/src/lib/sanity/*.js",
+	"schema": "schema.json",
+	"generates": "../www/src/lib/sanity/types.ts"
 }

@@ -1,8 +1,8 @@
 <script>
 import { urlFor } from '$lib/sanity/image.js'
 
-import FaviconGithub from './icons/favicon-github.svelte'
 import Heading from './heading.svelte'
+import FaviconGithub from './icons/favicon-github.svelte'
 import IconRSS from './icons/icon-rss.svelte'
 import MentionLink from './mention-link.svelte'
 import PortableText from './portable-text.svelte'
@@ -20,9 +20,7 @@ export let project
 				<MentionLink href={project.site}>Visit site</MentionLink>
 			{/if}
 			{#if project.post}
-				<MentionLink href={project.post} logo={IconRSS}
-					>Read post</MentionLink
-				>
+				<MentionLink href={project.post} logo={IconRSS}>Read post</MentionLink>
 			{/if}
 			{#if project.repo}
 				<MentionLink href={project.repo} logo={FaviconGithub}
@@ -45,8 +43,7 @@ export let project
 						/>
 						<img
 							class="h-full w-full object-contain"
-							style:aspect-ratio={image.metadata.dimensions
-								.aspectRatio}
+							style:aspect-ratio={image.metadata.dimensions.aspectRatio}
 							style:max-height="{Math.floor(
 								image.metadata.dimensions.height / 2,
 							)}px"

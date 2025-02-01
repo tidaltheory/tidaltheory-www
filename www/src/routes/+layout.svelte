@@ -1,6 +1,8 @@
 <script>
 import '../tailwind.css'
 import '../prism.css'
+
+// eslint-disable-next-line import/no-named-as-default-member, import/no-named-as-default, import/default
 import ObserveIntersection from 'svelte-intersection-observer'
 
 import SiteNav from '$lib/components/site-nav.svelte'
@@ -18,7 +20,7 @@ let bg
 		/>
 	</ObserveIntersection>
 	<SiteNav />
-	<main class="mt-16 md:mt-0 md:ml-20"><slot /></main>
+	<main class="mt-16 md:ml-20 md:mt-0"><slot /></main>
 </div>
 
 <style>

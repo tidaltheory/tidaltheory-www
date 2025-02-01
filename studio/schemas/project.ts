@@ -1,7 +1,6 @@
+import type { PortableTextBlock } from '@portabletext/types'
 import { ImageIcon, ImagesIcon, ProjectsIcon } from '@sanity/icons'
 import { defineArrayMember, defineField, defineType } from 'sanity'
-
-import type { PortableTextBlock } from '@portabletext/types'
 
 import { serializePortableText } from '../utils/serialize-portable-text'
 import { ledeField } from './fields/lede'

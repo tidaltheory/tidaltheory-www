@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-type CiteProperties = {
+interface CiteProperties {
 	children: ReactNode
 }
 

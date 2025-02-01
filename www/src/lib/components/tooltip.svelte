@@ -24,13 +24,13 @@ const [tooltipReference, tooltipFloating] = createFloatingActions({
 
 {#if showTooltip}
 	<div
-		class="rounded-sm bg-grey-700 px-4 py-4 shadow-lg"
+		class="bg-grey-700 rounded-sm px-4 py-4 shadow-lg"
 		use:tooltipFloating
 		in:fly={{ x: 24 }}
 		out:fade={{ duration: 150 }}
 	>
 		<span
-			class="relative block uppercase tracking-wider font-display text-base leading-none leading-trim"
+			class="font-display leading-trim relative block text-base uppercase leading-none tracking-wider"
 		>
 			{label}
 		</span>

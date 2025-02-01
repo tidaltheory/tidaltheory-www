@@ -5,9 +5,7 @@ import parseRss from 'rss-to-json'
  * @param {import('@netlify/functions').Context} context
  */
 async function letterboxd(_request, _context) {
-	const feed = await parseRss.parse(
-		'https://letterboxd.com/stormwarning/rss/',
-	)
+	const feed = await parseRss.parse('https://letterboxd.com/stormwarning/rss/')
 	// Add filter for only watched films (no lists, etc.) check for `letterboxed:watchedDate`.
 	const films = Object.values(feed.items)
 		.filter((item) => item.id.match(/letterboxd-(watch|review)-/))

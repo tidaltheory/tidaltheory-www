@@ -31,9 +31,7 @@ const imgSet = () => {
 	/** @type {Array<string>} */
 	let set = []
 	for (const size of sizes) {
-		set.push(
-			`${getPath(image[size].path)} ${image[size].dimensions.width}w`,
-		)
+		set.push(`${getPath(image[size].path)} ${image[size].dimensions.width}w`)
 	}
 
 	return set.join(',')
@@ -46,9 +44,7 @@ const avifSet = () => {
 	let set = []
 	for (const size of sizes) {
 		set.push(
-			`${getPath(image[size].formats.avif)} ${
-				image[size].dimensions.width
-			}w`,
+			`${getPath(image[size].formats.avif)} ${image[size].dimensions.width}w`,
 		)
 	}
 
@@ -62,9 +58,7 @@ const webpSet = () => {
 	let set = []
 	for (const size of sizes) {
 		set.push(
-			`${getPath(image[size].formats.webp)} ${
-				image[size].dimensions.width
-			}w`,
+			`${getPath(image[size].formats.webp)} ${image[size].dimensions.width}w`,
 		)
 	}
 

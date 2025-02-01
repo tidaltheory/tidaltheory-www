@@ -72,11 +72,7 @@ $: if ($media.xl) {
 <article>
 	<PageIntro {subtitle}>
 		{title}
-		<div
-			slot="intro"
-			class="grid gap-6 md:gap-10 xl:gap-12"
-			let:intersecting
-		>
+		<div slot="intro" class="grid gap-6 md:gap-10 xl:gap-12" let:intersecting>
 			{#if post.platform}
 				<dl class="flex flex-col gap-4 md:flex-row md:gap-8 xl:gap-16">
 					<FadeUp
@@ -89,9 +85,7 @@ $: if ($media.xl) {
 						>
 							Captured on
 						</dt>
-						<dd
-							class="leading-trim text-base font-medium md:text-lg"
-						>
+						<dd class="leading-trim text-base font-medium md:text-lg">
 							{post.platform}
 						</dd>
 					</FadeUp>
@@ -105,9 +99,7 @@ $: if ($media.xl) {
 						>
 							Developed by
 						</dt>
-						<dd
-							class="leading-trim text-base font-medium md:text-lg"
-						>
+						<dd class="leading-trim text-base font-medium md:text-lg">
 							{post.developer}
 						</dd>
 					</FadeUp>

@@ -23,13 +23,10 @@ $: show = shouldShow === undefined ? true : shouldShow
 
 <svelte:element
 	this={heading}
-	class="font-bold uppercase font-display leading-none leading-trim {styleClass} text-grey-400 empty:hidden"
+	class="font-display leading-trim font-bold uppercase leading-none {styleClass} text-grey-400 empty:hidden"
 	class:hide={!show}
 >
-	<span
-		class="text inline-block will-change-transform"
-		style="--delay: 300ms"
-	>
+	<span class="text inline-block will-change-transform" style="--delay: 300ms">
 		<slot />
 	</span>
 </svelte:element>

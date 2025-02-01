@@ -26,11 +26,11 @@ export let label = undefined
 			{#if home}
 				<SiteNavLogo />
 			{:else}
-				<div class="h-8 w-8 rounded bg-grey-600" />
+				<div class="bg-grey-600 h-8 w-8 rounded" />
 			{/if}
 			{#if $$slots.default}
 				<span
-					class="px-2 font-bold uppercase tracking-wider font-display text-base leading-none leading-trim"
+					class="font-display leading-trim px-2 text-base font-bold uppercase leading-none tracking-wider"
 				>
 					<slot />
 				</span>
