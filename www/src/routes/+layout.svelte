@@ -2,7 +2,6 @@
 import '../tailwind.css'
 import '../prism.css'
 
-// eslint-disable-next-line import/no-named-as-default-member, import/no-named-as-default, import/default
 import ObserveIntersection from 'svelte-intersection-observer'
 
 import SiteNav from '$lib/components/site-nav.svelte'

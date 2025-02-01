@@ -15,6 +15,11 @@ const config = {
 	},
 	env: { browser: true },
 	settings: {
+		'import/parsers': {
+			'svelte-eslint-parser': ['.svelte'],
+			'@typescript-eslint/parser': ['.ts'],
+			espree: ['.js'],
+		},
 		'import-sorting/framework-patterns': [
 			/^@?portabletext(\/|$)/.source,
 			/^@?sanity(\/|$)/.source,
@@ -49,6 +54,7 @@ const config = {
 			parser: 'svelte-eslint-parser',
 			parserOptions: {
 				parser: '@typescript-eslint/parser',
+				extraFileExtensions: ['.svelte'],
 			},
 			rules: {
 				'import/extensions': 'off',

@@ -1,5 +1,4 @@
 <script>
-// eslint-disable-next-line import/no-named-as-default-member, import/no-named-as-default, import/default
 import ObserveIntersection from 'svelte-intersection-observer'
 
 import Heading from './heading.svelte'
@@ -25,7 +24,7 @@ let header
 					<slot />
 				</Heading>
 				{#if subtitle}
-					<SubHeading level="3" shouldShow={intersecting}>
+					<SubHeading level={3} shouldShow={intersecting}>
 						{subtitle}
 					</SubHeading>
 				{/if}
