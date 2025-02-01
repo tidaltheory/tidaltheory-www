@@ -15,7 +15,7 @@ let header
 				class="z-10 col-span-full col-start-1 row-start-1 md:col-span-3 md:pt-8 xl:col-span-2 xl:pt-12"
 				style:transform="translateZ(0)"
 			>
-				<Heading level="0" shouldShow={intersecting} transitionIn
+				<Heading level={0} shouldShow={intersecting} transitionIn
 					><slot /></Heading
 				>
 			</div>
