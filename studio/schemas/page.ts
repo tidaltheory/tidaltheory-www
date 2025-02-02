@@ -21,6 +21,7 @@ export default defineType({
 			title: 'Slug',
 			type: 'slug',
 			options: {
+				source: (document, context) => [document.title].join('-'),
 				maxLength: 96,
 				isUnique: async (value, context) => context.defaultIsUnique(value, context),
 			},

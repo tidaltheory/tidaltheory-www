@@ -1,18 +1,19 @@
 import { codeInput } from '@sanity/code-input'
-import { BlockquoteIcon, TiersIcon } from '@sanity/icons'
+import { BlockquoteIcon, MasterDetailIcon, TiersIcon } from '@sanity/icons'
 import { visionTool } from '@sanity/vision'
 import {
 	defineConfig,
 	defineField,
 	defineType,
-	useDocumentOperation,
 	type DocumentActionComponent,
 	type DocumentActionsContext,
+	useDocumentOperation,
 } from 'sanity'
 import { structureTool } from 'sanity/structure'
 
-import gallery from './schemas/gallery'
+import caseStudy from './schemas/case-study'
 import { inlineOnlyBlock } from './schemas/fields/inline'
+import gallery from './schemas/gallery'
 import note from './schemas/note'
 import page from './schemas/page'
 import photo from './schemas/photo'
@@ -33,6 +34,7 @@ const config = defineConfig({
 
 	schema: {
 		types: [
+			caseStudy,
 			gallery,
 			note,
 			page,
@@ -64,7 +66,7 @@ const config = defineConfig({
 				name: 'aside',
 				title: 'Aside',
 				type: 'object',
-				// Icon: BlockquoteIcon,
+				icon: MasterDetailIcon,
 				fields: [
 					defineField({
 						name: 'content',

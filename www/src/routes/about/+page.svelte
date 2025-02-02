@@ -35,6 +35,19 @@ export let data
 			</FadeUp>
 		</svelte:fragment>
 	</PageHero>
+	<!-- <PageSection>
+		<div class="prose">
+			<p>
+				You can read more about some of the work I’ve done as <a href="/work/"
+					>case studies</a
+				>
+				(or in <a href="/resume/">resume form</a> if you’re really interested). There’s
+				also a page for side projects I’ve put out into the world and one for photos
+				I’ve taken (in real life and video games).
+			</p>
+			<p>Thank you for visiting!</p>
+		</div>
+	</PageSection> -->
 	<PageSection>
 		<div class="prose flex flex-col gap-10">
 			<Heading level={2}>Watching</Heading>
