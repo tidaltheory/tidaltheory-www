@@ -165,8 +165,8 @@ importers:
         specifier: 2.0.6
         version: 2.0.6(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       '@tailwindcss/typography':
-        specifier: 0.5.13
-        version: 0.5.13(tailwindcss@3.4.4)
+        specifier: 0.5.16
+        version: 0.5.16(tailwindcss@3.4.4)
       autoprefixer:
         specifier: 10.4.16
         version: 10.4.16(postcss@8.4.32)
@@ -2037,9 +2037,9 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.1.0)
+      '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.1.2)
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /@csstools/postcss-color-function@3.0.7(postcss@8.4.32):
@@ -2153,9 +2153,9 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.1.0)
+      '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.1.2)
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /@csstools/postcss-logical-float-and-clear@2.0.0(postcss@8.4.32):
@@ -2293,7 +2293,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /@csstools/postcss-stepped-value-functions@3.0.2(postcss@8.4.32):
@@ -2340,13 +2340,13 @@ packages:
       postcss: 8.4.32
     dev: true
 
-  /@csstools/selector-specificity@3.0.0(postcss-selector-parser@6.1.0):
+  /@csstools/selector-specificity@3.0.0(postcss-selector-parser@6.1.2):
     resolution: {integrity: sha512-hBI9tfBtuPIi885ZsZ32IMEU/5nlZH/KOVYJCOh7gyMxaVLGmLedYqFN6Ui1LXkI8JlC8IsuC0rF0btcRZKd5g==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss-selector-parser: ^6.0.13
     dependencies:
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /@csstools/selector-specificity@5.0.0(postcss-selector-parser@7.0.0):
@@ -4775,10 +4775,10 @@ packages:
       - supports-color
     dev: true
 
-  /@tailwindcss/typography@0.5.13(tailwindcss@3.4.4):
-    resolution: {integrity: sha512-ADGcJ8dX21dVVHIwTRgzrcunY6YY9uSlAHHGVKvkA+vLc5qLwEszvKts40lx7z0qc4clpjclwLeK5rVCV2P/uw==}
+  /@tailwindcss/typography@0.5.16(tailwindcss@3.4.4):
+    resolution: {integrity: sha512-0wDLwCVF5V3x3b1SGXPCDcdsbDHMBe+lkFzBRaHeLvNi+nrrnZ1lA18u+OTWO8iSWU2GxUOCvlXtDuqftc1oiA==}
     peerDependencies:
-      tailwindcss: '>=3.0.0 || insiders'
+      tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20 || >=4.0.0-beta.1'
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
@@ -6393,6 +6393,7 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
     dev: false
+    bundledDependencies: false
 
   /crelt@1.0.6:
     resolution: {integrity: sha512-VQ2MBenTq1fWZUH9DJNGti7kKv6EeAuYr3cLwxUWhIu1baTaXh4Ib5W2CqHVqib4/MqbYGJqiL3Zb8GJZr3l4g==}
@@ -6418,7 +6419,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /css-color-keywords@1.0.0:
@@ -6437,9 +6438,9 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.1.0)
+      '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.1.2)
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -10394,7 +10395,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /postcss-clamp@4.1.0(postcss@8.4.32):
@@ -10474,7 +10475,7 @@ packages:
       '@csstools/css-parser-algorithms': 2.3.2(@csstools/css-tokenizer@2.2.1)
       '@csstools/css-tokenizer': 2.2.1
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /postcss-dir-pseudo-class@8.0.0(postcss@8.4.32):
@@ -10484,7 +10485,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /postcss-double-position-gradients@5.0.2(postcss@8.4.32):
@@ -10505,7 +10506,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /postcss-focus-within@8.0.0(postcss@8.4.32):
@@ -10515,7 +10516,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /postcss-font-variant@5.0.0(postcss@8.4.32):
@@ -10658,7 +10659,7 @@ packages:
       postcss: ^8.2.14
     dependencies:
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /postcss-nesting@12.0.1(postcss@8.4.32):
@@ -10667,9 +10668,9 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.1.0)
+      '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.1.2)
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /postcss-opacity-percentage@2.0.0(postcss@8.4.32):
@@ -10785,7 +10786,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /postcss-replace-overflow-wrap@4.0.0(postcss@8.4.32):
@@ -10843,7 +10844,7 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.32
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
     dev: true
 
   /postcss-selector-parser@6.0.10:
