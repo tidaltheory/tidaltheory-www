@@ -34,7 +34,7 @@ $: ({ title, lede, content, cases } = data)
 		</PageSection>
 	{/if}
 	<PageSection>
-		<div class="flex flex-col gap-16 md:gap-20">
+		<div class="flex flex-col gap-[4.5rem] md:gap-28">
 			{#if cases.length > 0}
 				{#each cases as work}
 					<WorkBlock {work} />
