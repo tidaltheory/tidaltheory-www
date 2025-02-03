@@ -54,6 +54,17 @@ article {
 		--bullet-size: 0.5rem;
 		--bullet-offset: 1rem;
 	}
+
+	&:has(a[href]):hover time::before,
+	&:has(a[href]):focus-within time::before {
+		background-color: #fff;
+		box-shadow:
+			0 0 calc(var(--bullet-size) * 0.08) 0 #fff,
+			0 0 calc(var(--bullet-size) * 0.32) calc(var(--bullet-size) * 0.08) #fff,
+			0 0 calc(var(--bullet-size) * 1.28) calc(var(--bullet-size) * 0.32) #fff;
+		transition-duration: 300ms;
+		transition-timing-function: ease-out;
+	}
 }
 
 /**
@@ -95,6 +106,8 @@ time:has(time) {
 		content: '';
 		border-radius: 999px;
 		background-color: theme('colors.grey.400');
+		transition: 150ms ease-in;
+		transition-property: background-color, box-shadow;
 	}
 }
 
