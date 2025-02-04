@@ -38,11 +38,12 @@ article {
 	--block-gap: 4.5rem;
 	--bullet-size: 0.375rem;
 	--bullet-offset: 0.5rem;
+	--line-offset: 2px;
 
 	&:not(:last-of-type)::before {
 		position: absolute;
 		inset-block-start: calc(var(--bullet-size) + 1.5rem);
-		inset-inline-start: calc(calc(var(--bullet-offset) + 1px) * -1);
+		inset-inline-end: calc(100% + var(--bullet-offset) + var(--line-offset));
 		block-size: calc(100% + var(--block-gap) - 2.75rem);
 		inline-size: 2px;
 		content: '';
@@ -53,6 +54,7 @@ article {
 		--block-gap: 7rem;
 		--bullet-size: 0.5rem;
 		--bullet-offset: 1rem;
+		--line-offset: 3px;
 	}
 
 	&:has(a[href]):hover time::before,
@@ -98,9 +100,7 @@ time:has(time) {
 
 	&::before {
 		position: absolute;
-		inset-inline-start: calc(
-			calc(var(--bullet-offset) + calc(var(--bullet-size) / 2)) * -1
-		);
+		inset-inline-end: calc(100% + var(--bullet-offset));
 		inline-size: var(--bullet-size);
 		block-size: var(--bullet-size);
 		content: '';
