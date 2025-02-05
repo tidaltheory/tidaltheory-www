@@ -9,7 +9,7 @@ $: ({ startDateNice, endDateNice, title, lede, slug, discipline, content } =
 	work)
 </script>
 
-<article class="relative grid items-start gap-6 lg:grid-cols-3 lg:gap-8">
+<article class="relative grid items-start gap-6">
 	<header class="relative grid gap-4">
 		<time><time>{startDateNice}</time> – <time>{endDateNice}</time></time>
 		<Heading level={4}>{title}</Heading>
@@ -19,7 +19,7 @@ $: ({ startDateNice, endDateNice, title, lede, slug, discipline, content } =
 			<FBadge>{text}</FBadge>
 		{/each}
 	</div>
-	<div class="prose lg:order-2">
+	<div class="prose lg:order-2 lg:col-span-2">
 		{#if lede}
 			<PortableText value={lede} />
 		{/if}
@@ -55,6 +55,17 @@ article {
 		--bullet-size: 0.5rem;
 		--bullet-offset: 1rem;
 		--line-offset: 3px;
+	}
+
+	@container section (width) {
+		--outer-col: minmax(min-content, calc(22.2222cqi - 24px));
+		--inner-col: calc(16.6667cqi - 12px);
+
+		@media (min-width: 1024px) {
+			grid-template-columns:
+				var(--outer-col) var(--inner-col) var(--inner-col)
+				var(--outer-col);
+		}
 	}
 
 	&:has(a[href]):hover time::before,
