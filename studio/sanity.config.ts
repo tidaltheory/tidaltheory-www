@@ -15,6 +15,7 @@ import caseStudy from './schemas/case-study'
 import { inlineOnlyBlock } from './schemas/fields/inline'
 import gallery from './schemas/gallery'
 import note from './schemas/note'
+import { imageSet } from './schemas/objects/image-set'
 import page from './schemas/page'
 import photo from './schemas/photo'
 import post from './schemas/post'
@@ -95,6 +96,7 @@ const config = defineConfig({
 					}),
 				],
 			}),
+			imageSet,
 		],
 	},
 

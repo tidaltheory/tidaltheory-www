@@ -97,6 +97,7 @@ export default defineType({
 						}),
 					],
 				}),
+				defineArrayMember({ type: 'image-set' }),
 				defineArrayMember({ type: 'code' }),
 				defineArrayMember({ type: 'blockquote' }),
 				defineArrayMember({ type: 'aside' }),

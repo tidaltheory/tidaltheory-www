@@ -8,6 +8,7 @@ import CodeBlock from './sanity/code-block.svelte'
 import CodePenBlock from './sanity/codepen-block.svelte'
 import HashtagMark from './sanity/hashtag-mark.svelte'
 import ImageBlock from './sanity/image-block.svelte'
+import ImageSetBlock from './sanity/image-set-block.svelte'
 
 export let value
 
@@ -18,6 +19,7 @@ const components = {
 		blockquote: BlockquoteBlock,
 		code: CodeBlock,
 		image: ImageBlock,
+		'image-set': ImageSetBlock,
 		codepen: CodePenBlock,
 	},
 	marks: {
