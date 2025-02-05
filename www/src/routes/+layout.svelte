@@ -13,7 +13,7 @@ let bg
 <div class="relative grid min-h-[100svh]">
 	<ObserveIntersection once element={bg} let:intersecting>
 		<div
-			class="bg pointer-events-none absolute inset-0"
+			class="bg pointer-events-none absolute inset-0 z-10"
 			class:opacity-0={!intersecting}
 			bind:this={bg}
 		/>
