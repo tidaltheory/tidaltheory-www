@@ -14,42 +14,51 @@ const iconMap = {
 	'note-add': IconDocumentAdd,
 }
 
-/** @type {import('$lib/sanity/types.js').UpdateQueryResult[number]} */
-export let update
+/**
+ * @typedef {Object} Props
+ * @property {import('$lib/sanity/types.js').UpdateQueryResult[number]} update
+ */
 
-$: ({ type, date, id, slug, title, count, excerpt, images } = update)
-$: hasPreview = ['gallery-add', 'post-add', 'note-add'].includes(type)
+/** @type {Props} */
+let { update } = $props()
+
+let { type, date, id, slug, title, count, excerpt, images } = $derived(update)
+let hasPreview = $derived(
+	['gallery-add', 'post-add', 'note-add'].includes(type),
+)
 
 /** @type {HTMLElement} */
-let card
+let card = $state()
 /** @type {HTMLAnchorElement} */
-let link
+let link = $state()
 
 /** @param {MouseEvent} event */
 function handleCardPress(event) {
 	if (type === 'note-add') return false
 	if (event.target !== link) link.click()
 }
+
+const SvelteComponent = $derived(iconMap[type])
 </script>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<!-- svelte-ignore a11y-no-noninteractive-element-to-interactive-role -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role -->
 <article
 	class="salt group relative grid grid-cols-[36px_1fr_auto] gap-2 rounded-[1px] font-sans {FOCUS_OUTLINE} outline-offset-8"
 	class:cursor-pointer={type !== 'note-add'}
 	class:focus-within:outline={type !== 'note-add'}
 	bind:this={card}
 	role="link"
-	on:click={handleCardPress}
+	onclick={handleCardPress}
 >
 	<div
 		class="bg-grey-700 absolute -inset-2 -z-10 rounded-md bg-opacity-0 transition"
 		class:group-hover:bg-opacity-20={type !== 'note-add'}
-	/>
+	></div>
 	<div
 		class="bg-grey-700 flex h-9 w-9 items-center justify-center rounded-full text-white"
 	>
-		<svelte:component this={iconMap[type]} />
+		<SvelteComponent />
 	</div>
 	<div class="py-3">
 		<p class="text-grey-400 leading-trim text-base">
@@ -126,7 +135,7 @@ function handleCardPress(event) {
 							class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] underline-offset-[calc(0.0781em_*_2)] transition group-hover:decoration-white"
 							{id}
 						>
-							Read post <span aria-hidden>→</span>
+							Read post <span aria-hidden="true">→</span>
 						</span>
 					</footer>
 				</div>

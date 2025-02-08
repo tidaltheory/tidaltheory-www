@@ -6,10 +6,14 @@ import PageSection from '$lib/components/page-section.svelte'
 import PortableText from '$lib/components/portable-text.svelte'
 import TextLede from '$lib/components/text-lede.svelte'
 
-/** @type {import('./[slug]/$types').PageData} */
-export let data
+/**
+ * @typedef {Object} Props
+ * @property {import('./[slug]/$types').PageData} data
+ */
 
-$: ({
+/** @type {Props} */
+let { data } = $props()
+let {
 	title,
 	shortLede,
 	lede,
@@ -17,7 +21,7 @@ $: ({
 	endDateNice,
 	discipline,
 	content,
-} = data)
+} = $derived(data)
 </script>
 
 <svelte:head>
@@ -30,25 +34,29 @@ $: ({
 <article>
 	<PageIntro>
 		{title}
-		<div slot="intro" class="grid gap-6 md:gap-10 xl:gap-12" let:intersecting>
-			<div class="grid gap-2 md:gap-3">
-				<FadeUp showing={intersecting} delay={100}>
-					<time><time>{startDateNice}</time> – <time>{endDateNice}</time></time>
-				</FadeUp>
-				<div class="flex flex-wrap gap-2">
-					{#each discipline as text, index}
-						<FadeUp showing={intersecting} delay={150 + index * 50}>
-							<FBadge>{text}</FBadge>
-						</FadeUp>
-					{/each}
+		{#snippet intro({ intersecting })}
+			<div class="grid gap-6 md:gap-10 xl:gap-12">
+				<div class="grid gap-2 md:gap-3">
+					<FadeUp showing={intersecting} delay={100}>
+						<time
+							><time>{startDateNice}</time> – <time>{endDateNice}</time></time
+						>
+					</FadeUp>
+					<div class="flex flex-wrap gap-2">
+						{#each discipline as text, index}
+							<FadeUp showing={intersecting} delay={150 + index * 50}>
+								<FBadge>{text}</FBadge>
+							</FadeUp>
+						{/each}
+					</div>
 				</div>
+				<FadeUp showing={intersecting} delay={200}>
+					<TextLede>
+						<PortableText value={lede} />
+					</TextLede>
+				</FadeUp>
 			</div>
-			<FadeUp showing={intersecting} delay={200}>
-				<TextLede>
-					<PortableText value={lede} />
-				</TextLede>
-			</FadeUp>
-		</div>
+		{/snippet}
 	</PageIntro>
 	{#if content}
 		<PageSection>
@@ -60,7 +68,7 @@ $: ({
 </article>
 
 <style>
-time:has(time) {
+time:has(:global(time)) {
 	--font-size-px: 16;
 	--line-height-offset: calc(
 		(((var(--line-height-scale) * var(--font-size-px)) - 24) / 2) /

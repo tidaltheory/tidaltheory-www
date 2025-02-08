@@ -2,10 +2,15 @@
 import PageSection from '$lib/components/page-section.svelte'
 import PortableText from '$lib/components/portable-text.svelte'
 
-/** @type {import('./$types').PageData} */
-export let data
+/**
+ * @typedef {Object} Props
+ * @property {import('./$types').PageData} data
+ */
 
-$: ({ title, content } = data)
+/** @type {Props} */
+let { data } = $props()
+
+let { title, content } = $derived(data)
 </script>
 
 <svelte:head>

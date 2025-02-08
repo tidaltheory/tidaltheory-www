@@ -6,9 +6,14 @@ import PageSection from '$lib/components/page-section.svelte'
 import PortableText from '$lib/components/portable-text.svelte'
 import RelativeDate from '$lib/components/relative-date.svelte'
 
-/** @type {import('./$types').PageData} */
-export let data
-$: ({ notes } = data)
+/**
+ * @typedef {Object} Props
+ * @property {import('./$types').PageData} data
+ */
+
+/** @type {Props} */
+let { data } = $props()
+let { notes } = $derived(data)
 </script>
 
 <svelte:head>
@@ -18,10 +23,7 @@ $: ({ notes } = data)
 </svelte:head>
 
 <article>
-	<PageIntro>
-		Notes
-		<!-- <TextLede slot="intro">Coming soon.</TextLede> -->
-	</PageIntro>
+	<PageIntro>Notes</PageIntro>
 	<PageSection>
 		<div class="flex flex-col gap-8">
 			{#each notes as note, index}

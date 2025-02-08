@@ -3,9 +3,14 @@ import Divider from '$lib/components/divider.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 
-/** @type {import('./$types').PageData} */
-export let data
-$: ({ posts } = data)
+/**
+ * @typedef {Object} Props
+ * @property {import('./$types').PageData} data
+ */
+
+/** @type {Props} */
+let { data } = $props()
+let { posts } = $derived(data)
 </script>
 
 <svelte:head>
@@ -31,8 +36,7 @@ $: ({ posts } = data)
 							{#if index !== 0}<Divider />{/if}
 							<a
 								class="post-link block py-1"
-								href="/writing/{post.slug.current}/"
-								>{post.title}</a
+								href="/writing/{post.slug.current}/">{post.title}</a
 							>
 						{/each}
 					</div>

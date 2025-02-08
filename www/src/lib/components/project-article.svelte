@@ -7,7 +7,7 @@ import IconRSS from './icons/icon-rss.svelte'
 import MentionLink from './mention-link.svelte'
 import PortableText from './portable-text.svelte'
 
-export let project
+let { project } = $props()
 </script>
 
 <article class="flex flex-col gap-8 lg:gap-9">

@@ -1,8 +1,13 @@
 <script>
-/** @type {import('@portabletext/svelte').CustomBlockComponentProps} */
-export let portableText
+/**
+ * @typedef {Object} Props
+ * @property {import('@portabletext/svelte').CustomBlockComponentProps} portableText
+ */
 
-$: ({ value } = portableText)
+/** @type {Props} */
+let { portableText } = $props()
+
+let { value } = $derived(portableText)
 </script>
 
 <figure class="m-0 my-[2em]">

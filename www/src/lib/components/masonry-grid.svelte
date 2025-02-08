@@ -1,10 +1,16 @@
 <script>
 import { onDestroy, onMount, tick } from 'svelte'
+import { run } from 'svelte/legacy'
 
-/** @type {string | undefined} */
-export let gapClass = undefined
-/** @type {any[]} */
-export let items = []
+/**
+ * @typedef {Object} Props
+ * @property {string | undefined} [gapClass]
+ * @property {any[]} [items]
+ * @property {import('svelte').Snippet} [children]
+ */
+
+/** @type {Props} */
+let { gapClass = undefined, items = [], children } = $props()
 
 /**
  * @typedef {Object} Grid
@@ -18,7 +24,7 @@ export let items = []
 /** @type {Grid} */
 let grid
 /** @type {HTMLDivElement} */
-let masonryElement
+let masonryElement = $state()
 
 export const refreshLayout = async () => {
 	/* Get the post relayout number of columns */
@@ -91,19 +97,23 @@ onDestroy(() => {
 	_window?.removeEventListener('resize', refreshLayout, false)
 })
 
-$: if (masonryElement) {
-	calcGrid(masonryElement)
-}
+run(() => {
+	if (masonryElement) {
+		calcGrid(masonryElement)
+	}
+})
 
 // Update if items are changed
-$: if (items) {
-	// Refresh masonryElement
-	masonryElement = masonryElement
-}
+run(() => {
+	if (items) {
+		// Refresh masonryElement
+		masonryElement = masonryElement
+	}
+})
 </script>
 
 <div bind:this={masonryElement} class="masonry-grid grid {gapClass}">
-	<slot />
+	{@render children?.()}
 </div>
 
 <style>
