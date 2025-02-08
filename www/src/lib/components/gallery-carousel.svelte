@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import { onMount, tick } from 'svelte'
 import { self, stopPropagation } from 'svelte/legacy'
 import { fade } from 'svelte/transition'
@@ -9,15 +9,17 @@ import TrapFocus from './helpers/trap-focus.svelte'
 import IconButton from './icon-button.svelte'
 import ImageDetails from './image-details.svelte'
 
-interface Properties {
-	images: any
-	initialIndex: number
-	onClose: () => void
-}
+/**
+ * @typedef {Object} Props
+ * @property {any} images
+ * @property {number} initialIndex
+ * @property {Function} onClose
+ */
 
-let { images, initialIndex, onClose }: Properties = $props()
-
-let carousel: HTMLElement = $state()
+/** @type {Props} */
+let { images, initialIndex, onClose } = $props()
+/** @type {HTMLElement} */
+let carousel = $state()
 
 onMount(async () => {
 	await tick()
@@ -26,7 +28,10 @@ onMount(async () => {
 	target?.scrollIntoView({ block: 'center' })
 })
 
-function handleEscape(event: KeyboardEvent) {
+/**
+ * @param {KeyboardEvent} event
+ */
+function handleEscape(event) {
 	if (event.key !== 'Escape') return
 	onClose()
 }

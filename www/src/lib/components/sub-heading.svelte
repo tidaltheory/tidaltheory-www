@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 const resolveHeadingElement = {
 	1: 'h1',
 	2: 'h2',
@@ -12,13 +12,15 @@ const headingStyle = {
 	4: 'text-xl md:text-3xl xl:text-4xl',
 }
 
-interface Properties {
-	shouldShow: boolean | undefined
-	level?: keyof typeof resolveHeadingElement
-	children?: import('svelte').Snippet
-}
+/**
+ * @typedef {Object} Props
+ * @property {import('svelte').Snippet} [children]
+ * @property {keyof typeof resolveHeadingElement} [level]
+ * @property {boolean} [shouldShow]
+ */
 
-let { shouldShow, level = 1, children }: Properties = $props()
+/** @type {Props} */
+let { shouldShow, level = 1, children } = $props()
 
 const heading = resolveHeadingElement[level]
 const styleClass = headingStyle[level]
