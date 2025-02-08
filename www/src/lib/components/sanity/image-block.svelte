@@ -3,11 +3,16 @@ import { onMount } from 'svelte'
 
 import { urlFor } from '$lib/sanity/image'
 
-/** @type {import('@portabletext/svelte').CustomBlockComponentProps} */
-export let portableText
+/**
+ * @typedef {Object} Props
+ * @property {import('@portabletext/svelte').CustomBlockComponentProps} portableText
+ */
+
+/** @type {Props} */
+let { portableText } = $props()
 
 /** @type {HTMLImageElement | null} */
-let imgElement = null
+let imgElement = $state(null)
 
 /** @param {HTMLImageElement} target */
 function reveal(target) {

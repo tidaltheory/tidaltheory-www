@@ -18,20 +18,31 @@ const headingStyle = {
 	4: 'text-xl md:text-3xl xl:text-4xl',
 }
 
-/** @type {keyof typeof resolveHeadingElement} */
-export let level = 1
-/** @type {boolean | undefined} */
-export let shouldShow = undefined
-export let transitionIn = false
+/**
+ * @typedef {Object} Props
+ * @property {keyof typeof resolveHeadingElement} [level]
+ * @property {boolean | undefined} [shouldShow]
+ * @property {boolean} [transitionIn]
+ * @property {import('svelte').Snippet} [children]
+ */
+
+/** @type {Props} */
+let {
+	level = 1,
+	shouldShow = undefined,
+	transitionIn = false,
+	children,
+} = $props()
 
 const heading = resolveHeadingElement[level]
 const styleClass = headingStyle[level]
 
-$: hasWrapped = false
-$: show = shouldShow !== undefined && hasWrapped ? shouldShow : true
+let hasWrapped = $state(false)
+
+let show = $derived(shouldShow !== undefined && hasWrapped ? shouldShow : true)
 
 /** @type {Element} */
-let element
+let element = $state()
 onMount(() => {
 	if (transitionIn) wrapLines(element)
 
@@ -57,7 +68,7 @@ onMount(() => {
 	style:opacity={show ? 1 : 0}
 >
 	<span bind:this={element}>
-		<slot />
+		{@render children?.()}
 	</span>
 </svelte:element>
 
@@ -65,7 +76,7 @@ onMount(() => {
 .heading {
 	opacity: 0;
 
-	&:has(.line) {
+	&:has(:global(.line)) {
 		opacity: 1;
 	}
 }

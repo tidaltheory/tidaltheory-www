@@ -3,50 +3,56 @@ import ObserveIntersection from 'svelte-intersection-observer'
 
 import { FOCUS_OUTLINE } from '$lib/classnames.js'
 
-// /** @type {import('@tidaltheory/lens').ImageThumbnails} */
-export let image
-/** @type {boolean} */
-export let isHidden
-/** @type {boolean} */
-export let isDelayed = false
-/** @type {(e: MouseEvent) => void} */
-export let onClick
+/**
+ * @typedef {Object} Props
+ * @property {import('@tidaltheory/lens').ImageThumbnails} image
+ * @property {boolean} isHidden
+ * @property {boolean} [isDelayed]
+ * @property {(e: MouseEvent) => void} onClick
+ */
 
-$: ({ aspectRatio } = image.metadata.dimensions)
-$: srcset = `${image.srcset.sm} 300w, ${image.srcset.md} 600w, ${image.srcset.lg} 1200w,`
+/** @type {Props} */
+let { image, isHidden, isDelayed = false, onClick } = $props()
+
+let { aspectRatio } = $derived(image.metadata.dimensions)
+let srcset = $derived(
+	`${image.srcset.sm} 300w, ${image.srcset.md} 600w, ${image.srcset.lg} 1200w,`,
+)
 
 /** @type {HTMLDivElement} */
-let thumb
+let thumb = $state()
 </script>
 
 <button
 	class="flex w-full rounded-[1px] transition {FOCUS_OUTLINE}"
 	type="button"
 	class:opacity-50={isHidden}
-	on:click={onClick}
+	onclick={onClick}
 >
-	<ObserveIntersection once element={thumb} threshold={0.45} let:intersecting>
-		<div
-			class="relative flex w-full transition duration-500"
-			class:opacity-0={!intersecting}
-			class:translate-y-6={!intersecting}
-			class:delay-75={isDelayed}
-			style:aspect-ratio={aspectRatio}
-			bind:this={thumb}
-		>
-			<img
-				loading="lazy"
-				decoding="async"
-				{srcset}
-				sizes="(min-width: 1024px) 34vw, (min-width: 768px) 32vw, 40vw"
-				src={image.srcset.sm}
-				alt=""
-			/>
-			<!-- <img
-				class="absolute inset-0 w-full"
-				src={image.metadata.lqip}
-				alt=""
-			/> -->
-		</div>
+	<ObserveIntersection once element={thumb} threshold={0.45}>
+		{#snippet children({ intersecting })}
+			<div
+				class="relative flex w-full transition duration-500"
+				class:opacity-0={!intersecting}
+				class:translate-y-6={!intersecting}
+				class:delay-75={isDelayed}
+				style:aspect-ratio={aspectRatio}
+				bind:this={thumb}
+			>
+				<img
+					loading="lazy"
+					decoding="async"
+					{srcset}
+					sizes="(min-width: 1024px) 34vw, (min-width: 768px) 32vw, 40vw"
+					src={image.srcset.sm}
+					alt=""
+				/>
+				<!-- <img
+					class="absolute inset-0 w-full"
+					src={image.metadata.lqip}
+					alt=""
+				/> -->
+			</div>
+		{/snippet}
 	</ObserveIntersection>
 </button>

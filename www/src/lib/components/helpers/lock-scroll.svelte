@@ -1,5 +1,12 @@
 <script>
 import { onMount } from 'svelte'
+/**
+ * @typedef {Object} Props
+ * @property {import('svelte').Snippet} [children]
+ */
+
+/** @type {Props} */
+let { children } = $props()
 
 onMount(() => {
 	const { body, documentElement: html } = document
@@ -36,4 +43,4 @@ onMount(() => {
 })
 </script>
 
-<slot />
+{@render children?.()}

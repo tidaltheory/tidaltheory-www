@@ -1,23 +1,30 @@
 <script>
 import { onMount } from 'svelte'
 
-/** @type {object} */
-export let imgAttributes
-/** @type {number} */
-export let widthInt
-/** @type {number} */
-export let heightInt
-/** @type {boolean} */
-export let isLazy
-/** @type {'eager' | 'lazy'} */
-export let loading
-/** @type {unknown} */
-export let onError
+/**
+ * @typedef {Object} Props
+ * @property {object} imgAttributes
+ * @property {number} widthInt
+ * @property {number} heightInt
+ * @property {boolean} isLazy
+ * @property {'eager' | 'lazy'} loading
+ * @property {unknown} onError
+ */
+
+/** @type {Props} */
+let {
+	imgAttributes,
+	widthInt,
+	heightInt,
+	isLazy,
+	loading = $bindable(),
+	onError,
+} = $props()
 
 loading = isLazy ? 'lazy' : loading
 
 /** @type {HTMLImageElement} */
-let element
+let element = $state()
 
 /**
  * @param {HTMLImageElement} img

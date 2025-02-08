@@ -1,5 +1,11 @@
 <script>
-export let vertical = false
+/**
+ * @typedef {Object} Props
+ * @property {boolean} [vertical]
+ */
+
+/** @type {Props} */
+let { vertical = false } = $props()
 </script>
 
 <div class="relative">

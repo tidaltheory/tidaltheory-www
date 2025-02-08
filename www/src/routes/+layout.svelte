@@ -6,20 +6,30 @@ import ObserveIntersection from 'svelte-intersection-observer'
 
 import SiteNav from '$lib/components/site-nav.svelte'
 
+/**
+ * @typedef {Object} Props
+ * @property {import('svelte').Snippet} [children]
+ */
+
+/** @type {Props} */
+let { children } = $props()
+
 /** @type {HTMLElement} */
-let bg
+let bg = $state()
 </script>
 
 <div class="relative grid min-h-[100svh]">
-	<ObserveIntersection once element={bg} let:intersecting>
-		<div
-			class="bg pointer-events-none absolute inset-0 z-0"
-			class:opacity-0={!intersecting}
-			bind:this={bg}
-		></div>
+	<ObserveIntersection once element={bg}>
+		{#snippet children({ intersecting })}
+			<div
+				class="bg pointer-events-none absolute inset-0 z-10"
+				class:opacity-0={!intersecting}
+				bind:this={bg}
+			></div>
+		{/snippet}
 	</ObserveIntersection>
 	<SiteNav />
-	<main class="mt-16 md:ml-20 md:mt-0"><slot /></main>
+	<main class="mt-16 md:ml-20 md:mt-0">{@render children?.()}</main>
 </div>
 
 <style>
