@@ -1,11 +1,17 @@
 <script>
 import { onMount } from 'svelte'
 
-/** @type {import('@portabletext/svelte').MarkComponentProps} */
-export let portableText
+/**
+ * @typedef {Object} Props
+ * @property {import('@portabletext/svelte').MarkComponentProps} portableText
+ * @property {import('svelte').Snippet} [children]
+ */
+
+/** @type {Props} */
+let { portableText, children } = $props()
 
 /** @type {HTMLElement} */
-let mark
+let mark = $state()
 
 /** @param {HTMLElement} mark */
 function insertSpaces(mark) {
@@ -23,5 +29,5 @@ onMount(() => {
 	bind:this={mark}
 	class="text-grey-300 bg-grey-900 rounded-sm bg-opacity-0 before:opacity-50 before:content-['#\002009']"
 >
-	<slot />
+	{@render children?.()}
 </mark>

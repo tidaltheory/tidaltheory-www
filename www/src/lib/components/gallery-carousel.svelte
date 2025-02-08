@@ -1,5 +1,6 @@
 <script lang="ts">
 import { onMount, tick } from 'svelte'
+import { self, stopPropagation } from 'svelte/legacy'
 import { fade } from 'svelte/transition'
 
 import GalleryImage from './gallery-image.svelte'
@@ -8,11 +9,15 @@ import TrapFocus from './helpers/trap-focus.svelte'
 import IconButton from './icon-button.svelte'
 import ImageDetails from './image-details.svelte'
 
-export let images: any
-export let initialIndex: number
-export let onClose: () => void
+interface Properties {
+	images: any
+	initialIndex: number
+	onClose: () => void
+}
 
-let carousel: HTMLElement
+let { images, initialIndex, onClose }: Properties = $props()
+
+let carousel: HTMLElement = $state()
 
 onMount(async () => {
 	await tick()
@@ -27,7 +32,7 @@ function handleEscape(event: KeyboardEvent) {
 }
 </script>
 
-<svelte:window on:keydown={handleEscape} />
+<svelte:window onkeydown={handleEscape} />
 
 <Portal>
 	<TrapFocus>
@@ -38,7 +43,7 @@ function handleEscape(event: KeyboardEvent) {
 		>
 			<div
 				class="bg-grey-900 fixed inset-0 z-[99] bg-opacity-50 backdrop-blur transition"
-			/>
+			></div>
 			<div
 				class="zoom"
 				aria-modal="true"
@@ -47,13 +52,13 @@ function handleEscape(event: KeyboardEvent) {
 				tabindex="-1"
 			>
 				{#each images as image, index}
-					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- svelte-ignore a11y_click_events_have_key_events -->
 					<div
 						class="flex snap-center items-center justify-center p-2 md:p-4 xl:p-8"
 						data-index={index}
 						role="button"
 						tabindex="-1"
-						on:click|self|stopPropagation={onClose}
+						onclick={self(stopPropagation(onClose))}
 					>
 						<div
 							class="group relative flex h-auto max-h-full w-auto max-w-full object-contain"

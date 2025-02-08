@@ -1,8 +1,5 @@
 <script>
-export let lqip
-export let width
-export let height
-export let position
+let { lqip, width, height, position } = $props()
 
 /**
  * Reduce width down to 300px and scale height to match, while maintaining the

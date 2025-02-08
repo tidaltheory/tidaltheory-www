@@ -1,8 +1,13 @@
 <script>
 import Item from '../item.svelte'
 
-/** @type {import('./$types').PageData} */
-export let data
+/**
+ * @typedef {Object} Props
+ * @property {import('./$types').PageData} data
+ */
+
+/** @type {Props} */
+let { data } = $props()
 </script>
 
 <Item {data} slug={data.slug} />

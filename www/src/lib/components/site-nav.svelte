@@ -5,7 +5,7 @@ import { classes } from '$lib/transitions'
 
 import SiteNavItem from './site-nav-item.svelte'
 
-let isMenuOpen = false
+let isMenuOpen = $state(false)
 
 function toggleMenu() {
 	isMenuOpen = !isMenuOpen
@@ -20,14 +20,15 @@ beforeNavigate(async () => {
 	<div class="bg-grey-900 relative z-10 h-16 px-8 py-4 md:h-screen md:p-6">
 		<div class="flex justify-between md:absolute md:top-[calc(11vh_+_1.5rem)]">
 			<div class="flex">
-				<SiteNavItem href="/" home label="Home" />
+				<SiteNavItem href="/" home />
 			</div>
 			<div class="flex md:hidden">
 				<button
 					class="rounded border-none bg-transparent p-0 {FOCUS_OUTLINE}"
-					on:click={toggleMenu}
+					onclick={toggleMenu}
+					aria-label="Toggle menu"
 				>
-					<div class="bg-grey-600 h-8 w-16 rounded" />
+					<div class="bg-grey-600 h-8 w-16 rounded"></div>
 				</button>
 			</div>
 		</div>
@@ -35,11 +36,11 @@ beforeNavigate(async () => {
 		<div class="flex h-full place-items-center">
 			<nav class="hidden md:block">
 				<div class="grid gap-8">
-					<SiteNavItem href="/about/" label="About" />
-					<SiteNavItem href="/projects/" label="Projects" />
-					<SiteNavItem href="/photos/" label="Photos" />
-					<SiteNavItem href="/writing/" label="Writing" />
-					<SiteNavItem href="/notes/" label="Notes" />
+					<SiteNavItem href="/about/" />
+					<SiteNavItem href="/projects/" />
+					<SiteNavItem href="/photos/" />
+					<SiteNavItem href="/writing/" />
+					<SiteNavItem href="/notes/" />
 				</div>
 			</nav>
 		</div>
@@ -49,9 +50,9 @@ beforeNavigate(async () => {
 			class="fixed h-screen w-screen"
 			role="button"
 			tabindex="-1"
-			on:click={toggleMenu}
-			on:keypress={toggleMenu}
-		/>
+			onclick={toggleMenu}
+			onkeypress={toggleMenu}
+		></div>
 	{/if}
 	{#if isMenuOpen}
 		<div

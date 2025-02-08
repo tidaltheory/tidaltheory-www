@@ -5,10 +5,15 @@ import PageIntro from '$lib/components/page-intro.svelte'
 import PortableText from '$lib/components/portable-text.svelte'
 import TextLede from '$lib/components/text-lede.svelte'
 
-/** @type {import('./$types').PageData} */
-export let data
+/**
+ * @typedef {Object} Props
+ * @property {import('./$types').PageData} data
+ */
 
-$: ({ title, lede, ledeClean, coverImage, content, createdAt } = data)
+/** @type {Props} */
+let { data } = $props()
+
+let { title, lede, ledeClean, coverImage, content, createdAt } = $derived(data)
 </script>
 
 <svelte:head>
@@ -28,17 +33,19 @@ $: ({ title, lede, ledeClean, coverImage, content, createdAt } = data)
 <article>
 	<PageIntro>
 		{title}
-		<div slot="intro" class="grid gap-5 md:gap-6" let:intersecting>
-			<FadeUp showing={intersecting} delay={100}>
-				<time
-					class="text-grey-400 leading-trim salt text-base font-medium md:text-lg"
-					datetime={data._createdAt}>{createdAt}</time
-				>
-			</FadeUp>
-			<FadeUp showing={intersecting} delay={175}>
-				<TextLede><PortableText value={lede} /></TextLede>
-			</FadeUp>
-		</div>
+		{#snippet intro({ intersecting })}
+			<div class="grid gap-5 md:gap-6">
+				<FadeUp showing={intersecting} delay={100}>
+					<time
+						class="text-grey-400 leading-trim salt text-base font-medium md:text-lg"
+						datetime={data._createdAt}>{createdAt}</time
+					>
+				</FadeUp>
+				<FadeUp showing={intersecting} delay={175}>
+					<TextLede><PortableText value={lede} /></TextLede>
+				</FadeUp>
+			</div>
+		{/snippet}
 	</PageIntro>
 	<PageContent>
 		<div class="wrapper prose relative">

@@ -11,14 +11,18 @@ function getPath(path = '') {
 	return path.replace(/^static/, '')
 }
 
-/** @type {ImageRecord | ImageThumbnails} */
-export let image
-/** @type {Array<string> | undefined} */
-export let sizes = undefined
-export let lazyLoad = true
+/**
+ * @typedef {Object} Props
+ * @property {ImageRecord | ImageThumbnails} image
+ * @property {Array<string> | undefined} [sizes]
+ * @property {boolean} [lazyLoad]
+ */
+
+/** @type {Props} */
+let { image, sizes = undefined, lazyLoad = true } = $props()
 
 /** @type {HTMLImageElement | null} */
-let imgElement = null
+let imgElement = $state(null)
 
 /** @type {ImageRecord} */
 const imageObject = sizes ? image[sizes[0]] : image

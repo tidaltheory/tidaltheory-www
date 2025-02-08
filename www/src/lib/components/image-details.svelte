@@ -1,12 +1,16 @@
 <script>
 import IconButton from './icon-button.svelte'
 
-/** @type {string} */
-export let id
-/** @type {import('@tidaltheory/lens').ImageMeta} */
-export let meta
+/**
+ * @typedef {Object} Props
+ * @property {string} id
+ * @property {import('@tidaltheory/lens').ImageMeta} meta
+ */
 
-$: expanded = false
+/** @type {Props} */
+let { id, meta } = $props()
+
+let expanded = $state(false)
 
 function toggleExpanded() {
 	expanded = !expanded

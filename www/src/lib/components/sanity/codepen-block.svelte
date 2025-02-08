@@ -1,8 +1,13 @@
 <script>
 import PortableText from '../portable-text.svelte'
 
-/** @type {import('@portabletext/svelte').CustomBlockComponentProps} */
-export let portableText
+/**
+ * @typedef {Object} Props
+ * @property {import('@portabletext/svelte').CustomBlockComponentProps} portableText
+ */
+
+/** @type {Props} */
+let { portableText } = $props()
 
 const urlParts = portableText.value.url.split('/')
 const embedUrl = `https://codepen.io/${urlParts[3]}/embed/${urlParts[5]}?height=370&theme-id=dark&default-tab=result`
@@ -18,7 +23,7 @@ const embedUrl = `https://codepen.io/${urlParts[3]}/embed/${urlParts[5]}?height=
 		frameborder="no"
 		allowtransparency
 		allowfullScreen
-	/>
+	></iframe>
 	{#if portableText.value.caption}
 		<figcaption>
 			<small class="max-w-[60ch] text-sm"

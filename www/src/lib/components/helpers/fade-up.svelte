@@ -1,7 +1,14 @@
 <script>
-export let showing = false
-export let delay = 0
-export let className = undefined
+/**
+ * @typedef {Object} Props
+ * @property {boolean} [showing]
+ * @property {number} [delay]
+ * @property {any} [className]
+ * @property {import('svelte').Snippet} [children]
+ */
+
+/** @type {Props} */
+let { showing = false, delay = 0, className = undefined, children } = $props()
 </script>
 
 <div
@@ -10,7 +17,7 @@ export let className = undefined
 	class:opacity-0={!showing}
 	style="--delay: {delay}ms"
 >
-	<slot />
+	{@render children?.()}
 </div>
 
 <style>

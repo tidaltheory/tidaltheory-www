@@ -3,10 +3,10 @@ import FBadge from '$lib/components/f-badge.svelte'
 import Heading from '$lib/components/heading.svelte'
 import PortableText from '$lib/components/portable-text.svelte'
 
-export let work
+let { work } = $props()
 
-$: ({ startDateNice, endDateNice, title, lede, slug, discipline, content } =
-	work)
+let { startDateNice, endDateNice, title, lede, slug, discipline, content } =
+	$derived(work)
 </script>
 
 <article class="relative grid items-start gap-6">
@@ -25,7 +25,9 @@ $: ({ startDateNice, endDateNice, title, lede, slug, discipline, content } =
 		{/if}
 		<p>
 			{#if content}
-				<a href="/work/{slug.current}/"><span aria-hidden>↳</span> Read more</a>
+				<a href="/work/{slug.current}/"
+					><span aria-hidden="true">↳</span> Read more</a
+				>
 			{:else}
 				Case study coming soon.
 			{/if}
@@ -68,8 +70,8 @@ article {
 		}
 	}
 
-	&:has(a[href]):hover time::before,
-	&:has(a[href]):focus-within time::before {
+	&:has(:global(a[href])):hover time::before,
+	&:has(:global(a[href])):focus-within time::before {
 		background-color: #fff;
 		box-shadow:
 			0 0 calc(var(--bullet-size) * 0.08) 0 #fff,
@@ -84,7 +86,7 @@ article {
  * 1. Positions the ::before pseudo-element centered to the text.
  * 2. Approximates a whitespace removed by the flex display.
  */
-time:has(time) {
+time:has(:global(time)) {
 	--font-size-px: 12;
 	--line-height-offset: calc(
 		(((var(--line-height-scale) * var(--font-size-px)) - 16) / 2) /

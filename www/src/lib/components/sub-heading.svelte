@@ -12,13 +12,18 @@ const headingStyle = {
 	4: 'text-xl md:text-3xl xl:text-4xl',
 }
 
-export let shouldShow: boolean | undefined
-export let level: keyof typeof resolveHeadingElement = 1
+interface Properties {
+	shouldShow: boolean | undefined
+	level?: keyof typeof resolveHeadingElement
+	children?: import('svelte').Snippet
+}
+
+let { shouldShow, level = 1, children }: Properties = $props()
 
 const heading = resolveHeadingElement[level]
 const styleClass = headingStyle[level]
 
-$: show = shouldShow === undefined ? true : shouldShow
+let show = $derived(shouldShow === undefined ? true : shouldShow)
 </script>
 
 <svelte:element
@@ -27,7 +32,7 @@ $: show = shouldShow === undefined ? true : shouldShow
 	class:hide={!show}
 >
 	<span class="text inline-block will-change-transform" style="--delay: 300ms">
-		<slot />
+		{@render children?.()}
 	</span>
 </svelte:element>
 

@@ -1,5 +1,12 @@
 <script>
-export let fullscreen = false
+/**
+ * @typedef {Object} Props
+ * @property {boolean} [fullscreen]
+ * @property {import('svelte').Snippet} [children]
+ */
+
+/** @type {Props} */
+let { fullscreen = false, children } = $props()
 </script>
 
 <!--<div-->
@@ -8,7 +15,7 @@ export let fullscreen = false
 <!--&gt;-->
 <div class="section" class:full-height={fullscreen}>
 	<div class="section-padding">
-		<slot />
+		{@render children?.()}
 	</div>
 </div>
 

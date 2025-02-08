@@ -7,10 +7,14 @@ import TextLede from '$lib/components/text-lede.svelte'
 
 import WorkBlock from './work-block.svelte'
 
-/** @type {import('./$types').PageData} */
-export let data
+/**
+ * @typedef {Object} Props
+ * @property {import('./$types').PageData} data
+ */
 
-$: ({ title, lede, content, cases } = data)
+/** @type {Props} */
+let { data } = $props()
+let { title, lede, content, cases } = $derived(data)
 </script>
 
 <svelte:head>
@@ -22,9 +26,11 @@ $: ({ title, lede, content, cases } = data)
 <article>
 	<PageIntro>
 		{title}
-		<FadeUp slot="intro" let:intersecting showing={intersecting} delay={100}>
-			<TextLede><PortableText value={lede} /></TextLede>
-		</FadeUp>
+		{#snippet intro({ intersecting })}
+			<FadeUp showing={intersecting} delay={100}>
+				<TextLede><PortableText value={lede} /></TextLede>
+			</FadeUp>
+		{/snippet}
 	</PageIntro>
 	{#if content}
 		<PageSection>
