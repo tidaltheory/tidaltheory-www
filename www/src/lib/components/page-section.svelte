@@ -29,7 +29,7 @@ export let fullscreen = false
 
 	@container section (width) {
 		@media (min-width: 768px) {
-			padding: 11svb 10cqi 22.5svb;
+			padding: 11svb 12cqi 22.5svb;
 		}
 
 		@media (min-width: 1280px) {

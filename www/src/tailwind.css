@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+	/**
+	 * 1. Prevent scrolling content when a dialog is open.
+	 */
+	html {
+		scrollbar-gutter: stable;
+
+		&:has(dialog[open]) {
+			overflow: hidden; /* [1] */
+		}
+	}
+
 	a {
 		text-decoration-color: transparent;
 		border-radius: 1px;

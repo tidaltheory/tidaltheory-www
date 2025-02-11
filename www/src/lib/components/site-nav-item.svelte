@@ -1,40 +1,63 @@
 <script>
 import { FOCUS_OUTLINE } from '$lib/classnames'
 
-import SiteNavLogo from './site-nav-logo.svelte'
-import Tooltip from './tooltip.svelte'
-
-export let home = false
 /** @type {string} */
 export let href
-/** @type {string | undefined} */
-export let label = undefined
+export let main = false
+
+const mainClasses = 'font-display font-bold uppercase tracking-wider'
 </script>
 
-<Tooltip {label} let:tooltipReference let:toggleTooltip>
-	<a
-		data-sveltekit-prefetch
-		{href}
-		class="rounded {FOCUS_OUTLINE} {home ? 'text-cyan-400' : ''}"
-		use:tooltipReference
-		on:mouseover={!$$slots.default && toggleTooltip}
-		on:focus={!$$slots.default && toggleTooltip}
-		on:mouseout={!$$slots.default && toggleTooltip}
-		on:blur={!$$slots.default && toggleTooltip}
-	>
-		<div class="pointer-events-none flex items-center">
-			{#if home}
-				<SiteNavLogo />
-			{:else}
-				<div class="bg-grey-600 h-8 w-8 rounded" />
-			{/if}
-			{#if $$slots.default}
-				<span
-					class="font-display leading-trim px-2 text-base font-bold uppercase leading-none tracking-wider"
-				>
-					<slot />
-				</span>
-			{/if}
-		</div>
-	</a>
-</Tooltip>
+<a
+	data-sveltekit-prefetch
+	{href}
+	class="rounded p-2 text-white {FOCUS_OUTLINE}"
+>
+	<div class="pointer-events-none flex items-center">
+		{#if $$slots.default}
+			<span
+				class="leading-trim text-base leading-none {main
+					? mainClasses
+					: 'font-semibold tracking-tight'}"
+			>
+				<slot />
+			</span>
+		{/if}
+	</div>
+</a>
+
+<style>
+a {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		inset: 0;
+		background-color: currentColor;
+		content: '';
+		scale: 0 1;
+	}
+
+	&:hover {
+		&::after {
+			animation:
+				redact 300ms ease-in-out 2 alternate,
+				origin 300ms step-end forwards;
+			transform-origin: 0% 50%;
+		}
+	}
+}
+
+@keyframes redact {
+	80%,
+	100% {
+		scale: 1 1;
+	}
+}
+
+@keyframes origin {
+	to {
+		transform-origin: 100% 50%;
+	}
+}
+</style>
