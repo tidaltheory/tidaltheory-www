@@ -45,7 +45,7 @@ function handleCardPress(event) {
 	<div
 		class="bg-grey-700 absolute -inset-2 -z-10 rounded-md bg-opacity-0 transition"
 		class:group-hover:bg-opacity-20={type !== 'note-add'}
-	/>
+	></div>
 	<div
 		class="bg-grey-700 flex h-9 w-9 items-center justify-center rounded-full text-white"
 	>
@@ -126,7 +126,7 @@ function handleCardPress(event) {
 							class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] underline-offset-[calc(0.0781em_*_2)] transition group-hover:decoration-white"
 							{id}
 						>
-							Read post <span aria-hidden>→</span>
+							<span aria-hidden="true">↳</span> Read post
 						</span>
 					</footer>
 				</div>

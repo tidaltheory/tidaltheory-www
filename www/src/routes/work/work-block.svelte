@@ -1,4 +1,5 @@
 <script>
+import { FOCUS_OUTLINE } from '$lib/classnames'
 import FBadge from '$lib/components/f-badge.svelte'
 import Heading from '$lib/components/heading.svelte'
 import PortableText from '$lib/components/portable-text.svelte'
@@ -25,7 +26,11 @@ $: ({ startDateNice, endDateNice, title, lede, slug, discipline, content } =
 		{/if}
 		<p>
 			{#if content}
-				<a href="/work/{slug.current}/"><span aria-hidden>↳</span> Read more</a>
+				<a
+					class="underline decoration-[transparent] decoration-[0.0781em] underline-offset-[calc(0.0781em_*_2)] {FOCUS_OUTLINE}"
+					href="/work/{slug.current}/"
+					><span aria-hidden="true">↳</span> Read more</a
+				>
 			{:else}
 				Case study coming soon.
 			{/if}
