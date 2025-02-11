@@ -13,6 +13,11 @@
 		"package": "vite package",
 		"preview": "vite preview"
 	},
+	"browserslist": [
+		"last 2 chrome versions",
+		"last 2 firefox versions",
+		"last 1 safari major version"
+	],
 	"dependencies": {
 		"@egjs/svelte-grid": "1.16.0",
 		"@floating-ui/dom": "1.5.3",
