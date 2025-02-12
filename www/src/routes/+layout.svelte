@@ -13,10 +13,10 @@ let bg
 <div class="relative grid min-h-[100svh]">
 	<ObserveIntersection once element={bg} let:intersecting>
 		<div
-			class="bg pointer-events-none absolute inset-0 z-10"
+			class="bg pointer-events-none absolute inset-0 z-0"
 			class:opacity-0={!intersecting}
 			bind:this={bg}
-		/>
+		></div>
 	</ObserveIntersection>
 	<SiteNav />
 	<main class="mt-16 md:ml-20 md:mt-0"><slot /></main>
