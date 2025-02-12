@@ -13,7 +13,8 @@ import SiteNavLogo from './site-nav-logo.svelte'
 let menu
 
 onMount(() => {
-	menu.addEventListener('click', ({ target: dialog }) => {
+	menu.addEventListener('click', (event) => {
+		let dialog = /** @type {HTMLDialogElement} */ (event.target)
 		if (dialog.nodeName === 'DIALOG') dialog.close('dismiss')
 	})
 })
@@ -109,6 +110,11 @@ beforeNavigate(async () => {
 	@media (min-width: 768px) {
 		writing-mode: sideways-lr;
 		text-orientation: sideways;
+
+		@supports not (writing-mode: sideways-lr) {
+			writing-mode: vertical-lr;
+			rotate: 180deg;
+		}
 	}
 }
 
@@ -121,9 +127,17 @@ beforeNavigate(async () => {
 		background-color: theme('colors.grey.600');
 	}
 
+	/**
+	 * 1. Safari doesn't support `sideways-lr`.
+	 */
 	@media (min-width: 768px) {
-		writing-mode: sideways-lr;
+		writing-mode: sideways-lr; /* [1] */
 		text-orientation: sideways;
+
+		@supports not (writing-mode: sideways-lr) {
+			writing-mode: vertical-lr;
+			rotate: 180deg;
+		}
 	}
 
 	& span::before,
@@ -132,6 +146,9 @@ beforeNavigate(async () => {
 		content: '';
 	}
 
+	/**
+	 * @todo Remove this after tailwindcss-capsize outputs logical properties.
+	 */
 	& span::before {
 		margin-block-end: calc(
 			(
