@@ -1,5 +1,6 @@
 <script>
 import Divider from '$lib/components/divider.svelte'
+import FBadge from '$lib/components/f-badge.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 
@@ -29,11 +30,19 @@ $: ({ posts } = data)
 					<div class="flex w-full flex-col gap-3">
 						{#each posts.get(set) as post, index}
 							{#if index !== 0}<Divider />{/if}
-							<a
-								class="post-link block py-1"
-								href="/writing/{post.slug.current}/"
-								>{post.title}</a
-							>
+							<div class="flex flex-wrap items-center justify-between gap-3">
+								<a
+									class="post-link block py-1"
+									href="/writing/{post.slug.current}/">{post.title}</a
+								>
+								{#if post.tags}
+									<div class="flex flex-wrap gap-2">
+										{#each post.tags as tag}
+											<FBadge>{tag}</FBadge>
+										{/each}
+									</div>
+								{/if}
+							</div>
 						{/each}
 					</div>
 				</div>

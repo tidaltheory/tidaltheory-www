@@ -9,6 +9,13 @@ export default defineType({
 	name: 'post',
 	title: 'Post',
 	type: 'document',
+	fieldsets: [
+		{
+			name: 'date',
+			title: 'Date',
+			options: { columns: 2 },
+		},
+	],
 	fields: [
 		defineField({
 			name: 'title',
@@ -26,6 +33,31 @@ export default defineType({
 				isUnique: async (value, context) => context.defaultIsUnique(value, context),
 			},
 			validation: (rule) => rule.required(),
+		}),
+		defineField({
+			name: 'published',
+			title: 'Publish date',
+			type: 'date',
+			initialValue: () => new Date().toISOString().slice(0, 10),
+			validation: (rule) => rule.required(),
+			fieldset: 'date',
+		}),
+		defineField({
+			name: 'edited',
+			title: 'Edited date',
+			type: 'date',
+			initialValue: () => new Date().toISOString().slice(0, 10),
+			validation: (rule) => rule.required(),
+			fieldset: 'date',
+		}),
+		defineField({
+			name: 'tags',
+			title: 'Tags',
+			type: 'array',
+			of: [defineArrayMember({ type: 'string' })],
+			options: {
+				layout: 'tags',
+			},
 		}),
 		ledeField,
 		defineField({

@@ -8,7 +8,8 @@ import TextLede from '$lib/components/text-lede.svelte'
 /** @type {import('./$types').PageData} */
 export let data
 
-$: ({ title, lede, ledeClean, coverImage, content, createdAt } = data)
+$: ({ title, lede, ledeClean, coverImage, content, publishedOn, editedOn } =
+	data)
 </script>
 
 <svelte:head>
@@ -30,10 +31,16 @@ $: ({ title, lede, ledeClean, coverImage, content, createdAt } = data)
 		{title}
 		<div slot="intro" class="grid gap-5 md:gap-6" let:intersecting>
 			<FadeUp showing={intersecting} delay={100}>
-				<time
+				<p
 					class="text-grey-400 leading-trim salt text-base font-medium md:text-lg"
-					datetime={data._createdAt}>{createdAt}</time
 				>
+					{#if editedOn}
+						<time datetime={data.edited}>{editedOn}</time> (Originally published
+						<time datetime={data.published}>{publishedOn}</time>)
+					{:else}
+						<time datetime={data.published}>{publishedOn}</time>
+					{/if}
+				</p>
 			</FadeUp>
 			<FadeUp showing={intersecting} delay={175}>
 				<TextLede><PortableText value={lede} /></TextLede>

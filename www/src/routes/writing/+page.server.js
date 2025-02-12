@@ -12,7 +12,7 @@ export const load = async () => {
 		const postsByYear = new Map()
 
 		for (const post of posts) {
-			const date = new Date(post._createdAt)
+			const date = new Date(post.edited)
 			const year = getYear(date)
 
 			if (!postsByYear.has(year)) postsByYear.set(year, new Set())

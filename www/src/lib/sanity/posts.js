@@ -6,7 +6,7 @@ import { client } from './client.js'
  * @returns {Promise<import('./types.js').PostsQueryResult>}
  */
 export async function getPosts() {
-	let postsQuery = groq`*[_type == "post" && defined(slug.current)] | order(_createdAt desc)`
+	let postsQuery = groq`*[_type == "post" && defined(slug.current)] | order(edited desc)`
 
 	return await client.fetch(postsQuery)
 }

@@ -23,6 +23,10 @@ export const load = async ({ params }) => {
 
 	return {
 		...post,
-		createdAt: format(new Date(post._createdAt), 'dd MMMM yyyy'),
+		publishedOn: format(new Date(post.published), 'dd MMMM yyyy'),
+		editedOn:
+			post.edited === post.published
+				? undefined
+				: format(new Date(post.edited), 'dd MMMM yyyy'),
 	}
 }
