@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781804990155",
-    "title": "Equal Rites",
-    "authors": [
-      "Terry Pratchett"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=9AOREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/Equal_Rites.html?hl=&id=9AOREAAAQBAJ"
-  },
-  {
     "isbn": "9780062421074",
     "title": "The Dispossessed",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=Hn41AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=Hn41AgAAQBAJ"
+  },
+  {
+    "isbn": "9780316462815",
+    "title": "Eversion",
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=IJBUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=IJBUEAAAQBAJ"
   }
 ]
