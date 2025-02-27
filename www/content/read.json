@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9780330513203",
-    "title": "Mostly Harmless",
-    "authors": [
-      "Douglas Adams"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=eBd08nr5J8wC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/Mostly_Harmless.html?hl=&id=eBd08nr5J8wC"
-  },
-  {
     "isbn": "978-0-316-21760-6",
     "title": "Cibola Burn",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=qW1zEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=qW1zEAAAQBAJ"
+  },
+  {
+    "isbn": "9780316504928",
+    "title": "Echo of Worlds",
+    "authors": [
+      "M. R. Carey"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=jrPaEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=jrPaEAAAQBAJ"
   }
 ]
