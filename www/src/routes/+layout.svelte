@@ -28,7 +28,7 @@ let bg
 	background-image: url('/bg.webp');
 	background-position: top center;
 	background-repeat: no-repeat;
-	mix-blend-mode: screen;
+	mix-blend-mode: plus-lighter;
 	transition: opacity 1500ms ease-in;
 
 	@screen md {

@@ -9,5 +9,5 @@ export let vertical = false
 			: 'h-px w-full'}"
 		role="separator"
 		aria-orientation={vertical ? 'vertical' : 'horizontal'}
-	/>
+	></div>
 </div>
