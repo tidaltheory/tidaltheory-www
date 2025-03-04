@@ -42,7 +42,7 @@ export let project
 							type="image/webp"
 						/>
 						<img
-							class="h-full w-full object-contain"
+							class="h-full object-contain"
 							style:aspect-ratio={image.metadata.dimensions.aspectRatio}
 							style:max-height="{Math.floor(
 								image.metadata.dimensions.height / 2,
