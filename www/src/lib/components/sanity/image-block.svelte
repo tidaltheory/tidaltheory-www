@@ -19,7 +19,7 @@ onMount(() => {
 })
 </script>
 
-<figure class="not-prose m-0 my-[2em] flex">
+<figure class="m-0 my-[2em] flex">
 	<picture class="opacity-0 transition-opacity duration-300">
 		<source
 			srcset={urlFor(portableText.value).format('webp').url()}
