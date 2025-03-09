@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-0-316-21760-6",
-    "title": "Cibola Burn",
-    "authors": [
-      "James S. A. Corey"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=Hn41AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=Hn41AgAAQBAJ"
-  },
-  {
     "isbn": "9780316462815",
     "title": "Eversion",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=jrPaEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=jrPaEAAAQBAJ"
+  },
+  {
+    "isbn": "9781448184071",
+    "title": "Dust",
+    "authors": [
+      "Hugh Howey"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=LG6OKTp7NsgC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Dust.html?hl=&id=LG6OKTp7NsgC"
   }
 ]
