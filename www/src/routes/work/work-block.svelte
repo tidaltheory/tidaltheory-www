@@ -8,20 +8,26 @@ export let work
 
 $: ({ startDateNice, endDateNice, title, lede, slug, discipline, content } =
 	work)
+
+let isPublished
+$: isPublished = Boolean(lede) && Boolean(content)
 </script>
 
 <article class="relative grid items-start gap-6">
-	<header class="relative grid gap-4">
+	<header class="relative grid gap-4" class:opacity-60={!isPublished}>
 		<time><time>{startDateNice}</time> – <time>{endDateNice}</time></time>
 		<Heading level={4}>{title}</Heading>
 	</header>
-	<div class="flex flex-wrap items-start gap-2 lg:order-3">
+	<div
+		class="flex flex-wrap items-start gap-2 lg:order-3"
+		class:opacity-60={!isPublished}
+	>
 		{#each discipline as text}
 			<FBadge>{text}</FBadge>
 		{/each}
 	</div>
 	<div class="prose lg:order-2 lg:col-span-2">
-		{#if lede}
+		{#if lede && content}
 			<PortableText value={lede} />
 		{/if}
 		<p>
@@ -32,7 +38,7 @@ $: ({ startDateNice, endDateNice, title, lede, slug, discipline, content } =
 					><span aria-hidden="true">↳</span> Read more</a
 				>
 			{:else}
-				Case study coming soon.
+				<var class="opacity-60">Case study coming soon.</var>
 			{/if}
 		</p>
 	</div>
