@@ -73,7 +73,7 @@ const SvelteComponent = $derived(logo)
 	target="_blank"
 	rel="noopener noreferrer"
 >
-	<SvelteComponent />
+	{#if logo}<SvelteComponent />{/if}
 	<span class="font-semibold tracking-tight">
 		{@render children?.()}
 	</span>
