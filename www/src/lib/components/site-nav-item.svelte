@@ -1,9 +1,15 @@
 <script>
 import { FOCUS_OUTLINE } from '$lib/classnames'
 
-/** @type {string} */
-export let href
-export let main = false
+/**
+ * @typedef {Object} Props
+ * @property {string} href
+ * @property {boolean} [main]
+ * @property {import('svelte').Snippet} [children]
+ */
+
+/** @type {Props} */
+let { href, main = false, children } = $props()
 
 const mainClasses = 'font-display font-bold uppercase tracking-wider'
 </script>
@@ -14,13 +20,13 @@ const mainClasses = 'font-display font-bold uppercase tracking-wider'
 	class="rounded p-2 text-white {FOCUS_OUTLINE}"
 >
 	<div class="pointer-events-none flex items-center">
-		{#if $$slots.default}
+		{#if children}
 			<span
 				class="leading-trim text-base leading-none {main
 					? mainClasses
 					: 'font-semibold tracking-tight'}"
 			>
-				<slot />
+				{@render children?.()}
 			</span>
 		{/if}
 	</div>
