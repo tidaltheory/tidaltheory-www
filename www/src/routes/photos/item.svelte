@@ -1,11 +1,10 @@
 <script>
 import { run } from 'svelte/legacy'
 
-import { MasonryGrid } from '@egjs/svelte-grid'
-
 import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
 import GalleryThumbnail from '$lib/components/gallery-thumbnail.svelte'
 import FadeUp from '$lib/components/helpers/fade-up.svelte'
+import MasonryGridWrapper from '$lib/components/masonry-grid-wrapper.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 import PortableText from '$lib/components/portable-text.svelte'
@@ -72,12 +71,14 @@ function handleCloseCarousel() {
 	initialIndex = 0
 }
 
+/** @type {number} */
 let gridGap = $state(16)
 
 run(() => {
-	if ($media.xl) {
+	const mediaState = $media
+	if (mediaState?.xl) {
 		gridGap = 64
-	} else if ($media.md) {
+	} else if (mediaState?.md) {
 		gridGap = 32
 	}
 })
@@ -139,7 +140,7 @@ run(() => {
 	</PageIntro>
 	<PageSection>
 		<div class="grid gap-[9vh] md:gap-[11vh]">
-			<MasonryGrid align="stretch" column={2} gap={gridGap}>
+			<MasonryGridWrapper align="stretch" column={2} gap={gridGap}>
 				{#each images as image, index}
 					<GalleryThumbnail
 						{image}
@@ -148,7 +149,7 @@ run(() => {
 						onClick={() => handleOpenCarousel(index)}
 					/>
 				{/each}
-			</MasonryGrid>
+			</MasonryGridWrapper>
 			{#if isCarouselOpen}
 				<GalleryCarousel
 					{images}
