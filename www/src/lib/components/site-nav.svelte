@@ -10,7 +10,7 @@ import SiteNavItem from './site-nav-item.svelte'
 import SiteNavLogo from './site-nav-logo.svelte'
 
 /** @type {HTMLDialogElement} */
-let menu
+let menu = $state()
 
 onMount(() => {
 	menu.addEventListener('click', (event) => {
@@ -31,7 +31,7 @@ beforeNavigate(async () => {
 	<span class="span">———</span>
 	<button
 		class="menu-button rounded border-none bg-transparent p-0 {FOCUS_OUTLINE}"
-		on:click={() => menu.showModal()}
+		onclick={() => menu.showModal()}
 	>
 		<span class="text-base">Menu</span>
 	</button>

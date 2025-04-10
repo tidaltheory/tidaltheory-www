@@ -36,11 +36,21 @@ const SITES = {
 	},
 }
 
-/** @type {keyof typeof SITES} */
-export let site = undefined
-/** @type {string} */
-export let href = undefined
-export let logo = undefined
+/**
+ * @typedef {Object} Props
+ * @property {keyof typeof SITES} [site]
+ * @property {string} [href]
+ * @property {any} [logo]
+ * @property {import('svelte').Snippet} [children]
+ */
+
+/** @type {Props} */
+let {
+	site = undefined,
+	href = $bindable(undefined),
+	logo = $bindable(undefined),
+	children,
+} = $props()
 
 if (site) {
 	href = SITES[site].href
@@ -53,6 +63,8 @@ if (!logo) {
 	if (href.includes('polychroma')) logo = FaviconPolychroma
 	if (href.includes('opentype')) logo = FaviconOpentype
 }
+
+const SvelteComponent = $derived(logo)
 </script>
 
 <a
@@ -61,8 +73,8 @@ if (!logo) {
 	target="_blank"
 	rel="noopener noreferrer"
 >
-	<svelte:component this={logo} />
+	{#if logo}<SvelteComponent />{/if}
 	<span class="font-semibold tracking-tight">
-		<slot />
+		{@render children?.()}
 	</span>
 </a>

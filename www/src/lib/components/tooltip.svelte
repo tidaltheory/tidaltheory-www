@@ -4,10 +4,16 @@ import { fade, fly } from 'svelte/transition'
 import { offset } from '@floating-ui/dom'
 import { createFloatingActions } from 'svelte-floating-ui'
 
-/** @type {string | undefined} */
-export let label = undefined
+/**
+ * @typedef {Object} Props
+ * @property {string | undefined} [label]
+ * @property {import('svelte').Snippet<[any]>} [children]
+ */
 
-let showTooltip = false
+/** @type {Props} */
+let { label = undefined, children } = $props()
+
+let showTooltip = $state(false)
 
 function toggleTooltip() {
 	showTooltip = !showTooltip
@@ -20,7 +26,7 @@ const [tooltipReference, tooltipFloating] = createFloatingActions({
 })
 </script>
 
-<slot {tooltipReference} {toggleTooltip} />
+{@render children?.({ tooltipReference, toggleTooltip })}
 
 {#if showTooltip}
 	<div

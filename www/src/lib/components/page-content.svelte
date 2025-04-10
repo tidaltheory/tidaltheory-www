@@ -1,9 +1,16 @@
 <script>
 import PageSection from './page-section.svelte'
+/**
+ * @typedef {Object} Props
+ * @property {import('svelte').Snippet} [children]
+ */
+
+/** @type {Props} */
+let { children } = $props()
 </script>
 
 <PageSection>
-	<div class="mx-auto grid w-full max-w-[1056px]"><slot /></div>
+	<div class="mx-auto grid w-full max-w-[1056px]">{@render children?.()}</div>
 </PageSection>
 
 <style>

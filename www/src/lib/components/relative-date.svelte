@@ -6,7 +6,7 @@ import {
 	formatRelative,
 } from 'date-fns'
 
-export let date
+let { date } = $props()
 
 const datestamp = new Date(date)
 const now = Date.now()

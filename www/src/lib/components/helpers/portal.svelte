@@ -1,7 +1,14 @@
 <script>
 import { onMount } from 'svelte'
+/**
+ * @typedef {Object} Props
+ * @property {import('svelte').Snippet} [children]
+ */
 
-let reference
+/** @type {Props} */
+let { children } = $props()
+
+let reference = $state()
 let portal
 
 onMount(() => {
@@ -21,5 +28,5 @@ onMount(() => {
 </script>
 
 <div bind:this={reference}>
-	<slot />
+	{@render children?.()}
 </div>

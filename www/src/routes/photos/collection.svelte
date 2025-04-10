@@ -6,12 +6,15 @@ import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 import TextLede from '$lib/components/text-lede.svelte'
 
-/** @type {'screen-shots' | undefined} */
-export let collection = undefined
+/**
+ * @typedef {Object} Props
+ * @property {'screen-shots' | undefined} [collection]
+ * @property {import('./$types').PageData} data
+ */
 
-/** @type {import('./$types').PageData} */
-export let data
-$: ({ galleries } = data)
+/** @type {Props} */
+let { collection = undefined, data } = $props()
+let { galleries } = $derived(data)
 
 const title = collection === 'screen-shots' ? 'Screen Shots — Photos' : 'Photos'
 </script>
@@ -32,7 +35,7 @@ const title = collection === 'screen-shots' ? 'Screen Shots — Photos' : 'Photo
 <article>
 	<PageIntro>
 		{collection === 'screen-shots' ? 'Screen Shots' : 'Photos'}
-		<svelte:fragment slot="intro" let:intersecting>
+		{#snippet intro({ intersecting })}
 			{#if collection !== 'screen-shots'}
 				<FadeUp showing={intersecting} delay={100}>
 					<TextLede>
@@ -41,7 +44,7 @@ const title = collection === 'screen-shots' ? 'Screen Shots — Photos' : 'Photo
 					</TextLede>
 				</FadeUp>
 			{/if}
-		</svelte:fragment>
+		{/snippet}
 	</PageIntro>
 	<PageSection>
 		<div class="grid gap-[9vh] md:gap-[11vh]">

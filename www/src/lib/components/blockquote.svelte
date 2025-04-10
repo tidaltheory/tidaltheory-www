@@ -1,8 +1,12 @@
 <script>
-/** @type {string} */
-export let quote
-/** @type {string} */
-export let source
+/**
+ * @typedef {Object} Props
+ * @property {string} quote
+ * @property {string} source
+ */
+
+/** @type {Props} */
+let { quote, source } = $props()
 </script>
 
 <figure>

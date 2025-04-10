@@ -5,21 +5,28 @@ import Blurhash from '$lib/components/helpers/blurhash.svelte'
 //
 // import Lqip from '$lib/components/helpers/lqip.svelte'
 
-/** @type {import('../../routes/photos/$types').PageData['galleries'][number]} */
-export let gallery
+/**
+ * @typedef {Object} Props
+ * @property {import('../../routes/photos/$types').PageData['galleries'][number]} gallery
+ */
 
-$: ({
+/** @type {Props} */
+let { gallery } = $props()
+
+let {
 	fullTitle,
 	slug,
 	coverImageSet,
 	coverImageMeta,
 	coverImageHotspot,
 	count,
-} = gallery)
-$: ({ dimensions, /* lqip, */ blurHash } = coverImageMeta)
-$: srcset = `${coverImageSet.sm} 300w, ${coverImageSet.md} 600w, ${coverImageSet.lg} 1200w,`
+} = $derived(gallery)
+let { dimensions, /* lqip, */ blurHash } = $derived(coverImageMeta)
+let srcset = $derived(
+	`${coverImageSet.sm} 300w, ${coverImageSet.md} 600w, ${coverImageSet.lg} 1200w,`,
+)
 
-let loaded = false
+let loaded = $state(false)
 
 /**
  * @param {HTMLImageElement} element
@@ -67,7 +74,7 @@ function load(element) {
 			</div>
 			<div
 				class="bg-grey-800 absolute inset-0 mix-blend-lighten transition-opacity duration-200"
-			/>
+			></div>
 		</div>
 	{/if}
 	<div class="absolute inset-0 flex">

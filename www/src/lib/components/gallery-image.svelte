@@ -1,7 +1,8 @@
 <script>
-export let image
-
-$: srcset = `${image.srcset.md} 600w, ${image.srcset.lg} 1200w, ${image.srcset.xl} 2400w,`
+let { image } = $props()
+let srcset = $derived(
+	`${image.srcset.md} 600w, ${image.srcset.lg} 1200w, ${image.srcset.xl} 2400w,`,
+)
 </script>
 
 <img
