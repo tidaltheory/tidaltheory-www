@@ -1,125 +1,97 @@
 <script>
 import { onDestroy, onMount, tick } from 'svelte'
-import { run } from 'svelte/legacy'
+
+import { debounce } from '$lib/debounce'
 
 /**
  * @typedef {Object} Props
- * @property {string | undefined} [gapClass]
- * @property {any[]} [items]
- * @property {import('svelte').Snippet} [children]
+ * @property {import('svelte').Snippet<[any]>} children
+ * @property {any[]} items
  */
 
 /** @type {Props} */
-let { gapClass = undefined, items = [], children } = $props()
+const { children, items = [] } = $props()
 
-/**
- * @typedef {Object} Grid
- * @property {HTMLDivElement} _el
- * @property {number} gap
- * @property {HTMLElement[]} items
- * @property {number} ncol
- * @property {number} mod
- */
+/** @type {HTMLElement} */
+let grid = $state()
+/** @type {number[][]} */
+let columns = $state([[], []])
 
-/** @type {Grid} */
-let grid
-/** @type {HTMLDivElement} */
-let masonryElement = $state()
+let currentRedrawId = $state(0)
 
-export const refreshLayout = async () => {
-	/* Get the post relayout number of columns */
-	console.log('COLS', getComputedStyle(grid._el).gridTemplateColumns)
-	let ncol = getComputedStyle(grid._el).gridTemplateColumns.split(' ').length
-	let gap = Number.parseFloat(getComputedStyle(grid._el).gap)
+async function fillColumns(itemIndex, assignedRedrawId) {
+	if (itemIndex >= items.length) return
 
-	for (const c of grid.items) {
-		let newHeight = c.getBoundingClientRect().height
-
-		if (newHeight !== Number(c.dataset.h)) {
-			c.dataset.h = newHeight.toString()
-			grid.mod++
-		}
-	}
-
-	/* If the number of columns has changed or the gap width has changed. */
-	if (grid.ncol !== ncol || grid.mod || grid.gap !== gap) {
-		grid.ncol = ncol
-		grid.gap = gap
-
-		/* Revert to initial positioning, no margin */
-		for (const c of grid.items) c.style.removeProperty('margin-top')
-
-		/* If we have more than one column */
-		if (grid.ncol > 1) {
-			for (const [index, c] of grid.items.slice(ncol).entries()) {
-				/* Bottom edge of item above */
-				let previousFinal = grid.items[index].getBoundingClientRect().bottom
-				/* Top edge of current item */
-				let currentInitial = c.getBoundingClientRect().top
-
-				c.style.marginTop = `${previousFinal + grid.gap - currentInitial}px`
-			}
-		}
-
-		grid.mod = 0
-	}
-}
-
-/** @param {HTMLDivElement} element */
-const calcGrid = async (element) => {
 	await tick()
-	if (getComputedStyle(element).gridTemplateRows !== 'masonry') {
-		grid = {
-			_el: element,
-			gap: Number.parseFloat(getComputedStyle(element).gap),
-			// @ts-ignore
-			items: [...element.childNodes].filter(
-				(c) =>
-					c.nodeType === 1 && Number(getComputedStyle(c).gridColumnEnd) !== -1,
-			),
-			ncol: 0,
-			mod: 0,
-		}
 
-		/* Initial load */
-		refreshLayout()
+	// Skip if a new redraw has been requested in parallel.
+	if (currentRedrawId !== assignedRedrawId) return
+
+	/** @type {HTMLDivElement[]} */
+	const columnDivs = [...grid.children].map(
+		(element) => /** @type {HTMLDivElement} */ (element),
+	)
+
+	// Find the shortest column.
+	let shortestColumnIndex = 0
+	let shortestHeight = columnDivs[0].getBoundingClientRect().height
+
+	for (let index = 1; index < columnDivs.length; index++) {
+		const { height } = columnDivs[index].getBoundingClientRect()
+		if (height < shortestHeight) {
+			shortestHeight = height
+			shortestColumnIndex = index
+		}
 	}
+
+	// Add the item to the shortest column.
+	columns[shortestColumnIndex] = [...columns[shortestColumnIndex], itemIndex]
+	await fillColumns(itemIndex + 1, assignedRedrawId)
 }
 
-/** @type {Window} */
-let _window
+async function redraw() {
+	if (!grid) return
+
+	// Reset columns before redrawing.
+	columns = [[], []]
+	await fillColumns(0, ++currentRedrawId)
+}
+
+const debouncedUpdate = debounce(redraw, 100)
+const resizeObserver =
+	typeof ResizeObserver === 'undefined'
+		? undefined
+		: new ResizeObserver(debouncedUpdate)
 
 onMount(() => {
-	_window = globalThis
-	_window.addEventListener('resize', refreshLayout, false)
+	redraw()
+	resizeObserver?.observe(grid)
 })
+
 onDestroy(() => {
-	_window?.removeEventListener('resize', refreshLayout, false)
-})
-
-run(() => {
-	if (masonryElement) {
-		calcGrid(masonryElement)
-	}
-})
-
-// Update if items are changed
-run(() => {
-	if (items) {
-		// Refresh masonryElement
-		masonryElement = masonryElement
+	if (resizeObserver) {
+		resizeObserver.unobserve(grid)
 	}
 })
 </script>
 
-<div bind:this={masonryElement} class="masonry-grid grid {gapClass}">
-	{@render children?.()}
+<div class="flex gap-4 md:gap-8 xl:gap-16" bind:this={grid}>
+	{#each columns as column, index (column)}
+		<div
+			class="flex h-max grow flex-col gap-4 md:gap-8 xl:gap-16"
+			data-index={index}
+		>
+			{#each column as itemIndex (itemIndex)}
+				<div class="masonry-item" data-index={itemIndex}>
+					{@render children({ item: items[itemIndex], index: itemIndex })}
+				</div>
+			{/each}
+		</div>
+	{/each}
 </div>
 
 <style>
-.masonry-grid {
-	grid: 1fr auto / repeat(2, 1fr);
-	grid: masonry / repeat(2, 1fr);
-	align-items: start;
+.masonry-item {
+	width: 100%;
 }
 </style>

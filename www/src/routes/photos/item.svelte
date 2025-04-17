@@ -4,13 +4,11 @@ import { run } from 'svelte/legacy'
 import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
 import GalleryThumbnail from '$lib/components/gallery-thumbnail.svelte'
 import FadeUp from '$lib/components/helpers/fade-up.svelte'
-import MasonryGridWrapper from '$lib/components/masonry-grid-wrapper.svelte'
+import MasonryGrid from '$lib/components/masonry-grid.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 import PortableText from '$lib/components/portable-text.svelte'
 import TextLede from '$lib/components/text-lede.svelte'
-
-import { media } from '../../stores/media-queries.js'
 
 /**
  * @typedef {Object} Props
@@ -37,19 +35,6 @@ let finalTitle = $state()
 run(() => {
 	finalTitle = fullTitle
 })
-//
-// run(() => {
-// 	;({
-// 		title,
-// 		subtitle,
-// 		fullTitle,
-// 		lede,
-// 		ledeClean,
-// 		coverImage,
-// 		images,
-// 		content,
-// 	} = post)
-// })
 
 if (collection === 'screen-shots') finalTitle += ' — Screen Shots'
 
@@ -70,18 +55,6 @@ function handleCloseCarousel() {
 	isCarouselOpen = false
 	initialIndex = 0
 }
-
-/** @type {number} */
-let gridGap = $state(16)
-
-run(() => {
-	const mediaState = $media
-	if (mediaState?.xl) {
-		gridGap = 64
-	} else if (mediaState?.md) {
-		gridGap = 32
-	}
-})
 </script>
 
 <svelte:head>
@@ -140,16 +113,17 @@ run(() => {
 	</PageIntro>
 	<PageSection>
 		<div class="grid gap-[9vh] md:gap-[11vh]">
-			<MasonryGridWrapper align="stretch" column={2} gap={gridGap}>
-				{#each images as image, index}
+			<MasonryGrid items={images}>
+				{#snippet children({ item: image, index })}
 					<GalleryThumbnail
 						{image}
 						isHidden={isCarouselOpen}
 						isDelayed={(index + 1) % 2 === 0}
 						onClick={() => handleOpenCarousel(index)}
+						index={index + 1}
 					/>
-				{/each}
-			</MasonryGridWrapper>
+				{/snippet}
+			</MasonryGrid>
 			{#if isCarouselOpen}
 				<GalleryCarousel
 					{images}

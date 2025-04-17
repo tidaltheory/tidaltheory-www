@@ -30,6 +30,7 @@ function calculateMedia(mqls) {
 function watchMedia(mediaqueries) {
 	return writable({ classNames: '' }, (set) => {
 		if (typeof globalThis === 'undefined') return
+		if (typeof globalThis.matchMedia !== 'function') return
 
 		let mqls = {}
 		let updateMedia = () => set(calculateMedia(mqls))
