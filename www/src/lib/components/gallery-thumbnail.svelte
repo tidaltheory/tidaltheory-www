@@ -19,6 +19,7 @@ let { aspectRatio } = $derived(image.metadata.dimensions)
 let srcset = $derived(
 	`${image.srcset.sm} 300w, ${image.srcset.md} 600w, ${image.srcset.lg} 1200w,`,
 )
+let intersectionRatio = $derived(index < 3 ? 0 : 0.45)
 
 /** @type {HTMLDivElement} */
 let thumb = $state()
@@ -31,7 +32,7 @@ let thumb = $state()
 	onclick={onClick}
 	tabindex={index}
 >
-	<ObserveIntersection once element={thumb} threshold={0.45}>
+	<ObserveIntersection once element={thumb} threshold={intersectionRatio}>
 		{#snippet children({ intersecting })}
 			<div
 				class="relative flex w-full transition duration-500"
