@@ -34,7 +34,7 @@
 		"@sanity/types": "3.23.4",
 		"@sveltejs/adapter-netlify": "4.4.1",
 		"@sveltejs/adapter-static": "3.0.8",
-		"@sveltejs/kit": "2.20.5",
+		"@sveltejs/kit": "2.20.6",
 		"@sveltejs/vite-plugin-svelte": "5.0.3",
 		"@tailwindcss/typography": "0.5.13",
 		"autoprefixer": "10.4.16",
