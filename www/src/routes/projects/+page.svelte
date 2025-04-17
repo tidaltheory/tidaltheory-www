@@ -6,10 +6,15 @@ import PortableText from '$lib/components/portable-text.svelte'
 import ProjectArticle from '$lib/components/project-article.svelte'
 import TextLede from '$lib/components/text-lede.svelte'
 
-/** @type {import('./$types').PageData} */
-export let data
+/**
+ * @typedef {Object} Props
+ * @property {import('./$types').PageData} data
+ */
 
-$: ({ title, lede, content, projects } = data)
+/** @type {Props} */
+let { data } = $props()
+
+let { title, lede, content, projects } = $derived(data)
 </script>
 
 <svelte:head>
@@ -21,14 +26,11 @@ $: ({ title, lede, content, projects } = data)
 <article>
 	<PageIntro>
 		{title}
-		<FadeUp
-			slot="intro"
-			let:intersecting
-			showing={intersecting}
-			delay={100}
-		>
-			<TextLede><PortableText value={lede} /></TextLede>
-		</FadeUp>
+		{#snippet intro({ intersecting })}
+			<FadeUp showing={intersecting} delay={100}>
+				<TextLede><PortableText value={lede} /></TextLede>
+			</FadeUp>
+		{/snippet}
 	</PageIntro>
 	<PageSection>
 		<div class="prose prose-invert">

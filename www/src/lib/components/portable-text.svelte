@@ -10,7 +10,7 @@ import HashtagMark from './sanity/hashtag-mark.svelte'
 import ImageBlock from './sanity/image-block.svelte'
 import ImageSetBlock from './sanity/image-set-block.svelte'
 
-export let value
+let { value } = $props()
 
 /** @type {any} */
 const components = {

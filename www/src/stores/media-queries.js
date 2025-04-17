@@ -1,9 +1,13 @@
 import { writable } from 'svelte/store'
 
+/** @typedef {{ classNames: string, sm?: boolean, md?: boolean, lg?: boolean, xl?: boolean }} MediaState */
+
 /**
  * @param {Record<string, MediaQueryList>} mqls
+ * @returns {MediaState}
  */
 function calculateMedia(mqls) {
+	/** @type {MediaState} */
 	let media = { classNames: '' }
 	let mediaClasses = []
 
@@ -19,9 +23,14 @@ function calculateMedia(mqls) {
 	return media
 }
 
+/**
+ * @param {Record<string, string>} mediaqueries
+ * @returns {import('svelte/store').Writable<MediaState>}
+ */
 function watchMedia(mediaqueries) {
 	return writable({ classNames: '' }, (set) => {
 		if (typeof globalThis === 'undefined') return
+		if (typeof globalThis.matchMedia !== 'function') return
 
 		let mqls = {}
 		let updateMedia = () => set(calculateMedia(mqls))

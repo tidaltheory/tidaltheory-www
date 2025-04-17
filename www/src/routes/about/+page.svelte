@@ -6,8 +6,13 @@ import MentionLink from '$lib/components/mention-link.svelte'
 import PageHero from '$lib/components/page-hero.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 
-/** @type {import('./$types').PageData} */
-export let data
+/**
+ * @typedef {Object} Props
+ * @property {import('./$types').PageData} data
+ */
+
+/** @type {Props} */
+let { data } = $props()
 </script>
 
 <svelte:head>
@@ -20,7 +25,7 @@ export let data
 		I’m<br />
 		Jeff<br />
 		Nelson
-		<svelte:fragment slot="intro" let:intersecting>
+		{#snippet intro({ intersecting })}
 			<FadeUp showing={intersecting} delay={100}>
 				I’m a User Interface Developer, currently at
 				<span class="whitespace-nowrap"
@@ -33,7 +38,7 @@ export let data
 					><MentionLink site="lift">Lift Interactive</MentionLink>.</span
 				>
 			</FadeUp>
-		</svelte:fragment>
+		{/snippet}
 	</PageHero>
 	<!-- <PageSection>
 		<div class="prose">

@@ -1,9 +1,16 @@
 <script>
 import { onDestroy, onMount, tick } from 'svelte'
 
-export let initialFocusElement = null
+/**
+ * @typedef {Object} Props
+ * @property {any} [initialFocusElement]
+ * @property {import('svelte').Snippet} [children]
+ */
 
-let reference
+/** @type {Props} */
+let { initialFocusElement = null, children } = $props()
+
+let reference = $state()
 let tabbableChildren
 let firstTabbableChild
 let lastTabbableChild
@@ -59,8 +66,8 @@ const handleKeydown = (event) => {
 }
 </script>
 
-<svelte:window on:keydown={handleKeydown} />
+<svelte:window onkeydown={handleKeydown} />
 
 <div bind:this={reference}>
-	<slot />
+	{@render children?.()}
 </div>

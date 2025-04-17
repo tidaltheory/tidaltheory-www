@@ -4,9 +4,14 @@ import FBadge from '$lib/components/f-badge.svelte'
 import PageIntro from '$lib/components/page-intro.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 
-/** @type {import('./$types').PageData} */
-export let data
-$: ({ posts } = data)
+/**
+ * @typedef {Object} Props
+ * @property {import('./$types').PageData} data
+ */
+
+/** @type {Props} */
+let { data } = $props()
+let { posts } = $derived(data)
 </script>
 
 <svelte:head>

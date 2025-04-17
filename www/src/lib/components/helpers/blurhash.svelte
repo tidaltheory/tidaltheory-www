@@ -3,19 +3,20 @@ import { onMount } from 'svelte'
 
 import { decode } from 'blurhash'
 
-/** @type {string} */
-export let hash
-/** @type {number} */
-export let width
-/** @type {number} */
-export let height
-/** @type {{ x: number, y: number }} */
-export let position
-/** @type {number} */
-export let punch = 1
+/**
+ * @typedef {Object} Props
+ * @property {string} hash
+ * @property {number} width
+ * @property {number} height
+ * @property {import('$lib/sanity/types').SanityImageHotspot} position
+ * @property {number} [punch]
+ */
+
+/** @type {Props} */
+let { hash, width, height, position, punch = 1 } = $props()
 
 /** @type {HTMLCanvasElement} */
-let canvas
+let canvas = $state()
 
 /**
  * Reduce width down to 300px and scale height to match, while maintaining the
@@ -41,4 +42,4 @@ onMount(() => {
 	height={canvasHeight}
 	class="h-full w-full object-cover"
 	style:object-position={`${position.x * 100}% ${position.y * 100}%`}
-/>
+></canvas>

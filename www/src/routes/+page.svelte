@@ -5,9 +5,14 @@ import PageHero from '$lib/components/page-hero.svelte'
 import PageSection from '$lib/components/page-section.svelte'
 import Update from '$lib/components/update.svelte'
 
-/** @type {import('./$types').PageData} */
-export let data
-$: ({ updates } = data)
+/**
+ * @typedef {Object} Props
+ * @property {import('./$types').PageData} data
+ */
+
+/** @type {Props} */
+let { data } = $props()
+let { updates } = $derived(data)
 </script>
 
 <svelte:head>
@@ -19,10 +24,10 @@ $: ({ updates } = data)
 <article>
 	<PageHero>
 		Tidal<br />Theory
-		<svelte:fragment slot="intro">
-			User Interface Developer,<br />video game photographer,<br />based
-			in Edmonton, Canada.
-		</svelte:fragment>
+		{#snippet intro()}
+			User Interface Developer,<br />video game photographer,<br />based in
+			Edmonton, Canada.
+		{/snippet}
 	</PageHero>
 	<PageSection>
 		{#if updates}
