@@ -43,7 +43,13 @@ let thumb = $state()
 				style:background-color={image.metadata.palette.darkMuted.background}
 				bind:this={thumb}
 			>
+				<!--
+					Using aspect-ratio on the parent and absolute positioning
+					on the image because of a weird issue in Safari where it
+					continually procs the ResizeObserver in masonry-grid.
+				 -->
 				<img
+					class="absolute w-full"
 					loading="lazy"
 					decoding="async"
 					{srcset}
