@@ -27,12 +27,13 @@ let { data } = $props()
 		Nelson
 		{#snippet intro({ intersecting })}
 			<FadeUp showing={intersecting} delay={100}>
-				I’m a User Interface Developer, currently at
+				I’m a User Interface Developer. Previously, I’ve worked at
 				<span class="whitespace-nowrap"
-					><MentionLink site="clari">Clari</MentionLink>.</span
+					><MentionLink site="clari">Clari</MentionLink>,</span
 				>
-				Previously, I’ve worked at
-				<MentionLink site="showbie">Showbie</MentionLink>
+				<span class="whitespace-nowrap"
+					><MentionLink site="showbie">Showbie</MentionLink>,</span
+				>
 				and at
 				<span class="whitespace-nowrap"
 					><MentionLink site="lift">Lift Interactive</MentionLink>.</span
