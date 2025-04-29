@@ -1,7 +1,6 @@
 <script>
 import { FOCUS_OUTLINE } from '$lib/classnames'
 import Heading from '$lib/components/heading.svelte'
-import FadeUp from '$lib/components/helpers/fade-up.svelte'
 import MentionLink from '$lib/components/mention-link.svelte'
 import PageHero from '$lib/components/page-hero.svelte'
 import PageSection from '$lib/components/page-section.svelte'
@@ -25,20 +24,24 @@ let { data } = $props()
 		I’m<br />
 		Jeff<br />
 		Nelson
-		{#snippet intro({ intersecting })}
-			<FadeUp showing={intersecting} delay={100}>
-				I’m a User Interface Developer. Previously, I’ve worked at
-				<span class="whitespace-nowrap"
-					><MentionLink site="clari">Clari</MentionLink>,</span
-				>
-				<span class="whitespace-nowrap"
-					><MentionLink site="showbie">Showbie</MentionLink>,</span
-				>
-				and at
-				<span class="whitespace-nowrap"
-					><MentionLink site="lift">Lift Interactive</MentionLink>.</span
-				>
-			</FadeUp>
+		{#snippet intro({ _intersecting })}
+			<!--
+				Disabling <FadeUp> here due to some error on initial page load
+				about `appendChild` not being a method on Node type.
+			 -->
+			<!-- <FadeUp showing={intersecting} delay={100}> -->
+			I’m a User Interface Developer. Previously, I’ve worked at
+			<span class="whitespace-nowrap"
+				><MentionLink site="clari">Clari</MentionLink>,</span
+			>
+			<span class="whitespace-nowrap"
+				><MentionLink site="showbie">Showbie</MentionLink>,</span
+			>
+			and at
+			<span class="whitespace-nowrap"
+				><MentionLink site="lift">Lift Interactive</MentionLink>.</span
+			>
+			<!-- </FadeUp> -->
 		{/snippet}
 	</PageHero>
 	<!-- <PageSection>
