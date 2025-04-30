@@ -51,7 +51,7 @@ export function wrapLines(element) {
 
 			if (newTop > lastTop) {
 				if (lineWords.length > 0) {
-					markup += `<span ${lineClass} style="--delay: ${
+					markup += `<span ${lineClass} data-text="${lineWords.join(' ')}" style="--delay: ${
 						100 * lineNumber
 					}ms">${lineWords.join(' ')}</span>`
 				}
@@ -66,7 +66,7 @@ export function wrapLines(element) {
 			if (0 < index && child.nodeName !== 'BR') markup += ' '
 
 			if (index === children.length - 1 && lineWords.length > 0) {
-				markup += `<span ${lineClass} style="--delay: ${
+				markup += `<span ${lineClass} data-text="${lineWords.join(' ')}" style="--delay: ${
 					100 * lineNumber
 				}ms">${lineWords.join(' ')}</span>`
 			}

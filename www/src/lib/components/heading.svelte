@@ -82,13 +82,60 @@ onMount(() => {
 }
 
 :global(.line) {
-	transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
-	transition-property: opacity, transform;
+	--duration: 700ms;
+	--easing: cubic-bezier(0.165, 0.84, 0.44, 1);
+	--distance: 0.125em;
+	--distance-y: 0.0625em;
+	--rotation: rotateX(75deg) rotateY(10deg) rotateZ(-9deg);
+
+	position: relative;
+	transition: var(--duration) var(--easing);
+	transition-property: opacity, filter, transform, translate;
 	transition-delay: var(--delay, 0);
+	color: #1061ff;
+
+	&::before,
+	&::after {
+		position: absolute;
+		inset-inline-start: 0;
+		/* z-index: -1; */
+		content: attr(data-text);
+		mix-blend-mode: plus-lighter;
+		pointer-events: none;
+		user-select: none;
+		transition: var(--duration) var(--easing);
+		transition-property: opacity, filter, transform, translate;
+
+		@starting-style {
+			opacity: 0;
+			filter: blur(8px);
+			/* translate: var(--distance); */
+		}
+	}
+
+	&::before {
+		color: #14c7ff;
+		transition-delay: calc(var(--delay, 0));
+		@starting-style {
+			transform: var(--rotation);
+			/* translate: calc(var(--distance) * -2) calc(var(--distance-y) * 2); */
+		}
+	}
+
+	&::after {
+		color: #ff6231;
+		transition-delay: calc(var(--delay, 0));
+		@starting-style {
+			transform: var(--rotation);
+			/* translate: calc(var(--distance) * -3) calc(var(--distance-y) * 3); */
+		}
+	}
 
 	@starting-style {
 		opacity: 0;
-		transform: rotateX(75deg) rotateY(10deg) rotateZ(-9deg);
+		filter: blur(8px);
+		transform: var(--rotation);
+		/* translate: calc(var(--distance) * -1) var(--distance-y); */
 	}
 }
 </style>

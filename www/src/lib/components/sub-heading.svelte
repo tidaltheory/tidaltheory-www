@@ -40,14 +40,17 @@ let show = $derived(shouldShow === undefined ? true : shouldShow)
 
 <style>
 .text {
-	transition:
-		opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1),
-		transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+	--duration: 700ms;
+	--easing: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+	transition: var(--duration) var(--easing);
+	transition-property: opacity, filter, transform;
 	transition-delay: var(--delay, 0);
 }
 
 .hide .text {
 	opacity: 0;
+	filter: blur(8px);
 	transform: rotateX(75deg) rotateY(10deg) rotateZ(-9deg);
 }
 </style>
