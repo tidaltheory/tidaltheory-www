@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9780316462815",
-    "title": "Eversion",
-    "authors": [
-      "Alastair Reynolds"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=IJBUEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=IJBUEAAAQBAJ"
-  },
-  {
     "isbn": "9780316504560",
     "title": "Infinity Gate",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=LG6OKTp7NsgC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Dust.html?hl=&id=LG6OKTp7NsgC"
+  },
+  {
+    "isbn": "978-1-250-29029-8",
+    "title": "Service Model",
+    "authors": [
+      "Adrian Tchaikovsky"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=_FDTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=_FDTEAAAQBAJ"
   }
 ]
