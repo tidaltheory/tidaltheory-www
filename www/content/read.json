@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9780316504560",
-    "title": "Infinity Gate",
-    "authors": [
-      "M. R. Carey"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=qW1zEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=qW1zEAAAQBAJ"
-  },
-  {
     "isbn": "9780316504928",
     "title": "Echo of Worlds",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=_FDTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=_FDTEAAAQBAJ"
+  },
+  {
+    "isbn": "978-1-250-23300-4",
+    "title": "Exordia",
+    "authors": [
+      "Seth Dickinson"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=T7KiEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=T7KiEAAAQBAJ"
   }
 ]
