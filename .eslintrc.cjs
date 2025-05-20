@@ -69,7 +69,7 @@ const config = {
 			files: ['*.ts', '*.tsx'],
 			extends: ['@zazen/eslint-config/typescript'],
 			parserOptions: {
-				project: path.resolve('..', 'studio', 'tsconfig.json'),
+				project: path.resolve(process.cwd(), 'tsconfig.json'),
 			},
 			rules: {
 				'@typescript-eslint/ban-types': 'off',
