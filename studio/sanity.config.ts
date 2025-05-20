@@ -20,6 +20,7 @@ import page from './schemas/page'
 import photo from './schemas/photo'
 import post from './schemas/post'
 import project from './schemas/project'
+import resume from './schemas/resume'
 import update from './schemas/update'
 
 // Export const PREVIEWABLE_DOCUMENT_TYPES: string[] = [home.name, page.name, project.name]
@@ -42,6 +43,7 @@ const config = defineConfig({
 			photo,
 			post,
 			project,
+			resume,
 			update,
 			defineType({
 				name: 'blockquote',
