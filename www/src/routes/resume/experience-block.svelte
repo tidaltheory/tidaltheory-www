@@ -7,12 +7,12 @@ let { start, end, title, company, discipline, content } = $derived(role)
 </script>
 
 <article class="relative grid items-start gap-12">
-	<header class="flex gap-2">
+	<header class="flex items-start gap-2">
 		<div class="flex basis-full flex-col gap-5">
-			<h4 class="leading-trim text-lg font-medium">
-				{title}, <em>{company}</em>
+			<h4 class="leading-trim text-lg font-medium lg:text-xl">
+				{title}, <em class="font-serif">{company}</em>
 			</h4>
-			<time class="text-grey-400 leading-trim font-medium"
+			<time class="text-grey-400 leading-trim text-base font-medium lg:text-lg"
 				><time>{start}</time> – <time>{end}</time></time
 			>
 		</div>
@@ -22,7 +22,7 @@ let { start, end, title, company, discipline, content } = $derived(role)
 			{/each}
 		</div>
 	</header>
-	<div class="prose lg:order-2">
+	<div class="prose">
 		<PortableText value={content} />
 	</div>
 </article>

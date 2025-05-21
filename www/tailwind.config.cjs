@@ -70,7 +70,7 @@ const config = {
 							'max-width': '65ch',
 						},
 
-						p: {
+						'p, li': {
 							'text-wrap': 'pretty',
 						},
 

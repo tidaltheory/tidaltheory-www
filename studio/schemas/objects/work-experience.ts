@@ -1,4 +1,4 @@
-import { ImageIcon } from '@sanity/icons'
+import { TimelineIcon } from '@sanity/icons'
 import { defineArrayMember, defineField, defineType } from 'sanity'
 
 import { decorators } from '../fields/inline'
@@ -7,7 +7,7 @@ export const workExperience = defineType({
 	name: 'work-experience',
 	title: 'Work experience',
 	type: 'object',
-	icon: ImageIcon,
+	icon: TimelineIcon,
 	fields: [
 		defineField({
 			name: 'title',
