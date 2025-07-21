@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781448184071",
-    "title": "Dust",
-    "authors": [
-      "Hugh Howey"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=LG6OKTp7NsgC&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/Dust.html?hl=&id=LG6OKTp7NsgC"
-  },
-  {
     "isbn": "978-1-250-29029-8",
     "title": "Service Model",
     "authors": [
@@ -39,5 +29,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=zT_nEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/The_Book_of_Elsewhere.html?hl=&id=zT_nEAAAQBAJ"
+  },
+  {
+    "isbn": "9781784971540",
+    "title": "The Three-Body Problem",
+    "authors": [
+      "Cixin Liu"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=Z7GfEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/The_Three_Body_Problem.html?hl=&id=Z7GfEAAAQBAJ"
   }
 ]
