@@ -84,7 +84,7 @@ function handleCloseCarousel() {
 								Captured on
 							</dt>
 							<dd class="leading-trim text-base font-medium md:text-lg">
-								{post.platform}
+								{post.platform.join(', ')}
 							</dd>
 						</FadeUp>
 						<FadeUp
