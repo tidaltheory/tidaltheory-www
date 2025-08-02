@@ -17,7 +17,7 @@ export async function getPage(slug) {
  * @returns {Promise<import('./types.js').ResumeQueryResult>}
  */
 export async function getResume(slug) {
-	let pageQuery = groq`*[_type == "resume" && slug.current == $slug][0]`
+	let resumeQuery = groq`*[_type == "resume" && slug.current == $slug][0]`
 
-	return await client.fetch(pageQuery, { slug })
+	return await client.fetch(resumeQuery, { slug })
 }
