@@ -9,8 +9,8 @@ export const load = async () => {
 	const cases = await getCaseStudies()
 
 	for (const item of cases) {
-		item.startDateNice = format(new Date(item.startDate), 'MMMM yyyy')
-		item.endDateNice = format(new Date(item.endDate), 'MMMM yyyy')
+		item.startDateNice = format(new Date(item.startDate), 'MMM yyyy')
+		item.endDateNice = format(new Date(item.endDate), 'MMM yyyy')
 	}
 
 	return {

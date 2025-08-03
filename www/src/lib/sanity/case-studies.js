@@ -6,7 +6,12 @@ import { client } from './client.js'
  * @returns {Promise<import('./types.js').CaseStudiesQueryResult>}
  */
 export async function getCaseStudies() {
-	let caseStudiesQuery = groq`*[_type == "caseStudy" && defined(slug.current)] | order(_createdAt desc)`
+	let caseStudiesQuery = groq`*[_type == "caseStudy" && defined(slug.current)]{
+		...,
+		// Replaced on server but defined here so typegen picks them up.
+		'startDateNice': startDate,
+		'endDateNice': endDate,
+		} | order(_createdAt desc)`
 
 	return await client.fetch(caseStudiesQuery)
 }
