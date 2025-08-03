@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-250-29029-8",
-    "title": "Service Model",
-    "authors": [
-      "Adrian Tchaikovsky"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=_FDTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=_FDTEAAAQBAJ"
-  },
-  {
     "isbn": "978-1-250-23300-4",
     "title": "Exordia",
     "authors": [
@@ -39,5 +29,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=Z7GfEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/The_Three_Body_Problem.html?hl=&id=Z7GfEAAAQBAJ"
+  },
+  {
+    "isbn": "978-0-316-21759-0",
+    "title": "Nemesis Games",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=A_-zBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=A_-zBAAAQBAJ"
   }
 ]
