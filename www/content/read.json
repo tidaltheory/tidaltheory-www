@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-1-250-23300-4",
-    "title": "Exordia",
-    "authors": [
-      "Seth Dickinson"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=T7KiEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=T7KiEAAAQBAJ"
-  },
-  {
     "isbn": "9781039003835",
     "title": "The Book of Elsewhere",
     "authors": [
@@ -39,5 +29,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=A_-zBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=A_-zBAAAQBAJ"
+  },
+  {
+    "isbn": "978-0-316-21757-6",
+    "title": "Strange Dogs",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "status": "reading",
+    "thumbnail": "https://books.google.com/books/content?id=no-vDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=no-vDgAAQBAJ"
   }
 ]
