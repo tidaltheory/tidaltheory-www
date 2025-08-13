@@ -32,14 +32,12 @@ let { title, lede, content, cases } = $derived(data)
 			</FadeUp>
 		{/snippet}
 	</PageIntro>
-	{#if content}
-		<PageSection>
-			<div class="prose prose-invert">
+	<PageSection>
+		{#if content}
+			<div class="prose mb-[11svb]">
 				<PortableText value={content} />
 			</div>
-		</PageSection>
-	{/if}
-	<PageSection>
+		{/if}
 		<div class="flex flex-col gap-[4.5rem] md:gap-28">
 			{#if cases.length > 0}
 				{#each cases as work}
