@@ -11,6 +11,8 @@ import {
 } from 'sanity'
 import { structureTool } from 'sanity/structure'
 
+import { linkField } from 'sanity-plugin-link-field'
+
 import caseStudy from './schemas/case-study'
 import { inlineOnlyBlock } from './schemas/fields/inline'
 import gallery from './schemas/gallery'
@@ -32,7 +34,15 @@ const config = defineConfig({
 	projectId: 'iic1csde',
 	dataset: 'production',
 
-	plugins: [structureTool(), visionTool(), codeInput()],
+	plugins: [
+		structureTool(),
+		visionTool(),
+		codeInput(),
+		/** @see https://github.com/winteragency/sanity-plugin-link-field */
+		linkField({
+			linkableSchemaTypes: ['gallery', 'page', 'post', 'resume'],
+		}),
+	],
 
 	schema: {
 		types: [

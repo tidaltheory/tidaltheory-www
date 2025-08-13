@@ -87,6 +87,9 @@ importers:
       sanity:
         specifier: 3.45.0
         version: 3.45.0(@types/node@20.10.6)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(styled-components@6.1.11)
+      sanity-plugin-link-field:
+        specifier: 1.4.1
+        version: 1.4.1(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(sanity@3.45.0)
       styled-components:
         specifier: 6.1.11
         version: 6.1.11(react-dom@18.3.1)(react@18.3.1)
@@ -4720,6 +4723,15 @@ packages:
     resolution: {integrity: sha512-5wVG/vIiGuGrSmq+Bl3PY7XDgQrGv0fyHdJI64FSulnr2wH3NMqZ6C59UFxnrZ93sr7kOt0zQFoNv2lkPBi0Cg==}
     peerDependencies:
       react: ^16.9 || ^17 || ^18
+    dependencies:
+      react: 18.3.1
+    dev: false
+
+  /@sanity/icons@2.11.8(react@18.3.1):
+    resolution: {integrity: sha512-C4ViXtk6eyiNTQ5OmxpfmcK6Jw+LLTi9zg9XBUD15DzC4xTHaGW9SVfUa43YtPGs3WC3M0t0K59r0GDjh52HIg==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: ^18
     dependencies:
       react: 18.3.1
     dev: false
@@ -10021,6 +10033,14 @@ packages:
     dependencies:
       yallist: 4.0.0
 
+  /lucide-react@0.368.0(react@18.3.1):
+    resolution: {integrity: sha512-soryVrCjheZs8rbXKdINw9B8iPi5OajBJZMJ1HORig89ljcOcEokKKAgGbg3QWxSXel7JwHOfDFUdDHAKyUAMw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.3.1
+    dev: false
+
   /magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
     dependencies:
@@ -12159,6 +12179,25 @@ packages:
     engines: {node: '>=14.18'}
     dependencies:
       '@sanity/diff-match-patch': 3.1.1
+    dev: false
+
+  /sanity-plugin-link-field@1.4.1(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(sanity@3.45.0):
+    resolution: {integrity: sha512-5WeprSeB8KdB9xzfPH4/pxP6tPWpi1zAflv4wUod0ZuUvTBUU6aFcmsxbjsdGQJkqgENbLpcrDNjuLuj//lqlA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      react: ^18 || ^19
+      sanity: ^3 || ^4
+    dependencies:
+      '@sanity/icons': 2.11.8(react@18.3.1)
+      '@sanity/incompatible-plugin': 1.0.4(react-dom@18.3.1)(react@18.3.1)
+      '@sanity/ui': 2.3.1(react-dom@18.3.1)(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11)
+      lucide-react: 0.368.0(react@18.3.1)
+      react: 18.3.1
+      sanity: 3.45.0(@types/node@20.10.6)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(styled-components@6.1.11)
+      styled-components: 6.1.11(react-dom@18.3.1)(react@18.3.1)
+    transitivePeerDependencies:
+      - react-dom
+      - react-is
     dev: false
 
   /sanity@3.45.0(@types/node@20.10.6)(@types/react@18.3.3)(react-dom@18.3.1)(react@18.3.1)(styled-components@6.1.11):
