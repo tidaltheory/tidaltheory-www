@@ -1,3 +1,4 @@
+import { CommentIcon } from '@sanity/icons'
 import { defineArrayMember } from 'sanity'
 
 import { Cite } from '../../components/cite'
@@ -9,6 +10,7 @@ export const decorators = [
 	{
 		title: 'Cite',
 		value: 'cite',
+		icon: CommentIcon,
 		component: Cite,
 	},
 ]
