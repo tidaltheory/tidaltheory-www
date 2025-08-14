@@ -44,7 +44,16 @@ let show = $derived(shouldShow !== undefined && hasWrapped ? shouldShow : true)
 /** @type {Element} */
 let element = $state()
 onMount(() => {
-	if (transitionIn) wrapLines(element)
+	if (transitionIn) {
+		document.fonts.ready
+			// eslint-disable-next-line promise/prefer-await-to-then, promise/always-return
+			.then(() => {
+				wrapLines(element)
+				hasWrapped = true
+			})
+			// eslint-disable-next-line promise/prefer-await-to-then
+			.catch(() => {})
+	}
 
 	const resizeObserver = new ResizeObserver((entries) => {
 		const entry = entries.at(0)
@@ -56,7 +65,6 @@ onMount(() => {
 	})
 
 	resizeObserver.observe(element)
-	hasWrapped = true
 
 	return () => resizeObserver.unobserve(element)
 })
@@ -73,13 +81,13 @@ onMount(() => {
 </svelte:element>
 
 <style>
-.heading {
+/*.heading {
 	opacity: 0;
 
 	&:has(:global(.line)) {
 		opacity: 1;
 	}
-}
+}*/
 
 :global(.line) {
 	--duration: 700ms;
