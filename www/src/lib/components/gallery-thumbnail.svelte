@@ -33,11 +33,9 @@ let thumb = $state()
 	tabindex={index}
 >
 	<ObserveIntersection once element={thumb} threshold={intersectionRatio}>
-		{#snippet children({ intersecting })}
+		{#snippet children({ _intersecting })}
 			<div
-				class="relative flex w-full transition duration-500"
-				class:opacity-0={!intersecting}
-				class:translate-y-6={!intersecting}
+				class="image-wrapper relative flex w-full"
 				class:delay-75={isDelayed}
 				style:aspect-ratio={aspectRatio}
 				style:background-color={image.metadata.palette.darkMuted.background}
@@ -66,3 +64,17 @@ let thumb = $state()
 		{/snippet}
 	</ObserveIntersection>
 </button>
+
+<style>
+.image-wrapper {
+	@media (prefers-reduced-motion: no-preference) {
+		@supports (animation-timeline: view()) {
+			animation:
+				fade-in 500ms cubic-bezier(0.25, 0, 0.3, 1) both,
+				slide-down 500ms cubic-bezier(0.25, 0, 0.3, 1) both reverse;
+			animation-timeline: view();
+			animation-range: 5% 20%;
+		}
+	}
+}
+</style>

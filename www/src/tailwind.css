@@ -93,6 +93,18 @@
 			max-inline-size: 25%;
 		}
 	}
+
+	@keyframes fade-in {
+		0% {
+			opacity: 0%;
+		}
+	}
+
+	@keyframes slide-down {
+		to {
+			translate: 0 1.5rem;
+		}
+	}
 }
 
 .pull-double {
