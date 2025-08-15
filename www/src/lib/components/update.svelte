@@ -38,13 +38,13 @@ function handleCardPress(event) {
 	if (event.target !== link) link.click()
 }
 
-const SvelteComponent = $derived(iconMap[type])
+const IconComponent = $derived(iconMap[type])
 </script>
 
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <!-- svelte-ignore a11y_no_noninteractive_element_to_interactive_role -->
 <article
-	class="salt group relative grid grid-cols-[36px_1fr_auto] gap-2 rounded-[1px] font-sans {FOCUS_OUTLINE} outline-offset-8"
+	class="salt group relative grid grid-cols-[32px_1fr_auto] gap-2 rounded-[1px] py-3 text-sm {FOCUS_OUTLINE} outline-offset-8"
 	class:cursor-pointer={type !== 'note-add'}
 	class:focus-within:outline={type !== 'note-add'}
 	bind:this={card}
@@ -55,13 +55,15 @@ const SvelteComponent = $derived(iconMap[type])
 		class="bg-grey-700 absolute -inset-2 -z-10 rounded-md bg-opacity-0 transition"
 		class:group-hover:bg-opacity-20={type !== 'note-add'}
 	></div>
-	<div
-		class="bg-grey-700 flex h-9 w-9 items-center justify-center rounded-full text-white"
-	>
-		<SvelteComponent />
+	<div class="flex h-[1cap] items-center">
+		<div
+			class="bg-grey-700 flex h-8 w-8 items-center justify-center rounded-full text-white"
+		>
+			<IconComponent />
+		</div>
 	</div>
-	<div class="py-3">
-		<p class="text-grey-400 leading-trim text-base">
+	<div class="flex items-center">
+		<p class="text-grey-400 leading-trim">
 			{#if type === 'gallery-add'}
 				Added a gallery of <a
 					class="font-medium text-white underline decoration-[transparent] decoration-[0.0781em] underline-offset-[calc(0.0781em_*_2)] outline-none transition group-hover:decoration-white"
@@ -82,7 +84,7 @@ const SvelteComponent = $derived(iconMap[type])
 			{/if}
 		</p>
 	</div>
-	<div class="text-grey-400 flex h-9 items-center">
+	<div class="text-grey-400 flex items-center text-xs">
 		{#if type === 'note-add'}
 			<a
 				class="rounded-[1px] underline decoration-[transparent] decoration-[0.0781em] underline-offset-[calc(0.0781em_*_2)] transition hover:decoration-[inherit] {FOCUS_OUTLINE}"
@@ -98,7 +100,7 @@ const SvelteComponent = $derived(iconMap[type])
 	{#if hasPreview}
 		<div class="col-span-2 col-start-2">
 			{#if type === 'gallery-add'}
-				<div class="flex gap-2 overflow-x-auto">
+				<div class="flex gap-2 overflow-x-auto py-2">
 					{#each images as image}
 						<div class="flex h-20 w-20 flex-none">
 							<img

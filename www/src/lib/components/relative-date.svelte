@@ -20,6 +20,6 @@ let relativeDate =
 				.trimEnd()
 </script>
 
-<time class="text-grey-400 text-xs" datetime={formatISO(datestamp)}
+<time class="text-grey-400 leading-trim text-xs" datetime={formatISO(datestamp)}
 	>{relativeDate}</time
 >
