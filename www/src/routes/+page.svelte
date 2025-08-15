@@ -25,8 +25,8 @@ let { updates } = $derived(data)
 	<PageHero>
 		Tidal<br />Theory
 		{#snippet intro()}
-			User Interface Developer,<br />video game photographer,<br />based in
-			Edmonton, Canada.
+			The personal site and portfolio of Jeff Nelson, a User Interface Developer
+			(and some-time photographer) based in Edmonton, Canada.
 		{/snippet}
 	</PageHero>
 	<PageSection>
