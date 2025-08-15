@@ -13,5 +13,5 @@ let srcset = $derived(
 	{srcset}
 	sizes="(min-width: 1024px) 84vw, (min-width: 768px) 84vw, 90vw"
 	src={image.srcset.sm}
-	alt=""
+	alt={image.alt}
 />

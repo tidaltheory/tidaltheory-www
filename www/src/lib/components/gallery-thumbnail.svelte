@@ -4,8 +4,13 @@ import ObserveIntersection from 'svelte-intersection-observer'
 import { FOCUS_OUTLINE } from '$lib/classnames.js'
 
 /**
+ * @typedef {import('../sanity/types').Photo} Image
+ * @typedef {Image & Object} ModifiedImage
+ * @property {import('../sanity/types').SanityImageMetadata} metadata
+ */
+/**
  * @typedef {Object} Props
- * @property {import('@tidaltheory/lens').ImageThumbnails} image
+ * @property {ModifiedImage} image
  * @property {boolean} isHidden
  * @property {boolean} [isDelayed]
  * @property {(e: MouseEvent) => void} onClick
@@ -53,7 +58,7 @@ let thumb = $state()
 					{srcset}
 					sizes="(min-width: 1024px) 34vw, (min-width: 768px) 32vw, 40vw"
 					src={image.srcset.sm}
-					alt=""
+					alt={image.alt}
 				/>
 				<!-- <img
 					class="absolute inset-0 w-full"
