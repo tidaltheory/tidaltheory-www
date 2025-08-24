@@ -1,16 +1,5 @@
 [
   {
-    "isbn": "9781039003835",
-    "title": "The Book of Elsewhere",
-    "authors": [
-      "Keanu Reeves",
-      "China Miéville"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=zT_nEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/The_Book_of_Elsewhere.html?hl=&id=zT_nEAAAQBAJ"
-  },
-  {
     "isbn": "9781784971540",
     "title": "The Three-Body Problem",
     "authors": [
@@ -39,5 +28,15 @@
     "status": "reading",
     "thumbnail": "https://books.google.com/books/content?id=no-vDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=no-vDgAAQBAJ"
+  },
+  {
+    "isbn": "978-0-316-33282-8",
+    "title": "Persepolis Rising",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=cxNVDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=cxNVDgAAQBAJ"
   }
 ]
