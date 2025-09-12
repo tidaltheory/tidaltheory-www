@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781784971540",
-    "title": "The Three-Body Problem",
-    "authors": [
-      "Cixin Liu"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=Z7GfEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/The_Three_Body_Problem.html?hl=&id=Z7GfEAAAQBAJ"
-  },
-  {
     "isbn": "978-0-316-21759-0",
     "title": "Nemesis Games",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=cxNVDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=cxNVDgAAQBAJ"
+  },
+  {
+    "isbn": "9781466858749",
+    "title": "Too Like the Lightning",
+    "authors": [
+      "Ada Palmer"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=RuWUCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=RuWUCgAAQBAJ"
   }
 ]
