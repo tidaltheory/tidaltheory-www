@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-0-316-21759-0",
-    "title": "Nemesis Games",
-    "authors": [
-      "James S. A. Corey"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=A_-zBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=A_-zBAAAQBAJ"
-  },
-  {
     "isbn": "978-0-316-21757-6",
     "title": "Strange Dogs",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=RuWUCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=RuWUCgAAQBAJ"
+  },
+  {
+    "isbn": "9781804990377",
+    "title": "Soul Music",
+    "authors": [
+      "Terry Pratchett"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=7gOREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Soul_Music.html?hl=&id=7gOREAAAQBAJ"
   }
 ]
