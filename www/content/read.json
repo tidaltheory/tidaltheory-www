@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-0-316-21757-6",
-    "title": "Strange Dogs",
-    "authors": [
-      "James S. A. Corey"
-    ],
-    "status": "reading",
-    "thumbnail": "https://books.google.com/books/content?id=no-vDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=no-vDgAAQBAJ"
-  },
-  {
     "isbn": "978-0-316-33282-8",
     "title": "Persepolis Rising",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=7gOREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Soul_Music.html?hl=&id=7gOREAAAQBAJ"
+  },
+  {
+    "isbn": "9781466858756",
+    "title": "Seven Surrenders",
+    "authors": [
+      "Ada Palmer"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=bLcsDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=bLcsDAAAQBAJ"
   }
 ]
