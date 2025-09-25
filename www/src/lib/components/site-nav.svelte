@@ -5,6 +5,7 @@ import { beforeNavigate } from '$app/navigation'
 import { FOCUS_OUTLINE } from '$lib/classnames'
 
 import FaviconBluesky from './icons/favicon-bluesky.svelte'
+import FaviconCodepen from './icons/favicon-codepen.svelte'
 import FaviconLinkedin from './icons/favicon-linkedin.svelte'
 import SiteNavItem from './site-nav-item.svelte'
 import SiteNavLogo from './site-nav-logo.svelte'
@@ -75,6 +76,11 @@ beforeNavigate(async () => {
 					/>
 				</svg>
 			</a>
+			<a
+				class="flex text-3xl text-white"
+				href="https://codepen.io/stormwarning"
+				aria-label="CodePen"><FaviconCodepen /></a
+			>
 			<a
 				class="flex text-3xl text-white"
 				href="https://www.linkedin.com/in/jxff/"
