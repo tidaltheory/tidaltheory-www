@@ -3,6 +3,7 @@ import { FOCUS_OUTLINE } from '$lib/classnames'
 
 import FaviconGibson from './icons/favicon-gibson.svelte'
 import FaviconOpentype from './icons/favicon-opentype.svelte'
+import FaviconPlaneside from './icons/favicon-planeside.svelte'
 import FaviconPolychroma from './icons/favicon-polychroma.svelte'
 import FaviconTypeset from './icons/favicon-typeset.svelte'
 import LogoClari from './logo-clari.svelte'
@@ -62,6 +63,7 @@ if (!logo) {
 	if (href.includes('gibsonipsum')) logo = FaviconGibson
 	if (href.includes('polychroma')) logo = FaviconPolychroma
 	if (href.includes('opentype')) logo = FaviconOpentype
+	if (href.includes('planeside')) logo = FaviconPlaneside
 }
 
 const SvelteComponent = $derived(logo)
