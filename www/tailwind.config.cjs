@@ -85,7 +85,8 @@ const config = {
 							'outline-color': theme('colors.cyan.500'),
 							'border-radius': '1px',
 							transition: '150ms cubic-bezier(0.4, 0, 0.2, 1)',
-							'transition-property': 'text-decoration-color, text-decoration-skip-ink, text-decoration-thickness, text-underline-offset',
+							'transition-property':
+								'text-decoration-color, text-decoration-skip-ink, text-decoration-thickness, text-underline-offset',
 							'transition-behavior': 'allow-discrete',
 						},
 						'a:hover': {
@@ -168,10 +169,10 @@ const config = {
 				sm: {
 					css: {
 						code: {
-							fontSize: '0.9375em'
-						}
-					}
-				}
+							fontSize: '0.9375em',
+						},
+					},
+				},
 			}),
 			spacing: {
 				15: '3.75rem',
