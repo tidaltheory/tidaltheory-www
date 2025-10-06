@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "978-0-316-33282-8",
-    "title": "Persepolis Rising",
-    "authors": [
-      "James S. A. Corey"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=cxNVDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=cxNVDgAAQBAJ"
-  },
-  {
     "isbn": "9781466858749",
     "title": "Too Like the Lightning",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=bLcsDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=bLcsDAAAQBAJ"
+  },
+  {
+    "isbn": "978-0-316-33286-6",
+    "title": "Tiamat's Wrath",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=JQdUDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=JQdUDwAAQBAJ"
   }
 ]
