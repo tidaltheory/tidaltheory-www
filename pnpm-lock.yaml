@@ -157,13 +157,13 @@ importers:
         version: 3.23.4
       '@sveltejs/adapter-netlify':
         specifier: 4.4.1
-        version: 4.4.1(@sveltejs/kit@2.20.5)
+        version: 4.4.1(@sveltejs/kit@2.20.6)
       '@sveltejs/adapter-static':
         specifier: 3.0.8
-        version: 3.0.8(@sveltejs/kit@2.20.5)
+        version: 3.0.8(@sveltejs/kit@2.20.6)
       '@sveltejs/kit':
-        specifier: 2.20.5
-        version: 2.20.5(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.26.3)(vite@6.2.5)
+        specifier: 2.20.6
+        version: 2.20.6(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.26.3)(vite@6.2.5)
       '@sveltejs/vite-plugin-svelte':
         specifier: 5.0.3
         version: 5.0.3(svelte@5.26.3)(vite@6.2.5)
@@ -5219,27 +5219,27 @@ packages:
       acorn: 8.14.0
     dev: true
 
-  /@sveltejs/adapter-netlify@4.4.1(@sveltejs/kit@2.20.5):
+  /@sveltejs/adapter-netlify@4.4.1(@sveltejs/kit@2.20.6):
     resolution: {integrity: sha512-GKx49T1dHafTUIbGuh5Me1hCy5uQxyGrgVo9TV0ulV+SnMDqnxfYURFD7pwAksrPjWAPeE5lHRV5LLXFS3HH1w==}
     peerDependencies:
       '@sveltejs/kit': ^2.4.0
     dependencies:
       '@iarna/toml': 2.2.5
-      '@sveltejs/kit': 2.20.5(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.26.3)(vite@6.2.5)
+      '@sveltejs/kit': 2.20.6(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.26.3)(vite@6.2.5)
       esbuild: 0.24.2
       set-cookie-parser: 2.6.0
     dev: true
 
-  /@sveltejs/adapter-static@3.0.8(@sveltejs/kit@2.20.5):
+  /@sveltejs/adapter-static@3.0.8(@sveltejs/kit@2.20.6):
     resolution: {integrity: sha512-YaDrquRpZwfcXbnlDsSrBQNCChVOT9MGuSg+dMAyfsAa1SmiAhrA5jUYUiIMC59G92kIbY/AaQOWcBdq+lh+zg==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
-      '@sveltejs/kit': 2.20.5(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.26.3)(vite@6.2.5)
+      '@sveltejs/kit': 2.20.6(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.26.3)(vite@6.2.5)
     dev: true
 
-  /@sveltejs/kit@2.20.5(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.26.3)(vite@6.2.5):
-    resolution: {integrity: sha512-zT/97KvVUo19jEGZa972ls7KICjPCB53j54TVxnEFT5VEwL16G+YFqRVwJbfxh7AmS7/Ptr1rKF7Qt4FBMDNlw==}
+  /@sveltejs/kit@2.20.6(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.26.3)(vite@6.2.5):
+    resolution: {integrity: sha512-ImUkSQ//Xf4N9r0HHAe5vRA7RyQ7U1Ue1YUT235Ig+IiIqbsixEulHTHrP5LtBiC8xOkJoPZQ1VZ/nWHNOaGGw==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -5882,7 +5882,7 @@ packages:
   /@vitest/snapshot@1.1.0:
     resolution: {integrity: sha512-5O/wyZg09V5qmNmAlUgCBqflvn2ylgsWJRRuPrnHEfDNT6tQpQ8O1isNGgo+VxofISHqz961SG3iVvt3SPK/QQ==}
     dependencies:
-      magic-string: 0.30.5
+      magic-string: 0.30.17
       pathe: 1.1.1
       pretty-format: 29.7.0
     dev: true
