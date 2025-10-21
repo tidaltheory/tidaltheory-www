@@ -156,8 +156,8 @@ importers:
         specifier: 3.23.4
         version: 3.23.4
       '@sveltejs/adapter-netlify':
-        specifier: 4.4.1
-        version: 4.4.1(@sveltejs/kit@2.20.5)
+        specifier: 4.4.2
+        version: 4.4.2(@sveltejs/kit@2.20.5)
       '@sveltejs/adapter-static':
         specifier: 3.0.8
         version: 3.0.8(@sveltejs/kit@2.20.5)
@@ -5219,8 +5219,8 @@ packages:
       acorn: 8.14.0
     dev: true
 
-  /@sveltejs/adapter-netlify@4.4.1(@sveltejs/kit@2.20.5):
-    resolution: {integrity: sha512-GKx49T1dHafTUIbGuh5Me1hCy5uQxyGrgVo9TV0ulV+SnMDqnxfYURFD7pwAksrPjWAPeE5lHRV5LLXFS3HH1w==}
+  /@sveltejs/adapter-netlify@4.4.2(@sveltejs/kit@2.20.5):
+    resolution: {integrity: sha512-APMX6rrRNnYJTexn1NttHwBOUmcWIc8hMb8bNjJeIa8tfvlPo68DZOYGCfi80yfH9AfEc27g3cwIrV9C9kZKMQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.4.0
     dependencies:
