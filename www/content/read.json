@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781466858749",
-    "title": "Too Like the Lightning",
-    "authors": [
-      "Ada Palmer"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=RuWUCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
-    "link": "https://play.google.com/store/books/details?id=RuWUCgAAQBAJ"
-  },
-  {
     "isbn": "9781804990377",
     "title": "Soul Music",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=JQdUDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
     "link": "https://play.google.com/store/books/details?id=JQdUDwAAQBAJ"
+  },
+  {
+    "isbn": "9780356510378",
+    "title": "Leviathan Falls",
+    "authors": [
+      "James S. A. Corey"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=oGeiDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
+    "link": "https://books.google.com/books/about/Leviathan_Falls.html?hl=&id=oGeiDwAAQBAJ"
   }
 ]
