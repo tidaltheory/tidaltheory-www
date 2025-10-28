@@ -1,15 +1,5 @@
 [
   {
-    "isbn": "9781804990377",
-    "title": "Soul Music",
-    "authors": [
-      "Terry Pratchett"
-    ],
-    "status": "finished",
-    "thumbnail": "https://books.google.com/books/content?id=7gOREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
-    "link": "https://books.google.com/books/about/Soul_Music.html?hl=&id=7gOREAAAQBAJ"
-  },
-  {
     "isbn": "9781466858756",
     "title": "Seven Surrenders",
     "authors": [
@@ -38,5 +28,15 @@
     "status": "finished",
     "thumbnail": "https://books.google.com/books/content?id=oGeiDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api&w=600",
     "link": "https://books.google.com/books/about/Leviathan_Falls.html?hl=&id=oGeiDwAAQBAJ"
+  },
+  {
+    "isbn": "978-1-250-31317-1",
+    "title": "Gideon the Ninth",
+    "authors": [
+      "Tamsyn Muir"
+    ],
+    "status": "finished",
+    "thumbnail": "https://books.google.com/books/content?id=HHJwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api&w=600",
+    "link": "https://play.google.com/store/books/details?id=HHJwDwAAQBAJ"
   }
 ]
