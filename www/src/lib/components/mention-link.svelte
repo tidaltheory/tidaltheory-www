@@ -7,6 +7,7 @@ import FaviconPlaneside from './icons/favicon-planeside.svelte'
 import FaviconPolychroma from './icons/favicon-polychroma.svelte'
 import FaviconTypeset from './icons/favicon-typeset.svelte'
 import LogoClari from './logo-clari.svelte'
+import LogoIronsight from './logo-ironsight.svelte'
 import LogoLift from './logo-lift.svelte'
 import LogoShowbie from './logo-showbie.svelte'
 
@@ -22,6 +23,10 @@ const SITES = {
 	clari: {
 		href: 'https://www.clari.com',
 		logo: LogoClari,
+	},
+	ironsight: {
+		href: 'https://www.ironsight.app/',
+		logo: LogoIronsight,
 	},
 	instagram: {
 		href: 'https://www.instagram.com/stormwarning/',

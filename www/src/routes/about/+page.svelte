@@ -30,7 +30,11 @@ let { data } = $props()
 				about `appendChild` not being a method on Node type.
 			 -->
 			<!-- <FadeUp showing={intersecting} delay={100}> -->
-			I’m a User Interface Developer. Previously, I’ve worked at
+			I’m a User Interface Developer at
+			<span class="whitespace-nowrap"
+				><MentionLink site="ironsight">IronSight</MentionLink>.</span
+			>
+			Previously, I’ve worked at
 			<span class="whitespace-nowrap"
 				><MentionLink site="clari">Clari</MentionLink>,</span
 			>
