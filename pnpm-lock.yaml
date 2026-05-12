@@ -159,8 +159,8 @@ importers:
         specifier: 4.4.1
         version: 4.4.1(@sveltejs/kit@2.20.5)
       '@sveltejs/adapter-static':
-        specifier: 3.0.8
-        version: 3.0.8(@sveltejs/kit@2.20.5)
+        specifier: 3.0.10
+        version: 3.0.10(@sveltejs/kit@2.20.5)
       '@sveltejs/kit':
         specifier: 2.20.5
         version: 2.20.5(@sveltejs/vite-plugin-svelte@5.0.3)(svelte@5.26.3)(vite@6.2.5)
@@ -5230,8 +5230,8 @@ packages:
       set-cookie-parser: 2.6.0
     dev: true
 
-  /@sveltejs/adapter-static@3.0.8(@sveltejs/kit@2.20.5):
-    resolution: {integrity: sha512-YaDrquRpZwfcXbnlDsSrBQNCChVOT9MGuSg+dMAyfsAa1SmiAhrA5jUYUiIMC59G92kIbY/AaQOWcBdq+lh+zg==}
+  /@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.20.5):
+    resolution: {integrity: sha512-7D9lYFWJmB7zxZyTE/qxjksvMqzMuYrrsyh1f4AlZqeZeACPRySjbC3aFiY55wb1tWUaKOQG9PVbm74JcN2Iew==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
@@ -5904,6 +5904,7 @@ packages:
   /@xmldom/xmldom@0.9.7:
     resolution: {integrity: sha512-syvR8iIJjpTZ/stv7l89UAViwGFh6lbheeOaqSxkYx9YNmIVvPTRH+CT/fpykFtUx5N+8eSMDRvggF9J8GEPzQ==}
     engines: {node: '>=14.6'}
+    deprecated: this version has critical issues, please update to the latest version
     requiresBuild: true
     dev: true
     optional: true
