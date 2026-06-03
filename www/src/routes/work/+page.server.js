@@ -10,7 +10,9 @@ export const load = async () => {
 
 	for (const item of cases) {
 		item.startDateNice = format(new Date(item.startDate), 'MMM yyyy')
-		item.endDateNice = format(new Date(item.endDate), 'MMM yyyy')
+		item.endDateNice = item.endDate
+			? format(new Date(item.endDate), 'MMM yyyy')
+			: 'Present'
 	}
 
 	return {
