@@ -7,12 +7,12 @@
   command = "CI= npm run build:site"
   publish = "www/build"
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "22"
 
 [functions]
   directory = "www/netlify/functions"
   #   node_bundler = "esbuild"
-  external_node_modules = ["mdsvex", "rss-to-json"]
+  external_node_modules = ["mdsvex", "rss-to-json", "@atproto/api"]
 
 [[headers]]
   ## https://answers.netlify.com/t/content-type-header-not-working-in-netlify-toml/7718

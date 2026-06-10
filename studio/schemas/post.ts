@@ -61,6 +61,13 @@ export default defineType({
 		}),
 		ledeField,
 		defineField({
+			name: 'atUri',
+			title: 'AT URI',
+			type: 'string',
+			readOnly: true,
+			description: 'AT protocol site.standard.document record. Set automatically on publish.',
+		}),
+		defineField({
 			name: 'content',
 			title: 'Content',
 			type: 'array',

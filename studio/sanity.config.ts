@@ -24,6 +24,7 @@ import post from './schemas/post'
 import project from './schemas/project'
 import resume from './schemas/resume'
 import update from './schemas/update'
+import { serializePortableText } from './utils/serialize-portable-text'
 
 // Export const PREVIEWABLE_DOCUMENT_TYPES: string[] = [home.name, page.name, project.name]
 
@@ -126,6 +127,10 @@ const config = defineConfig({
 
 export default config
 
+const ATPROTO_FN_URL =
+	(import.meta.env.SANITY_STUDIO_ATPROTO_FN_URL as string | undefined) ??
+	'https://tidaltheory.io/.netlify/functions/at-proto-document'
+
 function createPublishAction(original: DocumentActionComponent, context: DocumentActionsContext) {
 	let client = context.getClient({ apiVersion: '2023-03-20' })
 	let publishAction: DocumentActionComponent = (properties) => {
@@ -145,6 +150,36 @@ function createPublishAction(original: DocumentActionComponent, context: Documen
 							},
 						},
 					])
+				}
+
+				if (properties.type === 'post' && properties.draft) {
+					try {
+						const { draft } = properties
+						let response = await fetch(ATPROTO_FN_URL, {
+							method: 'POST',
+							headers: { 'content-type': 'application/json' },
+							body: JSON.stringify({
+								title: draft.title,
+								slug: (draft.slug as { current?: string } | undefined)?.current,
+								published: draft.published,
+								edited: draft.edited,
+								description: serializePortableText(draft.lede as never),
+								atUri: draft.atUri,
+							}),
+						})
+
+						if (response.ok) {
+							let { atUri } = (await response.json()) as { atUri: string }
+							patch.execute([{ set: { atUri } }])
+						} else {
+							// eslint-disable-next-line no-console
+							console.error('AT proto sync failed', await response.text())
+						}
+					} catch (error) {
+						// Best-effort: publish continues even if the AT proto sync fails.
+						// eslint-disable-next-line no-console
+						console.error('AT proto sync error', error)
+					}
 				}
 
 				originalResult?.onHandle?.()
