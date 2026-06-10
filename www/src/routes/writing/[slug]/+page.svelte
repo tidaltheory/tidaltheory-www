@@ -26,7 +26,7 @@ let {
 
 <svelte:head>
 	<title>{title} — Tidal Theory</title>
-	{#if atUri}<link rel="site.standard.document" href={atUri} />{/if}
+	{#if atUri}<link rel="site.standard.document external" href={atUri} />{/if}
 	<meta
 		name="twitter:card"
 		content={coverImage ? 'summary_large_card' : 'summary'}
