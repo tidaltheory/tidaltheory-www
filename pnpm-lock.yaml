@@ -153,8 +153,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0(svelte@5.26.3)
       '@portabletext/types':
-        specifier: 2.0.13
-        version: 2.0.13
+        specifier: 2.0.15
+        version: 2.0.15
       '@sanity/types':
         specifier: 3.23.4
         version: 3.23.4
@@ -5430,7 +5430,7 @@ packages:
     resolution: {integrity: sha512-5wj+oUaCmHm9Ay1cytPmT1Yc0SrR1twwUIc0qNQ3MtaXaNMPw99Gjt1NcA34yfyKmEf/TAB2NiiT72jFxdddIQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     dependencies:
-      '@portabletext/types': 2.0.13
+      '@portabletext/types': 2.0.15
     dev: true
 
   /@portabletext/toolkit@5.0.2:
@@ -5440,8 +5440,8 @@ packages:
       '@portabletext/types': 4.0.2
     dev: false
 
-  /@portabletext/types@2.0.13:
-    resolution: {integrity: sha512-5xk5MSyQU9CrDho3Rsguj38jhijhD36Mk8S6mZo3huv6PM+t4M/5kJN2KFIxgvt4ONpvOEs1pVIZAV0cL0Vi+Q==}
+  /@portabletext/types@2.0.15:
+    resolution: {integrity: sha512-2e6i2gSQsrA/5OL5Gm4/9bxB9MNO73Fa47zj+0mT93xkoQUCGCWX5fZh1YBJ86hszaRYlqvqG08oULxvvPPp/Q==}
     engines: {node: ^14.13.1 || >=16.0.0 || >=18.0.0}
     dev: true
 
