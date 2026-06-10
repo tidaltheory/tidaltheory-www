@@ -19,7 +19,6 @@ export default defineType({
 	type: 'document',
 	preview: {
 		select: {
-			image: 'images[0].image',
 			title: 'title',
 			lede: 'lede',
 		},
