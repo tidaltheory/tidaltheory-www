@@ -12,12 +12,21 @@ import TextLede from '$lib/components/text-lede.svelte'
 
 /** @type {Props} */
 let { data } = $props()
-let { title, lede, ledeClean, coverImage, content, publishedOn, editedOn } =
-	$derived(data)
+let {
+	title,
+	lede,
+	ledeClean,
+	atUri,
+	coverImage,
+	content,
+	publishedOn,
+	editedOn,
+} = $derived(data)
 </script>
 
 <svelte:head>
 	<title>{title} — Tidal Theory</title>
+	{#if atUri}<link rel="site.standard.document" href={atUri} />{/if}
 	<meta
 		name="twitter:card"
 		content={coverImage ? 'summary_large_card' : 'summary'}

@@ -22,6 +22,7 @@ export const load = async ({ params }) => {
 	}
 
 	return {
+		atUri: '',
 		...post,
 		publishedOn: format(new Date(post.published), 'dd MMMM yyyy'),
 		editedOn:
