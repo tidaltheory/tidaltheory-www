@@ -4,6 +4,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "vite build",
+		"postbuild": "node scripts/post-build.js",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"dev": "TAILWIND_MODE=watch vite dev",
 		"image": "lens add --store content/imagemeta.json",
