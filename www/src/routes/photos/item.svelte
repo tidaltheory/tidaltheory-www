@@ -1,6 +1,4 @@
 <script>
-import { run } from 'svelte/legacy'
-
 import GalleryCarousel from '$lib/components/gallery-carousel.svelte'
 import GalleryThumbnail from '$lib/components/gallery-thumbnail.svelte'
 import FadeUp from '$lib/components/helpers/fade-up.svelte'
@@ -30,15 +28,14 @@ let {
 	images,
 	content,
 } = $derived(post)
-let finalTitle = $state()
-
-run(() => {
-	finalTitle = fullTitle
+let finalTitle = $derived.by(() => {
+	let title = fullTitle
+	if (collection === 'screen-shots') title += ' — Screen Shots'
+	return title
 })
-
-if (collection === 'screen-shots') finalTitle += ' — Screen Shots'
-
-let url = ['https://tidaltheory.io/photos', collection, slug].join('/')
+let url = $derived(
+	['https://tidaltheory.io/photos', collection, slug].filter(Boolean).join('/'),
+)
 
 let isCarouselOpen = $state(false)
 let initialIndex = $state(0)

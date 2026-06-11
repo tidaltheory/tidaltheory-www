@@ -19,6 +19,8 @@ let { updates } = $derived(data)
 	<title>Tidal Theory</title>
 	<meta name="twitter:card" content="summary" />
 	<meta property="og:title" content="Tidal Theory" />
+	<meta property="og:url" content="https://tidaltheory.io/" />
+	<meta property="og:image" content="https://tidaltheory.io/og-default.jpg" />
 </svelte:head>
 
 <article>

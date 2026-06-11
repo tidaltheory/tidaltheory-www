@@ -26,6 +26,7 @@ export const load = async ({ params }) => {
 
 	return {
 		...post,
+		slug: post.slug.current,
 		publishedOn: format(new Date(post.published), 'dd MMMM yyyy'),
 		editedOn:
 			post.edited === post.published

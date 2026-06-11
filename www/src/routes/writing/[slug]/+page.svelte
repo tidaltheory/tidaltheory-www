@@ -17,6 +17,7 @@ let {
 	lede,
 	ledeClean,
 	atUri,
+	slug,
 	coverImage,
 	content,
 	publishedOn,
@@ -33,7 +34,12 @@ let {
 	/>
 	<meta property="og:title" content="{title} — Tidal Theory" />
 	<meta property="og:description" content={ledeClean} />
-	{#if coverImage}<meta property="og:image" content={coverImage} />{/if}
+	<meta property="og:url" content="https://tidaltheory.io/writing/{slug}/" />
+	{#if coverImage}<meta property="og:image" content={coverImage} />
+	{:else}<meta
+			property="og:image"
+			content="https://tidaltheory.io/og-default.jpg"
+		/>{/if}
 </svelte:head>
 
 <article>
