@@ -15,7 +15,7 @@ export const load = async ({ params }) => {
 			 */
 			block.code = Prism.highlight(
 				block.code,
-				Prism.languages[block.language],
+				Prism.languages[block.language ?? 'text'],
 				block.language,
 			)
 		}
