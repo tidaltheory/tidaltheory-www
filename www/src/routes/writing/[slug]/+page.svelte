@@ -33,10 +33,7 @@ let {
 	/>
 	<meta property="og:title" content="{title} — Tidal Theory" />
 	<meta property="og:description" content={ledeClean} />
-	{#if coverImage}<meta
-			property="og:image"
-			content={`https://tidaltheory.io${coverImage}`}
-		/>{/if}
+	{#if coverImage}<meta property="og:image" content={coverImage} />{/if}
 </svelte:head>
 
 <article>

@@ -20,7 +20,7 @@ export async function getPost(slug) {
 		*[_type == "post" && slug.current == $slug]{
 			...,
 			'ledeClean': pt::text(lede),
-			'coverImage': cover->image.asset,
+			'coverImage': cover.asset,
 		}[0]`
 
 	return await client.fetch(postQuery, { slug })

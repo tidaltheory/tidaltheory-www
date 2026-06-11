@@ -1,6 +1,7 @@
 import { format } from 'date-fns'
 import Prism from 'prismjs'
 
+import { urlFor } from '$lib/sanity/image.js'
 import { getPost } from '$lib/sanity/posts.js'
 
 /** @type {import('./$types').PageServerLoad} */
@@ -21,8 +22,9 @@ export const load = async ({ params }) => {
 		}
 	}
 
+	post.coverImage = urlFor(post.coverImage).format('jpg').url()
+
 	return {
-		atUri: '',
 		...post,
 		publishedOn: format(new Date(post.published), 'dd MMMM yyyy'),
 		editedOn:

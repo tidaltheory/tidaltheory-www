@@ -59,6 +59,15 @@ export default defineType({
 				layout: 'tags',
 			},
 		}),
+		defineField({
+			name: 'cover',
+			title: 'Cover image',
+			icon: ImageIcon,
+			type: 'image',
+			options: {
+				storeOriginalFilename: true,
+			},
+		}),
 		ledeField,
 		defineField({
 			name: 'atUri',
