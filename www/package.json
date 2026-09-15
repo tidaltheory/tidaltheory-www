@@ -20,7 +20,7 @@
 		"last 1 safari major version"
 	],
 	"dependencies": {
-		"@atproto/api": "0.20.13",
+		"@atproto/api": "0.20.44",
 		"@floating-ui/dom": "1.5.3",
 		"@sanity/client": "7.22.1",
 		"@sanity/image-url": "2.1.1",
