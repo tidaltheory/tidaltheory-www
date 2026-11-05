@@ -8,7 +8,7 @@ export const load = async () => {
 
 	for (const item of page.previousRoles) {
 		item.start = format(new Date(item.start), 'MMM yyyy')
-		item.end = format(new Date(item.end), 'MMM yyyy')
+		item.end = item.end ? format(new Date(item.end), 'MMM yyyy') : 'Present'
 	}
 
 	return page
