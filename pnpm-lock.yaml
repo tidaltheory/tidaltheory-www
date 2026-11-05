@@ -113,8 +113,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0
       nanoid:
-        specifier: 5.0.4
-        version: 5.0.4
+        specifier: 5.1.16
+        version: 5.1.16
       sharp:
         specifier: 0.33.1
         version: 0.33.1
@@ -166,7 +166,7 @@ importers:
         version: 3.0.10(@sveltejs/kit@2.64.0)
       '@sveltejs/kit':
         specifier: 2.64.0
-        version: 2.64.0(@sveltejs/vite-plugin-svelte@7.1.2)(svelte@5.56.3)(typescript@6.0.3)(vite@8.0.16)
+        version: 2.64.0(@sveltejs/vite-plugin-svelte@7.1.2)(svelte@5.56.3)(typescript@5.7.3)(vite@8.0.16)
       '@sveltejs/vite-plugin-svelte':
         specifier: 7.1.2
         version: 7.1.2(svelte@5.56.3)(vite@8.0.16)
@@ -199,7 +199,7 @@ importers:
         version: 5.56.3
       svelte-check:
         specifier: 4.6.0
-        version: 4.6.0(svelte@5.56.3)(typescript@6.0.3)
+        version: 4.6.0(svelte@5.56.3)(typescript@5.7.3)
       svelte-intersection-observer:
         specifier: 1.1.1
         version: 1.1.1
@@ -5906,7 +5906,7 @@ packages:
     resolution: {integrity: sha512-4cy7RytpkR0wm08EzEx9tL3XwoH7FqnAb9aUNskLmwpWzkFSs34amh19BvUq1TujmEqwCGLJARa+QWpOCoWpjw==}
     engines: {node: '>=20.19'}
     dependencies:
-      nanoid: 5.1.11
+      nanoid: 5.1.16
       rxjs: 7.8.2
     dev: false
 
@@ -6056,7 +6056,7 @@ packages:
       jsonc-parser: 3.3.1
       lodash-es: 4.18.1
       minimist: 1.2.8
-      nanoid: 5.1.11
+      nanoid: 5.1.16
       oneline: 2.0.0
       open: 11.0.0
       p-map: 7.0.4
@@ -6112,7 +6112,7 @@ packages:
     dependencies:
       '@sanity/eventsource': 5.0.2
       get-it: 8.8.0
-      nanoid: 3.3.11
+      nanoid: 3.3.12
       rxjs: 7.8.2
 
   /@sanity/code-input@7.1.2(@babel/runtime@7.29.7)(@codemirror/autocomplete@6.20.3)(@codemirror/lint@6.9.7)(@codemirror/search@6.7.0)(@codemirror/theme-one-dark@6.1.3)(codemirror@6.0.2)(react-dom@19.2.7)(react-is@19.2.7)(react@19.2.7)(sanity@5.31.1)(styled-components@6.4.2):
@@ -6421,7 +6421,7 @@ packages:
       hotscript: 1.0.13
       lodash: 4.17.21
       mendoza: 3.0.8
-      nanoid: 5.1.11
+      nanoid: 5.1.16
       rxjs: 7.8.2
       xstate: 5.32.0
     dev: false
@@ -6441,7 +6441,7 @@ packages:
       hotscript: 1.0.13
       lodash: 4.18.1
       mendoza: 3.0.8
-      nanoid: 5.1.11
+      nanoid: 5.1.16
       rxjs: 7.8.2
       xstate: 5.32.0
     dev: false
@@ -6841,7 +6841,7 @@ packages:
       '@sveltejs/kit': ^2.4.0
     dependencies:
       '@iarna/toml': 2.2.5
-      '@sveltejs/kit': 2.64.0(@sveltejs/vite-plugin-svelte@7.1.2)(svelte@5.56.3)(typescript@6.0.3)(vite@8.0.16)
+      '@sveltejs/kit': 2.64.0(@sveltejs/vite-plugin-svelte@7.1.2)(svelte@5.56.3)(typescript@5.7.3)(vite@8.0.16)
       esbuild: 0.24.2
       set-cookie-parser: 2.6.0
     dev: true
@@ -6851,10 +6851,10 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
-      '@sveltejs/kit': 2.64.0(@sveltejs/vite-plugin-svelte@7.1.2)(svelte@5.56.3)(typescript@6.0.3)(vite@8.0.16)
+      '@sveltejs/kit': 2.64.0(@sveltejs/vite-plugin-svelte@7.1.2)(svelte@5.56.3)(typescript@5.7.3)(vite@8.0.16)
     dev: true
 
-  /@sveltejs/kit@2.64.0(@sveltejs/vite-plugin-svelte@7.1.2)(svelte@5.56.3)(typescript@6.0.3)(vite@8.0.16):
+  /@sveltejs/kit@2.64.0(@sveltejs/vite-plugin-svelte@7.1.2)(svelte@5.56.3)(typescript@5.7.3)(vite@8.0.16):
     resolution: {integrity: sha512-24MXA/xyugUqJd09DD4v4bLd4k7FaYhdBck/pTXiu3XFtDBcwXYpJc1SO1+lqdjkNBUo1r4eek5FS7cfzBQUmA==}
     engines: {node: '>=18.13'}
     hasBin: true
@@ -6884,7 +6884,7 @@ packages:
       set-cookie-parser: 3.1.0
       sirv: 3.0.1
       svelte: 5.56.3
-      typescript: 6.0.3
+      typescript: 5.7.3
       vite: 8.0.16
     dev: true
 
@@ -7497,6 +7497,7 @@ packages:
   /@xmldom/xmldom@0.9.10:
     resolution: {integrity: sha512-A9gOqLdi6cV4ibazAjcQufGj0B1y/vDqYrcuP6d/6x8P27gRS8643Dj9o1dEKtB6O7fwxb2FgBmJS2mX7gpvdw==}
     engines: {node: '>=14.6'}
+    deprecated: this version has critical issues, please update to the latest version
     requiresBuild: true
     dev: true
     optional: true
@@ -12328,34 +12329,15 @@ packages:
     engines: {node: '>=18'}
     dev: false
 
-  /nanoid@3.3.11:
-    resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   /nanoid@3.3.12:
     resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
-    dev: true
 
-  /nanoid@3.3.7:
-    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-    dev: true
-
-  /nanoid@5.0.4:
-    resolution: {integrity: sha512-vAjmBf13gsmhXSgBrtIclinISzFFy22WwCYoyilZlsrRXNIHSwgFQ1bEdjRwMT3aoadeIF6HMuDRlOxzfXV8ig==}
+  /nanoid@5.1.16:
+    resolution: {integrity: sha512-kVrnsrJqMR8+oLJnGEmSWw9BivK5mt7H3FZatVRjrc5wGqFYuBxX1yG7+A7Gi5AefkX6t/oCkizcQgpu0cY1dQ==}
     engines: {node: ^18 || >=20}
     hasBin: true
-    dev: true
-
-  /nanoid@5.1.11:
-    resolution: {integrity: sha512-v+KEsUv2ps74PaSKv0gHTxTCgMXOIfBEbaqa6w6ISIGC7ZsvHN4N9oJ8d4cmf0n5oTzQz2SLmThbQWhjd/8eKg==}
-    engines: {node: ^18 || >=20}
-    hasBin: true
-    dev: false
 
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
@@ -13414,7 +13396,7 @@ packages:
     resolution: {integrity: sha512-D/kj5JNu6oo2EIy+XL/26JEDTlIbB8hw85G8StOE6L74RQAVVP5rej6wxCNqyMbR4RkPfqvezVbPw81Ngd6Kcw==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.12
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
@@ -13423,7 +13405,7 @@ packages:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.12
       picocolors: 1.1.1
       source-map-js: 1.2.1
     dev: true
@@ -13441,7 +13423,7 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.11
+      nanoid: 3.3.12
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -14427,7 +14409,7 @@ packages:
       mendoza: 3.0.8
       motion: 12.40.0(react-dom@19.2.7)(react@19.2.7)
       nano-pubsub: 3.0.0
-      nanoid: 3.3.11
+      nanoid: 3.3.12
       observable-callback: 1.0.3(rxjs@7.8.2)
       path-to-regexp: 6.3.0
       player.style: 0.1.10(react@19.2.7)
@@ -15246,7 +15228,7 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /svelte-check@4.6.0(svelte@5.56.3)(typescript@6.0.3):
+  /svelte-check@4.6.0(svelte@5.56.3)(typescript@5.7.3):
     resolution: {integrity: sha512-KhVnDFDSid57mmZtHz8gfW8AAGylOZ0vPnOIzVmAL+urzwK8sBYXRss953gD8T0OdgAQ11mdWhE6uadmtOz8TQ==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
@@ -15261,7 +15243,7 @@ packages:
       picocolors: 1.1.1
       sade: 1.8.1
       svelte: 5.56.3
-      typescript: 6.0.3
+      typescript: 5.7.3
     transitivePeerDependencies:
       - picomatch
     dev: true
@@ -15837,12 +15819,6 @@ packages:
     resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
-
-  /typescript@6.0.3:
-    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-    dev: true
 
   /uc.micro@2.1.0:
     resolution: {integrity: sha512-ARDJmphmdvUk6Glw7y9DQ2bFkKBHwQHLi2lsaH6PPmz/Ka9sFOBsBluozhDltWmnv9u/cF6Rt87znRTPV+yp/A==}
