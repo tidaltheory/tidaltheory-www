@@ -34,7 +34,7 @@
 		"@portabletext/svelte": "3.0.1",
 		"@portabletext/types": "4.0.2",
 		"@sanity/types": "5.31.1",
-		"@sveltejs/adapter-netlify": "4.4.1",
+		"@sveltejs/adapter-netlify": "4.4.2",
 		"@sveltejs/adapter-static": "3.0.10",
 		"@sveltejs/kit": "2.64.0",
 		"@sveltejs/vite-plugin-svelte": "7.1.2",
