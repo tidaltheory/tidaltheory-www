@@ -45,7 +45,7 @@
 		"postcss-html": "1.5.0",
 		"postcss-load-config": "5.0.2",
 		"postcss-preset-env": "9.3.0",
-		"prismjs": "1.29.0",
+		"prismjs": "1.30.0",
 		"svelte": "5.56.3",
 		"svelte-check": "4.6.0",
 		"svelte-intersection-observer": "1.1.1",
