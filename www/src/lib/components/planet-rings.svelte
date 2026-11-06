@@ -40,7 +40,12 @@ function rampColor(t) {
 	return `rgb(${a.map((v, index) => Math.min(255, (v + (b[index] - v) * f) * l)).join(',')})`
 }
 
-function generate() {
+/** @param {boolean} narrow */
+function generate(narrow) {
+	// Narrow screens have a much shallower band: use fewer, finer rings so they
+	// stay distinct, and pull the colour ramp in so the cyan isn't cropped off.
+	const count = narrow ? 130 : COUNT
+	const scale = narrow ? 0.5 : 1
 	const bumps = Array.from({ length: Math.floor(rand(3, 6)) }, () => [
 		rand(0.05, 0.95),
 		rand(0.05, 0.2),
@@ -53,8 +58,8 @@ function generate() {
 		rand(0.008, 0.03),
 	])
 
-	return Array.from({ length: COUNT }, (_, index) => {
-		const t = (index + rand()) / COUNT
+	return Array.from({ length: count }, (_, index) => {
+		const t = (index + rand()) / count
 		let alpha = Math.min(
 			1,
 			bumps.reduce(
@@ -67,9 +72,11 @@ function generate() {
 		const haze = t < 0.85 && rand() < 0.12
 		return {
 			t,
-			alpha: haze ? 0.06 + alpha * 0.1 : alpha * (0.3 + 0.7 * rand() ** 2),
-			width: haze ? rand(30, 120) : rand(0.4, 3),
-			color: rampColor(t),
+			alpha: haze
+				? 0.06 + alpha * 0.1
+				: Math.min(1, alpha * (0.3 + 0.7 * rand() ** 2) * (narrow ? 1.6 : 1)),
+			width: (haze ? rand(30, 120) : rand(0.4, 3)) * scale,
+			color: rampColor(narrow ? Math.min(t * 1.5, 1) : t),
 			// Random order so rings fade in individually rather than as a wave.
 			delay: rand(0, STAGGER),
 		}
@@ -80,7 +87,7 @@ $effect(() => {
 	const node = canvas
 	const context = node?.getContext('2d')
 	if (!node || !context) return
-	const rings = generate()
+	const rings = generate(innerWidth < 768)
 	const end = STAGGER + DURATION
 	const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches
 	let start = 0
@@ -88,7 +95,7 @@ $effect(() => {
 
 	/** @param {number} elapsed */
 	const draw = (elapsed) => {
-		const dpr = Math.min(devicePixelRatio, 2)
+		const dpr = Math.min(devicePixelRatio, 3)
 		const w = node.width / dpr
 		const h = node.height / dpr
 		const mobile = w < 768
@@ -150,7 +157,7 @@ $effect(() => {
 	}
 
 	const observer = new ResizeObserver(() => {
-		const dpr = Math.min(devicePixelRatio, 2)
+		const dpr = Math.min(devicePixelRatio, 3)
 		node.width = node.clientWidth * dpr
 		node.height = node.clientHeight * dpr
 		if (reduced || (start && !frame)) draw(Infinity)
