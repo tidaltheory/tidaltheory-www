@@ -19,11 +19,11 @@
 	"dependencies": {
 		"@sanity/code-input": "7.1.2",
 		"@sanity/icons": "3.7.4",
-		"@sanity/vision": "5.31.1",
+		"@sanity/vision": "5.31.2",
 		"react": "19.2.7",
 		"react-dom": "19.2.7",
 		"react-is": "19.2.7",
-		"sanity": "5.31.1",
+		"sanity": "5.31.2",
 		"sanity-plugin-link-field": "1.5.1",
 		"styled-components": "6.4.2"
 	},
